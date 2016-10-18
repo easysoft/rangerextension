@@ -1,0 +1,4258 @@
+<?php
+/* sys/common */
+$lang->colon      = ' : ';
+$lang->prev       = '‹';
+$lang->next       = '›';
+$lang->percent    = '%';
+$lang->laquo      = '&laquo;';
+$lang->raquo      = '&raquo;';
+$lang->minus      = ' - ';
+$lang->hyphen     = '-';
+$lang->slash      = ' / ';
+$lang->RMB        = '￥';
+$lang->divider    = "<span class='divider'>{$lang->raquo}</span> ";
+$lang->at         = ' on ';
+$lang->by         = ' by ';
+$lang->ditto      = 'ditto';
+$lang->etc        = 'etc.';
+$lang->importIcon = "<i class='icon-download-alt'> </i>";
+$lang->exportIcon = "<i class='icon-upload-alt'> </i>";
+
+$lang->apps = new stdclass();
+$lang->apps->crm        = 'CRM';
+$lang->apps->cash       = 'CASH';
+$lang->apps->oa         = 'OA';
+$lang->apps->sys        = 'System';
+$lang->apps->team       = 'TEAM';
+$lang->apps->superadmin = 'ADMIN';
+
+$lang->ranzhi    = 'Ranger';
+$lang->agreement = "I have read and aggreed to <a href='http://zpl.pub/page/zplv11.html' target='_blank'>《Z PUBLIC LICENSE 1.2》</a>. <span class='text-danger'>Without authorization, I should not remove, hide, or cover any logos/links of Ranger.</span>";
+$lang->poweredBy = "<a href='http://www.ranzhico.com/?v=%s' target='_blank'>{$lang->ranzhi} %s</a>";
+$lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact Administrator.</body></html>";
+
+$lang->IE6Alert = <<<EOT
+    <div class='alert alert-danger' style='margin-top:100px;'>
+      <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+      <h2>Please try different browser.</h2>
+      <p>If you want to enjoy surfing the Internet, no IE!</p>
+      <p>You are using Internet Explorer 6 which was first released in Aug 27, 2001. It is outdated, slow, unsecure and cannot display websites with the latest design.<br/></p>
+      <a href='https://www.google.com/intl/zh-hk/chrome/browser/' class='btn btn-primary btn-lg' target='_blank'>Chrome</a>
+      <a href='http://www.firefox.com/' class='btn btn-primary btn-lg' target='_blank'>Firefox</a>
+      <a href='http://www.opera.com/download' class='btn btn-primary btn-lg' target='_blank'>Opera</a>
+      <p></p>
+    </div>
+EOT;
+
+$lang->theme             = 'Theme';
+$lang->themes['default'] = 'Default';
+$lang->themes['clear']   = 'Clear';
+
+$lang->home           = 'Home';
+$lang->welcome        = "%s Team";
+$lang->messages       = "<strong><i class='icon-comment-alt'></i> %s</strong>";
+$lang->todayIs        = 'Today is %s.';
+$lang->today          = 'Today';
+$lang->aboutUs        = 'About Us';
+$lang->about          = 'About';
+$lang->link           = 'Links';
+$lang->frontHome      = 'Front-End';
+$lang->forumHome      = 'Forum';
+$lang->bookHome       = 'Manual';
+$lang->dashboard      = 'Dashboard';
+$lang->register       = 'Register';
+$lang->logout         = 'Logout';
+$lang->login          = 'Login';
+$lang->account        = 'Account';
+$lang->password       = 'Password';
+$lang->all            = 'All';
+$lang->changePassword = 'Change Password';
+$lang->currentPos     = 'Current';
+$lang->categoryMenu   = 'Menu';
+$lang->basicInfo      = 'Basic Info';
+
+$lang->reset          = 'Reset';
+$lang->add            = 'Add';
+$lang->edit           = 'Edit';
+$lang->copy           = 'Copy';
+$lang->and            = 'AND';
+$lang->or             = 'OR';
+$lang->hide           = 'Hide';
+$lang->delete         = 'Delete';
+$lang->close          = 'Close';
+$lang->finish         = 'Finish';
+$lang->cancel         = 'Cancel';
+$lang->import         = 'Import';
+$lang->export         = 'Export';
+$lang->setFileName    = 'File Name';
+$lang->setFileNum     = 'File Count';
+$lang->setFileType    = 'File Type';
+$lang->save           = 'Save';
+$lang->saved          = 'Saved';
+$lang->confirm        = 'Confirm';
+$lang->preview        = 'Preview';
+$lang->goback         = 'Back';
+$lang->assign         = 'Assign';
+$lang->start          = 'Start';
+$lang->create         = 'Create';
+$lang->forbid         = 'Disable';
+$lang->activate       = 'Activate';
+$lang->ignore         = 'Ignore';
+$lang->view           = 'View';
+$lang->detail         = 'Detail';
+$lang->more           = 'More';
+$lang->actions        = 'Action';
+$lang->history        = 'History';
+$lang->reverse        = 'Reverse';
+$lang->switchDisplay  = 'Switch Display';
+$lang->feature        = 'Future';
+$lang->year           = 'Year';
+$lang->month          = 'Month';
+$lang->day            = 'Day';
+$lang->loading        = 'Loading...';
+$lang->saveSuccess    = 'Saved!';
+$lang->setSuccess     = 'Set!';
+$lang->sendSuccess    = 'Sent!';
+$lang->fail           = 'Failed!';
+$lang->noResultsMatch = 'No match found!';
+$lang->alias          = 'For SEO, letters and numbers.';
+$lang->unfold         = '+';
+$lang->fold           = '-';
+$lang->files          = 'File';
+$lang->addFiles       = 'Uploaded File ';
+$lang->comment        = 'Note';
+$lang->selectAll      = 'Select All';
+$lang->selectReverse  = 'Select Reverse';
+$lang->continueSave   = 'Continue to save';
+$lang->submitting     = 'Loading...';
+$lang->yes            = 'Yes';
+$lang->no             = 'No';
+$lang->signIn         = 'Sign In';
+$lang->signOut        = 'Sign Out';
+$lang->sort           = 'Sorting';
+$lang->required       = 'Required';
+$lang->custom         = 'Custom';
+
+$lang->exportAll      = 'Export All';
+$lang->exportThisPage = 'Export This Page';
+$lang->exportTemplate = 'Export Template';
+$lang->importFile     = 'Import File';
+$lang->importSuccess  = 'Imported!';
+$lang->importFail     = 'Import failed!;
+
+$lang->lifetime = new stdclass();
+$lang->lifetime->createdBy    = 'Created By';
+$lang->lifetime->assignedTo   = 'Assigned To';
+$lang->lifetime->signedBy     = 'Signed By';
+$lang->lifetime->closedBy     = 'Closed By';
+$lang->lifetime->closedReason = 'Closed Reason';
+$lang->lifetime->lastEdited   = 'Last Edited';
+
+$lang->setOkFile = <<<EOT
+<h5>请按照下面的步骤操作以确认您的管理员身份.</h5>
+<p>Create  %s File.如果存在该File，使用Edit软件打开，重新保存一遍.</p>
+EOT;
+
+$lang->js = new stdclass();
+$lang->js->confirmDelete         = 'Do you want to delete it?';
+$lang->js->deleteing             = 'Deleting';
+$lang->js->doing                 = 'Processing';
+$lang->js->timeout               = 'Timeout! Try again.';
+$lang->js->confirmDiscardChanges = 'List has been changed. Do you want to close it?';
+$lang->js->yes                   = 'Yes';
+$lang->js->no                    = 'No';
+
+$lang->company = new stdclass();
+$lang->company->contactUs = 'Contact Us';
+$lang->company->address   = 'Address';
+$lang->company->phone     = 'Phone';
+$lang->company->email     = 'Email';
+$lang->company->fax       = 'Fax';
+$lang->company->qq        = 'QQ';
+$lang->company->weibo     = '微博';
+$lang->company->weixin    = '微信';
+$lang->company->wangwang  = '旺旺';
+
+$lang->menu = new stdclass();
+
+$lang->index   = new stdclass();
+$lang->user    = new stdclass();
+$lang->file    = new stdclass();
+$lang->admin   = new stdclass();
+$lang->tree    = new stdclass();
+$lang->mail    = new stdclass();
+$lang->dept    = new stdclass();
+$lang->thread  = new stdclass();
+$lang->block   = new stdclass();
+$lang->action  = new stdclass();
+$lang->effort  = new stdclass();
+$lang->setting = new stdclass();
+$lang->task    = new stdclass();
+$lang->schema  = new stdclass();
+$lang->package = new stdclass();
+
+$lang->admin->common = 'Admin';
+
+$lang->menu->sys = new stdclass();
+$lang->menu->sys->company   = 'Company|company|setbasic|';
+$lang->menu->sys->user      = 'User|user|admin|';
+$lang->menu->sys->group     = 'Group|group|browse|';
+$lang->menu->sys->entry     = 'App|entry|admin|';
+$lang->menu->sys->system    = 'System|mail|admin|';
+$lang->menu->sys->package   = 'Package|package|browse|';
+
+$lang->message = new stdclass(); 
+$lang->blog    = new stdclass(); 
+$lang->group   = new stdclass(); 
+
+$lang->entry       = new stdclass();
+$lang->entry->menu = new stdclass();
+$lang->entry->menu->admin    = array('link' => 'App|entry|admin|', 'alias' => 'edit, integration, style');
+$lang->entry->menu->create   = 'Create|entry|create|';
+$lang->entry->menu->webapp   = 'Web App|webapp|obtain|';
+$lang->entry->menu->category = 'Category|entry|category|';
+
+$lang->system       = new stdclass();
+$lang->system->menu = new stdclass();
+$lang->system->menu->mail   = array('link' => 'Mail|mail|admin|', 'alias' => 'detect,edit,save,test');
+$lang->system->menu->trash  = array('link' => 'Recycle|action|trash|');
+$lang->system->menu->cron   = 'Cron|cron|index|';
+$lang->system->menu->backup = 'Backup|backup|index|';
+
+$lang->article = new stdclass();
+$lang->article->menu = new stdclass();
+$lang->article->menu->admin  = 'Admin|article|admin|';
+$lang->article->menu->tree   = 'Tree|tree|browse|type=article';
+$lang->article->menu->create = array('link' => 'Create|article|create|type=article', 'alias' => 'edit');
+
+$lang->menuGroups = new stdclass();
+
+$lang->menu->dashboard = new stdclass();
+$lang->menu->dashboard->todo     = 'To-Do|todo|calendar|';
+$lang->menu->dashboard->task     = 'Task|my|task|';
+$lang->menu->dashboard->project  = 'Project|my|project|';
+$lang->menu->dashboard->order    = 'Order|my|order|';
+$lang->menu->dashboard->contract = 'Contract|my|contract|';
+$lang->menu->dashboard->review   = 'Review|my|review|';
+$lang->menu->dashboard->company  = 'Company|my|company|';
+$lang->menu->dashboard->dynamic  = 'Dynamic|my|dynamic|';
+
+$lang->todo = new stdclass();
+$lang->todo->menu = new stdclass();
+$lang->todo->menu->calendar        = 'Calendar|todo|calendar|';
+$lang->todo->menu->all             = 'All|todo|browse|mode=all';
+$lang->todo->menu->assignedToOther = 'Assign|todo|browse|mode=assignedtoother';
+$lang->todo->menu->assignedToMe    = 'My Work|todo|browse|mode=assignedtome';
+$lang->todo->menu->undone          = 'Unfinished|todo|browse|mode=undone';
+$lang->todo->menu->future          = 'Pending|todo|browse|mode=future';
+
+$lang->my = new stdclass();
+$lang->my->review = new stdclass();
+$lang->my->review->menu = new stdclass();
+$lang->my->review->menu->attend   = 'Attendance|my|review|type=attend';
+$lang->my->review->menu->leave    = 'Leave|my|review|type=leave';
+$lang->my->review->menu->overtime = 'Overtime|my|review|type=overtime';
+$lang->my->review->menu->refund   = 'Reimburse|my|review|type=refund';
+
+$lang->my->order = new stdclass();
+$lang->my->order->menu = new stdclass();
+$lang->my->order->menu->past       = 'Urgent|my|order|type=past';
+$lang->my->order->menu->today      = 'Today|my|order|type=today';
+$lang->my->order->menu->tomorrow   = 'Tomorrow|my|order|type=tomorrow';
+$lang->my->order->menu->assignedTo = 'AssignedToMe|my|order|type=assignedTo';
+$lang->my->order->menu->createdBy  = 'CreatedByMe|my|order|type=createdBy';
+$lang->my->order->menu->signedBy   = 'SignedByMe|my|order|type=signedBy';
+$lang->my->order->menu->all        = 'All|my|order|type=all';
+ 
+$lang->my->contract = new stdclass();
+$lang->my->contract->menu = new stdclass();
+$lang->my->contract->menu->unfinished  = 'Unfinished|my|contract|type=unfinished';
+$lang->my->contract->menu->finished    = 'Finished|my|contract|type=finished';
+$lang->my->contract->menu->canceled    = 'Cancelled|my|contract|type=canceled';
+$lang->my->contract->menu->returnedBy  = 'PaidByMe|my|contract|type=returnedBy';
+$lang->my->contract->menu->deliveredBy = 'DeliveredByMe|my|contract|type=deliveredBy';
+
+$lang->my->task = new stdclass();
+$lang->my->task->menu = new stdclass();
+$lang->my->task->menu->assignedToMe = 'My Work|my|task|type=assignedTo';
+$lang->my->task->menu->createdByMe  = 'CreatedByMe|my|task|type=createdBy';
+$lang->my->task->menu->finishedByMe = 'FinishedByMe|my|task|type=finishedBy';
+$lang->my->task->menu->closedByMe   = 'ClosedByMe|my|task|type=closedBy';
+$lang->my->task->menu->canceledByMe = 'CancelledByMe|my|task|type=canceledBy';
+
+$lang->my->dynamic = new stdclass();
+$lang->my->dynamic->menu = new stdclass();
+$lang->my->dynamic->menu->today      = 'Today|my|dynamic|period=today';
+$lang->my->dynamic->menu->yesterday  = 'Yesterday|my|dynamic|period=yesterday';
+$lang->my->dynamic->menu->twodaysago = '前天|my|dynamic|period=twodaysago';
+$lang->my->dynamic->menu->thisweek   = 'This Week|my|dynamic|period=thisweek';
+$lang->my->dynamic->menu->lastweek   = 'Last Week|my|dynamic|period=lastweek';
+$lang->my->dynamic->menu->thismonth  = 'This Month|my|dynamic|period=thismonth';
+$lang->my->dynamic->menu->lastmonth  = 'This Month|my|dynamic|period=lastmonth';
+$lang->my->dynamic->menu->all        = 'All|my|dynamic|period=all';
+
+$lang->mail = new stdclass();
+$lang->mail->menu = $lang->system->menu;
+$lang->menuGroups->mail = 'system';
+
+$lang->action = new stdclass();
+$lang->action->menu = $lang->system->menu;
+$lang->menuGroups->action = 'system';
+
+$lang->cron = new stdclass();
+$lang->cron->menu = $lang->system->menu;
+$lang->menuGroups->cron = 'system';
+
+$lang->backup = new stdclass();
+$lang->backup->menu = $lang->system->menu;
+$lang->menuGroups->backup = 'system';
+
+$lang->error = new stdclass();
+$lang->error->length       = array('<strong>%s</strong>Length Error. It should be <strong>%s</strong>', '<strong>%s</strong> should be <= <strong>%s</strong> and >= <strong>%s</strong>.');
+$lang->error->reg          = '<strong>%s</strong> Format Error. It should be <strong>%s</strong>.';
+$lang->error->unique       = '<strong>%s</strong> has already had <strong>%s</strong>.';
+$lang->error->notempty     = '<strong>%s</strong> should not be blank.';
+$lang->error->equal        = '<strong>%s</strong> has to be <strong>%s</strong>.';
+$lang->error->gt           = "<strong>%s</strong> should be > <strong>%s</strong>.";
+$lang->error->ge           = "<strong>%s</strong> should be >= <strong>%s</strong>.";
+$lang->error->lt           = "<strong>%s</strong> should be < <strong>%s</strong>.";
+$lang->error->le           = "<strong>%s</strong> should be <= <strong>%s</strong>.";
+$lang->error->in           = '<strong>%s</strong> has to be <strong>%s</strong>.';
+$lang->error->int          = array('<strong>%s</strong> should be numbers.', '<strong>%s</strong> minimum value is %s',  '<strong>%s</strong> should be between <strong>%s-%s</strong>.');
+$lang->error->float        = '<strong>%s</strong> shoud be a number/decimal.';
+$lang->error->email        = '<strong>%s</strong> should be valid Email.';
+$lang->error->phone        = '<strong>%s</strong> should be valid phone number.';
+$lang->error->mobile       = '<strong>%s</strong> should be valid mobile phone number.';
+$lang->error->URL          = '<strong>%s</strong> should be valid URL.';
+$lang->error->date         = '<strong>%s</strong> should be valid date.';
+$lang->error->account      = '<strong>%s</strong> should be any combination of letters and numbers and must be a minimum of 3 characters.';
+$lang->error->passwordsame = 'Passwords should match.';
+$lang->error->passwordrule = 'Password should be minimum of 6 characters and meet its setting requirement.';
+$lang->error->captcha      = 'Please enter verification code correctly.';
+$lang->error->noWritable   = '%s is not writable. Please update your permission!';
+$lang->error->fingerprint  = 'Authentication expired. Please try again!';
+$lang->error->token        = 'Must be letters/numbers and the characters between 3-32.';
+$lang->error->sensitive    = 'No sensitive words allowed!';
+$lang->error->noRepeat     = 'No duplicated content, please!';
+
+$lang->pager = new stdclass();
+$lang->pager->noRecord   = 'No match found!';
+$lang->pager->digest     = "Total <strong>%s</strong> Records. %s <strong>%s/%s</strong> &nbsp; ";
+$lang->pager->recPerPage = "<strong>%s</strong> Records per page";
+$lang->pager->first      = 'Home';
+$lang->pager->pre        = 'Previous';
+$lang->pager->next       = 'Next';
+$lang->pager->last       = 'End';
+$lang->pager->locate     = 'Go!';
+$lang->pager->showMore   = 'Show more <i class="icon icon-double-angle-down"></i>';
+$lang->pager->noMore     = 'No more.';
+$lang->pager->showTotal  = '<strong>%s</strong> of <strong>%s</strong> ';
+
+$lang->excel = new stdClass();
+$lang->excel->canNotRead = 'It cannot be read.';
+
+$lang->excel->error = new stdclass();
+$lang->excel->error->info  = 'Invalid value.';
+$lang->excel->error->title = 'Error';
+
+$lang->excel->title = new stdclass();
+$lang->excel->title->contact  = 'Contact';
+$lang->excel->title->sysValue = 'System Data';
+
+$lang->excel->help = new stdclass();
+$lang->excel->help->contact = "“Real Name“ is required. It will be ignored if import data to this field.";
+
+$lang->date = new stdclass();
+$lang->date->minute = 'minute';
+$lang->date->day    = 'day';
+
+$lang->genderList = new stdclass();
+$lang->genderList->m = 'male';
+$lang->genderList->f = 'female';
+$lang->genderList->u = '';
+
+$lang->datepicker = new stdclass();
+
+$lang->datepicker->dpText = new stdclass();
+$lang->datepicker->dpText->TEXT_OR          = 'or ';
+$lang->datepicker->dpText->TEXT_PREV_YEAR   = 'Lst Year';
+$lang->datepicker->dpText->TEXT_PREV_MONTH  = 'This Month';
+$lang->datepicker->dpText->TEXT_PREV_WEEK   = 'Last Week';
+$lang->datepicker->dpText->TEXT_YESTERDAY   = 'Yesterday';
+$lang->datepicker->dpText->TEXT_THIS_MONTH  = 'This Month';
+$lang->datepicker->dpText->TEXT_THIS_WEEK   = 'This Week';
+$lang->datepicker->dpText->TEXT_TODAY       = 'Today';
+$lang->datepicker->dpText->TEXT_NEXT_YEAR   = 'Next Year';
+$lang->datepicker->dpText->TEXT_NEXT_MONTH  = 'Next Month';
+$lang->datepicker->dpText->TEXT_CLOSE       = 'Close';
+$lang->datepicker->dpText->TEXT_DATE        = 'Time Frame';
+$lang->datepicker->dpText->TEXT_CHOOSE_DATE = 'Date';
+
+$lang->datepicker->dayNames     = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+$lang->datepicker->abbrDayNames = array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+$lang->datepicker->monthNames   = array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+
+$lang->currencyList['rmb']  = '人民币';
+$lang->currencyList['usd']  = '美元';
+$lang->currencyList['hkd']  = '港元';
+$lang->currencyList['twd']  = '台元';
+$lang->currencyList['euro'] = '欧元';
+$lang->currencyList['dem']  = '马克';
+$lang->currencyList['chf']  = '瑞士法郎';
+$lang->currencyList['frf']  = '法国法郎';
+$lang->currencyList['gbp']  = '英镑';
+$lang->currencyList['nlg']  = '荷兰盾';
+$lang->currencyList['cad']  = '加拿大元';
+$lang->currencyList['sur']  = '卢布';
+$lang->currencyList['inr']  = '卢比';
+$lang->currencyList['aud']  = '澳大利亚元';
+$lang->currencyList['nzd']  = '新西兰元';
+$lang->currencyList['thb']  = '泰国铢';
+$lang->currencyList['sgd']  = '新加坡元';
+
+$lang->currencySymbols['rmb']  = '￥';
+$lang->currencySymbols['usd']  = '$';
+$lang->currencySymbols['hkd']  = 'HK$';
+$lang->currencySymbols['twd']  = 'NT$';
+$lang->currencySymbols['euro'] = 'ECU';
+$lang->currencySymbols['dem']  = 'DM';
+$lang->currencySymbols['chf']  = 'SF';
+$lang->currencySymbols['frf']  = 'FF';
+$lang->currencySymbols['gbp']  = '￡';
+$lang->currencySymbols['nlg']  = 'F';
+$lang->currencySymbols['cad']  = 'CAN$';
+$lang->currencySymbols['sur']  = 'Rbs';
+$lang->currencySymbols['inr']  = 'Rs';
+$lang->currencySymbols['aud']  = 'A$';
+$lang->currencySymbols['nzd']  = 'NZ$';
+$lang->currencySymbols['thb']  = 'B';
+$lang->currencySymbols['sgd']  = 'S$';
+
+$lang->currencyTip['w'] = '万';
+$lang->currencyTip['y'] = 'billion';
+
+define('DT_DATETIME1',  'Y-m-d H:i:s');
+define('DT_DATETIME2',  'y-m-d H:i');
+define('DT_MONTHTIME1', 'n/d H:i');
+define('DT_MONTHTIME2', 'n月d日 H:i');
+define('DT_DATE1',      'Y-m-d');
+define('DT_DATE2',      'Ymd');
+define('DT_DATE3',      'Y年m月d日');
+define('DT_DATE4',      'n月j日');
+define('DT_DATE5',      'Y年m月');
+define('DT_TIME1',      'H:i:s');
+define('DT_TIME2',      'H:i');
+/* cash/common */
+$lang->app = new stdclass();
+$lang->app->name = 'CASH';
+
+$lang->menu->cash = new stdclass();
+$lang->menu->cash->dashboard = 'Home|dashboard|index|';
+$lang->menu->cash->all       = 'All|trade|browse|mode=all';
+$lang->menu->cash->in        = 'Income|trade|browse|mode=in';
+$lang->menu->cash->out       = 'Expense|trade|browse|mode=out';
+$lang->menu->cash->transfer  = 'Transfer|trade|browse|mode=transfer';
+$lang->menu->cash->invest    = 'Invest|trade|browse|mode=invest';
+$lang->menu->cash->check     = 'Reconcile|depositor|check|';
+$lang->menu->cash->report    = 'Report|trade|report|';
+$lang->menu->cash->depositor = 'Account|depositor|browse|';
+$lang->menu->cash->provider  = 'Supplier|provider|browse|';
+//$lang->menu->cash->contact   = 'Contact|contact|browse|';
+$lang->menu->cash->setting   = 'Settings|tree|browse|type=in|';
+
+$lang->depositor = new stdclass();
+
+$lang->trade = new stdclass();
+$lang->trade->menu = new stdclass();
+
+$lang->provider = new stdclass();
+$lang->provider->menu = new stdclass();
+$lang->provider->menu->browse = array('link' => 'Supplier List|provider|browse|', 'alias' => 'create,edit,view');
+
+$lang->contact = new stdclass();
+$lang->contact->menu = new stdclass();
+$lang->contact->menu->browse = array('link' => 'Contact List|contact|browse|', 'alias' => 'create,edit,view');
+
+$lang->report = new stdclass();
+$lang->report->menu = new stdclass();
+$lang->report->menu->annual  = 'Annual Balance Statement|trade|report|';
+$lang->report->menu->compare = 'Comparative Balance Sheet|trade|compare|';
+$lang->report->menu->export  = 'Profit and Loss Statement|trade|export2Excel|mode=depositor';
+
+$lang->setting = new stdclass();
+$lang->setting->menu = new stdclass();
+$lang->setting->menu->income    = 'Income Category|tree|browse|type=in|';
+$lang->setting->menu->expend    = 'Expense Category|tree|browse|type=out|';
+$lang->setting->menu->currency  = 'Currency|setting|lang|module=common&field=currencyList';
+$lang->setting->menu->schema    = 'Template|schema|browse|';
+$lang->setting->menu->tradePriv = 'Privilege|group|managetradepriv|';
+/* crm/common */
+$lang->app = new stdclass();
+$lang->app->name = 'CRM';
+
+$lang->menu->crm = new stdclass();
+$lang->menu->crm->dashboard = 'Home|dashboard|index|';
+$lang->menu->crm->order     = 'Order|order|browse|';
+$lang->menu->crm->contract  = 'Contract|contract|browse|mode=unfinished';
+$lang->menu->crm->customer  = 'Customer|customer|browse|';
+$lang->menu->crm->contact   = 'Contact|contact|browse|';
+$lang->menu->crm->leads     = 'List|leads|browse|mode=assignedTo';
+$lang->menu->crm->product   = 'Product|product|browse|';
+$lang->menu->crm->setting   = 'Settings|setting|lang|module=product&field=statusList';
+
+$lang->customer = new stdclass();
+$lang->customer->menu = new stdclass();
+$lang->customer->menu->browse       = 'All|customer|browse|mode=all';
+$lang->customer->menu->assignedTo   = 'My Work|customer|browse|mode=assignedTo';
+$lang->customer->menu->past         = 'Urgent|customer|browse|mode=past';
+$lang->customer->menu->today        = 'Today|customer|browse|mode=today';
+$lang->customer->menu->tomorrow     = 'Tomorrow|customer|browse|mode=tomorrow';
+$lang->customer->menu->thisweek     = 'This Week|customer|browse|mode=thisweek';
+$lang->customer->menu->thismonth    = 'This Month|customer|browse|mode=thismonth';
+$lang->customer->menu->public       = 'Customer Pool|customer|browse|mode=public';
+$lang->customer->menu->report       = 'Report|report|browse|module=customer';
+
+$lang->product = new stdclass();
+$lang->product->menu = new stdclass();
+$lang->product->menu->browse     = 'All|product|browse|mode=all';
+$lang->product->menu->normal     = 'Normal|product|browse|mode=normal';
+$lang->product->menu->developing = 'Developing|product|browse|mode=developing';
+$lang->product->menu->offline    = 'Offline|product|browse|mode=offline';
+
+$lang->order = new stdclass();
+$lang->order->menu = new stdclass();
+$lang->order->menu->browse       = 'All|order|browse|mode=all';
+$lang->order->menu->assignedTo   = 'My Work|order|browse|mode=assignedTo';
+$lang->order->menu->past         = 'Urgent|order|browse|mode=past';
+$lang->order->menu->today        = 'Today|order|browse|mode=today';
+$lang->order->menu->tomorrow     = 'Tomorrow|order|browse|mode=tomorrow';
+$lang->order->menu->thisweek     = 'This Week|order|browse|mode=thisweek';
+$lang->order->menu->thismonth    = 'This Month|order|browse|mode=thismonth';
+$lang->order->menu->public       = 'Customer Pool|order|browse|mode=public';
+$lang->order->menu->report       = 'Report|report|browse|module=order';
+
+$lang->contact = new stdclass();
+$lang->contact->menu = new stdclass();
+$lang->contact->menu->browse    = 'All|contact|browse|mode=all';
+$lang->contact->menu->past      = 'Urgent|contact|browse|mode=past';
+$lang->contact->menu->today     = 'Today|contact|browse|mode=today';
+$lang->contact->menu->tomorrow  = 'Tomorrow|contact|browse|mode=tomorrow';
+$lang->contact->menu->thisweek  = 'This Week|contact|browse|mode=thisweek';
+$lang->contact->menu->thismonth = 'This Month|contact|browse|mode=thismonth';
+
+$lang->leads = new stdclass();
+$lang->leads->menu = new stdclass();
+$lang->leads->menu->assignedTo  = array('link' => 'My Work|leads|browse|mode=assignedTo', 'alias' => 'create');
+$lang->leads->menu->next        = 'Leads|leads|browse|mode=next';
+$lang->leads->menu->ignoredBy   = 'Ignored|leads|browse|mode=ignoredBy&status=ignore';
+$lang->leads->menu->public      = 'Public List|leads|browse|mode=all&status=ignore';
+$lang->leads->menu->setting     = 'Settings|leads|setting|';
+
+$lang->contract = new stdclass();
+$lang->contract->menu = new stdclass();
+$lang->contract->menu->browse       = 'All|contract|browse|mode=all';
+$lang->contract->menu->unfinished   = 'Unfinished|contract|browse|mode=unfinished';
+$lang->contract->menu->unreceived   = 'Unpaid|contract|browse|mode=unreceived';
+$lang->contract->menu->undeliveried = 'Undelivered|contract|browse|mode=undeliveried';
+$lang->contract->menu->finished     = 'Finished|contract|browse|mode=finished';
+$lang->contract->menu->canceled     = 'Cancelled|contract|browse|mode=canceled';
+$lang->contract->menu->expired      = 'Expired|contract|browse|mode=expired';
+$lang->contract->menu->expire       = 'Due|contract|browse|mode=expire';
+$lang->contract->menu->report       = 'Report|report|browse|module=contract';
+
+$lang->setting = new stdclass();
+$lang->setting->menu = new stdclass();
+$lang->setting->menu->product        = 'Product Status|setting|lang|module=product&field=statusList';
+$lang->setting->menu->productLine    = 'Product Line|setting|lang|module=product&field=lineList';
+$lang->setting->menu->customerType   = 'Customer Type|setting|lang|module=customer&field=typeList';
+$lang->setting->menu->customerSize   = 'Customer Size|setting|lang|module=customer&field=sizeNameList';
+$lang->setting->menu->customerLevel  = 'Customer Level|setting|lang|module=customer&field=levelNameList';
+$lang->setting->menu->customerStatus = 'Customer Status|setting|lang|module=customer&field=statusList';
+$lang->setting->menu->area           = 'Region|tree|browse|type=area|';
+$lang->setting->menu->industry       = 'Industry|tree|browse|type=industry|';
+$lang->setting->menu->currency       = 'Currency|setting|lang|module=common&field=currencyList';
+$lang->setting->menu->salesGroup     = array('link' => 'Sales Team|sales|browse|', 'alias' => 'create,edit');
+$lang->setting->menu->customerPool   = 'Customer池|setting|customerpool|';
+
+$lang->sales = new stdclass();
+$lang->sales->menu = $lang->setting->menu;
+
+$lang->dashboard = new stdclass();
+$lang->resume    = new stdclass();
+$lang->address   = new stdclass();
+/* oa/common */
+$lang->app = new stdclass();
+$lang->app->name = 'OA';
+
+$lang->menu->oa = new stdclass();
+$lang->menu->oa->dashboard = 'Home|dashboard|index|';
+$lang->menu->oa->project   = 'Project|project|index|';
+$lang->menu->oa->announce  = 'Announcement|announce|browse|';
+$lang->menu->oa->doc       = 'Doc|doc|browse|';
+$lang->menu->oa->attend    = 'Attendance|attend|personal|';
+$lang->menu->oa->leave     = 'Leave|leave|personal|';
+$lang->menu->oa->overtime  = 'Overtime|overtime|personal|';
+$lang->menu->oa->trip      = 'Business Trip|trip|personal|';
+$lang->menu->oa->refund    = 'Reimburse|refund|personal|';
+$lang->menu->oa->setting   = 'Settings|setting|modules|app=oa';
+
+$lang->dashboard = new stdclass();
+
+$lang->project = new stdclass();
+$lang->project->menu = new stdclass();
+$lang->project->menu->involved = 'Involved|project|index|status=involved';
+$lang->project->menu->doing    = 'Ongoing|project|index|status=doing';
+$lang->project->menu->finished = 'Finished|project|index|ststus=finished';
+$lang->project->menu->suspend  = 'Suspended|project|index|ststus=suspend';
+
+$lang->announce = new stdclass();
+$lang->announce->menu = new stdclass();
+$lang->announce->menu->browse   = array('link' => 'Announcement|announce|browse|', 'alias' => 'create,edit,view');
+$lang->announce->menu->category = 'Category|tree|browse|type=announce|';
+
+$lang->doc = new stdclass();
+$lang->doc->menu = new stdclass();
+$lang->doc->menu->create = 'Create DocLib|doc|createlib|';
+
+$lang->attend = new stdclass();
+$lang->attend->menu = new stdclass();
+$lang->attend->menu->personal   = 'My Attendance|attend|personal|';
+$lang->attend->menu->department = 'Department|attend|department|';
+$lang->attend->menu->company    = 'Company|attend|company|';
+$lang->attend->menu->detail     = 'Details|attend|detail|';
+$lang->attend->menu->review     = 'Review|attend|browsereview|';
+$lang->attend->menu->stat       = 'Report|attend|stat|';
+$lang->attend->menu->holiday    = 'Holiday|holiday|browse|';
+$lang->attend->menu->settings   = array('link' => 'Settings|attend|settings|', 'alias' => 'setmanager');
+
+$lang->holiday = new stdclass();
+$lang->holiday->menu = $lang->attend->menu;
+$lang->menuGroups->holiday = 'attend';
+
+$lang->leave = new stdclass();
+$lang->leave->menu = new stdclass();
+$lang->leave->menu->personal     = 'My Leave|leave|personal|';
+$lang->leave->menu->browseReview = 'My Review|leave|browsereview|';
+$lang->leave->menu->company      = 'All Leave|leave|company|';
+
+$lang->overtime = new stdclass();
+$lang->overtime->menu = new stdclass();
+$lang->overtime->menu->personal     = 'My Overtime|overtime|personal|';
+$lang->overtime->menu->browseReview = 'My Review|overtime|browsereview|';
+$lang->overtime->menu->company      = 'All Overtime|overtime|company|';
+
+$lang->trip = new stdclass();
+$lang->trip->menu = new stdclass();
+$lang->trip->menu->personal   = 'My Trip|trip|personal|';
+$lang->trip->menu->department = 'Department|trip|department|';
+$lang->trip->menu->company    = 'Company|trip|company|';
+
+$lang->refund = new stdclass();
+$lang->refund->menu = new stdclass();
+$lang->refund->menu->personal = array('link' => 'My Reimburse|refund|personal|', 'alias' => 'create,edit');
+$lang->refund->menu->review     = 'ToBeReviewed|refund|browsereview|';
+$lang->refund->menu->reviewedBy = 'ReviewedByMe|refund|browsereview|date=&status=reviewed';
+$lang->refund->menu->todo       = 'ToBeReimbursed|refund|todo|';
+$lang->refund->menu->company    = 'All|refund|company|';
+$lang->refund->menu->settings   = array('link' => 'Settings|refund|setreviewer|', 'alias' => 'setcategory,setmoney,setdepositor,setrefundby');
+
+$lang->setting->menu = new stdclass();
+$lang->setting->menu->modules = 'Module|setting|modules|app=oa';
+/* team/common */
+$lang->app = new stdclass();
+$lang->app->name = 'TEAM';
+
+$lang->menu->team = new stdclass();
+$lang->menu->team->dashboard = 'Home|dashboard|index|';
+$lang->menu->team->forum     = 'Forum|forum|index|';
+$lang->menu->team->blog      = 'Blog|blog|index|';
+$lang->menu->team->user      = 'Colleague|user|colleague|';
+$lang->menu->team->company   = 'Company|company|index|';
+$lang->menu->team->setting   = 'Settings|tree|browse|type=forum|';
+
+$lang->forum = new stdclass();
+
+$lang->blog = new stdclass();
+$lang->blog->menu = new stdclass();
+$lang->blog->menu->index    = array('link' => 'Blog List|blog|index|', 'alias' => 'create, edit');
+$lang->blog->menu->category = 'Category|tree|browse|type=blog';
+
+$lang->setting = new stdclass();
+$lang->setting->menu = new stdclass();
+$lang->setting->menu->board = 'Board|tree|browse|type=forum|';
+$lang->setting->menu->blog  = 'Category|tree|browse|type=blog|';
+$lang->setting->menu->dept  = 'Department|tree|browse|type=dept|';
+$lang->setting->menu->role  = 'Role|setting|lang|module=user&field=roleList&appName=team|';
+/* cash/block */
+$lang->block->common    = 'Block';
+$lang->block->depositor = 'Payment Account';
+$lang->block->lblBlock  = 'Block';
+$lang->block->admin     = 'Maintain';
+$lang->block->num       = 'Number';
+$lang->block->orderBy   = 'Sorting';
+
+$lang->block->availableBlocks = new stdclass();
+$lang->block->availableBlocks->depositor = 'Payment Account';
+$lang->block->availableBlocks->trade     = 'Accounts';
+$lang->block->availableBlocks->provider  = 'Supplier';
+$lang->block->availableBlocks->report    = 'Report';
+
+$this->lang->block->orderByList->trade['id_asc']  = 'ID Ascending';
+$this->lang->block->orderByList->trade['id_desc'] = 'ID Descendng';
+
+$this->lang->block->typeList->trade['all']  = 'All';
+$this->lang->block->typeList->trade['in']   = 'Income';
+$this->lang->block->typeList->trade['out']  = 'Expense';
+
+$this->lang->block->groupByList = new stdclass();
+$this->lang->block->groupByList->trade['category'] = 'By Category';
+$this->lang->block->groupByList->trade['dept']     = 'By Department';
+
+$this->lang->block->orderByList->provider['id_asc']  = 'ID Ascending';
+$this->lang->block->orderByList->provider['id_desc'] = 'ID Descendng';
+/* cash/depositor */
+if(!isset($lang->depositor)) $lang->depositor = new stdclass();
+$lang->depositor->common          = 'Account Number';
+$lang->depositor->id              = 'ID';
+$lang->depositor->abbr            = 'Abbr';
+$lang->depositor->serviceProvider = 'Service Provider';
+$lang->depositor->bankProvider    = 'Bank Branch';
+$lang->depositor->title           = 'Account Name';
+$lang->depositor->tags            = 'Tag';
+$lang->depositor->account         = 'Account Number';
+$lang->depositor->bankcode        = 'Bank Code';
+$lang->depositor->public          = 'Public Account';
+$lang->depositor->type            = 'Type';
+$lang->depositor->currency        = 'Currency';
+$lang->depositor->status          = 'Status';
+$lang->depositor->createdBy       = 'Created By';
+$lang->depositor->createdDate     = 'Created Date';
+$lang->depositor->editedBy        = 'Edit By';
+$lang->depositor->editedDate      = 'Edit Date';
+
+$lang->depositor->all         = 'All';
+$lang->depositor->create      = 'Add';
+$lang->depositor->browse      = 'Account View';
+$lang->depositor->edit        = 'Edit';
+$lang->depositor->delete      = 'Delete';
+$lang->depositor->view        = 'View';
+$lang->depositor->forbid      = 'Disable';
+$lang->depositor->activate    = 'Activate';
+$lang->depositor->export      = 'Export';
+$lang->depositor->balance     = 'Balance';
+$lang->depositor->saveBalance = 'Enter Balance';
+$lang->depositor->detail      = 'Details';
+
+$lang->depositor->check         = 'Reconcile';
+$lang->depositor->start         = 'Begin';
+$lang->depositor->end           = 'End';
+$lang->depositor->originValue   = 'Initial';
+$lang->depositor->actualValue   = 'Actual';
+$lang->depositor->computedValue = 'Calculated';
+$lang->depositor->result        = 'Result';
+$lang->depositor->success       = "<span class='text-success'>Reconciled!</span>";
+$lang->depositor->more          = "<span class='text-danger'>%s more than the actual</span>";
+$lang->depositor->less          = "<span class='text-danger'>%s less than the actual</span>";
+
+$lang->depositor->createBalance = 'Please enter the account balance first.';
+
+$lang->depositor->typeList['cash']   = 'Cash';
+$lang->depositor->typeList['bank']   = 'Debit';
+$lang->depositor->typeList['online'] = 'Electronic';
+
+$lang->depositor->publicList['1'] = 'Public';
+$lang->depositor->publicList['0'] = 'Individual';
+
+$lang->depositor->providerList['']       = '';
+$lang->depositor->providerList['alipay'] = 'AliPay';
+$lang->depositor->providerList['paypal'] = 'PayPal';
+$lang->depositor->providerList['tenpay'] = '财付通';
+
+$lang->depositor->statusList['normal']  = 'Normal';
+$lang->depositor->statusList['disable'] = 'Disabled';
+
+$lang->depositor->placeholder = new stdclass();
+$lang->depositor->placeholder->tags     = 'Use coma as tag delimitor.';
+$lang->depositor->placeholder->noBccomp = 'Please install bccomp first.';
+/* cash/provider */
+$lang->provider->common        = 'Supplier';
+$lang->provider->id            = 'ID';
+$lang->provider->name          = 'Name';
+$lang->provider->contact       = 'Contact';
+$lang->provider->type          = 'Type';
+$lang->provider->size          = 'Size';
+$lang->provider->industry      = 'Industry';
+$lang->provider->area          = 'Region';
+$lang->provider->phone         = 'Phone';
+$lang->provider->email         = 'Email';
+$lang->provider->qq            = 'QQ';
+$lang->provider->site          = 'Website';
+$lang->provider->weibo         = '微博';
+$lang->provider->weixin        = '微信';
+$lang->provider->category      = 'Category';
+$lang->provider->desc          = 'Intro';
+$lang->provider->relation      = 'Relation';
+$lang->provider->createdBy     = 'Created By';
+$lang->provider->createdDate   = 'Created Date';
+$lang->provider->editedBy      = 'Edited By';
+$lang->provider->editedDate    = 'Edited Date';
+$lang->provider->createContact = 'New Contact';
+
+$lang->provider->browse      = 'Supplier View';
+$lang->provider->create      = 'Add';
+$lang->provider->edit        = 'Edit';
+$lang->provider->view        = 'Detail';
+$lang->provider->delete      = 'Delete';
+$lang->provider->list        = 'Supplier List';
+$lang->provider->contact     = 'Contact';
+$lang->provider->linkContact = 'Add Contact';
+$lang->provider->basicInfo   = 'Basic Info';
+$lang->provider->moreInfo    = 'More';
+$lang->provider->setCategory = 'Edit Category';
+
+$lang->provider->typeList['']           = '';
+$lang->provider->typeList['national']   = 'State-Owned';
+$lang->provider->typeList['collective'] = 'Collective';
+$lang->provider->typeList['corporate']  = 'Corporation';
+$lang->provider->typeList['limited']    = 'Limited Liability';
+$lang->provider->typeList['partnership']= 'Partnership';
+$lang->provider->typeList['foreign']    = 'Foreign Invested';
+$lang->provider->typeList['personal']   = 'Sole Proprietorship';
+
+$lang->provider->sizeList[0] = '';
+$lang->provider->sizeList[1] = 'Large';
+$lang->provider->sizeList[2] = 'Medium';
+$lang->provider->sizeList[3] = 'Small';
+$lang->provider->sizeList[4] = 'Micro';
+
+$lang->provider->relationList['client']   = 'Customer';
+$lang->provider->relationList['provider'] = 'Supplier';
+$lang->provider->relationList['partner']  = 'Partner';
+/* cash/contact */
+$lang->contact->provider      = 'Supplier';
+$lang->contact->providerName  = 'Supplier Name';
+/* cash/trade */
+if(!isset($lang->trade)) $lang->trade = new stdclass();
+$lang->trade->common      = 'Bookkeeping';
+$lang->trade->id          = 'ID';
+$lang->trade->depositor   = 'Account';
+$lang->trade->type        = 'Type';
+$lang->trade->currency    = 'Currency';
+$lang->trade->trader      = 'Business Entity';
+$lang->trade->customer    = 'Customer';
+$lang->trade->money       = 'Amount';
+$lang->trade->desc        = 'Remarks';
+$lang->trade->product     = 'Product';
+$lang->trade->order       = 'Order';
+$lang->trade->contract    = 'Contract';
+$lang->trade->category    = 'Category';
+$lang->trade->date        = 'Date';
+$lang->trade->handlers    = 'Handler';
+$lang->trade->dept        = 'Department';
+$lang->trade->receipt     = 'Receipt Account';
+$lang->trade->payment     = 'Payment Account';
+$lang->trade->fee         = 'Service Charge';
+$lang->trade->transferIn  = 'transfer In';
+$lang->trade->transferOut = 'transfer Out';
+$lang->trade->schema      = 'Template';
+$lang->trade->importFile  = 'Import';
+$lang->trade->encode      = 'Code';
+$lang->trade->createdBy   = 'Created By';
+$lang->trade->createdDate = 'Created Date';
+$lang->trade->editedBy    = 'Edited By';
+$lang->trade->editedDate  = 'Edited Date';
+$lang->trade->month       = 'Month';
+$lang->trade->uploadFile  = 'Upload';
+$lang->trade->productLine = 'Product Line';
+$lang->trade->area        = 'Customer Region';
+$lang->trade->industry    = 'Customer Industry';
+$lang->trade->level       = 'Customer Level';
+$lang->trade->size        = 'Customer Size';
+
+$lang->trade->create       = 'Bookkeeping';
+$lang->trade->in           = 'Income';
+$lang->trade->out          = 'Expense';
+$lang->trade->invest       = 'Invest';
+$lang->trade->redeem       = 'Redeem';
+$lang->trade->createIn     = '记Income';
+$lang->trade->createOut    = '记Expense';
+$lang->trade->transfer     = 'Transfer';
+$lang->trade->edit         = 'Edit';
+$lang->trade->detail       = 'Details';
+$lang->trade->view         = 'Detail';
+$lang->trade->browse       = 'Account List';
+$lang->trade->delete       = 'Delete';
+$lang->trade->batchCreate  = 'Batch Bookkeeping';
+$lang->trade->batchEdit    = 'Batch Edit';
+$lang->trade->newTrader    = 'Create';
+$lang->trade->import       = 'Import';
+$lang->trade->export       = 'Export';
+$lang->trade->showImport   = 'Confirm Import';
+$lang->trade->fullYear     = 'Annual';
+$lang->trade->quarter      = 'Quarterly';
+$lang->trade->export2Excel = 'Export Excel';
+$lang->trade->compare      = 'Comparative Balance Sheet';
+
+$lang->trade->report = new stdclass();
+$lang->trade->report->common      = 'Report'; 
+$lang->trade->report->annual      = 'Annual Balance Statement'; 
+$lang->trade->report->compare     = 'Comparative Balance Sheet';
+$lang->trade->report->create      = 'Generate Report';
+$lang->trade->report->selectYears = 'Check years';
+$lang->trade->report->undefined   = 'Not defined';
+$lang->trade->report->compareTip  = 'Check two years to compare';
+
+$lang->trade->report->typeList['annual']  = 'Annual Balance Statement'; 
+$lang->trade->report->typeList['compare'] = 'Comparative Balance Sheet'; 
+
+$lang->trade->typeList['in']          = 'Income';
+$lang->trade->typeList['out']         = 'Expense';
+$lang->trade->typeList['transferout'] = 'Transfer Out';
+$lang->trade->typeList['transferin']  = 'Transfer In';
+$lang->trade->typeList['invest']      = 'Invest';
+$lang->trade->typeList['redeem']      = 'Redeem';
+
+$lang->trade->quarters = new stdclass();
+$lang->trade->quarters->Q4 = '10,11,12';
+$lang->trade->quarters->Q3 = '07,08,09';
+$lang->trade->quarters->Q2 = '04,05,06';
+$lang->trade->quarters->Q1 = '01,02,03';
+
+$lang->trade->quarterList['Q1'] = 'Q1';
+$lang->trade->quarterList['Q2'] = 'Q2';
+$lang->trade->quarterList['Q3'] = 'Q3';
+$lang->trade->quarterList['Q4'] = 'Q4';
+
+$lang->trade->monthList['last']  = 'Carried-Over';
+$lang->trade->monthList['01']    = '01';
+$lang->trade->monthList['02']    = '02';
+$lang->trade->monthList['03']    = '03';
+$lang->trade->monthList['04']    = '04';
+$lang->trade->monthList['05']    = '05';
+$lang->trade->monthList['06']    = '06';
+$lang->trade->monthList['07']    = '07';
+$lang->trade->monthList['08']    = '08';
+$lang->trade->monthList['09']    = '09';
+$lang->trade->monthList['10']    = '10';
+$lang->trade->monthList['11']    = '11';
+$lang->trade->monthList['12']    = '12';
+$lang->trade->monthList['total'] = 'Total';
+
+$lang->trade->categoryList['transferin']  = 'Transfer In';
+$lang->trade->categoryList['transferout'] = 'Transfer Out';
+$lang->trade->categoryList['invest']      = 'Invest';
+$lang->trade->categoryList['redeem']      = 'Redeem';
+
+$lang->trade->expenseCategoryList['fee']  = 'Service Charge';
+$lang->trade->expenseCategoryList['loss'] = 'Loss';
+
+$lang->trade->incomeCategoryList['profit'] = 'Profit';
+
+$lang->trade->categoryList = $lang->trade->categoryList + $lang->trade->expenseCategoryList + $lang->trade->incomeCategoryList;
+
+$lang->trade->investCategoryList['profit'] = 'Profit';
+$lang->trade->investCategoryList['loss']   = 'Loss';
+
+$lang->trade->transferCategoryList['transferin']  = 'Transfer In';
+$lang->trade->transferCategoryList['transferout'] = 'Transfer Out';
+
+$lang->trade->objectTypeList['customer'] = 'CustomerExpense';
+$lang->trade->objectTypeList['order']    = 'OrderExpense';
+$lang->trade->objectTypeList['contract'] = 'ContractExpense';
+
+$lang->trade->investTypeList['invest'] = 'Invest';
+$lang->trade->investTypeList['redeem'] = 'Redeem';
+
+$lang->trade->encodeList['gbk']  = 'GBK';
+$lang->trade->encodeList['utf8'] = 'UTF-8';
+
+$lang->trade->notEqual = 'Payment account should not be the same account as receipt account.';
+$lang->trade->feeDesc  = '%s %s Transfer In %s';
+$lang->trade->fileNode = 'csv file only';
+
+$lang->trade->importedFields = array();
+$lang->trade->importedFields['category'] = 'Project';
+$lang->trade->importedFields['type']     = 'Type';
+$lang->trade->importedFields['trader']   = 'Business Entity';
+$lang->trade->importedFields['in']       = 'Income';
+$lang->trade->importedFields['out']      = 'Expense';
+$lang->trade->importedFields['date']     = 'Date';
+$lang->trade->importedFields['category'] = 'Category';
+$lang->trade->importedFields['dept']     = 'Department';
+$lang->trade->importedFields['desc']     = 'Note';
+$lang->trade->importedFields['fee']      = 'Service Charge';
+$lang->trade->importedFields['product']  = 'Product';
+
+$lang->trade->totalIn       = '%s Income %s；';
+$lang->trade->totalOut      = '%s Expense %s；';
+$lang->trade->totalAmount   = '%s Income %s，Expense %s，%s；';
+$lang->trade->totalInvest   = '%s Invest %s，Redeemed %s，Unredeemed %s，%s；';
+$lang->trade->profit        = 'Profit';
+$lang->trade->loss          = 'Loss';
+$lang->trade->balance       = 'Balanced';
+$lang->trade->total         = 'Total';
+
+$lang->trade->noTraderMatch = 'No match Business Entity found. Please add it.';
+$lang->trade->unique        = 'The same account has been added today.';
+$lang->trade->ignore        = 'Ignore';
+
+$lang->trade->chartList['category']    = 'By Category';
+$lang->trade->chartList['dept']        = 'By Department';
+$lang->trade->chartList['area']        = 'By Customer Region';
+$lang->trade->chartList['industry']    = 'By Customer Industry';
+$lang->trade->chartList['level']       = 'By Customer Level';
+$lang->trade->chartList['size']        = 'By Customer Size';
+$lang->trade->chartList['productLine'] = 'By Product Line';
+
+$lang->trade->excel = new stdclass();
+$lang->trade->excel->title = new stdclass();
+$lang->trade->excel->title->depositor = 'Account Balance';
+
+$lang->trade->excel->help = new stdclass();
+$lang->trade->excel->help->depositor = 'This report will only show transactions of incomes and expenses.';
+/* cash/balance */
+$lang->balance = new stdclass();
+
+$lang->balance->common    = 'Balance';
+$lang->balance->id        = 'ID';
+$lang->balance->depositor = 'Account';
+$lang->balance->currency  = 'Currency';
+$lang->balance->money     = 'Amount';
+$lang->balance->desc      = 'Remarks';
+$lang->balance->date      = 'Date';
+
+$lang->balance->create = 'Enter Balance';
+$lang->balance->browse = 'Account Balance';
+$lang->balance->edit   = 'Edit Balance';
+$lang->balance->delete = 'Delete Balance';
+/* crm/contract */
+if(!isset($lang->contract)) $lang->contract = new stdclass();
+$lang->contract->common = 'Contract';
+
+$lang->contract->id            = 'ID';
+$lang->contract->order         = 'Order Contract';
+$lang->contract->customer      = 'Customer';
+$lang->contract->name          = 'Name';
+$lang->contract->code          = 'ContractID';
+$lang->contract->amount        = 'Amount';
+$lang->contract->currency      = 'Currency';
+$lang->contract->all           = 'Contract Total';
+$lang->contract->thisAmount    = 'This Payment';
+$lang->contract->items         = 'Main Items';
+$lang->contract->begin         = 'Begin';
+$lang->contract->end           = 'End';
+$lang->contract->dateRange     = 'Time Frame';
+$lang->contract->delivery      = 'Delivery';
+$lang->contract->deliveredBy   = 'Delivered By';
+$lang->contract->deliveredDate = 'Delivered Date';
+$lang->contract->return        = 'Payment';
+$lang->contract->returnedBy    = 'Paid By';
+$lang->contract->returnedDate  = 'Paid Date';
+$lang->contract->status        = 'Status';
+$lang->contract->contact       = 'Contact';
+$lang->contract->signedBy      = 'Signed By';
+$lang->contract->signedDate    = 'Signed Date';
+$lang->contract->finishedBy    = 'Finished By';
+$lang->contract->finishedDate  = 'Finished Date';
+$lang->contract->canceledBy    = 'CancelLed By';
+$lang->contract->canceledDate  = 'CancelLed Date';
+$lang->contract->createdBy     = 'Created By';
+$lang->contract->createdDate   = 'Created Date';
+$lang->contract->editedBy      = 'Last Edited By';
+$lang->contract->editedDate    = 'Last Edited Date';
+$lang->contract->handlers      = 'Involved';
+$lang->contract->contactedBy   = 'Contacted By';
+$lang->contract->contactedDate = 'Last Contact';
+$lang->contract->nextDate      = 'Next Contact';
+$lang->contract->product       = 'Product';
+$lang->contract->productLine   = 'Product Line';
+
+$lang->contract->browse           = 'View Contract';
+$lang->contract->receive          = 'Payment';
+$lang->contract->cancel           = 'Cancel';
+$lang->contract->view             = 'Details';
+$lang->contract->finish           = 'Finish';
+$lang->contract->record           = 'History';
+$lang->contract->delete           = 'Delete';
+$lang->contract->list             = 'Contract List';
+$lang->contract->create           = 'Create';
+$lang->contract->edit             = 'Edit';
+$lang->contract->setting          = 'Settings';
+$lang->contract->uploadFile       = 'Upload';
+$lang->contract->lifetime         = 'Contract Lifecycle';
+$lang->contract->returnRecords    = 'Payment History';
+$lang->contract->deliveryRecords  = 'Delivery History';
+$lang->contract->completeReturn   = 'FinishPayment';
+$lang->contract->completeDelivery = 'Finish Delivery';
+$lang->contract->editReturn       = 'Edit Payment';
+$lang->contract->editDelivery     = 'Edit Delivery';
+$lang->contract->deleteReturn     = 'Delete Payment';
+$lang->contract->deleteDelivery   = 'Delete Delivery';
+$lang->contract->export           = 'Export';
+$lang->contract->totalReturn      = 'Total Payment';
+
+$lang->contract->deliveryList[]        = '';
+$lang->contract->deliveryList['wait']  = 'Pending';
+$lang->contract->deliveryList['doing'] = 'Delivering';
+$lang->contract->deliveryList['done']  = 'Delivered';
+
+$lang->contract->returnList[]        = '';
+$lang->contract->returnList['wait']  = 'Pending';
+$lang->contract->returnList['doing'] = 'Paying';
+$lang->contract->returnList['done']  = 'Paid';
+
+$lang->contract->statusList[]           = '';
+$lang->contract->statusList['normal']   = 'Normal';
+$lang->contract->statusList['closed']   = 'Finished';
+$lang->contract->statusList['canceled'] = 'Cancelled';
+
+$lang->contract->codeUnitList[]        = '';
+$lang->contract->codeUnitList['Y']     = 'Year';
+$lang->contract->codeUnitList['m']     = 'Month';
+$lang->contract->codeUnitList['d']     = 'Day';
+$lang->contract->codeUnitList['fix']   = 'Fixed Value';
+$lang->contract->codeUnitList['input'] = 'Input Value';
+
+$lang->contract->placeholder = new stdclass();
+$lang->contract->placeholder->real = 'Transcation Amount';
+
+$lang->contract->totalAmount        = 'Total amount of contracts on this page is %s，and paid amount is %s.';
+$lang->contract->returnInfo         = "<p>%s, paid by <strong>%s</strong> and the amount is %s.</p>";
+$lang->contract->deliveryInfo       = "<p>%s is delivered by %s.</p>";
+$lang->contract->deleteReturnInfo   = "%s payment is %s";
+$lang->contract->deleteDeliveryInfo = "%s's delivery.";
+/* crm/customer */
+if(!isset($lang->customer)) $lang->customer = new stdclass();
+
+$lang->customer->common        = 'Customer';
+$lang->customer->id            = 'ID';
+$lang->customer->name          = 'Name';
+$lang->customer->contact       = 'Contact';
+$lang->customer->type          = 'Type';
+$lang->customer->size          = 'Size';
+$lang->customer->industry      = 'Industry';
+$lang->customer->area          = 'Region';
+$lang->customer->status        = 'Status';
+$lang->customer->level         = 'Level';
+$lang->customer->intension     = 'Interest';
+$lang->customer->phone         = 'Phone';
+$lang->customer->email         = 'Email';
+$lang->customer->qq            = 'QQ';
+$lang->customer->site          = 'Website';
+$lang->customer->weibo         = '微博';
+$lang->customer->weixin        = '微信';
+$lang->customer->desc          = 'Intro';
+$lang->customer->public        = 'Public';
+$lang->customer->relation      = 'Relation';
+$lang->customer->createdBy     = 'Created By';
+$lang->customer->createdDate   = 'Created Date';
+$lang->customer->editedBy      = 'Edited By';
+$lang->customer->editedDate    = 'Edited Date';
+$lang->customer->assignedTo    = 'Assigned To';
+$lang->customer->assignedBy    = 'Assigned By';
+$lang->customer->assignedDate  = 'Assigned Date';
+$lang->customer->contactBy     = 'Contact By';
+$lang->customer->contactedDate = 'Last Contact';
+$lang->customer->nextDate      = 'Next Contact';
+$lang->customer->selectContact = 'Select Contact';
+
+$lang->customer->browse      = 'View Customer';
+$lang->customer->view        = 'Customer Details';
+$lang->customer->create      = 'Add';
+$lang->customer->delete      = 'Delete';
+$lang->customer->order       = 'Order';
+$lang->customer->contact     = 'Contact';
+$lang->customer->contract    = 'Contract';
+$lang->customer->address     = 'Address';
+$lang->customer->record      = 'History';
+$lang->customer->assign      = 'Assign';
+$lang->customer->batchAssign = 'Batch Assign';
+$lang->customer->linkContact = 'Link Contact';
+$lang->customer->list        = 'Customer List';
+$lang->customer->edit        = 'Edit';
+$lang->customer->export      = 'Export';
+$lang->customer->basicInfo   = 'Basic Info';
+$lang->customer->moreInfo    = 'More;
+
+$lang->customer->typeList['']            = '';
+$lang->customer->typeList['national']    = 'State-Owned';
+$lang->customer->typeList['collective']  = 'Collective';
+$lang->customer->typeList['corporate']   = 'Corporation';
+$lang->customer->typeList['limited']     = 'Limited Liability';
+$lang->customer->typeList['partnership'] = 'Partnership';
+$lang->customer->typeList['foreign']     = 'Foreig Invested';
+$lang->customer->typeList['personal']    = 'Sole Proprietorship';
+
+$lang->customer->statusList['potential'] = 'Potential';
+$lang->customer->statusList['intension'] = 'Interested';
+$lang->customer->statusList['signed']    = 'Signed';
+$lang->customer->statusList['payed']     = 'Paid';
+$lang->customer->statusList['failed']    = 'Failed';
+
+$lang->customer->sizeNameList[0] = '';
+$lang->customer->sizeNameList[1] = 'Large';
+$lang->customer->sizeNameList[2] = 'Medium';
+$lang->customer->sizeNameList[3] = 'Small';
+$lang->customer->sizeNameList[4] = 'Micro';
+
+$lang->customer->sizeNoteList[0] = '';
+$lang->customer->sizeNoteList[1] = '>100';
+$lang->customer->sizeNoteList[2] = '50-100';
+$lang->customer->sizeNoteList[3] = '10-50';
+$lang->customer->sizeNoteList[4] = '<10';
+
+$lang->customer->levelNameList[]    = '';
+$lang->customer->levelNameList['A'] = 'A';
+$lang->customer->levelNameList['B'] = 'B';
+$lang->customer->levelNameList['C'] = 'C';
+$lang->customer->levelNameList['D'] = 'D';
+$lang->customer->levelNameList['E'] = 'E';
+
+$lang->customer->levelNoteList[]    = '';
+$lang->customer->levelNoteList['A'] = 'Yes and will order within 1 month.';
+$lang->customer->levelNoteList['B'] = 'Yes and will order within 3 months.';
+$lang->customer->levelNoteList['C'] = 'Yes and will order within 6 months.';
+$lang->customer->levelNoteList['D'] = 'Maybe. Possible order after 6 months.';
+$lang->customer->levelNoteList['E'] = 'No';
+
+$lang->customer->relationList['client']   = 'Customer';
+$lang->customer->relationList['provider'] = 'Supplier';
+$lang->customer->relationList['partner']  = 'Partner';
+/* crm/resume */
+if(!isset($lang->resume)) $lang->resume = new stdclass();
+$lang->resume->common   = 'Resume';
+$lang->resume->id       = 'ID';
+$lang->resume->contact  = 'Contact';
+$lang->resume->customer = 'Company';
+$lang->resume->maker    = 'Decision Maker';
+$lang->resume->dept     = 'Department';
+$lang->resume->title    = 'Job Title';
+$lang->resume->address  = 'Company Address';
+$lang->resume->join     = 'Join Date';
+$lang->resume->left     = 'Resign Date';
+$lang->resume->time     = 'Date';
+
+$lang->resume->browse = 'View';
+$lang->resume->delete = 'Delete';
+$lang->resume->create = 'Add';
+$lang->resume->edit   = 'Edit Company Info';
+$lang->resume->leave  = 'Resign';
+
+$lang->resume->showJoin = 'Join：%s';
+$lang->resume->showLeft = ' Resign：%s';
+/* crm/block */
+$lang->block->common   = 'Block';
+$lang->block->num      = 'Count';
+$lang->block->type     = 'Type';
+$lang->block->orderBy  = 'Sorting';
+$lang->block->status   = 'Status';
+$lang->block->actions  = 'Action';
+$lang->block->lblBlock = 'Block';
+
+$lang->block->admin    = 'Manage Block';
+$lang->block->availableBlocks = new stdclass();
+
+$lang->block->availableBlocks->order    = 'Order List';
+//$lang->block->availableBlocks->task    = 'My Task';
+$lang->block->availableBlocks->contract = 'Contract List';
+$lang->block->availableBlocks->customer = 'Customer List';
+
+$lang->block->orderByList = new stdclass();
+
+$lang->block->orderByList->order = array();
+$lang->block->orderByList->order['id_asc']       = 'ID Ascending ';
+$lang->block->orderByList->order['id_desc']      = 'ID Descendng';
+$lang->block->orderByList->order['customer_asc'] = 'Customer';
+$lang->block->orderByList->order['product_asc']  = 'Product';
+
+$lang->block->orderByList->task = array();
+$lang->block->orderByList->task['id_asc']        = 'ID Ascending';
+$lang->block->orderByList->task['id_desc']       = 'ID Descendng';
+$lang->block->orderByList->task['pri_asc']       = 'Priority Ascending';
+$lang->block->orderByList->task['pri_desc']      = 'Priority Descendng';
+$lang->block->orderByList->task['deadline_asc']  = 'Deadline Ascending';
+$lang->block->orderByList->task['deadline_desc'] = 'Deadline Descendng';
+
+$lang->block->orderByList->contract = array();
+$lang->block->orderByList->contract['id_asc']       = 'ID Ascending';
+$lang->block->orderByList->contract['id_desc']      = 'ID Descendng';
+$lang->block->orderByList->contract['customer_asc'] = 'Customer';
+$lang->block->orderByList->contract['amount_asc']   = 'AmountAscending';
+$lang->block->orderByList->contract['amount_desc']  = 'AmountDescendng';
+
+$lang->block->orderByList->customer['id_asc']       = 'ID Ascending';
+$lang->block->orderByList->customer['id_desc']      = 'ID Descendng';
+
+$lang->block->typeList = new stdclass();
+
+$lang->block->typeList->order['assignedTo']   = 'My Work';
+$lang->block->typeList->order['createdBy']    = 'CreatedByMe';
+$lang->block->typeList->order['signedBy']     = 'Signed By Me';
+$lang->block->typeList->order['closedBy']     = 'Closed By Me';
+$lang->block->typeList->order['activatedBy']  = 'Activated By Me';
+$lang->block->typeList->order['normalstatus'] = 'Normal';
+$lang->block->typeList->order['signedstatus'] = 'Signed';
+$lang->block->typeList->order['closedstatus'] = 'Closed';
+
+$lang->block->typeList->contract['returnedBy']     = 'Paid By Me';
+$lang->block->typeList->contract['deliveredBy']    = 'Delivered By Me';
+$lang->block->typeList->contract['createdBy']      = 'Created By Me';
+$lang->block->typeList->contract['canceledBy']     = 'Cancelled By Me';
+$lang->block->typeList->contract['normalstatus']   = 'Normal';
+$lang->block->typeList->contract['closedstatus']   = 'Finished';
+$lang->block->typeList->contract['canceledstatus'] = 'Cancelled';
+
+$lang->block->typeList->customer['today']    = 'Contact Today';
+$lang->block->typeList->customer['thisweek'] = 'Contact This Week';
+/* crm/product */
+if(!isset($lang->product)) $lang->product = new stdclass();
+$lang->product->common      = 'Manage Product';
+$lang->product->id          = 'ID';
+$lang->product->name        = 'Name';
+$lang->product->code        = 'Alias';
+$lang->product->type        = 'Type';
+$lang->product->status      = 'Status';
+$lang->product->line        = 'Product Line';
+$lang->product->desc        = 'Intro';
+$lang->product->roles       = 'Role';
+$lang->product->createdBy   = 'Added By';
+$lang->product->createdDate = 'Added Date';
+$lang->product->editedBy    = 'Edited By';
+$lang->product->editedDate  = 'Edited Date';
+
+$lang->product->index       = 'View Product';
+$lang->product->delete      = 'Delete';
+$lang->product->list        = 'Product List';
+$lang->product->browse      = 'Manage Product';
+$lang->product->create      = 'Add';
+$lang->product->edit        = 'Edit';
+$lang->product->view        = 'Details';
+$lang->product->basicInfo   = 'Basic Info';
+$lang->product->setline     = 'Manage Product Line';
+
+$lang->product->typeList['real']    = 'Physical';
+$lang->product->typeList['service'] = 'Service';
+$lang->product->typeList['virtual'] = 'Virtual';
+
+$lang->product->statusList['developing'] = 'Developing';
+$lang->product->statusList['normal']     = 'Normal';
+$lang->product->statusList['offline']    = 'Off the Shelf';
+
+$lang->product->lineList['default'] = '';
+
+$lang->product->placeholder = new stdclass();
+$lang->product->placeholder->code = 'Product Alias，must be a combination of letters, numbers and underlines.';
+/* crm/address */
+if(!isset($lang->address)) $lang->address = new stdclass();
+$lang->address->common   = 'Manage Address';
+$lang->address->title    = 'Name';
+$lang->address->country  = 'Country';
+$lang->address->province = 'Province';
+$lang->address->city     = 'City';
+$lang->address->area     = 'Region';
+$lang->address->location = 'Location';
+
+$lang->address->browse = 'View Address';
+$lang->address->delete = 'Delete';
+$lang->address->create = 'Add';
+$lang->address->edit   = 'Edit';
+/* crm/leads */
+if(!isset($lang->leads)) $lang->leads = new stdclass();
+
+$lang->leads->common    = 'List';
+$lang->leads->browse    = 'View List';
+$lang->leads->create    = 'Create';
+$lang->leads->edit      = 'Edit';
+$lang->leads->delete    = 'Delete';
+$lang->leads->view      = 'Details';
+$lang->leads->apply     = 'Apply';
+$lang->leads->assign    = 'Assign';
+$lang->leads->transform = 'Confirm';
+$lang->leads->ignore    = 'Ignore';
+$lang->leads->settings  = 'Settings';
+$lang->leads->applyRule = 'Rules';
+
+$lang->leads->applyLimit   = 'Records Limit';
+$lang->leads->applyRemain  = 'Pending Records';
+$lang->leads->ignoreReason = 'Reason';
+
+$lang->leads->tips = new stdclass();
+$lang->leads->tips->apply       = 'Please deal with your contacts of current list.';
+$lang->leads->tips->applyRemain = 'Please request it again when the number of pending list is shorter than this one.';
+
+$lang->leads->applyLimitList['10']  = 10;
+$lang->leads->applyLimitList['20']  = 20;
+$lang->leads->applyLimitList['30']  = 30;
+$lang->leads->applyLimitList['40']  = 40;
+$lang->leads->applyLimitList['50']  = 50;
+$lang->leads->applyLimitList['60']  = 60;
+$lang->leads->applyLimitList['70']  = 70;
+$lang->leads->applyLimitList['80']  = 80;
+$lang->leads->applyLimitList['90']  = 90;
+$lang->leads->applyLimitList['100'] = 100;
+
+$lang->leads->applyRemainList['5']   = 5;
+$lang->leads->applyRemainList['10']  = 10;
+$lang->leads->applyRemainList['15']  = 15;
+$lang->leads->applyRemainList['20']  = 20;
+$lang->leads->applyRemainList['25']  = 25;
+$lang->leads->applyRemainList['30']  = 30;
+/* crm/sales */
+if(!isset($lang->sales)) $lang->sales = new stdclass();
+$lang->sales->common = 'Sales';
+$lang->sales->browse = 'Group List';
+$lang->sales->create = 'Create a Group';
+$lang->sales->edit   = 'Edit';
+$lang->sales->delete = 'Delete';
+
+$lang->sales->id     = 'ID';
+$lang->sales->name   = 'Name';
+$lang->sales->desc   = 'Note';
+$lang->sales->users  = 'User';
+
+$lang->sales->group  = 'Group';
+$lang->sales->priv   = ' Privilege';
+
+$lang->sales->viewTip      = 'View';
+$lang->sales->editTip      = 'Edit';
+$lang->sales->currentGroup = 'Current Group';
+/* crm/contact */
+if(!isset($lang->contact)) $lang->contact = new stdclass();
+$lang->contact->common         = 'Contact';
+$lang->contact->id             = 'ID';
+$lang->contact->customer       = 'Customer';
+$lang->contact->customerName   = 'Name';
+$lang->contact->realname       = 'Real Name';
+$lang->contact->nickname       = 'Nick Name';
+$lang->contact->origin         = ' ';
+$lang->contact->status         = 'Status';
+$lang->contact->avatar         = 'Avatar';
+$lang->contact->birthday       = 'Birthday';
+$lang->contact->gender         = 'Gender';
+$lang->contact->email          = 'Email';
+$lang->contact->skype          = 'Skype';
+$lang->contact->qq             = 'QQ';
+$lang->contact->yahoo          = 'Yahoo';
+$lang->contact->gtalk          = 'GTalk';
+$lang->contact->wangwang       = '旺旺';
+$lang->contact->site           = 'Website';
+$lang->contact->mobile         = 'Mobile';
+$lang->contact->phone          = 'Phone';
+$lang->contact->company        = 'Company';
+$lang->contact->fax            = 'Fax';
+$lang->contact->weibo          = '微博';
+$lang->contact->weixin         = '微信';
+$lang->contact->desc           = 'Intro';
+$lang->contact->createdBy      = 'Created By';
+$lang->contact->createdDate    = 'Created Date';
+$lang->contact->editedBy       = 'Edited By';
+$lang->contact->editedDate     = 'Edited Date';
+$lang->contact->contactedBy    = 'Contacted By';
+$lang->contact->contactedDate  = 'ContactDate';
+$lang->contact->nextDate       = 'Next Contact';
+$lang->contact->assignedTo     = 'Assign To';
+$lang->contact->newCustomer    = 'Create';
+$lang->contact->uploadAvatar   = 'Upload Avatar';
+$lang->contact->changeAvatar   = 'Change Avatar';
+$lang->contact->selectCustomer = 'Select Customer';
+
+$lang->contact->browse         = 'View Contact';
+$lang->contact->block          = 'Contact';
+$lang->contact->delete         = 'Delete Contact';
+$lang->contact->create         = 'Add';
+$lang->contact->list           = 'Contact List';
+$lang->contact->edit           = 'Edit';
+$lang->contact->view           = 'Details';
+$lang->contact->resume         = 'Resume';
+$lang->contact->address        = 'Address';
+$lang->contact->record         = 'History';
+$lang->contact->qrcode         = 'QR Code';
+$lang->contact->vcard          = 'Virtual Card';
+$lang->contact->import         = 'Import';
+$lang->contact->export         = 'Export';
+$lang->contact->exportTemplate = 'Export Template';
+$lang->contact->leads          = 'List';
+$lang->contact->apply          = 'Apply';
+$lang->contact->assign         = 'Assign';
+
+$lang->contact->basicInfo   = 'Basic Info';
+$lang->contact->contactInfo = 'Contact';
+
+$lang->contact->leftAt       = 'has resigned on %s.';
+$lang->contact->failedAvatar = 'Upload failed.';
+$lang->contact->emailTip     = 'Use comma/space to separate Emails.';
+
+$lang->contact->noFile       = 'No file found!';
+$lang->contact->importResult = '%s have been imported. %s import failed and the reason is';
+$lang->contact->failReason   = 'Reason';
+$lang->contact->showImport   = 'Imported Contact';
+$lang->contact->template     = 'Contact Template';
+
+$lang->contact->genderList['m'] = 'Male';
+$lang->contact->genderList['f'] = 'Female';
+$lang->contact->genderList['u'] = '';
+/* crm/order */
+if(!isset($lang->order)) $lang->order = new stdclass();
+$lang->order->common         = 'Order';
+$lang->order->id             = 'ID';
+$lang->order->name           = 'Name';
+$lang->order->product        = 'Product';
+$lang->order->productLine    = 'Product Line';
+$lang->order->customer       = 'Customer';
+$lang->order->contact        = 'Contact';
+$lang->order->team           = 'Team';
+$lang->order->currency       = 'CurrencyType';
+$lang->order->plan           = 'Budget';
+$lang->order->real           = 'Actual';
+$lang->order->planShort      = 'Plan';
+$lang->order->realShort      = 'Actual';
+$lang->order->amount         = 'Amount';
+$lang->order->status         = 'Status';
+$lang->order->createdBy      = 'Created By';
+$lang->order->createdDate    = 'Created Date';
+$lang->order->assignedTo     = 'Assign To';
+$lang->order->assignedBy     = 'Assigned By';
+$lang->order->assignedDate   = 'Assigned Date';
+$lang->order->signedBy       = 'Signed By';
+$lang->order->signedDate     = 'Signed Date';
+$lang->order->payedDate      = 'Paid Date';
+$lang->order->closedBy       = 'Closed By';
+$lang->order->closedDate     = 'Closed Date';
+$lang->order->closedReason   = 'Closed Reason';
+$lang->order->closedNote     = 'Note';
+$lang->order->activatedBy    = 'Activated By';
+$lang->order->activatedDate  = 'Activated Date';
+$lang->order->contactedBy    = 'Contacted By';
+$lang->order->contactedDate  = 'Last Contact';
+$lang->order->nextDate       = 'Next Contact';
+$lang->order->editedBy       = 'Last Edited By';
+$lang->order->editedDate     = 'Last Edited Date';
+$lang->order->createCustomer = 'Create';
+$lang->order->createProduct  = 'Create';
+
+$lang->order->list          = 'Order List';
+$lang->order->browse        = 'View Order';
+$lang->order->create        = 'Create Order';
+$lang->order->record        = 'History';
+$lang->order->edit          = 'EditOrder';
+$lang->order->delete        = 'DeleteOrder';
+$lang->order->view          = 'OrderDetails';
+$lang->order->close         = 'Closed Order';
+$lang->order->sign          = 'Sign';
+$lang->order->assign        = 'Assigned';
+$lang->order->activate      = 'Activate';
+$lang->order->export        = 'Export';
+
+$lang->order->statusList['normal'] = 'Normal';
+$lang->order->statusList['signed'] = 'Signed';
+$lang->order->statusList['closed'] = 'Closed';
+
+$lang->order->closedReasonList['']          = '';
+$lang->order->closedReasonList['payed']     = 'Paid';
+$lang->order->closedReasonList['failed']    = 'Failed!';
+$lang->order->closedReasonList['postponed'] = 'Delayed';
+
+$lang->order->titleLBL  = "%s purchased %s (%s)";
+$lang->order->basicInfo = "Basic Info";
+$lang->order->lifetime  = "Order Lifecyle";
+
+$lang->order->totalAmount   = 'Planned amount of orders on this page is %s and the actual amount is %s ';
+$lang->order->infoBuy       = "%s purchased %s.";
+$lang->order->infoContract  = 'Signed a contract %s.';
+$lang->order->infoAmount    = 'Planned amount is %s and the actual amount is %s ';
+$lang->order->infoContacted = 'Last Contact：%s ';
+$lang->order->infoNextDate  = 'Next Contact：%s';
+$lang->order->deny          = 'You have no previlege to create %s.';
+/* oa/refund */
+if(!isset($lang->refund)) $lang->refund = new stdclass();
+$lang->refund->common       = 'Reimburse';
+$lang->refund->create       = 'Create';
+$lang->refund->browse       = 'Reimburse List';
+$lang->refund->personal     = 'My Reimburse';
+$lang->refund->company      = 'All';
+$lang->refund->todo         = 'Pending';
+$lang->refund->browseReview = 'Review List';
+$lang->refund->edit         = 'Edit';
+$lang->refund->view         = 'View';
+$lang->refund->delete       = 'Delete';
+$lang->refund->review       = 'Review';
+$lang->refund->detail       = 'Details';
+$lang->refund->reimburse    = 'Bookkeeping';
+$lang->refund->cancel       = 'Cancel';
+$lang->refund->commit       = 'Submit';
+$lang->refund->settings     = 'Settings';
+$lang->refund->setReviewer  = 'Reviewer Settings';
+$lang->refund->setCategory  = 'Category Settings';
+$lang->refund->setDepositor = 'Account Settings';
+$lang->refund->setRefundBy  = 'Reimbursee Settings';
+$lang->refund->export       = 'Export';
+
+$lang->refund->id               = 'ID';
+$lang->refund->name             = 'Name';
+$lang->refund->category         = 'Category';
+$lang->refund->date             = 'Date';
+$lang->refund->money            = 'Amount';
+$lang->refund->reviewMoney      = 'Reimburse Limit';
+$lang->refund->currency         = 'Currency';
+$lang->refund->desc             = 'Note';
+$lang->refund->files            = 'File';
+$lang->refund->status           = 'Status';
+$lang->refund->createdBy        = 'Created By';
+$lang->refund->createdDate      = 'Created Date';
+$lang->refund->editedBy         = 'Edited By';
+$lang->refund->editedDate       = 'Edited Date';
+$lang->refund->firstReviewer    = 'First Reviewer';
+$lang->refund->firstReviewDate  = 'First Review Date';
+$lang->refund->secondReviewer   = 'Second Reviewer';
+$lang->refund->secondReviewDate = 'Second Review Date';
+$lang->refund->refundBy         = 'Reimburse By';
+$lang->refund->refundDate       = 'Reimburse Date';
+$lang->refund->baseInfo         = 'Basic Info';
+$lang->refund->reason           = 'Reason';
+$lang->refund->reviewer         = 'Reviewer';
+$lang->refund->related          = 'Involved';
+$lang->refund->depositor        = 'Account';
+
+$lang->refund->statusList['draft']  = 'Draft';
+$lang->refund->statusList['wait']   = 'Pending';
+$lang->refund->statusList['doing']  = 'Reviewing';
+$lang->refund->statusList['pass']   = 'Pass';
+$lang->refund->statusList['reject'] = 'Reject';
+$lang->refund->statusList['finish'] = 'Finish';
+
+$lang->refund->reviewStatusList['pass']   = 'Pass';
+$lang->refund->reviewStatusList['reject'] = 'Reject';
+
+$lang->refund->reviewAllStatusList['allpass']   = 'Pass All';
+$lang->refund->reviewAllStatusList['allreject'] = 'Reject All';
+
+$lang->refund->descTip = "%s has requested Reimbursement %s.";
+
+$lang->refund->uniqueReviewer    = 'First Reviewer and Second ReviewER should be different.';
+$lang->refund->createTradeTip    = 'Link to Bookkeeping?';
+$lang->refund->secondReviewerTip = 'Secondary Review requires to set Second Reviewer first.';
+$lang->refund->correctMoney      = 'Reimbursemwnt should not be more than the requested amount';
+$lang->refund->categoryTips      = 'No Expense Category has been set yet.';
+$lang->refund->setExpense        = 'Category Settings';
+$lang->refund->moneyTip          = 'Reimbursement above Limit requires Second Reviewer to review. Otherwise only First Reviewer is required to review it.';
+
+$lang->refund->settings = new stdclass();
+$lang->refund->settings->setReviewer  = "Reviewer|refund|setreviewer";
+$lang->refund->settings->setCategory  = "Category|refund|setcategory";
+$lang->refund->settings->setDepositor = "Account|refund|setdepositor";
+$lang->refund->settings->setRefundBy  = "Reimbursee|refund|setrefundby";
+/* oa/block */
+$lang->block->common   = 'Block';
+$lang->block->announce = 'Announcement';
+$lang->block->lblBlock = 'Block';
+$lang->block->admin    = 'Manage Block';
+$lang->block->type     = 'Type';
+$lang->block->waitTask = 'Unfinished';
+$lang->block->doneTask = 'Finished';
+$lang->block->rate     = 'Status';
+
+$lang->block->availableBlocks = new stdclass();
+$lang->block->availableBlocks->announce = 'Announcement';
+$lang->block->availableBlocks->task     = 'Task List';
+$lang->block->availableBlocks->project  = 'Project List';
+$lang->block->availableBlocks->attend   = 'Calendar';
+
+$lang->block->num     = 'Quantity';
+$lang->block->orderBy = 'Sorting';
+$lang->block->status  = 'Status';
+$lang->block->asc     = 'Ascending';
+$lang->block->desc    = 'Descendng';
+$lang->block->actions = 'Action';
+
+$lang->block->orderByList = new stdclass();;
+$lang->block->orderByList->task = array();
+$lang->block->orderByList->task['id_asc']        = 'ID Ascending';
+$lang->block->orderByList->task['id_desc']       = 'ID Descendng';
+$lang->block->orderByList->task['pri_asc']       = 'Priority Ascending';
+$lang->block->orderByList->task['pri_desc']      = 'Priority Descendng';
+$lang->block->orderByList->task['deadline_asc']  = 'Deadline Ascending';
+$lang->block->orderByList->task['deadline_desc'] = 'Deadline Descendng';
+
+$lang->block->orderByList->project = array();
+$lang->block->orderByList->project['createdDate_asc']  = 'Created Date Ascending';
+$lang->block->orderByList->project['createdDate_desc'] = 'Created Date Descendng';
+$lang->block->orderByList->project['begin_asc']        = 'Begin Date Ascending';
+$lang->block->orderByList->project['begin_desc']       = 'Begin Date Descendng';
+$lang->block->orderByList->project['end_asc']          = 'End Date Ascending';
+$lang->block->orderByList->project['end_desc']         = 'End Date Descendng';
+
+$lang->block->typeList->task['assignedTo'] = 'My Work';
+$lang->block->typeList->task['createdBy']  = 'CreatedByMe';
+$lang->block->typeList->task['finishedBy'] = 'FinishedByMe';
+$lang->block->typeList->task['closedBy']   = 'ClosedByMe';
+$lang->block->typeList->task['canceledBy'] = 'CancelledByMe';
+
+$lang->block->statusList->project['involved'] = 'Involved Me';
+$lang->block->statusList->project['doing']    = 'Ongoing';
+$lang->block->statusList->project['finished'] = 'Finished';
+$lang->block->statusList->project['suspend']  = 'Suspended';
+/* oa/leave */
+if(!isset($lang->leave)) $lang->leave = new stdclass();
+$lang->leave->common = 'Leave';
+$lang->leave->browse = 'Leave List';
+$lang->leave->create = 'Create';
+$lang->leave->edit   = 'Edit';
+$lang->leave->delete = 'Delete';
+$lang->leave->review = 'Review';
+$lang->leave->cancel = 'Cancel';
+$lang->leave->commit = 'Submit';
+$lang->leave->export = 'Export';
+
+$lang->leave->personal     = 'My Leave';
+$lang->leave->browseReview = 'Review List';
+$lang->leave->company      = 'All Leave';
+
+$lang->leave->id           = 'ID';
+$lang->leave->year         = 'Year';
+$lang->leave->begin        = 'Start';
+$lang->leave->end          = 'End';
+$lang->leave->start        = 'Begin Date';
+$lang->leave->finish       = 'End Date';
+$lang->leave->hours        = 'Total';
+$lang->leave->type         = 'Type';
+$lang->leave->desc         = 'Note';
+$lang->leave->status       = 'Status';
+$lang->leave->createdBy    = 'Created By';
+$lang->leave->createdDate  = 'Created Date';
+$lang->leave->reviewedBy   = 'Reviewrt';
+$lang->leave->reviewedDate = 'Review Date';
+$lang->leave->date         = 'Date';
+$lang->leave->time         = 'Date';
+
+$lang->leave->typeList['affairs']   = 'Casual Leave';
+$lang->leave->typeList['sick']      = 'Sick Leave';
+$lang->leave->typeList['annual']    = 'Annual Leave';
+$lang->leave->typeList['lieu']      = 'Earned Leave';
+$lang->leave->typeList['home']      = '探亲假';
+$lang->leave->typeList['marry']     = 'Marriage Leave';
+$lang->leave->typeList['maternity'] = 'Maternity Leave';
+
+$lang->leave->paid   = 'Paid Leave';
+$lang->leave->unpaid = 'Unpaid Leave';
+
+$lang->leave->statusList['draft']  = 'Draft';
+$lang->leave->statusList['wait']   = 'Pending';
+$lang->leave->statusList['pass']   = 'Pass';
+$lang->leave->statusList['reject'] = 'Reject';
+
+$lang->leave->denied = 'Access denied.';
+$lang->leave->unique = '%s has leave records.';
+
+$lang->leave->confirmReview['pass']   = 'Do you want to pass it?';
+$lang->leave->confirmReview['reject'] = 'Do you want to reject it?';
+
+$lang->leave->hoursTip = 'Hour';
+/* oa/announce */
+$lang->announce->common = 'Announce';
+$lang->announce->browse = 'Announcement ';
+$lang->announce->create = 'Create';
+$lang->announce->edit   = 'Edit';
+$lang->announce->view   = 'View';
+$lang->announce->delete = 'Delete';
+/* oa/trip */
+if(!isset($lang->trip)) $lang->trip = new stdclass();
+$lang->trip->common = 'Business Trip';
+$lang->trip->browse = 'List';
+$lang->trip->create = 'Create';
+$lang->trip->edit   = 'Edit';
+$lang->trip->delete = 'Delete';
+
+$lang->trip->personal   = 'My Leave';
+$lang->trip->department = 'Department';
+$lang->trip->company    = 'Company';
+
+$lang->trip->id          = 'ID';
+$lang->trip->name        = 'Name';
+$lang->trip->begin       = 'Begin';
+$lang->trip->end         = 'End';
+$lang->trip->from        = 'From';
+$lang->trip->to          = 'To';
+$lang->trip->desc        = 'Reason';
+$lang->trip->createdBy   = 'Created By';
+$lang->trip->createdDate = 'Created Date';
+$lang->trip->date        = 'Date';
+$lang->trip->time        = 'Date';
+
+$lang->trip->denied = 'Access denied.';
+$lang->trip->unique = '%s has records of business trip.';
+/* oa/holiday */
+if(!isset($lang->holiday)) $lang->holiday = new stdclass();
+$lang->holiday->common = 'Holiday';
+$lang->holiday->browse = 'View ';
+$lang->holiday->create = 'Create';
+$lang->holiday->edit   = 'Edit';
+$lang->holiday->delete = 'Delete';
+
+$lang->holiday->id    = 'ID';
+$lang->holiday->name  = 'Name';
+$lang->holiday->desc  = 'Note';
+$lang->holiday->begin = 'Begin';
+$lang->holiday->end   = 'End';
+
+$lang->holiday->holiday = 'Holiday';
+$lang->holiday->working = '补班';
+/* oa/attend */
+if(!isset($lang->attend)) $lang->attend = new stdclass();
+$lang->attend->common       = 'Attendance';
+$lang->attend->personal     = 'My Attendance';
+$lang->attend->department   = 'Department Attendance';
+$lang->attend->company      = 'Company Attendance';
+$lang->attend->detail       = 'Details';
+$lang->attend->edit         = 'Make Up';
+$lang->attend->edited       = 'Maked Up';
+$lang->attend->leave        = 'Leave';
+$lang->attend->leaved       = '已Leave';
+$lang->attend->trip         = 'Trip';
+$lang->attend->overtime     = 'Overtime';
+$lang->attend->overtimed    = 'Overtimed';
+$lang->attend->review       = 'Makeup Review';
+$lang->attend->settings     = 'Settings';
+$lang->attend->export       = 'Export';
+$lang->attend->stat         = 'Stats';
+$lang->attend->saveStat     = 'Save ';
+$lang->attend->exportStat   = 'Export';
+$lang->attend->detail       = 'Details';
+$lang->attend->exportDetail = 'Export';
+$lang->attend->browseReview = 'MakeupList';
+
+$lang->attend->id            = 'ID';
+$lang->attend->date          = 'Date';
+$lang->attend->account       = 'User';
+$lang->attend->signIn        = 'Sign In';
+$lang->attend->signOut       = 'Sign Out';
+$lang->attend->status        = 'Status';
+$lang->attend->ip            = 'IP';
+$lang->attend->device        = 'Device';
+$lang->attend->desc          = 'Note';
+$lang->attend->dayName       = 'Day';
+$lang->attend->report        = 'Attendance Report';
+$lang->attend->AM            = 'AM';
+$lang->attend->PM            = 'PM';
+$lang->attend->ipList        = 'IP List';
+$lang->attend->noAttendUsers = 'No Attendance Required';
+
+$lang->attend->user          = 'User';
+$lang->attend->begin         = 'Begin';
+$lang->attend->end           = 'End';
+$lang->attend->search        = 'Search';
+
+$lang->attend->manualIn     = 'Clockin Date';
+$lang->attend->manualOut    = 'Clockout Date';
+$lang->attend->reason       = 'Reason';
+$lang->attend->reviewStatus = 'Make UpStatus';
+$lang->attend->reviewedBy   = 'Reviewer';
+$lang->attend->reviewedDate = 'Review Date';
+$lang->attend->deserveDays  = 'Required';
+$lang->attend->actualDays   = 'Actual';
+
+$lang->attend->statusList['normal']   = 'Normal';
+$lang->attend->statusList['late']     = 'Late';
+$lang->attend->statusList['early']    = 'Leave Early';
+$lang->attend->statusList['both']     = 'Late+Leave Early';
+$lang->attend->statusList['absent']   = 'Absent';
+$lang->attend->statusList['leave']    = 'Leave';
+$lang->attend->statusList['trip']     = 'Business Trip';
+$lang->attend->statusList['rest']     = 'Day Off';
+$lang->attend->statusList['overtime'] = 'Overtime';
+
+$lang->attend->abbrStatusList['normal']   = '√';
+$lang->attend->abbrStatusList['late']     = 'Late';
+$lang->attend->abbrStatusList['early']    = 'Early';
+$lang->attend->abbrStatusList['both']     = 'Late+Early';
+$lang->attend->abbrStatusList['absent']   = 'Absent';
+$lang->attend->abbrStatusList['leave']    = 'Leave';
+$lang->attend->abbrStatusList['trip']     = 'Trip';
+$lang->attend->abbrStatusList['rest']     = 'Off';
+$lang->attend->abbrStatusList['overtime'] = 'OT';
+
+$lang->attend->markStatusList['normal']   = '√';
+$lang->attend->markStatusList['late']     = '=';
+$lang->attend->markStatusList['early']    = '>';
+$lang->attend->markStatusList['both']     = '=>';
+$lang->attend->markStatusList['absent']   = 'x';
+$lang->attend->markStatusList['leave']    = '!';
+$lang->attend->markStatusList['trip']     = '$';
+$lang->attend->markStatusList['rest']     = '~';
+$lang->attend->markStatusList['overtime'] = '+';
+
+$lang->attend->reasonList['normal'] = 'Normal';
+$lang->attend->reasonList['trip']   = 'Trip';
+$lang->attend->reasonList['leave']  = 'Leave';
+
+$lang->attend->reviewStatusList['wait']   = 'Pending';
+$lang->attend->reviewStatusList['pass']   = 'Pass';
+$lang->attend->reviewStatusList['reject'] = 'Reject';
+
+$lang->attend->inSuccess  = 'Clocked In';
+$lang->attend->inFail     = 'Clockin Failed';
+$lang->attend->outSuccess = 'Clocked Out';
+$lang->attend->outFail    = 'Clockout Gailed';
+
+$lang->attend->signInLimit  = 'Latest Clockin';
+$lang->attend->signOutLimit = 'Earliest Clockout';
+$lang->attend->workingDays  = 'Work Days';
+$lang->attend->workingHours = 'Work Hours';
+$lang->attend->mustSignOut  = 'Clockout Required';
+
+$lang->attend->workingDaysList['5']  = "Mon-Fri";
+$lang->attend->workingDaysList['6']  = "Mon-Sat";
+$lang->attend->workingDaysList['7']  = "Mon-Sun";
+$lang->attend->workingDaysList['12'] = "Sun-Thu";
+$lang->attend->workingDaysList['13'] = "Sun-Fri";
+
+$lang->attend->mustSignOutList['yes'] = 'Yes';
+$lang->attend->mustSignOutList['no']  = 'No';
+
+$lang->attend->weeks = array('Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6');
+
+$lang->attend->notice['today']    = "<p>You attendance status today is %s. <a href='%s' %s>去Make Up</a>.</p>";
+$lang->attend->notice['yestoday'] = "<p>You attendance status today is %s. <a href='%s' %s>去Make Up</a>.</p>";
+$lang->attend->notice['absent']   = "N/A";
+
+$lang->attend->confirmReview['pass']   = 'Do you want to pass it?';
+$lang->attend->confirmReview['reject'] = 'Do you want to reject it?';
+
+$lang->attend->settings   = 'Attendance Settings';
+$lang->attend->setManager = 'Department Manager Settings';
+
+$lang->attend->note = new stdClass();
+$lang->attend->note->ip       = "IP addresses allowed to clockin, use comma to separate them. IP segment is OK, such as 192.168.1.*";
+$lang->attend->note->allip    = 'Unrestricted';
+$lang->attend->note->IPDenied = 'IP is restricted. Clockin failed.';
+
+$lang->attend->h = 'Hour';
+$lang->attend->m = 'Minute';
+$lang->attend->s = 'Second';
+/* oa/doc */
+if(!isset($lang->doc)) $lang->doc = new stdclass();
+$lang->doc->common         = 'Document';
+$lang->doc->id             = 'ID';
+$lang->doc->product        = 'Affiliated Product';
+$lang->doc->project        = 'Affiliated Project';
+$lang->doc->lib            = 'Affiliated DocLib';
+$lang->doc->category       = 'Affiliated Category';
+$lang->doc->title          = 'Title';
+$lang->doc->digest         = 'Summary';
+$lang->doc->comment        = 'Note';
+$lang->doc->type           = 'Type';
+$lang->doc->content        = 'Text';
+$lang->doc->keywords       = 'Keywords';
+$lang->doc->url            = 'URL';
+$lang->doc->files          = 'File';
+$lang->doc->views          = 'Views';
+$lang->doc->createdBy      = 'Created By';
+$lang->doc->createdDate    = 'Created Date';
+$lang->doc->editedBy       = 'Edited By';
+$lang->doc->editedDate     = 'Edited Date';
+$lang->doc->basicInfo      = 'Basic Info';
+$lang->doc->deleted        = 'Deleted';
+
+$lang->doc->index          = 'Home';
+$lang->doc->create         = 'Create';
+$lang->doc->edit           = 'Edit';
+$lang->doc->delete         = 'Delete';
+$lang->doc->browse         = 'Doc List';
+$lang->doc->view           = 'Details';
+$lang->doc->manageType     = 'Manage Category';
+
+$lang->doc->libName        = 'DocLib Name';
+$lang->doc->createLib      = 'Create';
+$lang->doc->editLib        = 'Edit';
+$lang->doc->deleteLib      = 'Delete';
+
+$lang->doc->allProduct     = 'AllProduct';
+$lang->doc->allProject     = 'AllProject';
+
+$lang->doc->private        = 'Private';
+$lang->doc->users          = 'Authorized User';
+$lang->doc->groups         = 'Authorized Group';
+
+$lang->doc->systemLibs = array();
+//$lang->doc->systemLibs['product'] = 'ProductDocLib';
+//$lang->doc->systemLibs['project'] = 'ProjectDocLib';
+
+$lang->doc->types['file'] = 'File';
+$lang->doc->types['url']  = 'URL';
+$lang->doc->types['text'] = 'Website';
+
+$lang->doc->confirmDelete      = "Do you want to delete it?";
+$lang->doc->confirmDeleteLib   = "Do you want to delete it?";
+$lang->doc->errorEditSystemDoc = "Do not edit system doclib.";
+
+$lang->doc->placeholder = new stdclass();
+$lang->doc->placeholder->url = 'Related URL';
+
+$lang->doc->notFound    = 'Not Found';
+$lang->doc->libNotFound = 'Not Found';
+/* oa/project */
+if(!isset($lang->project)) $lang->project = new stdclass();
+$lang->project->common     = 'Project';
+$lang->project->browse     = 'Project List';
+$lang->project->index      = 'Home';
+$lang->project->create     = "Create";
+$lang->project->edit       = 'Edit';
+$lang->project->view       = 'Details';
+$lang->project->finish     = 'Finish';
+$lang->project->delete     = 'Delete';
+$lang->project->enter      = 'Enter';
+$lang->project->suspend    = 'Suspend';
+$lang->project->activate   = 'Activate';
+$lang->project->mine       = 'Mine:';
+$lang->project->other      = 'Other：';
+$lang->project->deleted    = 'Deleted';
+$lang->project->finished   = 'Finished';
+$lang->project->suspended  = 'Suspended';
+$lang->project->noMatched  = 'No project including "%s"  found.';
+$lang->project->search     = 'Search';
+$lang->project->import     = 'Import';
+$lang->project->importTask = 'Import Task';
+$lang->project->role       = 'Role';
+$lang->project->project    = 'Project';
+$lang->project->dateRange  = 'Time Frame';
+
+$lang->project->id          = 'ID';
+$lang->project->name        = 'ProjectName';
+$lang->project->status      = 'Status';
+$lang->project->desc        = 'ProjectNote';
+$lang->project->begin       = 'Begin';
+$lang->project->manager     = 'Manager';
+$lang->project->member      = 'Team';
+$lang->project->end         = 'End';
+$lang->project->createdBy   = 'Created By';
+$lang->project->createdDate = 'Created Date';
+$lang->project->fromproject = 'Affiliated Project';
+$lang->project->whitelist   = 'Whitelist';
+
+$lang->project->confirm = new stdclass();
+$lang->project->confirm->activate = 'Do you want to activate this Project?';
+$lang->project->confirm->suspend  = 'Do you want to suspend this Project?';
+
+$lang->project->activateSuccess = 'Activated';
+$lang->project->suspendSuccess  = 'Suspended';
+$lang->project->selectProject   = 'Select';
+
+$lang->project->note = new stdclass();
+$lang->project->note->rate = 'By Man-Hour';
+$lang->project->note->task = 'Task Count';
+
+$lang->project->statusList['doing']    = 'Ongoing';
+$lang->project->statusList['finished'] = 'Finished';
+$lang->project->statusList['suspend']  = 'Suspended';
+
+$lang->project->roleList['member']  = 'Default';
+$lang->project->roleList['senior']  = 'Admin';
+$lang->project->roleList['limited'] = 'Limited';
+
+$lang->project->whitelistTip        = 'Projects and Tasks accessible to Whitelist members';
+$lang->project->roleTip             = "Admin has all privileges，default members cannot delete tasks, and limited memners can only act on their own tasks.";
+$lang->project->roleTips['senior']  = "Admin：view, edit, and delete all tasks.";
+$lang->project->roleTips['member']  = "Default：view and edit all tasks, and delete their own tasks.";
+$lang->project->roleTips['limited'] = "Limited：view and edit their own tasks.";
+/* oa/overtime */
+if(!isset($lang->overtime)) $lang->overtime = new stdclass();
+$lang->overtime->common = 'Overtime';
+$lang->overtime->browse = 'List';
+$lang->overtime->create = 'Create';
+$lang->overtime->edit   = 'Edit';
+$lang->overtime->view   = 'Details';
+$lang->overtime->delete = 'Delete';
+$lang->overtime->review = 'Review';
+$lang->overtime->cancel = 'Cancel';
+$lang->overtime->commit = 'Submit';
+$lang->overtime->export = 'Import';
+
+$lang->overtime->personal     = 'My Overtime';
+$lang->overtime->browseReview = 'Review List';
+$lang->overtime->company      = 'All Overtime';
+
+$lang->overtime->id           = 'ID';
+$lang->overtime->year         = 'Year';
+$lang->overtime->begin        = 'Begin';
+$lang->overtime->end          = 'End';
+$lang->overtime->start        = 'Start Date';
+$lang->overtime->finish       = 'Finish Date';
+$lang->overtime->hours        = 'Total';
+$lang->overtime->type         = 'Type';
+$lang->overtime->desc         = 'Note';
+$lang->overtime->status       = 'Status';
+$lang->overtime->createdBy    = 'Created By';
+$lang->overtime->createdDate  = 'Created Date';
+$lang->overtime->reviewedBy   = 'Reviewer';
+$lang->overtime->reviewedDate = 'Review Date';
+$lang->overtime->date         = 'Date';
+$lang->overtime->time         = 'Date';
+
+$lang->overtime->typeList['time']    = 'Over Time';
+$lang->overtime->typeList['rest']    = 'Day Off';
+$lang->overtime->typeList['holiday'] = 'Holidays';
+$lang->overtime->typeList['lieu']    = 'Switch';
+
+$lang->overtime->statusList['draft']  = 'Draft';
+$lang->overtime->statusList['wait']   = 'Pending';
+$lang->overtime->statusList['pass']   = 'Pass';
+$lang->overtime->statusList['reject'] = 'Reject';
+
+$lang->overtime->denied = 'Access denied.';
+$lang->overtime->unique = '%s has Overtime record.';
+
+$lang->overtime->confirmReview['pass']   = 'Do you want to pass it?';
+$lang->overtime->confirmReview['reject'] = 'Do you want to reject it?';
+
+$lang->overtime->hoursTip  = 'Hour';
+$lang->overtime->baseInfo = 'Basic Info';
+/* sys/search */
+if(!isset($lang->search)) $lang->search = new stdclass();
+$lang->search->common        = 'Search';
+$lang->search->reset         = 'Reset';
+$lang->search->more          = 'More';
+$lang->search->lite          = 'Light';
+$lang->search->saveQuery     = 'Save';
+$lang->search->myQuery       = 'My Query';
+$lang->search->group1        = 'Group 1';
+$lang->search->group2        = 'Group 2';
+$lang->search->buildForm     = 'Query List';
+$lang->search->buildQuery    = 'Execute';
+$lang->search->saveQuery     = 'Save';
+$lang->search->deleteQuery   = 'Delete';
+$lang->search->setQueryTitle = 'Please enter query title (save before your start query)：';
+$lang->search->storyTitle    = 'Story Name';
+$lang->search->taskTitle     = 'Task Name';
+$lang->search->select        = 'Story/Task Filter';
+$lang->search->me            = 'Self';
+
+$lang->search->operators['=']          = '=';
+$lang->search->operators['!=']         = '!=';
+$lang->search->operators['>']          = '>';
+$lang->search->operators['>=']         = '>=';
+$lang->search->operators['<']          = '<';
+$lang->search->operators['<=']         = '<=';
+$lang->search->operators['include']    = 'include';
+$lang->search->operators['between']    = 'between';
+$lang->search->operators['notinclude'] = 'exclude';
+$lang->search->operators['belong']     = 'affiliate';
+
+$lang->search->andor['and']         = 'AND';
+$lang->search->andor['or']          = 'OR';
+
+$lang->search->null = 'Null';
+
+$lang->userquery = new stdclass();
+$lang->userquery->title     = 'Title';
+$lang->userquery->myQueries = 'My Query';
+$lang->userquery->execut    = 'Execute';
+$lang->userquery->delete    = 'Delete';
+/* sys/tree */
+$lang->tree->common        = "Category";
+$lang->tree->add           = "Add";
+$lang->tree->edit          = "Edit";
+$lang->tree->children      = "Add a Child";
+$lang->tree->delete        = "Delete";
+$lang->tree->browse        = "Region, Industry, Income, Expense,Forum, Blog and Department Settings";
+$lang->tree->manage        = "Manage Category";
+$lang->tree->fix           = "Fix";
+$lang->tree->merge         = "Merge";
+
+$lang->tree->noCategories  = 'You do not have a Category. Please Add a Category first.';
+$lang->tree->noBoards      = 'You do not have a Board. Please Add a Board first.';
+$lang->tree->timeCountDown = "In <strong id='countDown'>3</strong> sec you will be directed to %s.";
+$lang->tree->redirect      = 'Redirect Now';
+$lang->tree->aliasRepeat   = 'Alias: %s exists. No duplicated ones, please.';
+$lang->tree->aliasConflict = 'Alias: %s is conflicted with system block. Do not add it.';
+$lang->tree->hasChildren   = 'This board has s child board. You cannot delete it.';
+$lang->tree->hasThreads    = 'This board has threads. You cannot delete it.';
+$lang->tree->confirmDelete = "Do you want to delete it?";
+$lang->tree->successFixed  = "Fixed!";
+$lang->tree->asParent      = '[%s] has child category. You cannot merge it.';
+
+$lang->category = new stdclass();
+$lang->category->common   = 'Category';
+$lang->category->name     = 'Name';
+$lang->category->alias    = 'Alias';
+$lang->category->parent   = 'Parent Category';
+$lang->category->desc     = 'Note';
+$lang->category->keywords = 'Keywords';
+$lang->category->children = 'Child Category';
+$lang->category->rights   = 'Privilege';
+$lang->category->users    = 'Authorized User';
+$lang->category->groups   = 'Authorized Group';
+$lang->category->origin   = 'Source';
+$lang->category->target   = 'Target';
+
+$lang->category->majorList['1'] = 'Core Business Income';
+$lang->category->majorList['2'] = 'Non-Core Business Income';
+$lang->category->majorList['3'] = 'Core Business Cost';
+$lang->category->majorList['4'] = 'Non-Core Business Cost';
+
+$lang->area = new stdclass();
+$lang->area->common   = 'Region';
+$lang->area->name     = 'Name';
+$lang->area->alias    = 'Alias';
+$lang->area->parent   = 'Parent Region';
+$lang->area->desc     = 'Note';
+$lang->area->keywords = 'Keywords';
+$lang->area->children = "Child Region";
+
+$lang->industry = new stdclass();
+$lang->industry->common   = 'Industry';
+$lang->industry->name     = 'Name';
+$lang->industry->alias    = 'Alias';
+$lang->industry->parent   = 'Parent Industry';
+$lang->industry->desc     = 'Note';
+$lang->industry->keywords = 'Keywords';
+$lang->industry->children = "Child Industry";
+
+$lang->in = new stdclass();
+$lang->in->common   = 'Income Category';
+$lang->in->name     = 'Name';
+$lang->in->alias    = 'Alias';
+$lang->in->parent   = 'Parent Category';
+$lang->in->desc     = 'Note';
+$lang->in->keywords = 'Keywords';
+$lang->in->children = 'Child Category';
+$lang->in->merge    = 'Merge';
+
+$lang->out = new stdclass();
+$lang->out->common   = 'Expense Category';
+$lang->out->name     = 'Name';
+$lang->out->alias    = 'Alias';
+$lang->out->parent   = 'Parent Category';
+$lang->out->desc     = 'Note';
+$lang->out->keywords = 'Keywords';
+$lang->out->children = 'Child Category';
+$lang->out->rights   = 'Privilege';
+$lang->out->refund   = 'Reimburse Category';
+$lang->out->merge    = 'Merge';
+
+$lang->out->refundList[1] = 'Yes';
+$lang->out->refundList[0] = 'No';
+
+$lang->board = new stdclass();
+$lang->board->common     = 'Board';
+$lang->board->name       = 'Board';
+$lang->board->alias      = 'Alias';
+$lang->board->parent     = 'Parent Board';
+$lang->board->desc       = 'Note';
+$lang->board->keywords   = 'Keywords';
+$lang->board->children   = "Child Board";
+$lang->board->readonly   = 'Privilege';
+$lang->board->moderators = 'Moderator';
+$lang->board->users      = 'Authorized User';
+$lang->board->groups     = 'Authorized Group';
+
+$lang->board->readonlyList[0] = 'Open';
+$lang->board->readonlyList[1] = 'Read Only';
+
+$lang->board->placeholder = new stdclass();
+$lang->board->placeholder->moderators  = 'User Names, user comma to separate them.';
+$lang->board->placeholder->setChildren = 'A Child Board IS required before you set Forum. ';
+/* sys/block */
+$lang->block->common = 'Block';
+$lang->block->name   = 'Name';
+$lang->block->style  = 'Style';
+$lang->block->grid   = 'Grid';
+$lang->block->color  = 'Color';
+
+$lang->block->lblEntry = 'Entry';
+$lang->block->lblBlock = 'Block';
+$lang->block->lblRss   = 'RSS';
+$lang->block->lblNum   = 'Number';
+$lang->block->lblHtml  = 'HTML';
+
+$lang->block->params = new stdclass();
+$lang->block->params->name  = 'Name';
+$lang->block->params->value = 'Value';
+
+$lang->block->createBlock        = 'Add';
+$lang->block->editBlock          = 'Edit';
+$lang->block->ordersSaved        = 'Sorting saved.';
+$lang->block->confirmRemoveBlock = 'Do you want to remove Block【{0}】?';
+
+$lang->block->allEntries  = 'All';
+$lang->block->dynamic     = 'Dynamic';
+$lang->block->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s'>%s</a>.";
+
+$lang->block->default['oa']['1']['title'] = 'Calendar';
+$lang->block->default['oa']['1']['block'] = 'attend';
+$lang->block->default['oa']['1']['grid']  = 6;
+
+$lang->block->default['oa']['2']['title'] = 'Announcement';
+$lang->block->default['oa']['2']['block'] = 'announce';
+$lang->block->default['oa']['2']['grid']  = 4;
+
+$lang->block->default['oa']['2']['params']['num'] = 15;
+
+$lang->block->default['oa']['3']['title'] = 'My Task';
+$lang->block->default['oa']['3']['block'] = 'task';
+$lang->block->default['oa']['3']['grid']  = 4;
+
+$lang->block->default['oa']['3']['params']['num']     = 15;
+$lang->block->default['oa']['3']['params']['orderBy'] = 'id_desc';
+$lang->block->default['oa']['3']['params']['status']  = array();
+$lang->block->default['oa']['3']['params']['type']    = 'assignedTo';
+
+$lang->block->default['oa']['4']['title'] = 'Project List';
+$lang->block->default['oa']['4']['block'] = 'project';
+$lang->block->default['oa']['4']['grid']  = 4;
+
+$lang->block->default['oa']['4']['params']['num']     = 15;
+$lang->block->default['oa']['4']['params']['orderBy'] = 'id_desc';
+$lang->block->default['oa']['4']['params']['status']  = 'doing';
+
+$lang->block->default['crm']['1']['title'] = 'My Order';
+$lang->block->default['crm']['1']['block'] = 'order';
+$lang->block->default['crm']['1']['grid']  = 4;
+
+$lang->block->default['crm']['1']['params']['num']     = 15;
+$lang->block->default['crm']['1']['params']['orderBy'] = 'id_desc';
+$lang->block->default['crm']['1']['params']['type']    = 'createdBy';
+$lang->block->default['crm']['1']['params']['status']  = array();
+
+$lang->block->default['crm']['2']['title'] = 'My Contract';
+$lang->block->default['crm']['2']['block'] = 'contract';
+$lang->block->default['crm']['2']['grid']  = 4;
+
+$lang->block->default['crm']['2']['params']['num']     = 15;
+$lang->block->default['crm']['2']['params']['orderBy'] = 'id_desc';
+$lang->block->default['crm']['2']['params']['type']    = 'returnedBy';
+$lang->block->default['crm']['2']['params']['status']  = array();
+
+$lang->block->default['crm']['3']['title'] = 'Contact';
+$lang->block->default['crm']['3']['block'] = 'customer';
+$lang->block->default['crm']['3']['grid']  = 4;
+
+$lang->block->default['crm']['3']['params']['num']     = 15;
+$lang->block->default['crm']['3']['params']['orderBy'] = 'id_desc';
+$lang->block->default['crm']['3']['params']['type']    = 'thisweek';
+
+$lang->block->default['cash']['1']['title'] = 'Payment Account';
+$lang->block->default['cash']['1']['block'] = 'depositor';
+$lang->block->default['cash']['1']['grid']  = 4;
+
+$lang->block->default['cash']['1']['params'] = array();
+
+$lang->block->default['cash']['2']['title'] = 'Account';
+$lang->block->default['cash']['2']['block'] = 'trade';
+$lang->block->default['cash']['2']['grid']  = 4;
+
+$lang->block->default['cash']['2']['params']['num']     = 15;
+$lang->block->default['cash']['2']['params']['orderBy'] = 'id_desc';
+
+$lang->block->default['cash']['3']['title'] = 'Supplier';
+$lang->block->default['cash']['3']['block'] = 'provider';
+$lang->block->default['cash']['3']['grid']  = 4;
+
+$lang->block->default['cash']['3']['params']['num']     = 15;
+$lang->block->default['cash']['3']['params']['orderBy'] = 'id_desc';
+
+$lang->block->default['team']['1']['title'] = 'Latest Blog';
+$lang->block->default['team']['1']['block'] = 'blog';
+$lang->block->default['team']['1']['grid']  = 4;
+
+$lang->block->default['team']['1']['params']['num'] = 15;
+
+$lang->block->default['team']['2']['title'] = 'Latest Thread';
+$lang->block->default['team']['2']['block'] = 'thread';
+$lang->block->default['team']['2']['grid']  = 4;
+
+$lang->block->default['team']['2']['params']['num'] = 15;
+$lang->block->default['team']['2']['params']['type'] = 'new';
+
+$lang->block->default['team']['3']['title'] = 'Sticky Thread ';
+$lang->block->default['team']['3']['block'] = 'thread';
+$lang->block->default['team']['3']['grid']  = 4;
+
+$lang->block->default['team']['3']['params']['num']  = 15;
+$lang->block->default['team']['3']['params']['type'] = 'stick';
+
+$lang->block->default['sys']['1'] = $lang->block->default['oa']['1'];
+$lang->block->default['sys']['1']['source'] = 'oa';
+$lang->block->default['sys']['2']['title']  = 'Dynamic';
+$lang->block->default['sys']['2']['block']  = 'dynamic';
+$lang->block->default['sys']['2']['grid']   = 6;
+$lang->block->default['sys']['2']['source'] = '';
+$lang->block->default['sys']['3'] = $lang->block->default['oa']['2'];
+$lang->block->default['sys']['3']['source'] = 'oa';
+$lang->block->default['sys']['4'] = $lang->block->default['crm']['2'];
+$lang->block->default['sys']['4']['source'] = 'crm';
+$lang->block->default['sys']['5'] = $lang->block->default['crm']['1'];
+$lang->block->default['sys']['5']['source'] = 'crm';
+$lang->block->default['sys']['6'] = $lang->block->default['cash']['1'];
+$lang->block->default['sys']['6']['source'] = 'cash';
+$lang->block->default['sys']['7'] = $lang->block->default['team']['1'];
+$lang->block->default['sys']['7']['source'] = 'team';
+$lang->block->default['sys']['8'] = $lang->block->default['team']['2'];
+$lang->block->default['sys']['8']['source'] = 'team';
+
+$lang->block->moreLinkList = new stdclass();
+$lang->block->moreLinkList->order['assinedTo'] = 'My Work|sys|my|order|type=assinedTo';
+$lang->block->moreLinkList->order['createdBy'] = 'CreatedByMe|sys|my|order|type=createdBy';
+$lang->block->moreLinkList->order['signedBy']  = 'SignedByMe|sys|my|order|type=signedBy';
+
+$lang->block->moreLinkList->contract['returnedBy']     = 'PaidByMe|sys|my|contract|type=returnedBy';
+$lang->block->moreLinkList->contract['deliveredBy']    = 'DeliveredByMe|sys|my|contract|type=deliveredBy';
+$lang->block->moreLinkList->contract['normalstatus']   = 'Unfinished|sys|my|contract|type=unfinished';
+$lang->block->moreLinkList->contract['closedstatus']   = 'Finished|sys|my|contract|type=finished';
+$lang->block->moreLinkList->contract['canceledstatus'] = 'Cancelled|sys|my|contract|type=canceled';
+
+$lang->block->moreLinkList->customer['today']    = 'Today Contact|crm|customer|browse|type=today';
+$lang->block->moreLinkList->customer['thisweek'] = 'Weekly Contact|crm|customer|browse|type=thisweek';
+
+$lang->block->moreLinkList->trade     = 'Account|cash|trade|browse|';
+$lang->block->moreLinkList->depositor = 'Account|cash|depositor|index|';
+$lang->block->moreLinkList->provider  = 'Supplier|cash|provider|browse|';
+
+$lang->block->moreLinkList->announce = 'Announcement|oa|announce|browse|';
+$lang->block->moreLinkList->attend   = 'Calendar|sys|todo|calendar|';
+
+$lang->block->moreLinkList->task['assignedTo'] = 'My Work|sys|my|task|type=assignedTo';
+$lang->block->moreLinkList->task['createdBy']  = 'CreatedByMe|sys|my|task|type=createdBy';
+$lang->block->moreLinkList->task['finishedBy'] = 'FinishedByMe|sys|my|task|type=finishedBy';
+$lang->block->moreLinkList->task['closedBy']   = 'ClosedByMe|sys|my|task|type=closedBy';
+$lang->block->moreLinkList->task['canceledBy'] = 'CancelledByMe|sys|my|task|type=canceledBy';
+
+$lang->block->moreLinkList->project['doing']    = 'Ongoing|oa|project|index|status=doing';
+$lang->block->moreLinkList->project['finished'] = 'Finished|oa|project|index|status=finished';
+$lang->block->moreLinkList->project['suspend']  = 'Suspended|oa|project|index|status=suspend';
+
+$lang->block->moreLinkList->blog = 'Latest Blog|team|blog|index|';
+$lang->block->moreLinkList->thread['new']   = 'Latest Thread |team|forum|index|';
+$lang->block->moreLinkList->thread['stick'] = 'Sticky Thread |team|forum|index|';
+
+$lang->block->moreLinkList->report = 'AccountReport|cash|trade|report|';
+/* sys/schema */
+$lang->schema->common   = 'Import Template';
+$lang->schema->browse   = 'Template List';
+$lang->schema->view     = 'View';
+$lang->schema->create   = 'Create';
+$lang->schema->edit     = 'Edit';
+$lang->schema->delete   = 'Delete';
+$lang->schema->csvFile  = 'File';
+
+$lang->schema->name     = 'Name';
+$lang->schema->feeRow   = 'Service Charge is a record';
+$lang->schema->diffCol  = 'Column';
+
+$lang->schema->placeholder = new stdclass();
+$lang->schema->placeholder->selectField = 'Select corresponding project';
+$lang->schema->placeholder->common      = 'Enter column corresponds to the field of this Reconciliation Sheet, e.g. A';
+$lang->schema->placeholder->type        = 'Enter columns correspond to “Income/Expense”';
+$lang->schema->placeholder->date        = 'Enter column corresponds to “Payment Date”';
+$lang->schema->placeholder->product     = 'Enter column corresponds to “Product”';
+$lang->schema->placeholder->desc        = 'Account notes, use comma to separate more columns, e.g. I,O';
+$lang->schema->placeholder->in          = 'Receipt column, e.g. E';
+$lang->schema->placeholder->out         = 'Payment column, e.g. D';
+
+$lang->schema->fieldRequired = '%s must select corresponding column';
+/* sys/cron */
+if(!isset($lang->cron)) $lang->cron = new stdclass();
+$lang->cron->common  = 'Scheduled Task';
+$lang->cron->index   = 'Home';
+$lang->cron->list    = 'Task List';
+$lang->cron->create  = 'Add';
+$lang->cron->edit    = 'Edit';
+$lang->cron->delete  = 'Delete';
+$lang->cron->toggle  = 'Activate/Deactivate';
+$lang->cron->turnon  = 'On/Off ';
+
+$lang->cron->m        = 'minute';
+$lang->cron->h        = 'hour';
+$lang->cron->dom      = 'day';
+$lang->cron->mon      = 'month';
+$lang->cron->dow      = 'week';
+$lang->cron->command  = 'Command';
+$lang->cron->status   = 'Status';
+$lang->cron->type     = 'Type';
+$lang->cron->remark   = 'Note';
+$lang->cron->lastTime = 'Last Execution';
+
+$lang->cron->turnonList['1'] = 'On';
+$lang->cron->turnonList['0'] = 'Off';
+
+$lang->cron->statusList['normal']  = 'Normal';
+$lang->cron->statusList['running'] = 'Running';
+$lang->cron->statusList['stop']    = 'Stop';
+
+$lang->cron->typeList['ranzhi'] = 'Ranger Self Call';
+$lang->cron->typeList['system'] = 'OS Command';
+
+$lang->cron->toggleList['start'] = 'Activate';
+$lang->cron->toggleList['stop']  = 'Disable';
+
+$lang->cron->confirmDelete = 'Do you want to delete this Task?';
+$lang->cron->confirmTurnon = 'Do you want to turn of this Task?';
+$lang->cron->introduction  = <<<EOD
+<p>Scheduled Task can shedule actions, such as backup, so to save your time perform tasks manually.</p>
+<p>Scheduled Task is turned off as default, for it is ongoing development. </p>
+EOD;
+$lang->cron->confirmOpen = <<<EOD
+<p>Do you want to turn it on?<a href="%s" data-type="iframe" data-toggle="modal"> Task</a></p>
+EOD;
+
+$lang->cron->notice = new stdclass();
+$lang->cron->notice->m   = 'Range:0-59，"*" means numbers within the range, "/" means "per"， "-" means the range.';
+$lang->cron->notice->h   = 'Range:0-23';
+$lang->cron->notice->dom = 'Range:1-31';
+$lang->cron->notice->mon = 'Range:1-12';
+$lang->cron->notice->dow = 'Range:0-6';
+/* sys/install */
+$lang->install = new stdclass();
+$lang->install->common  = 'Install';
+$lang->install->next    = 'Next';
+$lang->install->pre     = 'Back';
+$lang->install->reload  = 'Refresh';
+$lang->install->error   = 'Error ';
+
+$lang->install->start            = 'Start';
+$lang->install->keepInstalling   = 'Continue installing the current version';
+$lang->install->seeLatestRelease = 'Check the latest version';
+$lang->install->welcome          = "Thanks for choosing $lang->ranzhi!";
+$lang->install->license          = 'Ranger is license under  Z PUBLIC LICENSE(ZPL) 1.2 ';
+$lang->install->desc             = <<<EOT
+<blockquote>
+  <strong>{$lang->ranzhi}</strong> is developed by <strong><a href='http://www.cnezsoft.com' target='_blank' class='red'>Nature Easy Soft</a></strong>,
+  <!--Built-in Project, CRM, Cash Flow, OA and History functions,-->
+  For small/medium companies and is the Best Choise for informatization！
+
+  Official Website：<a href='http://www.ranzhico.com' target='_blank'>http://www.ranzhico.com</a>
+  Technical Support: <a href='http://www.ranzhico.com/forum/' target='_blank'>http://www.ranzhico.com/forum/</a>
+  Your current version is <strong class='red'>%s</strong>.
+</blockquote>
+EOT;
+
+$lang->install->choice     = 'You can choose to：';
+$lang->install->checking   = 'System Check';
+$lang->install->ok         = 'Pass(√)';
+$lang->install->fail       = 'Fail(×)';
+$lang->install->loaded     = 'Loaded';
+$lang->install->unloaded   = 'Not Loaded';
+$lang->install->exists     = ' ';
+$lang->install->notExists  = 'Not Found ';
+$lang->install->writable   = 'Writable ';
+$lang->install->notWritable= 'Not Writable ';
+$lang->install->phpINI     = 'PHP INI File';
+$lang->install->checkItem  = 'Check Item';
+$lang->install->current    = 'Current';
+$lang->install->result     = 'Result';
+$lang->install->action     = 'Edit';
+
+$lang->install->phpVersion = 'PHP version';
+$lang->install->phpFail    = 'PHP version has to be 5.2.0+.';
+
+$lang->install->pdo          = 'PDO';
+$lang->install->pdoFail      = 'Edit PHP .ini file and load PDO.';
+$lang->install->pdoMySQL     = 'PDO_MySQL';
+$lang->install->pdoMySQLFail = 'Edit PHP.ini file and load pdo_mysql.';
+$lang->install->tmpRoot      = 'Temp File Dir';
+$lang->install->dataRoot     = 'Upload File Dir';
+$lang->install->sessionRoot  = 'Session Dir';
+$lang->install->mkdir        = '<p>Create a directory %s. Use command line under Linux：<br /> <code>mkdir -p %s</code></p>';
+$lang->install->chmod        = 'Edit the privilege of "%s". Use command line under Linux：<br /><code>chmod o=rwx -R %s</code>';
+$lang->install->sessionChmod = 'Edit the privilege of "%s". Use command line under Linux：<br /><code>sudo chmod o=wtx %s</code>';
+
+$lang->install->settingDB  = 'Database Settings';
+$lang->install->dbHost     = 'Database Host';
+$lang->install->dbHostNote = 'If 127.0.0.1 cannot be accessed, please try localhost.';
+$lang->install->dbPort     = 'Port';
+$lang->install->dbUser     = 'User';
+$lang->install->dbPassword = 'Password';
+$lang->install->dbName     = 'Name';
+$lang->install->dbPrefix   = 'Prefix';
+$lang->install->createDB   = 'Auto Create DB';
+$lang->install->clearDB    = 'Clear Database';
+
+$lang->install->errorDBName        = "No '.' in database name.";
+$lang->install->errorConnectDB     = 'Connetion to database failed.';
+$lang->install->errorCreateDB      = 'Failed to create database.';
+$lang->install->errorDBExists      = 'Database exists. Return to Previous step and check “Clear Database”.';
+$lang->install->errorCreateTable   = 'Failed to create a table.';
+
+$lang->install->setConfig  = 'Configure Database';
+$lang->install->key        = 'Config Item';
+$lang->install->value      = 'Value';
+$lang->install->saveConfig = 'Save Config File';
+$lang->install->save2File  = '<span class="red">Tried to write config file and failed! </span>Copy text from text box above and save it to "<strong> %s </strong>".';
+$lang->install->saved2File = 'Configuration has been saved to" <strong>%s</strong> ". You can edit this file later.';
+$lang->install->errorNotSaveConfig = 'Config file is not saved.';
+
+$lang->install->setAdmin = 'Admin Settings';
+$lang->install->account  = 'Account';
+$lang->install->password = 'Password';
+$lang->install->errorEmptyPassword = 'Password should not be empty.';
+
+$lang->install->success    = "Installed!";
+
+$lang->install->buildinEntry = new stdclass();
+$lang->install->buildinEntry->crm['name']  = 'Manage Customer';
+$lang->install->buildinEntry->crm['abbr']  = 'Customer';
+$lang->install->buildinEntry->cash['name'] = 'Cash Bookkeeping';
+$lang->install->buildinEntry->cash['abbr'] = 'Bookkeeping';
+$lang->install->buildinEntry->oa['name']   = 'Office Automation';
+$lang->install->buildinEntry->oa['abbr']   = 'OA';
+$lang->install->buildinEntry->team['name'] = 'Team';
+$lang->install->buildinEntry->team['abbr'] = 'Team';
+/* sys/webapp */
+if(!isset($lang->webapp)) $lang->webapp = new stdclass();
+$lang->webapp->common = 'Wwb App';
+$lang->webapp->index  = 'Home';
+$lang->webapp->obtain = 'Available';
+
+$lang->webapp->install    = 'Install';
+$lang->webapp->uninstall  = 'Delete';
+$lang->webapp->useapp     = 'Run';
+$lang->webapp->view       = 'Detail';
+$lang->webapp->preview    = 'Preview';
+$lang->webapp->installed  = 'Added';
+$lang->webapp->edit       = 'Edit';
+$lang->webapp->create     = 'Create';
+$lang->webapp->manageTree = 'Manage Category';
+
+$lang->webapp->id          = 'ID';
+$lang->webapp->name        = 'Name';
+$lang->webapp->url         = 'Website';
+$lang->webapp->icon        = 'Icon';
+$lang->webapp->module      = 'Category';
+$lang->webapp->author      = 'Author';
+$lang->webapp->abstract    = 'Intro';
+$lang->webapp->desc        = 'Note';
+$lang->webapp->target      = 'Target';
+$lang->webapp->size        = 'Size';
+$lang->webapp->height      = 'Height';
+$lang->webapp->addedTime   = 'Created Date';
+$lang->webapp->updatedTime = 'Updated Date';
+$lang->webapp->downloads   = 'Downloads';
+$lang->webapp->grade       = 'Rating';
+$lang->webapp->addType     = 'Type';
+$lang->webapp->addedBy     = 'Added By';
+$lang->webapp->addedDate   = 'Added Date';
+$lang->webapp->views       = 'Views';
+$lang->webapp->packup      = 'Fold Up';
+$lang->webapp->custom      = 'Custom';
+
+$lang->webapp->byDownloads   = 'By Download Times';
+$lang->webapp->byAddedTime   = 'By Add Time';
+$lang->webapp->byUpdatedTime = 'By Update Time';
+$lang->webapp->bySearch      = 'By Search';
+$lang->webapp->byCategory    = 'By Category';
+
+$lang->webapp->selectModule = 'Select Category：';
+$lang->webapp->allModule    = 'All';
+$lang->webapp->noModule     = 'None';
+
+$lang->webapp->targetList['']       = '';
+$lang->webapp->targetList['popup']  = 'Popout';
+$lang->webapp->targetList['iframe'] = 'Iframe';
+
+$lang->webapp->width  = 'Width';
+$lang->webapp->height = 'Height';
+
+$lang->webapp->sizeList['']         = "";
+$lang->webapp->sizeList['1024x600'] = "1024 x 600";
+$lang->webapp->sizeList['900x600']  = "900 x 600";
+$lang->webapp->sizeList['700x600']  = "700 x 600";
+$lang->webapp->sizeList['600x500']  = "600 x 500";
+$lang->webapp->sizeList['custom']   = "Custom";
+
+$lang->webapp->addTypeList['system'] = 'System';
+$lang->webapp->addTypeList['custom'] = 'Custom';
+
+$lang->webapp->errorOccurs        = 'Error：';
+$lang->webapp->errorGetModules    = 'Get extension cateory from www.ranzhico.com failed. It could be connection failure. Please check your connection and refresh page.';
+$lang->webapp->errorGetExtensions = 'Get extension from www.ranzhico.com failed. It could be connection failure. Please go to <a href="https://www.ranzhico.com/extension" target="_blank" class="alert-link">www.ranzhico.com</a> and download the extension, then upload it to install.';
+$lang->webapp->successInstall     = 'Installed!';
+$lang->webapp->confirmDelete      = 'Do you want to delete it?';
+$lang->webapp->noticeAbstract     = 'Describe the App within 30 words.';
+$lang->webapp->noticeIcon         = 'Suggeted icon size 72x72';
+/* sys/upgrade */
+$lang->upgrade = new stdclass();
+$lang->upgrade->common  = 'Upgrade';
+
+$lang->upgrade->result  = 'Result';
+$lang->upgrade->fail    = 'Failed';
+$lang->upgrade->success = 'Upgraded';
+$lang->upgrade->tohome  = 'Back to Home';
+
+$lang->upgrade->index         = 'Check whether it is ready for Upgrade.';
+$lang->upgrade->backup        = 'Data Backup';
+$lang->upgrade->selectVersion = 'Version befroe Upgrade';
+$lang->upgrade->confirm       = 'SQL to be executed';
+$lang->upgrade->execute       = 'Execute';
+$lang->upgrade->next          = 'Next';
+$lang->upgrade->redeploy      = 'Deploy App folder again and continue.';
+$lang->upgrade->redeployDesc  = "<h5>Do to code tuning, please depoy App directory again. </h5><div class='text-important'> Method:Delete old directory and copy App folders from new installation package.</div>";
+$lang->upgrade->removeTodo    = 'Delete %s and continue';
+$lang->upgrade->removeTodoTip = "<h5>Do to code tuning, please delete %s.</h5><div class='text-important'> Method:Delete old %s.</div>";
+$lang->upgrade->updateLicense = 'Ranger 2. 0 has licensed under Z PUBLIC LICENSE(ZPL) 1.2.';
+
+$lang->upgrade->backupData = <<<EOT
+<pre>
+<strong>Use phpMy Admin or mysqldump to back up data.</strong>
+<code class='red'>$ mysqldump -u %s</span> -p%s %s > ranzhi.sql</code>
+</pre>
+EOT;
+
+$lang->upgrade->versionNote = "Please make sure that your have selected the right version, or it might cause data loss.";
+
+$lang->upgrade->fromVersions['1_0_beta'] = '1.0.beta';
+$lang->upgrade->fromVersions['1_1_beta'] = '1.1.beta';
+$lang->upgrade->fromVersions['1_2_beta'] = '1.2.beta';
+$lang->upgrade->fromVersions['1_3_beta'] = '1.3.beta';
+$lang->upgrade->fromVersions['1_4_beta'] = '1.4.beta';
+$lang->upgrade->fromVersions['1_5_beta'] = '1.5.beta';
+$lang->upgrade->fromVersions['1_6']      = '1.6';
+$lang->upgrade->fromVersions['1_7']      = '1.7';
+$lang->upgrade->fromVersions['2_0']      = '2.0';
+$lang->upgrade->fromVersions['2_1']      = '2.1';
+$lang->upgrade->fromVersions['2_2']      = '2.2';
+$lang->upgrade->fromVersions['2_3']      = '2.3';
+$lang->upgrade->fromVersions['2_4']      = '2.4';
+$lang->upgrade->fromVersions['2_5']      = '2.5';
+$lang->upgrade->fromVersions['2_6']      = '2.6';
+$lang->upgrade->fromVersions['2_7']      = '2.7';
+$lang->upgrade->fromVersions['3_0']      = '3.0';
+$lang->upgrade->fromVersions['3_1']      = '3.1';
+$lang->upgrade->fromVersions['3_2']      = '3.2';
+$lang->upgrade->fromVersions['3_2_1']    = '3.2.1';
+$lang->upgrade->fromVersions['3_3']      = '3.3';
+$lang->upgrade->fromVersions['3_4']      = '3.4';
+/* sys/backup */
+$lang->backup->common      = 'Backup';
+$lang->backup->index       = 'Home';
+$lang->backup->history     = 'History';
+$lang->backup->delete      = 'Delete';
+$lang->backup->backup      = 'Backup';
+$lang->backup->restore     = 'Restore';
+$lang->backup->setSaveDays = 'Hold Days';
+
+$lang->backup->name     = 'Name';
+$lang->backup->time     = 'Date';
+$lang->backup->files    = 'File';
+$lang->backup->size     = 'Size';
+$lang->backup->saveDays = 'Hold Days';
+
+$lang->backup->waitting       = 'Restoring...';
+$lang->backup->confirmDelete  = 'Do you want to delete it?';
+$lang->backup->confirmRestore = 'Do you want to restore it?';
+$lang->backup->deleteInfo     = 'Delete files backed up %s days ago.';
+
+$lang->backup->success = new stdclass();
+$lang->backup->success->backup  = 'Backed up!';
+$lang->backup->success->restore = 'Restored!';
+
+$lang->backup->error = new stdclass();
+$lang->backup->error->noWritable  = "<code>%s</code> is not writable! Please check the privilege of this directory, or it cannot be backed up.";
+$lang->backup->error->noDelete    = "%s canot be deleted. Edit its privilege or manually delete it.";
+$lang->backup->error->restoreSQL  = "Database restoration failed. Error：%s";
+$lang->backup->error->restoreFile = "File restoration failed. Error：%s";
+$lang->backup->error->backupFile  = "File backeup failed. Error：%s";
+$lang->backup->error->setSaveDays = "Hold days should be more than 0";
+/* sys/index */
+$lang->index->common       = 'Home';
+$lang->index->dashboard    = 'My Zone';
+$lang->index->about        = 'About';
+$lang->index->allEntries   = 'All';
+$lang->index->showOnLeft   = 'To Left Side';
+$lang->index->notOnLeft    = 'Not To Left Side';
+$lang->index->opened       = 'On';
+$lang->index->addEntry     = 'Add';
+$lang->index->profile      = 'Profile';
+$lang->index->set          = 'System Settings';
+$lang->index->theme        = 'Change Theme';
+$lang->index->superAdmin   = 'Admin';
+$lang->index->showDesk     = 'Desktop';
+$lang->index->customBlocks = 'Edit';
+$lang->index->addBlock     = 'Add';
+$lang->index->refresh      = 'Update';
+$lang->index->hidden       = 'Hide';
+
+$lang->index->ips['confirmClose']       = 'Do you want to close 【{0}】?';
+$lang->index->ips['entryNotFindTip']    = 'Not found!';
+$lang->index->ips['busyTip']            = 'Busy. Please wait...';
+$lang->index->ips['reloadText']         = 'Refresh';
+$lang->index->ips['closeText']          = 'Close';
+$lang->index->ips['openText']           = 'Open';
+$lang->index->ips['removeText']         = 'Remove';
+$lang->index->ips['fixToMenuText']      = 'To Left Side';
+$lang->index->ips['removeFromMenuText'] = 'Remove from Left';
+$lang->index->ips['deleteEntryText']    = 'Delete';
+$lang->index->ips['removedEntry']       = '【{0}】 has been deleted.';
+$lang->index->ips['confirmRemoveEntry'] = 'Do you want to remove 【{0}】?';
+$lang->index->ips['showWindowText']     = 'Show';
+$lang->index->ips['confirmRemoveBlock'] = 'Do you want to delete 【{0}】?';
+$lang->index->ips['removedBlock']       = 'Deleted';
+$lang->index->ips['hiddenBlock']        = 'Hidden';
+$lang->index->ips['orderdBlocksSaved']  = 'Sorting saved.';
+$lang->index->ips['moreOptionTip'] 	    = 'Show another {0} Apps';
+$lang->index->ips['confirmCloseBrowser']= 'Note：You have active App window.';
+/* sys/my */
+$lang->my->common = 'My Zone';
+
+$lang->my->order->common = 'Task';
+
+$lang->my->contract->common = 'Contract';
+
+$lang->my->company = new stdclass();
+$lang->my->company->common  = 'To-Dos';
+$lang->my->company->dept    = 'Department';
+$lang->my->company->all     = 'All';
+$lang->my->company->account = 'User';
+$lang->my->company->begin   = 'Start';
+$lang->my->company->end     = 'End';
+$lang->my->company->view    = 'View';
+
+$lang->my->task->common     = 'My Task';
+$lang->my->task->assignedTo = 'My Work';
+$lang->my->task->createdBy  = 'CreatedByMe';
+$lang->my->task->finishedBy = 'FinishedByMe';
+$lang->my->task->closedBy   = 'ClosedByMe';
+$lang->my->task->canceledBy = 'CancelledByMe';
+
+$lang->my->project = new stdclass();
+$lang->my->project->common = 'My Project';
+
+$lang->my->dynamic->common = 'My Dynamic';
+/* sys/todo */
+if(!isset($lang->todo)) $lang->todo = new stdclass();
+$lang->todo->common       = 'To-Do';
+$lang->todo->index        = "Home";
+$lang->todo->browse       = "To-Do List";
+$lang->todo->create       = "Add";
+$lang->todo->batchCreate  = "Batch Add";
+$lang->todo->edit         = "Edit";
+$lang->todo->batchEdit    = "Batch Edit";
+$lang->todo->view         = "Details";
+$lang->todo->viewAB       = "Details";
+$lang->todo->finish       = "Finish";
+$lang->todo->batchFinish  = "Batch Finish";
+$lang->todo->export       = "Export";
+$lang->todo->delete       = "Delete";
+$lang->todo->browse       = "View";
+$lang->todo->import2Today = "Import to Today";
+$lang->todo->import       = "Import";
+$lang->todo->changeStatus = "Change";
+$lang->todo->legendBasic  = "Basic Info";
+$lang->todo->calendar     = "Calendar";
+$lang->todo->assignTo     = "Assign To";
+
+$lang->todo->id           = 'ID';
+$lang->todo->account      = 'Account';
+$lang->todo->date         = 'Date';
+$lang->todo->begin        = 'Begin Date';
+$lang->todo->beginAB      = 'Begin';
+$lang->todo->end          = 'End Date';
+$lang->todo->endAB        = 'End';
+$lang->todo->beginAndEnd  = 'Time Frame';
+$lang->todo->type         = 'Type';
+$lang->todo->pri          = 'Priority';
+$lang->todo->name         = 'Name';
+$lang->todo->status       = 'Status';
+$lang->todo->desc         = 'Note';
+$lang->todo->private      = 'Personal';
+$lang->todo->idvalue      = 'Task/Order';
+$lang->todo->assignedTo   = 'Assign To';
+$lang->todo->assignedBy   = 'Assigned By';
+$lang->todo->assignedDate = 'Assigned Date';
+$lang->todo->finishedBy   = 'Finished By';
+$lang->todo->finishedDate = 'Finish Date';
+$lang->todo->closedBy     = 'Closed By';
+$lang->todo->closedDate   = 'Closed Date';
+$lang->todo->ranzhi       = 'Ranger';
+$lang->todo->task         = 'Task';
+$lang->todo->bug          = 'Bug';
+
+$lang->todo->confirmTip  = 'This To-Do is linked to %s #%s. Do you want to edit it?';
+$lang->todo->assignedTip = '%s on %s';
+$lang->todo->finishedTip = '%s on %s';
+$lang->todo->closedTip   = '%s on %s';
+
+$lang->todo->statusList['wait']     = 'Pending';
+$lang->todo->statusList['doing']    = 'Ongoing';
+$lang->todo->statusList['done']     = 'Finished';
+$lang->todo->statusList['closed']   = 'Closed';
+//$lang->todo->statusList['cancel']   = 'Cancelled';
+//$lang->todo->statusList['postpone'] = 'Delayed';
+
+$lang->todo->priList[3] = 'Average';
+$lang->todo->priList[1] = 'Higheset';
+$lang->todo->priList[2] = 'High';
+$lang->todo->priList[4] = 'Low';
+
+$lang->todo->typeList['custom']   = 'Custom';
+$lang->todo->typeList['task']     = 'Project/Task';
+$lang->todo->typeList['order']    = 'Order History';
+$lang->todo->typeList['customer'] = 'Customer History';
+
+$lang->todo->confirmDelete  = "Do you want to delete it?";
+$lang->todo->successMarked  = "Status changed!";
+$lang->todo->thisIsPrivate  = 'This is a personal To-Do :)';
+$lang->todo->lblDisableDate = 'Do not set date temporarily.';
+$lang->todo->emptyTodo      = 'You have no To-Do added today.';
+
+$lang->todo->periods['today']      = 'Today';
+$lang->todo->periods['yesterday']  = 'Yesterday';
+$lang->todo->periods['thisWeek']   = 'This Week';
+$lang->todo->periods['lastWeek']   = 'Last Week';
+$lang->todo->periods['thisMonth']  = 'This Month';
+$lang->todo->periods['lastmonth']  = 'This Month';
+$lang->todo->periods['thisSeason'] = 'This Quarter';
+$lang->todo->periods['thisYear']   = 'This Year';
+$lang->todo->periods['future']     = 'Coming Years';
+$lang->todo->periods['before']     = 'To be Continued';
+$lang->todo->periods['all']        = 'All';
+
+$lang->todo->action = new stdclass();
+$lang->todo->action->finished  = array('main' => '$date, finished by <strong>$actor</strong>.');
+$lang->todo->action->marked    = array('main' => '$date, marked as <strong>$extra</strong> by <strong>$actor</strong>.', 'extra' => 'statusList');
+/* sys/entry */
+$lang->entry->common      = 'App';
+$lang->entry->admin       = 'List';
+$lang->entry->create      = 'Add';
+$lang->entry->edit        = 'Edit';
+$lang->entry->delete      = 'Delete';
+$lang->entry->createKey   = 'Create Key';
+$lang->entry->order       = 'Sorting';
+$lang->entry->style       = 'Style';
+$lang->entry->setCategory = 'Manage Category';
+
+$lang->entry->name        = 'Name';
+$lang->entry->abbr        = 'Abbreviation';
+$lang->entry->code        = 'Alias';
+$lang->entry->buildin     = 'Built-in App';
+$lang->entry->integration = 'Integration';
+$lang->entry->key         = 'Key';
+$lang->entry->block       = 'Block Address';
+$lang->entry->ip          = 'IP List';
+$lang->entry->logo        = 'Logo';
+$lang->entry->login       = 'Login';
+$lang->entry->logout      = 'Logout';
+$lang->entry->nothing     = 'N/A';
+$lang->entry->open        = 'Open with';
+$lang->entry->control     = 'Control Strip';
+$lang->entry->size        = 'Window Size';
+$lang->entry->position    = 'Position';
+$lang->entry->width       = 'Width';
+$lang->entry->height      = 'Height';
+$lang->entry->priv        = 'Privilege';
+$lang->entry->category    = 'Category';
+
+$lang->entry->chanzhi          = 'Changer';
+$lang->entry->zentao           = 'ZenTao';
+$lang->entry->integrateChanzhi = 'Integrate Changer';
+$lang->entry->integrateZentao  = 'Integrate ZenTao';
+
+$lang->entry->chanzhiPlaceholder = 'Please enter Changer URL.';
+$lang->entry->chanzhiURL         = 'Changer URL';
+$lang->entry->zentaoPlaceholder  = 'e.g. http://www.zentaopms.com/user-login-Lw==.html';
+$lang->entry->zentaoURL          = 'ZenTao URL';
+
+$lang->entry->zentaoAdmin   = 'ZenTao Admin';
+$lang->entry->adminAccount  = 'Admin Account';
+$lang->entry->adminPassword = 'Admin Password';
+$lang->entry->bindUser      = 'Bind User';
+$lang->entry->nextStep      = 'Next';
+$lang->entry->createUser    = 'Create';
+
+$lang->entry->confirmDelete = 'Do you want to delete it?';
+$lang->entry->lblBlock      = 'Block';
+$lang->entry->editWarnning  = 'Built-in app. Please edit prudently.';
+
+$lang->entry->note = new stdClass();
+$lang->entry->note->name    = 'Authorized App';
+$lang->entry->note->abbr    = 'Abbreviation';
+$lang->entry->note->logo    = 'Logo size：64*64. Please ensure the image is transparent if load it as .png file.';
+$lang->entry->note->code    = 'Authorized app alias, must be a combination of letters, numbers and underlines.';
+$lang->entry->note->login   = 'Address used to acess to or log in the App.';
+$lang->entry->note->logout  = 'Address used to log out the App.';
+$lang->entry->note->visible = 'To Left Side';
+$lang->entry->note->api     = 'Address used to get API.';
+$lang->entry->note->ip      = "IP that can access to it. Use comma to separate them. IP segament is OK, e.g. 192.168.1.*";
+$lang->entry->note->allip   = 'Unrestricted';
+
+$lang->entry->error = new stdClass();
+$lang->entry->error->name  = 'Name should not be empty.';
+$lang->entry->error->code  = 'Alias should not be empty.';
+$lang->entry->error->key   = 'Key should not be empty.';
+$lang->entry->error->ip    = 'IP List should not be empty.';
+$lang->entry->error->url   = ' Non built-in App login address; must include /,http:// or https://';
+
+$lang->entry->error->admin         = 'Admin account or password is wrong.';
+$lang->entry->error->zentaoSetting = 'ZenTao configuration failed.';
+$lang->entry->error->version       = 'ZenTao version is lower than %s';
+$lang->entry->error->zentaoUrl     = 'ZenTao login address error';
+$lang->entry->error->accessDenied  = 'Access denied.';
+
+$lang->entry->openList['blank']  = 'Blank';
+$lang->entry->openList['iframe'] = 'Iframe';
+
+$lang->entry->sizeList['max']    = 'Max';
+$lang->entry->sizeList['custom'] = 'Custom';
+
+$lang->entry->positionList['default'] = 'Default';
+$lang->entry->positionList['center']  = 'Center';
+
+$lang->entry->controlList['none']   = 'None';
+$lang->entry->controlList['full']   = 'Full';
+$lang->entry->controlList['simple'] = 'Simple';
+
+$lang->entry->integrationList[1] = 'On';
+$lang->entry->integrationList[0] = 'Off';
+/* sys/error */
+$lang->error = new stdclass();
+$lang->error->common = 'Error';
+$lang->error->jumping = " In 3 seconds you will be directed to <a href='%s' class='btn btn-primary btn-xs'> Redirect Now</a> ";
+
+$lang->error->typeList['notFound']      = 'Not found！Please check the address. ';
+$lang->error->typeList['accessLimited'] = 'Access denied.';
+/* sys/company */
+$lang->company->common  = 'Company';
+$lang->company->index   = 'About Us';
+
+$lang->company->name    = 'Name';
+$lang->company->desc    = 'Intro';
+$lang->company->content = 'Description';
+
+$lang->company->setBasic = 'Basic Info';
+/* sys/task */
+$lang->task->common = 'Task';
+$lang->task->list   = 'Task List';
+
+$lang->task->browse    = 'View';
+$lang->task->view      = 'View';
+$lang->task->viewChild = 'View Child';
+$lang->task->create    = 'Add';
+$lang->task->edit      = 'Edit';
+$lang->task->finish    = 'Finish';
+$lang->task->start     = 'Start';
+$lang->task->activate  = 'Active';
+$lang->task->cancel    = 'Cancel';
+$lang->task->close     = 'Close';
+$lang->task->assignTo  = 'Assign';
+$lang->task->delete    = 'Delete';
+$lang->task->export    = 'Export';
+
+$lang->task->batchCreate    = 'Batch Add';
+$lang->task->backToProjects = 'Back to List'; 
+$lang->task->viewAll        = 'View All';
+$lang->task->editAll        = 'Edit All';
+$lang->task->deleteAll      = 'Delete All';
+
+$lang->task->id             = 'ID';
+$lang->task->project        = 'Affiliated Project';
+$lang->task->customer       = 'Affiliated Customer';
+$lang->task->order          = 'Affiliated Order';
+$lang->task->category       = 'Affiliated Block';
+$lang->task->name           = 'Name';
+$lang->task->type           = 'Type';
+$lang->task->pri            = 'Priority';
+$lang->task->estimate       = 'Estimation';
+$lang->task->estimateAB     = 'Estimated';
+$lang->task->consumed       = 'Total Consumed';
+$lang->task->consumedAB     = 'Consume';
+$lang->task->left           = 'Estimated Left';
+$lang->task->leftAB         = 'Left';
+$lang->task->deadline       = 'Deadline';
+$lang->task->deadlineAB     = 'Dealine';
+$lang->task->status         = 'Status';
+$lang->task->statusAB       = 'Status';
+$lang->task->statusCustom   = 'Sort';
+$lang->task->mailto         = 'Mailto';
+$lang->task->desc           = 'Note';
+$lang->task->createdBy      = 'Created By';
+$lang->task->createdByAB    = 'Created By';
+$lang->task->createdDate    = 'Create Date';
+$lang->task->createdDateAB  = 'Create';
+$lang->task->editedBy       = 'Edited By';
+$lang->task->editedDate     = 'Edited Date';
+$lang->task->assignedTo     = 'Assign To';
+$lang->task->assignedDate   = 'Assign Date';
+$lang->task->estStarted     = 'Estimated Start';
+$lang->task->realStarted    = 'Actual Start';
+$lang->task->finishedBy     = 'Finished By';
+$lang->task->finishedByAB   = 'Finished By';
+$lang->task->finishedDate   = 'Finish Date';
+$lang->task->finishedDateAB = 'Finish';
+$lang->task->canceledBy     = 'Cancelled By';
+$lang->task->canceledDate   = 'Cancel Date';
+$lang->task->closedBy       = 'Closed By';
+$lang->task->closedDate     = 'Closed Date';
+$lang->task->closedReason   = 'Closed Reason';
+$lang->task->lastEditedBy   = 'Last Edit';
+$lang->task->lastEditedDate = 'Last Edit Date';
+$lang->task->lastEdited     = 'Last Edit';
+$lang->task->hour           = 'Hour';
+$lang->task->leftThisTime   = 'Left';
+$lang->task->date           = 'Date';
+$lang->task->multiple       = 'Task for Mutiple';
+$lang->task->multipleAB     = 'For Mutiple';
+$lang->task->team           = 'Team';
+$lang->task->transmit       = 'Transfer';
+$lang->task->transmitTo     = 'Transfer To';
+$lang->task->children       = 'Child Task';
+$lang->task->childrenAB     = 'Child';
+$lang->task->parent         = 'Parent Task';
+$lang->task->unfinished     = 'Unfinished';
+$lang->task->end            = 'Enf';
+$lang->task->myConsumption  = 'My Consumption';
+$lang->task->recordEstimate = 'Man-Hour';
+
+$lang->task->confirmFinish     = '"Estimated Left" is 0. Do you want to change Status to "Finished"?';
+$lang->task->consumedBefore    = 'Consumption Before';
+$lang->task->mailtoPlaceholder = 'Select Mailto Users';
+
+$lang->task->lblPri  = 'P';
+$lang->task->lblHour = '(h)';
+
+$lang->task->statusList['']       = ''; 
+$lang->task->statusList['wait']   = 'Pending';
+$lang->task->statusList['doing']  = 'Ongoing';
+$lang->task->statusList['done']   = 'Finished';
+$lang->task->statusList['cancel'] = 'Cancelled';
+$lang->task->statusList['closed'] = 'Closed';
+
+$lang->task->typeList['']        = ''; 
+$lang->task->typeList['discuss'] = 'Discussion';
+$lang->task->typeList['affair']  = 'Work';
+$lang->task->typeList['misc']    = 'Misc';
+
+$lang->task->priList[0]  = '';
+$lang->task->priList[1]  = '1';
+$lang->task->priList[2]  = '2';
+$lang->task->priList[3]  = '3';
+$lang->task->priList[4]  = '4';
+
+$lang->task->reasonList['']       = '';
+$lang->task->reasonList['done']   = 'Finished';
+$lang->task->reasonList['cancel'] = 'Cancelled';
+
+$lang->task->createdByMe  = 'CreatedByMe';
+$lang->task->assignedToMe = 'My Work';
+$lang->task->finishedByMe = 'FinishedByMe';
+$lang->task->untilToday   = 'Due Today';
+$lang->task->expired      = 'Expired';
+$lang->task->all          = 'All Task';
+
+$lang->task->basicInfo = 'Basic Info';
+$lang->task->life      = 'Task Lifecyle';
+
+$lang->task->kanban  = 'Kanban';
+$lang->task->mind    = 'Mind Map';
+$lang->task->list    = 'List';
+$lang->task->outline = 'Outline';
+
+$lang->task->kanbanGroup['']           = 'Select Group';
+$lang->task->kanbanGroup['status']     = 'Status';
+$lang->task->kanbanGroup['assignedTo'] = 'Assign To';
+
+$lang->task->groups['']           = 'Select Group';
+$lang->task->groups['status']     = 'Status';
+$lang->task->groups['assignedTo'] = 'Assign To';
+$lang->task->groups['createdBy']  = 'Created By';
+$lang->task->groups['finishedBy'] = 'Finished By';
+$lang->task->groups['closedBy']   = 'Closed By';
+
+$lang->task->unkown     = 'Unknown';
+$lang->task->unAssigned = 'Unassigned';
+
+$lang->task->mindMoveTip = 'Move Task to seconday level.';
+$lang->task->notAllowed  = 'Action not allowed.';
+$lang->task->skipClose   = 'Task：%s status is not “Finished” or “Cancelled”. You cannot close it.';
+
+$lang->task->groupinfo = "<div class='text-muted'>Total <strong>%s</strong> , Pending <strong>%s</strong>, Ongoing <strong>%s</strong>, Finished <strong>%s</strong>, Closed <strong>%s</strong></div>";
+/* sys/package */
+$lang->package->common        = 'Extension';
+$lang->package->browse        = 'View';
+$lang->package->install       = 'Install';
+$lang->package->installAuto   = 'Auto Install';
+$lang->package->installForce  = 'Force Install';
+$lang->package->uninstall     = 'Uninstall';
+$lang->package->activate      = 'Activate';
+$lang->package->deactivate    = 'Disable';
+$lang->package->obtain        = 'Get Extension';
+$lang->package->view          = 'Details';
+$lang->package->download      = 'Download';
+$lang->package->downloadAB    = 'Download';
+$lang->package->upload        = 'Local Install';
+$lang->package->erase         = 'Erase';
+$lang->package->upgrade       = 'Upgrade';
+$lang->package->agreeLicense  = 'License Agreed';
+$lang->package->settemplate   = 'Template Settings';
+$lang->package->search        = 'Search';
+
+$lang->package->structure   = 'Directory Structure';
+$lang->package->installed   = 'Installed';
+$lang->package->deactivated = 'Deactivated';
+$lang->package->available   = 'Available';
+
+$lang->package->id          = 'ID';
+$lang->package->name        = 'Name';
+$lang->package->code        = 'Alias';
+$lang->package->version     = 'Version';
+$lang->package->compatible  = 'Compatible';
+$lang->package->latest      = '<small>Latest version<strong><a href="%s" target="_blank" class="package">%s</a></strong>, compatible with Changer <a href="http://api.ranzhico.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
+$lang->package->author      = 'Author';
+$lang->package->license     = 'Authorized';
+$lang->package->intro       = 'Detail';
+$lang->package->abstract    = 'Intro';
+$lang->package->site        = 'Official Website';
+$lang->package->addedTime   = 'Created Date';
+$lang->package->updatedTime = 'Update Date';
+$lang->package->downloads   = 'Downloads';
+$lang->package->public      = 'Public';
+$lang->package->compatible  = 'Compatible';
+$lang->package->grade       = 'Rating';
+$lang->package->depends     = 'Dependency';
+
+$lang->package->publicList[0] = 'Direct';
+$lang->package->publicList[1] = 'Auto';
+
+$lang->package->compatibleList[0] = 'Unknown';
+$lang->package->compatibleList[1] = 'Compatible';
+
+$lang->package->byDownloads   = 'By Downloads';
+$lang->package->byAddedTime   = 'By Added Time';
+$lang->package->byUpdatedTime = 'By Updated Time';
+$lang->package->bySearch      = 'By Search';
+$lang->package->byCategory    = 'By Category';
+
+$lang->package->installFailed            = '%s failed. Error:';
+$lang->package->uninstallFailed          = 'Uninstalling failed. Error:';
+$lang->package->confirmUninstall         = 'Extension uninstalling will delete or edit relavant database. Do you want to continue?';
+$lang->package->noticeBackupDB           = 'Back up your databse before backup.';
+$lang->package->installFinished          = '%s uninstalled!';
+$lang->package->refreshPage              = 'Refresh Page';
+$lang->package->uninstallFinished        = 'Uninstalled.';
+$lang->package->deactivateFinished       = 'Deactivated.';
+$lang->package->activateFinished         = 'Activate.';
+$lang->package->eraseFinished            = 'Erased.';
+$lang->package->unremovedFiles           = 'File or directory cannot be all deleted. Delete it manually.';
+$lang->package->executeCommands          = '<h3>Execute command lines to fix problems：</h3>';
+$lang->package->successDownloadedPackage = 'Extension package downloaded.';
+$lang->package->successUploadedPackage   = 'Extension package uploaded.';
+$lang->package->successCopiedFiles       = 'Files copied.';
+$lang->package->successInstallDB         = 'Database installed.';
+$lang->package->viewInstalled            = 'Check installed extensions.';
+$lang->package->viewAvailable            = 'Check available extensions.';
+$lang->package->viewDeactivated          = 'Check deactivated extensions.';
+$lang->package->backDBFile               = 'Extension relavant data has been backed up to %s!';
+
+$lang->package->upgradeExt     = 'Upgrade';
+$lang->package->installExt     = 'Install';
+$lang->package->upgradeVersion = '(Uprade %s to %s)';
+
+$lang->package->waring = 'Warning';
+
+$lang->package->errorOccurs                  = 'Error：';
+$lang->package->errorGetModules              = 'Get extension cateory from www.ranzhico.com failed. It could be connection failure. Please check your connection and refresh page.';
+$lang->package->errorGetPackages             = 'Get extension cateory from www.ranzhico.com failed. It could be connection failure. Please go to <a href="https://www.ranzhico.com/extension" target="_blank" class="alert-link">www.ranzhico.com</a> and download the extension, then upload it to install.';
+$lang->package->errorDownloadPathNotFound    = 'Extension storage path <strong>%s</strong>does not exist.<br /> Execute <strong>mkdir -p %s</strong> under Linux to fix it.';
+$lang->package->errorDownloadPathNotWritable = 'Extension storage path <strong>%s</strong> is not writable.<br /> Execute <strong>sudo chmod 777 %s</strong> under Linux to fix it.';
+$lang->package->errorPackageFileExists       = 'Download directory has the file with the same name as <strong>%s</strong>.<h3> %s again, <a href="%s" class="alert-link loadInModal">please click this URL</a></h3>';
+$lang->package->errorDownloadFailed          = 'Failed. Please download it again. If failed again, try to manually download it. Then upload it for installation.';
+$lang->package->errorMd5Checking             = 'Incomplete downloading. Please download it again. If failed again, try to manually download it. Then upload it for installation.';
+$lang->package->errorExtracted               = 'Unzip <strong> %s </strong> failed. It might be an invalid .zip file. Error: <br />%s';
+$lang->package->errorCheckIncompatible       = 'Extension is incompatible with current version of Ranger. %sed it and you might not be able to use it. <h3>You can <a href="%s" class="loadInModal">Forece %s</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>';
+$lang->package->errorFileConflicted          = 'Conflicting file：<br />%s <h3>. You can <a href="%s" class="loadInModal">Override</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>';
+$lang->package->errorPackageNotFound         = '<strong>%s </strong>is not found. It might be auto downloading failure. Please download it again.';
+$lang->package->errorTargetPathNotWritable   = 'Target path <strong>%s </strong>is not writable.';
+$lang->package->errorTargetPathNotExists     = 'Target path <strong>%s </strong>does not exist.';
+$lang->package->errorInstallDB               = 'Database statement execution failed. Error：%s';
+$lang->package->errorConflicts               = 'Conflicted with “%s”!';
+$lang->package->errorDepends                 = 'Extension is not installed or its versioin is incorrect:<br /><br /> %s';
+$lang->package->errorIncompatible            = 'Extensioin is incompatible with the current version of Changer.';
+$lang->package->errorUninstallDepends        = '“%s” is dependent on this extension. Do not uninstall it.';
+/* sys/setting */
+$lang->setting->common = 'Settings';
+$lang->setting->reset  = 'Reset';
+$lang->setting->key    = 'Key';
+$lang->setting->value  = 'Value';
+
+$lang->setting->lang = 'Product Status,Product Line,Customer Type, Customer Size, Customer Level, Customer Status, Currency Settings, and Role.';
+
+$lang->setting->customerPool = 'Customer Pool Settings';
+$lang->setting->modules      = 'Module Settings';
+
+$lang->setting->module = new stdClass();
+$lang->setting->module->user     = 'User';
+$lang->setting->module->product  = 'Product Status';
+$lang->setting->module->customer = 'Customer Level';
+
+$lang->setting->user = new stdClass();
+$lang->setting->user->fields['roleList'] = 'Role Settings';
+
+$lang->setting->product = new stdClass();
+$lang->setting->product->fields['statusList'] = 'Product Status';
+$lang->setting->product->fields['lineList']   = 'Product Line';
+
+$lang->setting->product->lineList = new stdclass();
+$lang->setting->product->lineList->key   = 'Key';
+$lang->setting->product->lineList->value = 'Value';
+
+$lang->setting->customer = new stdClass();
+$lang->setting->customer->fields['typeList']      = 'Customer Type';
+$lang->setting->customer->fields['sizeNameList']  = 'Customer Size';
+$lang->setting->customer->fields['levelNameList'] = 'Customer Level';
+$lang->setting->customer->fields['statusList']    = 'CustomerStatus';
+
+$lang->setting->system = new stdclass();
+$lang->setting->system->setCurrency            = 'Currency';
+$lang->setting->system->fields['currencyList'] = 'Currency Settings';
+
+$lang->setting->allLang     = 'Apply to all Languages';
+$lang->setting->currentLang = 'Apply to current language';
+
+$lang->setting->placeholder = new stdclass();
+$lang->setting->placeholder->key   = 'Key';
+$lang->setting->placeholder->value = 'Value';
+$lang->setting->placeholder->info  = 'Note';
+
+$lang->setting->placeholder->typeList = new stdclass();
+$lang->setting->placeholder->typeList->key = 'Key, between 1 to 30 characters.';
+
+$lang->setting->placeholder->sizeNameList = new stdclass();
+$lang->setting->placeholder->sizeNameList->key   = 'combination of numbers and letters';
+$lang->setting->placeholder->sizeNameList->value = 'Value';
+$lang->setting->placeholder->sizeNameList->info  = 'Note';
+
+$lang->setting->placeholder->levelNameList = new stdclass();
+$lang->setting->placeholder->levelNameList->key   = 'combination of numbers and letters';
+$lang->setting->placeholder->levelNameList->value = 'Value';
+$lang->setting->placeholder->levelNameList->info  = 'Note';
+
+$lang->setting->placeholder->lineList = new stdclass();
+$lang->setting->placeholder->lineList->key   = 'combination of numbers and letters';
+$lang->setting->placeholder->lineList->value = 'Value';
+
+$lang->setting->reserveDays    = 'Enter Customer Pool (days)';
+$lang->setting->reserveDaysTip = 'Customer (unsigned) was not updated in certain days, so this customer will enter Customer Pool. Set vaule as 0 to disable this funtion.';
+
+$lang->setting->moduleList['attend']   = 'Attendance';
+$lang->setting->moduleList['trip']     = 'Trip';
+$lang->setting->moduleList['leave']    = 'Leave';
+$lang->setting->moduleList['overtime'] = 'Overtime';
+$lang->setting->moduleList['refund']   = 'Reimburse';
+/* sys/user */
+$lang->user->common    = 'Member';
+
+$lang->user->id        = 'ID';
+$lang->user->account   = 'Account';
+$lang->user->super     = 'Admin';
+$lang->user->password  = 'Password';
+$lang->user->password2 = 'Repeat Password';
+$lang->user->realname  = 'Name';
+$lang->user->nickname  = 'Nick Name';
+$lang->user->dept      = 'Affiliated Department';
+$lang->user->role      = 'Role';    
+$lang->user->avatar    = 'Avatar';
+$lang->user->birthyear = 'Birth Year';
+$lang->user->birthday  = 'Birthday';
+$lang->user->gender    = 'Gender';
+$lang->user->email     = 'Email';
+$lang->user->msn       = 'MSN';
+$lang->user->qq        = 'QQ';
+$lang->user->yahoo     = 'Yahoo通';
+$lang->user->gtalk     = 'Gtalk';
+$lang->user->wangwang  = '旺旺';
+$lang->user->mobile    = 'Mobile';
+$lang->user->phone     = 'Phone';
+$lang->user->dept      = 'Department';
+$lang->user->address   = 'Mailing Address';
+$lang->user->zipcode   = 'Zip Code';
+$lang->user->join      = 'Join Date';
+$lang->user->visits    = 'Visits';
+$lang->user->ip        = 'Last IP';
+$lang->user->last      = 'Last Login';
+$lang->user->allowTime = 'Enable Date';
+$lang->user->status    = 'Status';
+$lang->user->alert     = 'Your account has be disabled.';
+$lang->user->keepLogin = 'Keep Login';
+$lang->user->ignore    = 'Ignore';
+
+$lang->user->admin           = 'User';
+$lang->user->list            = 'List';
+$lang->user->colleague       = 'Colleague List';
+$lang->user->view            = "Details";
+$lang->user->create          = "Add";
+$lang->user->edit            = "Edit";
+$lang->user->changePassword  = "Change Password";
+$lang->user->recoverPassword = "Forgot Password";
+$lang->user->newPassword     = "New Password";
+$lang->user->update          = "Update";
+$lang->user->delete          = "Delete";
+$lang->user->browse          = "View";
+$lang->user->deny            = "Access denied.";
+$lang->user->confirmDelete   = "Do you want to delete it?";
+$lang->user->confirmActivate = "Do you want to activate it?";
+$lang->user->relogin         = "Login Again";
+$lang->user->asGuest         = "Guest Access";
+$lang->user->goback          = "Back";
+$lang->user->allUsers        = 'All Users';
+$lang->user->submit          = "Submit";
+$lang->user->forbid          = 'Disable';
+$lang->user->active          = 'Activate';
+$lang->user->setReferer      = 'Referer';
+$lang->user->vcard           = 'Get QR Code';
+$lang->user->uploadAvatar    = 'Upload Avatar';
+$lang->user->cropAvatar      = 'Crop Avatar';
+$lang->user->cropAvatarTip   = 'Drag to select the range to crop';
+$lang->user->adminUser       = 'Company';
+
+$lang->user->profile     = 'Profile';
+$lang->user->editProfile = 'Edit';
+$lang->user->thread      = 'My Thread';
+$lang->user->reply       = 'My Reply';
+$lang->user->message     = 'My Message';
+
+$lang->user->inputUserName       = 'Please enter user name';
+$lang->user->inputColleague      = 'Please enter colleague name';
+$lang->user->inputAccountOrEmail = 'Please enter user name or Email';
+$lang->user->inputPassword       = 'Please enter password';
+$lang->user->searchUser          = 'Search';
+
+$lang->user->errorDeny     = "You have no access to『<b>%s</b>』->『<b>%s</b>』. Please contact Admin to get privilege. Click Back to go back.<br/> In 5 seconds, you will be directed to Homepage...";
+$lang->user->loginFailed   = "Login failed. Please check your user name and password.";
+$lang->user->locked        = "User has been locked. Please %s and log in again.";
+$lang->user->lockedForEver = "User has been permanently deactivated.";
+$lang->user->forbidSuccess = 'Disabled.';
+$lang->user->actionFail    = 'Failed.';
+$lang->user->uploadSuccess = 'Uploaded!';
+
+$lang->user->forbidUser = 'Manage';
+$lang->user->operate    = 'Action';
+
+$lang->user->genderList = $lang->genderList;
+
+$lang->user->basicInfo   = 'Basic Info';
+$lang->user->contactInfo = 'Contact Info';
+
+$lang->user->statusList = new stdclass();
+$lang->user->statusList->locked    = "<label class='label label-danger'>Lock</label>";
+$lang->user->statusList->forbidden = "<label class='label label-danger'>Disable</label>";
+$lang->user->statusList->normal    = "<label class='label label-success'>Normal</label>";
+
+$lang->user->notice = new stdclass();
+$lang->user->notice->password = 'combinatio of letters and numbers, at least 6 characters';
+
+$lang->user->login  = new stdclass();
+$lang->user->login->common  = "Login";
+$lang->user->login->welcome = 'Already have an account';
+$lang->user->login->why     = 'Welcome to member-exclusive service!';
+
+$lang->user->control = new stdclass();
+$lang->user->control->common      = 'Dashboard';
+$lang->user->control->welcome     = 'Hello, <strong>%s</strong>!';
+$lang->user->control->lblPassword = "Keep it unchanged,if leave empty";
+
+$lang->user->control->menus[10] = '<i class="icon-large icon-user"></i> Profile <i class="icon-chevron-right"></i>|user|profile';
+$lang->user->control->menus[20] = '<i class="icon-large icon-edit"></i> Edit <i class="icon-chevron-right"></i>|user|edit';
+//$lang->user->control->menus[28] = '<i class="icon-large icon-comments-alt"></i> My Message <i class="icon-chevron-right"></i>|user|message';
+$lang->user->control->menus[30] = '<i class="icon-large icon-share"></i> My Thread <i class="icon-chevron-right"></i>|user|thread';
+$lang->user->control->menus[40] = '<i class="icon-large icon-mail-reply-all"></i> My Reply <i class="icon-chevron-right"></i>|user|reply';
+
+$lang->user->colleagueMenu = 'Colleague';
+
+$lang->dept = new stdclass();  
+$lang->dept->common     = 'Department Structure';
+$lang->dept->name       = 'Name';
+$lang->dept->alias      = 'Alias';
+$lang->dept->edit       = 'Edit';
+$lang->dept->parent     = 'Parent';
+$lang->dept->children   = 'Child';
+$lang->dept->desc       = 'Note';
+$lang->dept->keywords   = 'Keywords';
+$lang->dept->moderators = 'Manager';
+
+$lang->user->roleList['']           = ''; 
+$lang->user->roleList['dev']        = 'Develop';
+$lang->user->roleList['pm']         = 'Project Manager';
+$lang->user->roleList['market']     = 'Marketing';
+$lang->user->roleList['sale']       = 'Sales';
+$lang->user->roleList['hr']         = 'HR';
+$lang->user->roleList['office']     = 'Adminstration';
+$lang->user->roleList['service']    = 'Customer Service';
+$lang->user->roleList['support']    = 'Technical Support';
+$lang->user->roleList['marketmgr']  = 'Marketing Manager';
+$lang->user->roleList['salemgr']    = 'Sales Manager';
+$lang->user->roleList['hrmgr']      = 'HR Manger';
+$lang->user->roleList['adminmgr']   = 'Executive Manager';
+$lang->user->roleList['servicemgr'] = 'Service Mangager';
+$lang->user->roleList['supportmgr'] = 'Technic Manager';
+$lang->user->roleList['top']        = 'Senior Manager';
+$lang->user->roleList['others']     = 'Other';
+
+$lang->user->mailContent = <<<EOT
+<html>
+<head>
+<style type='text/css'>
+body{margin:0;padding:0;}
+div{padding-left:30px;}
+</style>
+</head>
+<body>
+<div style='padding-top:20px;height:60px;background:#fafafa;border-bottom:1px solid #ddd;font-size:18px;font-weight:bold'> Change Password </div>
+<div style='margin-top:20px;'>
+<p>Dear %s <br />
+Please click the URL below to change password: <br >
+<a href='%s' target='_blank'>%s</a>
+</p>
+<p>Reset code：%s</p>
+</div>
+<div style='height:20px;border-bottom:1px solid #ddd;'></div>
+<div style='margin:20px 0 0 0 ;'>
+Please do not reply to this automatically generated eamil.
+</div>
+</body>
+</html>
+EOT;
+/* sys/report */
+if(!isset($lang->report)) $lang->report = new stdclass();
+$lang->report->common     = 'Report';
+$lang->report->browse     = 'Order Report, Customer Report, Contract Report';
+$lang->report->list       = 'Report';
+$lang->report->item       = 'Item';
+$lang->report->value      = 'Value';
+$lang->report->percent    = 'Percentage';
+$lang->report->undefined  = 'Undefined';
+$lang->report->time       = 'Date';
+$lang->report->select     = 'Select the Type of your report';
+$lang->report->create     = 'Generate Report';
+
+$lang->report->options = new stdclass();
+$lang->report->options->type   = 'pie';
+$lang->report->options->width  = 500;
+$lang->report->options->height = 140;
+
+$lang->report->options->graph = new stdclass();
+$lang->report->options->graph->xAxisName = 'DEFAULT';
+$lang->report->options->graph->caption   = 'DEFAULT';   // 是否显示柱状图阴影.
+
+$lang->report->customer = new stdclass();
+$lang->report->customer->common = 'CustomerReport';
+$lang->report->customer->chartList['assignedTo'] = 'By AssignTo';
+$lang->report->customer->chartList['status']     = 'By Status';
+$lang->report->customer->chartList['level']      = 'By Level';
+$lang->report->customer->chartList['type']       = 'By Type';
+$lang->report->customer->chartList['size']       = 'By Size';
+$lang->report->customer->chartList['area']       = 'By Area';
+$lang->report->customer->chartList['industry']   = 'By Industry';
+
+$lang->report->customer->item['assignedTo'] = 'User';
+$lang->report->customer->item['status']     = 'Status';
+$lang->report->customer->item['level']      = 'Level';
+$lang->report->customer->item['type']       = 'Type';
+$lang->report->customer->item['size']       = 'Size';
+$lang->report->customer->item['area']       = 'Area';
+$lang->report->customer->item['industry']   = 'Industry';
+
+$lang->report->customer->value['assignedTo'] = 'Customer';
+$lang->report->customer->value['status']     = 'Customer';
+$lang->report->customer->value['level']      = 'Customer';
+$lang->report->customer->value['type']       = 'Customer';
+$lang->report->customer->value['size']       = 'Customer';
+$lang->report->customer->value['area']       = 'Customer';
+$lang->report->customer->value['industry']   = 'Customer';
+
+$lang->report->order = new stdclass();
+$lang->report->order->common = 'OrderReport';
+$lang->report->order->chartList['product']      = 'By Product(number)';
+$lang->report->order->chartList['productLine']  = 'By Product Line(number)';
+$lang->report->order->chartList['status']       = 'By Status(number)';
+$lang->report->order->chartList['assignedTo']   = 'By AssignTo(number)';
+$lang->report->order->chartList['createdBy']    = 'By CreatedBy(number)';
+$lang->report->order->chartList['productA']     = 'By Product(amount)';
+$lang->report->order->chartList['productLineA'] = 'By Product Line(amount)'';
+$lang->report->order->chartList['statusA']      = 'By Status(amount)'';
+$lang->report->order->chartList['assignedToA']  = 'By AssignTo(amount)'';
+$lang->report->order->chartList['createdByA']   = 'By CreatedBy(amount)'';
+
+$lang->report->order->item['product']      = 'Product';
+$lang->report->order->item['productLine']  = 'Product Line';
+$lang->report->order->item['status']       = 'Status';
+$lang->report->order->item['assignedTo']   = 'Assign To';
+$lang->report->order->item['createdBy']    = 'Created By';
+$lang->report->order->item['productA']     = 'Product';
+$lang->report->order->item['productLineA'] = 'Product';
+$lang->report->order->item['statusA']      = 'Status';
+$lang->report->order->item['assignedToA']  = 'Assign To';
+$lang->report->order->item['createdByA']   = 'Created By';
+
+$lang->report->order->value['product']      = 'Number';
+$lang->report->order->value['productLine']  = 'Number';
+$lang->report->order->value['status']       = 'Number';
+$lang->report->order->value['assignedTo']   = 'Number';
+$lang->report->order->value['createdBy']    = 'Number';
+$lang->report->order->value['productA']     = 'Amount';
+$lang->report->order->value['productLineA'] = 'Amount';
+$lang->report->order->value['statusA']      = 'Amount';
+$lang->report->order->value['assignedToA']  = 'Amount';
+$lang->report->order->value['createdByA']   = 'Amount';
+
+$lang->report->contract = new stdclass();
+$lang->report->contract->common = 'ContractReport';
+$lang->report->contract->chartList['status']       = 'By Contract Status(number)';
+$lang->report->contract->chartList['delivery']     = 'By Delivery Status(number)';
+$lang->report->contract->chartList['return']       = 'By Payment Status(number)';
+$lang->report->contract->chartList['createdBy']    = 'By CreatedBy(number)';
+$lang->report->contract->chartList['signedBy']     = 'By AssignTo(number)';
+$lang->report->contract->chartList['deliveredBy']  = 'By DeliveredBy(number)';
+//$lang->report->contract->chartList['handlers']     = 'By Handler(number)';
+$lang->report->contract->chartList['contactedBy']  = 'By Contact(number)';
+$lang->report->contract->chartList['statusA']      = 'By Contract Status(amount)'';
+$lang->report->contract->chartList['deliveryA']    = 'By Delivery Status(amount)'';
+$lang->report->contract->chartList['returnA']      = 'By Payment Status(amount)'';
+$lang->report->contract->chartList['createdByA']   = 'By CreatedBy(amount)'';
+$lang->report->contract->chartList['signedByA']    = 'By AssignTo(amount)'';
+$lang->report->contract->chartList['deliveredByA'] = 'By DeliveredBy(amount)'';
+//$lang->report->contract->chartList['handlersA']    = 'By Handler(amount)'';
+$lang->report->contract->chartList['contactedByA'] = 'By Contact(amount)'';
+
+$lang->report->contract->item['status']       = 'Contract Status';
+$lang->report->contract->item['delivery']     = 'Delivery Status';
+$lang->report->contract->item['return']       = 'Payment Status';
+$lang->report->contract->item['createdBy']    = 'Created By';
+$lang->report->contract->item['signedBy']     = 'User';
+$lang->report->contract->item['deliveredBy']  = 'Delivered By';
+$lang->report->contract->item['handlers']     = 'Handler';
+$lang->report->contract->item['contactedBy']  = 'Contact';
+$lang->report->contract->item['statusA']      = 'Order Status';
+$lang->report->contract->item['deliveryA']    = 'Delivery Status';
+$lang->report->contract->item['returnA']      = 'Payment Status';
+$lang->report->contract->item['createdByA']   = 'Created By';
+$lang->report->contract->item['signedByA']    = 'User';
+$lang->report->contract->item['deliveredByA'] = 'Delivered By';
+$lang->report->contract->item['handlersA']    = 'Handler';
+$lang->report->contract->item['contactedByA'] = 'Contact';
+
+$lang->report->contract->value['status']       = 'Number';
+$lang->report->contract->value['delivery']     = 'Number';
+$lang->report->contract->value['return']       = 'Number';
+$lang->report->contract->value['createdBy']    = 'Number';
+$lang->report->contract->value['signedBy']     = 'Number';
+$lang->report->contract->value['deliveredBy']  = 'Number';
+$lang->report->contract->value['handlers']     = 'Number';
+$lang->report->contract->value['contactedBy']  = 'Number';
+$lang->report->contract->value['statusA']      = 'Amount';
+$lang->report->contract->value['deliveryA']    = 'Amount';
+$lang->report->contract->value['returnA']      = 'Amount';
+$lang->report->contract->value['createdByA']   = 'Amount';
+$lang->report->contract->value['signedByA']    = 'Amount';
+$lang->report->contract->value['deliveredByA'] = 'Amount';
+$lang->report->contract->value['handlersA']    = 'Amount';
+$lang->report->contract->value['contactedByA'] = 'Amount';
+/* sys/tag */
+if(!isset($lang->tag)) $lang->tag = new stdclass();
+$lang->tag->common = 'Keywords';
+$lang->tag->rank   = 'Rank';
+$lang->tag->link   = 'URL';
+$lang->tag->search = 'Search';
+
+$lang->tag->admin     = 'Keywords';
+$lang->tag->editLink  = 'Edit';
+$lang->tag->inputLink = 'Enter URL';
+/* sys/misc */
+
+if(!isset($lang->misc)) $lang->misc = new stdclass();
+$lang->misc->version     = 'Version %s';
+$lang->misc->offcialSite = 'Official Website';
+$lang->misc->support     = 'Technical Support';
+$lang->misc->userbook    = 'User Manual';
+$lang->misc->forum       = 'Forum';
+/* sys/file */
+$lang->file->common     = 'File';
+$lang->file->upload     = 'Upload';
+$lang->file->browse     = 'File List';
+$lang->file->download   = 'Download';
+$lang->file->edit       = 'Edit';
+$lang->file->primary    = 'Cover';
+$lang->file->setPrimary = 'Set as Cover';
+$lang->file->toggle     = 'Switch';
+$lang->file->label      = 'Title';
+$lang->file->lblInfo    = '<i>(Type：%s, Size：%s, Added On：%s, Download %s )</i>';
+$lang->file->limit      = "(<span class='text-danger'>no more than 2M</span>)";
+$lang->file->attachFile = 'Attach another file';
+
+$lang->file->id          = 'ID';
+$lang->file->title       = 'Name';
+$lang->file->pathname    = 'Path Name';
+$lang->file->extension   = 'Type';
+$lang->file->size        = 'Size';
+$lang->file->createdBy   = 'Uploaded By';
+$lang->file->createdDate = 'Upload Date';
+$lang->file->public      = 'Public';
+$lang->file->downloads   = 'Downloads';
+
+$lang->file->edit          = 'Edit';
+$lang->file->editFile      = 'Edit';
+$lang->file->sizeLimit     = "<p class='text-danger'>File should be no more than %sM</p>";
+$lang->file->maxUploadSize = "<span class='red'>%s</span>";
+
+$lang->file->errorUnwritable = 'Directory is not writable. File cannot be uploaded.';
+$lang->file->errorNoFile     = 'No File selected.';
+$lang->file->errorFileSize   = 'File size is over the limit. It cannot be uploaded!';
+/* sys/mail */
+$lang->mail->common = 'Mail Settings';
+$lang->mail->index  = 'Home';
+$lang->mail->detect = 'Test';
+$lang->mail->edit   = 'Edit';
+$lang->mail->save   = 'Save';
+$lang->mail->test   = 'Testing';
+$lang->mail->reset  = 'Reset';
+
+$lang->mail->turnon      = 'On/Off';
+$lang->mail->fromAddress = 'From';
+$lang->mail->fromName    = 'Sender';
+$lang->mail->mta         = 'MTA';
+$lang->mail->host        = 'SMTP Host';
+$lang->mail->port        = 'SMTP Port';
+$lang->mail->auth        = 'Verification';
+$lang->mail->username    = 'SMTP Account';
+$lang->mail->password    = 'SMTP Password';
+$lang->mail->secure      = 'Encrytion';
+$lang->mail->debug       = 'Debug';
+
+$lang->mail->turnonList[1]  = 'On';
+$lang->mail->turnonList[0] = 'Off';
+
+$lang->mail->debugList[0] = 'Off';
+$lang->mail->debugList[1] = 'Low';
+$lang->mail->debugList[2] = 'High';
+
+$lang->mail->authList[1]  = 'Yes';
+$lang->mail->authList[0] = 'No';
+
+$lang->mail->secureList['']    = 'No';
+$lang->mail->secureList['ssl'] = 'ssl';
+$lang->mail->secureList['tls'] = 'tls';
+
+$lang->mail->inputFromEmail = 'Enter Email sent from:';
+$lang->mail->nextStep       = 'Next';
+$lang->mail->successSaved   = 'Configuration saved.';
+$lang->mail->subject        = 'Testing Emails';
+$lang->mail->content        = 'Email has been set.';
+$lang->mail->successSended  = 'Sent!';
+$lang->mail->needConfigure  = 'Email configuration cannot be found. Please configure it first.';
+
+$lang->mail->mailContentTip = <<<EOT
+<strong>%s</strong>(%s)is powered by <a href='https://www.ranzhico.com' target='blank'>Ranger</a><br/>
+<a href='http://www.cnezsoft.com' target='blank'>Nature Easy Soft</a> provides professional management software for you all!
+EOT;
+$lang->mail->openTip = 'Order, Customer, Task, Leave, and Reimburse updates will sent as email notification.';
+/* sys/article */
+$lang->article->common      = 'Manage';
+$lang->article->createDraft = 'Save Draft';
+
+$lang->article->id          = 'ID';
+$lang->article->category    = 'Category';
+$lang->article->categories  = 'Category';
+$lang->article->title       = 'Title';
+$lang->article->alias       = 'Alias';
+$lang->article->content     = 'Content';
+$lang->article->original    = 'Origin';
+$lang->article->copySite    = 'Website';
+$lang->article->copyURL     = 'URL';
+$lang->article->keywords    = 'Keywords';
+$lang->article->summary     = 'Summary';
+$lang->article->author      = 'Author';
+$lang->article->editor      = 'Edit';
+$lang->article->createdDate = 'Create Date';
+$lang->article->editedDate  = 'Edit Date';
+$lang->article->status      = 'Status';
+$lang->article->type        = 'Type';
+$lang->article->views       = 'Views';
+$lang->article->stick       = 'Sticky';
+$lang->article->order       = 'Sorting';
+$lang->article->private     = 'Private';
+$lang->article->users       = 'Authorized User';
+$lang->article->groups      = 'Authorized Group';
+$lang->article->readers     = 'Reader';
+
+$lang->article->list        = 'Article List';
+$lang->article->admin       = 'Manage';
+$lang->article->create      = 'Create';
+$lang->article->edit        = 'Edit';
+$lang->article->files       = 'File';
+
+if(!isset($lang->blog)) $lang->blog = new stdclass();
+$lang->blog->admin  = 'Manage Blog';
+$lang->blog->list   = 'Blog List';
+$lang->blog->create = 'Create';
+$lang->blog->edit   = 'Edit';
+
+if(!isset($lang->announce)) $lang->announce = new stdclass();
+$lang->announce->admin  = 'Manage';
+$lang->announce->list   = 'List';
+$lang->announce->create = 'Create';
+$lang->announce->edit   = 'Edit';
+
+$lang->page = new stdclass();
+$lang->page->admin  = 'Manange';
+$lang->page->list   = 'List';
+$lang->page->create = 'Add';
+$lang->page->edit   = 'Edit';
+
+$lang->article->originalList[1] = 'Original';
+$lang->article->originalList[0] = 'Repost';
+
+$lang->article->statusList['draft']  = 'Draft';
+$lang->article->statusList['normal'] = 'Normal';
+
+$lang->article->confirmDelete = 'Do you want to delete it?';
+
+$lang->article->lblAddedDate = '<strong>Created Date：</strong> %s &nbsp;&nbsp;';
+$lang->article->lblAuthor    = "<strong>Author:</strong> %s &nbsp;&nbsp;";
+$lang->article->lblSource    = '<strong>Source: </strong>';
+$lang->article->lblViews     = '<strong>Views: </strong>%s';
+$lang->article->lblEditor    = '<i>Last Edited by %s on %s</i>';
+$lang->article->lblReaders   = '%s views';
+
+$lang->article->prev      = 'Previous';
+$lang->article->next      = 'Next';
+$lang->article->none      = 'The End';
+$lang->article->directory = 'Back to Directory';
+$lang->article->back2Top  = 'Back to Top';
+
+$lang->article->note = new stdclass();
+$lang->article->note->createdDate = 'Choose a date to schedule publishing it.';
+/* sys/group */
+$lang->group->common             = 'Group';
+$lang->group->browse             = 'View';
+$lang->group->create             = 'Add';
+$lang->group->edit               = 'Edit';
+$lang->group->copy               = 'Copy';
+$lang->group->delete             = 'Delete';
+$lang->group->manageAppPriv      = 'App';
+$lang->group->managePriv         = 'Privilege';
+$lang->group->managePrivByGroup  = 'Manage';
+$lang->group->managePrivByModule = 'Manage privileges by module';
+$lang->group->byModuleTips       = '<span class="tips">(Press Shift or Control to multi-select)</span>';
+$lang->group->manageMember       = 'Member';
+$lang->group->linkMember         = 'Link';
+$lang->group->unlinkMember       = 'Unlink';
+$lang->group->confirmDelete      = 'Do you want to delete it?';
+$lang->group->successSaved       = 'Saved.';
+$lang->group->errorNotSaved      = 'Not saved. Please make sure privilege is selected.';
+
+$lang->group->id       = 'ID';
+$lang->group->name     = 'Name';
+$lang->group->desc     = 'Note';
+$lang->group->users    = 'User';
+$lang->group->module   = 'Module';
+$lang->group->method   = 'Method';
+$lang->group->priv     = 'Privilege';
+$lang->group->option   = 'Option';
+$lang->group->inside   = 'Member';
+$lang->group->outside  = 'Non-Member';
+$lang->group->other    = 'Other';
+$lang->group->all      = 'All Privilege';
+$lang->group->extent   = 'Privilege Scope';
+$lang->group->havePriv = 'Authorized';
+$lang->group->noPriv   = 'Unauthorized';
+
+$lang->group->manageAll = 'All Customers and Orders visible to you';
+
+$lang->group->copyOptions['copyPriv'] = 'Copy Privilege';
+$lang->group->copyOptions['copyUser'] = 'Copy User';
+
+$lang->group->placeholder = new stdclass();
+$lang->group->placeholder->tree = 'Category includes Privilege Settings of Region, Industry,Income Category, Expense Category, Forum, Blog Category, and Department.';
+$lang->group->placeholder->lang = 'Settings includes Privilege Settings of Product Status, Product Line, Customer Type, Customer Size, Customer Level, Customer Status, Currency Settings, and Role.';
+
+include (dirname(__FILE__) . '/resource.php');
+/* sys/action */
+if(!isset($lang->action)) $lang->action = new stdclass();
+
+$lang->action->common   = 'System Log';
+$lang->action->product  = 'Product';
+$lang->action->actor    = 'Handler';
+$lang->action->contact  = 'Contact';
+$lang->action->comment  = 'Content';
+$lang->action->action   = 'Action';
+$lang->action->actionID = 'Action ID';
+$lang->action->date     = 'Date';
+$lang->action->nextDate = 'Next Contact';
+
+$lang->action->trash      = 'Recycle';
+$lang->action->objectType = 'Type';
+$lang->action->objectID   = 'ID';
+$lang->action->objectName = 'Name';
+
+$lang->action->createContact = 'Create';
+$lang->action->editComment   = 'Edit';
+$lang->action->hide          = 'Hide';       
+$lang->action->hideOne       = 'Hide';
+$lang->action->hideAll       = 'Hide All';
+$lang->action->hidden        = 'Hidden';
+$lang->action->undelete      = 'Restore';
+$lang->action->trashTips     = 'Note: All Delete action in Ranger is to delete a tag for the system integrity.';
+
+$lang->action->textDiff = 'Text';
+$lang->action->original = 'Origingal';
+
+$lang->action->desc = new stdclass();
+$lang->action->desc->common                = '$date, <strong>$action</strong> by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->extra                 = '$date, <strong>$action</strong> as <strong>$extra</strong> by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->opened                = '$date, created by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->created               = '$date, created by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->edited                = '$date, edited by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->assigned              = '$date, <strong>$actor</strong> assigned to <strong>$extra</strong>.' . "\n";
+$lang->action->desc->transmit              = '$date, <strong>$actor</strong> transferred to <strong>$extra</strong>.' . "\n";
+$lang->action->desc->closed                = '$date, closed by <strong>$actor</strong>. Closed Reason:<strong>$extra</strong>.' . "\n";
+$lang->action->desc->deleted               = '$date, deleted by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->deletedfile           = '$date, <strong>$actor</strong> deleted: <strong><i>$extra</i></strong>.' . "\n";
+$lang->action->desc->editfile              = '$date, <strong>$actor</strong> edited: <strong><i>$extra</i></strong>.' . "\n";
+$lang->action->desc->erased                = '$date, edited by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->commented             = '$date, <strong>$actor</strong> added a note.' . "\n";
+$lang->action->desc->activated             = '$date, activated by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->moved                 = '$date, moved by <strong>$actor</strong>. It was "$extra".' . "\n";
+$lang->action->desc->started               = '$date, initiated by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->delayed               = '$date, postponed by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->suspended             = '$date, suspended by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->canceled              = '$date, cancelled by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->finished              = '$date, finished by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->replied               = '$date, replied by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->doubted               = '$date, followed by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->transfered            = '$date, transferred by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->reviewed              = '$date, <strong>$actor</strong> reviewed $extra.' . "\n";
+$lang->action->desc->reimburse             = '$date, <strong>$actor</strong> reimbursed $extra.' . "\n";
+$lang->action->desc->revoked               = '$date, cancelled by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->commited              = '$date, submitted by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->returned              = '$date, <strong>$actor</strong> paid $extra.' . "\n";
+$lang->action->desc->editreturned          = '$date, payment edited by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->deletereturned        = '$date, <strong>$actor</strong> deleted $extra.' . "\n";
+$lang->action->desc->finishreturned        = '$date, <strong>$actor</strong> paid $extra. Payment finished.' . "\n";
+$lang->action->desc->delivered             = '$date, delivered by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->editdelivered         = '$date, delivery edited by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->deletedelivered       = '$date, <strong>$actor</strong> deleted $extra.' . "\n";
+$lang->action->desc->finishdelivered       = '$date, delivery finished by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->createdresume         = '$date, <strong>$actor</strong> added Resume：<strong>$extra</strong>.' . "\n";
+$lang->action->desc->editedresume          = '$date, <strong>$actor</strong> edited Resume.' . "\n";
+$lang->action->desc->deleteresume          = '$date, <strong>$actor</strong> deleted Resume：<strong>$extra</strong>.' . "\n";
+$lang->action->desc->createaddress         = '$date, <strong>$actor</strong> added Address：<strong>$extra</strong>.' . "\n";
+$lang->action->desc->editaddress           = '$date, address edited by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->deleteaddress         = '$date, 由 <strong>$actor</strong> DeleteAddress：<strong>$extra</strong>.' . "\n";
+$lang->action->desc->diff1                 = 'Edited <strong><i>%s</i></strong>. Its value was "%s". The new value is "%s".<br />' . "\n";
+$lang->action->desc->diff2                 = 'Edited <strong><i>%s</i></strong>. The difference is ' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
+$lang->action->desc->diff3                 = "Change %s to %s .\n";
+$lang->action->desc->record                = '$date, <strong>$actor</strong> added History Log. Contact: <strong>$contact</strong>; Contact Date: $extra.' . "\n";
+$lang->action->desc->signed                = '$date, contract signed by <strong>$actor</strong>. The Amount is <strong>$extra</strong>.' . "\n";
+$lang->action->desc->linkcontact           = '$date, <strong>$actor</strong> added Contact: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->createorder           = '$date, <strong>$actor</strong> created Order: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->editorder             = '$date, <strong>$actor</strong> edited Order: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->assignorder           = '$date, <strong>$actor</strong> assigned Order: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->closeorder            = '$date, Order closed by <strong>$actor</strong><strong>$extra</strong>.' . "\n";
+$lang->action->desc->activateorder         = '$date, <strong>$actor</strong> activate Order: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->createcontract        = '$date, <strong>$actor</strong> created Contract: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->editcontract          = '$date, <strong>$actor</strong> edited Contract: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->delivercontract       = '$date, <strong>$actor</strong> delivered Contract<strong>$extra</strong>.' . "\n";
+$lang->action->desc->receivecontract       = '$date, <strong>$actor</strong> <strong>$extra</strong> Contract.' . "\n";
+$lang->action->desc->finishdelivercontract = '$date, <strong>$actor</strong> finished Delivery of Contract<strong>$extra</strong>.' . "\n";
+$lang->action->desc->finishreceivecontract = '$date, <strong>$actor</strong> <strong>$extra</strong> Contract. Finish payment.' . "\n";
+$lang->action->desc->finishcontract        = '$date, <strong>$actor</strong> finished Contract: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->cancelcontract        = '$date, <strong>$actor</strong> cancelled Contract: <strong>$extra</strong>.' . "\n";
+$lang->action->desc->hidden                = '$date, hidden by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->undeleted             = '$date, restored by <strong>$actor</strong>.' . "\n";
+$lang->action->desc->transform             = '$date, <strong>$actor</strong> converted to Contact.' . "\n";
+$lang->action->desc->ignored               = '$date, ignored by <strong>$actor</strong>.' . "\n";
+
+$lang->action->label = new stdclass();
+$lang->action->label->created     = 'Created';
+$lang->action->label->edited      = 'Edited';
+$lang->action->label->assigned    = 'Assigned';
+$lang->action->label->transmit    = 'Transferred';
+$lang->action->label->closed      = 'Closed';
+$lang->action->label->deleted     = 'Deleted';
+$lang->action->label->erased      = 'Erased';
+$lang->action->label->undeleted   = 'Restored';
+$lang->action->label->deletedfile = 'Delete';
+$lang->action->label->editfile    = 'Edit';
+$lang->action->label->commented   = 'Commented';
+$lang->action->label->activated   = 'Activated';
+$lang->action->label->resolved    = 'Resolved';
+$lang->action->label->reviewed    = 'Reviewed';
+$lang->action->label->moved       = 'Moved';
+$lang->action->label->marked      = 'Edited';
+$lang->action->label->started     = 'Started';
+$lang->action->label->canceled    = 'Cancelled';
+$lang->action->label->finished    = 'Finished';
+$lang->action->label->reimbursed  = 'Reimbursed';
+$lang->action->label->record      = 'Recorded';
+$lang->action->label->signed      = 'Signed';
+$lang->action->label->commited    = 'Submitted';
+$lang->action->label->revoked     = 'Cancelled';
+$lang->action->label->forbidden   = 'Forbidden';
+$lang->action->label->transform   = 'Converted';
+$lang->action->label->ignore      = 'Ignored';
+$lang->action->label->login       = 'Login';
+$lang->action->label->logout      = "Logout";
+
+$lang->action->label->createdbalance        = 'Enter Balance';
+$lang->action->label->createorder           = 'Created Order';
+$lang->action->label->editorder             = 'Edited Order';
+$lang->action->label->activateorder         = 'Activated Order';
+$lang->action->label->closeorder            = 'Closed Order';
+$lang->action->label->linkcontact           = 'Link Contact';
+$lang->action->label->createcontract        = 'Create Contract';
+$lang->action->label->editcontract          = 'Edit Contract';
+$lang->action->label->cancelcontract        = 'Cancel Contract';
+$lang->action->label->finishcontract        = 'Finish Contract';
+$lang->action->label->createdresume         = 'Create Resume';
+$lang->action->label->deleteresume          = 'Delete Resume';
+$lang->action->label->createaddress         = 'Create Address';
+$lang->action->label->editaddress           = 'Edit Address';
+$lang->action->label->finishdelivered       = 'Finish Delivery';
+$lang->action->label->finishdelivercontract = 'Finish Delivery';
+$lang->action->label->delivered             = 'Delivery';
+$lang->action->label->delivercontract       = 'Delivery';
+$lang->action->label->returned              = 'Payment';
+$lang->action->label->receivecontract       = 'Payment';
+$lang->action->label->finishreceivecontract = 'Finish Payment';
+$lang->action->label->finishreturned        = 'Finish Payment';
+$lang->action->label->deletereturned        = 'Delete Payment';
+
+$lang->action->label->product   = 'Product|product|view|productID=%s';
+$lang->action->label->order     = 'Order|order|view|orderID=%s';
+$lang->action->label->task      = 'Task|task|view|taskID=%s';
+$lang->action->label->contract  = 'Contract|contract|view|contractID=%s';
+$lang->action->label->announce  = 'Announcement|announce|view|announceID=%s';
+$lang->action->label->customer  = 'Customer|customer|view|customerID=%s';
+$lang->action->label->provider  = 'Supplier|provider|view|providerID=%s';
+$lang->action->label->contact   = 'Contact|contact|view|contactID=%s';
+$lang->action->label->todo      = 'To-Do|todo|calendar|';
+$lang->action->label->project   = 'Project|task|browse|projectID=%s';
+$lang->action->label->depositor = 'Account|depositor|browse|';
+$lang->action->label->balance   = 'Balance|balance|browse|depositorID=%s';
+$lang->action->label->trade     = 'Account|trade|browse|';
+$lang->action->label->doc       = 'Doc|doc|view|docID=%s';
+$lang->action->label->doclib    = 'DocLib|doc|browse|doclibID=%s';
+$lang->action->label->schema    = 'BookkeepingTemplate|schema|browse|';
+$lang->action->label->space     = '　';
+
+$lang->action->label->attend = array();
+$lang->action->label->attend['commited'] = 'Attendance Review|attend|browsereview|';
+$lang->action->label->attend['reviewed'] = 'Attendance Review|attend|personal|';
+$lang->action->label->leave = array();
+$lang->action->label->leave['created']  = 'Leave Review|leave|browsereview|';
+$lang->action->label->leave['commited'] = 'Leave Review|leave|browsereview|';
+$lang->action->label->leave['revoked']  = 'Leave Review|leave|browsereview|';
+$lang->action->label->leave['reviewed'] = 'Leave Review|leave|personal|';
+$lang->action->label->overtime = array();
+$lang->action->label->overtime['created']  = 'Overtime Review|overtime|browsereview|';
+$lang->action->label->overtime['commited'] = 'Overtime Review|overtime|browsereview|';
+$lang->action->label->overtime['revoked']  = 'Overtime Review|overtime|browsereview|';
+$lang->action->label->overtime['reviewed'] = 'Overtime Review|overtime|personal|';
+$lang->action->label->refund = array();
+$lang->action->label->refund['commited']    = 'Reimburse Review|refund|browsereview|';
+$lang->action->label->refund['revoked']     = 'Reimburse Review|refund|browsereview|';
+$lang->action->label->refund['created']     = 'Reimburse Review|refund|view|refundID=%s';
+$lang->action->label->refund['edited']      = 'Reimburse Review|refund|view|refundID=%s';
+$lang->action->label->refund['reviewed']    = 'Reimburse Review|refund|view|refundID=%s';
+$lang->action->label->refund['reimburse']   = 'Reimburse Review|refund|view|refundID=%s';
+$lang->action->label->refund['deletedfile'] = 'Reimburse Review|refund|view|refundID=%s';
+$lang->action->label->user = array();
+$lang->action->label->user['login']  = 'Login|user|login|';
+$lang->action->label->user['logout'] = 'Logout|user|logout|';
+
+$lang->action->search->objectTypeList['']            = '';    
+$lang->action->search->objectTypeList['product']     = 'Product';    
+$lang->action->search->objectTypeList['task']        = 'Task'; 
+$lang->action->search->objectTypeList['user']        = 'User'; 
+$lang->action->search->objectTypeList['order']       = 'Order'; 
+$lang->action->search->objectTypeList['contract']    = 'Contract'; 
+$lang->action->search->objectTypeList['orderAction'] = 'Action'; 
+
+$lang->action->nextContactList[1]      = 'Tomorrow';
+$lang->action->nextContactList[2]      = 'Two Days Later';
+$lang->action->nextContactList[3]      = 'Three Days Later';
+$lang->action->nextContactList[7]      = 'A Week Later';
+$lang->action->nextContactList[14]     = 'Two Weeks Later';
+$lang->action->nextContactList[365000] = 'Do Not Contact';
+
+$lang->action->search->label['']            = '';
+$lang->action->search->label['created']     = $lang->action->label->created;            
+$lang->action->search->label['edited']      = $lang->action->label->edited;             
+$lang->action->search->label['assigned']    = $lang->action->label->assigned;           
+$lang->action->search->label['transmit']    = $lang->action->label->transmit;           
+$lang->action->search->label['closed']      = $lang->action->label->closed;             
+$lang->action->search->label['deleted']     = $lang->action->label->deleted;            
+$lang->action->search->label['deletedfile'] = $lang->action->label->deletedfile;        
+$lang->action->search->label['editfile']    = $lang->action->label->editfile;           
+$lang->action->search->label['commented']   = $lang->action->label->commented;          
+$lang->action->search->label['activated']   = $lang->action->label->activated;          
+$lang->action->search->label['resolved']    = $lang->action->label->resolved;           
+$lang->action->search->label['reviewed']    = $lang->action->label->reviewed;           
+$lang->action->search->label['moved']       = $lang->action->label->moved;              
+$lang->action->search->label['started']     = $lang->action->label->started;            
+$lang->action->search->label['canceled']    = $lang->action->label->canceled;           
+$lang->action->search->label['finished']    = $lang->action->label->finished;           
+$lang->action->search->label['login']       = $lang->action->label->login;              
+$lang->action->search->label['logout']      = $lang->action->label->logout;
+
+$lang->action->record = new stdclass();
+$lang->action->record->common     = 'Record';
+$lang->action->record->create     = 'Add';
+$lang->action->record->edit       = 'Edit';
+$lang->action->record->history    = 'History';
+$lang->action->record->customer   = 'Customer';
+$lang->action->record->provider   = 'Supplier';
+$lang->action->record->contract   = 'Contract';
+$lang->action->record->order      = 'Order';
+$lang->action->record->contact    = 'Contact';
+$lang->action->record->actor      = 'Handler';
+$lang->action->record->comment    = 'Comment';
+$lang->action->record->date       = 'Date';
+$lang->action->record->file       = 'File';
+$lang->action->record->nextDate   = 'Next Contact';
+$lang->action->record->uploadFile = 'File:';
+
+$lang->action->objectTypes['order']     = 'Order';
+$lang->action->objectTypes['customer']  = 'Customer';
+$lang->action->objectTypes['provider']  = 'Supplier';
+$lang->action->objectTypes['doc']       = 'Doc';
+$lang->action->objectTypes['task']      = 'Task';
+$lang->action->objectTypes['product']   = 'Product';
+$lang->action->objectTypes['contact']   = 'Contact';
+$lang->action->objectTypes['contract']  = 'Contract';
+$lang->action->objectTypes['project']   = 'Project';
+$lang->action->objectTypes['user']      = 'User';
+$lang->action->objectTypes['resume']    = 'Resume';
+$lang->action->objectTypes['leave']     = 'Leave';
+$lang->action->objectTypes['overtime']  = 'Overtime';
+$lang->action->objectTypes['refund']    = 'Reimburse';
+$lang->action->objectTypes['depositor'] = 'Account';
+$lang->action->objectTypes['balance']   = 'Balance';
+$lang->action->objectTypes['todo']      = 'To-Do';
+$lang->action->objectTypes['announce']  = 'Announcement';
+$lang->action->objectTypes['trade']     = 'Account';
+$lang->action->objectTypes['schema']    = 'Bookkeeping Template';
+$lang->action->objectTypes['doclib']    = 'DocLib';
+$lang->action->objectTypes['action']    = 'History';
+
+$lang->action->noticeTitle = "%s <a href='%s' data-appid='%s'>%s</a>";
+/* sys/admin */
+$lang->admin->shortcuts = new stdclass();
+
+$lang->admin->shortcuts->createUser  = 'Add a User';
+$lang->admin->shortcuts->company     = 'Company Info';
+$lang->admin->shortcuts->createEntry = 'Add an Entry';
+/* team/thread */
+$lang->thread->common    = 'Theme';
+
+$lang->thread->id         = 'ID';
+$lang->thread->title      = 'Title';
+$lang->thread->board      = 'Board';
+$lang->thread->author     = 'Author';
+$lang->thread->content    = 'Content';
+$lang->thread->file       = 'File: ';
+$lang->thread->postedDate = 'Posted on';
+$lang->thread->replies    = 'Reply';
+$lang->thread->views      = 'Views';
+$lang->thread->lastReply  = 'Last Reply';
+
+$lang->thread->post         = 'Post';
+$lang->thread->postTo       = 'Post to';
+$lang->thread->browse       = 'Thread List';
+$lang->thread->stick        = 'Sticky';
+$lang->thread->edit         = 'Edit';
+$lang->thread->view         = 'View';
+$lang->thread->delete       = 'Delete';
+$lang->thread->status       = 'Status';
+$lang->thread->hide         = 'Hide';
+$lang->thread->show         = 'Show';
+$lang->thread->transfer     = 'Transfer';
+$lang->thread->switchStatus = 'Switch Status';
+$lang->thread->deleteFile   = 'Delete';
+
+$lang->thread->sticks[0] = 'No Sticky';
+$lang->thread->sticks[1] = 'Board Sticky';
+$lang->thread->sticks[2] = 'Global Sticky';
+
+$lang->thread->statusList['hidden'] = 'Hidden';
+$lang->thread->statusList['normal'] = 'Normal';
+
+$lang->thread->confirmDeleteThread = "Do you want to delete this thread?";
+$lang->thread->confirmHideReply    = "Do you want to hide this reply?";
+$lang->thread->confirmHideThread   = "Do you want to hide this thread?";
+$lang->thread->confirmDeleteReply  = "Do you want to delete this reply?";
+$lang->thread->confirmDeleteFile   = "Do you want to delete this file?";
+
+$lang->thread->lblEdited       = 'Last edited by %s, %s';
+$lang->thread->message         = '%s replied on Board #%s: %s，Content为：%s';
+$lang->thread->readonly        = 'Read Only';
+$lang->thread->successStick    = 'Sticky!';
+$lang->thread->successUnstick  = 'Cancelled Sticky';
+$lang->thread->successHide     = 'Hidden! ';
+$lang->thread->successShow     = 'Displayed!';
+$lang->thread->readonlyMessage = 'This post has been set as <strong>Read Only</strong>. You cannot reply to it right now.';
+$lang->thread->successTransfer = 'Transferred!';
+
+if(!isset($lang->pager->settedInForum))
+{
+    $lang->pager->noRecord = '';
+    $lang->pager->digest   = str_replace('Record', 'Reply', $lang->pager->digest);
+}
+/* team/block */
+$lang->block->common   = 'Block';
+$lang->block->blog     = 'Latest Blog';
+$lang->block->lblBlock = 'Block';
+$lang->block->admin    = 'Manage Block';
+$lang->block->num      = 'Number';
+$lang->block->type     = 'Type';
+
+$lang->block->availableBlocks = new stdclass();
+$lang->block->availableBlocks->blog   = 'Latest Blog';
+$lang->block->availableBlocks->thread = 'Thread List';
+
+$lang->block->typeList->thread['new']   = 'Latest Thread ';
+$lang->block->typeList->thread['stick'] = 'Sticky Thread ';
+/* team/blog */
+$lang->blog->common = "Blog";
+
+$lang->blog->latestArticles = "Latest Blog";
+
+$lang->blog->index  = "Home";
+$lang->blog->create = "Add";
+$lang->blog->edit   = "Edit";
+$lang->blog->view   = "View";
+$lang->blog->delete = "Delete";
+
+$lang->blog->notFound = 'Not Found';
+/* team/reply */
+$lang->reply = new stdclass();
+$lang->reply->common      = 'Reply';
+$lang->reply->id          = 'ID';
+$lang->reply->list        = 'List';
+$lang->reply->content     = 'Content';
+$lang->reply->author      = 'Author';
+$lang->reply->files       = 'File: ';
+$lang->reply->createdDate = 'Reply Date';
+$lang->reply->admin       = 'Reply List';
+
+$lang->reply->edit = 'Edit';
+/* team/forum */
+if(!isset($lang->forum)) $lang->forum = new stdclass();
+$lang->forum->common      = 'Forum';
+$lang->forum->index       = 'Home';
+$lang->forum->board       = 'Board';
+$lang->forum->owners      = 'Moderator';
+$lang->forum->threadList  = 'Thread List';
+$lang->forum->threadCount = 'Thread Count';
+$lang->forum->postCount   = 'Post Count';
+$lang->forum->noPost      = 'No Post';
+$lang->forum->lastPost    = 'Last Post: %s by %s';
+$lang->forum->readonly    = 'Read-Only Board';
+$lang->forum->notExist    = 'Board is not found.';
+$lang->forum->lblOwner    = " [ BM: %s ]";
+
+$lang->forum->post   = 'Post';
+$lang->forum->admin  = 'Manage Forum';
+$lang->forum->update = 'Data Update';
+
+$lang->forum->updateDesc    = 'This action will update numbers of posts on each board.';
+$lang->forum->successUpdate = 'Data updated!';
+
+$lang->pager->noRecord      = '';
+$lang->pager->digest        = str_replace('Record', 'Theme', $lang->pager->digest);
+$lang->pager->settedInForum = true;    // Set this switch thus in thread module can avoid overiding them.
