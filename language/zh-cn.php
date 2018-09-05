@@ -3479,7 +3479,10 @@ $lang->block->moreLinkList->report = '账目报表|cash|trade|report|';
 /* sys/action */
 if(!isset($lang->action)) $lang->action = new stdclass();
 
-$lang->action->common   = '系统日志';
+$lang->action->common       = '系统日志';
+$lang->action->finishDating = '完成下次联系';
+$lang->action->deleteDating = '删除下次联系';
+
 $lang->action->product  = '产品';
 $lang->action->actor    = '操作者';
 $lang->action->contact  = '联系人';

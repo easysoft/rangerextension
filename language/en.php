@@ -3476,7 +3476,10 @@ $lang->block->moreLinkList->report = 'Report|cash|trade|report|';
 /* sys/action */
 if(!isset($lang->action)) $lang->action = new stdclass();
 
-$lang->action->common   = 'Logs';
+$lang->action->common       = 'Logs';
+$lang->action->finishDating = 'Finish Dating';
+$lang->action->deleteDating = 'Delete Dating';
+
 $lang->action->product  = 'Product';
 $lang->action->actor    = 'Account';
 $lang->action->contact  = 'Contact';
