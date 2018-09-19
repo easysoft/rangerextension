@@ -535,7 +535,7 @@ $lang->setting->menu->income       = 'Income|tree|browse|type=in|';
 $lang->setting->menu->expend       = 'Expense|tree|browse|type=out|';
 $lang->setting->menu->currency     = 'Currency|setting|lang|module=common&field=currencyList';
 $lang->setting->menu->schema       = 'Template|schema|browse|';
-$lang->setting->menu->tradePriv    = 'View Expense|group|managetradepriv|';
+$lang->setting->menu->tradePriv    = 'Privilege|group|managetradepriv|';
 $lang->setting->menu->tradeSetting = 'Settings|trade|tradeSetting|';
 include(dirname(__FILE__) . '/menuOrder.php');
 /* crm/common */
@@ -660,7 +660,7 @@ $lang->dashboard = new stdclass();
 if(!isset($lang->announce)) $lang->announce = new stdclass();
 $lang->announce->menu = new stdclass();
 $lang->announce->menu->browse   = array('link' => 'Announcement|announce|browse|', 'alias' => 'create,edit,view');
-$lang->announce->menu->category = 'Categories|tree|browse|type=announce|';
+$lang->announce->menu->category = 'Category|tree|browse|type=announce|';
 
 if(!isset($lang->attend)) $lang->attend = new stdclass();
 $lang->attend->menu = new stdclass();
@@ -675,34 +675,34 @@ $lang->attend->menu->settings   = array('link' => 'Settings|attend|settings|', '
 if(!isset($lang->leave)) $lang->leave = new stdclass();
 $lang->leave->menu = new stdclass();
 $lang->leave->menu->personal     = 'My leave|leave|personal|';
-$lang->leave->menu->browseReview = 'Reviewed by me|leave|browsereview|';
+$lang->leave->menu->browseReview = 'Review by me|leave|browsereview|';
 $lang->leave->menu->company      = 'All|leave|company|';
 $lang->leave->menu->settings     = 'Settings|leave|setReviewer|';
 
 if(!isset($lang->makeup)) $lang->makeup = new stdclass();
 $lang->makeup->menu = new stdclass();
 $lang->makeup->menu->personal     = 'My makeup|makeup|personal|';
-$lang->makeup->menu->browseReview = 'Reviewed by me|makeup|browsereview|';
+$lang->makeup->menu->browseReview = 'Review by me|makeup|browsereview|';
 $lang->makeup->menu->company      = 'All|makeup|company|';
 $lang->makeup->menu->settings     = 'Settings|makeup|setReviewer|';
 
 if(!isset($lang->overtime)) $lang->overtime = new stdclass();
 $lang->overtime->menu = new stdclass();
 $lang->overtime->menu->personal     = 'My overtime|overtime|personal|';
-$lang->overtime->menu->browseReview = 'Reviewed by me|overtime|browsereview|';
+$lang->overtime->menu->browseReview = 'Review by me|overtime|browsereview|';
 $lang->overtime->menu->company      = 'All|overtime|company|';
 $lang->overtime->menu->settings     = 'Settings|overtime|setReviewer|';
 
 if(!isset($lang->lieu)) $lang->lieu = new stdclass();
 $lang->lieu->menu = new stdclass();
-$lang->lieu->menu->personal     = 'My Leave In Lieu|lieu|personal|';
-$lang->lieu->menu->browseReview = 'Reviewed By Me|lieu|browsereview|';
+$lang->lieu->menu->personal     = 'My lieu|lieu|personal|';
+$lang->lieu->menu->browseReview = 'Review By Me|lieu|browsereview|';
 $lang->lieu->menu->company      = 'All|lieu|company|';
 $lang->lieu->menu->settings     = 'Settings|lieu|setReviewer|';
 
 if(!isset($lang->trip)) $lang->trip = new stdclass();
 $lang->trip->menu = new stdclass();
-$lang->trip->menu->personal   = 'My Trip|trip|personal|';
+$lang->trip->menu->personal   = 'My trip|trip|personal|';
 $lang->trip->menu->department = 'Department|trip|department|';
 $lang->trip->menu->company    = 'Company|trip|company|';
 
@@ -716,7 +716,7 @@ if(!isset($lang->refund)) $lang->refund = new stdclass();
 $lang->refund->menu = new stdclass();
 $lang->refund->menu->personal   = array('link' => 'My reimbursement|refund|personal|', 'alias' => 'create, edit');
 $lang->refund->menu->review     = 'Review wait|refund|browsereview|status=unreviewed';
-$lang->refund->menu->reviewedBy = 'Reviewed by me|refund|browsereview|status=reviewed';
+$lang->refund->menu->reviewedBy = 'Review by me|refund|browsereview|status=reviewed';
 $lang->refund->menu->todo       = 'Reimburse wait|refund|todo|';
 $lang->refund->menu->company    = 'All|refund|company|';
 $lang->refund->menu->settings   = array('link' => 'Settings|refund|setreviewer|', 'alias' => 'setcategory,setdepositor,setrefundby');
@@ -726,14 +726,14 @@ $lang->holiday->menu = new stdclass();
 $lang->holiday->menu->all = 'All|holiday|browse|';
 
 $lang->setting->menu = new stdclass();
-$lang->setting->menu->modules         = 'Modules|setting|modules|app=oa';
-$lang->setting->menu->companyAttend   = 'Company Settings|attend|settings|module=setting';
-$lang->setting->menu->personalAttend  = 'Personal Settings|attend|personalSettings|module=setting';
-$lang->setting->menu->deptManager     = 'Dept Manager Settings|attend|setManager|module=setting';
-$lang->setting->menu->leaveReviewer   = 'Leave Settings|leave|setReviewer|module=setting';
-$lang->setting->menu->makeupReviewer  = 'Makeup Settings|makeup|setReviewer|module=setting';
-$lang->setting->menu->lieuReviewer    = 'Lieu Settings|lieu|setReviewer|module=setting';
-$lang->setting->menu->overtimeReviewer= 'Overtime Settings|overtime|setReviewer|module=setting';
+$lang->setting->menu->modules         = 'Module|setting|modules|app=oa';
+$lang->setting->menu->companyAttend   = 'Company|attend|settings|module=setting';
+$lang->setting->menu->personalAttend  = 'Personal|attend|personalSettings|module=setting';
+$lang->setting->menu->deptManager     = 'Dept Manager|attend|setManager|module=setting';
+$lang->setting->menu->leaveReviewer   = 'Leave|leave|setReviewer|module=setting';
+$lang->setting->menu->makeupReviewer  = 'Makeup|makeup|setReviewer|module=setting';
+$lang->setting->menu->lieuReviewer    = 'Lieu|lieu|setReviewer|module=setting';
+$lang->setting->menu->overtimeReviewer= 'Overtime|overtime|setReviewer|module=setting';
 $lang->setting->menu->refundReviewer  = 'Refund Reviewer|refund|setReviewer|module=setting';
 $lang->setting->menu->refundCategory  = 'Refund Category|refund|setCategory|module=setting';
 $lang->setting->menu->refundDepositor = 'Refund Depositor|refund|setDepositor|module=setting';
@@ -864,7 +864,7 @@ $lang->trade->depositor   = 'Account';
 $lang->trade->type        = 'Type';
 $lang->trade->currency    = 'Currency';
 $lang->trade->exchangeRate= 'Exchange rate';
-$lang->trade->trader      = 'Provider';
+$lang->trade->trader      = 'Trader';
 $lang->trade->customer    = 'Customer';
 $lang->trade->money       = 'Amount';
 $lang->trade->status      = 'Status';
@@ -933,11 +933,11 @@ $lang->trade->setReportUnit  = 'Report Unit';
 $lang->trade->settings       = 'Settings';
 $lang->trade->manageCategory = 'Manage Category';
 
-$lang->trade->settingList['trader']       = 'select merchants';
-$lang->trade->settingList['product']      = 'select product';
-$lang->trade->settingList['dept']         = 'select department';
-$lang->trade->settingList['category']     = 'select subject';
-$lang->trade->settingList['lastCategory'] = 'select final subjects';
+$lang->trade->settingList['trader']       = 'Trader required';
+$lang->trade->settingList['product']      = 'Productrequired';
+$lang->trade->settingList['dept']         = 'Department required';
+$lang->trade->settingList['category']     = 'Category required';
+$lang->trade->settingList['lastCategory'] = 'Last-level Category required';
 
 $lang->trade->report = new stdclass();
 $lang->trade->report->common      = 'Report'; 
@@ -1492,7 +1492,7 @@ $lang->plan->amount = $lang->contract->thisAmount;
 if(!isset($lang->leads)) $lang->leads = new stdclass();
 
 $lang->leads->common         = 'Leads';
-$lang->leads->assignedToNull = 'Assigned To Null';
+$lang->leads->assignedToNull = 'Assign To Null';
 $lang->leads->browse         = 'Leads';
 $lang->leads->create         = 'Create';
 $lang->leads->edit           = 'Edit';
@@ -1503,17 +1503,17 @@ $lang->leads->assign         = 'Assign';
 $lang->leads->transform      = 'Confirm';
 $lang->leads->ignore         = 'Ignroe';
 $lang->leads->settings       = 'Settings';
-$lang->leads->applyRule      = 'Apply rules';
+$lang->leads->applyRule      = 'Distribution';
 
-$lang->leads->list = 'Leads List';
+$lang->leads->list = 'Leads';
 
-$lang->leads->applyLimit   = 'Maximum to apply';
-$lang->leads->applyRemain  = 'Maxmum to wait';
+$lang->leads->applyLimit   = 'Maximum per request';
+$lang->leads->applyRemain  = 'Maximum on hold';
 $lang->leads->ignoreReason = 'Reasons';
 
 $lang->leads->tips = new stdclass();
-$lang->leads->tips->apply       = 'Please handle the existing list of contacts.';
-$lang->leads->tips->applyRemain = 'Users can apply when the remain records is less than it.';
+$lang->leads->tips->apply       = 'Please take care of the existing contacts.';
+$lang->leads->tips->applyRemain = 'You can apply when the number of records on hold is lower than it.';
 /* doc/block */
 $lang->block->common   = 'Blocks';
 $lang->block->lblBlock = 'Block';
@@ -2368,14 +2368,14 @@ $lang->doc->digest         = 'Summary';
 $lang->doc->comment        = 'Comment';
 $lang->doc->type           = 'Type';
 $lang->doc->content        = 'Content';
-$lang->doc->keywords       = 'Keywords';
+$lang->doc->keywords       = 'Tags';
 $lang->doc->url            = 'URL';
 $lang->doc->files          = 'File';
 $lang->doc->views          = 'Views';
-$lang->doc->createdBy      = 'Created by';
-$lang->doc->createdDate    = 'Created on';
-$lang->doc->editedBy       = 'Edited by';
-$lang->doc->editedDate     = 'Edited on';
+$lang->doc->createdBy      = 'Create by';
+$lang->doc->createdDate    = 'Create on';
+$lang->doc->editedBy       = 'Edite by';
+$lang->doc->editedDate     = 'Edite on';
 $lang->doc->basicInfo      = 'Basic Info';
 $lang->doc->deleted        = 'Deleted';
 
@@ -2383,10 +2383,10 @@ $lang->doc->index          = 'Home';
 $lang->doc->create         = 'Create';
 $lang->doc->edit           = 'Edit';
 $lang->doc->delete         = 'Delete';
-$lang->doc->browse         = 'Documents';
-$lang->doc->view           = 'Documents';
-$lang->doc->manageType     = 'Manage Categories';
-$lang->doc->showFiles      = 'Files Library';
+$lang->doc->browse         = 'Document';
+$lang->doc->view           = 'Document';
+$lang->doc->manageType     = 'Manage Category';
+$lang->doc->showFiles      = 'File Library';
 $lang->doc->sort           = 'Sort';
 
 $lang->doc->libName        = 'Name';
@@ -2397,7 +2397,7 @@ $lang->doc->customLibs     = 'Custom Library';
 $lang->doc->projectMainLib = 'Main Library';
 $lang->doc->fileLib        = 'File Library';
 
-$lang->doc->createLib      = 'Create a Library';
+$lang->doc->createLib      = 'Create Library';
 $lang->doc->editLib        = 'Edit';
 $lang->doc->deleteLib      = 'Delete';
 $lang->doc->fixedMenu      = 'Fixed Menu';
@@ -2424,9 +2424,9 @@ $lang->doc->browseTypeList['list'] = 'List';
 $lang->doc->browseTypeList['menu'] = 'Menu';
 $lang->doc->browseTypeList['tree'] = 'Tree';
 
-$lang->doc->confirmDelete      = "Do you want to delete this doc?";
-$lang->doc->confirmDeleteLib   = "Do you want to delete this doc library?";
-$lang->doc->errorEditSystemDoc = "System doc library cannot be edited.";
+$lang->doc->confirmDelete      = "Do you want to delete this document?";
+$lang->doc->confirmDeleteLib   = "Do you want to delete this document library?";
+$lang->doc->errorEditSystemDoc = "System document library cannot be edited.";
 
 $lang->doc->placeholder = new stdclass();
 $lang->doc->placeholder->url = 'url';
@@ -2939,10 +2939,10 @@ $lang->install->reload  = 'Reload';
 $lang->install->error   = 'Error ';
 
 $lang->install->start            = 'Start install';
-$lang->install->keepInstalling   = 'Keep install this version';
+$lang->install->keepInstalling   = 'Keep installing this version';
 $lang->install->seeLatestRelease = 'See the latest release.';
-$lang->install->welcome          = 'Welcome to use Zdoo.';
-$lang->install->license          = 'Zdoo use license of Z PUBLIC LICENSE(ZPL) 1.2. ';
+$lang->install->welcome          = 'Welcome to Zdoo community.';
+$lang->install->license          = 'Zdoo is under license of Z PUBLIC LICENSE(ZPL) 1.2. ';
 $lang->install->desc             = <<<EOT
 <blockquote>
   <strong>{$lang->ranzhi}</strong> is developed by <strong><a href='http://www.cnezsoft.com' target='_blank' class='red'>QingDao Nature Easy Soft Network Technology Co.,Ltd.</a></strong>
@@ -2956,13 +2956,13 @@ $lang->install->desc             = <<<EOT
 EOT;
 
 $lang->install->choice     = 'You can ';
-$lang->install->checking   = 'System Checking';
+$lang->install->checking   = 'System Checkup';
 $lang->install->ok         = 'OK(√)';
 $lang->install->fail       = 'Failed(×)';
 $lang->install->loaded     = 'Loaded';
 $lang->install->unloaded   = 'Not loaded';
-$lang->install->exists     = 'Exists ';
-$lang->install->notExists  = 'Do not exists';
+$lang->install->exists     = 'Exist ';
+$lang->install->notExists  = 'Not exists';
 $lang->install->writable   = 'Writable ';
 $lang->install->notWritable= 'Not writable ';
 $lang->install->phpINI     = 'PHP ini file';
@@ -2978,31 +2978,31 @@ $lang->install->pdo          = 'PDO extension';
 $lang->install->pdoFail      = 'Edit the php.ini file to load PDO extsion.';
 $lang->install->pdoMySQL     = 'PDO_MySQL extension';
 $lang->install->pdoMySQLFail = 'Edit the php.ini file to load PDO_MySQL extsion.';
-$lang->install->tmpRoot      = 'Temp directory';
+$lang->install->tmpRoot      = 'Temporary directory';
 $lang->install->dataRoot     = 'Upload directory.';
 $lang->install->sessionRoot  = 'session directory';
-$lang->install->mkdir        = '<p>Should creat the directory %s. <br /> In Linux, can try<br /> mkdir -p %s</p>';
-$lang->install->chmod        = 'Should change the permission of "%s".<br /> In Linux, can try<br />chmod o=rwx -R %s';
-$lang->install->sessionChmod = 'Should change the permission of "%s".<br /> In Linux, can try<br />sudo chmod o=wtx %s';
+$lang->install->mkdir        = '<p>You have to creat the directory %s. <br /> In Linux, try<br /> mkdir -p %s</p>';
+$lang->install->chmod        = 'You have to change the permission of "%s".<br /> In Linux, try<br />chmod o=rwx -R %s';
+$lang->install->sessionChmod = 'You have to change the permission of "%s".<br /> In Linux, try<br />sudo chmod o=wtx %s';
 
 $lang->install->settingDB    = 'Set Database';
 $lang->install->dbHost     = 'Database Host';
-$lang->install->dbHostNote = 'If 127.0.0.1 can not connect, try localhost';
+$lang->install->dbHostNote = 'If 127.0.0.1 cannot be connected, try localhost';
 $lang->install->dbPort     = 'Host Port';
 $lang->install->dbUser     = 'Database User';
 $lang->install->dbPassword = 'Database Password';
 $lang->install->dbName     = 'Database Name';
 $lang->install->dbPrefix   = 'Table Prefix';
 $lang->install->createDB   = 'Auto Create Database';
-$lang->install->clearDB    = 'Clear data if database exists.';
+$lang->install->clearDB    = 'Clear data if the database exists.';
 
 $lang->install->errorDBName        = "'.' are not allowed in database name";
-$lang->install->errorConnectDB     = 'Database connect failed.';
-$lang->install->errorCreateDB      = 'Database create failed.';
+$lang->install->errorConnectDB     = 'Failed to connect to the database.';
+$lang->install->errorCreateDB      = 'Failed to create the database.';
 $lang->install->errorDBExists      = 'Database exists. If continue installing, check the Clear Database box.';
-$lang->install->errorCreateTable   = 'Table creation failed.';
+$lang->install->errorCreateTable   = 'Failed to create the table.';
 
-$lang->install->setConfig  = 'Create config file';
+$lang->install->setConfig  = 'Create config';
 $lang->install->key        = 'Item';
 $lang->install->value      = 'Value';
 $lang->install->saveConfig = 'Save config';
@@ -3014,10 +3014,10 @@ $lang->install->success  = "Installed!";
 $lang->install->domainIP = 'IP of domain is %s';
 $lang->install->serverIP = 'IP of LAN is %s';
 $lang->install->publicIP = 'IP of WAN is %s';
-$lang->install->setAdmin = 'Create an Admin';
+$lang->install->setAdmin = 'Create Admin';
 $lang->install->account  = 'Account';
 $lang->install->password = 'Password';
-$lang->install->errorEmptyPassword = "should not be empty";
+$lang->install->errorEmptyPassword = "It should not be empty.";
 
 $lang->install->import['area']     = 'Import area data';
 $lang->install->import['industry'] = 'Import industry data';
@@ -3036,22 +3036,22 @@ $lang->install->buildinEntry->doc['abbr']  = '';
 $lang->install->buildinEntry->proj['name'] = 'PROJ';
 $lang->install->buildinEntry->proj['abbr'] = '';
 
-$lang->install->categoryList[1] = 'Main business income';
-$lang->install->categoryList[2] = 'Non-core business income';
-$lang->install->categoryList[3] = 'Main business cost';
-$lang->install->categoryList[4] = 'Non-core operating cost';
+$lang->install->categoryList[1] = 'Primary Income';
+$lang->install->categoryList[2] = 'Non-Primary Income';
+$lang->install->categoryList[3] = 'Primary Expense';
+$lang->install->categoryList[4] = 'Non-Primary Expense';
 $lang->install->categoryList[5] = 'Profit';
 $lang->install->categoryList[6] = 'Loss';
 $lang->install->categoryList[7] = 'Fees';
 $lang->install->categoryList[8] = 'Interest';
 
 $lang->install->schemaList[1] = 'Alipay';
-$lang->install->schemaList[2] = 'China CITIC Bank';
+$lang->install->schemaList[2] = 'CITIC Bank';
 
 $lang->install->cronList[1] = 'Monitor cron';
-$lang->install->cronList[2] = 'Backup data & file';
-$lang->install->cronList[3] = 'Auto delete backup before 30 days';
-$lang->install->cronList[4] = 'Daily task reminder';
+$lang->install->cronList[2] = 'Back up data & files';
+$lang->install->cronList[3] = 'Auto delete the data 30 days prior to today';
+$lang->install->cronList[4] = 'Daily Reminder';
 
 $lang->install->groupList[1]['name'] = 'Administrator';
 $lang->install->groupList[1]['desc'] = 'Administrator has all privileges.';
@@ -3062,7 +3062,7 @@ $lang->install->groupList[3]['desc'] = 'Sales Manager has all privileges of CRM.
 $lang->install->groupList[4]['name'] = 'Sales';
 $lang->install->groupList[4]['desc'] = 'Default privileges for sales.';
 $lang->install->groupList[5]['name'] = 'Common';
-$lang->install->groupList[5]['desc'] = 'Default privileges for common user.';
+$lang->install->groupList[5]['desc'] = 'Default privileges for all users.';
 /* sys/my */
 $lang->my->common = 'Dashbord';
 
@@ -3106,17 +3106,17 @@ $lang->tree->manage      = "Manage";
 $lang->tree->fix         = "Fix data";
 $lang->tree->merge       = "Merge";
 
-$lang->tree->noCategories  = 'No category yet, add one first.';
-$lang->tree->noBoards      = 'No board yet, add one first.';
-$lang->tree->timeCountDown = "Locate to %s manage page in <strong id='countDown'>3</strong> seconds.";
+$lang->tree->noCategories  = 'No category yet. Add one first.';
+$lang->tree->noBoards      = 'No board yet. Add one first.';
+$lang->tree->timeCountDown = "Jump to %s manage page in <strong id='countDown'>3</strong> seconds.";
 $lang->tree->redirect      = 'Create now';
 $lang->tree->aliasRepeat   = 'Alias: %s already exists。';
 $lang->tree->aliasConflict = 'Alias: %s  conflicts with system modules';
-$lang->tree->hasChildren   = "The category has children, can't be deleted.";
-$lang->tree->hasThreads    = "The board has threads, can't be deleted.";
-$lang->tree->hasProducts   = "The category has products, can't be deleted.";
-$lang->tree->confirmDelete = "Are you sure to delete it?";
-$lang->tree->successFixed  = "Successfully fixed.";
+$lang->tree->hasChildren   = "This category has children, so it can't be deleted.";
+$lang->tree->hasThreads    = "This board has threads, so it can't be deleted.";
+$lang->tree->hasProducts   = "This category has products, so it can't be deleted.";
+$lang->tree->confirmDelete = "Do you want to delete it?";
+$lang->tree->successFixed  = "Fixed.";
 $lang->tree->asParent      = "[%s] has children, so it can't be merged.";
 
 $lang->category = new stdclass();
@@ -3139,7 +3139,7 @@ $lang->area->name     = 'Name';
 $lang->area->alias    = 'Alias';
 $lang->area->parent   = 'Parent';
 $lang->area->desc     = 'Description';
-$lang->area->keywords = 'Tag';
+$lang->area->keywords = 'Tags';
 $lang->area->children = 'Child';
 
 $lang->industry = new stdclass();
@@ -3148,7 +3148,7 @@ $lang->industry->name     = 'Name';
 $lang->industry->alias    = 'Alias';
 $lang->industry->parent   = 'Parent';
 $lang->industry->desc     = 'Description';
-$lang->industry->keywords = 'Tag';
+$lang->industry->keywords = 'Tags';
 $lang->industry->children = "Child";
 
 $lang->in = new stdclass();
@@ -3157,9 +3157,9 @@ $lang->in->name     = 'Name';
 $lang->in->alias    = 'Alias';
 $lang->in->parent   = 'Parent';
 $lang->in->desc     = 'Description';
-$lang->in->keywords = 'Keywords';
+$lang->in->keywords = 'Tags';
 $lang->in->children = "Child";
-$lang->in->merge    = 'Merge Categories';
+$lang->in->merge    = 'Merge Category';
 
 $lang->out = new stdclass();
 $lang->out->common   = 'Expense';
@@ -3167,11 +3167,11 @@ $lang->out->name     = 'Name';
 $lang->out->alias    = 'Alias';
 $lang->out->parent   = 'Parent';
 $lang->out->desc     = 'Description';
-$lang->out->keywords = 'Keywords';
+$lang->out->keywords = 'Tags';
 $lang->out->children = "Child";
 $lang->out->rights   = 'Rights';
 $lang->out->refund   = 'Reimbursement';
-$lang->out->merge    = 'Merge Categories';
+$lang->out->merge    = 'Merge Category';
 
 $lang->out->refundList[1] = 'Yes';
 $lang->out->refundList[0] = 'No';
@@ -3182,7 +3182,7 @@ $lang->board->name       = 'Board';
 $lang->board->alias      = 'Alias';
 $lang->board->parent     = 'Parent';
 $lang->board->desc       = 'Description';
-$lang->board->keywords   = 'Tag';
+$lang->board->keywords   = 'Tags';
 $lang->board->children   = "Child";
 $lang->board->readonly   = 'Read Only';
 $lang->board->moderators = 'Board Moderator';
@@ -3193,8 +3193,8 @@ $lang->board->readonlyList[0] = 'Pulic';
 $lang->board->readonlyList[1] = 'Read Only';
 
 $lang->board->placeholder = new stdclass();
-$lang->board->placeholder->moderators  = "BMs'accounts. Separated with" . '","';
-$lang->board->placeholder->setChildren = 'Forum needs two levels of boards to show.';
+$lang->board->placeholder->moderators  = "BM accounts. Separated with" . '","';
+$lang->board->placeholder->setChildren = 'Only forum needs two-level boards can be seen.';
 /* sys/provider */
 $lang->provider->browse      = 'Browse Provider';
 $lang->provider->create      = 'Create Provider';
@@ -3297,14 +3297,14 @@ $lang->admin->shortcuts->createUser  = 'User';
 $lang->admin->shortcuts->company     = 'Company';
 $lang->admin->shortcuts->createEntry = 'Application';
 /* sys/block */
-$lang->block->common = 'Widget';
+$lang->block->common = 'Block';
 $lang->block->name   = 'Name';
 $lang->block->style  = 'Style';
-$lang->block->grid   = 'Width';
+$lang->block->grid   = 'Grid';
 $lang->block->color  = 'Color';
 
 $lang->block->lblEntry = 'Entry';
-$lang->block->lblBlock = 'Widget';
+$lang->block->lblBlock = 'Block';
 $lang->block->lblRss   = 'RSS';
 $lang->block->lblNum   = 'Number';
 $lang->block->lblHtml  = 'HTML';
@@ -3315,8 +3315,8 @@ $lang->block->params->value = 'Value';
 
 $lang->block->createBlock        = 'Create';
 $lang->block->editBlock          = 'Edit';
-$lang->block->ordersSaved        = 'Ranking has been saved.';
-$lang->block->confirmRemoveBlock = 'Are you sure to remove Widget [{0}] ?';
+$lang->block->ordersSaved        = 'Order has been saved.';
+$lang->block->confirmRemoveBlock = 'Do you want to remove Block [{0}] ?';
 
 $lang->block->allEntries  = 'All';
 $lang->block->dynamic     = 'Dynamic';
@@ -3332,7 +3332,7 @@ $lang->block->default['oa']['2']['grid']  = 4;
 
 $lang->block->default['oa']['2']['params']['num'] = 15;
 
-$lang->block->default['proj']['3']['title'] = 'Tasks assigned to me';
+$lang->block->default['proj']['3']['title'] = 'My Task';
 $lang->block->default['proj']['3']['block'] = 'task';
 $lang->block->default['proj']['3']['grid']  = 4;
 
@@ -3358,7 +3358,7 @@ $lang->block->default['crm']['1']['params']['orderBy'] = 'id_desc';
 $lang->block->default['crm']['1']['params']['type']    = 'createdBy';
 $lang->block->default['crm']['1']['params']['status']  = array();
 
-$lang->block->default['crm']['2']['title'] = 'My Contracts';
+$lang->block->default['crm']['2']['title'] = 'My Contract';
 $lang->block->default['crm']['2']['block'] = 'contract';
 $lang->block->default['crm']['2']['grid']  = 4;
 
@@ -3401,14 +3401,14 @@ $lang->block->default['team']['1']['grid']  = 4;
 
 $lang->block->default['team']['1']['params']['num'] = 15;
 
-$lang->block->default['team']['2']['title'] = 'Latest Threads';
+$lang->block->default['team']['2']['title'] = 'Latest Thread';
 $lang->block->default['team']['2']['block'] = 'thread';
 $lang->block->default['team']['2']['grid']  = 4;
 
 $lang->block->default['team']['2']['params']['num'] = 15;
 $lang->block->default['team']['2']['params']['type'] = 'new';
 
-$lang->block->default['team']['3']['title'] = 'Sticked Threads';
+$lang->block->default['team']['3']['title'] = 'Sticky Thread';
 $lang->block->default['team']['3']['block'] = 'thread';
 $lang->block->default['team']['3']['grid']  = 4;
 
@@ -3435,15 +3435,15 @@ $lang->block->default['sys']['8'] = $lang->block->default['team']['2'];
 $lang->block->default['sys']['8']['source'] = 'team';
 
 $lang->block->moreLinkList = new stdclass();
-$lang->block->moreLinkList->order['assinedTo']    = 'Assigned To Me|sys|my|order|type=assinedTo';
-$lang->block->moreLinkList->order['createdBy']    = 'Created By Me|sys|my|order|type=createdBy';
-$lang->block->moreLinkList->order['signedBy']     = 'Signed By Me|sys|my|order|type=signedBy';
+$lang->block->moreLinkList->order['assinedTo']    = 'Assign To Me|sys|my|order|type=assinedTo';
+$lang->block->moreLinkList->order['createdBy']    = 'Create By Me|sys|my|order|type=createdBy';
+$lang->block->moreLinkList->order['signedBy']     = 'Sign By Me|sys|my|order|type=signedBy';
 $lang->block->moreLinkList->order['normalstatus'] = 'All|crm|order|browse|mode=all';
 $lang->block->moreLinkList->order['signedstatus'] = 'All|crm|order|browse|mode=all';
 $lang->block->moreLinkList->order['closedstatus'] = 'All|crm|order|browse|mode=all';
 
-$lang->block->moreLinkList->contract['returnedBy']     = 'Returned By Me|sys|my|contract|type=returnedBy';
-$lang->block->moreLinkList->contract['deliveredBy']    = 'Delivered By Me|sys|my|contract|type=deliveredBy';
+$lang->block->moreLinkList->contract['returnedBy']     = 'Return By Me|sys|my|contract|type=returnedBy';
+$lang->block->moreLinkList->contract['deliveredBy']    = 'Deliver By Me|sys|my|contract|type=deliveredBy';
 $lang->block->moreLinkList->contract['normalstatus']   = 'Unfinished|crm|contract|browse|mode=unfinished';
 $lang->block->moreLinkList->contract['closedstatus']   = 'Finished|crm|contract|browse|mode=finished';
 $lang->block->moreLinkList->contract['canceledstatus'] = 'Cancelled|crm|contract|browse|mode=canceled';
@@ -3458,19 +3458,19 @@ $lang->block->moreLinkList->provider  = 'Supplier|cash|provider|browse|';
 $lang->block->moreLinkList->announce = 'Announce|oa|announce|browse|';
 $lang->block->moreLinkList->attend   = 'Attend|sys|todo|calendar|';
 
-$lang->block->moreLinkList->task['assignedTo'] = 'Assigned To Me|sys|my|task|type=assignedTo';
-$lang->block->moreLinkList->task['createdBy']  = 'Created By Me|sys|my|task|type=createdBy';
-$lang->block->moreLinkList->task['finishedBy'] = 'Finished By Me|sys|my|task|type=finishedBy';
-$lang->block->moreLinkList->task['closedBy']   = 'Closed By Me|sys|my|task|type=closedBy';
-$lang->block->moreLinkList->task['canceledBy'] = 'Canceled By Me|sys|my|task|type=canceledBy';
+$lang->block->moreLinkList->task['assignedTo'] = 'Assign To Me|sys|my|task|type=assignedTo';
+$lang->block->moreLinkList->task['createdBy']  = 'Create By Me|sys|my|task|type=createdBy';
+$lang->block->moreLinkList->task['finishedBy'] = 'Finish By Me|sys|my|task|type=finishedBy';
+$lang->block->moreLinkList->task['closedBy']   = 'Close By Me|sys|my|task|type=closedBy';
+$lang->block->moreLinkList->task['canceledBy'] = 'Cancel By Me|sys|my|task|type=canceledBy';
 
 $lang->block->moreLinkList->project['doing']    = 'Doing|proj|project|index|status=doing';
 $lang->block->moreLinkList->project['finished'] = 'Finished|proj|project|index|status=finished';
 $lang->block->moreLinkList->project['suspend']  = 'Suspend|proj|project|index|status=suspend';
 
-$lang->block->moreLinkList->blog = 'Latest Blogs|team|blog|index|';
-$lang->block->moreLinkList->thread['new']   = 'Latest Threads|team|forum|index|';
-$lang->block->moreLinkList->thread['stick'] = 'Sticky Threads|team|forum|index|';
+$lang->block->moreLinkList->blog = 'Latest Blog|team|blog|index|';
+$lang->block->moreLinkList->thread['new']   = 'Latest Thread|team|forum|index|';
+$lang->block->moreLinkList->thread['stick'] = 'Sticky Thread|team|forum|index|';
 
 $lang->block->moreLinkList->report = 'Report|cash|trade|report|';
 /* sys/action */
@@ -4147,7 +4147,7 @@ $lang->customer->createdBy     = 'Created By';
 $lang->customer->createdDate   = 'Created On';
 $lang->customer->editedBy      = 'Edited By';
 $lang->customer->editedDate    = 'Edited On';
-$lang->customer->assignedTo    = 'Assigned to';
+$lang->customer->assignedTo    = 'Assigned To';
 $lang->customer->assignedBy    = 'Assigned By';
 $lang->customer->assignedDate  = 'Assigned On';
 $lang->customer->contactedBy   = 'Contact By';
@@ -4157,7 +4157,7 @@ $lang->customer->selectContact = 'Select Contact';
 
 $lang->customer->browse            = 'Browse Customer';
 $lang->customer->view              = 'View';
-$lang->customer->create            = 'Add a Customer';
+$lang->customer->create            = 'Add Customer';
 $lang->customer->delete            = 'Delete Customer';
 $lang->customer->order             = 'Orders';
 $lang->customer->contact           = 'Contact';
@@ -4166,7 +4166,7 @@ $lang->customer->address           = 'Addresses';
 $lang->customer->record            = 'Record';
 $lang->customer->assign            = 'Assign Customer';
 $lang->customer->batchAssign       = 'Batch Assign';
-$lang->customer->linkContact       = 'Add a Contact';
+$lang->customer->linkContact       = 'Add Contact';
 $lang->customer->list              = 'Customers';
 $lang->customer->edit              = 'Edit';
 $lang->customer->export            = 'Export';
@@ -4176,12 +4176,12 @@ $lang->customer->moreInfo          = 'More Info';
 $lang->customer->purchasedProducts = 'Purchased Products';
 
 $lang->customer->sourceList['']              = '';
-$lang->customer->sourceList['visit']         = 'Visit Directly';
+$lang->customer->sourceList['visit']         = 'Visit Zdoo Website';
 $lang->customer->sourceList['advertisement'] = 'Advertisement';
-$lang->customer->sourceList['introduce']     = 'Introduced by others';
-$lang->customer->sourceList['activity']      = 'Activity';
+$lang->customer->sourceList['introduce']     = 'Word of Mouth';
+$lang->customer->sourceList['activity']      = 'Event';
 $lang->customer->sourceList['socialPlat']    = 'Social Platform';
-$lang->customer->sourceList['others']        = 'Others';
+$lang->customer->sourceList['others']        = 'Other';
 
 $lang->customer->typeList['']            = '';
 $lang->customer->typeList['national']    = 'National';
@@ -4221,7 +4221,7 @@ $lang->customer->levelNoteList[]    = '';
 $lang->customer->levelNoteList['A'] = ' Make a deal in a month.';
 $lang->customer->levelNoteList['B'] = ' Make a deal in 3 months';
 $lang->customer->levelNoteList['C'] = ' Make a deal in 6 months.';
-$lang->customer->levelNoteList['D'] = ' Make a deal after six months.';
+$lang->customer->levelNoteList['D'] = ' Make a deal after 6 months.';
 $lang->customer->levelNoteList['E'] = ' Make no deal.';
 
 $lang->customer->relationList['client']   = 'Client';
@@ -4229,8 +4229,8 @@ $lang->customer->relationList['provider'] = 'Provider';
 $lang->customer->relationList['partner']  = 'Partner';
 
 $lang->customer->search      = 'Search';
-$lang->customer->searchInput = 'Input search words.';
-$lang->customer->mergeTip    = 'Merge this customer to selected customer.';
+$lang->customer->searchInput = 'Enter search items.';
+$lang->customer->mergeTip    = 'Merge this customer to the selected customer.';
 /* sys/entry */
 $lang->entry->common      = 'App';
 $lang->entry->admin       = 'Apps';
@@ -4563,9 +4563,9 @@ $lang->setting->placeholder->lineList = new stdclass();
 $lang->setting->placeholder->lineList->key   = 'Key should be intergers or letters.';
 $lang->setting->placeholder->lineList->value = 'Brief description';
 
-$lang->setting->reserveDays    = 'Hold days in customer pools.';
-$lang->setting->reserveDaysTip = "Customer will be automatically saved in customer pools, if customer info is not updated within certain days. It will be disabled if it is set as '0' days.";
-$lang->setting->currencyTip    = 'When create trade with a depositor whose currency is not main currency, you need to record the exchange rate.';
+$lang->setting->reserveDays    = 'Hold Days';
+$lang->setting->reserveDaysTip = "Customer are automatically saved in customer pools, when its info is not updated within certain days. It will be disabled if it is set as '0' days.";
+$lang->setting->currencyTip    = 'When creating a trade with a depositor but the currency is not main currency, you have to record the exchange rate.';
 
 $lang->setting->moduleList['attend']   = 'Attend';
 $lang->setting->moduleList['leave']    = 'Leave';
