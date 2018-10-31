@@ -2044,6 +2044,8 @@ $lang->attend->saveStat     = '保存考勤统计';
 $lang->attend->exportStat   = '导出考勤统计表';
 $lang->attend->exportDetail = '导出考勤明细';
 $lang->attend->browseReview = '补录列表';
+$lang->attend->batchReview  = '批量审核';
+$lang->attend->batchPass    = '批量通过';
 
 $lang->attend->id            = '编号';
 $lang->attend->date          = '日期';
@@ -2136,11 +2138,14 @@ $lang->attend->inFail     = '签到失败';
 $lang->attend->outSuccess = '签退成功';
 $lang->attend->outFail    = '签退失败';
 
-$lang->attend->signInLimit  = '最晚签到';
-$lang->attend->signOutLimit = '最早签退';
-$lang->attend->workingDays  = '每周工作天数';
-$lang->attend->workingHours = '每天工作工时';
-$lang->attend->mustSignOut  = '必须签退';
+$lang->attend->signInLimit   = '最晚签到';
+$lang->attend->signOutLimit  = '最早签退';
+$lang->attend->workingDays   = '每周工作天数';
+$lang->attend->workingHours  = '每天工作工时';
+$lang->attend->mustSignOut   = '必须签退';
+$lang->attend->denied        = '信息访问受限';
+$lang->attend->nodata        = '没有选择数据';
+$lang->attend->reviewSuccess = '审核成功';
 
 $lang->attend->workingDaysList['5']  = "周一～周五";
 $lang->attend->workingDaysList['6']  = "周一～周六";
@@ -3214,6 +3219,7 @@ $lang->provider->setCategory = '维护类目';
 $lang->provider->common        = '供应商维护';
 $lang->provider->id            = '编号';
 $lang->provider->name          = '名称';
+$lang->provider->depositor     = '对公账户';
 $lang->provider->contact       = '联系人';
 $lang->provider->type          = '类型';
 $lang->provider->size          = '规模';
