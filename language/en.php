@@ -68,7 +68,7 @@ $lang->bookHome         = 'Book';
 $lang->register         = 'Register';
 $lang->logout           = 'Logout';
 $lang->login            = 'Login';
-$lang->account          = 'Account';
+$lang->account          = 'Username';
 $lang->password         = 'Password';
 $lang->all              = 'All';
 $lang->changePassword   = 'Change password';
@@ -491,7 +491,7 @@ if(!defined('DT_DATE3'))      define('DT_DATE3',      'F j, Y ');
 if(!defined('DT_DATE4'))      define('DT_DATE4',      'M j');
 if(!defined('DT_DATE5'))      define('DT_DATE5',      'M Y');
 if(!defined('DT_TIME1'))      define('DT_TIME1',      'H:i:s');
-if(!defined('DT_TIME1'))      define('DT_TIME2',      'H:i');
+if(!defined('DT_TIME2'))      define('DT_TIME2',      'H:i');
 
 include (dirname(__FILE__) . '/menuOrder.php');
 /* cash/common */
