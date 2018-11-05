@@ -1667,6 +1667,7 @@ $lang->refund->category         = 'Category';
 $lang->refund->date             = 'Date';
 $lang->refund->dept             = 'Department';
 $lang->refund->money            = 'Amount';
+$lang->refund->invoice          = 'Invoice';
 $lang->refund->reviewMoney      = 'Reimbursement';
 $lang->refund->currency         = 'Currency';
 $lang->refund->desc             = 'Description';
