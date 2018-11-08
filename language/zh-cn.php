@@ -170,7 +170,7 @@ $lang->js->timeout               = '网络超时,请重试';
 $lang->js->confirmDiscardChanges = '表单已更改，确定关闭？';
 $lang->js->yes                   = '是';
 $lang->js->no                    = '否';
-$lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.ranzhi.org/book/ranzhi/165.html'>安装手册</a>";
+$lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.ranzhi.org/book/ranzhi/165.html' target='_blank'>安装手册</a>";
 
 $lang->company = new stdclass();
 $lang->company->contactUs = '联系我们';
@@ -2755,6 +2755,7 @@ $lang->todo->confirmTip  = '该Todo关联的是%s #%s，需要修改它吗？';
 $lang->todo->assignedTip = '%s 于 %s';
 $lang->todo->finishedTip = '%s 于 %s';
 $lang->todo->closedTip   = '%s 于 %s';
+$lang->todo->deleteTip   = '拖到此处删除';
 
 $lang->todo->statusList['wait']     = '未开始';
 $lang->todo->statusList['doing']    = '进行中';
