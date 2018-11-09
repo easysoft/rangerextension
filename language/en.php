@@ -271,7 +271,7 @@ $lang->product->menu->browse     = 'All Products|product|browse|mode=browse&stat
 $lang->product->menu->normal     = 'Normal|product|browse|mode=browse&status=normal';
 $lang->product->menu->developing = 'Developing|product|browse|mode=browse&status=developing';
 $lang->product->menu->offline    = 'Offline|product|browse|mode=browse&status=offline';
-$lang->product->menu->category   = 'Category|tree|browse|type=product';
+$lang->product->menu->category   = 'Category|tree|browse|type=product&startModule=&root=&from=product';
 
 $lang->todo = new stdclass();
 $lang->todo->menu = new stdclass();
@@ -602,7 +602,7 @@ $lang->contract->menu->report       = 'Report|report|browse|module=contract';
 $lang->setting = new stdclass();
 $lang->setting->menu = new stdclass();
 $lang->setting->menu->product         = 'Product Status|setting|lang|module=product&field=statusList&appName=sys';
-$lang->setting->menu->productCategory = 'Product Category|tree|browse|type=product&from=setting';
+$lang->setting->menu->productCategory = 'Product Category|tree|browse|type=product&startModule=&root=&from=setting';
 $lang->setting->menu->customerSource  = 'Customer Source|setting|lang|module=customer&field=sourceList&appName=sys';
 $lang->setting->menu->customerType    = 'Customer Status|setting|lang|module=customer&field=typeList&appName=sys';
 $lang->setting->menu->customerSize    = 'Customer Size|setting|lang|module=customer&field=sizeNameList&appName=sys';
@@ -1656,6 +1656,7 @@ $lang->refund->setCategory  = 'Set Category';
 $lang->refund->setDepositor = 'Set Account';
 $lang->refund->setRefundBy  = 'Set RefundBy';
 $lang->refund->export       = 'Export';
+$lang->refund->createTrade  = 'Create Trade';
 
 $lang->refund->id               = 'ID';
 $lang->refund->customer         = 'Customer';
@@ -1713,7 +1714,7 @@ $lang->refund->notExist          = 'The record not exist.';
 $lang->refund->cancelSuccess     = 'Cancel success.';
 $lang->refund->commitSuccess     = 'Commit success.';
 $lang->refund->uniqueReviewer    = 'The 1st reviewer and the 2nd reviewer cannot be the same.';
-$lang->refund->createTradeTip    = 'Do you want to keep this reimbursement in accounting?';
+$lang->refund->createTradeTip    = 'Create trade';
 $lang->refund->secondReviewerTip = 'If reimbursement requires a 2nd review, please set 2nd reviewer.';
 $lang->refund->correctMoney      = 'The reimbursed amount should not be more than the requested amount.';
 $lang->refund->categoryTips      = 'Expense category is not set yet.';
@@ -2752,7 +2753,7 @@ $lang->todo->confirmTip  = 'This Todo is linked to %s #%s. Do you want to change
 $lang->todo->assignedTip = '%s at %s';
 $lang->todo->finishedTip = '%s at %s';
 $lang->todo->closedTip   = '%s at %s';
-$lang->todo->deleteTip   = 'Drag here to delete .';
+$lang->todo->deleteTip   = 'Drag here to delete.';
 
 $lang->todo->statusList['wait']     = 'Wait';
 $lang->todo->statusList['doing']    = 'Doing';

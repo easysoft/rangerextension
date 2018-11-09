@@ -271,7 +271,7 @@ $lang->product->menu->browse     = '所有产品|product|browse|mode=browse&stat
 $lang->product->menu->normal     = '正常|product|browse|mode=browse&status=normal';
 $lang->product->menu->developing = '研发中|product|browse|mode=browse&status=developing';
 $lang->product->menu->offline    = '下线|product|browse|mode=browse&status=offline';
-$lang->product->menu->category   = '产品分类|tree|browse|type=product';
+$lang->product->menu->category   = '产品分类|tree|browse|type=product&startModule=&root=&from=product';
 
 $lang->todo = new stdclass();
 $lang->todo->menu = new stdclass();
@@ -602,7 +602,7 @@ $lang->contract->menu->report       = '报表|report|browse|module=contract';
 $lang->setting = new stdclass();
 $lang->setting->menu = new stdclass();
 $lang->setting->menu->product         = '产品状态|setting|lang|module=product&field=statusList&appName=sys';
-$lang->setting->menu->productCategory = '产品分类|tree|browse|type=product&from=setting';
+$lang->setting->menu->productCategory = '产品分类|tree|browse|type=product&startModule=&root=&from=setting';
 $lang->setting->menu->customerSource  = '客户来源|setting|lang|module=customer&field=sourceList&appName=sys';
 $lang->setting->menu->customerType    = '客户类型|setting|lang|module=customer&field=typeList&appName=sys';
 $lang->setting->menu->customerSize    = '客户规模|setting|lang|module=customer&field=sizeNameList&appName=sys';
@@ -1659,6 +1659,7 @@ $lang->refund->setCategory  = '报销科目设置';
 $lang->refund->setDepositor = '报销账户设置';
 $lang->refund->setRefundBy  = '报销者设置';
 $lang->refund->export       = '导出报销记录';
+$lang->refund->createTrade  = '关联记账';
 
 $lang->refund->id               = '编号';
 $lang->refund->customer         = '客户';
@@ -1716,13 +1717,13 @@ $lang->refund->notExist          = '记录不存在';
 $lang->refund->cancelSuccess     = '撤销成功';
 $lang->refund->commitSuccess     = '提交成功';
 $lang->refund->uniqueReviewer    = '第一审批人和第二审批人不能是同一个人';
-$lang->refund->createTradeTip    = '是否关联记账？';
+$lang->refund->createTradeTip    = '关联记账';
 $lang->refund->secondReviewerTip = '二级审批需要设置二级审批人。';
 $lang->refund->correctMoney      = '报销额度不能多于申请金额';
 $lang->refund->categoryTips      = '尚未设置支出科目。';
 $lang->refund->setExpense        = '设置科目';
 $lang->refund->moneyTip          = '低于金额只需要一级审批，高于金额需要二级审批';
-$lang->refund->total             = '报销合计：';
+$lang->refund->total             = '合计：';
 $lang->refund->totalMoney        = '%s%s；';
 
 $lang->refund->settings = new stdclass();
