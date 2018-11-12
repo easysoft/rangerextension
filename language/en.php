@@ -33,7 +33,7 @@ $lang->apps->team       = 'TEAM';
 $lang->apps->superadmin = 'ADMIN';
 
 $lang->ranzhi    = 'Zdoo';
-$lang->agreement = "I have read and agreed to  <a href='http://zpl.pub/page/zplv11.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of Zdoo.</span>";
+$lang->agreement = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of Zdoo.</span>";
 $lang->poweredBy = "<a href='http://www.zdoo.org/?v=%s' target='_blank'>{$lang->ranzhi} %s</a>";
 $lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact the Administrator to get privilege.</body></html>";
 
@@ -117,10 +117,10 @@ $lang->year           = 'Year';
 $lang->month          = 'Month';
 $lang->day            = 'Day';
 $lang->loading        = 'Loading...';
-$lang->saveSuccess    = 'Saved.';
-$lang->setSuccess     = 'Saved.';
-$lang->sendSuccess    = 'Sent.';
-$lang->fail           = 'Failed.';
+$lang->saveSuccess    = 'Saved';
+$lang->setSuccess     = 'Saved';
+$lang->sendSuccess    = 'Sent';
+$lang->fail           = 'Failed';
 $lang->noResultsMatch = 'No match found.';
 $lang->searchMore     = "More results：";
 $lang->files          = 'Files';
@@ -635,7 +635,7 @@ $lang->dashboard = new stdclass();
 if(!isset($lang->doc)) $lang->doc = new stdclass();
 
 include (dirname(__FILE__) . '/menuOrder.php');
-/* oa/common */Company Attend<?php
+/* oa/common */
 $lang->app = new stdclass();
 $lang->app->name = 'OA';
 
@@ -1822,8 +1822,8 @@ $lang->overtime->denied        = 'Access denied';
 $lang->overtime->unique        = 'There was a record of overtime in %s.';
 $lang->overtime->sameMonth     = 'Overtime must be in the same month.';
 $lang->overtime->wrongEnd      = 'End time should be greater than begin time.';
-$lang->overtime->nodata        = 'Select no data.';
-$lang->overtime->reviewSuccess = 'Review success';
+$lang->overtime->nodata        = 'No data selected.';
+$lang->overtime->reviewSuccess = 'Reviewed';
 
 $lang->overtime->confirmReview['pass']   = 'Are you sure to pass it?';
 $lang->overtime->confirmReview['reject'] = 'Are you sure to reject it?';
@@ -1938,8 +1938,8 @@ $lang->leave->unique        = 'There was a record of Leave in %s.';
 $lang->leave->sameMonth     = 'Leave must be in the same month.';
 $lang->leave->wrongEnd      = 'End time should be greater than begin time.';
 $lang->leave->wrongBackDate = 'Back time should be greater than begin time.';
-$lang->leave->nodata        = 'Select no data.';
-$lang->leave->reviewSuccess = 'Review success';
+$lang->leave->nodata        = 'No data selected.';
+$lang->leave->reviewSuccess = 'Reviewed';
 
 $lang->leave->confirmReview['pass']   = 'Do you want to pass it?';
 $lang->leave->confirmReview['reject'] = 'Do you want to reject it?';
@@ -2005,8 +2005,8 @@ $lang->makeup->denied        = 'Access denied';
 $lang->makeup->unique        = 'There was a record of makeup in %s.';
 $lang->makeup->sameMonth     = 'Makeup must be in the same month.';
 $lang->makeup->wrongEnd      = 'End time should be greater than begin time.';
-$lang->makeup->nodata        = 'Select no data.';
-$lang->makeup->reviewSuccess = 'Review success';
+$lang->makeup->nodata        = 'No data selected.';
+$lang->makeup->reviewSuccess = 'Reviewed';
 
 $lang->makeup->confirmReview['pass']   = 'Are you sure to pass it?';
 $lang->makeup->confirmReview['reject'] = 'Are you sure to reject it?';
@@ -2144,8 +2144,8 @@ $lang->attend->workingDays   = 'Working days';
 $lang->attend->workingHours  = 'Working hours';
 $lang->attend->mustSignOut   = 'Required';
 $lang->attend->denied        = 'Access denied.';
-$lang->attend->nodata        = 'Select no data.';
-$lang->attend->reviewSuccess = 'Review success';
+$lang->attend->nodata        = 'No data selected.';
+$lang->attend->reviewSuccess = 'Reviewed';
 
 $lang->attend->workingDaysList['5']  = "Monday ~ Friday";
 $lang->attend->workingDaysList['6']  = "Monday ~ Saturday";
@@ -2240,8 +2240,8 @@ $lang->lieu->denied        = 'Access denied.';
 $lang->lieu->unique        = 'There was a record of lieu in %s.';
 $lang->lieu->sameMonth     = 'Lieu must be in the same month.';
 $lang->lieu->wrongEnd      = 'End time should be greater than begin time.';
-$lang->lieu->nodata        = 'Select no data.';
-$lang->lieu->reviewSuccess = 'Review success';
+$lang->lieu->nodata        = 'No data selected.';
+$lang->lieu->reviewSuccess = 'Reviewed';
 $lang->lieu->wrongHours    = 'The total time of overtime and trip are <strong>%s</strong> hours. Lieu hours can not be greater than the total time.';
 $lang->lieu->nobccomp      = 'Please install the extension php-bcmath.';
 $lang->lieu->bothEmpty     = '<strong>Overtime</strong> records and <strong>trip</strong> records cannot be empty at the same time.';
@@ -4502,6 +4502,8 @@ $lang->group->all      = 'All';
 $lang->group->extent   = 'extent';
 $lang->group->havePriv = 'Authorized';
 $lang->group->noPriv   = 'Not Authorized';
+$lang->group->hide     = 'hide...';
+$lang->group->show     = 'more...';
 
 $lang->group->manageAll = 'All customers and orders';
 
