@@ -75,7 +75,7 @@ $lang->changePassword   = 'Change password';
 $lang->currentPos       = 'Current Page';
 $lang->categoryMenu     = 'Manage Category';
 $lang->basicInfo        = 'Basic Info';
-$lang->chooseUserToMail = 'Choose users to send notice...';
+$lang->chooseUserToMail = 'Choose users to send messages to ...';
 
 $lang->reset          = 'Reset';
 $lang->add            = 'Add';
@@ -128,7 +128,7 @@ $lang->addFiles       = 'Add Files ';
 $lang->comment        = 'Comment';
 $lang->selectAll      = 'All';
 $lang->selectReverse  = 'Inverse';
-$lang->continueSave   = 'Continue To Save';
+$lang->continueSave   = 'Continue saving';
 $lang->submitting     = 'Saving...';
 $lang->yes            = 'YES';
 $lang->no             = 'NO';
@@ -167,7 +167,7 @@ $lang->js->confirmFinish         = 'Do you want to finish it?';
 $lang->js->deleteing             = 'Deleting...';
 $lang->js->doing                 = 'Processing...';
 $lang->js->timeout               = 'Timeout';
-$lang->js->confirmDiscardChanges = 'Discard changes?';
+$lang->js->confirmDiscardChanges = 'Cancel changes?';
 $lang->js->yes                   = 'Yes';
 $lang->js->no                    = 'No';
 $lang->js->installZipExtension   = "Php-zip extension is required to export .xlsx file.";
@@ -238,7 +238,7 @@ $lang->article->menu->create = array('link' => 'Add|article|create|type=article'
 $lang->menuGroups = new stdclass();
 
 $lang->menu->dashboard = new stdclass();
-$lang->menu->dashboard->todo     = 'To-do|todo|calendar|';
+$lang->menu->dashboard->todo     = 'Todo|todo|calendar|';
 $lang->menu->dashboard->task     = 'Task|my|task|';
 $lang->menu->dashboard->project  = 'Project|my|project|';
 $lang->menu->dashboard->order    = 'Order|my|order|';
@@ -251,9 +251,9 @@ $lang->menu->dashboard->contact  = 'Contact|my|contact|';
 if(!isset($lang->customer)) $lang->customer = new stdclass();
 $lang->customer->menu = new stdclass();
 $lang->customer->menu->browse      = 'All Customers|customer|browse|mode=all';
-$lang->customer->menu->assignedTo  = 'Assigned To Me|customer|browse|mode=assignedtome';
-$lang->customer->menu->contactedBy = 'Contacted By Me|customer|browse|mode=contactedby';
-$lang->customer->menu->past        = 'Urgently need contacted|customer|browse|mode=past';
+$lang->customer->menu->assignedTo  = 'AssignToMe|customer|browse|mode=assignedtome';
+$lang->customer->menu->contactedBy = 'ContactByMe|customer|browse|mode=contactedby';
+$lang->customer->menu->past        = 'Contact Now |customer|browse|mode=past';
 $lang->customer->menu->today       = 'Contact Today|customer|browse|mode=today';
 $lang->customer->menu->tomorrow    = 'Contact Tomorrow|customer|browse|mode=tomorrow';
 $lang->customer->menu->thisweek    = 'Contact This Week|customer|browse|mode=thisweek';
@@ -298,9 +298,9 @@ $lang->my->order->menu = new stdclass();
 $lang->my->order->menu->past       = 'Urgent|my|order|type=past';
 $lang->my->order->menu->today      = 'Today|my|order|type=today';
 $lang->my->order->menu->tomorrow   = 'Tomorrow|my|order|type=tomorrow';
-$lang->my->order->menu->assignedTo = 'Assigned To Me|my|order|type=assignedTo';
-$lang->my->order->menu->createdBy  = 'Created By Me|my|order|type=createdBy';
-$lang->my->order->menu->signedBy   = 'Signed By Me|my|order|type=signedBy';
+$lang->my->order->menu->assignedTo = 'AssignToMe|my|order|type=assignedTo';
+$lang->my->order->menu->createdBy  = 'CreateByMe|my|order|type=createdBy';
+$lang->my->order->menu->signedBy   = 'SignByMe|my|order|type=signedBy';
 $lang->my->order->menu->all        = 'All|my|order|type=all';
 
 $lang->my->contract = new stdclass();
@@ -313,10 +313,10 @@ $lang->my->contract->menu->deliveredBy = 'Delivered|my|contract|type=deliveredBy
 
 $lang->my->task = new stdclass();
 $lang->my->task->menu = new stdclass();
-$lang->my->task->menu->assignedToMe = 'Assigned To Me|my|task|type=assignedTo';
-$lang->my->task->menu->createdByMe  = 'Created By Me|my|task|type=createdBy';
-$lang->my->task->menu->finishedByMe = 'Finished By Me|my|task|type=finishedBy';
-$lang->my->task->menu->closedByMe   = 'Closed By Me|my|task|type=closedBy';
+$lang->my->task->menu->assignedToMe = 'AssignToMe|my|task|type=assignedTo';
+$lang->my->task->menu->createdByMe  = 'CreateByMe|my|task|type=createdBy';
+$lang->my->task->menu->finishedByMe = 'FinishByMe|my|task|type=finishedBy';
+$lang->my->task->menu->closedByMe   = 'CloseByMe|my|task|type=closedBy';
 $lang->my->task->menu->canceledByMe = 'Cancelled By Me|my|task|type=canceledBy';
 $lang->my->task->menu->unclosed     = 'Unclosed|my|task|type=unclosed';
 
@@ -570,7 +570,7 @@ $lang->order->menu->report      = 'Report|report|browse|module=order';
 if(!isset($lang->contact)) $lang->contact = new stdclass();
 $lang->contact->menu = new stdclass();
 $lang->contact->menu->browse      = 'All Contacts|contact|browse|mode=all';
-$lang->contact->menu->contactedBy = 'Contacted By Me|contact|browse|mode=contactedby';
+$lang->contact->menu->contactedBy = 'ContactByMe|contact|browse|mode=contactedby';
 $lang->contact->menu->past        = 'Urgent|contact|browse|mode=past';
 $lang->contact->menu->today       = 'Today|contact|browse|mode=today';
 $lang->contact->menu->tomorrow    = 'Tomorrow|contact|browse|mode=tomorrow';
@@ -582,14 +582,14 @@ $lang->leads->menu = new stdclass();
 $lang->leads->menu->assignedToNull = 'Assigned to Null|leads|assignedToNull|';
 $lang->leads->menu->assignedTo     = 'Assigned to Me|leads|browse|mode=assignedTo';
 $lang->leads->menu->next           = 'Next contact|leads|browse|mode=next';
-$lang->leads->menu->ignoredBy      = 'Ignored by Me|leads|browse|mode=ignoredBy&status=ignore';
+$lang->leads->menu->ignoredBy      = 'Ignore by Me|leads|browse|mode=ignoredBy&status=ignore';
 $lang->leads->menu->public         = 'Public|leads|browse|mode=all&status=ignore';
 $lang->leads->menu->setting        = 'Settings|leads|setting|';
 
 if(!isset($lang->contract)) $lang->contract = new stdclass();
 $lang->contract->menu = new stdclass();
 $lang->contract->menu->browse       = 'All|contract|browse|mode=all';
-$lang->contract->menu->contactedBy  = 'Contacted By Me|contract|browse|mode=contactedby';
+$lang->contract->menu->contactedBy  = 'ContactByMe|contract|browse|mode=contactedby';
 $lang->contract->menu->unfinished   = 'Unfinished|contract|browse|mode=unfinished';
 $lang->contract->menu->unreceived   = 'Receiving|contract|browse|mode=unreceived';
 $lang->contract->menu->undeliveried = 'Delivering|contract|browse|mode=undeliveried';
@@ -760,9 +760,9 @@ $lang->project->menu->finished  = 'Finished|project|index|ststus=finished';
 $lang->project->menu->suspend   = 'Suspended|project|index|ststus=suspend';
 
 $lang->task->menu = new stdclass();
-$lang->task->menu->assignedTo = 'Assigned To Me|task|browse|projectID=&mode=assignedTo';
-$lang->task->menu->createdBy  = 'Created By Me|task|browse|projectID=&mode=createdBy';
-$lang->task->menu->finishedBy = 'Finished By Me|task|browse|projectID=&mode=finishedBy';
+$lang->task->menu->assignedTo = 'AssignToMe|task|browse|projectID=&mode=assignedTo';
+$lang->task->menu->createdBy  = 'CreateByMe|task|browse|projectID=&mode=createdBy';
+$lang->task->menu->finishedBy = 'FinishByMe|task|browse|projectID=&mode=finishedBy';
 
 include (dirname(__FILE__) . '/menuOrder.php');
 /* team/common */
@@ -781,15 +781,15 @@ if(!isset($lang->forum)) $lang->forum = new stdclass();
 
 if(!isset($lang->blog)) $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->index    = 'Blogs|blog|index|';
-$lang->blog->menu->category = 'Blog Categories|tree|browse|type=blog';
+$lang->blog->menu->index    = 'Blog|blog|index|';
+$lang->blog->menu->category = 'Blog Category|tree|browse|type=blog';
 
 $lang->setting = new stdclass();
 $lang->setting->menu = new stdclass();
-$lang->setting->menu->board = 'Boards|tree|browse|type=forum|';
-$lang->setting->menu->blog  = 'Blogs|tree|browse|type=blog|';
-$lang->setting->menu->dept  = 'Departments|tree|browse|type=dept|';
-$lang->setting->menu->role  = 'Roles|setting|lang|module=user&field=roleList&appName=sys|';
+$lang->setting->menu->board = 'Board|tree|browse|type=forum|';
+$lang->setting->menu->blog  = 'Blog|tree|browse|type=blog|';
+$lang->setting->menu->dept  = 'Department|tree|browse|type=dept|';
+$lang->setting->menu->role  = 'Role|setting|lang|module=user&field=roleList&appName=sys|';
 include(dirname(__FILE__) . '/menuOrder.php');
 /* cash/depositor */
 if(!isset($lang->depositor)) $lang->depositor = new stdclass();
@@ -1223,7 +1223,7 @@ $lang->contact->nickname       = 'Nickname';
 $lang->contact->origin         = 'origin';
 $lang->contact->status         = 'Status';
 $lang->contact->avatar         = 'Avatar';
-$lang->contact->birthday       = 'Birthday';
+$lang->contact->birthday       = 'DOB';
 $lang->contact->gender         = 'Gender';
 $lang->contact->email          = 'Email';
 $lang->contact->skype          = 'Skype';
@@ -1236,15 +1236,15 @@ $lang->contact->mobile         = 'Mobile';
 $lang->contact->phone          = 'Phone';
 $lang->contact->company        = 'Company';
 $lang->contact->fax            = 'Fax';
-$lang->contact->weibo          = 'Sina Weibo';
-$lang->contact->weixin         = 'Wechat';
+$lang->contact->weibo          = 'Weibo';
+$lang->contact->weixin         = 'WeChat';
 $lang->contact->desc           = 'Description';
 $lang->contact->createdBy      = 'Created By';
-$lang->contact->createdDate    = 'Created Date';
+$lang->contact->createdDate    = 'Created';
 $lang->contact->editedBy       = 'Edited By';
-$lang->contact->editedDate     = 'Edited Date';
+$lang->contact->editedDate     = 'Edited';
 $lang->contact->contactedBy    = 'Contacted By';
-$lang->contact->contactedDate  = 'Contacted Date';
+$lang->contact->contactedDate  = 'Contacted';
 $lang->contact->nextDate       = 'Next Date';
 $lang->contact->assignedTo     = 'Assigned To';
 $lang->contact->newCustomer    = 'Create Customer';
@@ -1252,7 +1252,7 @@ $lang->contact->uploadAvatar   = 'Upload Photo';
 $lang->contact->changeAvatar   = 'Change Photo';
 $lang->contact->selectCustomer = 'Select Customer';
 
-$lang->contact->browse         = 'Browse Contact';
+$lang->contact->browse         = 'View Contact';
 $lang->contact->block          = 'Contact Block';
 $lang->contact->delete         = 'Delete Contact';
 $lang->contact->create         = 'Create Contact';
@@ -1284,7 +1284,7 @@ $lang->contact->failReason   = 'Reason';
 $lang->contact->showImport   = 'Imported Contacts';
 $lang->contact->template     = 'Contact Template';
 
-$lang->contact->genderList['m'] = 'male';
+$lang->contact->genderList['m'] = 'Male';
 $lang->contact->genderList['f'] = 'Female';
 $lang->contact->genderList['u'] = '';
 /* crm/block */
@@ -1406,40 +1406,40 @@ $lang->contract->end           = 'End';
 $lang->contract->dateRange     = 'Time Frame';
 $lang->contract->delivery      = 'Deliver';
 $lang->contract->deliveredBy   = 'Delivered By';
-$lang->contract->deliveredDate = 'Delivered On';
+$lang->contract->deliveredDate = 'Delivered';
 $lang->contract->return        = 'Payment';
 $lang->contract->returnedBy    = 'Received By';
-$lang->contract->returnedDate  = 'Received On';
+$lang->contract->returnedDate  = 'Received';
 $lang->contract->status        = 'Status';
 $lang->contract->contact       = 'Contact';
 $lang->contract->address       = 'Address';
 $lang->contract->signedBy      = 'Signed By';
-$lang->contract->signedDate    = 'Signed On';
+$lang->contract->signedDate    = 'Signed';
 $lang->contract->finishedBy    = 'Finished By';
-$lang->contract->finishedDate  = 'Finished On';
+$lang->contract->finishedDate  = 'Finished';
 $lang->contract->canceledBy    = 'Cancelled By';
-$lang->contract->canceledDate  = 'Cancelled On';
+$lang->contract->canceledDate  = 'Cancelled';
 $lang->contract->createdBy     = 'Created By';
-$lang->contract->createdDate   = 'Created On';
+$lang->contract->createdDate   = 'Created';
 $lang->contract->editedBy      = 'Edited By';
-$lang->contract->editedDate    = 'Edited On';
+$lang->contract->editedDate    = 'Edited';
 $lang->contract->handlers      = 'Contributors';
 $lang->contract->contactedBy   = 'Contacted By';
-$lang->contract->contactedDate = 'Contacted On';
+$lang->contract->contactedDate = 'Contacted';
 $lang->contract->nextDate      = 'Next Date';
 $lang->contract->product       = 'Products';
 $lang->contract->productLine   = 'Product Lines';
 $lang->contract->files         = 'Files';
 $lang->contract->createAddress = 'Create Address';
 
-$lang->contract->browse           = 'Contracts';
+$lang->contract->browse           = 'Contract';
 $lang->contract->receive          = 'Receive';
 $lang->contract->cancel           = 'Cancel';
-$lang->contract->view             = 'Contracts';
+$lang->contract->view             = 'Contract';
 $lang->contract->finish           = 'Finish';
 $lang->contract->record           = 'Record';
 $lang->contract->delete           = 'Delete';
-$lang->contract->list             = 'Contracts';
+$lang->contract->list             = 'Contract';
 $lang->contract->create           = 'Create';
 $lang->contract->edit             = 'Edit';
 $lang->contract->setting          = 'Settings';
@@ -2028,7 +2028,7 @@ $lang->attend->edited       = 'Clock In';
 $lang->attend->leave        = 'Leave';
 $lang->attend->leaved       = 'Already leave';
 $lang->attend->makeup       = 'Makeup times';
-$lang->attend->makeuped     = 'Alread makeup times';
+$lang->attend->makeuped     = 'Already makeup';
 $lang->attend->lieu         = 'Lieu';
 $lang->attend->lieud        = 'Already lieu';
 $lang->attend->trip         = 'Trip';
@@ -2076,7 +2076,7 @@ $lang->attend->manualOut    = 'Clock-Out';
 $lang->attend->reason       = 'Reasons';
 $lang->attend->reviewStatus = 'Review';
 $lang->attend->reviewedBy   = 'Reviewed By';
-$lang->attend->reviewedDate = 'Reviewed Date';
+$lang->attend->reviewedDate = 'Reviewed';
 $lang->attend->deserveDays  = 'Deserved Days';
 $lang->attend->actualDays   = 'Actual';
 
@@ -2304,8 +2304,8 @@ $lang->block->statusList->project['suspend']  = 'Suspend';
 /* proj/project */
 if(!isset($lang->project)) $lang->project = new stdclass();
 $lang->project->common     = 'Project';
-$lang->project->browse     = 'Projects List';
-$lang->project->index      = 'Projects';
+$lang->project->browse     = 'Project List';
+$lang->project->index      = 'Project';
 $lang->project->create     = "Create Project";
 $lang->project->edit       = 'Edit';
 $lang->project->view       = 'Project Detail';
@@ -2314,7 +2314,7 @@ $lang->project->delete     = 'Delete';
 $lang->project->enter      = 'Enter';
 $lang->project->suspend    = 'Suspend';
 $lang->project->activate   = 'Activate';
-$lang->project->mine       = 'I charge : ';
+$lang->project->mine       = 'Mine : ';
 $lang->project->other      = 'Other : ';
 $lang->project->deleted    = 'Deleted';
 $lang->project->finished   = 'Finished';
@@ -2325,7 +2325,7 @@ $lang->project->import     = 'Import';
 $lang->project->importTask = 'Import task';
 $lang->project->role       = 'Role';
 $lang->project->project    = 'Project';
-$lang->project->dateRange  = 'Date Range';
+$lang->project->dateRange  = 'Time Frame';
 
 $lang->project->id          = 'ID';
 $lang->project->name        = 'Name';
@@ -2336,7 +2336,7 @@ $lang->project->manager     = 'Manager';
 $lang->project->member      = 'Team';
 $lang->project->end         = 'End';
 $lang->project->createdBy   = 'Created by';
-$lang->project->createdDate = 'Created on';
+$lang->project->createdDate = 'Created';
 $lang->project->fromproject = 'From Project';
 $lang->project->whitelist   = 'Whitelist';
 $lang->project->doc         = 'Document';
@@ -2384,9 +2384,9 @@ $lang->doc->url            = 'URL';
 $lang->doc->files          = 'File';
 $lang->doc->views          = 'Views';
 $lang->doc->createdBy      = 'Create by';
-$lang->doc->createdDate    = 'Create on';
+$lang->doc->createdDate    = 'Create';
 $lang->doc->editedBy       = 'Edite by';
-$lang->doc->editedDate     = 'Edite on';
+$lang->doc->editedDate     = 'Edite';
 $lang->doc->basicInfo      = 'Basic Info';
 $lang->doc->deleted        = 'Deleted';
 
@@ -2465,9 +2465,9 @@ $lang->task->export    = 'Export';
 
 $lang->task->batchCreate    = 'Batch Create';
 $lang->task->backToProjects = 'Back to project list'; 
-$lang->task->viewAll        = "View all project's task";
-$lang->task->editAll        = "Edit all project's task";
-$lang->task->deleteAll      = "Delete all project's task";
+$lang->task->viewAll        = "View all project tasks";
+$lang->task->editAll        = "Edit all project tasks";
+$lang->task->deleteAll      = "Delete all project tasks";
 
 $lang->task->id             = 'ID';
 $lang->task->project        = 'Project';
@@ -2477,12 +2477,12 @@ $lang->task->category       = 'Category';
 $lang->task->name           = 'Name';
 $lang->task->type           = 'Type';
 $lang->task->pri            = 'Priority';
-$lang->task->estimate       = 'Man-Hour Estimated';
+$lang->task->estimate       = 'Estimates';
 $lang->task->estimateAB     = 'Est.';
-$lang->task->consumed       = 'Consumed';
-$lang->task->consumedAB     = 'Use';
-$lang->task->left           = 'Remained';
-$lang->task->leftAB         = 'Remianed';
+$lang->task->consumed       = 'Cost';
+$lang->task->consumedAB     = 'Cost';
+$lang->task->left           = 'Left';
+$lang->task->leftAB         = 'Left';
 $lang->task->deadline       = 'Deadline';
 $lang->task->deadlineAB     = 'Deadline';
 $lang->task->status         = 'Status';
@@ -2492,25 +2492,25 @@ $lang->task->mailto         = 'Mailto';
 $lang->task->desc           = 'Description';
 $lang->task->createdBy      = 'Created By';
 $lang->task->createdByAB    = 'Create';
-$lang->task->createdDate    = 'Create On';
+$lang->task->createdDate    = 'Created';
 $lang->task->createdDateAB  = 'Create';
 $lang->task->editedBy       = 'Edited By';
-$lang->task->editedDate     = 'Edited On';
+$lang->task->editedDate     = 'Edited';
 $lang->task->assignedTo     = 'Assign';
-$lang->task->assignedDate   = 'Assigned On';
-$lang->task->estStarted     = 'Est. Start';
+$lang->task->assignedDate   = 'Assigned';
+$lang->task->estStarted     = 'Planned Start';
 $lang->task->realStarted    = 'Actual Start';
 $lang->task->finishedBy     = 'Finished By';
 $lang->task->finishedByAB   = 'Finish';
-$lang->task->finishedDate   = 'Finished On';
+$lang->task->finishedDate   = 'Finished';
 $lang->task->finishedDateAB = 'Date';
 $lang->task->canceledBy     = 'CancelLed By';
-$lang->task->canceledDate   = 'CancelLed On';
+$lang->task->canceledDate   = 'CancelLed';
 $lang->task->closedBy       = 'Closed By';
-$lang->task->closedDate     = 'Closed On';
+$lang->task->closedDate     = 'Closed';
 $lang->task->closedReason   = 'Closed Reason';
 $lang->task->lastEditedBy   = 'Last Edited By';
-$lang->task->lastEditedDate = 'Last Edited On';
+$lang->task->lastEditedDate = 'Last Edited';
 $lang->task->lastEdited     = 'Last Edited';
 $lang->task->hour           = 'Hour';
 $lang->task->leftThisTime   = 'Remained';
@@ -2525,11 +2525,11 @@ $lang->task->childrenAB     = 'Child';
 $lang->task->parent         = 'Parent Task';
 $lang->task->unfinished     = 'Unfinished';
 $lang->task->end            = 'End';
-$lang->task->myConsumption  = 'Man-Hour Consumed';
+$lang->task->myConsumption  = 'Man-Hour Cost';
 $lang->task->recordEstimate = 'Man-Hour';
 
-$lang->task->confirmFinish     = '"Remained" is zero, so the status of this task will be "done". Do you want to finish it?';
-$lang->task->consumedBefore    = 'consumed before';
+$lang->task->confirmFinish     = '"Left" man-hour is 0, so this task status will be "done". Do you want to finish it?';
+$lang->task->consumedBefore    = 'cost before';
 $lang->task->mailtoPlaceholder = 'Choose users to mail...';
 
 $lang->task->lblPri  = 'P';
@@ -2544,7 +2544,7 @@ $lang->task->statusList['closed']  = 'Closed';
 
 $lang->task->typeList['']        = '';
 $lang->task->typeList['discuss'] = 'Discuss';
-$lang->task->typeList['affair']  = 'Affair';
+$lang->task->typeList['affair']  = 'Routine';
 $lang->task->typeList['misc']    = 'Misc';
 
 $lang->task->priList[0]  = '';
@@ -2557,10 +2557,10 @@ $lang->task->reasonList['']       = '';
 $lang->task->reasonList['done']   = 'Done';
 $lang->task->reasonList['cancel'] = 'Cancelled';
 
-$lang->task->createdByMe  = 'Created By Me';
-$lang->task->assignedToMe = 'Assigned To Me';
-$lang->task->finishedByMe = 'Finished By Me';
-$lang->task->untilToday   = 'Until Today';
+$lang->task->createdByMe  = 'CreateByMe';
+$lang->task->assignedToMe = 'AssignToMe';
+$lang->task->finishedByMe = 'FinishByMe';
+$lang->task->untilToday   = 'Till Today';
 $lang->task->expired      = 'Expired';
 $lang->task->all          = 'All';
 
@@ -2604,10 +2604,10 @@ $lang->package->obtain        = 'Extensions';
 $lang->package->view          = 'Info';
 $lang->package->download      = 'Download';
 $lang->package->downloadAB    = 'Down';
-$lang->package->upload        = 'Upload and install';
+$lang->package->upload        = 'Upload to install';
 $lang->package->erase         = 'Erase';
 $lang->package->upgrade       = 'Upgrade Package';
-$lang->package->agreeLicense  = 'I agree the license';
+$lang->package->agreeLicense  = 'I agree to the license';
 $lang->package->settemplate   = 'Templates';
 $lang->package->search        = 'Search';
 
@@ -2618,7 +2618,7 @@ $lang->package->available   = 'Downloaded';
 
 $lang->package->id          = 'ID';
 $lang->package->name        = 'Name';
-$lang->package->code        = 'Code';
+$lang->package->code        = 'Alias';
 $lang->package->version     = 'Version';
 $lang->package->compatible  = 'Compatible';
 $lang->package->latest      = '<small>Latest:<strong><a href="%s" target="_blank" class="package">%s</a></strong>，need ranzhi <a href="http://api.zdoo.org/goto.php?item=latest" target="_blank"><strong>%s</strong></small>';
@@ -2627,8 +2627,8 @@ $lang->package->license     = 'License';
 $lang->package->intro       = 'Description';
 $lang->package->abstract    = 'Abstract';
 $lang->package->site        = 'Site';
-$lang->package->addedTime   = 'Added on';
-$lang->package->updatedTime = 'Updated on';
+$lang->package->addedTime   = 'Added';
+$lang->package->updatedTime = 'Updated';
 $lang->package->downloads   = 'Downloads';
 $lang->package->public      = 'Public';
 $lang->package->compatible  = 'Compatible';
@@ -2642,31 +2642,31 @@ $lang->package->compatibleList[0] = 'Unknow';
 $lang->package->compatibleList[1] = 'Compatible';
 
 $lang->package->byDownloads   = 'Downloads';
-$lang->package->byAddedTime   = 'New added';
+$lang->package->byAddedTime   = 'Just added';
 $lang->package->byUpdatedTime = 'Last updated';
 $lang->package->bySearch      = 'Search';
 $lang->package->byCategory    = 'By Category';
 
-$lang->package->installFailed            = '%s failed, the reason is:';
-$lang->package->uninstallFailed          = 'Uninstall failed, the reason is:';
-$lang->package->confirmUninstall         = 'Uninstall will delete or modify database, whether to uninstall?';
-$lang->package->noticeBackupDB           = 'Before uninstalling, we recommend backing up the database.';
-$lang->package->installFinished          = 'Good, the package has been %s successfully.';
+$lang->package->installFailed            = '%s failed. The reason is:';
+$lang->package->uninstallFailed          = 'Uninstall failed. The reason is:';
+$lang->package->confirmUninstall         = 'Uninstallation will delete or modify the database. Do you want to uninstall?';
+$lang->package->noticeBackupDB           = 'Before uninstalling, we recommend that you back up the database.';
+$lang->package->installFinished          = 'OK, the package has been %sed.';
 $lang->package->refreshPage              = 'Refresh';
-$lang->package->uninstallFinished        = 'Package has been successfully uninstalled.';
-$lang->package->deactivateFinished       = 'Package has been successfully deactivated.';
-$lang->package->activateFinished         = 'Package has been successfully activated.';
-$lang->package->eraseFinished            = 'Package has been successfully erased.';
-$lang->package->unremovedFiles           = 'There are some unremoved files, you need remove them manually';
+$lang->package->uninstallFinished        = 'Package has been uninstalled.';
+$lang->package->deactivateFinished       = 'Package has been deactivated.';
+$lang->package->activateFinished         = 'Package has been activated.';
+$lang->package->eraseFinished            = 'Package has been erased.';
+$lang->package->unremovedFiles           = 'There are some files that cannot be remoived. Please remove them manually';
 $lang->package->executeCommands          = '<h3>Execute the following commands to fix them:</h3>';
-$lang->package->successDownloadedPackage = 'Successfully downloaded the package file.';
-$lang->package->successUploadedPackage   = 'Successfully uploaded the package file.';
-$lang->package->successCopiedFiles       = 'Successfully copied files. ';
-$lang->package->successInstallDB         = 'Successfully installed database.';
+$lang->package->successDownloadedPackage = 'Downloaded the package file.';
+$lang->package->successUploadedPackage   = 'Uploaded the package file.';
+$lang->package->successCopiedFiles       = 'Copied files. ';
+$lang->package->successInstallDB         = 'Installed database.';
 $lang->package->viewInstalled            = 'View installed packages.';
 $lang->package->viewAvailable            = 'View available packages';
 $lang->package->viewDeactivated          = 'View deactivated packages';
-$lang->package->backDBFile               = 'Plug-related data has been backed up to %s file!';
+$lang->package->backDBFile               = 'Extesnsion data is backed up to %s file!';
 
 $lang->package->upgradeExt     = 'Upgrade';
 $lang->package->installExt     = 'Install';
@@ -2675,24 +2675,24 @@ $lang->package->upgradeVersion = '(Upgrade from %s to %s)';
 $lang->package->waring = 'Waring';
 
 $lang->package->errorOccurs                  = 'Error:';
-$lang->package->errorGetModules              = "Get packages' categories data from the www.zdoo.org failed. ";
-$lang->package->errorGetPackages             = 'Get packages from www.zdoo.org failed. You can visit <a href="http://www.zdoo.org/extension/" target="_blank">www.zdoo.org</a> to find your packages, download it manually and then upload to ranzhi to install it.';
-$lang->package->errorDownloadPathNotFound    = 'The save path of package file <strong>%s</strong>does not exists.<br />For linux users, can execute <strong>mkdir -p %s</strong> to fix it.';
-$lang->package->errorDownloadPathNotWritable = 'The save path of package file <strong>%s</strong>is not writable.<br />For linux users, can execute <strong>sudo chmod 777 %s</strong> to fix it.';
-$lang->package->errorPackageFileExists       = 'There is a file with the same name <strong>%s</strong>.<h3> If you want to %s again, <a href="%s" class="alert-link loadInModal">please click this link</a>.</h3>';
+$lang->package->errorGetModules              = "Failed to get package category data from the www.zdoo.org. ";
+$lang->package->errorGetPackages             = 'Failed to get packages from www.zdoo.org. You can visit <a href="http://www.zdoo.org/extension/" target="_blank">www.zdoo.org</a> to find your packages, download it manually and then upload to Zdoo to install it.';
+$lang->package->errorDownloadPathNotFound    = 'The path of package file <strong>%s</strong>does not exists.<br />For linux users, execute <strong>mkdir -p %s</strong> to fix it.';
+$lang->package->errorDownloadPathNotWritable = 'The path of package file <strong>%s</strong>is not writable.<br />For linux users, execute <strong>sudo chmod 777 %s</strong> to fix it.';
+$lang->package->errorPackageFileExists       = 'There is a file with the same name <strong>%s</strong>.<h3> If you want to %s again, <a href="%s" class="alert-link loadInModal">click this link</a>.</h3>';
 $lang->package->errorDownloadFailed          = 'Download failed, please try again. Or you can download it manually and upload it to install.';
-$lang->package->errorMd5Checking             = 'The downloawd files checking failed, Please download it manually and upload it to install';
-$lang->package->errorExtracted               = 'The package file <strong> %s </strong> extracted failed. The error is:<br />%s';
-$lang->package->errorCheckIncompatible       = 'This extenion is not compatible with current ranzhi version. <h3>You can <a href="%s" class="loadInModal">Force %s</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
+$lang->package->errorMd5Checking             = 'Failed to check the download files. Please download it manually and upload it to install';
+$lang->package->errorExtracted               = 'Failed to get the package file <strong> %s </strong>. The error is:<br />%s';
+$lang->package->errorCheckIncompatible       = 'This extenion is not compatible with current Zdoo version. <h3>You can <a href="%s" class="loadInModal">Force %s</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
 $lang->package->errorFileConflicted          = 'There are some files conflicted: <br />%s <h3>You can <a href="%s" class="loadInModal">Overide them</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
 $lang->package->errorPackageNotFound         = 'The package file <strong>%s </strong> not found, perhaps download failed, try again.';
-$lang->package->errorTargetPathNotWritable   = 'Target path <strong>%s </strong>not writable.';
-$lang->package->errorTargetPathNotExists     = 'Target path <strong>%s </strong>not exists';
-$lang->package->errorInstallDB               = 'Execute database sql failed, the error is: %s';
-$lang->package->errorConflicts               = 'With plug-in "%s" Conflict!';
-$lang->package->errorDepends                 = 'The following dependency plugin is not installed or the version is incorrect:<br /><br /> %s';
-$lang->package->errorIncompatible            = 'The plug-in with your RanZhi incompatible version';
-$lang->package->errorUninstallDepends        = 'Plugin "%s" relying on the plug-in, can not uninstall';
+$lang->package->errorTargetPathNotWritable   = 'Target path <strong>%s </strong>is not writable.';
+$lang->package->errorTargetPathNotExists     = 'Target path <strong>%s </strong> does not exists';
+$lang->package->errorInstallDB               = 'Execute database SQL failed. The error is: %s';
+$lang->package->errorConflicts               = 'Conflict with "%s"!';
+$lang->package->errorDepends                 = 'The following extension dependent on this one is not installed or the version is incorrect:<br /><br /> %s';
+$lang->package->errorIncompatible            = 'The extension with your Zdoo incompatible version';
+$lang->package->errorUninstallDepends        = '"%s" is dependent on this extension which cannot be uninstalled.';
 /* sys/queue */
 $lang->queue->common  = 'Queue';
 $lang->queue->index   = 'Index';
@@ -2741,11 +2741,11 @@ $lang->todo->private      = 'Private';
 $lang->todo->idvalue      = 'Task/Order';
 $lang->todo->assignedTo   = 'Assign To';
 $lang->todo->assignedBy   = 'Assigned By';
-$lang->todo->assignedDate = 'Assigned On';
+$lang->todo->assignedDate = 'Assigned';
 $lang->todo->finishedBy   = 'Finished By';
-$lang->todo->finishedDate = 'Finished On';
+$lang->todo->finishedDate = 'Finished';
 $lang->todo->closedBy     = 'Closed By';
-$lang->todo->closedDate   = 'Closed On';
+$lang->todo->closedDate   = 'Closed';
 $lang->todo->ranzhi       = 'Zdoo';
 $lang->todo->task         = 'Tasks';
 $lang->todo->bug          = 'Bugs';
@@ -2771,11 +2771,11 @@ $lang->todo->typeList['task']     = 'Project';
 $lang->todo->typeList['order']    = 'Order';
 $lang->todo->typeList['customer'] = 'Customer';
 
-$lang->todo->confirmDelete  = "Do you want to delete this To-Do?";
-$lang->todo->successMarked  = "Successfully changed.";
+$lang->todo->confirmDelete  = "Do you want to delete this Todo?";
+$lang->todo->successMarked  = "Done.";
 $lang->todo->thisIsPrivate  = 'This is a private todo:)';
 $lang->todo->lblDisableDate = 'Set time later.';
-$lang->todo->emptyTodo      = 'You have no To-Do scheduled today.';
+$lang->todo->emptyTodo      = 'You have no Todo scheduled today.';
 
 $lang->todo->periods['today']      = 'Today';
 $lang->todo->periods['yesterday']  = 'Yesterday';
@@ -2796,18 +2796,18 @@ $lang->todo->action->finished = array('main' => '$date, Finished by <strong>$act
 $lang->todo->action->marked   = array('main' => '$date, Change status to <stong>$extra</strong> by <strong>$actor</strong>。', 'extra' => 'statusList');
 /* sys/article */
 $lang->article->common      = 'Article';
-$lang->article->createDraft = 'Create draft';
+$lang->article->createDraft = 'Create Draft';
 
 $lang->article->id          = 'Id';
 $lang->article->category    = 'Category';
-$lang->article->categories  = 'Categories';
+$lang->article->categories  = 'Category';
 $lang->article->title       = 'Title';
 $lang->article->alias       = 'Alias';
 $lang->article->content     = 'Content';
 $lang->article->original    = 'Original';
 $lang->article->copySite    = 'Site';
 $lang->article->copyURL     = 'URL';
-$lang->article->keywords    = 'Keywords';
+$lang->article->keywords    = 'Tags';
 $lang->article->summary     = 'Summary';
 $lang->article->author      = 'Author';
 $lang->article->editor      = 'Editor';
@@ -2874,7 +2874,7 @@ $lang->article->note->createdDate = 'Can be delayed until the selected time publ
 if(!isset($lang->webapp)) $lang->webapp = new stdclass();
 $lang->webapp->common = 'App';
 $lang->webapp->index  = 'Added App';
-$lang->webapp->obtain = 'Obtain App';
+$lang->webapp->obtain = 'Get App';
 
 $lang->webapp->install    = 'Install';
 $lang->webapp->uninstall  = 'Remove';
@@ -2894,16 +2894,16 @@ $lang->webapp->module      = 'Category';
 $lang->webapp->author      = 'Author';
 $lang->webapp->abstract    = 'Abstract';
 $lang->webapp->desc        = 'Desc';
-$lang->webapp->target      = 'How';
+$lang->webapp->target      = 'Open with';
 $lang->webapp->size        = 'Size';
 $lang->webapp->height      = 'Height';
 $lang->webapp->addedTime   = 'Add Time';
 $lang->webapp->updatedTime = 'Update Time';
-$lang->webapp->downloads   = 'Installs';
-$lang->webapp->grade       = 'Grade';
+$lang->webapp->downloads   = 'Downloads';
+$lang->webapp->grade       = 'Ratings';
 $lang->webapp->addType     = 'Add Type';
 $lang->webapp->addedBy     = 'Added By';
-$lang->webapp->addedDate   = 'Added date';
+$lang->webapp->addedDate   = 'Added';
 $lang->webapp->views       = 'Views';
 $lang->webapp->packup      = 'Fold';
 $lang->webapp->custom      = 'Custom';
@@ -2936,12 +2936,12 @@ $lang->webapp->addTypeList['system'] = 'System App';
 $lang->webapp->addTypeList['custom'] = 'Custom App';
 
 $lang->webapp->errorOccurs        = 'Error:';
-$lang->webapp->errorGetModules    = "Get extensions' categories data from the www.zdoo.org failed. ";
-$lang->webapp->errorGetExtensions = 'Get extensions from www.zdoo.org failed. ';
+$lang->webapp->errorGetModules    = "Failed to get extension category data from the www.zdoo.org. ";
+$lang->webapp->errorGetExtensions = 'Failed to get extensions from www.zdoo.org. ';
 $lang->webapp->noApps             = 'No extensions found in this category.';
-$lang->webapp->successInstall     = 'Success Install App.';
-$lang->webapp->confirmDelete      = 'Are you sure delete this app?';
-$lang->webapp->noticeAbstract     = 'Sentence describes the application, not more than 30 words';
+$lang->webapp->successInstall     = 'Installed.';
+$lang->webapp->confirmDelete      = 'Do you want to delete this app?';
+$lang->webapp->noticeAbstract     = 'Application description in 30 words.';
 $lang->webapp->noticeIcon         = 'The size of icon is 72x72.';
 /* sys/install */
 $lang->install = new stdclass();
@@ -2951,7 +2951,7 @@ $lang->install->pre     = 'Back';
 $lang->install->reload  = 'Reload';
 $lang->install->error   = 'Error ';
 
-$lang->install->start            = 'Start install';
+$lang->install->start            = 'Start';
 $lang->install->keepInstalling   = 'Keep installing this version';
 $lang->install->seeLatestRelease = 'See the latest release.';
 $lang->install->welcome          = 'Welcome to Zdoo community.';
@@ -2969,7 +2969,7 @@ $lang->install->desc             = <<<EOT
 EOT;
 
 $lang->install->choice     = 'You can ';
-$lang->install->checking   = 'System Checkup';
+$lang->install->checking   = 'System Check';
 $lang->install->ok         = 'OK(√)';
 $lang->install->fail       = 'Failed(×)';
 $lang->install->loaded     = 'Loaded';
@@ -3092,11 +3092,11 @@ $lang->my->company->end     = 'End';
 $lang->my->company->view    = 'View';
 
 $lang->my->task->common     = 'My Task';
-$lang->my->task->assignedTo = 'Assigned To Me';
-$lang->my->task->createdBy  = 'Created By Me';
-$lang->my->task->finishedBy = 'Finished By Me';
-$lang->my->task->closedBy   = 'Closed By Me';
-$lang->my->task->canceledBy = 'Canceled By Me';
+$lang->my->task->assignedTo = 'AssignToMe';
+$lang->my->task->createdBy  = 'CreateByMe';
+$lang->my->task->finishedBy = 'FinishByMe';
+$lang->my->task->closedBy   = 'CloseByMe';
+$lang->my->task->canceledBy = 'CancelByMe';
 $lang->my->task->unclosed   = 'Unclosed';
 
 $lang->my->project = new stdclass();
@@ -3112,7 +3112,7 @@ $lang->my->contact->common = 'contact';
 $lang->tree->common      = "Tree";
 $lang->tree->add         = "Add";
 $lang->tree->edit        = "Edit";
-$lang->tree->children    = "Add child";
+$lang->tree->children    = "Add Child";
 $lang->tree->delete      = "Delete";
 $lang->tree->browse      = "Area, Industry, Income Categories, Expend Categories, Forum Boards, Blog Categories, Depts";
 $lang->tree->manage      = "Manage";
@@ -3140,7 +3140,7 @@ $lang->category->parent   = 'Parent';
 $lang->category->desc     = 'Description';
 $lang->category->keywords = 'Tag';
 $lang->category->children = "Child";
-$lang->category->rights   = 'Rights';
+$lang->category->rights   = 'Privilege';
 $lang->category->users    = 'Users';
 $lang->category->groups   = 'Groups';
 $lang->category->origin   = 'Origin Category';
@@ -3182,7 +3182,7 @@ $lang->out->parent   = 'Parent';
 $lang->out->desc     = 'Description';
 $lang->out->keywords = 'Tags';
 $lang->out->children = "Child";
-$lang->out->rights   = 'Rights';
+$lang->out->rights   = 'Privilege';
 $lang->out->refund   = 'Reimbursement';
 $lang->out->merge    = 'Merge Category';
 
@@ -3215,7 +3215,7 @@ $lang->provider->edit        = 'Edit Provider';
 $lang->provider->view        = 'View Provider';
 $lang->provider->delete      = 'Delete Provider';
 $lang->provider->list        = 'Provider List';
-$lang->provider->contact     = 'Contacts';
+$lang->provider->contact     = 'Contact';
 $lang->provider->linkContact = 'Create Contact';
 $lang->provider->basicInfo   = 'Basic Info';
 $lang->provider->moreInfo    = 'More Info';
@@ -3234,15 +3234,15 @@ $lang->provider->phone         = 'Phone';
 $lang->provider->email         = 'Email';
 $lang->provider->qq            = 'QQ';
 $lang->provider->site          = 'Site';
-$lang->provider->weibo         = 'Sina Weibo';
-$lang->provider->weixin        = 'Wechat';
+$lang->provider->weibo         = 'Weibo';
+$lang->provider->weixin        = 'WeChat';
 $lang->provider->category      = 'Category';
 $lang->provider->desc          = 'Description';
 $lang->provider->relation      = 'Relation';
 $lang->provider->createdBy     = 'Created By';
-$lang->provider->createdDate   = 'Created Date';
+$lang->provider->createdDate   = 'Created';
 $lang->provider->editedBy      = 'Edited By';
-$lang->provider->editedDate    = 'Edited Date';
+$lang->provider->editedDate    = 'Edited';
 $lang->provider->createContact = 'Create Contact';
 
 $lang->provider->relationList['client']   = 'Client';
@@ -3277,10 +3277,10 @@ $lang->search->buildForm     = 'Search form';
 $lang->search->buildQuery    = 'Execute query';
 $lang->search->saveQuery     = 'Save query';
 $lang->search->deleteQuery   = 'Delete query';
-$lang->search->setQueryTitle = 'Please input the title（execute searching before save）：';
+$lang->search->setQueryTitle = 'Please enter the title（execute searching before save）：';
 $lang->search->storyTitle    = 'Story title';
 $lang->search->taskTitle     = 'Task title';
-$lang->search->select        = 'Stories/Tasks filter';
+$lang->search->select        = 'Story/Task filter';
 $lang->search->me            = 'Me';
 
 $lang->search->operators['=']          = '=';
@@ -3291,7 +3291,7 @@ $lang->search->operators['<']          = '<';
 $lang->search->operators['<=']         = '<=';
 $lang->search->operators['include']    = 'include';
 $lang->search->operators['between']    = 'between';
-$lang->search->operators['notinclude'] = 'not include';
+$lang->search->operators['notinclude'] = 'exclude';
 $lang->search->operators['belong']     = 'belongs to';
 
 $lang->search->andor['and']         = 'And';
@@ -3491,8 +3491,8 @@ $lang->block->moreLinkList->report = 'Report|cash|trade|report|';
 if(!isset($lang->action)) $lang->action = new stdclass();
 
 $lang->action->common          = 'Logs';
-$lang->action->finishAllDating = 'Finish All Dating';
-$lang->action->deleteAllDating = 'Delete All Dating';
+$lang->action->finishAllDating = 'Finish All Next Contact';
+$lang->action->deleteAllDating = 'Delete All Next Contact';
 
 $lang->action->product  = 'Product';
 $lang->action->actor    = 'Account';
@@ -3811,10 +3811,10 @@ $lang->message->commentAt      = 'Comment at ';
 $lang->message->deletedObject  = 'Deleted';
 $lang->message->contactHidden  = "Your phone, email, etc. will only be send to administrator.";
 
-$lang->message->confirmDeleteSingle = 'Are you sure to delete this comment?';
-$lang->message->confirmDeletePre    = 'Are you sure to delete comments previous?';
-$lang->message->confirmPassSingle   = 'Are you sure to pass this comment?';
-$lang->message->confirmPassPre      = 'Are you sure to pass comment previous?';
+$lang->message->confirmDeleteSingle = 'Do you want to delete this comment?';
+$lang->message->confirmDeletePre    = 'Do you want to delete comments previous?';
+$lang->message->confirmPassSingle   = 'Do you want to pass this comment?';
+$lang->message->confirmPassPre      = 'Do you want to pass comment previous?';
 
 $lang->message->statusList[0] = 'Unreviewed';
 $lang->message->statusList[1] = 'Reviewed';
@@ -3845,14 +3845,14 @@ $lang->comment->manage        = 'Manage';
 $lang->comment->delete        = 'Delete';
 $lang->comment->passPre       = 'Pass previous';
 $lang->comment->deletePre     = 'Delete previous';
-$lang->comment->commentTo     = 'Comment on';
+$lang->comment->commentTo     = 'Commented';
 $lang->comment->commentAt     = 'Commented at';
 $lang->comment->deletedObject = 'Deleted';
 
-$lang->comment->confirmDeleteSingle = 'Are you sure to delete this comment?';
-$lang->comment->confirmDeletePre    = 'Are you sure to delete comments previous?';
-$lang->comment->confirmPassSingle   = 'Are you sure to pass this comment?';
-$lang->comment->confirmPassPre      = 'Are you sure to pass comment previous?';
+$lang->comment->confirmDeleteSingle = 'Do you want to delete this comment?';
+$lang->comment->confirmDeletePre    = 'Do you want to delete comments previous?';
+$lang->comment->confirmPassSingle   = 'Do you want to pass this comment?';
+$lang->comment->confirmPassPre      = 'Do you want to pass comment previous?';
 
 $lang->comment->statusList[0] = 'Unreviewed';
 $lang->comment->statusList[1] = 'Reviewed';
@@ -3865,7 +3865,7 @@ $lang->message->replySubject = 'Reply from administrator of %s';
 if(!isset($lang->report)) $lang->report = new stdclass();
 $lang->report->common     = 'Report';
 $lang->report->browse     = 'View Report';
-$lang->report->list       = 'Reports';
+$lang->report->list       = 'Report';
 $lang->report->item       = 'Item';
 $lang->report->value      = 'Value';
 $lang->report->percent    = 'Percent';
@@ -3873,7 +3873,7 @@ $lang->report->undefined  = 'Undefined';
 $lang->report->time       = 'Time';
 $lang->report->select     = 'Pleace select the type of reports';
 $lang->report->create     = 'Generate';
-$lang->report->tip        = 'Note: Report is generated from search results. Please search in the list page before you generate a report.';
+$lang->report->tip        = 'Note: The report is generated from search results. Please search on the list page before you generate a report.';
 
 $lang->report->options = new stdclass();
 $lang->report->options->type   = 'pie';
@@ -3886,7 +3886,7 @@ $lang->report->options->graph->caption   = 'DEFAULT';   // 是否显示柱状图
 
 $lang->report->customer = new stdclass();
 $lang->report->customer->common = 'Customer Report';
-$lang->report->customer->chartList['assignedTo'] = 'Assigned To';
+$lang->report->customer->chartList['assignedTo'] = 'Assign To';
 $lang->report->customer->chartList['status']     = 'Status';
 $lang->report->customer->chartList['level']      = 'Level';
 $lang->report->customer->chartList['type']       = 'Type';
@@ -3949,13 +3949,13 @@ $lang->report->order->value['assignedTo']   = 'Order';
 $lang->report->order->value['createdBy']    = 'Order';
 $lang->report->order->value['year']         = 'Order';
 $lang->report->order->value['month']        = 'Order';
-$lang->report->order->value['productA']     = 'Real money';
-$lang->report->order->value['productLineA'] = 'Real money';
-$lang->report->order->value['statusA']      = 'Real money';
-$lang->report->order->value['assignedToA']  = 'Real money';
-$lang->report->order->value['createdByA']   = 'Real money';
-$lang->report->order->value['yearA']        = 'Real money';
-$lang->report->order->value['monthA']       = 'Real money';
+$lang->report->order->value['productA']     = 'Amount';
+$lang->report->order->value['productLineA'] = 'Amount';
+$lang->report->order->value['statusA']      = 'Amount';
+$lang->report->order->value['assignedToA']  = 'Amount';
+$lang->report->order->value['createdByA']   = 'Amount';
+$lang->report->order->value['yearA']        = 'Amount';
+$lang->report->order->value['monthA']       = 'Amount';
 
 $lang->report->order->options = new stdclass();
 $lang->report->order->options->typeList['year']    = 'bar';
@@ -3986,7 +3986,7 @@ $lang->report->contract->chartList['contactedByA'] = 'Contacted By(Amount)';
 $lang->report->contract->chartList['yearA']        = 'Year (Amount)';
 $lang->report->contract->chartList['monthA']       = 'Month (Amount)';
 
-$lang->report->contract->item['status']       = 'Stuatus';
+$lang->report->contract->item['status']       = 'Status';
 $lang->report->contract->item['delivery']     = 'Delivery';
 $lang->report->contract->item['return']       = 'Payment';
 $lang->report->contract->item['createdBy']    = 'User';
@@ -4055,7 +4055,7 @@ $lang->cron->list    = 'List';
 $lang->cron->create  = 'Create';
 $lang->cron->edit    = 'Edit';
 $lang->cron->delete  = 'Delete';
-$lang->cron->toggle  = 'Activation/Disable';
+$lang->cron->toggle  = 'Activate/Disable';
 $lang->cron->turnon  = 'Open/Close';
 
 $lang->cron->m        = 'Minute';
@@ -4079,11 +4079,11 @@ $lang->cron->statusList['stop']    = 'Stop';
 $lang->cron->typeList['ranzhi'] = 'Self call';
 $lang->cron->typeList['system'] = 'System command';
 
-$lang->cron->toggleList['start'] = 'Activation';
+$lang->cron->toggleList['start'] = 'Activate';
 $lang->cron->toggleList['stop']  = 'Disable';
 
 $lang->cron->confirmDelete = 'Do you want to delete the task?';
-$lang->cron->confirmTurnon = 'Do you want to trunoff cron?';
+$lang->cron->confirmTurnon = 'Do you want to trun off cron?';
 $lang->cron->introduction  = <<<EOD
 <p>Timing tasks such as compute burn , backup. Absolve themselves of layout timing task.</p>
 <p>This function has yet to be perfect, so the function is turned off by default</p>
@@ -4104,8 +4104,8 @@ $lang->file->upload     = 'Upload';
 $lang->file->browse     = 'Browse';
 $lang->file->download   = 'Download';
 $lang->file->edit       = 'Edit';
-$lang->file->primary    = 'Primary';
-$lang->file->setPrimary = 'Set as primary';
+$lang->file->primary    = 'Cover';
+$lang->file->setPrimary = 'Set as Cover';
 $lang->file->toggle     = 'Toggle';
 $lang->file->label      = 'Label';
 $lang->file->lblInfo    = '<i>(Type:%s, Size:%s, Added at: %s，Downloads: %s)</i>';
@@ -4118,7 +4118,7 @@ $lang->file->pathname    = 'Path';
 $lang->file->extension   = 'Extension';
 $lang->file->size        = 'Size';
 $lang->file->createdBy   = 'Added by';
-$lang->file->createdDate = 'Added date';
+$lang->file->createdDate = 'Added';
 $lang->file->public      = 'Public';
 $lang->file->downloads   = 'Downloads';
 
@@ -4129,8 +4129,8 @@ $lang->file->maxUploadSize = "<span class='red'>%s</span>";
 $lang->file->delete        = 'Delete';
 
 $lang->file->errorUnwritable = 'Upload directory is not writable.';
-$lang->file->errorNoFile     = 'No file selected.';
-$lang->file->errorFileSize   = 'The file size exceeds the limit, might not be able to upload!';
+$lang->file->errorNoFile     = 'No file is selected.';
+$lang->file->errorFileSize   = 'The file size exceeds the limit. It might not be uploaded!';
 /* sys/customer */
 if(!isset($lang->customer)) $lang->customer = new stdclass();
 
@@ -4152,24 +4152,24 @@ $lang->customer->phone         = 'Phone';
 $lang->customer->email         = 'Email';
 $lang->customer->qq            = 'QQ';
 $lang->customer->site          = 'Site';
-$lang->customer->weibo         = 'Sina Weibo';
-$lang->customer->weixin        = 'Wechat';
+$lang->customer->weibo         = 'Weibo';
+$lang->customer->weixin        = 'WeChat';
 $lang->customer->desc          = 'Description';
 $lang->customer->public        = 'Public';
 $lang->customer->relation      = 'Relation';
 $lang->customer->createdBy     = 'Created By';
-$lang->customer->createdDate   = 'Created On';
+$lang->customer->createdDate   = 'Created';
 $lang->customer->editedBy      = 'Edited By';
-$lang->customer->editedDate    = 'Edited On';
+$lang->customer->editedDate    = 'Edited';
 $lang->customer->assignedTo    = 'Assigned To';
 $lang->customer->assignedBy    = 'Assigned By';
-$lang->customer->assignedDate  = 'Assigned On';
+$lang->customer->assignedDate  = 'Assigned';
 $lang->customer->contactedBy   = 'Contact By';
-$lang->customer->contactedDate = 'Contact On';
+$lang->customer->contactedDate = 'Contact';
 $lang->customer->nextDate      = 'Next Contact';
 $lang->customer->selectContact = 'Select Contact';
 
-$lang->customer->browse            = 'Browse Customer';
+$lang->customer->browse            = 'View Customer';
 $lang->customer->view              = 'View';
 $lang->customer->create            = 'Add Customer';
 $lang->customer->delete            = 'Delete Customer';
@@ -4263,7 +4263,7 @@ $lang->entry->platform    = 'Platform';
 $lang->entry->name        = 'App Name';
 $lang->entry->abbr        = 'Abbr';
 $lang->entry->code        = 'Alias';
-$lang->entry->buildin     = 'Build-in';
+$lang->entry->buildin     = 'Built-in';
 $lang->entry->integration = 'Integrate';
 $lang->entry->key         = 'Key';
 $lang->entry->block       = 'Block URL';
@@ -4323,10 +4323,10 @@ $lang->entry->error->ip    = 'Please enter IP';
 $lang->entry->error->url   = 'No built-in application login address. /, http:// or https:// must be included.';
 
 $lang->entry->error->admin         = 'Wrong admin account or password.';
-$lang->entry->error->zentaoSetting = 'ZenTao PMS config failed. Upgrade Zentao PMS to head.';
-$lang->entry->error->version       = 'Your ZenTao PMS version is lower than %s';
-$lang->entry->error->zentaoUrl     = 'Wrong ZenTao PMS login url.';
-$lang->entry->error->accessDenied  = 'Access denied';
+$lang->entry->error->zentaoSetting = 'ZenTao configuration failed. Upgrade Zentao to continue.';
+$lang->entry->error->version       = 'Your ZenTao version is lower than %s';
+$lang->entry->error->zentaoUrl     = 'Wrong ZenTao login URL.';
+$lang->entry->error->accessDenied  = 'Access is denied';
 
 $lang->entry->openList['blank']  = 'Blank';
 $lang->entry->openList['iframe'] = 'Iframe';
@@ -4355,19 +4355,19 @@ $lang->product->code        = 'Alias';
 $lang->product->type        = 'Type';
 $lang->product->status      = 'Status';
 $lang->product->category    = 'Product Category';
-$lang->product->desc        = 'Introductions';
+$lang->product->desc        = 'Introduction';
 $lang->product->order       = 'Order';
 $lang->product->roles       = 'Roles';
 $lang->product->createdBy   = 'Created By';
-$lang->product->createdDate = 'Created on';
+$lang->product->createdDate = 'Created';
 $lang->product->editedBy    = 'Edited by';
-$lang->product->editedDate  = 'Edited on';
+$lang->product->editedDate  = 'Edited';
 
-$lang->product->index       = 'Products';
+$lang->product->index       = 'Product';
 $lang->product->delete      = 'Delete';
 $lang->product->list        = 'List';
 $lang->product->browse      = 'Browse';
-$lang->product->create      = 'Add a Product';
+$lang->product->create      = 'Add Product';
 $lang->product->edit        = 'Edit';
 $lang->product->view        = 'View';
 $lang->product->basicInfo   = 'Basic Information';
@@ -4406,14 +4406,14 @@ $lang->usercontact->member = 'Member';
 $lang->usercontact->public = 'Public';
 /* sys/tag */
 if(!isset($lang->tag)) $lang->tag = new stdclass();
-$lang->tag->common = 'keywords';
+$lang->tag->common = 'Tags';
 $lang->tag->rank   = 'Rank';
 $lang->tag->link   = 'link';
 $lang->tag->search = 'Search';
 
-$lang->tag->admin     = 'Manage keywords';
+$lang->tag->admin     = 'Manage tags';
 $lang->tag->editLink  = 'Edit Link';
-$lang->tag->inputLink = 'Please input link';
+$lang->tag->inputLink = 'Please enter a link';
 /* sys/misc */
 
 if(!isset($lang->misc)) $lang->misc = new stdclass();
@@ -4468,7 +4468,7 @@ $lang->index->ips['removedBlock']        = 'Block has been removed';
 $lang->index->ips['hiddenBlock']         = 'Block has been hidden';
 $lang->index->ips['orderdBlocksSaved']   = 'Order has been saved';
 $lang->index->ips['moreOptionTip'] 	     = 'Show other {0} entries';
-$lang->index->ips['confirmCloseBrowser'] = 'Notice:This app has been opened already';
+$lang->index->ips['confirmCloseBrowser'] = 'Notice: This application is on now.';
 /* sys/group */
 $lang->group->common             = 'Group';
 $lang->group->browse             = 'Groups';
@@ -4484,9 +4484,9 @@ $lang->group->byModuleTips       = '<span class="tips"> (Press shift or control 
 $lang->group->manageMember       = 'Members';
 $lang->group->linkMember         = 'Link Members';
 $lang->group->unlinkMember       = 'Unlink Member';
-$lang->group->confirmDelete      = 'Are you sure to delete this group?';
+$lang->group->confirmDelete      = 'Do you want to delete this group?';
 $lang->group->successSaved       = 'Saved.';
-$lang->group->errorNotSaved      = 'Not saved, please make sure you have selected some actions and groups.';
+$lang->group->errorNotSaved      = 'Not saved. Please make sure you have selected actions and groups.';
 
 $lang->group->id       = 'Id';
 $lang->group->name     = 'Name';
@@ -4503,8 +4503,8 @@ $lang->group->all      = 'All';
 $lang->group->extent   = 'extent';
 $lang->group->havePriv = 'Authorized';
 $lang->group->noPriv   = 'Not Authorized';
-$lang->group->hide     = 'hide...';
-$lang->group->show     = 'more...';
+$lang->group->hide     = 'Hide...';
+$lang->group->show     = 'More...';
 
 $lang->group->manageAll = 'All customers and orders';
 
@@ -4522,13 +4522,13 @@ $lang->setting->reset  = 'Reset';
 $lang->setting->key    = 'Key';
 $lang->setting->value  = 'Value';
 
-$lang->setting->lang = 'Product status, Product lines, Customer types, Customer Size, Customer Level, Customer Status, Currency, Roles';
+$lang->setting->lang = 'Product Status, Product Line, Customer Type, Customer Size, Customer Level, Customer Status, Currency, Roles';
 
 $lang->setting->customerPool = 'Customer settings';
 $lang->setting->modules      = 'Modules settings';
 
 $lang->setting->module = new stdClass();
-$lang->setting->module->user     = 'User roles';
+$lang->setting->module->user     = 'User role';
 $lang->setting->module->product  = 'Product status';
 $lang->setting->module->customer = 'Customer level';
 
@@ -4653,7 +4653,7 @@ $lang->user->forbid          = 'Disable';
 $lang->user->forbidList      = 'Disabled Users';
 $lang->user->normalList      = 'Normal Users';
 $lang->user->active          = 'Active';
-$lang->user->setReferer      = 'Set Referer';
+$lang->user->setReferer      = 'Set Referrer';
 $lang->user->vcard           = 'Vcard';
 $lang->user->uploadAvatar    = 'Upload avatar';
 $lang->user->cropAvatar      = 'Crop avatar';
@@ -4662,12 +4662,12 @@ $lang->user->adminUser       = 'User';
 
 $lang->user->profile     = 'Profile';
 $lang->user->editProfile = 'Edit';
-$lang->user->thread      = 'My Threads';
-$lang->user->reply       = 'My Replies';
+$lang->user->thread      = 'My Thread';
+$lang->user->reply       = 'My Reply';
 $lang->user->message     = 'My Message';
 
 $lang->user->inputAccount   = 'Please enter account';
-$lang->user->inputColleague = "Please enter colleauge's name";
+$lang->user->inputColleague = "Please enter colleauge name";
 $lang->user->inputPassword  = 'Please enter password';
 $lang->user->searchUser     = 'Search';
 
@@ -4677,7 +4677,7 @@ $lang->user->locked        = "Failed too many times. Please login ten minutes la
 $lang->user->lockedForEver = "User has been disabled permanently.";
 $lang->user->forbidSuccess = 'Forbidden.';
 $lang->user->actionFail    = 'Failed.';
-$lang->user->uploadSuccess = 'Successfully uploaded.';
+$lang->user->uploadSuccess = 'Uploaded.';
 $lang->user->actionError   = 'Error, there are records created by this user.';
 $lang->user->retainAccount = 'You cannot set <strong>%s</strong> as an account.';
 
@@ -4730,7 +4730,7 @@ $lang->dept->edit       = 'Manage Dept';
 $lang->dept->parent     = 'Parent';
 $lang->dept->children   = 'Child';
 $lang->dept->desc       = 'Description';
-$lang->dept->keywords   = 'Keywords';
+$lang->dept->keywords   = 'Tags';
 $lang->dept->moderators = 'Dept Manager';
   
 $lang->user->roleList['']           = ''; 
@@ -4739,7 +4739,7 @@ $lang->user->roleList['pm']         = 'Project Manager';
 $lang->user->roleList['market']     = 'Marketing';
 $lang->user->roleList['sale']       = 'Sales';
 $lang->user->roleList['hr']         = 'HR';
-$lang->user->roleList['office']     = 'Office';
+$lang->user->roleList['office']     = 'Administrator';
 $lang->user->roleList['service']    = 'Service';
 $lang->user->roleList['support']    = 'Support';
 $lang->user->roleList['marketmgr']  = 'Marketing Manager';
@@ -4770,7 +4770,7 @@ Please click the link to change your password: <br />
 </div>
 <div style='height:20px;border-bottom:1px solid #ddd;'></div>
 <div style='margin:20px 0 0 0 ;'>
-System letter, please do not reply
+System message. Please do not reply.
 </div>
 </body>
 </html>
@@ -4778,7 +4778,7 @@ EOT;
 /* sys/notice */
 $lang->notice = new stdclass();
 $lang->notice->common  = 'Error';
-$lang->notice->jumping = "This page will jump to homepage after 5 seconds <a href='%s' class='btn btn-primary btn-xs'>Jump Now</a>";
+$lang->notice->jumping = "This page will jump to homepage in 5 seconds <a href='%s' class='btn btn-primary btn-xs'>Jump Now</a>";
 
 $lang->notice->typeList['notFound']      = '';
 $lang->notice->typeList['accessLimited'] = '';
@@ -4792,8 +4792,8 @@ $lang->schema->delete   = 'Delete';
 $lang->schema->csvFile  = 'Template Files';
 
 $lang->schema->name     = 'Name';
-$lang->schema->feeRow   = 'Fee is a record';
-$lang->schema->diffCol  = 'Different column';
+$lang->schema->feeRow   = 'Fee is a record.';
+$lang->schema->diffCol  = 'separate columns';
 
 $lang->schema->placeholder = new stdclass();
 $lang->schema->placeholder->selectField = 'Please select the correct field';
@@ -4844,25 +4844,25 @@ $lang->upgrade->common  = 'Upgrade';
 $lang->upgrade->result  = 'Result';
 $lang->upgrade->fail    = 'Failed';
 $lang->upgrade->success = 'Success';
-$lang->upgrade->tohome  = 'Back to Home';
+$lang->upgrade->tohome  = 'Back';
 
-$lang->upgrade->index         = 'Upgrad Ranzhi.';
+$lang->upgrade->index         = 'Upgrad Zdoo';
 $lang->upgrade->backup        = 'Back Up';
-$lang->upgrade->selectVersion = 'Select version to upgrade from';
+$lang->upgrade->selectVersion = 'Select version to upgrade';
 $lang->upgrade->confirm       = 'Confirm the SQL to be excuted.';
 $lang->upgrade->execute       = 'Execute';
 $lang->upgrade->next          = 'Next';
-$lang->upgrade->redeploy      = 'Please redeploy app directory before upgrade.';
-$lang->upgrade->redeployDesc  = "<h5>For reaseon of code adjustment app directory need to redeploy.</h5><div class='text-important'>operating steps : delete app directory before copy new package.</div>";
+$lang->upgrade->redeploy      = 'Please redeploy the App directory before upgrade.';
+$lang->upgrade->redeployDesc  = "<h5>For code changes, the App directory needs to deployed.</h5><div class='text-important'>operating steps : delete app directory before copy new package.</div>";
 $lang->upgrade->removeTodo    = 'Please remove %s directory before upgrade.';
-$lang->upgrade->removeTodoTip = "<h5>For reaseon of code adjustment %s directory need to remove.</h5><div class='text-important'>operating steps : delete directory of %s.</div>";
-$lang->upgrade->updateLicense = 'The license of RanZhi 2. 0 has changed to Z PUBLIC LICENSE(ZPL) 1.1.';
+$lang->upgrade->removeTodoTip = "<h5>For code changes, %s directory need to be removed.</h5><div class='text-important'>operating steps : delete directory of %s.</div>";
+$lang->upgrade->updateLicense = 'The Zdoo license has changed to Z PUBLIC LICENSE(ZPL) 1.1.';
 
 $lang->upgrade->majorList['3_5'] = array();
-$lang->upgrade->majorList['3_5']['1'] = 'Revenue from main operations';
-$lang->upgrade->majorList['3_5']['2'] = 'Other operating revenue';
-$lang->upgrade->majorList['3_5']['3'] = 'Cost of main operations';
-$lang->upgrade->majorList['3_5']['4'] = 'Other operating expense';
+$lang->upgrade->majorList['3_5']['1'] = 'Primary Income';
+$lang->upgrade->majorList['3_5']['2'] = 'Primary Income';
+$lang->upgrade->majorList['3_5']['3'] = 'Non-Primary Expense';
+$lang->upgrade->majorList['3_5']['4'] = 'Non-Primary Expense';
 
 $lang->upgrade->majorList['3_6'] = array();
 $lang->upgrade->majorList['3_6']['5'] = 'Invest Profit';
@@ -4879,7 +4879,7 @@ EOT;
 
 $lang->upgrade->versionNote = "Please choose the version to upgrade.";
 
-$lang->upgrade->deleteTips   = 'Need to delete some files. The commands in Linux are:<br />';
+$lang->upgrade->deleteTips   = 'You have to delete some files. The commands in Linux are:<br />';
 $lang->upgrade->deleteDir    = '<code>rm -fr %s</code>';
 $lang->upgrade->deleteFile   = '<code>rm %s</code>';
 $lang->upgrade->afterDeleted = '<br />Refresh after delete.';
@@ -4890,11 +4890,11 @@ $lang->mail->common = 'Email Settings';
 $lang->mail->index  = 'Home';
 $lang->mail->detect = 'Detect';
 $lang->mail->edit   = 'Configure';
-$lang->mail->save   = 'Successfully saved.';
+$lang->mail->save   = 'Saved.';
 $lang->mail->test   = 'Testing';
 $lang->mail->reset  = 'Reset';
 
-$lang->mail->turnon      = 'Turnon';
+$lang->mail->turnon      = 'Switch';
 $lang->mail->fromAddress = 'From email';
 $lang->mail->fromName    = 'From';
 $lang->mail->mta         = 'MTA';
@@ -4906,8 +4906,8 @@ $lang->mail->password    = 'SMTP password';
 $lang->mail->secure      = 'Secure';
 $lang->mail->debug       = 'Debugging';
 
-$lang->mail->turnonList[1] = 'on';
-$lang->mail->turnonList[0] = 'off';
+$lang->mail->turnonList[1] = 'On';
+$lang->mail->turnonList[0] = 'Off';
 
 $lang->mail->debugList[0] = 'off';
 $lang->mail->debugList[1] = 'normal';
@@ -4922,26 +4922,26 @@ $lang->mail->secureList['tls'] = 'tls';
 
 $lang->mail->inputFromEmail = 'Please enter Email address';
 $lang->mail->nextStep       = 'Next';
-$lang->mail->successSaved   = 'The configuration has been successfully saved.';
+$lang->mail->successSaved   = 'The configuration is saved.';
 $lang->mail->subject        = "This is a testing Email from Zdoo.";
 $lang->mail->content        = 'If you see this notice, it means that the Email notification feature has been enabled!';
-$lang->mail->sendSuccess    = 'Successfully sent!';
+$lang->mail->sendSuccess    = 'Sent!';
 $lang->mail->needConfigure  = "Configuration is not found. Configure it first.";
 
 $lang->mail->mailContentTip = <<<EOT
 <strong>%s</strong>(%s) Powered by <a href='https://www.zdoo.org' target='blank'>RanZhi OA</a>.<br />
 <a href='http://www.cnezsoft.com' target='blank'>Nature Easy Soft</a>
 EOT;
-$lang->mail->openTip = 'Send E-mail notifications when any update to orders, customers and tasks, reviews and reimbursements.';
+$lang->mail->openTip = 'Send E-mail notifications, if any changes to orders, customers and tasks, reviews and reimbursements.';
 /* team/forum */
 if(!isset($lang->forum)) $lang->forum = new stdclass();
 $lang->forum->common      = 'Forum';
 $lang->forum->index       = 'Home';
 $lang->forum->board       = 'Board';
 $lang->forum->owners      = 'Moderator';
-$lang->forum->threadList  = 'Threads';
-$lang->forum->threadCount = 'Threads';
-$lang->forum->postCount   = 'Posts';
+$lang->forum->threadList  = 'Thread';
+$lang->forum->threadCount = 'Thread';
+$lang->forum->postCount   = 'Post';
 $lang->forum->noPost      = 'No thread';
 $lang->forum->lastPost    = 'Last posted: %s by %s';
 $lang->forum->readonly    = 'Readonly';
@@ -4961,11 +4961,11 @@ $lang->pager->settedInForum = true;    // Set this switch thus in thread module 
 /* team/reply */
 $lang->reply = new stdclass();
 $lang->reply->common      = 'Reply';
-$lang->reply->id          = 'Id';
-$lang->reply->list        = 'Replies';
+$lang->reply->id          = 'ID';
+$lang->reply->list        = 'Reply';
 $lang->reply->content     = 'Content';
 $lang->reply->author      = 'Author';
-$lang->reply->files       = 'Files:';
+$lang->reply->files       = 'File:';
 $lang->reply->createdDate = 'Date';
 $lang->reply->admin       = 'Reply';
 
@@ -4979,14 +4979,14 @@ $lang->thread->board      = 'Board';
 $lang->thread->author     = 'Author';
 $lang->thread->content    = 'Content ';
 $lang->thread->file       = 'File ';
-$lang->thread->postedDate = 'Posted on';
+$lang->thread->postedDate = 'Posted';
 $lang->thread->replies    = 'Reply';
 $lang->thread->views      = 'Views';
 $lang->thread->lastReply  = 'Last reply';
 
 $lang->thread->post         = 'Post';
 $lang->thread->postTo       = 'Post to';
-$lang->thread->browse       = 'Threads';
+$lang->thread->browse       = 'Thread';
 $lang->thread->stick        = 'Sticky';
 $lang->thread->edit         = 'Edit';
 $lang->thread->view         = 'View';
@@ -5005,21 +5005,21 @@ $lang->thread->sticks[2] = 'Global stick';
 $lang->thread->statusList['hidden'] = 'hidden';
 $lang->thread->statusList['normal'] = 'normal';
 
-$lang->thread->confirmDeleteThread = "Are you sure to delete this thread?";
-$lang->thread->confirmHideReply    = "Are you sure to hide this reply?";
-$lang->thread->confirmHideThread   = "Are you sure to hide this thread?";
-$lang->thread->confirmDeleteReply  = "Are you sure to delete this reply?";
-$lang->thread->confirmDeleteFile   = "Are you sure to delete this file?";
+$lang->thread->confirmDeleteThread = "Do you want to delete this thread?";
+$lang->thread->confirmHideReply    = "Do you want to hide this reply?";
+$lang->thread->confirmHideThread   = "Do you want to hide this thread?";
+$lang->thread->confirmDeleteReply  = "Do you want to delete this reply?";
+$lang->thread->confirmDeleteFile   = "Do you want to delete this file?";
 
-$lang->thread->lblEdited       = '%s Last edited, %s';
+$lang->thread->lblEdited       = '%s last edited, %s';
 $lang->thread->message         = '%s reply at #%s in forum, the thread is: %s, the content is: %s';
 $lang->thread->readonly        = 'Read only';
 $lang->thread->successStick    = 'Successfully sticky.';
 $lang->thread->successUnstick  = 'Successfully unsticky.';
 $lang->thread->successHide     = 'Successfully hide it.';
 $lang->thread->successShow     = 'Successfully show it.';
-$lang->thread->readonlyMessage = 'The thread has been set <strong>READONLY</strong>，you can not post new reply。';
-$lang->thread->successTransfer = 'Successfully Transfered';
+$lang->thread->readonlyMessage = 'The thread has been set as <strong>READONLY</strong>，so you cannot post new reply。';
+$lang->thread->successTransfer = 'Successfully Transfered.';
 
 if(!isset($lang->pager->settedInForum))
 {
@@ -5027,8 +5027,8 @@ if(!isset($lang->pager->settedInForum))
     $lang->pager->digest   = str_replace('records', 'replies', $lang->pager->digest);
 }
 /* team/block */
-$lang->block->common   = 'Widgets';
-$lang->block->blog     = 'Latest Blogs';
+$lang->block->common   = 'Widget';
+$lang->block->blog     = 'Latest Blog';
 $lang->block->lblBlock = 'Widget';
 $lang->block->admin    = 'Manage';
 $lang->block->num      = 'Number';
@@ -5036,10 +5036,10 @@ $lang->block->type     = 'Type';
 
 $lang->block->availableBlocks = new stdclass();
 $lang->block->availableBlocks->blog   = 'Latest Blog';
-$lang->block->availableBlocks->thread = 'Threads';
+$lang->block->availableBlocks->thread = 'Thread';
 
-$lang->block->typeList->thread['new']   = 'latest Thread';
-$lang->block->typeList->thread['stick'] = 'Sticked Threads';
+$lang->block->typeList->thread['new']   = 'Latest Thread';
+$lang->block->typeList->thread['stick'] = 'Sticky Thread';
 /* team/blog */
 $lang->blog->common = "Blog";
 
