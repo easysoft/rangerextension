@@ -642,7 +642,7 @@ $lang->app->name = 'OA';
 $lang->menu->oa = new stdclass();
 $lang->menu->oa->dashboard = 'Home|dashboard|index|';
 $lang->menu->oa->my        = 'Review|my|review|';
-$lang->menu->oa->announce  = 'Announce|announce|index|';
+$lang->menu->oa->announce  = 'Notice|announce|index|';
 $lang->menu->oa->attend    = 'Attendance|attend|personal|';
 $lang->menu->oa->leave     = 'Leave|leave|personal|';
 $lang->menu->oa->makeup    = 'Makeup|makeup|personal|';
@@ -660,7 +660,7 @@ $lang->dashboard = new stdclass();
 
 if(!isset($lang->announce)) $lang->announce = new stdclass();
 $lang->announce->menu = new stdclass();
-$lang->announce->menu->browse   = array('link' => 'Announcement|announce|browse|', 'alias' => 'create,edit,view');
+$lang->announce->menu->browse   = array('link' => 'Notice|announce|browse|', 'alias' => 'create,edit,view');
 $lang->announce->menu->category = 'Category|tree|browse|type=announce|';
 
 if(!isset($lang->attend)) $lang->attend = new stdclass();
@@ -676,28 +676,28 @@ $lang->attend->menu->settings   = array('link' => 'Settings|attend|settings|', '
 if(!isset($lang->leave)) $lang->leave = new stdclass();
 $lang->leave->menu = new stdclass();
 $lang->leave->menu->personal     = 'My leave|leave|personal|';
-$lang->leave->menu->browseReview = 'Review by me|leave|browsereview|';
+$lang->leave->menu->browseReview = 'My Review|leave|browsereview|';
 $lang->leave->menu->company      = 'All|leave|company|';
 $lang->leave->menu->settings     = array('link' => 'Settings|leave|setReviewer|', 'alias' => 'personalAnnual');
 
 if(!isset($lang->makeup)) $lang->makeup = new stdclass();
 $lang->makeup->menu = new stdclass();
 $lang->makeup->menu->personal     = 'My makeup|makeup|personal|';
-$lang->makeup->menu->browseReview = 'Review by me|makeup|browsereview|';
+$lang->makeup->menu->browseReview = 'My Review|makeup|browsereview|';
 $lang->makeup->menu->company      = 'All|makeup|company|';
 $lang->makeup->menu->settings     = 'Settings|makeup|setReviewer|';
 
 if(!isset($lang->overtime)) $lang->overtime = new stdclass();
 $lang->overtime->menu = new stdclass();
 $lang->overtime->menu->personal     = 'My overtime|overtime|personal|';
-$lang->overtime->menu->browseReview = 'Review by me|overtime|browsereview|';
+$lang->overtime->menu->browseReview = 'My Review|overtime|browsereview|';
 $lang->overtime->menu->company      = 'All|overtime|company|';
 $lang->overtime->menu->settings     = 'Settings|overtime|setReviewer|';
 
 if(!isset($lang->lieu)) $lang->lieu = new stdclass();
 $lang->lieu->menu = new stdclass();
 $lang->lieu->menu->personal     = 'My lieu|lieu|personal|';
-$lang->lieu->menu->browseReview = 'Review By Me|lieu|browsereview|';
+$lang->lieu->menu->browseReview = 'My Review|lieu|browsereview|';
 $lang->lieu->menu->company      = 'All|lieu|company|';
 $lang->lieu->menu->settings     = 'Settings|lieu|setReviewer|';
 
@@ -709,16 +709,16 @@ $lang->trip->menu->company    = 'Company|trip|company|';
 
 if(!isset($lang->egress)) $lang->egress = new stdclass();
 $lang->egress->menu = new stdclass();
-$lang->egress->menu->personal   = 'Mine|egress|personal|';
+$lang->egress->menu->personal   = 'My Egress|egress|personal|';
 $lang->egress->menu->department = 'Department|egress|department|';
 $lang->egress->menu->company    = 'Company|egress|company|';
 
 if(!isset($lang->refund)) $lang->refund = new stdclass();
 $lang->refund->menu = new stdclass();
 $lang->refund->menu->personal   = array('link' => 'My reimbursement|refund|personal|', 'alias' => 'create, edit');
-$lang->refund->menu->review     = 'Review wait|refund|browsereview|status=unreviewed';
-$lang->refund->menu->reviewedBy = 'Review by me|refund|browsereview|status=reviewed';
-$lang->refund->menu->todo       = 'Reimburse wait|refund|todo|';
+$lang->refund->menu->review     = 'Review Wait|refund|browsereview|status=unreviewed';
+$lang->refund->menu->reviewedBy = 'My Review|refund|browsereview|status=reviewed';
+$lang->refund->menu->todo       = 'Reimburse Wait|refund|todo|';
 $lang->refund->menu->company    = 'All|refund|company|';
 $lang->refund->menu->settings   = array('link' => 'Settings|refund|setreviewer|', 'alias' => 'setcategory,setdepositor,setrefundby');
 
@@ -1639,8 +1639,8 @@ if(!isset($lang->refund)) $lang->refund = new stdclass();
 $lang->refund->common       = 'Reimbursement';
 $lang->refund->create       = 'Create';
 $lang->refund->browse       = 'List';
-$lang->refund->personal     = 'My Reimbursement';
-$lang->refund->company      = 'All Reimbursement';
+$lang->refund->personal     = 'My Reimburse';
+$lang->refund->company      = 'All Reimburse';
 $lang->refund->todo         = 'Reimbursement Waiting';
 $lang->refund->browseReview = 'Review';
 $lang->refund->edit         = 'Edit';
@@ -1676,15 +1676,15 @@ $lang->refund->desc             = 'Description';
 $lang->refund->files            = 'Files';
 $lang->refund->status           = 'Status';
 $lang->refund->createdBy        = 'Created by';
-$lang->refund->createdDate      = 'Created on';
+$lang->refund->createdDate      = 'Created';
 $lang->refund->editedBy         = 'Edited By';
-$lang->refund->editedDate       = 'Edited on';
+$lang->refund->editedDate       = 'Edited';
 $lang->refund->firstReviewer    = '1st Reviewer';
-$lang->refund->firstReviewDate  = '1st Review on';
+$lang->refund->firstReviewDate  = '1st Review';
 $lang->refund->secondReviewer   = '2nd Reviewer';
-$lang->refund->secondReviewDate = '2nd Review on';
+$lang->refund->secondReviewDate = '2nd Review';
 $lang->refund->refundBy         = 'Reimbursed by';
-$lang->refund->refundDate       = 'Reimbursed on';
+$lang->refund->refundDate       = 'Reimbursed';
 $lang->refund->baseInfo         = 'Basic Info';
 $lang->refund->reason           = 'Reason';
 $lang->refund->reviewer         = 'Reviewer';
@@ -1864,7 +1864,7 @@ $lang->trip->unique    = 'There was a record of trip in %s.';
 $lang->trip->wrongEnd  = 'End time should be greater than begin time.';
 $lang->trip->sameMonth = 'Trip must be in the same month.';
 /* oa/announce */
-$lang->announce->common = 'Announce';
+$lang->announce->common = 'Notice';
 $lang->announce->browse = 'Browse';
 $lang->announce->create = 'Create';
 $lang->announce->edit   = 'Edit';
@@ -5043,7 +5043,7 @@ $lang->block->typeList->thread['stick'] = 'Sticky Thread';
 /* team/blog */
 $lang->blog->common = "Blog";
 
-$lang->blog->latestArticles = 'Latest Articles';
+$lang->blog->latestArticles = 'Latest Article';
 
 $lang->blog->index  = "Home";
 $lang->blog->create = "Create Blog";
