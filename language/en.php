@@ -1034,6 +1034,7 @@ $lang->trade->importedFields['dept']     = 'Department';
 $lang->trade->importedFields['desc']     = 'Description';
 $lang->trade->importedFields['fee']      = 'Fee';
 $lang->trade->importedFields['product']  = 'Product';
+$lang->trade->importedFields['handlers'] = 'Handler';
 
 $lang->trade->statusList['returned']   = 'Returned';
 $lang->trade->statusList['returning']  = 'Returning';
@@ -1055,12 +1056,14 @@ $lang->trade->loss          = 'loss';
 $lang->trade->balance       = 'Income is equal to Expense';
 $lang->trade->total         = 'Total';
 
-$lang->trade->noTraderMatch = 'No matched trader，click to create';
-$lang->trade->unique        = 'There has been same record';
-$lang->trade->ignore        = 'Ignore';
-$lang->trade->denied        = 'You have no permission to browse the list, please ask admin to set privilege.';
-$lang->trade->emptyData     = 'The fields with * cannot be empty.';
-$lang->trade->detailTip     = 'The total detail money is different of trade, confirm save current detail trades?';
+$lang->trade->noTraderMatch  = 'No matched trader，click to create';
+$lang->trade->unique         = 'There has been same record';
+$lang->trade->showExistTrade = 'Show same record';
+$lang->trade->hideExistTrade = 'Hide same record';
+$lang->trade->ignore         = 'Ignore';
+$lang->trade->denied         = 'You have no permission to browse the list, please ask admin to set privilege.';
+$lang->trade->emptyData      = 'The fields with * cannot be empty.';
+$lang->trade->detailTip      = 'The total detail money is different of trade, confirm save current detail trades?';
 
 $lang->trade->chartList['productLine'] = 'by product line';
 $lang->trade->chartList['category']    = 'by category';
@@ -1456,6 +1459,7 @@ $lang->contract->deleteDelivery   = 'Delete';
 $lang->contract->export           = 'Export';
 $lang->contract->totalReturn      = 'Total';
 $lang->contract->tradeList        = 'Trade List';
+$lang->contract->manageTeam       = 'Manage Team';
 
 $lang->contract->deliveryList[]        = '';
 $lang->contract->deliveryList['wait']  = 'Wait';
@@ -1487,6 +1491,18 @@ $lang->contract->returnInfo         = "<p>%s, received by <strong>%s</strong>, %
 $lang->contract->deliveryInfo       = "<p>%s, delivered by %s.</p>";
 $lang->contract->deleteReturnInfo   = "%s in %s";
 $lang->contract->deleteDeliveryInfo = "in %s";
+$lang->contract->teamTips           = "Empty member or rate won't be saved.";
+
+$lang->contract->error = new stdclass();
+$lang->contract->error->wrongRate      = 'Commission rate should be number';
+$lang->contract->error->wrongTotalRate = 'Total commission rate should not be greater than 100%';
+
+$lang->contract->team = new stdclass();
+$lang->contract->team->common  = 'Team';
+$lang->contract->team->account = 'Member';
+$lang->contract->team->rate    = 'Rate(%)';
+$lang->contract->team->money   = 'Money';
+$lang->contract->team->total   = 'Total';
 
 $lang->plan = new stdclass();
 $lang->plan->amount = $lang->contract->thisAmount;
@@ -1723,6 +1739,8 @@ $lang->refund->setExpense        = 'Set Category';
 $lang->refund->moneyTip          = 'If requested amont is less than this, 1st review is required. If not, 2nd review is required.';
 $lang->refund->total             = 'Total:';
 $lang->refund->totalMoney        = '%s%s；';
+$lang->refund->reviewing         = 'waiting for <strong>%s</strong>';
+$lang->refund->reviewed          = 'review finished';
 
 $lang->refund->settings = new stdclass();
 $lang->refund->settings->setReviewer  = "Reviewer|refund|setreviewer";
@@ -4799,8 +4817,9 @@ $lang->schema->placeholder = new stdclass();
 $lang->schema->placeholder->selectField = 'Please select the correct field';
 $lang->schema->placeholder->common      = 'Fill in to the column field , such as: A';
 $lang->schema->placeholder->type        = 'Fill in "Income / Expense" column';
-$lang->schema->placeholder->date        = 'Fill out the "payment time" column';
-$lang->schema->placeholder->product     = 'Fill in "product" column';
+$lang->schema->placeholder->date        = 'Fill out the "Payment time" column';
+$lang->schema->placeholder->product     = 'Fill in "Product" column';
+$lang->schema->placeholder->handlers    = 'Fill in "Handler" column';
 $lang->schema->placeholder->desc        = 'The accounts note, use "," separated, such as: I,O';
 $lang->schema->placeholder->in          = 'The column of income such as E';
 $lang->schema->placeholder->out         = 'The column of expenses such as D';

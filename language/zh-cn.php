@@ -1034,6 +1034,7 @@ $lang->trade->importedFields['dept']     = '部门';
 $lang->trade->importedFields['desc']     = '备注';
 $lang->trade->importedFields['fee']      = '手续费';
 $lang->trade->importedFields['product']  = '产品';
+$lang->trade->importedFields['handlers'] = '经手人';
 
 $lang->trade->statusList['returned']   = '已赎回';
 $lang->trade->statusList['returning']  = '赎回中';
@@ -1055,12 +1056,14 @@ $lang->trade->loss          = '亏';
 $lang->trade->balance       = '收支平衡';
 $lang->trade->total         = '总计';
 
-$lang->trade->noTraderMatch = '没有匹配到相应的商户，点击新建';
-$lang->trade->unique        = '今天已经有相同金额的账目';
-$lang->trade->ignore        = '忽略';
-$lang->trade->denied        = '您没有权限浏览此类账目，请联系管理员设置权限。';
-$lang->trade->emptyData     = '带有*的内容不能为空';
-$lang->trade->detailTip     = '明细总金额和当前交易金额不相等，确定保存当前明细吗？';
+$lang->trade->noTraderMatch  = '没有匹配到相应的商户，点击新建';
+$lang->trade->unique         = '今天已经有相同金额的账目';
+$lang->trade->showExistTrade = '展开重复账目';
+$lang->trade->hideExistTrade = '收起重复账目';
+$lang->trade->ignore         = '忽略';
+$lang->trade->denied         = '您没有权限浏览此类账目，请联系管理员设置权限。';
+$lang->trade->emptyData      = '带有*的内容不能为空';
+$lang->trade->detailTip      = '明细总金额和当前交易金额不相等，确定保存当前明细吗？';
 
 $lang->trade->chartList['productLine'] = '按产品线统计';
 $lang->trade->chartList['category']    = '按科目统计';
@@ -1459,6 +1462,7 @@ $lang->contract->deleteDelivery   = '删除交付';
 $lang->contract->export           = '导出';
 $lang->contract->totalReturn      = '回款合计';
 $lang->contract->tradeList        = '收支记录';
+$lang->contract->manageTeam       = '维护团队';
 
 $lang->contract->deliveryList[]        = '';
 $lang->contract->deliveryList['wait']  = '等待交付';
@@ -1490,6 +1494,18 @@ $lang->contract->returnInfo         = "<p>%s, 由 <strong>%s</strong> 回款%s�
 $lang->contract->deliveryInfo       = "<p>%s由%s交付。</p>";
 $lang->contract->deleteReturnInfo   = "%s的回款%s";
 $lang->contract->deleteDeliveryInfo = "%s的交付";
+$lang->contract->teamTips           = '成员或者提成比例为空不保存。';
+
+$lang->contract->error = new stdclass();
+$lang->contract->error->wrongRate      = '<strong>提成比例</strong>应该是数字';
+$lang->contract->error->wrongTotalRate = '<strong>提成比例总额</strong>应该不大于100%';
+
+$lang->contract->team = new stdclass();
+$lang->contract->team->common  = '团队';
+$lang->contract->team->account = '成员';
+$lang->contract->team->rate    = '提成比例(%)';
+$lang->contract->team->money   = '金额';
+$lang->contract->team->total   = '合计';
 
 $lang->plan = new stdclass();
 $lang->plan->amount = $lang->contract->thisAmount;
@@ -1726,6 +1742,8 @@ $lang->refund->setExpense        = '设置科目';
 $lang->refund->moneyTip          = '低于金额只需要一级审批，高于金额需要二级审批';
 $lang->refund->total             = '合计：';
 $lang->refund->totalMoney        = '%s%s；';
+$lang->refund->reviewing         = '等待 <strong>%s</strong> 审批';
+$lang->refund->reviewed          = '审批完成';
 
 $lang->refund->settings = new stdclass();
 $lang->refund->settings->setReviewer  = "审批人|refund|setreviewer";
@@ -4805,6 +4823,7 @@ $lang->schema->placeholder->common      = '填写对账单对应到该字段的�
 $lang->schema->placeholder->type        = '填写“收入/支出”所对应的列';
 $lang->schema->placeholder->date        = '填写“付款时间”所对应的列';
 $lang->schema->placeholder->product     = '填写“产品”所对应的列';
+$lang->schema->placeholder->handlers    = '填写“经手人”所对应的列';
 $lang->schema->placeholder->desc        = '账目备注，可以填写多列，用,隔开，如：I,O';
 $lang->schema->placeholder->in          = '收款所在的列，如：E';
 $lang->schema->placeholder->out         = '付款所在的列，如：D';
