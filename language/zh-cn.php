@@ -115,6 +115,7 @@ $lang->switchDisplay  = '切换显示';
 $lang->feature        = '未来';
 $lang->year           = '年';
 $lang->month          = '月';
+$lang->week           = '周';
 $lang->day            = '日';
 $lang->loading        = '稍候...';
 $lang->saveSuccess    = '保存成功';
@@ -491,6 +492,7 @@ if(!defined('DT_DATE2'))      define('DT_DATE2',      'Ymd');
 if(!defined('DT_DATE3'))      define('DT_DATE3',      'Y年m月d日');
 if(!defined('DT_DATE4'))      define('DT_DATE4',      'n月j日');
 if(!defined('DT_DATE5'))      define('DT_DATE5',      'Y年m月');
+if(!defined('DT_DATE6'))      define('DT_DATE6',      'm-d');
 if(!defined('DT_TIME1'))      define('DT_TIME1',      'H:i:s');
 if(!defined('DT_TIME2'))      define('DT_TIME2',      'H:i');
 
@@ -1218,6 +1220,8 @@ $lang->order->infoAmount    = '计划金额：%s，成交金额：%s。';
 $lang->order->infoContacted = '最后联系：%s。';
 $lang->order->infoNextDate  = '下次联系：%s。';
 $lang->order->deny          = '您没有创建%s的权限。';
+
+$lang->order->actionWidth = 220;
 /* crm/contact */
 if(!isset($lang->contact)) $lang->contact = new stdclass();
 $lang->contact->common         = '联系人';
@@ -1293,6 +1297,8 @@ $lang->contact->template     = '联系人模板';
 $lang->contact->genderList['m'] = '男';
 $lang->contact->genderList['f'] = '女';
 $lang->contact->genderList['u'] = '';
+
+$lang->contact->actionWidth = 200;
 /* crm/block */
 $lang->block->common   = '区块';
 $lang->block->num      = '数量';
@@ -1463,7 +1469,7 @@ $lang->contract->export           = '导出';
 $lang->contract->totalReturn      = '回款合计';
 $lang->contract->tradeList        = '收支记录';
 $lang->contract->manageTeam       = '维护团队';
-$lang->contract->confirmTeam      = '确认提成';
+$lang->contract->confirmTeam      = '确认贡献度';
 
 $lang->contract->deliveryList[]        = '';
 $lang->contract->deliveryList['wait']  = '等待交付';
@@ -1492,31 +1498,32 @@ $lang->contract->returnInfo         = "<p>%s, 由 <strong>%s</strong> 回款%s�
 $lang->contract->deliveryInfo       = "<p>%s由%s交付。</p>";
 $lang->contract->deleteReturnInfo   = "%s的回款%s";
 $lang->contract->deleteDeliveryInfo = "%s的交付";
-$lang->contract->teamTips           = '<strong>成员为空</strong>或者<strong>提成比例为空</strong>不保存。';
+$lang->contract->teamTips           = '<strong>成员为空</strong>或者<strong>贡献度为空</strong>不保存。';
 
 $lang->contract->placeholder = new stdclass();
 $lang->contract->placeholder->real = '成交金额';
 
 $lang->contract->team = new stdclass();
-$lang->contract->team->common  = '团队';
-$lang->contract->team->account = '成员';
-$lang->contract->team->rate    = '提成比例(%)';
-$lang->contract->team->money   = '金额';
-$lang->contract->team->status  = '状态';
-$lang->contract->team->accept  = '接受';
-$lang->contract->team->reject  = '拒绝';
-$lang->contract->team->total   = '合计';
+$lang->contract->team->common       = '团队';
+$lang->contract->team->account      = '成员';
+$lang->contract->team->contribution = '贡献度(%)';
+$lang->contract->team->money        = '销售额';
+$lang->contract->team->status       = '状态';
+$lang->contract->team->accept       = '接受';
+$lang->contract->team->reject       = '拒绝';
+$lang->contract->team->total        = '合计';
 
 $lang->contract->team->statusList['wait']   = '待确认';
 $lang->contract->team->statusList['accept'] = '已接受';
 $lang->contract->team->statusList['reject'] = '已拒绝';
 
 $lang->contract->error = new stdclass();
-$lang->contract->error->wrongRate      = '<strong>提成比例</strong>应该是数字';
-$lang->contract->error->wrongTotalRate = '<strong>提成比例总额</strong>应该不大于100%';
+$lang->contract->error->wrong = '<strong>贡献度</strong>应该是数字';
 
 $lang->plan = new stdclass();
 $lang->plan->amount = $lang->contract->thisAmount;
+
+$lang->contract->actionWidth   = 240;
 /* crm/leads */
 if(!isset($lang->leads)) $lang->leads = new stdclass();
 
@@ -1543,6 +1550,8 @@ $lang->leads->ignoreReason = '原因';
 $lang->leads->tips = new stdclass();
 $lang->leads->tips->apply       = '请先处理现有的名单联系人。';
 $lang->leads->tips->applyRemain = '未处理的名单数低于此值才可以再次申请';
+
+$lang->leads->actionWidth = 200;
 /* doc/block */
 $lang->block->common   = '区块';
 $lang->block->lblBlock = '区块';
@@ -1691,16 +1700,16 @@ $lang->refund->customer         = '客户';
 $lang->refund->order            = '订单';
 $lang->refund->contract         = '合同';
 $lang->refund->project          = '项目';
+$lang->refund->dept             = '部门';
 $lang->refund->name             = '名称';
+$lang->refund->payee            = '收款人';
 $lang->refund->category         = '科目';
 $lang->refund->date             = '日期';
-$lang->refund->dept             = '部门';
 $lang->refund->money            = '报销金额';
 $lang->refund->invoice          = '发票金额';
-$lang->refund->reviewMoney      = '报销额度';
 $lang->refund->currency         = '货币';
 $lang->refund->desc             = '描述';
-$lang->refund->files            = '附件';
+$lang->refund->related          = '参与人';
 $lang->refund->status           = '状态';
 $lang->refund->createdBy        = '申请人';
 $lang->refund->createdDate      = '申请日期';
@@ -1712,11 +1721,13 @@ $lang->refund->secondReviewer   = '第二审批人';
 $lang->refund->secondReviewDate = '第二审批日期';
 $lang->refund->refundBy         = '由谁报销';
 $lang->refund->refundDate       = '报销日期';
-$lang->refund->baseInfo         = '基本信息';
 $lang->refund->reason           = '理由';
+$lang->refund->expenseType      = '支出类型';
 $lang->refund->reviewer         = '审批人';
-$lang->refund->related          = '参与人';
 $lang->refund->depositor        = '报销账户';
+$lang->refund->reviewMoney      = '报销额度';
+$lang->refund->files            = '附件';
+$lang->refund->baseInfo         = '基本信息';
 
 $lang->refund->objectTypeList['customer'] = '客户支出';
 $lang->refund->objectTypeList['order']    = '订单支出';
@@ -1758,6 +1769,11 @@ $lang->refund->settings->setReviewer  = "审批人|refund|setreviewer";
 $lang->refund->settings->setCategory  = "报销科目|refund|setcategory";
 $lang->refund->settings->setDepositor = "报销账户|refund|setdepositor";
 $lang->refund->settings->setRefundBy  = "由谁报销|refund|setrefundby";
+
+$lang->refund->ActionWidth         = 40;
+$lang->refund->todoActionWidth     = 80;
+$lang->refund->personalActionWidth = 130;
+$lang->refund->reviewActionWidth   = 80;
 /* oa/block */
 $lang->block->common   = '区块';
 $lang->block->announce = '系统公告';
@@ -2620,6 +2636,9 @@ $lang->task->notAllowed  = '不允许这样操作。';
 $lang->task->skipClose   = '任务：%s 不是“已完成”或“已取消”状态，不能关闭！';
 
 $lang->task->groupinfo = "<div class='text-muted'>总计 <strong>%s</strong> 项，未开始 <strong>%s</strong>，进行中 <strong>%s</strong>，已完成 <strong>%s</strong>，已关闭 <strong>%s</strong></div>";
+
+$lang->task->actionWidth       = 240;
+$lang->task->dropdownMenuWidth = 80;
 /* sys/package */
 $lang->package->common        = '插件管理';
 $lang->package->browse        = '浏览插件';
@@ -2650,7 +2669,7 @@ $lang->package->name        = '名称';
 $lang->package->code        = '插件代号';
 $lang->package->version     = '版本';
 $lang->package->compatible  = '适用版本';
-$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.ranzhico.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
+$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.ranzhi.org/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
 $lang->package->author      = '作者';
 $lang->package->license     = '授权';
 $lang->package->intro       = '详情';
@@ -2823,6 +2842,13 @@ $lang->todo->batchedittips = '未选择编辑项目';
 $lang->todo->action = new stdclass();
 $lang->todo->action->finished  = array('main' => '$date, 由 <strong>$actor</strong>完成');
 $lang->todo->action->marked    = array('main' => '$date, 由 <strong>$actor</strong> 标记为<strong>$extra</strong>。', 'extra' => 'statusList');
+
+$lang->todo->mainPaddingRight  = 300;
+$lang->todo->sideWidth         = 280;
+$lang->todo->sideHandleRight   = 320;
+$lang->todo->trashRight        = 350;
+$lang->todo->actionWidth       = 220;
+$lang->todo->importActionWidth = 200;
 /* sys/article */
 $lang->article->common      = '文章维护';
 $lang->article->createDraft = '保存草稿';
@@ -3139,6 +3165,11 @@ $lang->my->review->module = '模块';
 
 $lang->my->contact = new stdclass();
 $lang->my->contact->common = '联系人';
+
+$lang->my->contractActionWidth = 240;
+$lang->my->orderActionWidth    = 210;
+$lang->my->projectActionWidth  = 160;
+$lang->my->taskActionWidth     = 240;
 /* sys/tree */
 $lang->tree->common        = "类目";
 $lang->tree->add           = "添加";
@@ -3294,6 +3325,8 @@ $lang->provider->sizeList[1] = '大型(100人以上)';
 $lang->provider->sizeList[2] = '中型(50-100人)';
 $lang->provider->sizeList[3] = '小型(10人-50人)';
 $lang->provider->sizeList[4] = '微型(10人以下)';
+
+$lang->provider->actionWidth = 150;
 /* sys/search */
 if(!isset($lang->search)) $lang->search = new stdclass();
 $lang->search->common        = '搜索';
@@ -4280,6 +4313,12 @@ $lang->customer->relationList['partner']  = '合作伙伴';
 $lang->customer->search      = '搜索';
 $lang->customer->searchInput = '输入搜索内容';
 $lang->customer->mergeTip    = '将该客户合并到选择的客户。';
+
+$lang->customer->action = new stdclass();
+$lang->customer->action->orderDating    = '$date, 由 <strong>$actor</strong> 创建订单 <strong>$order</strong> 的下次联系：<strong>$extra</strong>。' . "\n";
+$lang->customer->action->contractDating = '$date, 由 <strong>$actor</strong> 创建合同 <strong>$contract</strong> 的下次联系：<strong>$extra</strong>。' . "\n";
+
+$lang->customer->actionWidth = 200;
 /* sys/entry */
 $lang->entry->common      = '应用';
 $lang->entry->admin       = '应用列表';
@@ -4391,6 +4430,8 @@ $lang->entry->errmsg['SESSION_VERIFY_FAILED'] = 'session验证失败';
 $lang->entry->errmsg['IP_DENIED']             = '该IP被限制访问';
 $lang->entry->errmsg['ACCOUNT_UNBOUND']       = '未绑定用户';
 $lang->entry->errmsg['EMPTY_ENTRY']           = '应用不存在';
+
+$lang->entry->actionWidth = 260;
 /* sys/product */
 if(!isset($lang->product)) $lang->product = new stdclass();
 $lang->product->common      = '产品维护';
@@ -4400,6 +4441,7 @@ $lang->product->code        = '代号';
 $lang->product->type        = '类型';
 $lang->product->status      = '状态';
 $lang->product->category    = '产品分类';
+$lang->product->subject     = '收入科目';
 $lang->product->desc        = '简介';
 $lang->product->order       = '排序';
 $lang->product->roles       = '角色';
@@ -4430,6 +4472,9 @@ $lang->product->lineList[''] = '';
 
 $lang->product->placeholder = new stdclass();
 $lang->product->placeholder->code = '产品代号必须为英文或数字的组合';
+
+$lang->product->actionWidth  = 280;
+$lang->product->subjectWidth = 70;
 /* sys/company */
 $lang->company->common  = '公司';
 $lang->company->index   = '关于我们';
