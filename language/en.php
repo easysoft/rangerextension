@@ -4868,6 +4868,31 @@ $lang->notice->jumping = "This page will jump to homepage in 5 seconds <a href='
 
 $lang->notice->typeList['notFound']      = '';
 $lang->notice->typeList['accessLimited'] = '';
+/* sys/schema */
+$lang->schema->common   = 'Import Schema';
+$lang->schema->browse   = 'Browse';
+$lang->schema->view     = 'View';
+$lang->schema->create   = 'Create Schema';
+$lang->schema->edit     = 'Edit Schema';
+$lang->schema->delete   = 'Delete Schema';
+$lang->schema->csvFile  = 'File';
+
+$lang->schema->name     = 'Name';
+$lang->schema->feeRow   = 'The fee is a single record.';
+$lang->schema->diffCol  = 'The income and expense should in different columns.';
+
+$lang->schema->placeholder = new stdclass();
+$lang->schema->placeholder->selectField = 'Select item';
+$lang->schema->placeholder->common      = 'Fill in the column corresponding to the field in the statement, eg. A.';
+$lang->schema->placeholder->type        = 'Fill in the column corresponding to the type of income or expense.';
+$lang->schema->placeholder->date        = 'Fill in the column corresponding to the trade date.';
+$lang->schema->placeholder->product     = 'Fill in the column corresponding to the product.';
+$lang->schema->placeholder->handlers    = 'Fill in the column corresponding to the handlers.';
+$lang->schema->placeholder->desc        = 'Fill in the column corresponding to the description of statement, can fill in multiple columns which is seperated by comma. Eg. I, O.';
+$lang->schema->placeholder->in          = 'Fill in the column corresponding to the amount of income, eg. E.';
+$lang->schema->placeholder->out         = 'Fill in the column corresponding to the amount of expense, eg. D.';
+
+$lang->schema->fieldRequired = '%s is required.';
 /* sys/backup */
 $lang->backup->common      = 'Backup';
 $lang->backup->index       = 'Home';
