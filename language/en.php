@@ -1256,6 +1256,8 @@ $lang->contact->newCustomer    = 'Create Customer';
 $lang->contact->uploadAvatar   = 'Upload Photo';
 $lang->contact->changeAvatar   = 'Change Photo';
 $lang->contact->selectCustomer = 'Select Customer';
+$lang->contact->search         = 'Search';
+$lang->contact->searchInput    = 'Enter search items.';
 
 $lang->contact->browse         = 'View Contact';
 $lang->contact->block          = 'Contact Block';
@@ -1438,6 +1440,8 @@ $lang->contract->product       = 'Product';
 $lang->contract->productLine   = 'Product Line';
 $lang->contract->files         = 'Files';
 $lang->contract->createAddress = 'Create Address';
+$lang->contract->search        = 'Search';
+$lang->contract->searchInput   = 'Enter search items.';
 
 $lang->contract->browse           = 'Contract';
 $lang->contract->receive          = 'Receive';
