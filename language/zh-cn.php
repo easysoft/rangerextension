@@ -1521,7 +1521,7 @@ $lang->contract->team->statusList['accept'] = '已接受';
 $lang->contract->team->statusList['reject'] = '已拒绝';
 
 $lang->contract->error = new stdclass();
-$lang->contract->error->wrong = '<strong>贡献度</strong>应该是数字';
+$lang->contract->error->wrongContribution = '<strong>贡献度</strong>应该是数字';
 
 $lang->plan = new stdclass();
 $lang->plan->amount = $lang->contract->thisAmount;
@@ -1773,7 +1773,7 @@ $lang->refund->settings->setCategory  = "报销科目|refund|setcategory";
 $lang->refund->settings->setDepositor = "报销账户|refund|setdepositor";
 $lang->refund->settings->setRefundBy  = "由谁报销|refund|setrefundby";
 
-$lang->refund->ActionWidth         = 40;
+$lang->refund->actionWidth         = 40;
 $lang->refund->todoActionWidth     = 80;
 $lang->refund->personalActionWidth = 130;
 $lang->refund->reviewActionWidth   = 80;

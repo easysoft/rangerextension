@@ -1769,7 +1769,7 @@ $lang->refund->settings->setCategory  = "Category|refund|setcategory";
 $lang->refund->settings->setDepositor = "Account|refund|setdepositor";
 $lang->refund->settings->setRefundBy  = "ReimbursedBy|refund|setrefundby";
 
-$lang->refund->ActionWidth         = 60;
+$lang->refund->actionWidth         = 60;
 $lang->refund->todoActionWidth     = 160;
 $lang->refund->personalActionWidth = 180;
 $lang->refund->reviewActionWidth   = 100;
@@ -4204,8 +4204,8 @@ if(!isset($lang->customer)) $lang->customer = new stdclass();
 $lang->customer->common        = 'Customer';
 $lang->customer->id            = 'ID';
 $lang->customer->name          = 'Name';
-$lang->customer->depositor     = 'Account';
 $lang->customer->contact       = 'Contact';
+$lang->customer->depositor     = 'Account';
 $lang->customer->type          = 'Type';
 $lang->customer->source        = 'Source';
 $lang->customer->sourceNote    = 'Note';
@@ -4487,6 +4487,7 @@ $lang->company->setBasic = 'Company Information';
 $lang->usercontact->common = 'Contact';
 $lang->usercontact->create = 'Create';
 $lang->usercontact->edit   = 'Edit';
+$lang->usercontact->view   = 'View';
 $lang->usercontact->delete = 'Delete';
 
 $lang->usercontact->id     = 'ID';
