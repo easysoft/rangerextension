@@ -1220,7 +1220,7 @@ $lang->order->infoContacted = '最后联系：%s。';
 $lang->order->infoNextDate  = '下次联系：%s。';
 $lang->order->deny          = '您没有创建%s的权限。';
 
-$lang->order->actionWidth = 220;
+$lang->order->actionWidth = 180;
 /* crm/contact */
 if(!isset($lang->contact)) $lang->contact = new stdclass();
 $lang->contact->common         = '联系人';
@@ -3170,7 +3170,7 @@ $lang->my->contact = new stdclass();
 $lang->my->contact->common = '联系人';
 
 $lang->my->contractActionWidth = 240;
-$lang->my->orderActionWidth    = 210;
+$lang->my->orderActionWidth    = 180;
 $lang->my->projectActionWidth  = 160;
 $lang->my->taskActionWidth     = 240;
 /* sys/tree */

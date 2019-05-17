@@ -1216,7 +1216,7 @@ $lang->order->infoContacted = 'Contacted on %s ';
 $lang->order->infoNextDate  = 'Next Contact on %s';
 $lang->order->deny          = 'You has no permission to create %s.';
 
-$lang->order->actionWidth = 240;
+$lang->order->actionWidth = 200;
 /* crm/contact */
 if(!isset($lang->contact)) $lang->contact = new stdclass();
 $lang->contact->common         = 'Contact';
@@ -3166,7 +3166,7 @@ $lang->my->contact = new stdclass();
 $lang->my->contact->common = 'contact';
 
 $lang->my->contractActionWidth = 320;
-$lang->my->orderActionWidth    = 240;
+$lang->my->orderActionWidth    = 200;
 $lang->my->projectActionWidth  = 210;
 $lang->my->taskActionWidth     = 280;
 /* sys/tree */
