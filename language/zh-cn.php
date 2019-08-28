@@ -19,8 +19,8 @@ $lang->at         = ' 于 ';
 $lang->by         = ' 由 ';
 $lang->ditto      = '同上';
 $lang->etc        = '等';
-$lang->importIcon = "<i class='icon-download-alt'> </i>";
-$lang->exportIcon = "<i class='icon-upload-alt'> </i>";
+$lang->importIcon = "<i class='icon-import'> </i>";
+$lang->exportIcon = "<i class='icon-export'> </i>";
 
 $lang->apps = new stdclass();
 $lang->apps->crm        = '客户';
@@ -36,6 +36,9 @@ $lang->ranzhi    = '然之协同';
 $lang->agreement = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩然之系统的任何标志及链接。</span>";
 $lang->poweredBy = "<a href='http://www.ranzhi.org/?v=%s' target='_blank'>{$lang->ranzhi}%s</a>";
 $lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>抱歉，管理员限制当前IP登录，请联系管理员解除限制。</body></html>";
+$lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>艾体验</strong></a>";
+$lang->proVersion     = "<a href='https://api.ranzhi.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>专业版 <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
+$lang->website        = "https://www.ranzhi.org";
 
 $lang->IE6Alert = <<<EOT
     <div class='alert alert-danger' style='margin-top:100px;'>
@@ -235,6 +238,9 @@ $lang->article->menu = new stdclass();
 $lang->article->menu->admin  = '浏览|article|admin|';
 $lang->article->menu->tree   = '模块|tree|browse|type=article';
 $lang->article->menu->create = array('link' => '添加文章|article|create|type=article', 'alias' => 'edit');
+
+$lang->dashboard = new stdclass();
+$lang->dashboard->common = '我的地盘';
 
 $lang->menuGroups = new stdclass();
 
@@ -1057,14 +1063,15 @@ $lang->trade->loss          = '亏';
 $lang->trade->balance       = '收支平衡';
 $lang->trade->total         = '总计';
 
-$lang->trade->noTraderMatch  = '没有匹配到相应的商户，点击新建';
-$lang->trade->unique         = '今天已经有相同金额的账目';
-$lang->trade->showExistTrade = '展开重复账目';
-$lang->trade->hideExistTrade = '收起重复账目';
-$lang->trade->ignore         = '忽略';
-$lang->trade->denied         = '您没有权限浏览此类账目，请联系管理员设置权限。';
-$lang->trade->emptyData      = '带有*的内容不能为空';
-$lang->trade->detailTip      = '明细总金额和当前交易金额不相等，确定保存当前明细吗？';
+$lang->trade->noTraderMatch   = '没有匹配到相应的商户，点击新建';
+$lang->trade->unique          = '今天已经有相同金额的账目';
+$lang->trade->showExistTrade  = '展开重复账目';
+$lang->trade->hideExistTrade  = '收起重复账目';
+$lang->trade->ignore          = '忽略';
+$lang->trade->denied          = '您没有权限浏览此类账目，请联系管理员设置权限。';
+$lang->trade->emptyData       = '带有*的内容不能为空';
+$lang->trade->detailTip       = '明细总金额和当前交易金额不相等，确定保存当前明细吗？';
+$lang->trade->noImportDataTip = '没有需要导入的记录。';
 
 $lang->trade->chartList['productLine'] = '按产品线统计';
 $lang->trade->chartList['category']    = '按科目统计';
@@ -1212,15 +1219,17 @@ $lang->order->titleLBL  = "%s购买%s (%s)";
 $lang->order->basicInfo = "基本信息";
 $lang->order->lifetime  = "订单的一生";
 
-$lang->order->totalAmount   = '本页订单计划金额：%s，成交金额：%s；';
-$lang->order->infoBuy       = "%s 购买 %s。";
-$lang->order->infoContract  = '签署合同：%s。';
-$lang->order->infoAmount    = '计划金额：%s，成交金额：%s。';
-$lang->order->infoContacted = '最后联系：%s。';
-$lang->order->infoNextDate  = '下次联系：%s。';
-$lang->order->deny          = '您没有创建%s的权限。';
+$lang->order->totalAmount    = '本页订单计划金额：%s，成交金额：%s；';
+$lang->order->infoBuy        = "%s 购买 %s";
+$lang->order->infoContract   = '签署合同';
+$lang->order->infoAmount     = '计划金额：%s，成交金额：%s。';
+$lang->order->infoPlanAmount = '计划金额';
+$lang->order->infoRealAmount = '成交金额';
+$lang->order->infoContacted  = '最后联系';
+$lang->order->infoNextDate   = '下次联系';
+$lang->order->deny           = '您没有创建%s的权限。';
 
-$lang->order->actionWidth = 180;
+$lang->order->actionWidth = 220;
 /* crm/contact */
 if(!isset($lang->contact)) $lang->contact = new stdclass();
 $lang->contact->common         = '联系人';
@@ -1228,6 +1237,8 @@ $lang->contact->id             = '编号';
 $lang->contact->customer       = '所属客户';
 $lang->contact->customerName   = '客户名称';
 $lang->contact->realname       = '真实姓名';
+$lang->contact->gentleman      = '先生';
+$lang->contact->lady           = '女士';
 $lang->contact->nickname       = '昵称';
 $lang->contact->origin         = '来源';
 $lang->contact->status         = '状态';
@@ -1388,7 +1399,7 @@ $lang->sales->currentGroup = '当前组';
 $lang->sales->member       = '组内成员';
 /* crm/address */
 if(!isset($lang->address)) $lang->address = new stdclass();
-$lang->address->common   = '地址管理';
+$lang->address->common   = '地址';
 $lang->address->title    = '名称';
 $lang->address->country  = '国家';
 $lang->address->province = '省';
@@ -1526,7 +1537,7 @@ $lang->contract->error->wrongContribution = '<strong>贡献度</strong>应该是
 $lang->plan = new stdclass();
 $lang->plan->amount = $lang->contract->thisAmount;
 
-$lang->contract->actionWidth   = 240;
+$lang->contract->actionWidth = 260;
 /* crm/leads */
 if(!isset($lang->leads)) $lang->leads = new stdclass();
 
@@ -1773,9 +1784,9 @@ $lang->refund->settings->setCategory  = "报销科目|refund|setcategory";
 $lang->refund->settings->setDepositor = "报销账户|refund|setdepositor";
 $lang->refund->settings->setRefundBy  = "由谁报销|refund|setrefundby";
 
-$lang->refund->actionWidth         = 40;
+$lang->refund->actionWidth         = 50;
 $lang->refund->todoActionWidth     = 80;
-$lang->refund->personalActionWidth = 130;
+$lang->refund->personalActionWidth = 140;
 $lang->refund->reviewActionWidth   = 80;
 /* oa/block */
 $lang->block->common   = '区块';
@@ -2827,6 +2838,7 @@ $lang->todo->successMarked  = "成功切换状态！";
 $lang->todo->thisIsPrivate  = '这是一条私人事务。:)';
 $lang->todo->lblDisableDate = '暂时不设定时间';
 $lang->todo->emptyTodo      = '您今天还没有添加待办。';
+$lang->todo->lblClickCreate = '点击添加待办';
 
 $lang->todo->periods['today']      = '今日';
 $lang->todo->periods['yesterday']  = '昨日';
@@ -3169,9 +3181,9 @@ $lang->my->review->module = '模块';
 $lang->my->contact = new stdclass();
 $lang->my->contact->common = '联系人';
 
-$lang->my->contractActionWidth = 240;
-$lang->my->orderActionWidth    = 180;
-$lang->my->projectActionWidth  = 160;
+$lang->my->contractActionWidth = 260;
+$lang->my->orderActionWidth    = 220;
+$lang->my->projectActionWidth  = 180;
 $lang->my->taskActionWidth     = 240;
 /* sys/tree */
 $lang->tree->common        = "类目";
@@ -3286,7 +3298,7 @@ $lang->provider->basicInfo   = '基本信息';
 $lang->provider->moreInfo    = '更多信息';
 $lang->provider->setCategory = '维护类目';
 
-$lang->provider->common        = '供应商维护';
+$lang->provider->common        = '供应商';
 $lang->provider->id            = '编号';
 $lang->provider->name          = '名称';
 $lang->provider->depositor     = '对公账户';
@@ -3381,14 +3393,14 @@ $lang->admin->shortcuts->createEntry = '添加应用';
 $lang->block->common = '区块';
 $lang->block->name   = '区块名称';
 $lang->block->style  = '外观';
-$lang->block->grid   = '宽度';
+$lang->block->grid   = '位置';
 $lang->block->color  = '颜色';
 
 $lang->block->lblEntry = '应用';
 $lang->block->lblBlock = '区块';
 $lang->block->lblRss   = 'RSS地址';
 $lang->block->lblNum   = '条数';
-$lang->block->lblHtml  = 'HTML内容';
+$lang->block->lblHtml  = '内容';
 
 $lang->block->params = new stdclass();
 $lang->block->params->name  = '参数名称';
@@ -3401,7 +3413,10 @@ $lang->block->confirmRemoveBlock = '确定移除区块【{0}】吗？';
 
 $lang->block->allEntries  = '所有应用';
 $lang->block->dynamic     = '最新动态';
-$lang->block->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s' %s>%s</a>。";
+$lang->block->dynamicInfo = "<span class='timeline-tag'>%s</span> <span class='timeline-text'>%s <em>%s</em> %s <a href='%s' title='%s' %s>%s</a></span>";
+
+$lang->block->gridOptions[8] = '左侧';
+$lang->block->gridOptions[4] = '右侧';
 
 $lang->block->default['oa']['1']['title'] = '日历';
 $lang->block->default['oa']['1']['block'] = 'attend';
@@ -3850,6 +3865,18 @@ $lang->action->objectTypes['action']    = '沟通记录';
 
 $lang->action->noticeTitle  = "%s <a href='%s' data-appid='%s'>%s</a>";
 $lang->action->uniqueDating = "<stong>%s</strong>已经有下次联系的记录。";
+
+$lang->action->dynamic = new stdclass();
+$lang->action->dynamic->today      = '今天';
+$lang->action->dynamic->yesterday  = '昨天';
+$lang->action->dynamic->twoDaysAgo = '前天';
+$lang->action->dynamic->thisWeek   = '本周';
+$lang->action->dynamic->lastWeek   = '上周';
+$lang->action->dynamic->thisMonth  = '本月';
+$lang->action->dynamic->lastMonth  = '上月';
+$lang->action->dynamic->all        = '所有';
+$lang->action->dynamic->hidden     = '已隐藏';
+$lang->action->dynamic->search     = '搜索';
 /* sys/message */
 $lang->message->common            = '留言';
 $lang->message->id                = '编号';
@@ -4543,6 +4570,7 @@ $lang->index->customBlocks  = '编辑区块';
 $lang->index->addBlock      = '添加区块';
 $lang->index->refresh       = '更新';
 $lang->index->hidden        = '隐藏';
+$lang->index->more          = '更多';
 
 $lang->index->ips['confirmClose']       = '确认要关闭　【{0}】 吗？';
 $lang->index->ips['entryNotFindTip']    = '应用没有找到！';
@@ -4696,7 +4724,7 @@ $lang->user->password2 = '重复密码';
 $lang->user->realname  = '真实姓名';
 $lang->user->nickname  = '昵称';
 $lang->user->dept      = '所属部门';
-$lang->user->role      = '角色';    
+$lang->user->role      = '角色';
 $lang->user->avatar    = '头像';
 $lang->user->birthyear = '出生年';
 $lang->user->birthday  = '出生日期';
@@ -4808,15 +4836,15 @@ $lang->user->control->common      = '成员中心';
 $lang->user->control->welcome     = '欢迎您，<strong>%s</strong>';
 $lang->user->control->lblPassword = "留空，则保持不变。";
 
-$lang->user->control->menus[10] = '<i class="icon-large icon-user"></i> 个人信息 <i class="icon-chevron-right"></i>|user|profile';
-$lang->user->control->menus[20] = '<i class="icon-large icon-edit"></i> 编辑信息 <i class="icon-chevron-right"></i>|user|edit';
-//$lang->user->control->menus[28] = '<i class="icon-large icon-comments-alt"></i> 我的消息 <i class="icon-chevron-right"></i>|user|message';
-$lang->user->control->menus[30] = '<i class="icon-large icon-share"></i> 我的主题 <i class="icon-chevron-right"></i>|user|thread';
-$lang->user->control->menus[40] = '<i class="icon-large icon-mail-reply-all"></i> 我的回帖 <i class="icon-chevron-right"></i>|user|reply';
+$lang->user->control->menus[10] = '<i class="icon-large icon-user"></i> 个人信息 <i class="icon-angle-right"></i>|user|profile';
+$lang->user->control->menus[20] = '<i class="icon-large icon-edit"></i> 编辑信息 <i class="icon-angle-right"></i>|user|edit';
+//$lang->user->control->menus[28] = '<i class="icon-large icon-comments-alt"></i> 我的消息 <i class="icon-angle-right"></i>|user|message';
+$lang->user->control->menus[30] = '<i class="icon-large icon-share"></i> 我的主题 <i class="icon-angle-right"></i>|user|thread';
+$lang->user->control->menus[40] = '<i class="icon-large icon-mail-reply-all"></i> 我的回帖 <i class="icon-angle-right"></i>|user|reply';
 
 $lang->user->colleagueMenu = '同事';
 
-$lang->dept = new stdclass();  
+$lang->dept = new stdclass();
 $lang->dept->common     = '部门结构';
 $lang->dept->name       = '部门名称';
 $lang->dept->alias      = '部门别名';
@@ -4827,7 +4855,7 @@ $lang->dept->desc       = '描述';
 $lang->dept->keywords   = '关键词';
 $lang->dept->moderators = '部门经理';
 
-$lang->user->roleList['']           = ''; 
+$lang->user->roleList['']           = '';
 $lang->user->roleList['dev']        = '研发';
 $lang->user->roleList['pm']         = '项目经理';
 $lang->user->roleList['market']     = '市场';
@@ -5073,7 +5101,7 @@ $lang->thread->title      = '标题';
 $lang->thread->board      = '版块';
 $lang->thread->author     = '作者';
 $lang->thread->content    = '内容';
-$lang->thread->file       = '附件: ';
+$lang->thread->file       = '附件';
 $lang->thread->postedDate = '发表于';
 $lang->thread->replies    = '回帖';
 $lang->thread->views      = '阅读';
