@@ -2228,9 +2228,10 @@ $lang->attend->confirmReview['reject'] = '您确定要执行拒绝操作吗？';
 $lang->attend->settings         = '公司考勤设置';
 $lang->attend->personalSettings = '个人考勤设置';
 $lang->attend->setManager       = '部门经理设置';
-$lang->attend->setDept          = '部门设置';
+$lang->attend->setDept          = '维护部门';
 
 $lang->attend->beginDate = new stdClass();
+$lang->attend->beginDate->common   = '开始考勤日期';
 $lang->attend->beginDate->company  = '公司开始考勤日期';
 $lang->attend->beginDate->personal = '个人开始考勤日期';
 

@@ -838,7 +838,7 @@ $lang->depositor->success       = "<span class='text-success'>Ok</span>";
 $lang->depositor->more          = "<span class='text-danger'>%s</span>";
 $lang->depositor->less          = "<span class='text-danger'>%s</span>";
 
-$lang->depositor->createBalance = 'Please Add Balance first.';
+$lang->depositor->createBalance = 'Please enter the balance first.';
 
 $lang->depositor->typeList['cash']   = 'Cash';
 $lang->depositor->typeList['bank']   = 'Debit';
@@ -848,25 +848,25 @@ $lang->depositor->publicList['1'] = 'Public';
 $lang->depositor->publicList['0'] = 'Personal';
 
 $lang->depositor->providerList['']       = '';
-$lang->depositor->providerList['alipay'] = 'Alipay';
-$lang->depositor->providerList['paypal'] = 'Paypal';
-$lang->depositor->providerList['tenpay'] = 'Tenpay';
-$lang->depositor->providerList['wechat'] = 'Wechat Pay';
+$lang->depositor->providerList['alipay'] = 'AliPay';
+$lang->depositor->providerList['paypal'] = 'PayPal';
+$lang->depositor->providerList['tenpay'] = 'TenPay';
+$lang->depositor->providerList['wechat'] = 'WeChat Pay';
 
 $lang->depositor->statusList['normal']  = 'Active';
-$lang->depositor->statusList['disable'] = 'Disable';
+$lang->depositor->statusList['disable'] = 'Disabled';
 
 $lang->depositor->placeholder = new stdclass();
 $lang->depositor->placeholder->tags     = 'Please separate tags with comma.';
 $lang->depositor->placeholder->noBccomp = 'Please install bccmom extension first.';
 /* cash/trade */
 if(!isset($lang->trade)) $lang->trade = new stdclass();
-$lang->trade->common      = 'Trade';
+$lang->trade->common      = 'Bookkeeping';
 $lang->trade->id          = 'ID';
 $lang->trade->depositor   = 'Account';
 $lang->trade->type        = 'Type';
 $lang->trade->currency    = 'Currency';
-$lang->trade->exchangeRate= 'Exchange rate';
+$lang->trade->exchangeRate= 'Exchange Rate';
 $lang->trade->trader      = 'Trader';
 $lang->trade->customer    = 'Customer';
 $lang->trade->money       = 'Amount';
@@ -879,7 +879,7 @@ $lang->trade->contract    = 'Contract';
 $lang->trade->category    = 'Category';
 $lang->trade->date        = 'Date';
 $lang->trade->deadline    = 'Deadline';
-$lang->trade->handlers    = 'Handler';
+$lang->trade->handlers    = 'Bookkeeper';
 $lang->trade->dept        = 'Department';
 $lang->trade->receipt     = 'From';
 $lang->trade->payment     = 'To';
@@ -907,7 +907,7 @@ $lang->trade->loanrate    = 'Interest Rate';
 $lang->trade->outType     = 'Type';
 
 $lang->trade->all            = 'All';
-$lang->trade->create         = 'Create Trade';
+$lang->trade->create         = 'Bookkeeping';
 $lang->trade->in             = 'Income';
 $lang->trade->out            = 'Expense';
 $lang->trade->invest         = 'Invest';
@@ -920,18 +920,18 @@ $lang->trade->transfer       = 'Transfer';
 $lang->trade->edit           = 'Edit';
 $lang->trade->detail         = 'Details';
 $lang->trade->view           = 'View';
-$lang->trade->browse         = 'Bills';
+$lang->trade->browse         = 'Ledger';
 $lang->trade->delete         = 'Delete';
-$lang->trade->batchCreate    = 'Batch Create';
+$lang->trade->batchCreate    = 'Batch Bookkeeping';
 $lang->trade->batchEdit      = 'Batch Edit';
-$lang->trade->newTrader      = 'Create Trader';
+$lang->trade->newTrader      = 'Create';
 $lang->trade->import         = 'Import';
 $lang->trade->export         = 'Export';
 $lang->trade->showImport     = 'Results';
-$lang->trade->fullYear       = 'Full year';
+$lang->trade->fullYear       = 'Whole Year';
 $lang->trade->quarter        = 'Quarter';
 $lang->trade->export2Excel   = 'Export Excel';
-$lang->trade->compare        = 'Annual Compare';
+$lang->trade->compare        = 'Annual Comparison Sheet';
 $lang->trade->setReportUnit  = 'Report Unit';
 $lang->trade->settings       = 'Settings';
 $lang->trade->manageCategory = 'Manage Category';
@@ -940,13 +940,13 @@ $lang->trade->settingList['trader']       = 'Trader required';
 $lang->trade->settingList['product']      = 'Product required';
 $lang->trade->settingList['dept']         = 'Department required';
 $lang->trade->settingList['category']     = 'Category required';
-$lang->trade->settingList['lastCategory'] = 'Last-level Category required';
+$lang->trade->settingList['lastCategory'] = 'End-level Category required';
 
 $lang->trade->report = new stdclass();
 $lang->trade->report->common      = 'Report'; 
 $lang->trade->report->annual      = ' Annual Report'; 
-$lang->trade->report->month       = ' Month Report'; 
-$lang->trade->report->compare     = ' Annual Comparison';
+$lang->trade->report->month       = ' Monthly Report'; 
+$lang->trade->report->compare     = ' Annual Comparison Sheet';
 $lang->trade->report->create      = 'Create Report';
 $lang->trade->report->selectYears = 'Select Year';
 $lang->trade->report->undefined   = 'Undefined';
@@ -967,7 +967,7 @@ $lang->trade->typeList['transferin']  = 'Transfer in';
 $lang->trade->typeList['invest']      = 'Invest';
 $lang->trade->typeList['redeem']      = 'Redeem';
 $lang->trade->typeList['loan']        = 'Loan';
-$lang->trade->typeList['repay']       = 'Repay';
+$lang->trade->typeList['repay']       = 'Pay';
 
 $lang->trade->quarters = new stdclass();
 $lang->trade->quarters->Q4 = '10,11,12';
@@ -1000,7 +1000,7 @@ $lang->trade->categoryList['transferout'] = 'Transfer Out';
 $lang->trade->categoryList['invest']      = 'Invest';
 $lang->trade->categoryList['redeem']      = 'Redeem';
 $lang->trade->categoryList['loan']        = 'Loan';
-$lang->trade->categoryList['repay']       = 'Repay';
+$lang->trade->categoryList['repay']       = 'Pay';
 
 $lang->trade->transferCategoryList['transferin']  = 'Transfer In';
 $lang->trade->transferCategoryList['transferout'] = 'Transfer Out';
@@ -1013,14 +1013,14 @@ $lang->trade->investTypeList['invest'] = 'Invest';
 $lang->trade->investTypeList['redeem'] = 'Redeem';
 
 $lang->trade->loanTypeList['loan']  = 'Loan';
-$lang->trade->loanTypeList['repay'] = 'Repay';
+$lang->trade->loanTypeList['repay'] = 'Pay';
 
 $lang->trade->encodeList['gbk']  = 'GBK';
 $lang->trade->encodeList['utf8'] = 'UTF-8';
 
 $lang->trade->notEqual = 'The two accounts cannot be the same!';
 $lang->trade->feeDesc  = '%s from %s to %s';
-$lang->trade->fileNode = 'The format is csv';
+$lang->trade->fileNode = 'The format is CSV.';
 
 $lang->trade->importedFields = array();
 $lang->trade->importedFields['category'] = 'Category';
@@ -1039,9 +1039,9 @@ $lang->trade->importedFields['handlers'] = 'Handler';
 $lang->trade->statusList['returned']   = 'Returned';
 $lang->trade->statusList['returning']  = 'Returning';
 $lang->trade->statusList['unReturned'] = 'Unreturned';
-$lang->trade->statusList['repaied']    = 'Repaid';
-$lang->trade->statusList['repaying']   = 'Repaying';
-$lang->trade->statusList['unRepaied']  = 'Unrepaid';
+$lang->trade->statusList['repaied']    = 'Paid';
+$lang->trade->statusList['repaying']   = 'Paying';
+$lang->trade->statusList['unRepaied']  = 'Unpaid';
 
 $lang->trade->progressList['invest'] = 'Redemption';
 $lang->trade->progressList['loan']   = 'Repayment';
@@ -1051,9 +1051,9 @@ $lang->trade->totalOut      = '%s: expense %s;';
 $lang->trade->totalAmount   = '%s: income %s, expense %s, %s;';
 $lang->trade->totalInvest   = '%s: invest %s, redeem %s, unredeem %s, %s;';
 $lang->trade->selectItem    = 'Seleted';
-$lang->trade->profit        = 'profit';
-$lang->trade->loss          = 'loss';
-$lang->trade->balance       = 'Income is equal to Expense';
+$lang->trade->profit        = 'Profit';
+$lang->trade->loss          = 'Loss';
+$lang->trade->balance       = 'Income shoulbe be equal to Expense.';
 $lang->trade->total         = 'Total';
 
 $lang->trade->noTraderMatch  = 'No match found. Click to create.';
@@ -1061,7 +1061,7 @@ $lang->trade->unique         = 'There is a record existed.';
 $lang->trade->showExistTrade = 'Show existing record';
 $lang->trade->hideExistTrade = 'Hide existing record';
 $lang->trade->ignore         = 'Ignore';
-$lang->trade->denied         = 'You have no permission to browse the list. Please ask you Admin to set permissions.';
+$lang->trade->denied         = 'You have no permission to view the list. Please ask you Admin to set permissions.';
 $lang->trade->emptyData      = 'The fields with * cannot be empty.';
 $lang->trade->detailTip      = 'The total amount is different from the trade amount. Do you want to save the current amount?';
 
@@ -1089,7 +1089,7 @@ $lang->block->orderBy   = 'Order';
 $lang->block->availableBlocks = new stdclass();
 $lang->block->availableBlocks->depositor = 'Checking Account';
 $lang->block->availableBlocks->trade     = 'Trade';
-$lang->block->availableBlocks->baseFacts = 'Income and Expense';
+$lang->block->availableBlocks->baseFacts = 'Incomes and Expenses';
 $lang->block->availableBlocks->provider  = 'Supplier';
 $lang->block->availableBlocks->report    = 'Report';
 
@@ -1097,8 +1097,8 @@ $this->lang->block->orderByList->trade['id_asc']  = 'ID ASC';
 $this->lang->block->orderByList->trade['id_desc'] = 'ID DESC';
 
 $this->lang->block->typeList->trade['all']  = 'All';
-$this->lang->block->typeList->trade['in']   = 'Income';
-$this->lang->block->typeList->trade['out']  = 'Expense';
+$this->lang->block->typeList->trade['in']   = 'Incomes';
+$this->lang->block->typeList->trade['out']  = 'Expenses';
 
 $this->lang->block->groupByList = new stdclass();
 $this->lang->block->groupByList->trade['category'] = 'by category';
@@ -2217,9 +2217,10 @@ $lang->attend->confirmReview['reject'] = 'Do you want to reject it?';
 $lang->attend->settings         = 'Company Settings';
 $lang->attend->personalSettings = 'Personal Settings';
 $lang->attend->setManager       = 'Department Manager Settings';
-$lang->attend->setDept          = 'Set Department';
+$lang->attend->setDept          = 'Manage Department';
 
 $lang->attend->beginDate = new stdClass();
+$lang->attend->beginDate->common   = 'Start Date';
 $lang->attend->beginDate->company  = 'Start Date';
 $lang->attend->beginDate->personal = 'Start Date';
 
