@@ -4223,8 +4223,9 @@ $lang->file->downloads   = '下载次数';
 
 $lang->file->edit          = '编辑';
 $lang->file->editFile      = '更改附件';
+$lang->file->addFile       = '添加附件';
 $lang->file->sizeLimit     = "<p class='text-danger'>附件大小不能大于%sM</p>";
-$lang->file->maxUploadSize = "<span class='red'>%s</span>";
+$lang->file->maxUploadSize = "（不超过 <strong>%s</strong>）";
 $lang->file->delete        = '删除';
 
 $lang->file->errorUnwritable = '上传目录不可写，无法上传附件。';
