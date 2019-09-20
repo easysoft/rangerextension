@@ -245,6 +245,7 @@ $lang->dashboard->common = '我的地盘';
 $lang->menuGroups = new stdclass();
 
 $lang->menu->dashboard = new stdclass();
+$lang->menu->dashboard->index    = '首页|my|index|';
 $lang->menu->dashboard->todo     = '待办|todo|calendar|';
 $lang->menu->dashboard->task     = '任务|my|task|';
 $lang->menu->dashboard->project  = '项目|my|project|';
@@ -3427,7 +3428,7 @@ $lang->block->default['oa']['2']['title'] = '系统公告';
 $lang->block->default['oa']['2']['block'] = 'announce';
 $lang->block->default['oa']['2']['grid']  = 4;
 
-$lang->block->default['oa']['2']['params']['num'] = 15;
+$lang->block->default['oa']['2']['params']['num'] = 6;
 
 $lang->block->default['proj']['3']['title'] = '指派给我的任务';
 $lang->block->default['proj']['3']['block'] = 'task';
@@ -3496,20 +3497,20 @@ $lang->block->default['team']['1']['title'] = '最新博客';
 $lang->block->default['team']['1']['block'] = 'blog';
 $lang->block->default['team']['1']['grid']  = 4;
 
-$lang->block->default['team']['1']['params']['num'] = 15;
+$lang->block->default['team']['1']['params']['num'] = 6;
 
 $lang->block->default['team']['2']['title'] = '最新帖子';
 $lang->block->default['team']['2']['block'] = 'thread';
 $lang->block->default['team']['2']['grid']  = 4;
 
-$lang->block->default['team']['2']['params']['num'] = 15;
+$lang->block->default['team']['2']['params']['num'] = 6;
 $lang->block->default['team']['2']['params']['type'] = 'new';
 
 $lang->block->default['team']['3']['title'] = '置顶帖子';
 $lang->block->default['team']['3']['block'] = 'thread';
 $lang->block->default['team']['3']['grid']  = 4;
 
-$lang->block->default['team']['3']['params']['num']  = 15;
+$lang->block->default['team']['3']['params']['num']  = 6;
 $lang->block->default['team']['3']['params']['type'] = 'stick';
 
 $lang->block->default['sys']['1'] = $lang->block->default['oa']['1'];
