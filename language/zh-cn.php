@@ -219,6 +219,11 @@ $lang->message = new stdclass();
 $lang->blog    = new stdclass(); 
 $lang->group   = new stdclass(); 
 
+$lang->user       = new stdclass();
+$lang->user->menu = new stdclass();
+$lang->user->menu->normal   = '普通成员|user|admin|';
+$lang->user->menu->disabled = '禁用成员|user|admin|deptID=&status=forbid';
+
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
 $lang->entry->menu->admin    = array('link' => '应用列表|entry|admin|', 'alias' => 'edit, integration, style, zentaoAdmin');
@@ -790,8 +795,7 @@ if(!isset($lang->forum)) $lang->forum = new stdclass();
 
 if(!isset($lang->blog)) $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->index    = array('link' => '博客列表|blog|index|', 'alias' => 'create, edit');
-$lang->blog->menu->category = '类目设置|tree|browse|type=blog';
+$lang->blog->menu->index = array('link' => '博客列表|blog|index|', 'alias' => 'create, edit');
 
 $lang->setting = new stdclass();
 $lang->setting->menu = new stdclass();
@@ -4784,6 +4788,7 @@ $lang->user->uploadAvatar    = '上传头像';
 $lang->user->cropAvatar      = '裁剪头像';
 $lang->user->cropAvatarTip   = '拖拽选框来选择头像裁剪范围';
 $lang->user->adminUser       = '组织';
+$lang->user->setRole         = '角色设置';
 
 $lang->user->profile     = '个人信息';
 $lang->user->editProfile = '编辑信息';
@@ -5176,5 +5181,8 @@ $lang->blog->create = "添加博客";
 $lang->blog->edit   = "编辑博客";
 $lang->blog->view   = "查看博客";
 $lang->blog->delete = "删除博客";
+
+$lang->blog->allMonth   = "所有时间";
+$lang->blog->allAuthors = "所有人";
 
 $lang->blog->notFound = '该博客不存在';

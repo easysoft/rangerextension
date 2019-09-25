@@ -216,6 +216,11 @@ $lang->message = new stdclass();
 $lang->blog    = new stdclass(); 
 $lang->group   = new stdclass(); 
 
+$lang->user       = new stdclass();
+$lang->user->menu = new stdclass();
+$lang->user->menu->normal   = 'Active Users|user|admin|';
+$lang->user->menu->disabled = 'Disabled Users|user|admin|deptID=&status=forbid';
+
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
 $lang->entry->menu->admin    = array('link' => 'API|entry|admin|', 'alias' => 'edit, integration, style, zentaoAdmin');
@@ -783,8 +788,7 @@ if(!isset($lang->forum)) $lang->forum = new stdclass();
 
 if(!isset($lang->blog)) $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->index    = 'Blog|blog|index|';
-$lang->blog->menu->category = 'Blog Category|tree|browse|type=blog';
+$lang->blog->menu->index = 'Blog|blog|index|';
 
 $lang->setting = new stdclass();
 $lang->setting->menu = new stdclass();
@@ -5149,5 +5153,8 @@ $lang->blog->create = "Create Blog";
 $lang->blog->edit   = "Edit";
 $lang->blog->view   = "View";
 $lang->blog->delete = "Delete";
+
+$lang->blog->allMonth   = "All Months";
+$lang->blog->allAuthors = "All Authors";
 
 $lang->blog->notFound = 'This blog is not found.';
