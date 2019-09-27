@@ -3202,6 +3202,7 @@ $lang->tree->hasProducts   = "This category has products, so it cannot be delete
 $lang->tree->confirmDelete = "Do you want to delete it?";
 $lang->tree->successFixed  = "Fixed.";
 $lang->tree->asParent      = "[%s] has child, so it cannot be merged.";
+$lang->tree->isSystem      = 'System category can not be merged.';
 
 $lang->category = new stdclass();
 $lang->category->common   = 'Category';
@@ -5153,6 +5154,8 @@ $lang->blog->create = "Create Blog";
 $lang->blog->edit   = "Edit";
 $lang->blog->view   = "View";
 $lang->blog->delete = "Delete";
+
+$lang->blog->search = 'Search';
 
 $lang->blog->allMonth   = "All Months";
 $lang->blog->allAuthors = "All Authors";

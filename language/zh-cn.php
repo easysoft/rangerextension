@@ -3214,6 +3214,7 @@ $lang->tree->hasProducts   = '该分类存在产品，不能删除。';
 $lang->tree->confirmDelete = "您确定删除该类目吗？";
 $lang->tree->successFixed  = "成功修复";
 $lang->tree->asParent      = '[%s]存在子科目，不能被合并';
+$lang->tree->isSystem      = '系统科目不能被合并';
 
 $lang->category = new stdclass();
 $lang->category->common   = '类目';
@@ -5181,6 +5182,8 @@ $lang->blog->create = "添加博客";
 $lang->blog->edit   = "编辑博客";
 $lang->blog->view   = "查看博客";
 $lang->blog->delete = "删除博客";
+
+$lang->blog->search = '搜索';
 
 $lang->blog->allMonth   = "所有时间";
 $lang->blog->allAuthors = "所有人";
