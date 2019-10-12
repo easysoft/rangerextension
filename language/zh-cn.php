@@ -333,6 +333,10 @@ $lang->my->task->menu->closedByMe   = '由我关闭|my|task|type=closedBy';
 $lang->my->task->menu->canceledByMe = '由我取消|my|task|type=canceledBy';
 $lang->my->task->menu->unclosed     = '未关闭|my|task|type=unclosed';
 
+$lang->my->project = new stdclass();
+$lang->my->project->menu = new stdclass();
+$lang->my->project->menu->all = '所有项目|my|project|';
+
 $lang->my->dynamic = new stdclass();
 $lang->my->dynamic->menu = new stdclass();
 $lang->my->dynamic->menu->today      = '今天|my|dynamic|period=today';
@@ -343,6 +347,10 @@ $lang->my->dynamic->menu->lastweek   = '上周|my|dynamic|period=lastweek';
 $lang->my->dynamic->menu->thismonth  = '本月|my|dynamic|period=thismonth';
 $lang->my->dynamic->menu->lastmonth  = '上月|my|dynamic|period=lastmonth';
 $lang->my->dynamic->menu->all        = '所有|my|dynamic|period=all';
+
+$lang->my->contact = new stdclass();
+$lang->my->contact->menu = new stdclass();
+$lang->my->contact->menu->all = '所有联系人|my|contact|';
 
 $lang->my->company = new stdclass();
 
@@ -2861,7 +2869,7 @@ $lang->todo->periods['all']        = '所有';
 $lang->todo->batchedittips = '未选择编辑项目';
 
 $lang->todo->action = new stdclass();
-$lang->todo->action->finished  = array('main' => '$date, 由 <strong>$actor</strong>完成');
+$lang->todo->action->finished  = array('main' => '$date, 由 <strong>$actor</strong> 完成。');
 $lang->todo->action->marked    = array('main' => '$date, 由 <strong>$actor</strong> 标记为<strong>$extra</strong>。', 'extra' => 'statusList');
 
 $lang->todo->mainPaddingRight  = 300;
@@ -3177,14 +3185,12 @@ $lang->my->task->closedBy   = '由我关闭';
 $lang->my->task->canceledBy = '由我取消';
 $lang->my->task->unclosed   = '未关闭';
 
-$lang->my->project = new stdclass();
 $lang->my->project->common = '我的项目';
 
 $lang->my->dynamic->common = '我的动态';
 
 $lang->my->review->module = '模块';
 
-$lang->my->contact = new stdclass();
 $lang->my->contact->common = '联系人';
 
 $lang->my->contractActionWidth = 260;

@@ -327,6 +327,10 @@ $lang->my->task->menu->closedByMe   = 'ClosedByMe|my|task|type=closedBy';
 $lang->my->task->menu->canceledByMe = 'CancelledByMe|my|task|type=canceledBy';
 $lang->my->task->menu->unclosed     = 'Unclosed|my|task|type=unclosed';
 
+$lang->my->project = new stdclass();
+$lang->my->project->menu = new stdclass();
+$lang->my->project->menu->all = 'All|my|project|';
+
 $lang->my->dynamic = new stdclass();
 $lang->my->dynamic->menu = new stdclass();
 $lang->my->dynamic->menu->today      = 'Today|my|dynamic|period=today';
@@ -337,6 +341,10 @@ $lang->my->dynamic->menu->lastweek   = 'Last Week|my|dynamic|period=lastweek';
 $lang->my->dynamic->menu->thismonth  = 'This Month|my|dynamic|period=thismonth';
 $lang->my->dynamic->menu->lastmonth  = 'Last Month|my|dynamic|period=lastmonth';
 $lang->my->dynamic->menu->all        = 'All|my|dynamic|period=all';
+
+$lang->my->contact = new stdclass();
+$lang->my->contact->menu = new stdclass();
+$lang->my->contact->menu->all = 'All|my|contact|';
 
 $lang->my->company = new stdclass();
 
@@ -3165,14 +3173,12 @@ $lang->my->task->closedBy   = 'ClosedByMe';
 $lang->my->task->canceledBy = 'CanceledByMe';
 $lang->my->task->unclosed   = 'Unclosed';
 
-$lang->my->project = new stdclass();
 $lang->my->project->common = 'My Project';
 
 $lang->my->dynamic->common = 'My Dynamics';
 
 $lang->my->review->module = 'Module';
 
-$lang->my->contact = new stdclass();
 $lang->my->contact->common = 'contact';
 
 $lang->my->contractActionWidth = 320;
