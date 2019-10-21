@@ -214,7 +214,10 @@ $lang->menu->sys->package = 'Extension|package|browse|';
 
 $lang->message = new stdclass(); 
 $lang->blog    = new stdclass(); 
+
 $lang->group   = new stdclass(); 
+$lang->group->menu = new stdclass(); 
+$lang->group->menu->all = 'All|group|browse|'; 
 
 $lang->user       = new stdclass();
 $lang->user->menu = new stdclass();

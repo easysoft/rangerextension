@@ -217,7 +217,10 @@ $lang->menu->sys->package = '扩展|package|browse|';
 
 $lang->message = new stdclass(); 
 $lang->blog    = new stdclass(); 
+
 $lang->group   = new stdclass(); 
+$lang->group->menu = new stdclass(); 
+$lang->group->menu->all = '所有分组|group|browse|'; 
 
 $lang->user       = new stdclass();
 $lang->user->menu = new stdclass();
