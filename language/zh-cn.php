@@ -4616,6 +4616,7 @@ $lang->group->edit               = '编辑分组';
 $lang->group->copy               = '复制分组';
 $lang->group->delete             = '删除分组';
 $lang->group->manageAppPriv      = '应用';
+$lang->group->manageAppPrivTip   = '提示：按住并拖放应用图标来更改应用授权，所有更改保存后生效。';
 $lang->group->managePriv         = '权限';
 $lang->group->managePrivByGroup  = '权限维护';
 $lang->group->managePrivByModule = '按模块分配权限';

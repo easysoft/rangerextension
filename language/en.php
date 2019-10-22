@@ -4589,6 +4589,7 @@ $lang->group->edit               = 'Edit';
 $lang->group->copy               = 'Copy';
 $lang->group->delete             = 'Delete';
 $lang->group->manageAppPriv      = 'Application';
+$lang->group->manageAppPrivTip   = 'Tips: Drag and drop application icons to change authorization type, all changes will be effective after saving.';
 $lang->group->managePriv         = 'Permissions';
 $lang->group->managePrivByGroup  = 'by Groups';
 $lang->group->managePrivByModule = 'by Modules';
