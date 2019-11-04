@@ -3121,7 +3121,7 @@ $lang->install->buildinEntry->team['name'] = 'TEAM';
 $lang->install->buildinEntry->team['abbr'] = '';
 $lang->install->buildinEntry->doc['name']  = 'DOC';
 $lang->install->buildinEntry->doc['abbr']  = '';
-$lang->install->buildinEntry->proj['name'] = 'PROJ';
+$lang->install->buildinEntry->proj['name'] = 'PM';
 $lang->install->buildinEntry->proj['abbr'] = '';
 
 $lang->install->categoryList[1] = 'Primary Income';
@@ -3154,7 +3154,7 @@ $lang->install->groupList[4]['desc'] = 'Default permissions for sales.';
 $lang->install->groupList[5]['name'] = 'Common';
 $lang->install->groupList[5]['desc'] = 'Default permissions for all users.';
 /* sys/my */
-$lang->my->common = 'Dashbord';
+$lang->my->common = 'My';
 
 $lang->my->order->common = 'Order';
 
@@ -4543,8 +4543,8 @@ $lang->misc->forum['label'] = 'Forum';
 $lang->misc->forum['url']   = 'http://www.zdoo.org/forum/';
 /* sys/index */
 $lang->index->common        = 'Home';
-$lang->index->dashboard     = 'Dashboard';
-$lang->index->dashboardAbbr = 'Dashboard';
+$lang->index->dashboard     = 'My';
+$lang->index->dashboardAbbr = 'My';
 $lang->index->about         = 'About';
 $lang->index->allEntries    = 'All';
 $lang->index->showOnLeft    = 'On left';

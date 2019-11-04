@@ -215,12 +215,12 @@ $lang->menu->sys->entry   = '应用|entry|admin|';
 $lang->menu->sys->system  = '系统|mail|admin|';
 $lang->menu->sys->package = '扩展|package|browse|';
 
-$lang->message = new stdclass(); 
-$lang->blog    = new stdclass(); 
+$lang->message = new stdclass();
+$lang->blog    = new stdclass();
 
-$lang->group   = new stdclass(); 
-$lang->group->menu = new stdclass(); 
-$lang->group->menu->all = '所有分组|group|browse|'; 
+$lang->group   = new stdclass();
+$lang->group->menu = new stdclass();
+$lang->group->menu->all = '所有分组|group|browse|';
 
 $lang->user       = new stdclass();
 $lang->user->menu = new stdclass();
@@ -248,7 +248,7 @@ $lang->article->menu->tree   = '模块|tree|browse|type=article';
 $lang->article->menu->create = array('link' => '添加文章|article|create|type=article', 'alias' => 'edit');
 
 $lang->dashboard = new stdclass();
-$lang->dashboard->common = '我的地盘';
+$lang->dashboard->common = '我的';
 
 $lang->menuGroups = new stdclass();
 
@@ -318,7 +318,7 @@ $lang->my->order->menu->assignedTo = '指派给我|my|order|type=assignedTo';
 $lang->my->order->menu->createdBy  = '由我创建|my|order|type=createdBy';
 $lang->my->order->menu->signedBy   = '由我签约|my|order|type=signedBy';
 $lang->my->order->menu->all        = '所有|my|order|type=all';
- 
+
 $lang->my->contract = new stdclass();
 $lang->my->contract->menu = new stdclass();
 $lang->my->contract->menu->unfinished  = '未完成|my|contract|type=unfinished';
@@ -566,7 +566,7 @@ $lang->setting->menu->tradeSetting = '记账设置|trade|tradeSetting|';
 include(dirname(__FILE__) . '/menuOrder.php');
 /* crm/common */
 $lang->app = new stdclass();
-$lang->app->name = '客户管理';
+$lang->app->name = '客户';
 
 $lang->menu->crm = new stdclass();
 $lang->menu->crm->dashboard = '首页|dashboard|index|';
@@ -3123,11 +3123,11 @@ $lang->install->import['area']     = '导入区域数据';
 $lang->install->import['industry'] = '导入行业数据';
 
 $lang->install->buildinEntry = new stdclass();
-$lang->install->buildinEntry->crm['name']  = '客户管理';
+$lang->install->buildinEntry->crm['name']  = '客户';
 $lang->install->buildinEntry->crm['abbr']  = '客户';
-$lang->install->buildinEntry->cash['name'] = '现金记账';
+$lang->install->buildinEntry->cash['name'] = '记账';
 $lang->install->buildinEntry->cash['abbr'] = '记账';
-$lang->install->buildinEntry->oa['name']   = '日常办公';
+$lang->install->buildinEntry->oa['name']   = '办公';
 $lang->install->buildinEntry->oa['abbr']   = '办公';
 $lang->install->buildinEntry->team['name'] = '团队';
 $lang->install->buildinEntry->team['abbr'] = '团队';
@@ -3166,7 +3166,7 @@ $lang->install->groupList[4]['desc'] = '默认的销售人员权限';
 $lang->install->groupList[5]['name'] = '普通用户';
 $lang->install->groupList[5]['desc'] = '默认的普通账号权限';
 /* sys/my */
-$lang->my->common = '我的地盘';
+$lang->my->common = '我的';
 
 $lang->my->order->common = '任务';
 
@@ -4570,7 +4570,7 @@ $lang->misc->forum['label'] = '论坛交流';
 $lang->misc->forum['url']   = 'http://www.ranzhi.org/forum/';
 /* sys/index */
 $lang->index->common        = '首页';
-$lang->index->dashboard     = '我的地盘';
+$lang->index->dashboard     = '我的';
 $lang->index->dashboardAbbr = '我的';
 $lang->index->about         = '关于';
 $lang->index->allEntries    = '所有应用';
