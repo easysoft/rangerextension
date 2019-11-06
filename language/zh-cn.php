@@ -1221,6 +1221,7 @@ $lang->order->sign          = '签约';
 $lang->order->assign        = '订单指派';
 $lang->order->activate      = '激活';
 $lang->order->export        = '导出';
+$lang->order->buy           = '购买';
 
 $lang->order->statusList['normal'] = '正常';
 $lang->order->statusList['signed'] = '已签约';
@@ -5088,7 +5089,7 @@ $lang->forum->noPost      = '暂无主题';
 $lang->forum->lastPost    = '最后发表: %s by %s';
 $lang->forum->readonly    = '只读版块。';
 $lang->forum->notExist    = '版块不存在。';
-$lang->forum->lblOwner    = " [ 版主：%s ]";
+$lang->forum->lblOwner    = "版主：%s";
 
 $lang->forum->post   = '发贴';
 $lang->forum->admin  = '论坛维护';
@@ -5199,3 +5200,5 @@ $lang->blog->allMonth   = "所有时间";
 $lang->blog->allAuthors = "所有人";
 
 $lang->blog->notFound = '该博客不存在';
+$lang->blog->previous = '上一篇';
+$lang->blog->next     = '下一篇';

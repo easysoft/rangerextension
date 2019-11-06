@@ -1210,6 +1210,7 @@ $lang->order->sign          = 'Sign';
 $lang->order->assign        = 'Assign';
 $lang->order->activate      = 'Activate';
 $lang->order->export        = 'Export';
+$lang->order->buy           = 'Buy';
 
 $lang->order->statusList['normal'] = 'Normal';
 $lang->order->statusList['signed'] = 'Signed';
@@ -5060,7 +5061,7 @@ $lang->forum->noPost      = 'No thread';
 $lang->forum->lastPost    = 'Last posted: %s by %s';
 $lang->forum->readonly    = 'Readonly';
 $lang->forum->notExist    = 'The board does not exist.';
-$lang->forum->lblOwner    = " [ Moderator: %s ]";
+$lang->forum->lblOwner    = "Moderator: %s";
 
 $lang->forum->post   = 'Post';
 $lang->forum->admin  = 'Admin';
