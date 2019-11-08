@@ -4752,13 +4752,13 @@ $lang->user->email     = '邮箱';
 $lang->user->msn       = 'MSN';
 $lang->user->qq        = 'QQ';
 $lang->user->yahoo     = '雅虎通';
-$lang->user->weixin    = '微信号';
+$lang->user->weixin    = '微信';
 $lang->user->gtalk     = 'Gtalk';
 $lang->user->wangwang  = '旺旺';
 $lang->user->mobile    = '手机';
 $lang->user->phone     = '电话';
 $lang->user->dept      = '部门';
-$lang->user->address   = '通讯地址';
+$lang->user->address   = '地址';
 $lang->user->zipcode   = '邮编';
 $lang->user->join      = '加入日期';
 $lang->user->visits    = '访问次数';
@@ -4862,7 +4862,10 @@ $lang->user->control->menus[20] = '<i class="icon-large icon-edit"></i> 编辑�
 $lang->user->control->menus[30] = '<i class="icon-large icon-share"></i> 我的主题 <i class="icon-angle-right"></i>|user|thread';
 $lang->user->control->menus[40] = '<i class="icon-large icon-mail-reply-all"></i> 我的回帖 <i class="icon-angle-right"></i>|user|reply';
 
-$lang->user->colleagueMenu = '同事';
+$lang->user->colleagueMenuName = '同事';
+
+$lang->user->colleagueMenu = new stdclass();
+$lang->user->colleagueMenu->all = '同事列表|user|colleague|';
 
 $lang->dept = new stdclass();
 $lang->dept->common     = '部门结构';
