@@ -97,6 +97,7 @@ $lang->setCharset     = 'Charset';
 $lang->save           = 'Save';
 $lang->saved          = 'Saved';
 $lang->confirm        = 'Confirm';
+$lang->determine      = 'Determine';
 $lang->preview        = 'Preview';
 $lang->goback         = 'Back';
 $lang->assign         = 'Assign';

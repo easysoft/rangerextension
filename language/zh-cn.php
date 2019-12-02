@@ -100,6 +100,7 @@ $lang->setCharset     = '编码格式';
 $lang->save           = '保存';
 $lang->saved          = '已保存';
 $lang->confirm        = '确认';
+$lang->determine      = '确定';
 $lang->preview        = '预览';
 $lang->goback         = '返回';
 $lang->assign         = '指派';
