@@ -807,7 +807,7 @@ $lang->setting->menu = new stdclass();
 $lang->setting->menu->board = 'Board|tree|browse|type=forum|';
 $lang->setting->menu->blog  = 'Blog|tree|browse|type=blog|';
 $lang->setting->menu->dept  = 'Department|tree|browse|type=dept|';
-$lang->setting->menu->role  = 'Role|setting|lang|module=user&field=roleList&appName=sys|';
+$lang->setting->menu->role  = 'Role|setting|lang|module=user&field=roleList|';
 include(dirname(__FILE__) . '/menuOrder.php');
 /* cash/depositor */
 if(!isset($lang->depositor)) $lang->depositor = new stdclass();
