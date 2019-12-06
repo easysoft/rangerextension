@@ -4569,6 +4569,7 @@ $lang->index->addBlock      = 'Add Block';
 $lang->index->refresh       = 'Refresh';
 $lang->index->hidden        = 'Hidden';
 $lang->index->more          = 'More';
+$lang->index->expandLeftBar = 'Show Menu';
 
 $lang->index->ips['confirmClose']        = 'Do you want to delete [{0}]?';
 $lang->index->ips['entryNotFindTip']     = 'Entry is not found!';
@@ -4589,6 +4590,7 @@ $lang->index->ips['hiddenBlock']         = 'Block has been hidden';
 $lang->index->ips['orderdBlocksSaved']   = 'Order has been saved';
 $lang->index->ips['moreOptionTip'] 	     = 'Show other {0} entries';
 $lang->index->ips['confirmCloseBrowser'] = 'Notice: This application is ON now.';
+$lang->index->ips['leftBarToggleTip']    = 'Tip: Visit profile menu to show leftbar back.';
 /* sys/group */
 $lang->group->common             = 'Group';
 $lang->group->browse             = 'Groups';
@@ -4792,6 +4794,8 @@ $lang->user->inputColleague = "Please enter a colleauge name";
 $lang->user->inputPassword  = 'Please enter password';
 $lang->user->searchUser     = 'Search';
 
+$lang->user->loginWelcome  = 'Welcome to Ranger system';
+$lang->user->zdooTitle     = 'Enterprise Collaboration System';
 $lang->user->errorDeny     = "Sorry, you don't have the permission to visit <b>%s</b> <b>%s</b>. Please contact the administrator.<br/> This page will jump to the homepage after 5 seconds";
 $lang->user->loginFailed   = "Login failed. Check you account and password.";
 $lang->user->locked        = "Failed too many times. Please log in again in 10 minutes.";

@@ -4589,7 +4589,7 @@ $lang->index->showOnLeft    = '左侧显示';
 $lang->index->notOnLeft     = '非左侧显示';
 $lang->index->opened        = '已打开';
 $lang->index->addEntry      = '添加应用';
-$lang->index->profile       = '个人中心';
+$lang->index->profile       = '个人';
 $lang->index->set           = '系统配置';
 $lang->index->theme         = '更换主题';
 $lang->index->superAdmin    = '后台管理';
@@ -4599,6 +4599,7 @@ $lang->index->addBlock      = '添加区块';
 $lang->index->refresh       = '更新';
 $lang->index->hidden        = '隐藏';
 $lang->index->more          = '更多';
+$lang->index->expandLeftBar = '展开菜单';
 
 $lang->index->ips['confirmClose']       = '确认要关闭　【{0}】 吗？';
 $lang->index->ips['entryNotFindTip']    = '应用没有找到！';
@@ -4619,6 +4620,7 @@ $lang->index->ips['hiddenBlock']        = '区块已隐藏';
 $lang->index->ips['orderdBlocksSaved']  = '排序已保存';
 $lang->index->ips['moreOptionTip'] 	    = '显示另外 {0} 个应用';
 $lang->index->ips['confirmCloseBrowser']= '提示：当前有打开的应用窗口';
+$lang->index->ips['leftBarToggleTip']   = '提示：要再次展开左侧导航，请访问“个人”菜单。';
 /* sys/group */
 $lang->group->common             = '权限分组';
 $lang->group->browse             = '浏览分组';
@@ -4823,6 +4825,8 @@ $lang->user->inputColleague = '请输入同事姓名';
 $lang->user->inputPassword  = '请输入密码';
 $lang->user->searchUser     = '搜索';
 
+$lang->user->loginWelcome  = '欢迎使用然之系统';
+$lang->user->zdooTitle     = '全协同管理平台';
 $lang->user->errorDeny     = "抱歉，您无权访问『<b>%s</b>』模块的『<b>%s</b>』功能。请联系管理员获取权限。点击后退返回上页。<br/> 5秒钟后将自动返回首页...";
 $lang->user->loginFailed   = "登录失败，请检查您的成员名或密码是否填写正确。";
 $lang->user->locked        = "成员已经被锁定，请%s后再重新尝试登录";
