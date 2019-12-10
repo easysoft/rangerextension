@@ -1737,6 +1737,7 @@ $lang->refund->customer         = '客户';
 $lang->refund->order            = '订单';
 $lang->refund->contract         = '合同';
 $lang->refund->project          = '项目';
+$lang->refund->trip             = '出差';
 $lang->refund->dept             = '部门';
 $lang->refund->name             = '名称';
 $lang->refund->payee            = '收款人';
@@ -1770,6 +1771,7 @@ $lang->refund->objectTypeList['customer'] = '客户支出';
 $lang->refund->objectTypeList['order']    = '订单支出';
 $lang->refund->objectTypeList['contract'] = '合同支出';
 $lang->refund->objectTypeList['project']  = '项目支出';
+$lang->refund->objectTypeList['trip']     = '出差支出';
 
 $lang->refund->statusList['draft']  = '草稿';
 $lang->refund->statusList['wait']   = '等待审批';
@@ -1940,6 +1942,8 @@ $lang->trip->createdBy   = '创建者';
 $lang->trip->createdDate = '创建时间';
 $lang->trip->date        = '日期';
 $lang->trip->time        = '时间';
+$lang->trip->dateRange   = '起止时间';
+$lang->trip->placeRange  = '起止地点';
 
 $lang->trip->denied    = '信息访问受限';
 $lang->trip->unique    = '%s 已经存在出差记录';

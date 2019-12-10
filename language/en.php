@@ -36,6 +36,9 @@ $lang->ranzhi    = 'Zdoo';
 $lang->agreement = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of Zdoo.</span>";
 $lang->poweredBy = "<a href='http://www.zdoo.org/?v=%s' target='_blank'>{$lang->ranzhi} %s</a>";
 $lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your Zdoo Administrator to get permissions.</body></html>";
+$lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>AIUX</strong></a>";
+$lang->proVersion     = "<a href='https://api.ranzhi.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>pro <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
+$lang->website        = "https://www.ranzhi.org";
 
 $lang->IE6Alert = <<<EOT
     <div class='alert alert-danger' style='margin-top:100px;'>
@@ -244,6 +247,9 @@ $lang->article->menu = new stdclass();
 $lang->article->menu->admin  = 'Browse|article|admin|';
 $lang->article->menu->tree   = 'Category|tree|browse|type=article';
 $lang->article->menu->create = array('link' => 'Add|article|create|type=article', 'float' => 'right');
+
+$lang->dashboard = new stdclass();
+$lang->dashboard->common = 'My';
 
 $lang->menuGroups = new stdclass();
 
@@ -886,7 +892,6 @@ $lang->trade->currency     = 'Currency';
 $lang->trade->exchangeRate = 'Exchange Rate';
 $lang->trade->trader       = 'Trader';
 $lang->trade->customer     = 'Customer';
-$lang->trade->provider     = 'Provider';
 $lang->trade->money        = 'Amount';
 $lang->trade->status       = 'Status';
 $lang->trade->rate         = 'ROI';
@@ -1079,14 +1084,15 @@ $lang->trade->loss          = 'Loss';
 $lang->trade->balance       = 'Income shoulbe be equal to Expense.';
 $lang->trade->total         = 'Total';
 
-$lang->trade->noTraderMatch  = 'No match found. Click to create.';
-$lang->trade->unique         = 'There is a record existed.';
-$lang->trade->showExistTrade = 'Show existing record';
-$lang->trade->hideExistTrade = 'Hide existing record';
-$lang->trade->ignore         = 'Ignore';
-$lang->trade->denied         = 'You have no permission to view the list. Please ask you Admin to set permissions.';
-$lang->trade->emptyData      = 'The fields with * cannot be empty.';
-$lang->trade->detailTip      = 'The total amount is different from the trade amount. Do you want to save the current amount?';
+$lang->trade->noTraderMatch   = 'No match found. Click to create.';
+$lang->trade->unique          = 'There is a record existed.';
+$lang->trade->showExistTrade  = 'Show existing record';
+$lang->trade->hideExistTrade  = 'Hide existing record';
+$lang->trade->ignore          = 'Ignore';
+$lang->trade->denied          = 'You have no permission to view the list. Please ask you Admin to set permissions.';
+$lang->trade->emptyData       = 'The fields with * cannot be empty.';
+$lang->trade->detailTip       = 'The total amount is different from the trade amount. Do you want to save the current amount?';
+$lang->trade->noImportDataTip = 'No records to import.';
 
 $lang->trade->chartList['productLine'] = 'by product line';
 $lang->trade->chartList['category']    = 'by category';
@@ -1727,6 +1733,7 @@ $lang->refund->customer         = 'Customer';
 $lang->refund->order            = 'Order';
 $lang->refund->contract         = 'contract';
 $lang->refund->project          = 'Project';
+$lang->refund->trip             = 'Trip';
 $lang->refund->dept             = 'Department';
 $lang->refund->name             = 'Name';
 $lang->refund->payee            = 'Payee';
@@ -1760,6 +1767,7 @@ $lang->refund->objectTypeList['customer'] = 'Customer';
 $lang->refund->objectTypeList['order']    = 'Order';
 $lang->refund->objectTypeList['contract'] = 'Contract';
 $lang->refund->objectTypeList['project']  = 'Project';
+$lang->refund->objectTypeList['trip']     = 'Trip';
 
 $lang->refund->statusList['draft']  = 'Draft';
 $lang->refund->statusList['wait']   = 'Wait';
@@ -2852,6 +2860,7 @@ $lang->todo->successMarked  = "Done.";
 $lang->todo->thisIsPrivate  = 'This is a private todo:)';
 $lang->todo->lblDisableDate = 'Set time later.';
 $lang->todo->emptyTodo      = 'You have no Todo scheduled today.';
+$lang->todo->lblClickCreate = 'Click to add todo';
 
 $lang->todo->periods['today']      = 'Today';
 $lang->todo->periods['yesterday']  = 'Yesterday';
@@ -3421,11 +3430,16 @@ $lang->block->params->value = 'Value';
 $lang->block->createBlock        = 'Create';
 $lang->block->editBlock          = 'Edit';
 $lang->block->ordersSaved        = 'Order is saved.';
+$lang->block->reset              = 'Reset';
 $lang->block->confirmRemoveBlock = 'Do you want to remove Block [{0}] ?';
+$lang->block->confirmResetLayout = 'Do you want to reset default layout ?';
 
 $lang->block->allEntries  = 'All';
 $lang->block->dynamic     = 'Dynamics';
 $lang->block->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s' %s>%s</a>。";
+
+$lang->block->gridOptions[8] = 'Left';
+$lang->block->gridOptions[4] = 'Right';
 
 $lang->block->default['oa']['1']['title'] = 'Calendar';
 $lang->block->default['oa']['1']['block'] = 'attend';
@@ -3682,6 +3696,7 @@ $lang->action->desc->imported              = '$date, imported by <strong>$actor<
 $lang->action->desc->dating                = '$date, <strong>$actor</strong> created Next Contact <strong>$extra</strong>.' . "\n";
 $lang->action->desc->manageteam            = '$date, <strong>$actor</strong> managed a commission rate.' . "\n";
 $lang->action->desc->confirmteam           = '$date, <strong>$actor</strong> confirmed a commission rate : <strong>$extra</strong>.' . "\n";
+$lang->action->desc->moved2customerpool    = '$date, <strong>$actor</strong> move to customer pool.';
 
 $lang->action->label = new stdclass();
 $lang->action->label->created     = 'created';
@@ -3742,6 +3757,7 @@ $lang->action->label->receivecontract       = 'return';
 $lang->action->label->finishreceivecontract = 'finish returned';
 $lang->action->label->finishreturned        = 'finish returned';
 $lang->action->label->deletereturned        = 'delete rerurned';
+$lang->action->label->moved2customerpool    = 'move to customer pool';
 
 $lang->action->search = new stdclass();
 $lang->action->search->label = (array)$lang->action->label;
@@ -3874,6 +3890,18 @@ $lang->action->objectTypes['action']    = 'History';
 
 $lang->action->noticeTitle  = "%s <a href='%s' data-appid='%s'>%s</a>";
 $lang->action->uniqueDating = "<stong>%s</strong> has a Next Contact.";
+
+$lang->action->dynamic = new stdclass();
+$lang->action->dynamic->today      = 'Today';
+$lang->action->dynamic->yesterday  = '昨天';
+$lang->action->dynamic->twoDaysAgo = '前天';
+$lang->action->dynamic->thisWeek   = '本周';
+$lang->action->dynamic->lastWeek   = '上周';
+$lang->action->dynamic->thisMonth  = '本月';
+$lang->action->dynamic->lastMonth  = '上月';
+$lang->action->dynamic->all        = '所有';
+$lang->action->dynamic->hidden     = '已隐藏';
+$lang->action->dynamic->search     = '搜索';
 /* sys/message */
 $lang->message->common            = 'Comment';
 $lang->message->id                = 'ID';
@@ -4782,6 +4810,7 @@ $lang->user->uploadAvatar    = 'Upload Avatar';
 $lang->user->cropAvatar      = 'Crop Avatar';
 $lang->user->cropAvatarTip   = 'Drag to crop your avatar';
 $lang->user->adminUser       = 'User';
+$lang->user->setRole         = 'Role Setting';
 
 $lang->user->profile     = 'Profile';
 $lang->user->editProfile = 'Edit';
@@ -4794,7 +4823,7 @@ $lang->user->inputColleague = "Please enter a colleauge name";
 $lang->user->inputPassword  = 'Please enter password';
 $lang->user->searchUser     = 'Search';
 
-$lang->user->loginWelcome  = 'Welcome to Ranger system';
+$lang->user->loginWelcome  = 'Welcome to Zdoo';
 $lang->user->zdooTitle     = 'Enterprise Collaboration System';
 $lang->user->errorDeny     = "Sorry, you don't have the permission to visit <b>%s</b> <b>%s</b>. Please contact the administrator.<br/> This page will jump to the homepage after 5 seconds";
 $lang->user->loginFailed   = "Login failed. Check you account and password.";
@@ -4845,7 +4874,10 @@ $lang->user->control->menus[20] = '<i class="icon-large icon-edit"></i> Edit <i 
 $lang->user->control->menus[30] = '<i class="icon-large icon-share"></i> Thread <i class="icon-angle-right"></i>|user|thread';
 $lang->user->control->menus[40] = '<i class="icon-large icon-mail-reply-all"></i> Reply <i class="icon-angle-right"></i>|user|reply';
 
-$lang->user->colleagueMenu = 'Colleague';
+$lang->user->colleagueMenuName = 'Colleague';
+
+$lang->user->colleagueMenu = new stdclass();
+$lang->user->colleagueMenu->all = 'Colleague List|user|colleague|';
 
 $lang->dept = new stdclass();
 $lang->dept->common     = 'Department';
@@ -5183,3 +5215,5 @@ $lang->blog->allMonth   = "All Months";
 $lang->blog->allAuthors = "All Authors";
 
 $lang->blog->notFound = 'This blog is not found.';
+$lang->blog->previous = 'Previous';
+$lang->blog->next     = 'Next';
