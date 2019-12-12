@@ -3436,7 +3436,7 @@ $lang->block->confirmResetLayout = 'Do you want to reset default layout ?';
 
 $lang->block->allEntries  = 'All';
 $lang->block->dynamic     = 'Dynamics';
-$lang->block->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s' %s>%s</a>。";
+$lang->block->dynamicInfo = "<span class='timeline-tag'>%s</span> <span class='timeline-text'>%s <em>%s</em> %s <a href='%s' title='%s' %s>%s</a></span>";
 
 $lang->block->gridOptions[8] = 'Left';
 $lang->block->gridOptions[4] = 'Right';
