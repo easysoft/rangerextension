@@ -659,6 +659,16 @@ $lang->dashboard = new stdclass();
 
 if(!isset($lang->doc)) $lang->doc = new stdclass();
 
+$lang->doc->menuList = new stdclass();
+$lang->doc->menuList->dashboard = new stdclass();
+$lang->doc->menuList->dashboard->index = 'Document|doc|index|';
+
+$lang->doc->menuList->project = new stdclass();
+$lang->doc->menuList->project->allLibs = 'Project|doc|alllibs|type=project';
+
+$lang->doc->menuList->custom = new stdclass();
+$lang->doc->menuList->custom->allLibs = 'Custom|doc|alllibs|type=custom';
+
 include (dirname(__FILE__) . '/menuOrder.php');
 /* oa/common */
 $lang->app = new stdclass();
@@ -3615,7 +3625,7 @@ $lang->action->objectName = 'Details';
 
 $lang->action->createContact = 'Create Contact';
 $lang->action->editComment   = 'Edit Comment';
-$lang->action->hide          = 'Hide';       
+$lang->action->hide          = 'Hide';
 $lang->action->hideOne       = 'Hide';
 $lang->action->hideAll       = 'Hide all';
 $lang->action->hidden        = 'Hidden';
@@ -3888,7 +3898,7 @@ $lang->action->objectTypes['schema']    = 'Trade Template';
 $lang->action->objectTypes['doclib']    = 'Document library';
 $lang->action->objectTypes['action']    = 'History';
 
-$lang->action->noticeTitle  = "%s <a href='%s' data-appid='%s'>%s</a>";
+$lang->action->noticeTitle  = "<a href='%s' data-appid='%s'>%s</a>";
 $lang->action->uniqueDating = "<stong>%s</strong> has a Next Contact.";
 
 $lang->action->dynamic = new stdclass();

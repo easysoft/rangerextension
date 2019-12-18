@@ -660,6 +660,16 @@ $lang->dashboard = new stdclass();
 
 if(!isset($lang->doc)) $lang->doc = new stdclass();
 
+$lang->doc->menuList = new stdclass();
+$lang->doc->menuList->dashboard = new stdclass();
+$lang->doc->menuList->dashboard->index = '文档库首页|doc|index|';
+
+$lang->doc->menuList->project = new stdclass();
+$lang->doc->menuList->project->allLibs = '项目文档库|doc|alllibs|type=project';
+
+$lang->doc->menuList->custom = new stdclass();
+$lang->doc->menuList->custom->allLibs = '自定义文档库|doc|alllibs|type=custom';
+
 include (dirname(__FILE__) . '/menuOrder.php');
 /* oa/common */
 $lang->app = new stdclass();
@@ -3621,7 +3631,7 @@ $lang->action->objectName = '对象名称';
 
 $lang->action->createContact = '新建';
 $lang->action->editComment   = '修改备注';
-$lang->action->hide          = '隐藏';       
+$lang->action->hide          = '隐藏';
 $lang->action->hideOne       = '隐藏';
 $lang->action->hideAll       = '隐藏全部';
 $lang->action->hidden        = '已隐藏';
@@ -3894,7 +3904,7 @@ $lang->action->objectTypes['schema']    = '记账模板';
 $lang->action->objectTypes['doclib']    = '文档库';
 $lang->action->objectTypes['action']    = '沟通记录';
 
-$lang->action->noticeTitle  = "<p>%s</p><p><a href='%s' data-appid='%s'>%s</a></p>";
+$lang->action->noticeTitle  = "<a href='%s' data-appid='%s'>%s</a>";
 $lang->action->uniqueDating = "<stong>%s</strong>已经有下次联系的记录。";
 
 $lang->action->dynamic = new stdclass();
