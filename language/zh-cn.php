@@ -867,6 +867,7 @@ $lang->depositor->end           = '结束日期';
 $lang->depositor->originValue   = '起始余额';
 $lang->depositor->actualValue   = '实际余额';
 $lang->depositor->computedValue = '计算余额';
+$lang->depositor->totalValue    = '总计余额';
 $lang->depositor->result        = '结果';
 $lang->depositor->success       = "<span class='text-success'>对账成功</span>";
 $lang->depositor->more          = "<span class='text-danger'>超出实际余额 %s </span>";

@@ -866,6 +866,7 @@ $lang->depositor->end           = 'End';
 $lang->depositor->originValue   = 'Starting';
 $lang->depositor->actualValue   = 'Actual';
 $lang->depositor->computedValue = 'Calculated';
+$lang->depositor->totalValue    = 'Total';
 $lang->depositor->result        = 'Result';
 $lang->depositor->success       = "<span class='text-success'>Ok</span>";
 $lang->depositor->more          = "<span class='text-danger'>%s</span>";
