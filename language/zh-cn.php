@@ -3450,6 +3450,8 @@ $lang->block->ordersSaved        = '排序已保存';
 $lang->block->reset              = '恢复默认';
 $lang->block->confirmRemoveBlock = '确定移除区块【{0}】吗？';
 $lang->block->confirmResetLayout = '确定恢复默认布局吗？';
+$lang->block->cannotPlaceInLeft  = '此区块无法放置在左侧。';
+$lang->block->cannotPlaceInRight = '此区块无法放置在右侧。';
 
 $lang->block->allEntries  = '所有应用';
 $lang->block->dynamic     = '最新动态';

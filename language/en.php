@@ -3444,6 +3444,8 @@ $lang->block->ordersSaved        = 'Order is saved.';
 $lang->block->reset              = 'Reset';
 $lang->block->confirmRemoveBlock = 'Do you want to remove Block [{0}] ?';
 $lang->block->confirmResetLayout = 'Do you want to reset default layout ?';
+$lang->block->cannotPlaceInLeft  = 'Cannot place the block at left side.';
+$lang->block->cannotPlaceInRight = 'Cannot place the block at right side.';
 
 $lang->block->allEntries  = 'All';
 $lang->block->dynamic     = 'Dynamics';
