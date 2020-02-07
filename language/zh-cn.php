@@ -230,7 +230,8 @@ $lang->user->menu->disabled = '禁用成员|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->admin    = array('link' => '应用列表|entry|admin|', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->ranzhi   = array('link' => '然之应用|entry|admin|category=&platform=ranzhi', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->xuanxuan = '喧喧应用|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = '添加应用|entry|create|';
 $lang->entry->menu->webapp   = 'WEB应用|webapp|obtain|';
 $lang->entry->menu->category = '分组|entry|category|';

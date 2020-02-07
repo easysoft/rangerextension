@@ -230,7 +230,8 @@ $lang->user->menu->disabled = 'Disabled Users|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->admin    = array('link' => 'API|entry|admin|', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->ranzhi   = array('link' => 'Zdoo API|entry|admin|category=&platform=ranzhi', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->xuanxuan = 'Xuanxuan API|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = array('link' => 'Create|entry|create|');
 $lang->entry->menu->webapp   = 'App|webapp|obtain|';
 $lang->entry->menu->category = 'Category|entry|category|';
