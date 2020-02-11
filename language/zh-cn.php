@@ -32,13 +32,13 @@ $lang->apps->sys        = '通用';
 $lang->apps->team       = '团队';
 $lang->apps->superadmin = '后台';
 
-$lang->ranzhi    = '然之协同';
+$lang->zdoo    = '然之协同';
 $lang->agreement = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩然之系统的任何标志及链接。</span>";
-$lang->poweredBy = "<a href='http://www.ranzhi.org/?v=%s' target='_blank'>{$lang->ranzhi}%s</a>";
+$lang->poweredBy = "<a href='http://www.zdoo.com/?v=%s' target='_blank'>{$lang->zdoo}%s</a>";
 $lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>抱歉，管理员限制当前IP登录，请联系管理员解除限制。</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>艾体验</strong></a>";
-$lang->proVersion     = "<a href='https://api.ranzhi.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>专业版 <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
-$lang->website        = "https://www.ranzhi.org";
+$lang->proVersion     = "<a href='https://api.zdoo.com/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>专业版 <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
+$lang->website        = "https://www.zdoo.com";
 
 $lang->IE6Alert = <<<EOT
     <div class='alert alert-danger' style='margin-top:100px;'>
@@ -175,7 +175,7 @@ $lang->js->timeout               = '网络超时,请重试';
 $lang->js->confirmDiscardChanges = '表单已更改，确定关闭？';
 $lang->js->yes                   = '是';
 $lang->js->no                    = '否';
-$lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.ranzhi.org/book/ranzhi/165.html' target='_blank'>安装手册</a>";
+$lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.zdoo.com/book/ranzhi/165.html' target='_blank'>安装手册</a>";
 
 $lang->company = new stdclass();
 $lang->company->contactUs = '联系我们';
@@ -2723,7 +2723,7 @@ $lang->package->name        = '名称';
 $lang->package->code        = '插件代号';
 $lang->package->version     = '版本';
 $lang->package->compatible  = '适用版本';
-$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.ranzhi.org/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
+$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.zdoo.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
 $lang->package->author      = '作者';
 $lang->package->license     = '授权';
 $lang->package->intro       = '详情';
@@ -2777,8 +2777,8 @@ $lang->package->upgradeVersion = '（从%s升级到%s）';
 $lang->package->waring = '警告';
 
 $lang->package->errorOccurs                  = '错误：';
-$lang->package->errorGetModules              = '从www.ranzhi.org获得插件分类失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
-$lang->package->errorGetPackages             = '从www.ranzhi.org获得插件失败。可能是因为网络方面的原因，您可以到 <a href="https://www.ranzhi.org/extension" target="_blank" class="alert-link">www.ranzhi.org</a> 手工下载插件，然后上传安装。';
+$lang->package->errorGetModules              = '从www.zdoo.com获得插件分类失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
+$lang->package->errorGetPackages             = '从www.zdoo.com获得插件失败。可能是因为网络方面的原因，您可以到 <a href="https://www.zdoo.com/extension" target="_blank" class="alert-link">www.zdoo.com</a> 手工下载插件，然后上传安装。';
 $lang->package->errorDownloadPathNotFound    = '插件下载存储路径<strong>%s</strong>不存在。<br />linux下面请执行命令：<strong>mkdir -p %s</strong>来修正。';
 $lang->package->errorDownloadPathNotWritable = '插件下载存储路径<strong>%s</strong>不可写。<br />linux下面请执行命令：<strong>sudo chmod 777 %s</strong>来修正。';
 $lang->package->errorPackageFileExists       = '下载路径已经有一个名为的<strong>%s</strong>附件。<h3>重新%s，<a href="%s" class="alert-link loadInModal">请点击此链接</a></h3>';
@@ -2848,7 +2848,6 @@ $lang->todo->finishedBy   = '完成者';
 $lang->todo->finishedDate = '完成时间';
 $lang->todo->closedBy     = '关闭者';
 $lang->todo->closedDate   = '关闭时间';
-$lang->todo->ranzhi       = '然之';
 $lang->todo->task         = '任务';
 $lang->todo->bug          = 'Bug';
 
@@ -3046,8 +3045,8 @@ $lang->webapp->addTypeList['system'] = '系统应用';
 $lang->webapp->addTypeList['custom'] = '自定义应用';
 
 $lang->webapp->errorOccurs        = '错误：';
-$lang->webapp->errorGetModules    = '从www.ranzhi.org获得插件分类失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
-$lang->webapp->errorGetExtensions = '从www.ranzhi.org获得插件失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
+$lang->webapp->errorGetModules    = '从www.zdoo.com获得插件分类失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
+$lang->webapp->errorGetExtensions = '从www.zdoo.com获得插件失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
 $lang->webapp->noApps             = '暂无此类应用。';
 $lang->webapp->successInstall     = '成功安装应用！';
 $lang->webapp->confirmDelete      = '是否删除该应用？';
@@ -3064,16 +3063,16 @@ $lang->install->error   = '错误 ';
 $lang->install->start            = '开始安装';
 $lang->install->keepInstalling   = '继续安装当前版本';
 $lang->install->seeLatestRelease = '看看最新的版本';
-$lang->install->welcome          = "您睿智地选择了$lang->ranzhi!";
+$lang->install->welcome          = "您睿智地选择了$lang->zdoo!";
 $lang->install->license          = '然之协同使用 Z PUBLIC LICENSE(ZPL) 1.2 授权协议。';
 $lang->install->desc             = <<<EOT
 <blockquote>
-  <strong>{$lang->ranzhi}</strong>由<strong><a href='http://www.cnezsoft.com' target='_blank' class='red'>青岛易软天创网络科技有限公司</a>开发</strong>，
+  <strong>{$lang->zdoo}</strong>由<strong><a href='http://www.cnezsoft.com' target='_blank' class='red'>青岛易软天创网络科技有限公司</a>开发</strong>，
   <!--内置项目、客户、现金流、办公和沟通共五大核心功能模块，-->
   专为中小型团队量身打造，是中小型团队信息化的首选工具！
 
-  官方网站：<a href='http://www.ranzhi.org' target='_blank'>http://www.ranzhi.org</a>
-  技术支持: <a href='http://www.ranzhi.org/forum/' target='_blank'>http://www.ranzhi.org/forum/</a>
+  官方网站：<a href='http://www.zdoo.com' target='_blank'>http://www.zdoo.com</a>
+  技术支持: <a href='http://www.zdoo.com/forum/' target='_blank'>http://www.zdoo.com/forum/</a>
   您现在正在安装的版本是 <strong class='red'>%s</strong>。
 </blockquote>
 EOT;
@@ -4587,16 +4586,16 @@ if(!isset($lang->misc)) $lang->misc = new stdclass();
 $lang->misc->version = '版本%s';
 
 $lang->misc->offcialSite['label'] = '官方网站';
-$lang->misc->offcialSite['url']   = 'http://www.ranzhi.org';
+$lang->misc->offcialSite['url']   = 'http://www.zdoo.com';
 
 $lang->misc->support['label'] = '技术支持';
-$lang->misc->support['url']   = 'http://www.ranzhi.org/page/support.html';
+$lang->misc->support['url']   = 'http://www.zdoo.com/page/support.html';
 
 $lang->misc->userbook['label'] = '用户手册';
-$lang->misc->userbook['url']   = 'http://www.ranzhi.org/book/';
+$lang->misc->userbook['url']   = 'http://www.zdoo.com/book/';
 
 $lang->misc->forum['label'] = '论坛交流';
-$lang->misc->forum['url']   = 'http://www.ranzhi.org/forum/';
+$lang->misc->forum['url']   = 'http://www.zdoo.com/forum/';
 /* sys/index */
 $lang->index->common        = '首页';
 $lang->index->dashboard     = '我的';
@@ -5107,7 +5106,7 @@ $lang->mail->sendSuccess    = '成功发送！';
 $lang->mail->needConfigure  = '无法找到邮件配置信息，请先配置邮件发送参数。';
 
 $lang->mail->mailContentTip = <<<EOT
-<strong>%s</strong>(%s)由<a href='https://www.ranzhi.org' target='blank'>然之协同管理系统</a>搭建。<br />
+<strong>%s</strong>(%s)由<a href='https://www.zdoo.com' target='blank'>然之协同管理系统</a>搭建。<br />
 <a href='http://www.cnezsoft.com' target='blank'>易软天创</a>为天下企业提供专业的管理工具。
 EOT;
 $lang->mail->openTip = '订单、客户、任务指派，请假、报销审批时会进行邮件提醒';

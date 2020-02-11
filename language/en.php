@@ -32,9 +32,9 @@ $lang->apps->sys        = 'SYSTEM';
 $lang->apps->team       = 'TEAM';
 $lang->apps->superadmin = 'ADMIN';
 
-$lang->ranzhi    = 'Zdoo';
+$lang->zdoo    = 'Zdoo';
 $lang->agreement = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of Zdoo.</span>";
-$lang->poweredBy = "<a href='http://www.zdoo.org/?v=%s' target='_blank'>{$lang->ranzhi} %s</a>";
+$lang->poweredBy = "<a href='http://www.zdoo.org/?v=%s' target='_blank'>{$lang->zdoo} %s</a>";
 $lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your Zdoo Administrator to get permissions.</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>AIUX</strong></a>";
 $lang->proVersion     = "<a href='https://api.ranzhi.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>pro <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
@@ -2842,7 +2842,6 @@ $lang->todo->finishedBy   = 'Finished By';
 $lang->todo->finishedDate = 'Finished';
 $lang->todo->closedBy     = 'Closed By';
 $lang->todo->closedDate   = 'Closed';
-$lang->todo->ranzhi       = 'Zdoo';
 $lang->todo->task         = 'Tasks';
 $lang->todo->bug          = 'Bugs';
 
@@ -3062,7 +3061,7 @@ $lang->install->welcome          = 'Welcome to Zdoo community.';
 $lang->install->license          = 'Zdoo is under license of Z PUBLIC LICENSE(ZPL) 1.2. ';
 $lang->install->desc             = <<<EOT
 <blockquote>
-  <strong>{$lang->ranzhi}</strong> is developed by <strong><a href='http://en.easysoft.com' target='_blank' class='red'>QingDao Nature Easy Soft Network Technology Co.,Ltd.</a></strong>
+  <strong>{$lang->zdoo}</strong> is developed by <strong><a href='http://en.easysoft.com' target='_blank' class='red'>QingDao Nature Easy Soft Network Technology Co.,Ltd.</a></strong>
   <!--With project management, CRM, cashflow management, office automation and communication management and more features.-->
   Especifically for small and medium sized teams!
 
