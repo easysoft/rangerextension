@@ -32,8 +32,8 @@ $lang->apps->sys        = '通用';
 $lang->apps->team       = '团队';
 $lang->apps->superadmin = '后台';
 
-$lang->zdoo    = '然之协同';
-$lang->agreement = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩然之系统的任何标志及链接。</span>";
+$lang->zdoo      = 'ZDOO';
+$lang->agreement = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩ZDOO系统的任何标志及链接。</span>";
 $lang->poweredBy = "<a href='http://www.zdoo.com/?v=%s' target='_blank'>{$lang->zdoo}%s</a>";
 $lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>抱歉，管理员限制当前IP登录，请联系管理员解除限制。</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>艾体验</strong></a>";
@@ -230,7 +230,7 @@ $lang->user->menu->disabled = '禁用成员|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->ranzhi   = array('link' => '然之应用|entry|admin|category=&platform=ranzhi', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->ranzhi   = array('link' => 'ZDOO应用|entry|admin|category=&platform=ranzhi', 'alias' => 'edit, integration, style, zentaoAdmin');
 $lang->entry->menu->xuanxuan = '喧喧应用|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = '添加应用|entry|create|';
 $lang->entry->menu->webapp   = 'WEB应用|webapp|obtain|';
@@ -2723,7 +2723,7 @@ $lang->package->name        = '名称';
 $lang->package->code        = '插件代号';
 $lang->package->version     = '版本';
 $lang->package->compatible  = '适用版本';
-$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.zdoo.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
+$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容ZDOO<a href="http://api.zdoo.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
 $lang->package->author      = '作者';
 $lang->package->license     = '授权';
 $lang->package->intro       = '详情';
@@ -2785,7 +2785,7 @@ $lang->package->errorPackageFileExists       = '下载路径已经有一个名�
 $lang->package->errorDownloadFailed          = '下载失败，请重新下载。如果多次重试还不行，请尝试手工下载，然后通过上传功能上传。';
 $lang->package->errorMd5Checking             = '下载文件不完整，请重新下载。如果多次重试还不行，请尝试手工下载，然后通过上传功能上传。';
 $lang->package->errorExtracted               = '包文件<strong> %s </strong>解压缩失败，可能不是一个有效的zip文件。错误信息如下：<br />%s';
-$lang->package->errorCheckIncompatible       = '该插件与然之版本不兼容，%s后可能无法使用。。<h3>您可以选择 <a href="%s" class="loadInModal">强制%s</a> 或者 <a href="#" onclick=parent.location.href="%s">取消</a></h3>';
+$lang->package->errorCheckIncompatible       = '该插件与ZDOO版本不兼容，%s后可能无法使用。。<h3>您可以选择 <a href="%s" class="loadInModal">强制%s</a> 或者 <a href="#" onclick=parent.location.href="%s">取消</a></h3>';
 $lang->package->errorFileConflicted          = '有以下文件冲突：<br />%s <h3>您可以选择 <a href="%s" class="loadInModal">覆盖</a> 或者 <a href="#" onclick=parent.location.href="%s">取消</a></h3>';
 $lang->package->errorPackageNotFound         = '包文件 <strong>%s </strong>没有找到，可能是因为自动下载失败。您可以尝试再次下载。';
 $lang->package->errorTargetPathNotWritable   = '目标路径 <strong>%s </strong>不可写。';
@@ -2793,7 +2793,7 @@ $lang->package->errorTargetPathNotExists     = '目标路径 <strong>%s </strong
 $lang->package->errorInstallDB               = '执行数据库语句失败。错误信息如下：%s';
 $lang->package->errorConflicts               = '与插件“%s”冲突！';
 $lang->package->errorDepends                 = '以下依赖插件没有安装或版本不正确：<br /><br /> %s';
-$lang->package->errorIncompatible            = '该插件与您的蝉知版本不兼容';
+$lang->package->errorIncompatible            = '该插件与您的ZDOO版本不兼容';
 $lang->package->errorUninstallDepends        = '插件“%s”依赖该插件，不能卸载';
 /* sys/queue */
 $lang->queue->common  = '消息队列';
@@ -3064,7 +3064,7 @@ $lang->install->start            = '开始安装';
 $lang->install->keepInstalling   = '继续安装当前版本';
 $lang->install->seeLatestRelease = '看看最新的版本';
 $lang->install->welcome          = "您睿智地选择了$lang->zdoo!";
-$lang->install->license          = '然之协同使用 Z PUBLIC LICENSE(ZPL) 1.2 授权协议。';
+$lang->install->license          = 'ZDOO使用 Z PUBLIC LICENSE(ZPL) 1.2 授权协议。';
 $lang->install->desc             = <<<EOT
 <blockquote>
   <strong>{$lang->zdoo}</strong>由<strong><a href='http://www.cnezsoft.com' target='_blank' class='red'>青岛易软天创网络科技有限公司</a>开发</strong>，
@@ -3639,7 +3639,7 @@ $lang->action->hideOne       = '隐藏';
 $lang->action->hideAll       = '隐藏全部';
 $lang->action->hidden        = '已隐藏';
 $lang->action->undelete      = '还原';
-$lang->action->trashTips     = '提示：为了保证系统的完整性，然之系统的删除都是标记删除。';
+$lang->action->trashTips     = '提示：为了保证系统的完整性，ZDOO系统的删除都是标记删除。';
 
 $lang->action->textDiff = '文本格式';
 $lang->action->original = '原始格式';
@@ -4218,7 +4218,7 @@ $lang->cron->statusList['normal']  = '正常';
 $lang->cron->statusList['running'] = '运行中';
 $lang->cron->statusList['stop']    = '停止';
 
-$lang->cron->typeList['ranzhi'] = '然之自调用';
+$lang->cron->typeList['ranzhi'] = 'ZDOO自调用';
 $lang->cron->typeList['system'] = '操作系统命令';
 
 $lang->cron->toggleList['start'] = '激活';
@@ -4493,7 +4493,7 @@ $lang->entry->controlList['simple'] = '透明';
 $lang->entry->integrationList[1] = '启用';
 $lang->entry->integrationList[0] = '关闭';
 
-$lang->entry->platformList['ranzhi']   = '然之';
+$lang->entry->platformList['ranzhi']   = 'ZDOO';
 $lang->entry->platformList['xuanxuan'] = '喧喧';
 
 $lang->entry->errmsg['PARAM_CODE_MISSING']    = '缺少code参数';
@@ -4842,7 +4842,7 @@ $lang->user->inputColleague = '请输入同事姓名';
 $lang->user->inputPassword  = '请输入密码';
 $lang->user->searchUser     = '搜索';
 
-$lang->user->loginWelcome  = '欢迎使用然之系统';
+$lang->user->loginWelcome  = '欢迎使用ZDOO协同办公系统';
 $lang->user->zdooTitle     = '全协同管理平台';
 $lang->user->errorDeny     = "抱歉，您无权访问『<b>%s</b>』模块的『<b>%s</b>』功能。请联系管理员获取权限。点击后退返回上页。<br/> 5秒钟后将自动返回首页...";
 $lang->user->loginFailed   = "登录失败，请检查您的成员名或密码是否填写正确。";
@@ -5033,7 +5033,7 @@ $lang->upgrade->redeploy      = '请重新部署app文件夹后继续';
 $lang->upgrade->redeployDesc  = "<h5>因为代码结构调整,需要重新部署app目录。</h5><div class='text-important'>操作方法:删除旧的app目录，再从新的安装包里面复制app文件夹。</div>";
 $lang->upgrade->removeTodo    = '请删除 %s 文件夹后继续';
 $lang->upgrade->removeTodoTip = "<h5>因为代码结构调整,需要删除%s目录。</h5><div class='text-important'>操作方法:删除旧的%s文件夹。</div>";
-$lang->upgrade->updateLicense = '然之协同 2. 0 已更换授权协议至 Z PUBLIC LICENSE(ZPL) 1.1。';
+$lang->upgrade->updateLicense = 'ZDOO 2. 0 已更换授权协议至 Z PUBLIC LICENSE(ZPL) 1.1。';
 
 $lang->upgrade->majorList['3_5'] = array();
 $lang->upgrade->majorList['3_5']['1'] = '主营业务收入';
@@ -5050,7 +5050,7 @@ $lang->upgrade->majorList['3_6']['8'] = '借贷利息';
 $lang->upgrade->backupData = <<<EOT
 <pre>
 <strong>使用phpMyAdmin或者mysqldump命令备份数据库。</strong>
-<code class='red'>$ mysqldump -u %s</span> -p%s %s > ranzhi.sql</code>
+<code class='red'>$ mysqldump -u %s</span> -p%s %s > zdoo.sql</code>
 </pre>
 EOT;
 
@@ -5106,7 +5106,7 @@ $lang->mail->sendSuccess    = '成功发送！';
 $lang->mail->needConfigure  = '无法找到邮件配置信息，请先配置邮件发送参数。';
 
 $lang->mail->mailContentTip = <<<EOT
-<strong>%s</strong>(%s)由<a href='https://www.zdoo.com' target='blank'>然之协同管理系统</a>搭建。<br />
+<strong>%s</strong>(%s)由<a href='https://www.zdoo.com' target='blank'>ZDOO</a>搭建。<br />
 <a href='http://www.cnezsoft.com' target='blank'>易软天创</a>为天下企业提供专业的管理工具。
 EOT;
 $lang->mail->openTip = '订单、客户、任务指派，请假、报销审批时会进行邮件提醒';

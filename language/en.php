@@ -32,13 +32,13 @@ $lang->apps->sys        = 'SYSTEM';
 $lang->apps->team       = 'TEAM';
 $lang->apps->superadmin = 'ADMIN';
 
-$lang->zdoo    = 'Zdoo';
-$lang->agreement = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of Zdoo.</span>";
-$lang->poweredBy = "<a href='http://www.zdoo.org/?v=%s' target='_blank'>{$lang->zdoo} %s</a>";
-$lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your Zdoo Administrator to get permissions.</body></html>";
+$lang->zdoo      = 'ZDOO';
+$lang->agreement = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of ZDOO.</span>";
+$lang->poweredBy = "<a href='http://www.zdoo.com/?v=%s' target='_blank'>{$lang->zdoo} %s</a>";
+$lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your ZDOO Administrator to get permissions.</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>AIUX</strong></a>";
-$lang->proVersion     = "<a href='https://api.ranzhi.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>pro <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
-$lang->website        = "https://www.ranzhi.org";
+$lang->proVersion     = "<a href='https://api.zdoo.com/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>pro <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
+$lang->website        = "http://www.zdoo.com";
 
 $lang->IE6Alert = <<<EOT
     <div class='alert alert-danger' style='margin-top:100px;'>
@@ -58,7 +58,7 @@ $lang->themes['default'] = 'Default';
 $lang->themes['clear']   = 'Clear';
 
 $lang->home             = 'Home';
-$lang->welcome          = '%s Zdoo';
+$lang->welcome          = '%s ZDOO';
 $lang->messages         = "<strong><i class='icon-comment-alt'></i> %s</strong>";
 $lang->todayIs          = 'Today is %s, ';
 $lang->today            = 'Today';
@@ -2717,7 +2717,7 @@ $lang->package->name        = 'Name';
 $lang->package->code        = 'Alias';
 $lang->package->version     = 'Version';
 $lang->package->compatible  = 'Compatible';
-$lang->package->latest      = '<small>Latest:<strong><a href="%s" target="_blank" class="package">%s</a></strong>，requires Zdoo <a href="http://api.zdoo.org/goto.php?item=latest" target="_blank"><strong>%s</strong></small>';
+$lang->package->latest      = '<small>Latest:<strong><a href="%s" target="_blank" class="package">%s</a></strong>，requires ZDOO <a href="http://api.zdoo.com/goto.php?item=latest" target="_blank"><strong>%s</strong></small>';
 $lang->package->author      = 'Author';
 $lang->package->license     = 'License';
 $lang->package->intro       = 'Description';
@@ -2771,15 +2771,15 @@ $lang->package->upgradeVersion = '(Upgrade from %s to %s)';
 $lang->package->waring = 'Waring';
 
 $lang->package->errorOccurs                  = 'Error:';
-$lang->package->errorGetModules              = "Failed to get package category data from the www.zdoo.org. ";
-$lang->package->errorGetPackages             = 'Failed to get packages from www.zdoo.org. You can visit <a href="http://www.zdoo.org/extension/" target="_blank">www.zdoo.org</a> to find your packages, download it manually and then upload to Zdoo to install it.';
+$lang->package->errorGetModules              = "Failed to get package category data from the www.zdoo.com. ";
+$lang->package->errorGetPackages             = 'Failed to get packages from www.zdoo.com. You can visit <a href="http://www.zdoo.com/extension/" target="_blank">www.zdoo.com</a> to find your packages, download it manually and then upload to ZDOO to install it.';
 $lang->package->errorDownloadPathNotFound    = 'The path of the package file <strong>%s</strong>does not exist.<br />For linux users, execute <strong>mkdir -p %s</strong> to fix it.';
 $lang->package->errorDownloadPathNotWritable = 'The path of the package file <strong>%s</strong>is not writable.<br />For linux users, execute <strong>sudo chmod 777 %s</strong> to fix it.';
 $lang->package->errorPackageFileExists       = 'There is a file with the same name <strong>%s</strong>.<h3> If you want to %s again, <a href="%s" class="alert-link loadInModal">click this link</a>.</h3>';
 $lang->package->errorDownloadFailed          = 'Download failed. Please try again. Or you can download it manually and upload it to install.';
 $lang->package->errorMd5Checking             = 'Failed to check the download files. Please download it manually and upload it to install';
 $lang->package->errorExtracted               = 'Failed to get the package file <strong> %s </strong>. The error is:<br />%s';
-$lang->package->errorCheckIncompatible       = 'This extenion is not compatible with current Zdoo version. <h3>You can <a href="%s" class="loadInModal">Force %s</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
+$lang->package->errorCheckIncompatible       = 'This extenion is not compatible with current ZDOO version. <h3>You can <a href="%s" class="loadInModal">Force %s</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
 $lang->package->errorFileConflicted          = 'There are some files conflicted: <br />%s <h3>You can <a href="%s" class="loadInModal">Overide them</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
 $lang->package->errorPackageNotFound         = 'The package file <strong>%s </strong> cannot be found. It might be download failure. Try again.';
 $lang->package->errorTargetPathNotWritable   = 'Target path <strong>%s </strong>is not writable.';
@@ -2787,7 +2787,7 @@ $lang->package->errorTargetPathNotExists     = 'Target path <strong>%s </strong>
 $lang->package->errorInstallDB               = 'Failed to run the database SQL. The error is: %s';
 $lang->package->errorConflicts               = 'Conflict with "%s"!';
 $lang->package->errorDepends                 = 'The following extension depends on this one is not installed or the version is incorrect:<br /><br /> %s';
-$lang->package->errorIncompatible            = 'The extension with your Zdoo is incompatible.';
+$lang->package->errorIncompatible            = 'The extension with your ZDOO is incompatible.';
 $lang->package->errorUninstallDepends        = '"%s" is dependent on this extension which cannot be uninstalled.';
 /* sys/queue */
 $lang->queue->common  = 'Queue';
@@ -3039,8 +3039,8 @@ $lang->webapp->addTypeList['system'] = 'System App';
 $lang->webapp->addTypeList['custom'] = 'Custom App';
 
 $lang->webapp->errorOccurs        = 'Error:';
-$lang->webapp->errorGetModules    = "Failed to get extension category data from the www.zdoo.org. ";
-$lang->webapp->errorGetExtensions = 'Failed to get extensions from www.zdoo.org. ';
+$lang->webapp->errorGetModules    = "Failed to get extension category data from the www.zdoo.com. ";
+$lang->webapp->errorGetExtensions = 'Failed to get extensions from www.zdoo.com. ';
 $lang->webapp->noApps             = 'No extensions found in this category.';
 $lang->webapp->successInstall     = 'Installed.';
 $lang->webapp->confirmDelete      = 'Do you want to delete this app?';
@@ -3065,8 +3065,8 @@ $lang->install->desc             = <<<EOT
   <!--With project management, CRM, cashflow management, office automation and communication management and more features.-->
   Especifically for small and medium sized teams!
 
-  Website:<a href='http://www.zdoo.org' target='_blank'>http://www.zdoo.org</a>
-  Suport: <a href='http://www.zdoo.org/forum/' target='_blank'>http://www.zdoo.org/forum/</a>
+  Website:<a href='http://www.zdoo.com' target='_blank'>http://www.zdoo.com</a>
+  Suport: <a href='http://www.zdoo.com/forum/' target='_blank'>http://www.zdoo.com/forum/</a>
   Current Version: <strong class='red'>%s</strong>。
 </blockquote>
 EOT;
@@ -3633,7 +3633,7 @@ $lang->action->hideOne       = 'Hide';
 $lang->action->hideAll       = 'Hide all';
 $lang->action->hidden        = 'Hidden';
 $lang->action->undelete      = 'Undelete';
-$lang->action->trashTips     = 'Tips: Delete in Zdoo is a tag deletion.';
+$lang->action->trashTips     = 'Tips: Delete in ZDOO is a tag deletion.';
 
 $lang->action->textDiff = 'Text Mode';
 $lang->action->original = 'Original content';
@@ -4487,7 +4487,7 @@ $lang->entry->controlList['simple'] = 'Transparent';
 $lang->entry->integrationList[1] = 'Open';
 $lang->entry->integrationList[0] = 'Close';
 
-$lang->entry->platformList['ranzhi']   = 'Zdoo';
+$lang->entry->platformList['ranzhi']   = 'ZDOO';
 $lang->entry->platformList['xuanxuan'] = 'XuanXuan';
 
 $lang->entry->errmsg['PARAM_CODE_MISSING']    = 'Param code is missing.';
@@ -4580,16 +4580,16 @@ if(!isset($lang->misc)) $lang->misc = new stdclass();
 $lang->misc->version = 'Version %s';
 
 $lang->misc->offcialSite['label'] = 'Website';
-$lang->misc->offcialSite['url']   = 'http://www.zdoo.org';
+$lang->misc->offcialSite['url']   = 'http://www.zdoo.com';
 
 $lang->misc->support['label'] = 'Support';
-$lang->misc->support['url']   = 'http://www.zdoo.org/book/zdoomanual/collaborative-system-technical-support-5.html';
+$lang->misc->support['url']   = 'http://www.zdoo.com/book/zdoomanual/collaborative-system-technical-support-5.html';
 
 $lang->misc->userbook['label'] = 'Manual';
-$lang->misc->userbook['url']   = 'http://www.zdoo.org/book/';
+$lang->misc->userbook['url']   = 'http://www.zdoo.com/book/';
 
 $lang->misc->forum['label'] = 'Forum';
-$lang->misc->forum['url']   = 'http://www.zdoo.org/forum/';
+$lang->misc->forum['url']   = 'http://www.zdoo.com/forum/';
 /* sys/index */
 $lang->index->common        = 'Home';
 $lang->index->dashboard     = 'My';
@@ -5044,7 +5044,7 @@ $lang->upgrade->majorList['3_6']['8'] = 'Loan interest';
 $lang->upgrade->backupData = <<<EOT
 <pre>
 <strong>Using phpMyAdmin or mysqldump to back up the database.</strong>
-<code class='red'>$ mysqldump -u %s</span> -p%s %s > ranzhi.sql</code>
+<code class='red'>$ mysqldump -u %s</span> -p%s %s > zdoo.sql</code>
 </pre>
 EOT;
 
@@ -5100,7 +5100,7 @@ $lang->mail->sendSuccess    = 'Sent!';
 $lang->mail->needConfigure  = "Configuration is not found. Configure it first.";
 
 $lang->mail->mailContentTip = <<<EOT
-<strong>%s</strong>(%s) Powered by <a href='https://www.zdoo.org' target='blank'>Zdoo OA</a>.<br />
+<strong>%s</strong>(%s) Powered by <a href='https://www.zdoo.com' target='blank'>Zdoo OA</a>.<br />
 <a href='http://en.easysoft.com' target='blank'>Nature Easy Soft</a>
 EOT;
 $lang->mail->openTip = 'Send E-mail notifications, if any changes to orders, customers and tasks, reviews and reimbursements.';
