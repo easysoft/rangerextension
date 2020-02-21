@@ -407,7 +407,7 @@ $lang->error->deny         = "Sorry, you don't have the permission to access <b>
 
 $lang->pager = new stdclass();
 $lang->pager->noRecord     = "No records yet.";
-$lang->pager->digest       = "<strong>%s</strong> records <strong>%s</strong> per page <strong>%s/%s</strong> ";
+$lang->pager->digest       = "<strong>%s</strong> records, %s per page <strong>%s/%s</strong> ";
 $lang->pager->recPerPage   = "<strong>%s</strong> per page";
 $lang->pager->first        = " First";
 $lang->pager->pre          = " Prev";
@@ -517,6 +517,7 @@ if(!defined('DT_DATE2'))      define('DT_DATE2',      'Ymd');
 if(!defined('DT_DATE3'))      define('DT_DATE3',      'F j, Y ');
 if(!defined('DT_DATE4'))      define('DT_DATE4',      'M j');
 if(!defined('DT_DATE5'))      define('DT_DATE5',      'M Y');
+if(!defined('DT_DATE6'))      define('DT_DATE6',      'm-d');
 if(!defined('DT_TIME1'))      define('DT_TIME1',      'H:i:s');
 if(!defined('DT_TIME2'))      define('DT_TIME2',      'H:i');
 
@@ -2545,7 +2546,7 @@ $lang->task->list   = 'Tasks';
 $lang->task->browse    = 'Browse';
 $lang->task->view      = 'Info';
 $lang->task->viewChild = 'Child Task';
-$lang->task->create    = 'Create';
+$lang->task->create    = 'Create Task';
 $lang->task->edit      = 'Update';
 $lang->task->finish    = 'Finish';
 $lang->task->start     = 'Start';
@@ -2556,7 +2557,7 @@ $lang->task->assignTo  = 'Assignee';
 $lang->task->delete    = 'Delete';
 $lang->task->export    = 'Export';
 
-$lang->task->batchCreate    = 'Batch Create';
+$lang->task->batchCreate    = 'Batch Create Task';
 $lang->task->backToProjects = 'Back to project list'; 
 $lang->task->viewAll        = "View all project tasks";
 $lang->task->editAll        = "Edit all project tasks";
