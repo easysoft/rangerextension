@@ -579,7 +579,7 @@ $lang->menu->crm->provider  = 'Supplier|provider|browse|';
 $lang->menu->crm->contact   = 'Contact|contact|index|';
 $lang->menu->crm->leads     = 'List|leads|browse|';
 $lang->menu->crm->product   = 'Product|product|index|';
-$lang->menu->crm->setting   = 'Settings|setting|lang|module=product&field=statusList';
+$lang->menu->crm->setting   = 'Settings|sales|admin|';
 
 if(!isset($lang->order)) $lang->order = new stdclass();
 $lang->order->menu = new stdclass();
@@ -628,8 +628,8 @@ $lang->contract->menu->report       = 'Report|report|browse|module=contract';
 
 $lang->setting = new stdclass();
 $lang->setting->menu = new stdclass();
-$lang->setting->menu->product         = 'Product Status|setting|lang|module=product&field=statusList&appName=sys';
-$lang->setting->menu->productCategory = 'Product Category|tree|browse|type=product&startModule=&root=&from=setting';
+$lang->setting->menu->salesGroup      = array('link' => 'Sales Team|sales|browse|', 'alias' => 'create,edit');
+$lang->setting->menu->customerPool    = 'Customer Pool|setting|customerpool||';
 $lang->setting->menu->customerSource  = 'Customer Source|setting|lang|module=customer&field=sourceList&appName=sys';
 $lang->setting->menu->customerType    = 'Customer Status|setting|lang|module=customer&field=typeList&appName=sys';
 $lang->setting->menu->customerSize    = 'Customer Size|setting|lang|module=customer&field=sizeNameList&appName=sys';
@@ -637,9 +637,9 @@ $lang->setting->menu->customerLevel   = 'Customer Level|setting|lang|module=cust
 $lang->setting->menu->customerStatus  = 'Customer Status|setting|lang|module=customer&field=statusList&appName=sys';
 $lang->setting->menu->area            = 'Area|tree|browse|type=area|';
 $lang->setting->menu->industry        = 'Industry|tree|browse|type=industry|';
+$lang->setting->menu->product         = 'Product Status|setting|lang|module=product&field=statusList&appName=sys';
+$lang->setting->menu->productCategory = 'Product Category|tree|browse|type=product&startModule=&root=&from=setting';
 $lang->setting->menu->currency        = 'Currency|setting|lang|module=common&field=currencyList';
-$lang->setting->menu->salesGroup      = array('link' => 'Sales Team|sales|browse|', 'alias' => 'create,edit');
-$lang->setting->menu->customerPool    = 'Customer Pool|setting|customerpool||';
 
 if(!isset($lang->sales)) $lang->sales = new stdclass();
 $lang->sales->menu = $lang->setting->menu;
