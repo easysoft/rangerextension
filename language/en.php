@@ -32,13 +32,14 @@ $lang->apps->sys        = 'SYSTEM';
 $lang->apps->team       = 'TEAM';
 $lang->apps->superadmin = 'ADMIN';
 
-$lang->zdoo      = 'ZDOO';
-$lang->agreement = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of ZDOO.</span>";
-$lang->poweredBy = "<a href='http://www.zdoo.com/?v=%s' target='_blank'>{$lang->zdoo} %s</a>";
-$lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your ZDOO Administrator to get permissions.</body></html>";
+$lang->zdoo           = 'ZDOO';
+$lang->zdooTitle      = ' Enterprise Collaboration System';
+$lang->agreement      = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of ZDOO.</span>";
+$lang->poweredBy      = "<a href='https://www.zdoo.org/?v=%s' target='_blank'>%s %s</a>";
+$lang->ipLimited      = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your ZDOO Administrator to get permissions.</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>AIUX</strong></a>";
-$lang->proVersion     = "<a href='https://api.zdoo.com/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>pro <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
-$lang->website        = "http://www.zdoo.com";
+$lang->bizVersion     = "<a href='https://api.zdoo.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>biz <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
+$lang->website        = "http://www.zdoo.org";
 
 $lang->IE6Alert = <<<EOT
     <div class='alert alert-danger' style='margin-top:100px;'>
@@ -58,7 +59,6 @@ $lang->themes['default'] = 'Default';
 $lang->themes['clear']   = 'Clear';
 
 $lang->home             = 'Home';
-$lang->welcome          = '%s ZDOO';
 $lang->messages         = "<strong><i class='icon-comment-alt'></i> %s</strong>";
 $lang->todayIs          = 'Today is %s, ';
 $lang->today            = 'Today';
@@ -230,7 +230,7 @@ $lang->user->menu->disabled = 'Disabled Users|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->ranzhi   = array('link' => 'Zdoo API|entry|admin|category=&platform=ranzhi', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->zdoo     = array('link' => 'Zdoo API|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
 $lang->entry->menu->xuanxuan = 'Xuanxuan API|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = array('link' => 'Create|entry|create|');
 $lang->entry->menu->webapp   = 'App|webapp|obtain|';
@@ -238,10 +238,11 @@ $lang->entry->menu->category = 'Category|entry|category|';
 
 $lang->system       = new stdclass();
 $lang->system->menu = new stdclass();
-$lang->system->menu->mail   = array('link' => 'Email|mail|admin|', 'alias' => 'detect,edit,save,test');
-$lang->system->menu->trash  = array('link' => 'Trash|action|trash|');
-$lang->system->menu->cron   = 'Cron|cron|index|';
-$lang->system->menu->backup = 'Backup|backup|index|';
+$lang->system->menu->mail    = array('link' => 'Email|mail|admin|', 'alias' => 'detect,edit,save,test');
+$lang->system->menu->trash   = array('link' => 'Trash|action|trash|');
+$lang->system->menu->cron    = 'Cron|cron|index|';
+$lang->system->menu->backup  = 'Backup|backup|index|';
+$lang->system->menu->license = 'License|admin|license|';
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -532,7 +533,7 @@ $lang->menu->cash->all       = 'All|trade|browse|mode=all';
 $lang->menu->cash->in        = 'Income|trade|browse|mode=in';
 $lang->menu->cash->out       = 'Expense|trade|browse|mode=out';
 $lang->menu->cash->transfer  = 'Transfer|trade|browse|mode=transfer';
-$lang->menu->cash->invest    = 'Invest|trade|browse|mode=invest';
+$lang->menu->cash->invest    = 'Invest|trade|browse|mode=invest&date=all';
 $lang->menu->cash->loan      = 'Loan|trade|browse|mode=loan';
 $lang->menu->cash->check     = 'Reconcile|depositor|check|';
 $lang->menu->cash->report    = 'Report|trade|report|';
@@ -2617,6 +2618,7 @@ $lang->task->transmitTo     = 'Transfer To';
 $lang->task->children       = 'Child';
 $lang->task->childrenAB     = 'Child';
 $lang->task->parent         = 'Parent Task';
+$lang->task->parentAB       = 'Parent';
 $lang->task->unfinished     = 'Unfinished';
 $lang->task->end            = 'End';
 $lang->task->myConsumption  = 'Man-Hour Cost';
@@ -2790,15 +2792,6 @@ $lang->package->errorConflicts               = 'Conflict with "%s"!';
 $lang->package->errorDepends                 = 'The following extension depends on this one is not installed or the version is incorrect:<br /><br /> %s';
 $lang->package->errorIncompatible            = 'The extension with your ZDOO is incompatible.';
 $lang->package->errorUninstallDepends        = '"%s" is dependent on this extension which cannot be uninstalled.';
-/* sys/queue */
-$lang->queue->common  = 'Queue';
-$lang->queue->index   = 'Index';
-$lang->queue->setting = 'Settings';
-
-$lang->queue->typeList['mail']     = 'Email';
-$lang->queue->typeList['message']  = 'Browser Message';
-$lang->queue->typeList['webhook']  = 'Webhook';
-$lang->queue->typeList['xuanxuan'] = 'XuanXuan';
 /* sys/todo */
 if(!isset($lang->todo)) $lang->todo = new stdclass();
 $lang->todo->common       = 'Todo';
@@ -3217,6 +3210,8 @@ $lang->my->contractActionWidth = 320;
 $lang->my->orderActionWidth    = 200;
 $lang->my->projectActionWidth  = 210;
 $lang->my->taskActionWidth     = 280;
+
+$lang->my->licenseInfo = "You are using the built-in license of the zdoo system, the users limit is %s, the expiration time is %s, please apply for a formal authorization in time.";
 /* sys/tree */
 $lang->tree->common      = "Tree";
 $lang->tree->add         = "Add";
@@ -3422,6 +3417,25 @@ $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->createUser  = 'User';
 $lang->admin->shortcuts->company     = 'Company';
 $lang->admin->shortcuts->createEntry = 'Application';
+
+$lang->admin->license       = 'License';
+$lang->admin->uploadLicense = 'Upload License';
+$lang->admin->applyLicense  = 'Apply License';
+$lang->admin->refresh       = 'Refresh';
+
+$lang->admin->licenseInfo['alllife'] = 'Permanent';
+$lang->admin->licenseInfo['nouser']  = 'Unlimited Users';
+
+$lang->admin->property = new stdclass();
+$lang->admin->property->companyName = 'Company Name';
+$lang->admin->property->startDate   = 'Start';
+$lang->admin->property->expireDate  = 'End';
+$lang->admin->property->user        = 'No. of User';
+$lang->admin->property->ip          = 'IP';
+$lang->admin->property->mac         = 'MAC Address';
+$lang->admin->property->domain      = 'Domains';
+
+$lang->admin->notWritable = '<code>%s</code> is not writable. Modify permissions and refresh.';
 /* sys/block */
 $lang->block->common = 'Block';
 $lang->block->name   = 'Name';
@@ -4213,7 +4227,7 @@ $lang->cron->statusList['normal']  = 'Normal';
 $lang->cron->statusList['running'] = 'Running';
 $lang->cron->statusList['stop']    = 'Stop';
 
-$lang->cron->typeList['ranzhi'] = 'Self call';
+$lang->cron->typeList['zdoo']   = 'Self call';
 $lang->cron->typeList['system'] = 'System command';
 
 $lang->cron->toggleList['start'] = 'Enable';
@@ -4488,7 +4502,7 @@ $lang->entry->controlList['simple'] = 'Transparent';
 $lang->entry->integrationList[1] = 'Open';
 $lang->entry->integrationList[0] = 'Close';
 
-$lang->entry->platformList['ranzhi']   = 'ZDOO';
+$lang->entry->platformList['zdoo']     = 'ZDOO';
 $lang->entry->platformList['xuanxuan'] = 'XuanXuan';
 
 $lang->entry->errmsg['PARAM_CODE_MISSING']    = 'Param code is missing.';
@@ -4681,6 +4695,15 @@ $lang->group->placeholder->tree = 'Including area, industry, income and expense,
 $lang->group->placeholder->lang = 'Including product status, product line, customer type, customer size, customer level, customer status, currency and role';
 
 include (dirname(__FILE__) . '/resource.php');
+/* sys/notify */
+$lang->notify->common  = 'Queue';
+$lang->notify->index   = 'Index';
+$lang->notify->setting = 'Settings';
+
+$lang->notify->typeList['mail']     = 'Email';
+$lang->notify->typeList['message']  = 'Browser Message';
+$lang->notify->typeList['webhook']  = 'Webhook';
+$lang->notify->typeList['xuanxuan'] = 'XuanXuan';
 /* sys/setting */
 $lang->setting->common = 'Settings';
 $lang->setting->reset  = 'Reset';
@@ -4769,7 +4792,6 @@ $lang->user->nickname  = 'Nickname';
 $lang->user->dept      = 'Department';
 $lang->user->role      = 'Role';
 $lang->user->avatar    = 'Avatar';
-$lang->user->birthyear = 'Birthyear';
 $lang->user->birthday  = 'Birthday';
 $lang->user->gender    = 'Gender';
 $lang->user->email     = 'Email';
@@ -4788,9 +4810,7 @@ $lang->user->join      = 'Join date';
 $lang->user->visits    = 'Visit';
 $lang->user->ip        = 'Last IP';
 $lang->user->last      = 'Last login';
-$lang->user->allowTime = 'Allow time';
 $lang->user->status    = 'Status';
-$lang->user->alert     = 'Your account is disabled';
 $lang->user->keepLogin = 'Keep Login';
 $lang->user->ignore    = 'Ignore';
 
@@ -4801,7 +4821,6 @@ $lang->user->view            = "User info";
 $lang->user->create          = "Add User";
 $lang->user->edit            = "Edit";
 $lang->user->changePassword  = "Change password";
-$lang->user->recoverPassword = "Forgot password";
 $lang->user->newPassword     = "New password";
 $lang->user->update          = "Edit";
 $lang->user->delete          = "Delete";
@@ -4809,41 +4828,30 @@ $lang->user->browse          = "Borwse";
 $lang->user->deny            = "Access is denied.";
 $lang->user->confirmDelete   = "Do you want to delete this user?";
 $lang->user->confirmActivate = "Do you want to activate this user?";
+$lang->user->login           = "Login";
 $lang->user->relogin         = "Login again";
-$lang->user->asGuest         = "Guest login";
 $lang->user->goback          = "Back";
-$lang->user->allUsers        = 'All';
-$lang->user->submit          = "Submit";
 $lang->user->forbid          = 'Disable';
-$lang->user->forbidList      = 'Disabled Users';
-$lang->user->normalList      = 'Active Users';
 $lang->user->active          = 'Active';
-$lang->user->setReferer      = 'Set Referrer';
-$lang->user->vcard           = 'Vcard';
 $lang->user->uploadAvatar    = 'Upload Avatar';
 $lang->user->cropAvatar      = 'Crop Avatar';
 $lang->user->cropAvatarTip   = 'Drag to crop your avatar';
+$lang->user->cropImageTip    = 'Avatar image is too small，建议图片大小至少为 48x48, the recommended image size is at least 48x48, the current image size is %s';
 $lang->user->adminUser       = 'User';
 $lang->user->setRole         = 'Role Setting';
 
 $lang->user->profile     = 'Profile';
 $lang->user->editProfile = 'Edit';
-$lang->user->thread      = 'My Thread';
-$lang->user->reply       = 'My Reply';
-$lang->user->message     = 'My Message';
 
 $lang->user->inputAccount   = 'Please enter an account';
 $lang->user->inputColleague = "Please enter a colleauge name";
 $lang->user->inputPassword  = 'Please enter password';
 $lang->user->searchUser     = 'Search';
 
-$lang->user->loginWelcome  = 'Welcome to Zdoo';
-$lang->user->zdooTitle     = 'Enterprise Collaboration System';
 $lang->user->errorDeny     = "Sorry, you don't have the permission to visit <b>%s</b> <b>%s</b>. Please contact the administrator.<br/> This page will jump to the homepage after 5 seconds";
 $lang->user->loginFailed   = "Login failed. Check you account and password.";
 $lang->user->locked        = "Failed too many times. Please log in again in 10 minutes.";
 $lang->user->lockedForEver = "The user is disabled permanently.";
-$lang->user->forbidSuccess = 'Forbidden.';
 $lang->user->actionFail    = 'Failed.';
 $lang->user->uploadSuccess = 'Uploaded.';
 $lang->user->actionError   = 'Error. There are records created by this user.';
@@ -4855,9 +4863,6 @@ $lang->user->reviewProcess['makeup']   = 'Makeup';
 $lang->user->reviewProcess['overtime'] = 'Overtime';
 $lang->user->reviewProcess['lieu']     = 'Lieu';
 $lang->user->reviewProcess['refund']   = 'Refund';
-
-$lang->user->forbidUser = 'Manage users';
-$lang->user->operate    = 'Operate';
 
 $lang->user->genderList = $lang->genderList;
 
@@ -4871,22 +4876,6 @@ $lang->user->statusList->normal    = "<label class='label label-success'>Normal<
 
 $lang->user->notice = new stdclass();
 $lang->user->notice->password = '>= 6 numbers/letters';
-
-$lang->user->login  = new stdclass();
-$lang->user->login->common  = "Login";
-$lang->user->login->welcome = 'Welcome';
-$lang->user->login->why     = 'Login to enjoy more features';
-
-$lang->user->control = new stdclass();
-$lang->user->control->common      = 'Dashboard';
-$lang->user->control->welcome     = 'Welcome, <strong>%s</strong>';
-$lang->user->control->lblPassword = "Leave it blank and nothing will be changed.";
-
-$lang->user->control->menus[10] = '<i class="icon-large icon-user"></i> Profile <i class="icon-angle-right"></i>|user|profile';
-$lang->user->control->menus[20] = '<i class="icon-large icon-edit"></i> Edit <i class="icon-angle-right"></i>|user|edit';
-//$lang->user->control->menus[28] = '<i class="icon-large icon-comments-alt"></i> Messages <i class="icon-angle-right"></i>|user|message';
-$lang->user->control->menus[30] = '<i class="icon-large icon-share"></i> Thread <i class="icon-angle-right"></i>|user|thread';
-$lang->user->control->menus[40] = '<i class="icon-large icon-mail-reply-all"></i> Reply <i class="icon-angle-right"></i>|user|reply';
 
 $lang->user->colleagueMenuName = 'Colleague';
 
@@ -4921,31 +4910,6 @@ $lang->user->roleList['servicemgr'] = 'Service Manager';
 $lang->user->roleList['supportmgr'] = 'Support Manager';
 $lang->user->roleList['top']        = 'Senior Manager';
 $lang->user->roleList['others']     = 'Other';
-
-$lang->user->mailContent = <<<EOT
-<html>
-<head>
-<style type='text/css'>
-body{margin:0; padding:0;}
-div{padding-left:30px;}
-</style>
-</head>
-<body>
-<div style='padding-top:20px;height:60px;background:#fafafa;border-bottom:1px solid #ddd;font-size:18px;font-weight:bold'> 密码修改 </div>
-<div style='margin-top:20px;'>
-<p>Hello, %s <br />
-Please click the link to change your password: <br />
-<a href='%s' target='_blank'>%s</a>
-</p>
-<p>Reset Key: %s</p>
-</div>
-<div style='height:20px;border-bottom:1px solid #ddd;'></div>
-<div style='margin:20px 0 0 0 ;'>
-System message. Please do not reply.
-</div>
-</body>
-</html>
-EOT;
 /* sys/notice */
 $lang->notice = new stdclass();
 $lang->notice->common  = 'Error';
@@ -5095,13 +5059,13 @@ $lang->mail->secureList['tls'] = 'tls';
 $lang->mail->inputFromEmail = 'Please enter Email address';
 $lang->mail->nextStep       = 'Next';
 $lang->mail->successSaved   = 'The configuration is saved.';
-$lang->mail->subject        = "This is a testing Email from Zdoo.";
+$lang->mail->subject        = "Testing Email.";
 $lang->mail->content        = 'If you see this notice, it means that the Email notification feature is enabled!';
 $lang->mail->sendSuccess    = 'Sent!';
 $lang->mail->needConfigure  = "Configuration is not found. Configure it first.";
 
 $lang->mail->mailContentTip = <<<EOT
-<strong>%s</strong>(%s) Powered by <a href='https://www.zdoo.com' target='blank'>Zdoo OA</a>.<br />
+<strong>%s</strong>(%s) Powered by <a href='https://www.zdoo.com' target='blank'>ZDOO OA</a>.<br />
 <a href='http://en.easysoft.com' target='blank'>Nature Easy Soft</a>
 EOT;
 $lang->mail->openTip = 'Send E-mail notifications, if any changes to orders, customers and tasks, reviews and reimbursements.';

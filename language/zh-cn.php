@@ -32,12 +32,13 @@ $lang->apps->sys        = '通用';
 $lang->apps->team       = '团队';
 $lang->apps->superadmin = '后台';
 
-$lang->zdoo      = 'ZDOO';
-$lang->agreement = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩ZDOO系统的任何标志及链接。</span>";
-$lang->poweredBy = "<a href='http://www.zdoo.com/?v=%s' target='_blank'>{$lang->zdoo}%s</a>";
-$lang->ipLimited = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>抱歉，管理员限制当前IP登录，请联系管理员解除限制。</body></html>";
+$lang->zdoo           = 'ZDOO';
+$lang->zdooTitle      = '全协同管理平台';
+$lang->agreement      = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩ZDOO系统的任何标志及链接。</span>";
+$lang->poweredBy      = "<a href='https://www.zdoo.com/?v=%s' target='_blank'>%s %s</a>";
+$lang->ipLimited      = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>抱歉，管理员限制当前IP登录，请联系管理员解除限制。</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>艾体验</strong></a>";
-$lang->proVersion     = "<a href='https://api.zdoo.com/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>专业版 <i class='text-danger icon-pro-version'></i></a> &nbsp; ";
+$lang->bizVersion     = "<a href='https://api.zdoo.com/goto.php?item=bizversion&from=footer' target='_blank' id='proLink' class='text-important'>企业版 <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
 $lang->website        = "https://www.zdoo.com";
 
 $lang->IE6Alert = <<<EOT
@@ -58,7 +59,6 @@ $lang->themes['default'] = '默认';
 $lang->themes['clear']   = '清晰';
 
 $lang->home             = '首页';
-$lang->welcome          = "%s协同管理系统";
 $lang->messages         = "<strong><i class='icon-comment-alt'></i> %s</strong>";
 $lang->todayIs          = '今天是%s，';
 $lang->today            = '今天';
@@ -125,6 +125,7 @@ $lang->loading        = '稍候...';
 $lang->saveSuccess    = '保存成功';
 $lang->setSuccess     = '设置成功';
 $lang->sendSuccess    = '发送成功';
+$lang->deleteSuccess  = '删除成功';
 $lang->fail           = '失败';
 $lang->noResultsMatch = '没有匹配的选项';
 $lang->searchMore     = "搜索此关键字的更多结果：";
@@ -175,7 +176,7 @@ $lang->js->timeout               = '网络超时,请重试';
 $lang->js->confirmDiscardChanges = '表单已更改，确定关闭？';
 $lang->js->yes                   = '是';
 $lang->js->no                    = '否';
-$lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.zdoo.com/book/ranzhi/165.html' target='_blank'>安装手册</a>";
+$lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.zdoo.com/book/zdoo/165.html' target='_blank'>安装手册</a>";
 
 $lang->company = new stdclass();
 $lang->company->contactUs = '联系我们';
@@ -230,7 +231,7 @@ $lang->user->menu->disabled = '禁用成员|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->ranzhi   = array('link' => 'ZDOO应用|entry|admin|category=&platform=ranzhi', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->zdoo     = array('link' => 'ZDOO应用|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
 $lang->entry->menu->xuanxuan = '喧喧应用|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = '添加应用|entry|create|';
 $lang->entry->menu->webapp   = 'WEB应用|webapp|obtain|';
@@ -238,10 +239,11 @@ $lang->entry->menu->category = '分组|entry|category|';
 
 $lang->system       = new stdclass();
 $lang->system->menu = new stdclass();
-$lang->system->menu->mail   = array('link' => '发信|mail|admin|', 'alias' => 'detect,edit,save,test');
-$lang->system->menu->trash  = array('link' => '回收站|action|trash|');
-$lang->system->menu->cron   = '计划任务|cron|index|';
-$lang->system->menu->backup = '备份|backup|index|';
+$lang->system->menu->mail    = array('link' => '发信|mail|admin|', 'alias' => 'detect,edit,save,test');
+$lang->system->menu->trash   = array('link' => '回收站|action|trash|');
+$lang->system->menu->cron    = '计划任务|cron|index|';
+$lang->system->menu->backup  = '备份|backup|index|';
+$lang->system->menu->license = '授权|admin|license|';
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -532,7 +534,7 @@ $lang->menu->cash->all       = '所有|trade|browse|mode=all';
 $lang->menu->cash->in        = '收入|trade|browse|mode=in';
 $lang->menu->cash->out       = '支出|trade|browse|mode=out';
 $lang->menu->cash->transfer  = '转账|trade|browse|mode=transfer';
-$lang->menu->cash->invest    = '投资|trade|browse|mode=invest';
+$lang->menu->cash->invest    = '投资|trade|browse|mode=invest&date=all';
 $lang->menu->cash->loan      = '借贷|trade|browse|mode=loan';
 $lang->menu->cash->check     = '对账|depositor|check|';
 $lang->menu->cash->report    = '报表|trade|report|';
@@ -2622,6 +2624,7 @@ $lang->task->transmitTo     = '转交给';
 $lang->task->children       = '子任务';
 $lang->task->childrenAB     = '子';
 $lang->task->parent         = '父任务';
+$lang->task->parentAB       = '父';
 $lang->task->unfinished     = '未完成';
 $lang->task->end            = '结束';
 $lang->task->myConsumption  = '我的消耗';
@@ -2795,15 +2798,6 @@ $lang->package->errorConflicts               = '与插件“%s”冲突！';
 $lang->package->errorDepends                 = '以下依赖插件没有安装或版本不正确：<br /><br /> %s';
 $lang->package->errorIncompatible            = '该插件与您的ZDOO版本不兼容';
 $lang->package->errorUninstallDepends        = '插件“%s”依赖该插件，不能卸载';
-/* sys/queue */
-$lang->queue->common  = '消息队列';
-$lang->queue->index   = '首页';
-$lang->queue->setting = '设置';
-
-$lang->queue->typeList['mail']     = '邮件';
-$lang->queue->typeList['message']  = '浏览器通知';
-$lang->queue->typeList['webhook']  = 'Webhook';
-$lang->queue->typeList['xuanxuan'] = '喧喧';
 /* sys/todo */
 if(!isset($lang->todo)) $lang->todo = new stdclass();
 $lang->todo->common       = '待办';
@@ -3222,6 +3216,8 @@ $lang->my->contractActionWidth = 260;
 $lang->my->orderActionWidth    = 220;
 $lang->my->projectActionWidth  = 180;
 $lang->my->taskActionWidth     = 240;
+
+$lang->my->licenseInfo = "您使用的是zdoo系统内置%s人授权，到期时间为%s，请及时申请正式授权。";
 /* sys/tree */
 $lang->tree->common        = "类目";
 $lang->tree->add           = "添加";
@@ -3427,6 +3423,25 @@ $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->createUser  = '添加成员';
 $lang->admin->shortcuts->company     = '公司信息';
 $lang->admin->shortcuts->createEntry = '添加应用';
+
+$lang->admin->license       = '授权信息';
+$lang->admin->uploadLicense = '替换授权';
+$lang->admin->applyLicense  = '申请授权';
+$lang->admin->refresh       = '刷新';
+
+$lang->admin->licenseInfo['alllife'] = '终生';
+$lang->admin->licenseInfo['nouser']  = '不限人数';
+
+$lang->admin->property = new stdclass();
+$lang->admin->property->companyName = '公司名称';
+$lang->admin->property->startDate   = '授权时间';
+$lang->admin->property->expireDate  = '到期时间';
+$lang->admin->property->user        = '人数';
+$lang->admin->property->ip          = '授权IP';
+$lang->admin->property->mac         = '授权MAC';
+$lang->admin->property->domain      = '授权域名';
+
+$lang->admin->notWritable = '<code>%s</code> 目录不可写，请修改目录权限正确后，刷新。';
 /* sys/block */
 $lang->block->common = '区块';
 $lang->block->name   = '区块名称';
@@ -4218,7 +4233,7 @@ $lang->cron->statusList['normal']  = '正常';
 $lang->cron->statusList['running'] = '运行中';
 $lang->cron->statusList['stop']    = '停止';
 
-$lang->cron->typeList['ranzhi'] = 'ZDOO自调用';
+$lang->cron->typeList['zdoo']   = 'ZDOO自调用';
 $lang->cron->typeList['system'] = '操作系统命令';
 
 $lang->cron->toggleList['start'] = '激活';
@@ -4493,7 +4508,7 @@ $lang->entry->controlList['simple'] = '透明';
 $lang->entry->integrationList[1] = '启用';
 $lang->entry->integrationList[0] = '关闭';
 
-$lang->entry->platformList['ranzhi']   = 'ZDOO';
+$lang->entry->platformList['zdoo']     = 'ZDOO';
 $lang->entry->platformList['xuanxuan'] = '喧喧';
 
 $lang->entry->errmsg['PARAM_CODE_MISSING']    = '缺少code参数';
@@ -4686,6 +4701,15 @@ $lang->group->placeholder->tree = '类目包括对区域、行业、收入科目
 $lang->group->placeholder->lang = '设置包括对产品状态、产品线、客户类型、客户规模、客户级别、客户状态、货币设置、维护角色的权限设置';
 
 include (dirname(__FILE__) . '/resource.php');
+/* sys/notify */
+$lang->notify->common  = '通知';
+$lang->notify->index   = '首页';
+$lang->notify->setting = '设置';
+
+$lang->notify->typeList['mail']     = '邮件';
+$lang->notify->typeList['message']  = '浏览器通知';
+$lang->notify->typeList['webhook']  = 'Webhook';
+$lang->notify->typeList['xuanxuan'] = '喧喧';
 /* sys/setting */
 $lang->setting->common = '设置';
 $lang->setting->reset  = '恢复默认';
@@ -4774,7 +4798,6 @@ $lang->user->nickname  = '昵称';
 $lang->user->dept      = '所属部门';
 $lang->user->role      = '角色';
 $lang->user->avatar    = '头像';
-$lang->user->birthyear = '出生年';
 $lang->user->birthday  = '出生日期';
 $lang->user->gender    = '性别';
 $lang->user->email     = '邮箱';
@@ -4793,9 +4816,7 @@ $lang->user->join      = '加入日期';
 $lang->user->visits    = '访问次数';
 $lang->user->ip        = '最后IP';
 $lang->user->last      = '最后登录';
-$lang->user->allowTime = '开放时间';
 $lang->user->status    = '状态';
-$lang->user->alert     = '您的帐号已被禁用';
 $lang->user->keepLogin = '保持登录';
 $lang->user->ignore    = '忽略';
 
@@ -4806,7 +4827,6 @@ $lang->user->view            = "成员详情";
 $lang->user->create          = "添加成员";
 $lang->user->edit            = "编辑成员";
 $lang->user->changePassword  = "更改密码";
-$lang->user->recoverPassword = "忘记密码";
 $lang->user->newPassword     = "新密码";
 $lang->user->update          = "编辑成员";
 $lang->user->delete          = "删除成员";
@@ -4814,41 +4834,30 @@ $lang->user->browse          = "浏览成员";
 $lang->user->deny            = "访问受限";
 $lang->user->confirmDelete   = "您确认删除该成员吗？";
 $lang->user->confirmActivate = "您确认激活该成员吗？";
+$lang->user->login           = "登录";
 $lang->user->relogin         = "重新登录";
-$lang->user->asGuest         = "游客访问";
 $lang->user->goback          = "返回前一页";
-$lang->user->allUsers        = '全部成员';
-$lang->user->submit          = "提交";
 $lang->user->forbid          = '禁用';
-$lang->user->forbidList      = '禁用成员列表';
-$lang->user->normalList      = '普通成员列表';
 $lang->user->active          = '激活';
-$lang->user->setReferer      = '设置referer';
-$lang->user->vcard           = '获取二维码名片';
 $lang->user->uploadAvatar    = '上传头像';
 $lang->user->cropAvatar      = '裁剪头像';
 $lang->user->cropAvatarTip   = '拖拽选框来选择头像裁剪范围';
+$lang->user->cropImageTip    = '所使用的头像图片过小，建议图片大小至少为 48x48，当前图片大小为 %s';
 $lang->user->adminUser       = '组织';
 $lang->user->setRole         = '角色设置';
 
 $lang->user->profile     = '个人信息';
 $lang->user->editProfile = '编辑信息';
-$lang->user->thread      = '我的主题';
-$lang->user->reply       = '我的回贴';
-$lang->user->message     = '我的消息';
 
 $lang->user->inputAccount   = '请输入用户名';
 $lang->user->inputColleague = '请输入同事姓名';
 $lang->user->inputPassword  = '请输入密码';
 $lang->user->searchUser     = '搜索';
 
-$lang->user->loginWelcome  = '欢迎使用ZDOO协同办公系统';
-$lang->user->zdooTitle     = '全协同管理平台';
 $lang->user->errorDeny     = "抱歉，您无权访问『<b>%s</b>』模块的『<b>%s</b>』功能。请联系管理员获取权限。点击后退返回上页。<br/> 5秒钟后将自动返回首页...";
 $lang->user->loginFailed   = "登录失败，请检查您的成员名或密码是否填写正确。";
 $lang->user->locked        = "成员已经被锁定，请%s后再重新尝试登录";
 $lang->user->lockedForEver = "成员已经被永久禁用。";
-$lang->user->forbidSuccess = '禁用成功';
 $lang->user->actionFail    = '操作失败';
 $lang->user->uploadSuccess = '上传成功';
 $lang->user->actionError   = '操作失败，原因是 %s 存在该用户未审批的数据。';
@@ -4860,9 +4869,6 @@ $lang->user->reviewProcess['makeup']   = '补班';
 $lang->user->reviewProcess['overtime'] = '加班';
 $lang->user->reviewProcess['lieu']     = '调休';
 $lang->user->reviewProcess['refund']   = '报销';
-
-$lang->user->forbidUser = '禁用管理';
-$lang->user->operate    = '操作';
 
 $lang->user->genderList = $lang->genderList;
 
@@ -4876,22 +4882,6 @@ $lang->user->statusList->normal    = "<label class='label label-success'>正常<
 
 $lang->user->notice = new stdclass();
 $lang->user->notice->password = '字母和数字组合，最少六位';
-
-$lang->user->login  = new stdclass();
-$lang->user->login->common  = "登录";
-$lang->user->login->welcome = '已有帐号';
-$lang->user->login->why     = '欢迎登陆，享用会员专属服务！';
-
-$lang->user->control = new stdclass();
-$lang->user->control->common      = '成员中心';
-$lang->user->control->welcome     = '欢迎您，<strong>%s</strong>';
-$lang->user->control->lblPassword = "留空，则保持不变。";
-
-$lang->user->control->menus[10] = '<i class="icon-large icon-user"></i> 个人信息 <i class="icon-angle-right"></i>|user|profile';
-$lang->user->control->menus[20] = '<i class="icon-large icon-edit"></i> 编辑信息 <i class="icon-angle-right"></i>|user|edit';
-//$lang->user->control->menus[28] = '<i class="icon-large icon-comments-alt"></i> 我的消息 <i class="icon-angle-right"></i>|user|message';
-$lang->user->control->menus[30] = '<i class="icon-large icon-share"></i> 我的主题 <i class="icon-angle-right"></i>|user|thread';
-$lang->user->control->menus[40] = '<i class="icon-large icon-mail-reply-all"></i> 我的回帖 <i class="icon-angle-right"></i>|user|reply';
 
 $lang->user->colleagueMenuName = '同事';
 
@@ -4926,31 +4916,6 @@ $lang->user->roleList['servicemgr'] = '客服主管';
 $lang->user->roleList['supportmgr'] = '技术支持主管';
 $lang->user->roleList['top']        = '高层管理';
 $lang->user->roleList['others']     = '其他';
-
-$lang->user->mailContent = <<<EOT
-<html>
-<head>
-<style type='text/css'>
-body{margin:0;padding:0;}
-div{padding-left:30px;}
-</style>
-</head>
-<body>
-<div style='padding-top:20px;height:60px;background:#fafafa;border-bottom:1px solid #ddd;font-size:18px;font-weight:bold'> 密码修改 </div>
-<div style='margin-top:20px;'>
-<p>尊敬的成员 %s <br />
-请点击下面的链接，进行密码修改: <br >
-<a href='%s' target='_blank'>%s</a>
-</p>
-<p>重置码：%s</p>
-</div>
-<div style='height:20px;border-bottom:1px solid #ddd;'></div>
-<div style='margin:20px 0 0 0 ;'>
- 系统发信，请勿回复
-</div>
-</body>
-</html>
-EOT;
 /* sys/notice */
 $lang->notice = new stdclass();
 $lang->notice->common  = '错误';
