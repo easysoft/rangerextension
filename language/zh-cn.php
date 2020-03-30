@@ -231,7 +231,7 @@ $lang->user->menu->disabled = '禁用成员|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->zdoo     = array('link' => 'ZDOO应用|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->zdoo     = array('link' => 'ZDOO应用|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin, bindUser');
 $lang->entry->menu->xuanxuan = '喧喧应用|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = '添加应用|entry|create|';
 $lang->entry->menu->webapp   = 'WEB应用|webapp|obtain|';
