@@ -2782,7 +2782,7 @@ $lang->package->errorPackageFileExists       = 'There is a file with the same na
 $lang->package->errorDownloadFailed          = 'Download failed. Please try again. Or you can download it manually and upload it to install.';
 $lang->package->errorMd5Checking             = 'Failed to check the download files. Please download it manually and upload it to install';
 $lang->package->errorExtracted               = 'Failed to get the package file <strong> %s </strong>. The error is:<br />%s';
-$lang->package->errorCheckIncompatible       = 'This extenion is not compatible with current ZDOO version. <h3>You can <a href="%s" class="loadInModal">Force %s</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
+$lang->package->errorCheckIncompatible       = 'This extenion is not compatible with current ZDOO version. ZDOO may not be used after %s. <h3>You can <a href="%s" class="loadInModal">Force %s</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
 $lang->package->errorFileConflicted          = 'There are some files conflicted: <br />%s <h3>You can <a href="%s" class="loadInModal">Overide them</a> or <a href="#" onclick=parent.location.href="%s">Cancel</a></h3>.';
 $lang->package->errorPackageNotFound         = 'The package file <strong>%s </strong> cannot be found. It might be download failure. Try again.';
 $lang->package->errorTargetPathNotWritable   = 'Target path <strong>%s </strong>is not writable.';
