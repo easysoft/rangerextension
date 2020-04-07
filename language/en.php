@@ -1545,7 +1545,7 @@ $lang->contract->returnInfo         = "<p>%s, received by <strong>%s</strong>, %
 $lang->contract->deliveryInfo       = "<p>%s, delivered by %s.</p>";
 $lang->contract->deleteReturnInfo   = "%s in %s";
 $lang->contract->deleteDeliveryInfo = "in %s";
-$lang->contract->teamTips           = "No user is in the team, so the contribution is not saved.";
+$lang->contract->teamTips           = 'Not saved when Member is empty or Contribution and Commission are both empty.';
 
 $lang->contract->placeholder = new stdclass();
 $lang->contract->placeholder->real = 'Turnover';
@@ -1554,6 +1554,7 @@ $lang->contract->team = new stdclass();
 $lang->contract->team->common       = 'Team';
 $lang->contract->team->account      = 'Member';
 $lang->contract->team->contribution = 'Contribution(%)';
+$lang->contract->team->rate         = 'Commission Rate(%)';
 $lang->contract->team->money        = 'Amount';
 $lang->contract->team->status       = 'Status';
 $lang->contract->team->accept       = 'Accept';
@@ -1566,6 +1567,8 @@ $lang->contract->team->statusList['reject'] = 'Rejected';
 
 $lang->contract->error = new stdclass();
 $lang->contract->error->wrongContribution = '<strong>Contribution</strong> should be number.';
+$lang->contract->error->wrongRate         = '<strong>Commission rate</strong> should be number';
+$lang->contract->error->wrongTotalRate    = '<strong>Total commission rate</strong> should not be greater than 100%';
 
 $lang->plan = new stdclass();
 $lang->plan->amount = $lang->contract->thisAmount;
