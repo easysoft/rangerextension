@@ -230,7 +230,7 @@ $lang->user->menu->disabled = 'Disabled Users|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->zdoo     = array('link' => 'Zdoo API|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->zdoo     = array('link' => 'ZDOO API|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
 $lang->entry->menu->xuanxuan = 'Xuanxuan API|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = array('link' => 'Create|entry|create|');
 $lang->entry->menu->webapp   = 'App|webapp|obtain|';
@@ -404,7 +404,7 @@ $lang->error->noCurlExt    = 'No curl extension.';
 $lang->error->notInt       = '<strong>%s</strong> should not be a interger.';
 $lang->error->pasteImg     = 'Your browser does not support image pasting.';
 $lang->error->accessDenied = 'Access is denied.';
-$lang->error->deny         = "Sorry, you don't have the permission to access <b>%s</b>'s <b>%s</b>. Please contact your Zdoo administrator.";
+$lang->error->deny         = "Sorry, you don't have the permission to access <b>%s</b>'s <b>%s</b>. Please contact your ZDOO administrator.";
 
 $lang->pager = new stdclass();
 $lang->pager->noRecord     = "No records yet.";
@@ -3054,8 +3054,8 @@ $lang->install->error   = 'Error ';
 $lang->install->start            = 'Start';
 $lang->install->keepInstalling   = 'Continue  installing this version';
 $lang->install->seeLatestRelease = 'See the latest release.';
-$lang->install->welcome          = 'Welcome to Zdoo community.';
-$lang->install->license          = 'Zdoo is under license of Z PUBLIC LICENSE(ZPL) 1.2. ';
+$lang->install->welcome          = "Welcome to {$lang->zdoo}.";
+$lang->install->license          = 'ZDOO is under license of Z PUBLIC LICENSE(ZPL) 1.2. ';
 $lang->install->desc             = <<<EOT
 <blockquote>
   <strong>{$lang->zdoo}</strong> is developed by <strong><a href='http://en.easysoft.com' target='_blank' class='red'>QingDao Nature Easy Soft Network Technology Co.,Ltd.</a></strong>
@@ -4345,7 +4345,7 @@ $lang->customer->moreInfo          = 'More Info';
 $lang->customer->purchasedProducts = 'Purchased Product';
 
 $lang->customer->sourceList['']              = '';
-$lang->customer->sourceList['visit']         = 'Visit Zdoo Website';
+$lang->customer->sourceList['visit']         = 'Visit ZDOO Website';
 $lang->customer->sourceList['advertisement'] = 'Advertisement';
 $lang->customer->sourceList['introduce']     = 'Word of Mouth';
 $lang->customer->sourceList['activity']      = 'Event';
@@ -4985,7 +4985,7 @@ $lang->upgrade->fail    = 'Failed';
 $lang->upgrade->success = 'Upgraded';
 $lang->upgrade->tohome  = 'Back';
 
-$lang->upgrade->index         = 'Upgrad Zdoo';
+$lang->upgrade->index         = 'Upgrad ZDOO';
 $lang->upgrade->backup        = 'Back Up';
 $lang->upgrade->selectVersion = 'Select version to upgrade';
 $lang->upgrade->confirm       = 'Confirm the SQL to be excuted.';
@@ -4995,7 +4995,7 @@ $lang->upgrade->redeploy      = 'Please re-deploy the App directory before upgra
 $lang->upgrade->redeployDesc  = "<h5>If any code changes, the App directory has to be deployed.</h5><div class='text-important'>operating steps: delete app directory before copy new package.</div>";
 $lang->upgrade->removeTodo    = 'Please remove %s directory before upgrading.';
 $lang->upgrade->removeTodoTip = "<h5>If any code changes, %s directory has to be removed.</h5><div class='text-important'>operating steps: delete directory of %s.</div>";
-$lang->upgrade->updateLicense = 'The Zdoo license has changed to Z PUBLIC LICENSE(ZPL) 1.1.';
+$lang->upgrade->updateLicense = 'The ZDOO license has changed to Z PUBLIC LICENSE(ZPL) 1.1.';
 
 $lang->upgrade->majorList['3_5'] = array();
 $lang->upgrade->majorList['3_5']['1'] = 'Primary Income';

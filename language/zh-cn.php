@@ -3064,7 +3064,7 @@ $lang->install->error   = '错误 ';
 $lang->install->start            = '开始安装';
 $lang->install->keepInstalling   = '继续安装当前版本';
 $lang->install->seeLatestRelease = '看看最新的版本';
-$lang->install->welcome          = "您睿智地选择了$lang->zdoo!";
+$lang->install->welcome          = "您睿智地选择了{$lang->zdoo}!";
 $lang->install->license          = 'ZDOO使用 Z PUBLIC LICENSE(ZPL) 1.2 授权协议。';
 $lang->install->desc             = <<<EOT
 <blockquote>
