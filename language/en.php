@@ -216,6 +216,9 @@ $lang->menu->sys->entry   = 'App|entry|admin|';
 $lang->menu->sys->system  = 'System|mail|admin|';
 $lang->menu->sys->package = 'Extension|package|browse|';
 
+$lang->menu->dividerMenu = new stdclass();
+$lang->menu->dividerMenu->sys = ',entry,';
+
 $lang->message = new stdclass(); 
 $lang->blog    = new stdclass(); 
 
@@ -266,6 +269,8 @@ $lang->menu->dashboard->review   = 'Review|my|review|';
 $lang->menu->dashboard->company  = 'Company|my|company|';
 $lang->menu->dashboard->dynamic  = 'Dynamics|my|dynamic|';
 $lang->menu->dashboard->contact  = 'Contact|my|contact|';
+
+$lang->menu->dividerMenu->dashboard = ',project,company,';
 
 if(!isset($lang->customer)) $lang->customer = new stdclass();
 $lang->customer->menu = new stdclass();
@@ -527,6 +532,8 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = 'CASH';
 
+$lang->menu->dividerMenu->cash = ',out,check,holiday,';
+
 $lang->menu->cash = new stdclass();
 $lang->menu->cash->dashboard = 'Home|dashboard|index|';
 $lang->menu->cash->all       = 'All|trade|browse|mode=all';
@@ -570,6 +577,8 @@ include(dirname(__FILE__) . '/menuOrder.php');
 /* crm/common */
 $lang->app = new stdclass();
 $lang->app->name = 'CRM';
+
+$lang->menu->dividerMenu->crm = ',customer,product,';
 
 $lang->menu->crm = new stdclass();
 $lang->menu->crm->dashboard = 'Home|dashboard|index|';
@@ -676,6 +685,8 @@ include (dirname(__FILE__) . '/menuOrder.php');
 /* oa/common */
 $lang->app = new stdclass();
 $lang->app->name = 'OA';
+
+$lang->menu->dividerMenu->oa = ',attend,lieu,holiday,';
 
 $lang->menu->oa = new stdclass();
 $lang->menu->oa->dashboard = 'Home|dashboard|index|';
@@ -806,6 +817,8 @@ include (dirname(__FILE__) . '/menuOrder.php');
 /* team/common */
 $lang->app = new stdclass();
 $lang->app->name = 'TEAM';
+
+$lang->menu->dividerMenu->team = ',user,';
 
 $lang->menu->team = new stdclass();
 $lang->menu->team->dashboard = 'Home|dashboard|index|';
@@ -1261,6 +1274,7 @@ $lang->order->infoRealAmount = 'Actual';
 $lang->order->infoContacted  = 'Contacted on';
 $lang->order->infoNextDate   = 'Next Contact on';
 $lang->order->deny           = 'You has no permission to create %s.';
+$lang->order->checkedSummary = "Seleted %total% orders, Budget: %plan%，Actual: %real%";
 
 $lang->order->actionWidth = 200;
 /* crm/contact */

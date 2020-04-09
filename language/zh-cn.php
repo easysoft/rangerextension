@@ -217,6 +217,9 @@ $lang->menu->sys->entry   = '应用|entry|admin|';
 $lang->menu->sys->system  = '系统|mail|admin|';
 $lang->menu->sys->package = '扩展|package|browse|';
 
+$lang->menu->dividerMenu = new stdclass();
+$lang->menu->dividerMenu->sys = ',entry,';
+
 $lang->message = new stdclass();
 $lang->blog    = new stdclass();
 
@@ -267,6 +270,8 @@ $lang->menu->dashboard->review   = '审批|my|review|';
 $lang->menu->dashboard->company  = '组织|my|company|';
 $lang->menu->dashboard->dynamic  = '动态|my|dynamic|';
 $lang->menu->dashboard->contact  = '联系人|my|contact|';
+
+$lang->menu->dividerMenu->dashboard = ',project,company,';
 
 if(!isset($lang->customer)) $lang->customer = new stdclass();
 $lang->customer->menu = new stdclass();
@@ -528,6 +533,8 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = '现金记账';
 
+$lang->menu->dividerMenu->cash = ',out,check,holiday,';
+
 $lang->menu->cash = new stdclass();
 $lang->menu->cash->dashboard = '首页|dashboard|index|';
 $lang->menu->cash->all       = '所有|trade|browse|mode=all';
@@ -571,6 +578,8 @@ include(dirname(__FILE__) . '/menuOrder.php');
 /* crm/common */
 $lang->app = new stdclass();
 $lang->app->name = '客户';
+
+$lang->menu->dividerMenu->crm = ',customer,product,';
 
 $lang->menu->crm = new stdclass();
 $lang->menu->crm->dashboard = '首页|dashboard|index|';
@@ -677,6 +686,8 @@ include (dirname(__FILE__) . '/menuOrder.php');
 /* oa/common */
 $lang->app = new stdclass();
 $lang->app->name = '日常办公';
+
+$lang->menu->dividerMenu->oa = ',attend,lieu,holiday,';
 
 $lang->menu->oa = new stdclass();
 $lang->menu->oa->dashboard = '首页|dashboard|index|';
@@ -807,6 +818,8 @@ include (dirname(__FILE__) . '/menuOrder.php');
 /* team/common */
 $lang->app = new stdclass();
 $lang->app->name = '团队';
+
+$lang->menu->dividerMenu->team = ',user,';
 
 $lang->menu->team = new stdclass();
 $lang->menu->team->dashboard = '首页|dashboard|index|';
@@ -1265,6 +1278,7 @@ $lang->order->infoRealAmount = '成交金额';
 $lang->order->infoContacted  = '最后联系';
 $lang->order->infoNextDate   = '下次联系';
 $lang->order->deny           = '您没有创建%s的权限。';
+$lang->order->checkedSummary = "选中 %total% 个订单，计划金额：%plan%，成交金额：%real%";
 
 $lang->order->actionWidth = 220;
 /* crm/contact */
