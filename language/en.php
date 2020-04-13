@@ -125,6 +125,7 @@ $lang->loading        = 'Loading...';
 $lang->saveSuccess    = 'Saved';
 $lang->setSuccess     = 'Saved';
 $lang->sendSuccess    = 'Sent';
+$lang->deleteSuccess  = 'Deleted';
 $lang->fail           = 'Failed';
 $lang->noResultsMatch = 'No match found.';
 $lang->searchMore     = "More results：";
@@ -909,6 +910,8 @@ $lang->depositor->statusList['disable'] = 'Disabled';
 $lang->depositor->placeholder = new stdclass();
 $lang->depositor->placeholder->tags     = 'Please separate tags with comma.';
 $lang->depositor->placeholder->noBccomp = 'Please install bccmom extension first.';
+
+$lang->depositor->basicInfo = 'Basic';
 /* cash/trade */
 if(!isset($lang->trade)) $lang->trade = new stdclass();
 $lang->trade->common       = 'Bookkeeping';
@@ -1342,6 +1345,9 @@ $lang->contact->assign         = 'Assign';
 
 $lang->contact->basicInfo   = 'Basic Info';
 $lang->contact->contactInfo = 'Contact Info';
+$lang->contact->generalInfo  = 'General Info';
+$lang->contact->otherInfo    = 'Other Info';
+$lang->contact->customerInfo = 'Customer Info';
 
 $lang->contact->leftAt       = 'Resigned on %s';
 $lang->contact->failedAvatar = 'Failed!';
@@ -1969,6 +1975,8 @@ $lang->trip->createdBy   = 'Created By';
 $lang->trip->createdDate = 'Created';
 $lang->trip->date        = 'Date';
 $lang->trip->time        = 'Time';
+$lang->trip->dateRange   = 'Timeframe';
+$lang->trip->placeRange  = 'From&To';
 
 $lang->trip->denied    = 'Access is denied';
 $lang->trip->unique    = 'There was a Trip in %s.';

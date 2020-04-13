@@ -910,6 +910,8 @@ $lang->depositor->statusList['disable'] = '停用';
 $lang->depositor->placeholder = new stdclass();
 $lang->depositor->placeholder->tags     = '多个标签之间用逗号隔开';
 $lang->depositor->placeholder->noBccomp = '请先安装bccomp扩展';
+
+$lang->depositor->basicInfo = '基本信息';
 /* cash/trade */
 if(!isset($lang->trade)) $lang->trade = new stdclass();
 $lang->trade->common       = '记账';
@@ -1353,7 +1355,6 @@ $lang->contact->customerInfo = '客户信息';
 $lang->contact->leftAt       = '已于%s离职';
 $lang->contact->failedAvatar = '头像上传失败';
 $lang->contact->emailTip     = '多个邮箱之间用逗号或者空格隔开';
-$lang->contact->phoneTip     = '多个座机之间用逗号隔开';
 
 $lang->contact->noFile       = '没有文件';
 $lang->contact->importResult = '%s条数据导入成功，%s条数据导入失败，失败数据如下：';
