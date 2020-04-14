@@ -1180,6 +1180,8 @@ $lang->balance->create = 'Add Balance';
 $lang->balance->browse = 'Balance';
 $lang->balance->edit   = 'Edit';
 $lang->balance->delete = 'Delete';
+
+$lang->balance->createComment = '%s, add balance %s.';
 /* crm/resume */
 if(!isset($lang->resume)) $lang->resume = new stdclass();
 $lang->resume->common   = 'Resume';
@@ -3236,7 +3238,7 @@ $lang->my->orderActionWidth    = 200;
 $lang->my->projectActionWidth  = 210;
 $lang->my->taskActionWidth     = 280;
 
-$lang->my->licenseInfo = "You are using the built-in license of the zdoo system, the users limit is %s, the expiration time is %s, please apply for a formal authorization in time.";
+$lang->my->licenseInfo = "You are using the built-in license of the ZDOO system, the users limit is %s, the expiration time is %s, please apply for a formal authorization in time.";
 /* sys/tree */
 $lang->tree->common      = "Tree";
 $lang->tree->add         = "Add";
@@ -3750,6 +3752,8 @@ $lang->action->desc->dating                = '$date, <strong>$actor</strong> cre
 $lang->action->desc->manageteam            = '$date, <strong>$actor</strong> managed a commission rate.' . "\n";
 $lang->action->desc->confirmteam           = '$date, <strong>$actor</strong> confirmed a commission rate : <strong>$extra</strong>.' . "\n";
 $lang->action->desc->moved2customerpool    = '$date, <strong>$actor</strong> move to customer pool.';
+$lang->action->desc->createdbalance        = '$date, <strong>$actor</strong> add balance.';
+$lang->action->desc->forbidden             = '$date, <strong>$actor</strong> forbidden.';
 
 $lang->action->label = new stdclass();
 $lang->action->label->created     = 'created';

@@ -1183,6 +1183,8 @@ $lang->balance->create = '登记余额';
 $lang->balance->browse = '账户余额';
 $lang->balance->edit   = '编辑余额';
 $lang->balance->delete = '删除余额';
+
+$lang->balance->createComment = '%s，登记余额 %s。';
 /* crm/resume */
 if(!isset($lang->resume)) $lang->resume = new stdclass();
 $lang->resume->common   = '履历';
@@ -3753,6 +3755,8 @@ $lang->action->desc->dating                = '$date, 由 <strong>$actor</strong>
 $lang->action->desc->manageteam            = '$date, 由 <strong>$actor</strong> 设置团队提成比例。' . "\n";
 $lang->action->desc->confirmteam           = '$date, 由 <strong>$actor</strong> 确认团队提成比例：<strong>$extra</strong>。' . "\n";
 $lang->action->desc->moved2customerpool    = '$date, 由 <strong>$actor</strong> 移到客户池。';
+$lang->action->desc->createdbalance        = '$date, 由 <strong>$actor</strong> 登记余额。';
+$lang->action->desc->forbidden             = '$date, 由 <strong>$actor</strong> 禁用。';
 
 $lang->action->label = new stdclass();
 $lang->action->label->created            = '创建了';
