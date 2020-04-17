@@ -39,14 +39,14 @@ $lang->poweredBy      = "<a href='https://www.zdoo.org/?v=%s' target='_blank'>%s
 $lang->ipLimited      = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your ZDOO Administrator to get permissions.</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>AIUX</strong></a>";
 $lang->bizVersion     = "<a href='https://api.zdoo.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>biz <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
-$lang->website        = "http://www.zdoo.org";
+$lang->website        = "http://www.zdoo.co";
 
-$lang->IE6Alert = <<<EOT
+$lang->IE6 Alert = <<<EOT
     <div class='alert alert-danger' style='margin-top:100px;'>
       <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-      <h2>Please use IE(>8), firefox, chrome, safari, opera to visit this site.</h2>
+      <h2>Please use IE(>8), Firefox, Chrome, Safari, Opera to visit this site.</h2>
       <p>Stop using IE6!</p>
-      <p>IE6 is too outdated that we should stop using it. <br/></p>
+      <p>IE6 is outdated, so we stop using it. <br/></p>
       <a href='https://www.google.com/intl/zh-hk/chrome/browser/' class='btn btn-primary btn-lg' target='_blank'>Chrome</a>
       <a href='http://www.firefox.com/' class='btn btn-primary btn-lg' target='_blank'>Firefox</a>
       <a href='http://www.opera.com/download' class='btn btn-primary btn-lg' target='_blank'>Opera</a>
@@ -68,13 +68,13 @@ $lang->link             = 'Links';
 $lang->frontHome        = 'Front';
 $lang->forumHome        = 'Forum';
 $lang->bookHome         = 'Book';
-$lang->register         = 'Register';
+$lang->register         = 'Signup';
 $lang->logout           = 'Logout';
 $lang->login            = 'Login';
 $lang->account          = 'Username';
 $lang->password         = 'Password';
 $lang->all              = 'All';
-$lang->changePassword   = 'Change password';
+$lang->changePassword   = 'Change Password';
 $lang->currentPos       = 'Current Page';
 $lang->categoryMenu     = 'Manage Category';
 $lang->basicInfo        = 'Basic Information';
@@ -155,16 +155,16 @@ $lang->importSuccess  = 'Imported.';
 $lang->importFail     = 'Failed.';
 
 $lang->lifetime = new stdclass();
-$lang->lifetime->createdBy    = 'Created By';
-$lang->lifetime->assignedTo   = 'Assigned To';
-$lang->lifetime->signedBy     = 'Signed By';
-$lang->lifetime->closedBy     = 'Closed By';
+$lang->lifetime->createdBy    = 'CreatedBy';
+$lang->lifetime->assignedTo   = 'AssignedTo';
+$lang->lifetime->signedBy     = 'SignedBy';
+$lang->lifetime->closedBy     = 'ClosedBy';
 $lang->lifetime->closedReason = 'Closed Reason';
 $lang->lifetime->lastEdited   = 'Last Edited';
 
 $lang->setOkFile = <<<EOT
-<h5>For security reason, please do these steps. </h5>
-<p>Create %s file. If this file exists already, reopen it and save again.</p>
+<h5>For security reasons, please do the following steps. </h5>
+<p>Create %s file. If this file exists, open it and save it again.</p>
 EOT;
 
 $lang->js = new stdclass();
@@ -186,7 +186,7 @@ $lang->company->email     = 'Email';
 $lang->company->fax       = 'Fax';
 $lang->company->qq        = 'QQ';
 $lang->company->weibo     = 'Weibo';
-$lang->company->weixin    = 'Wechat';
+$lang->company->weixin    = 'WeChat';
 $lang->company->wangwang  = 'Wangwang';
 
 $lang->menu = new stdclass();
@@ -250,17 +250,17 @@ $lang->system->menu->license = 'License|admin|license|';
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
-$lang->article->menu->admin  = 'Browse|article|admin|';
+$lang->article->menu->admin  = 'Articles|article|admin|';
 $lang->article->menu->tree   = 'Category|tree|browse|type=article';
 $lang->article->menu->create = array('link' => 'Add|article|create|type=article', 'float' => 'right');
 
 $lang->dashboard = new stdclass();
-$lang->dashboard->common = 'My';
+$lang->dashboard->common = 'Dashboard';
 
 $lang->menuGroups = new stdclass();
 
 $lang->menu->dashboard = new stdclass();
-$lang->menu->dashboard->index    = 'Index|my|index|';
+$lang->menu->dashboard->index    = 'Home|my|index|';
 $lang->menu->dashboard->todo     = 'Todo|todo|calendar|';
 $lang->menu->dashboard->task     = 'Task|my|task|';
 $lang->menu->dashboard->project  = 'Project|my|project|';
@@ -268,7 +268,7 @@ $lang->menu->dashboard->order    = 'Order|my|order|';
 $lang->menu->dashboard->contract = 'Contract|my|contract|';
 $lang->menu->dashboard->review   = 'Review|my|review|';
 $lang->menu->dashboard->company  = 'Company|my|company|';
-$lang->menu->dashboard->dynamic  = 'Dynamics|my|dynamic|';
+$lang->menu->dashboard->dynamic  = 'Dynamic|my|dynamic|';
 $lang->menu->dashboard->contact  = 'Contact|my|contact|';
 
 $lang->menu->dividerMenu->dashboard = ',project,company,';
@@ -301,9 +301,9 @@ $lang->product->menu->category   = 'Category|tree|browse|type=product&startModul
 $lang->todo = new stdclass();
 $lang->todo->menu = new stdclass();
 $lang->todo->menu->calendar        = 'Calendar|todo|calendar|';
-$lang->todo->menu->all             = 'All Todos|todo|browse|mode=all';
-$lang->todo->menu->assignedToOther = 'Other Todos|todo|browse|mode=assignedtoother';
-$lang->todo->menu->assignedToMe    = 'My Todos|todo|browse|mode=assignedtome';
+$lang->todo->menu->all             = 'All|todo|browse|mode=all';
+$lang->todo->menu->assignedToOther = 'AssignedToOthers|todo|browse|mode=assignedtoother';
+$lang->todo->menu->assignedToMe    = 'AssignedToMe|todo|browse|mode=assignedtome';
 $lang->todo->menu->undone          = 'Unfinished|todo|browse|mode=undone';
 $lang->todo->menu->future          = 'Wait|todo|browse|mode=future';
  
@@ -385,7 +385,7 @@ $lang->menuGroups->backup = 'system';
 $lang->error = new stdclass();
 $lang->error->length       = array("<strong>%s</strong> length should be <strong>%s</strong>", "<strong>%s</strong> length should between <strong>%s</strong> and <strong>%s</strong>.");
 $lang->error->reg          = "<strong>%s</strong> should be like <strong>%s</strong>";
-$lang->error->unique       = "<strong>%s</strong> has <strong>%s</strong>. If you are sure that this record has been deleted, you can restore it in Admin-Trash.";
+$lang->error->unique       = "<strong>%s</strong> has <strong>%s</strong>. If you are sure that this record has been deleted, you can restore it in Profile-Admin-Trash.";
 $lang->error->notempty     = "<strong>%s</strong> can not be empty.";
 $lang->error->empty        = "<strong>%s</strong> must be empty.";
 $lang->error->equal        = "<strong>%s</strong> must be <strong>%s</strong>.";
@@ -398,7 +398,7 @@ $lang->error->int          = array("<strong>%s</strong> should be intergers". "<
 $lang->error->float        = "<strong>%s</strong> should be a interger/float.";
 $lang->error->email        = "<strong>%s</strong> should be Email.";
 $lang->error->URL          = "<strong>%s</strong> should be URL.";
-$lang->error->date         = "<strong>%s</strong> should be date";
+$lang->error->date         = "<strong>%s</strong> should be a date";
 $lang->error->code         = '<strong>%s</strong> should be letters and numbers.';
 $lang->error->account      = "<strong>%s</strong> should be a valid account.";
 $lang->error->passwordsame = "Passwords must be the same";
@@ -409,8 +409,8 @@ $lang->error->noConvertFun = 'Iconv and mb_convert_encoding do not exist. You ca
 $lang->error->noCurlExt    = 'No curl extension.';
 $lang->error->notInt       = '<strong>%s</strong> should not be a interger.';
 $lang->error->pasteImg     = 'Your browser does not support image pasting.';
-$lang->error->accessDenied = 'Access is denied.';
-$lang->error->deny         = "Sorry, you don't have the permission to access <b>%s</b>'s <b>%s</b>. Please contact your ZDOO administrator.";
+$lang->error->accessDenied = 'Your access is denied.';
+$lang->error->deny         = "Sorry, you don't have the permission to access <b>%s</b>'s <b>%s</b>. Contact your ZDOO administrator to get permissions.";
 
 $lang->pager = new stdclass();
 $lang->pager->noRecord     = "No records yet.";
@@ -1311,14 +1311,14 @@ $lang->contact->fax            = 'Fax';
 $lang->contact->weibo          = 'Weibo';
 $lang->contact->weixin         = 'WeChat';
 $lang->contact->desc           = 'Note';
-$lang->contact->createdBy      = 'Created By';
+$lang->contact->createdBy      = 'CreatedBy';
 $lang->contact->createdDate    = 'Created';
-$lang->contact->editedBy       = 'Edited By';
+$lang->contact->editedBy       = 'EditedBy';
 $lang->contact->editedDate     = 'Edited';
-$lang->contact->contactedBy    = 'Contacted By';
+$lang->contact->contactedBy    = 'ContactedBy';
 $lang->contact->contactedDate  = 'Contacted';
 $lang->contact->nextDate       = 'Next Date';
-$lang->contact->assignedTo     = 'Assigned To';
+$lang->contact->assignedTo     = 'AssignedTo';
 $lang->contact->newCustomer    = 'Create Customer';
 $lang->contact->uploadAvatar   = 'Upload Photo';
 $lang->contact->changeAvatar   = 'Change Photo';
@@ -1353,7 +1353,7 @@ $lang->contact->customerInfo = 'Customer Info';
 
 $lang->contact->leftAt       = 'Resigned on %s';
 $lang->contact->failedAvatar = 'Failed!';
-$lang->contact->emailTip     = 'Please separate email addresses with comma or space';
+$lang->contact->emailTip     = 'Please separate email addresses with a comma or space';
 
 $lang->contact->noFile       = 'No File';
 $lang->contact->importResult = '%s imported. %s failed. Details are as follows';
@@ -1484,26 +1484,26 @@ $lang->contract->begin         = 'Begin';
 $lang->contract->end           = 'End';
 $lang->contract->dateRange     = 'Begin & End';
 $lang->contract->delivery      = 'Deliver';
-$lang->contract->deliveredBy   = 'Delivered By';
+$lang->contract->deliveredBy   = 'DeliveredBy';
 $lang->contract->deliveredDate = 'Delivered';
 $lang->contract->return        = 'Payment';
-$lang->contract->returnedBy    = 'Received By';
+$lang->contract->returnedBy    = 'ReceivedBy';
 $lang->contract->returnedDate  = 'Received';
 $lang->contract->status        = 'Status';
 $lang->contract->contact       = 'Contact';
 $lang->contract->address       = 'Address';
-$lang->contract->signedBy      = 'Signed By';
+$lang->contract->signedBy      = 'SignedBy';
 $lang->contract->signedDate    = 'Signed';
-$lang->contract->finishedBy    = 'Finished By';
+$lang->contract->finishedBy    = 'FinishedBy';
 $lang->contract->finishedDate  = 'Finished';
-$lang->contract->canceledBy    = 'Cancelled By';
+$lang->contract->canceledBy    = 'CancelledBy';
 $lang->contract->canceledDate  = 'Cancelled';
-$lang->contract->createdBy     = 'Created By';
+$lang->contract->createdBy     = 'CreatedBy';
 $lang->contract->createdDate   = 'Created';
-$lang->contract->editedBy      = 'Edited By';
+$lang->contract->editedBy      = 'EditedBy';
 $lang->contract->editedDate    = 'Edited';
 $lang->contract->handlers      = 'Contributors';
-$lang->contract->contactedBy   = 'Contacted By';
+$lang->contract->contactedBy   = 'ContactedBy';
 $lang->contract->contactedDate = 'Contacted';
 $lang->contract->nextDate      = 'Next Date';
 $lang->contract->product       = 'Product';
@@ -1525,7 +1525,7 @@ $lang->contract->create           = 'Create';
 $lang->contract->edit             = 'Edit';
 $lang->contract->setting          = 'Settings';
 $lang->contract->uploadFile       = 'Upload';
-$lang->contract->lifetime         = 'All About Contract';
+$lang->contract->lifetime         = 'About Contract';
 $lang->contract->returnRecords    = 'Payment';
 $lang->contract->deliveryRecords  = 'Delivery';
 $lang->contract->completeReturn   = 'Finish Payment';
@@ -1567,7 +1567,7 @@ $lang->contract->returnInfo         = "<p>%s, received by <strong>%s</strong>, %
 $lang->contract->deliveryInfo       = "<p>%s, delivered by %s.</p>";
 $lang->contract->deleteReturnInfo   = "%s in %s";
 $lang->contract->deleteDeliveryInfo = "in %s";
-$lang->contract->teamTips           = 'Not saved when Member is empty or Contribution and Commission are both empty.';
+$lang->contract->teamTips           = 'It is not saved when Member is empty or Contribution and Commission are both empty.';
 
 $lang->contract->placeholder = new stdclass();
 $lang->contract->placeholder->real = 'Turnover';
@@ -3203,7 +3203,7 @@ $lang->install->groupList[4]['desc'] = 'Default permissions for sales.';
 $lang->install->groupList[5]['name'] = 'Common';
 $lang->install->groupList[5]['desc'] = 'Default permissions for all users.';
 /* sys/my */
-$lang->my->common = 'My';
+$lang->my->common = 'Dashboard';
 
 $lang->my->order->common = 'Order';
 
@@ -3227,18 +3227,18 @@ $lang->my->task->unclosed   = 'Unclosed';
 
 $lang->my->project->common = 'My Project';
 
-$lang->my->dynamic->common = 'My Dynamics';
+$lang->my->dynamic->common = 'My Dynamic';
 
 $lang->my->review->module = 'Module';
 
-$lang->my->contact->common = 'contact';
+$lang->my->contact->common = 'Contact';
 
 $lang->my->contractActionWidth = 320;
 $lang->my->orderActionWidth    = 200;
 $lang->my->projectActionWidth  = 210;
 $lang->my->taskActionWidth     = 280;
 
-$lang->my->licenseInfo = "You are using the built-in license of the ZDOO system, the users limit is %s, the expiration time is %s, please apply for a formal authorization in time.";
+$lang->my->licenseInfo = "You are using the built-in license of the ZDOO with %s users and expiration %s. Contact troy@easycorp.ltd for a licnese.";
 /* sys/tree */
 $lang->tree->common      = "Tree";
 $lang->tree->add         = "Add";
@@ -3490,7 +3490,7 @@ $lang->block->cannotPlaceInLeft  = 'Cannot place the block at left side.';
 $lang->block->cannotPlaceInRight = 'Cannot place the block at right side.';
 
 $lang->block->allEntries  = 'All';
-$lang->block->dynamic     = 'Dynamics';
+$lang->block->dynamic     = 'Dynamic';
 $lang->block->dynamicInfo = "<span class='timeline-tag'>%s</span> <span class='timeline-text'>%s <em>%s</em> %s <a href='%s' title='%s' %s>%s</a></span>";
 
 $lang->block->gridOptions[8] = 'Left';
@@ -3562,20 +3562,20 @@ $lang->block->default['cash']['2']['grid']  = 4;
 $lang->block->default['cash']['2']['params']['num']     = 15;
 $lang->block->default['cash']['2']['params']['orderBy'] = 'id_desc';
 
-$lang->block->default['cash']['3']['title'] = 'Suppliers';
+$lang->block->default['cash']['3']['title'] = 'Supplier';
 $lang->block->default['cash']['3']['block'] = 'depositor';
 $lang->block->default['cash']['3']['grid']  = 4;
 
 $lang->block->default['cash']['3']['params']['num']     = 15;
 $lang->block->default['cash']['3']['params']['orderBy'] = 'id_desc';
 
-$lang->block->default['team']['1']['title'] = 'Latest Blogs';
+$lang->block->default['team']['1']['title'] = 'Latest Blog';
 $lang->block->default['team']['1']['block'] = 'blog';
 $lang->block->default['team']['1']['grid']  = 4;
 
 $lang->block->default['team']['1']['params']['num'] = 15;
 
-$lang->block->default['team']['2']['title'] = 'Latest Threads';
+$lang->block->default['team']['2']['title'] = 'Latest Thread';
 $lang->block->default['team']['2']['block'] = 'thread';
 $lang->block->default['team']['2']['grid']  = 4;
 
@@ -3591,7 +3591,7 @@ $lang->block->default['team']['3']['params']['type'] = 'stick';
 
 $lang->block->default['sys']['1'] = $lang->block->default['oa']['1'];
 $lang->block->default['sys']['1']['source'] = 'oa';
-$lang->block->default['sys']['2']['title']  = 'Dynamics';
+$lang->block->default['sys']['2']['title']  = 'Dynamic';
 $lang->block->default['sys']['2']['block']  = 'dynamic';
 $lang->block->default['sys']['2']['grid']   = 6;
 $lang->block->default['sys']['2']['source'] = '';
@@ -4599,14 +4599,14 @@ $lang->company->content = 'More';
 $lang->company->setBasic = 'Company Information';
 /* sys/usercontact */
 $lang->usercontact->common = 'Contact';
-$lang->usercontact->create = 'Create';
+$lang->usercontact->create = 'Create Group';
 $lang->usercontact->edit   = 'Edit';
-$lang->usercontact->view   = 'View';
+$lang->usercontact->view   = 'Create Group';
 $lang->usercontact->delete = 'Delete';
 
 $lang->usercontact->id     = 'ID';
-$lang->usercontact->name   = 'Name';
-$lang->usercontact->member = 'Member';
+$lang->usercontact->name   = 'Group Name';
+$lang->usercontact->member = 'Select User';
 $lang->usercontact->public = 'Public';
 /* sys/tag */
 if(!isset($lang->tag)) $lang->tag = new stdclass();
@@ -4636,20 +4636,20 @@ $lang->misc->forum['label'] = 'Forum';
 $lang->misc->forum['url']   = 'http://www.zdoo.com/forum/';
 /* sys/index */
 $lang->index->common        = 'Home';
-$lang->index->dashboard     = 'My';
-$lang->index->dashboardAbbr = 'My';
+$lang->index->dashboard     = 'Dashboard';
+$lang->index->dashboardAbbr = 'Mine';
 $lang->index->about         = 'About';
 $lang->index->allEntries    = 'All';
-$lang->index->showOnLeft    = 'On left';
-$lang->index->notOnLeft     = 'Not on left';
+$lang->index->showOnLeft    = 'Left';
+$lang->index->notOnLeft     = 'Not Left';
 $lang->index->opened        = 'opened';
 $lang->index->addEntry      = 'Add';
-$lang->index->profile       = 'Profile Center';
+$lang->index->profile       = 'Profile';
 $lang->index->set           = 'Settings';
 $lang->index->theme         = 'Theme';
 $lang->index->superAdmin    = 'Admin';
 $lang->index->showDesk      = 'Desktop';
-$lang->index->customBlocks  = 'Custom block';
+$lang->index->customBlocks  = 'Custom Block';
 $lang->index->addBlock      = 'Add Block';
 $lang->index->refresh       = 'Refresh';
 $lang->index->hidden        = 'Hidden';
@@ -4670,9 +4670,9 @@ $lang->index->ips['removedEntry']        = 'Entry 【{0}】 is removed.';
 $lang->index->ips['confirmRemoveEntry']  = 'Do you want to remove Entry [{0}]?';
 $lang->index->ips['showWindowText']      = 'Show';
 $lang->index->ips['confirmRemoveBlock']  = 'Do you want to remove Block [{0}]?';
-$lang->index->ips['removedBlock']        = 'Block has been removed';
-$lang->index->ips['hiddenBlock']         = 'Block has been hidden';
-$lang->index->ips['orderdBlocksSaved']   = 'Order has been saved';
+$lang->index->ips['removedBlock']        = 'Block is removed.';
+$lang->index->ips['hiddenBlock']         = 'Block is hidden.';
+$lang->index->ips['orderdBlocksSaved']   = 'Order is saved.';
 $lang->index->ips['moreOptionTip'] 	     = 'Show other {0} entries';
 $lang->index->ips['confirmCloseBrowser'] = 'Notice: This application is ON now.';
 $lang->index->ips['leftBarToggleTip']    = 'Tip: Visit profile menu to show leftbar back.';
@@ -4726,11 +4726,11 @@ $lang->group->placeholder->lang = 'Including product status, product line, custo
 include (dirname(__FILE__) . '/resource.php');
 /* sys/notify */
 $lang->notify->common  = 'Queue';
-$lang->notify->index   = 'Index';
+$lang->notify->index   = 'Home';
 $lang->notify->setting = 'Settings';
 
 $lang->notify->typeList['mail']     = 'Email';
-$lang->notify->typeList['message']  = 'Browser Message';
+$lang->notify->typeList['message']  = 'Message';
 $lang->notify->typeList['webhook']  = 'Webhook';
 $lang->notify->typeList['xuanxuan'] = 'XuanXuan';
 /* sys/setting */
