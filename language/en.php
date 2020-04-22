@@ -1318,7 +1318,7 @@ $lang->contact->editedDate     = 'Edited';
 $lang->contact->contactedBy    = 'ContactedBy';
 $lang->contact->contactedDate  = 'Contacted';
 $lang->contact->nextDate       = 'Next Date';
-$lang->contact->assignedTo     = 'AssignedTo';
+$lang->contact->assignedTo     = 'AssignTo';
 $lang->contact->newCustomer    = 'Create Customer';
 $lang->contact->uploadAvatar   = 'Upload Photo';
 $lang->contact->changeAvatar   = 'Change Photo';
@@ -1611,7 +1611,7 @@ $lang->leads->assign         = 'Assign';
 $lang->leads->transform      = 'Confirm';
 $lang->leads->ignore         = 'Ignroe';
 $lang->leads->settings       = 'Settings';
-$lang->leads->applyRule      = 'Distribution';
+$lang->leads->applyRule      = 'Assign Rules';
 
 $lang->leads->list = 'Leads';
 
@@ -1620,7 +1620,7 @@ $lang->leads->applyRemain  = 'Maximum on hold';
 $lang->leads->ignoreReason = 'Reasons';
 
 $lang->leads->tips = new stdclass();
-$lang->leads->tips->apply       = 'Please take care of the existing contacts.';
+$lang->leads->tips->apply       = 'Please deal with the existing contacts.';
 $lang->leads->tips->applyRemain = 'You can apply again when the number of records is lower than it.';
 
 $lang->leads->actionWidth = 280;
@@ -4338,23 +4338,23 @@ $lang->customer->weixin        = 'WeChat';
 $lang->customer->desc          = 'Description';
 $lang->customer->public        = 'Public';
 $lang->customer->relation      = 'Relation';
-$lang->customer->createdBy     = 'Created By';
+$lang->customer->createdBy     = 'CreatedBy';
 $lang->customer->createdDate   = 'Created';
-$lang->customer->editedBy      = 'Edited By';
+$lang->customer->editedBy      = 'EditedBy';
 $lang->customer->editedDate    = 'Edited';
 $lang->customer->assignedTo    = 'Assignee';
-$lang->customer->assignedBy    = 'Assigned By';
+$lang->customer->assignedBy    = 'AssignedBy';
 $lang->customer->assignedDate  = 'Assigned';
-$lang->customer->contactedBy   = 'Contact By';
+$lang->customer->contactedBy   = 'ContactBy';
 $lang->customer->contactedDate = 'Contact';
 $lang->customer->nextDate      = 'Next Contact';
 $lang->customer->selectContact = 'Select Contact';
 
-$lang->customer->browse            = 'View Customer';
+$lang->customer->browse            = 'Customer';
 $lang->customer->view              = 'View';
 $lang->customer->create            = 'Add Customer';
 $lang->customer->delete            = 'Delete Customer';
-$lang->customer->order             = 'Orders';
+$lang->customer->order             = 'Order';
 $lang->customer->contact           = 'Contact';
 $lang->customer->contract          = 'Contract';
 $lang->customer->address           = 'Address';
@@ -4413,11 +4413,11 @@ $lang->customer->levelNameList['D'] = 'D';
 $lang->customer->levelNameList['E'] = 'E';
 
 $lang->customer->levelNoteList[]    = '';
-$lang->customer->levelNoteList['A'] = ' Make an order in a month.';
-$lang->customer->levelNoteList['B'] = ' Make an order in 3 months';
-$lang->customer->levelNoteList['C'] = ' Make an order in 6 months.';
-$lang->customer->levelNoteList['D'] = ' Make an order beyond 6 months.';
-$lang->customer->levelNoteList['E'] = ' Make no deal.';
+$lang->customer->levelNoteList['A'] = ' Place an order in 1 month.';
+$lang->customer->levelNoteList['B'] = ' Place an order in 3 months';
+$lang->customer->levelNoteList['C'] = ' Place an order in 6 months.';
+$lang->customer->levelNoteList['D'] = ' Place an order over 6 months.';
+$lang->customer->levelNoteList['E'] = ' Place no order.';
 
 $lang->customer->relationList['client']   = 'Client';
 $lang->customer->relationList['provider'] = 'Provider';
@@ -4425,11 +4425,11 @@ $lang->customer->relationList['partner']  = 'Partner';
 
 $lang->customer->search      = 'Search';
 $lang->customer->searchInput = 'Enter search items.';
-$lang->customer->mergeTip    = 'Merge this customer to the selected customer.';
+$lang->customer->mergeTip    = 'Merge this customer to the selected one.';
 
 $lang->customer->action = new stdclass();
-$lang->customer->action->orderDating    = '$date, <strong>$actor</strong> created Next Contact : <strong>$extra</strong> for order <strong>$order</strong>.' . "\n";
-$lang->customer->action->contractDating = '$date, <strong>$actor</strong> created Next Contact : <strong>$extra</strong> for contract <strong>$contract</strong>.' . "\n";
+$lang->customer->action->orderDating    = '$date, <strong>$actor</strong> created Next Contact: <strong>$extra</strong> for order <strong>$order</strong>.' . "\n";
+$lang->customer->action->contractDating = '$date, <strong>$actor</strong> created Next Contact: <strong>$extra</strong> for contract <strong>$contract</strong>.' . "\n";
 
 $lang->customer->actionWidth = 280;
 /* sys/entry */
@@ -4742,7 +4742,7 @@ $lang->setting->value  = 'Value';
 $lang->setting->lang = 'Product Status, Product Line, Customer Type, Customer Size, Customer Level, Customer Status, Currency, Roles';
 
 $lang->setting->customerPool = 'Customer settings';
-$lang->setting->modules      = 'Modules settings';
+$lang->setting->modules      = 'Module settings';
 
 $lang->setting->module = new stdClass();
 $lang->setting->module->user     = 'User role';
@@ -4776,7 +4776,7 @@ $lang->setting->currentLang = 'For current language';
 
 $lang->setting->placeholder = new stdclass();
 $lang->setting->placeholder->key   = 'Key';
-$lang->setting->placeholder->value = 'Define the value';
+$lang->setting->placeholder->value = 'Words shown on the interface';
 $lang->setting->placeholder->info  = 'Description';
 
 $lang->setting->placeholder->typeList = new stdclass();
@@ -4797,7 +4797,7 @@ $lang->setting->placeholder->lineList->key   = 'Key should be intergers or lette
 $lang->setting->placeholder->lineList->value = 'Brief description';
 
 $lang->setting->reserveDays    = 'Hold Days';
-$lang->setting->reserveDaysTip = "Customer are automatically saved in customer pools, if its information is not updated within certain days. It will be disabled if it is set as '0' days.";
+$lang->setting->reserveDaysTip = "Customers are automatically saved in the customer pool, if customer information is not updated within certain days. It will be disabled if it is set as '0' days.";
 $lang->setting->currencyTip    = 'When creating a trade with a depositor but the currency is not main currency, you have to record the exchange rate.';
 
 $lang->setting->moduleList['attend']   = 'Attend';
