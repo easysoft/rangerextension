@@ -81,7 +81,7 @@ $lang->basicInfo        = 'Basic Information';
 $lang->chooseUserToMail = 'Choose users to send messages to ...';
 
 $lang->reset          = 'Reset';
-$lang->add            = 'Add';
+$lang->add            = 'Create';
 $lang->edit           = 'Edit';
 $lang->copy           = 'Copy';
 $lang->and            = 'And';
@@ -105,7 +105,7 @@ $lang->preview        = 'Preview';
 $lang->goback         = 'Back';
 $lang->assign         = 'Assign';
 $lang->start          = 'Start';
-$lang->create         = 'Add';
+$lang->create         = 'Create';
 $lang->forbid         = 'Forbid';
 $lang->activate       = 'Activate';
 $lang->ignore         = 'Ignore';
@@ -664,9 +664,9 @@ $lang->app = new stdclass();
 $lang->app->name = 'DOC';
 
 $lang->menu->doc = new stdclass();
-$lang->menu->doc->dashboard = 'Document|doc|index|';
-$lang->menu->doc->project   = 'Project|doc|alllibs|type=project';
-$lang->menu->doc->custom    = 'Custom|doc|alllibs|type=custom';
+$lang->menu->doc->dashboard = 'Home|doc|index|';
+$lang->menu->doc->project   = 'Project DocLib|doc|alllibs|type=project';
+$lang->menu->doc->custom    = 'Custom DocLib|doc|alllibs|type=custom';
 
 $lang->dashboard = new stdclass();
 
@@ -674,13 +674,13 @@ if(!isset($lang->doc)) $lang->doc = new stdclass();
 
 $lang->doc->menuList = new stdclass();
 $lang->doc->menuList->dashboard = new stdclass();
-$lang->doc->menuList->dashboard->index = 'Document|doc|index|';
+$lang->doc->menuList->dashboard->index = 'Home|doc|index|';
 
 $lang->doc->menuList->project = new stdclass();
-$lang->doc->menuList->project->allLibs = 'Project|doc|alllibs|type=project';
+$lang->doc->menuList->project->allLibs = 'Project DocLib|doc|alllibs|type=project';
 
 $lang->doc->menuList->custom = new stdclass();
-$lang->doc->menuList->custom->allLibs = 'Custom|doc|alllibs|type=custom';
+$lang->doc->menuList->custom->allLibs = 'Custom DocLib|doc|alllibs|type=custom';
 
 include (dirname(__FILE__) . '/menuOrder.php');
 /* oa/common */
@@ -1660,9 +1660,9 @@ $lang->doc->keywords       = 'Tag';
 $lang->doc->url            = 'URL';
 $lang->doc->files          = 'File';
 $lang->doc->views          = 'Views';
-$lang->doc->createdBy      = 'Created by';
+$lang->doc->createdBy      = 'CreatedBy';
 $lang->doc->createdDate    = 'Created';
-$lang->doc->editedBy       = 'Edited by';
+$lang->doc->editedBy       = 'EditedBy';
 $lang->doc->editedDate     = 'Edited';
 $lang->doc->basicInfo      = 'Basic Info';
 $lang->doc->deleted        = 'Deleted';
@@ -1707,13 +1707,13 @@ $lang->doc->libTypeList['project'] = 'Project';
 $lang->doc->types['text'] = 'Document';
 $lang->doc->types['url']  = 'Link';
 
-$lang->doc->browseType = 'Browse Type';
+$lang->doc->browseType = 'Browse';
 $lang->doc->browseTypeList['list'] = 'List';
 $lang->doc->browseTypeList['menu'] = 'Menu';
 $lang->doc->browseTypeList['tree'] = 'Tree';
 
-$lang->doc->confirmDelete      = "Do you want to delete this doc?";
-$lang->doc->confirmDeleteLib   = "Do you want to delete this doc library?";
+$lang->doc->confirmDelete      = "Do you want to delete this document?";
+$lang->doc->confirmDeleteLib   = "Do you want to delete this document library?";
 $lang->doc->errorEditSystemDoc = "System document library cannot be edited.";
 
 $lang->doc->placeholder = new stdclass();
@@ -2571,7 +2571,7 @@ $lang->doc->errorMainLib = 'The main library cannot be deleted.';
 $lang->task->common = 'Task';
 $lang->task->list   = 'Tasks';
 
-$lang->task->browse    = 'Browse';
+$lang->task->browse    = 'Tasks';
 $lang->task->view      = 'Info';
 $lang->task->viewChild = 'Child Task';
 $lang->task->create    = 'Create Task';
@@ -2587,7 +2587,7 @@ $lang->task->export    = 'Export';
 
 $lang->task->batchCreate    = 'Batch Create Task';
 $lang->task->backToProjects = 'Back to project list'; 
-$lang->task->viewAll        = "View all project tasks";
+$lang->task->viewAll        = "All project tasks";
 $lang->task->editAll        = "Edit all project tasks";
 $lang->task->deleteAll      = "Delete all project tasks";
 
@@ -2612,32 +2612,32 @@ $lang->task->statusAB       = 'Status';
 $lang->task->statusCustom   = 'Status Order';
 $lang->task->mailto         = 'Mailto';
 $lang->task->desc           = 'Description';
-$lang->task->createdBy      = 'Created By';
+$lang->task->createdBy      = 'CreatedBy';
 $lang->task->createdByAB    = 'Create';
 $lang->task->createdDate    = 'Created';
 $lang->task->createdDateAB  = 'Create';
-$lang->task->editedBy       = 'Edited By';
+$lang->task->editedBy       = 'EditedBy';
 $lang->task->editedDate     = 'Edited';
 $lang->task->assignedTo     = 'Assignee';
 $lang->task->assignedDate   = 'Assigned';
 $lang->task->estStarted     = 'Planned Start';
 $lang->task->realStarted    = 'Actual Start';
-$lang->task->finishedBy     = 'Finished By';
+$lang->task->finishedBy     = 'FinishedBy';
 $lang->task->finishedByAB   = 'Finish';
 $lang->task->finishedDate   = 'Finished';
 $lang->task->finishedDateAB = 'Date';
-$lang->task->canceledBy     = 'Cancelled By';
+$lang->task->canceledBy     = 'CancelledBy';
 $lang->task->canceledDate   = 'Cancelled';
-$lang->task->closedBy       = 'Closed By';
+$lang->task->closedBy       = 'ClosedBy';
 $lang->task->closedDate     = 'Closed';
 $lang->task->closedReason   = 'Closed Reason';
-$lang->task->lastEditedBy   = 'Last Edited By';
+$lang->task->lastEditedBy   = 'Last EditedBy';
 $lang->task->lastEditedDate = 'Last Edited';
 $lang->task->lastEdited     = 'Last Edited';
 $lang->task->hour           = 'Hour';
 $lang->task->leftThisTime   = 'Left';
 $lang->task->date           = 'Date';
-$lang->task->multiple       = 'Multiple User Task';
+$lang->task->multiple       = 'Multi-user Task';
 $lang->task->multipleAB     = 'Multiple';
 $lang->task->team           = 'Team';
 $lang->task->transmit       = 'Transfer';
@@ -2648,8 +2648,8 @@ $lang->task->parent         = 'Parent Task';
 $lang->task->parentAB       = 'Parent';
 $lang->task->unfinished     = 'Unfinished';
 $lang->task->end            = 'End';
-$lang->task->myConsumption  = 'Man-Hour Cost';
-$lang->task->recordEstimate = 'Man-Hour';
+$lang->task->myConsumption  = 'Hour Cost';
+$lang->task->recordEstimate = 'Hour';
 
 $lang->task->confirmFinish     = '"Left" man-hour is 0, so this task status will be "Done". Do you want to finish it?';
 $lang->task->consumedBefore    = 'cost man-hour before';
@@ -2683,7 +2683,7 @@ $lang->task->reasonList['cancel'] = 'Cancelled';
 $lang->task->createdByMe  = 'CreatedByMe';
 $lang->task->assignedToMe = 'AssignedToMe';
 $lang->task->finishedByMe = 'FinishedByMe';
-$lang->task->untilToday   = 'Till Today';
+$lang->task->untilToday   = 'Expire Today';
 $lang->task->expired      = 'Expired';
 $lang->task->all          = 'All';
 
@@ -2691,7 +2691,7 @@ $lang->task->basicInfo = 'Basic Info';
 $lang->task->life      = 'Task Life';
 
 $lang->task->kanban  = 'Kanban';
-$lang->task->mind    = 'Mind Map';
+$lang->task->mind    = 'Mindmap';
 $lang->task->list    = 'List';
 $lang->task->outline = 'Outline';
 
@@ -2699,19 +2699,19 @@ $lang->task->kanbanGroup['']           = 'Groups';
 $lang->task->kanbanGroup['status']     = 'By Status';
 $lang->task->kanbanGroup['assignedTo'] = 'By Assignee';
 
-$lang->task->groups['']           = 'Choose group';
-$lang->task->groups['status']     = 'by Status';
-$lang->task->groups['assignedTo'] = 'Assigned To';
-$lang->task->groups['createdBy']  = 'Created By';
-$lang->task->groups['finishedBy'] = 'Finished By';
-$lang->task->groups['closedBy']   = 'Closed By';
+$lang->task->groups['']           = 'Choose...';
+$lang->task->groups['status']     = 'Status';
+$lang->task->groups['assignedTo'] = 'AssignedTo';
+$lang->task->groups['createdBy']  = 'CreatedBy';
+$lang->task->groups['finishedBy'] = 'FinishedBy';
+$lang->task->groups['closedBy']   = 'ClosedBy';
 
-$lang->task->unkown     = 'Unkown';
+$lang->task->unkown     = 'Unknown';
 $lang->task->unAssigned = 'Unassigned';
 
 $lang->task->mindMoveTip = 'You should move a task to a sub node.';
 $lang->task->notAllowed  = 'Not allowed.';
-$lang->task->skipClose   = 'The status of Tasks : %s are unfinished or cancelled. You are not allowed to close it.';
+$lang->task->skipClose   = 'Task status: %s are unfinished or cancelled. You are not allowed to close it.';
 
 $lang->task->groupinfo = "<div class='text-muted'>Total: <strong>%s</strong> Wait: <strong>%s</strong> Doing: <strong>%s</strong> Finished: <strong>%s</strong> Closed: <strong>%s</strong></div>";
 
@@ -4947,28 +4947,28 @@ $lang->notice->jumping = "This page will jump to homepage in 5 seconds <a href='
 $lang->notice->typeList['notFound']      = '';
 $lang->notice->typeList['accessLimited'] = '';
 /* sys/schema */
-$lang->schema->common   = 'Import Schema';
-$lang->schema->browse   = 'Browse';
+$lang->schema->common   = 'Import Template';
+$lang->schema->browse   = 'Templates';
 $lang->schema->view     = 'View';
-$lang->schema->create   = 'Create Schema';
-$lang->schema->edit     = 'Edit Schema';
-$lang->schema->delete   = 'Delete Schema';
+$lang->schema->create   = 'Create Template';
+$lang->schema->edit     = 'Edit Template';
+$lang->schema->delete   = 'Delete Template';
 $lang->schema->csvFile  = 'File';
 
 $lang->schema->name     = 'Name';
 $lang->schema->feeRow   = 'The fee is a single record.';
-$lang->schema->diffCol  = 'The income and expense should in different columns.';
+$lang->schema->diffCol  = 'The income and expense should be in different columns.';
 
 $lang->schema->placeholder = new stdclass();
-$lang->schema->placeholder->selectField = 'Select item';
-$lang->schema->placeholder->common      = 'Fill in the column corresponding to the field in the statement, eg. A.';
+$lang->schema->placeholder->selectField = 'Select';
+$lang->schema->placeholder->common      = 'Fill in the column corresponding to the field in the statement, e.g. A.';
 $lang->schema->placeholder->type        = 'Fill in the column corresponding to the type of income or expense.';
 $lang->schema->placeholder->date        = 'Fill in the column corresponding to the trade date.';
 $lang->schema->placeholder->product     = 'Fill in the column corresponding to the product.';
 $lang->schema->placeholder->handlers    = 'Fill in the column corresponding to the handlers.';
-$lang->schema->placeholder->desc        = 'Fill in the column corresponding to the description of statement, can fill in multiple columns which is seperated by comma. Eg. I, O.';
-$lang->schema->placeholder->in          = 'Fill in the column corresponding to the amount of income, eg. E.';
-$lang->schema->placeholder->out         = 'Fill in the column corresponding to the amount of expense, eg. D.';
+$lang->schema->placeholder->desc        = 'Fill in the column corresponding to the description of statement. You can fill in multiple columns and seperate them by comma, e.g. I, O.';
+$lang->schema->placeholder->in          = 'Fill in the column corresponding to the amount of income, e.g. E.';
+$lang->schema->placeholder->out         = 'Fill in the column corresponding to the amount of expense, e.g. D.';
 
 $lang->schema->fieldRequired = '%s is required.';
 /* sys/backup */
