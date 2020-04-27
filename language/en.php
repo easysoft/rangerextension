@@ -395,7 +395,7 @@ $lang->error->lt           = "<strong>%s</strong> should be < <strong>%s</strong
 $lang->error->le           = "<strong>%s</strong> should be <= <strong>%s</strong>.";
 $lang->error->in           = '<strong>%s</strong> must be in <strong>%s</strong>。';
 $lang->error->int          = array("<strong>%s</strong> should be intergers". "<strong>%s</strong> should be between <strong>%s - %s</strong>.");
-$lang->error->float        = "<strong>%s</strong> should be a interger/float.";
+$lang->error->float        = "<strong>%s</strong> should be intergers or decimals";
 $lang->error->email        = "<strong>%s</strong> should be Email.";
 $lang->error->URL          = "<strong>%s</strong> should be URL.";
 $lang->error->date         = "<strong>%s</strong> should be a date";
