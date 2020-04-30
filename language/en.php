@@ -35,10 +35,10 @@ $lang->apps->superadmin = 'ADMIN';
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = ' Enterprise Collaboration System';
 $lang->agreement      = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of ZDOO.</span>";
-$lang->poweredBy      = "<a href='https://www.zdoo.org/?v=%s' target='_blank'>%s %s</a>";
+$lang->poweredBy      = "<a href='https://www.zdoo.co/?v=%s' target='_blank'>%s %s</a>";
 $lang->ipLimited      = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your ZDOO Administrator to get permissions.</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>AIUX</strong></a>";
-$lang->bizVersion     = "<a href='https://api.zdoo.org/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>biz <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
+$lang->bizVersion     = "<a href='https://api.zdoo.co/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>biz <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
 $lang->website        = "http://www.zdoo.co";
 
 $lang->IE6 Alert = <<<EOT
@@ -138,8 +138,8 @@ $lang->continueSave   = 'Continue saving';
 $lang->submitting     = 'Saving...';
 $lang->yes            = 'YES';
 $lang->no             = 'NO';
-$lang->signIn         = 'Log In';
-$lang->signOut        = 'Log Out';
+$lang->signIn         = 'Login';
+$lang->signOut        = 'Logout';
 $lang->sort           = 'Ranking';
 $lang->required       = 'Required';
 $lang->custom         = 'Custom';
@@ -159,12 +159,12 @@ $lang->lifetime->createdBy    = 'CreatedBy';
 $lang->lifetime->assignedTo   = 'AssignedTo';
 $lang->lifetime->signedBy     = 'SignedBy';
 $lang->lifetime->closedBy     = 'ClosedBy';
-$lang->lifetime->closedReason = 'Closed Reason';
+$lang->lifetime->closedReason = 'Close Reason';
 $lang->lifetime->lastEdited   = 'Last Edited';
 
 $lang->setOkFile = <<<EOT
 <h5>For security reasons, please do the following steps. </h5>
-<p>Create %s file. If this file exists, open it and save it again.</p>
+<p>Create %s file. If it exists, open it and save it again.</p>
 EOT;
 
 $lang->js = new stdclass();
@@ -234,10 +234,10 @@ $lang->user->menu->disabled = 'Disabled Users|user|admin|deptID=&status=forbid';
 
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
-$lang->entry->menu->zdoo     = array('link' => 'ZDOO API|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
-$lang->entry->menu->xuanxuan = 'Xuanxuan API|entry|admin|category=&platform=xuanxuan';
+$lang->entry->menu->zdoo     = array('link' => 'ZDOO|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
+$lang->entry->menu->xuanxuan = 'Xuanxuan|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = array('link' => 'Create|entry|create|');
-$lang->entry->menu->webapp   = 'App|webapp|obtain|';
+$lang->entry->menu->webapp   = 'WebApp|webapp|obtain|';
 $lang->entry->menu->category = 'Category|entry|category|';
 
 $lang->system       = new stdclass();
@@ -386,7 +386,7 @@ $lang->error = new stdclass();
 $lang->error->length       = array("<strong>%s</strong> length should be <strong>%s</strong>", "<strong>%s</strong> length should between <strong>%s</strong> and <strong>%s</strong>.");
 $lang->error->reg          = "<strong>%s</strong> should be like <strong>%s</strong>";
 $lang->error->unique       = "<strong>%s</strong> has <strong>%s</strong> existed. If you are sure that it is deleted, you can restore it in Profile-Admin-System-Trash.";
-$lang->error->notempty     = "<strong>%s</strong> can not be empty.";
+$lang->error->notempty     = "<strong>%s</strong> cannot be empty.";
 $lang->error->empty        = "<strong>%s</strong> must be empty.";
 $lang->error->equal        = "<strong>%s</strong> must be <strong>%s</strong>.";
 $lang->error->gt           = "<strong>%s</strong> should be > <strong>%s</strong>.";
@@ -407,7 +407,7 @@ $lang->error->captcha      = 'Captcah error.';
 $lang->error->noWritable   = '%s cannot be written. Please modify permissions!';
 $lang->error->noConvertFun = 'Iconv and mb_convert_encoding do not exist. You cannot convert data into the code you want!';
 $lang->error->noCurlExt    = 'No curl extension.';
-$lang->error->notInt       = '<strong>%s</strong> should not be a interger.';
+$lang->error->notInt       = '<strong>%s</strong> should not be an interger.';
 $lang->error->pasteImg     = 'Your browser does not support image pasting.';
 $lang->error->accessDenied = 'Your access is denied.';
 $lang->error->deny         = "Sorry, you don't have the permission to access <b>%s</b>'s <b>%s</b>. Contact your ZDOO administrator to get permissions.";
@@ -2996,7 +2996,7 @@ $lang->article->note = new stdclass();
 $lang->article->note->createdDate = 'It can be published on the selected date.';
 /* sys/webapp */
 if(!isset($lang->webapp)) $lang->webapp = new stdclass();
-$lang->webapp->common = 'App';
+$lang->webapp->common = 'WebApp';
 $lang->webapp->index  = 'View App';
 $lang->webapp->obtain = 'Get App';
 
@@ -3060,8 +3060,8 @@ $lang->webapp->addTypeList['system'] = 'System App';
 $lang->webapp->addTypeList['custom'] = 'Custom App';
 
 $lang->webapp->errorOccurs        = 'Error:';
-$lang->webapp->errorGetModules    = "Failed to get extension category data from the www.zdoo.com. ";
-$lang->webapp->errorGetExtensions = 'Failed to get extensions from www.zdoo.com. ';
+$lang->webapp->errorGetModules    = "Failed to get extension category data from the www.zdoo.co. ";
+$lang->webapp->errorGetExtensions = 'Failed to get extensions from www.zdoo.co. ';
 $lang->webapp->noApps             = 'No extensions found in this category.';
 $lang->webapp->successInstall     = 'Installed.';
 $lang->webapp->confirmDelete      = 'Do you want to delete this app?';
@@ -4677,26 +4677,26 @@ $lang->index->ips['moreOptionTip'] 	     = 'Show other {0} entries';
 $lang->index->ips['confirmCloseBrowser'] = 'Notice: This application is ON now.';
 $lang->index->ips['leftBarToggleTip']    = 'Tip: Visit profile menu to show leftbar back.';
 /* sys/group */
-$lang->group->common             = 'Group';
+$lang->group->common             = 'Permissions ';
 $lang->group->browse             = 'Groups';
-$lang->group->create             = 'Create Group';
+$lang->group->create             = 'Create Permission Group';
 $lang->group->edit               = 'Edit';
 $lang->group->copy               = 'Copy';
 $lang->group->delete             = 'Delete';
 $lang->group->manageAppPriv      = 'Application';
-$lang->group->manageAppPrivTip   = 'Tips: Drag and drop application icons to change authorization type, all changes will be effective after saving.';
-$lang->group->managePriv         = 'Permissions';
+$lang->group->manageAppPrivTip   = 'Tips: Drag and drop application icons to assign permissions. Any change will be effective after it is saved.';
+$lang->group->managePriv         = 'Permission';
 $lang->group->managePrivByGroup  = 'by Groups';
 $lang->group->managePrivByModule = 'by Modules';
-$lang->group->byModuleTips       = '<span class="tips"> (Press shift or control to multiple select)</span>';
-$lang->group->manageMember       = 'Users';
+$lang->group->byModuleTips       = '<span class="tips"> (Press shift or control to multi-select)</span>';
+$lang->group->manageMember       = 'User';
 $lang->group->linkMember         = 'Link User';
 $lang->group->unlinkMember       = 'Unlink User';
 $lang->group->confirmDelete      = 'Do you want to delete this group?';
 $lang->group->successSaved       = 'Saved.';
 $lang->group->errorNotSaved      = 'Not saved. Please make sure that you have selected actions and groups.';
 
-$lang->group->id       = 'Id';
+$lang->group->id       = 'ID';
 $lang->group->name     = 'Name';
 $lang->group->desc     = 'Description';
 $lang->group->users    = 'Users';
@@ -4708,16 +4708,16 @@ $lang->group->inside   = 'Group Users';
 $lang->group->outside  = 'Other Users';
 $lang->group->other    = 'Others';
 $lang->group->all      = 'All';
-$lang->group->extent   = 'Extent';
-$lang->group->havePriv = 'Authorized';
-$lang->group->noPriv   = 'Not Authorized';
+$lang->group->extent   = 'Scope';
+$lang->group->havePriv = 'Permitted';
+$lang->group->noPriv   = 'Not Permitted';
 $lang->group->hide     = 'Hide...';
 $lang->group->show     = 'More...';
 
 $lang->group->manageAll = 'All customers and orders';
 
 $lang->group->copyOptions['copyPriv'] = 'Copy Permission';
-$lang->group->copyOptions['copyUser'] = 'Copy user';
+$lang->group->copyOptions['copyUser'] = 'Copy User';
 
 $lang->group->placeholder = new stdclass();
 $lang->group->placeholder->tree = 'Including area, industry, income and expense, board, blog category, department.';
@@ -4900,8 +4900,8 @@ $lang->user->contactInfo = 'Contact Info';
 
 $lang->user->statusList = new stdclass();
 $lang->user->statusList->locked    = "<label class='label label-danger'>Locked</label>";
-$lang->user->statusList->forbidden = "<label class='label label-danger'>Forbidden</label>";
-$lang->user->statusList->normal    = "<label class='label label-success'>Normal</label>";
+$lang->user->statusList->forbidden = "<label class='label label-danger'>Disabled</label>";
+$lang->user->statusList->normal    = "<label class='label label-success'>Active</label>";
 
 $lang->user->notice = new stdclass();
 $lang->user->notice->password = '>= 6 numbers/letters';
@@ -4909,7 +4909,7 @@ $lang->user->notice->password = '>= 6 numbers/letters';
 $lang->user->colleagueMenuName = 'Colleague';
 
 $lang->user->colleagueMenu = new stdclass();
-$lang->user->colleagueMenu->all = 'Colleague List|user|colleague|';
+$lang->user->colleagueMenu->all = 'Colleagues|user|colleague|';
 
 $lang->dept = new stdclass();
 $lang->dept->common     = 'Department';
