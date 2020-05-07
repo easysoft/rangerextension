@@ -41,7 +41,7 @@ $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' targ
 $lang->bizVersion     = "<a href='https://api.zdoo.co/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>biz <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
 $lang->website        = "http://www.zdoo.co";
 
-$lang->IE6 Alert = <<<EOT
+$lang->IE6Alert = <<<EOT
     <div class='alert alert-danger' style='margin-top:100px;'>
       <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
       <h2>Please use IE(>8), Firefox, Chrome, Safari, Opera to visit this site.</h2>
