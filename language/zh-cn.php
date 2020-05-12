@@ -547,17 +547,12 @@ $lang->menu->cash->check     = '对账|depositor|check|';
 $lang->menu->cash->report    = '报表|trade|report|';
 $lang->menu->cash->depositor = '账户|depositor|browse|';
 $lang->menu->cash->provider  = '供应商|provider|browse|';
-//$lang->menu->cash->contact   = '联系人|contact|browse|';
 $lang->menu->cash->setting   = '设置|tree|browse|type=in|';
 
 if(!isset($lang->depositor)) $lang->depositor = new stdclass();
 
 if(!isset($lang->trade)) $lang->trade = new stdclass();
 $lang->trade->menu = new stdclass();
-
-if(!isset($lang->contact)) $lang->contact = new stdclass();
-$lang->contact->menu = new stdclass();
-$lang->contact->menu->browse = array('link' => '联系人列表|contact|browse|', 'alias' => 'create,edit,view');
 
 if(!isset($lang->report)) $lang->report = new stdclass();
 $lang->report->menu = new stdclass();
@@ -1137,9 +1132,6 @@ $lang->trade->excel->title->depositor = '账号盈亏表';
 
 $lang->trade->excel->help = new stdclass();
 $lang->trade->excel->help->depositor = '本报表不区分币种。';
-/* cash/contact */
-$lang->contact->provider      = '所属供应商';
-$lang->contact->providerName  = '供应商名称';
 /* cash/block */
 $lang->block->common    = '区块';
 $lang->block->depositor = '付款账号';

@@ -547,17 +547,12 @@ $lang->menu->cash->check     = 'Reconcile|depositor|check|';
 $lang->menu->cash->report    = 'Report|trade|report|';
 $lang->menu->cash->depositor = 'Account|depositor|index|';
 $lang->menu->cash->provider  = 'Supplier|provider|index|';
-//$lang->menu->cash->contact   = 'Contact|contact|browse|';
 $lang->menu->cash->setting   = 'Settings|tree|browse|type=in|';
 
 if(!isset($lang->depositor)) $lang->depositor = new stdclass();
 
 if(!isset($lang->trade)) $lang->trade = new stdclass();
 $lang->trade->menu = new stdclass();
-
-if(!isset($lang->contact)) $lang->contact = new stdclass();
-$lang->contact->menu = new stdclass();
-$lang->contact->menu->browse = array('link' => 'Contact|contact|browse|', 'alias' => 'create,edit,view');
 
 if(!isset($lang->report)) $lang->report = new stdclass();
 $lang->report->menu = new stdclass();
@@ -697,7 +692,7 @@ $lang->menu->oa->attend    = 'Attendance|attend|personal|';
 $lang->menu->oa->leave     = 'Leave|leave|personal|';
 $lang->menu->oa->makeup    = 'Makeup|makeup|personal|';
 $lang->menu->oa->overtime  = 'Overtime|overtime|personal|';
-$lang->menu->oa->lieu      = 'Leave In Lieu|lieu|personal|';
+$lang->menu->oa->lieu      = 'LeaveInLieu|lieu|personal|';
 $lang->menu->oa->trip      = 'Trip|trip|personal|';
 $lang->menu->oa->egress    = 'Egress|egress|personal|';
 $lang->menu->oa->refund    = 'Reimbursement|refund|personal|';
@@ -766,9 +761,9 @@ $lang->egress->menu->company    = 'Company|egress|company|';
 if(!isset($lang->refund)) $lang->refund = new stdclass();
 $lang->refund->menu = new stdclass();
 $lang->refund->menu->personal   = array('link' => 'My Reimbursement|refund|personal|', 'alias' => 'create, edit');
-$lang->refund->menu->review     = 'Wait Review|refund|browsereview|status=unreviewed';
+$lang->refund->menu->review     = 'To Review|refund|browsereview|status=unreviewed';
 $lang->refund->menu->reviewedBy = 'My Review|refund|browsereview|status=reviewed';
-$lang->refund->menu->todo       = 'Wait Reimbursement|refund|todo|';
+$lang->refund->menu->todo       = 'To Reimburse|refund|todo|';
 $lang->refund->menu->company    = 'All|refund|company|';
 $lang->refund->menu->settings   = array('link' => 'Settings|refund|setreviewer|', 'alias' => 'setcategory,setdepositor,setrefundby');
 
@@ -937,8 +932,8 @@ $lang->trade->dept         = 'Department';
 $lang->trade->receipt      = 'From';
 $lang->trade->payment      = 'To';
 $lang->trade->fee          = 'Fee';
-$lang->trade->transferIn   = 'Amount';
-$lang->trade->transferOut  = 'Amount';
+$lang->trade->transferIn   = 'In Amount';
+$lang->trade->transferOut  = 'Out Amount';
 $lang->trade->schema       = 'Template';
 $lang->trade->importFile   = 'Files';
 $lang->trade->encode       = 'Encode';
@@ -2102,7 +2097,7 @@ $lang->makeup->end          = 'End';
 $lang->makeup->start        = 'Start';
 $lang->makeup->finish       = 'Finish';
 $lang->makeup->hours        = 'Hours';
-$lang->makeup->leave        = 'Leaves';
+$lang->makeup->leave        = 'Leave';
 $lang->makeup->type         = 'Type';
 $lang->makeup->desc         = 'Description';
 $lang->makeup->status       = 'Status';
