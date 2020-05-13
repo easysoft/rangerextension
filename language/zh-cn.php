@@ -3814,54 +3814,65 @@ $lang->action->label->moved2customerpool    = '移到客户池';
 $lang->action->search = new stdclass();
 $lang->action->search->label = (array)$lang->action->label;
 
+$lang->action->label->order     = '订单|order|view|orderID=%s';
+$lang->action->label->customer  = '客户|customer|view|customerID=%s';
+$lang->action->label->contact   = '联系人|contact|view|contactID=%s';
+$lang->action->label->leads     = '名单|leads|view|contactID=%s';
+$lang->action->label->product   = '产品|product|view|productID=%s';
+$lang->action->label->provider  = '供应商|provider|view|providerID=%s';
+
 $lang->action->label->announce  = '公告|announce|view|announceID=%s';
+$lang->action->label->holiday   = '放假安排|holiday|browse|';
+
+$lang->action->label->depositor = '账户|depositor|browse|';
+$lang->action->label->trade     = '账目|trade|browse|';
 $lang->action->label->balance   = '余额|balance|browse|depositorID=%s';
+$lang->action->label->schema    = '记账模板|schema|browse|';
+
 $lang->action->label->doc       = '文档|doc|view|docID=%s';
 $lang->action->label->doclib    = '文档库|doc|browse|doclibID=%s';
-$lang->action->label->contact   = '联系人|contact|view|contactID=%s';
-$lang->action->label->customer  = '客户|customer|view|customerID=%s';
-$lang->action->label->depositor = '账户|depositor|browse|';
-$lang->action->label->holiday   = '放假安排|holiday|browse|';
-$lang->action->label->leads     = '名单|leads|view|contactID=%s';
-$lang->action->label->order     = '订单|order|view|orderID=%s';
-$lang->action->label->product   = '产品|product|view|productID=%s';
+
 $lang->action->label->project   = '项目|task|browse|projectID=%s';
-$lang->action->label->provider  = '供应商|provider|view|providerID=%s';
-$lang->action->label->schema    = '记账模板|schema|browse|';
-$lang->action->label->space     = ' ';
 $lang->action->label->task      = '任务|task|view|taskID=%s';
 $lang->action->label->todo      = '待办|todo|view|todoID=%s';
-$lang->action->label->trade     = '账目|trade|browse|';
-$lang->action->label->user      = '用户';
+
+$lang->action->label->space     = ' ';
+$lang->action->label->user      = '用户|user|login|';
 
 $lang->action->label->contract = array();
 $lang->action->label->contract['common']     = '合同|contract|view|contractID=%s';
 $lang->action->label->contract['manageteam'] = '合同|contract|confirmTeam|contractID=%s';
 $lang->action->label->attend = array();
+$lang->action->label->attend['common']   = '考勤审批|attend|browsereview|';
 $lang->action->label->attend['commited'] = '考勤审批|attend|browsereview|';
 $lang->action->label->attend['reviewed'] = '考勤审批|attend|personal|';
 $lang->action->label->leave = array();
+$lang->action->label->leave['common']   = '请假审批|leave|browsereview|';
 $lang->action->label->leave['created']  = '请假审批|leave|browsereview|';
 $lang->action->label->leave['commited'] = '请假审批|leave|browsereview|';
 $lang->action->label->leave['revoked']  = '请假审批|leave|browsereview|';
 $lang->action->label->leave['reported'] = '销假审批|leave|browsereview|';
 $lang->action->label->leave['reviewed'] = '请假审批|leave|personal|';
 $lang->action->label->lieu = array();
+$lang->action->label->lieu['common']   = '调休审批|lieu|browsereview|';
 $lang->action->label->lieu['created']  = '调休审批|lieu|browsereview|';
 $lang->action->label->lieu['commited'] = '调休审批|lieu|browsereview|';
 $lang->action->label->lieu['revoked']  = '调休审批|lieu|browsereview|';
 $lang->action->label->lieu['reviewed'] = '调休审批|lieu|personal|';
 $lang->action->label->makeup = array();
+$lang->action->label->makeup['common']   = '补班审批|makeup|browsereview|';
 $lang->action->label->makeup['created']  = '补班审批|makeup|browsereview|';
 $lang->action->label->makeup['commited'] = '补班审批|makeup|browsereview|';
 $lang->action->label->makeup['revoked']  = '补班审批|makeup|browsereview|';
 $lang->action->label->makeup['reviewed'] = '补班审批|makeup|personal|';
 $lang->action->label->overtime = array();
+$lang->action->label->overtime['common']   = '加班审批|overtime|browsereview|';
 $lang->action->label->overtime['created']  = '加班审批|overtime|browsereview|';
 $lang->action->label->overtime['commited'] = '加班审批|overtime|browsereview|';
 $lang->action->label->overtime['revoked']  = '加班审批|overtime|browsereview|';
 $lang->action->label->overtime['reviewed'] = '加班审批|overtime|personal|';
 $lang->action->label->refund = array();
+$lang->action->label->refund['common']      = '报销审批|refund|browsereview|';
 $lang->action->label->refund['commited']    = '报销审批|refund|browsereview|';
 $lang->action->label->refund['revoked']     = '报销审批|refund|browsereview|';
 $lang->action->label->refund['created']     = '报销审批|refund|view|refundID=%s&mode=review';

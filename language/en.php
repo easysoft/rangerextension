@@ -3814,54 +3814,65 @@ $lang->action->label->moved2customerpool    = 'move to customer pool';
 $lang->action->search = new stdclass();
 $lang->action->search->label = (array)$lang->action->label;
 
+$lang->action->label->order     = 'Order|order|view|orderID=%s';
+$lang->action->label->customer  = 'Customer|customer|view|customerID=%s';
+$lang->action->label->contact   = 'Contact|contact|view|contactID=%s';
+$lang->action->label->leads     = 'Lead|leads|view|contactID=%s';
+$lang->action->label->product   = 'Product|product|view|productID=%s';
+$lang->action->label->provider  = 'Supplier|provider|view|providerID=%s';
+
 $lang->action->label->announce  = 'Announce|announce|view|announceID=%s';
+$lang->action->label->holiday   = 'Holiday|hiloday|browse|';
+
+$lang->action->label->depositor = 'Account|depositor|browse|';
+$lang->action->label->trade     = 'Trade|trade|browse|';
 $lang->action->label->balance   = 'Balance|balance|browse|depositorID=%s';
+$lang->action->label->schema    = 'Trade Template|schema|browse|';
+
 $lang->action->label->doc       = 'Document|doc|view|docID=%s';
 $lang->action->label->doclib    = 'Document Library|doc|browse|doclibID=%s';
-$lang->action->label->contact   = 'Contact|contact|view|contactID=%s';
-$lang->action->label->customer  = 'Customer|customer|view|customerID=%s';
-$lang->action->label->depositor = 'Account|depositor|browse|';
-$lang->action->label->holiday   = 'Holiday|hiloday|browse|';
-$lang->action->label->leads     = 'Lead|leads|view|contactID=%s';
-$lang->action->label->order     = 'Order|order|view|orderID=%s';
-$lang->action->label->product   = 'Product|product|view|productID=%s';
+
 $lang->action->label->project   = 'Project|task|browse|projectID=%s';
-$lang->action->label->provider  = 'Supplier|provider|view|providerID=%s';
-$lang->action->label->schema    = 'Trade Template|schema|browse|';
-$lang->action->label->space     = ' ';
 $lang->action->label->task      = 'Task|task|view|taskID=%s';
 $lang->action->label->todo      = 'Todo|todo|view|todoID=%s';
-$lang->action->label->trade     = 'Trade|trade|browse|';
-$lang->action->label->user      = 'User';
+
+$lang->action->label->space     = ' ';
+$lang->action->label->user      = 'User|user|login|';
 
 $lang->action->label->contract = array();
 $lang->action->label->contract['common']     = 'Contract|contract|view|contractID=%s';
 $lang->action->label->contract['manageteam'] = 'Contract|contract|confirmTeam|contractID=%s';
 $lang->action->label->attend = array();
+$lang->action->label->attend['common']   = 'attend review|attend|browsereview|';
 $lang->action->label->attend['commited'] = 'attend review|attend|browsereview|';
 $lang->action->label->attend['reviewed'] = 'attend review|attend|personal|';
 $lang->action->label->leave = array();
+$lang->action->label->leave['common']   = 'leave review|leave|browsereview|';
 $lang->action->label->leave['created']  = 'leave review|leave|browsereview|';
 $lang->action->label->leave['commited'] = 'leave review|leave|browsereview|';
 $lang->action->label->leave['revoked']  = 'leave review|leave|browsereview|';
 $lang->action->label->leave['reported'] = 'leave report review|leave|browsereview|';
 $lang->action->label->leave['reviewed'] = 'leave review|leave|personal|';
 $lang->action->label->lieu = array();
+$lang->action->label->lieu['common']   = 'lieu review|lieu|browsereview|';
 $lang->action->label->lieu['created']  = 'lieu review|lieu|browsereview|';
 $lang->action->label->lieu['commited'] = 'lieu review|lieu|browsereview|';
 $lang->action->label->lieu['revoked']  = 'lieu review|lieu|browsereview|';
 $lang->action->label->lieu['reviewed'] = 'lieu review|lieu|personal|';
 $lang->action->label->makeup = array();
+$lang->action->label->makeup['common']   = 'makeup review|makeup|browsereview|';
 $lang->action->label->makeup['created']  = 'makeup review|makeup|browsereview|';
 $lang->action->label->makeup['commited'] = 'makeup review|makeup|browsereview|';
 $lang->action->label->makeup['revoked']  = 'makeup review|makeup|browsereview|';
 $lang->action->label->makeup['reviewed'] = 'makeup review|makeup|personal|';
 $lang->action->label->overtime = array();
+$lang->action->label->overtime['common']   = 'overtime review|overtime|browsereview|';
 $lang->action->label->overtime['created']  = 'overtime review|overtime|browsereview|';
 $lang->action->label->overtime['commited'] = 'overtime review|overtime|browsereview|';
 $lang->action->label->overtime['revoked']  = 'overtime review|overtime|browsereview|';
 $lang->action->label->overtime['reviewed'] = 'overtime review|overtime|personal|';
 $lang->action->label->refund = array();
+$lang->action->label->refund['common']      = 'refund review|refund|browsereview|';
 $lang->action->label->refund['commited']    = 'refund review|refund|browsereview|';
 $lang->action->label->refund['revoked']     = 'refund review|refund|browsereview|';
 $lang->action->label->refund['created']     = 'refund review|refund|view|refundID=%s&mode=review';
