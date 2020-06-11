@@ -1948,6 +1948,9 @@ $lang->overtime->hoursTip = 'Hours';
 
 $lang->overtime->reviewStatusList['pass']   = 'Pass';
 $lang->overtime->reviewStatusList['reject'] = 'Reject';
+
+$lang->overtime->actionWidth         = 130;
+$lang->overtime->personalActionWidth = 180;
 /* oa/trip */
 if(!isset($lang->trip)) $lang->trip = new stdclass();
 $lang->trip->common = 'Trip';
@@ -2055,7 +2058,7 @@ $lang->leave->denied        = 'Access is denied.';
 $lang->leave->unique        = 'There was a Leave in %s.';
 $lang->leave->sameMonth     = 'Leaves must be in the same month.';
 $lang->leave->wrongEnd      = 'End time should be > begin time.';
-$lang->leave->wrongBackDate = 'Back time should be > begin time.';
+$lang->leave->wrongBackDate = '<strong>Back time</strong> should be > <strong>begin time</strong>.';
 $lang->leave->nodata        = 'No data is selected.';
 $lang->leave->reviewSuccess = 'Reviewed';
 
@@ -2071,6 +2074,9 @@ $lang->leave->reviewStatusList['reject'] = 'Reject';
 $lang->leave->settings = new stdclass();
 $lang->leave->settings->setReviewer    = "Reviewer|leave|setreviewer";
 $lang->leave->settings->personalAnnual = "Annual leave|leave|personalannual";
+
+$lang->leave->actionWidth         = 140;
+$lang->leave->personalActionWidth = 200;
 /* oa/makeup */
 if(!isset($lang->makeup)) $lang->makeup = new stdclass();
 $lang->makeup->common = 'Makeup';
@@ -2133,6 +2139,9 @@ $lang->makeup->hoursTip = 'Hours';
 
 $lang->makeup->reviewStatusList['pass']   = 'Pass';
 $lang->makeup->reviewStatusList['reject'] = 'Reject';
+
+$lang->makeup->actionWidth         = 130;
+$lang->makeup->personalActionWidth = 180;
 /* oa/attend */
 if(!isset($lang->attend)) $lang->attend = new stdclass();
 $lang->attend->common       = 'Attendance';
@@ -2372,6 +2381,9 @@ $lang->lieu->checkHoursList['1'] = 'Yes. Lieu hours cannot be > overtime hours (
 
 $lang->lieu->reviewStatusList['pass']   = 'Pass';
 $lang->lieu->reviewStatusList['reject'] = 'Reject';
+
+$lang->lieu->actionWidth         = 130;
+$lang->lieu->personalActionWidth = 180;
 /* proj/block */
 $lang->block->common   = 'Block';
 $lang->block->lblBlock = 'Block';

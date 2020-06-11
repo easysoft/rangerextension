@@ -1948,6 +1948,9 @@ $lang->overtime->hoursTip = '小时';
 
 $lang->overtime->reviewStatusList['pass']   = '通过';
 $lang->overtime->reviewStatusList['reject'] = '拒绝';
+
+$lang->overtime->actionWidth         = 120;
+$lang->overtime->personalActionWidth = 140;
 /* oa/trip */
 if(!isset($lang->trip)) $lang->trip = new stdclass();
 $lang->trip->common = '出差';
@@ -2055,7 +2058,7 @@ $lang->leave->denied        = '信息访问受限';
 $lang->leave->unique        = '%s 已经存在请假记录';
 $lang->leave->sameMonth     = '不支持跨月份请假';
 $lang->leave->wrongEnd      = '结束时间应该大于开始时间';
-$lang->leave->wrongBackDate = '报到时间应该大于开始时间';
+$lang->leave->wrongBackDate = '<strong>报到时间</strong>应该大于<strong>开始时间</strong>';
 $lang->leave->nodata        = '没有选择数据';
 $lang->leave->reviewSuccess = '审批成功';
 
@@ -2071,6 +2074,9 @@ $lang->leave->reviewStatusList['reject'] = '拒绝';
 $lang->leave->settings = new stdclass();
 $lang->leave->settings->setReviewer    = "审批人|leave|setreviewer";
 $lang->leave->settings->personalAnnual = "个人年假|leave|personalannual";
+
+$lang->leave->actionWidth         = 100;
+$lang->leave->personalActionWidth = 180;
 /* oa/makeup */
 if(!isset($lang->makeup)) $lang->makeup = new stdclass();
 $lang->makeup->common = '补班';
@@ -2133,6 +2139,9 @@ $lang->makeup->hoursTip = '小时';
 
 $lang->makeup->reviewStatusList['pass']   = '通过';
 $lang->makeup->reviewStatusList['reject'] = '拒绝';
+
+$lang->makeup->actionWidth         = 120;
+$lang->makeup->personalActionWidth = 140;
 /* oa/attend */
 if(!isset($lang->attend)) $lang->attend = new stdclass();
 $lang->attend->common       = '考勤';
@@ -2372,6 +2381,9 @@ $lang->lieu->checkHoursList['1'] = '调休时长不能超过加班时长';
 
 $lang->lieu->reviewStatusList['pass']   = '通过';
 $lang->lieu->reviewStatusList['reject'] = '拒绝';
+
+$lang->lieu->actionWidth         = 120;
+$lang->lieu->personalActionWidth = 140;
 /* proj/block */
 $lang->block->common   = '区块';
 $lang->block->lblBlock = '区块';
