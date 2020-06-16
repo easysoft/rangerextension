@@ -2075,7 +2075,7 @@ $lang->leave->settings = new stdclass();
 $lang->leave->settings->setReviewer    = "审批人|leave|setreviewer";
 $lang->leave->settings->personalAnnual = "个人年假|leave|personalannual";
 
-$lang->leave->actionWidth         = 100;
+$lang->leave->actionWidth         = 110;
 $lang->leave->personalActionWidth = 180;
 /* oa/makeup */
 if(!isset($lang->makeup)) $lang->makeup = new stdclass();
