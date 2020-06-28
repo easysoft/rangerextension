@@ -34,11 +34,12 @@ $lang->apps->superadmin = '后台';
 
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = '全协同管理平台';
+$lang->versionName    = '基础版';
 $lang->agreement      = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩ZDOO系统的任何标志及链接。</span>";
-$lang->poweredBy      = "<a href='https://www.zdoo.com/?v=%s' target='_blank'>%s %s</a>";
+$lang->poweredBy      = "<a href='https://www.zdoo.com/?v=%s' target='_blank'>%s</a>";
 $lang->ipLimited      = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>抱歉，管理员限制当前IP登录，请联系管理员解除限制。</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>艾体验</strong></a>";
-$lang->bizVersion     = "<a href='https://api.zdoo.com/goto.php?item=bizversion&from=footer' target='_blank' id='proLink' class='text-important'>企业版 <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
+$lang->bizVersion     = '企业版';
 $lang->website        = "https://www.zdoo.com";
 
 $lang->IE6Alert = <<<EOT
@@ -3090,13 +3091,12 @@ $lang->install->welcome          = "您睿智地选择了{$lang->zdoo}!";
 $lang->install->license          = 'ZDOO使用 Z PUBLIC LICENSE(ZPL) 1.2 授权协议。';
 $lang->install->desc             = <<<EOT
 <blockquote>
-  <strong>{$lang->zdoo}</strong>由<strong><a href='http://www.cnezsoft.com' target='_blank' class='red'>青岛易软天创网络科技有限公司</a>开发</strong>，
-  <!--内置项目、客户、现金流、办公和沟通共五大核心功能模块，-->
+  <strong>{$lang->zdoo}</strong>由<strong><a href='https://www.easycorp.cn' target='_blank' class='red'>青岛易软天创网络科技有限公司</a>开发</strong>，
   专为中小型团队量身打造，是中小型团队信息化的首选工具！
 
-  官方网站：<a href='http://www.zdoo.com' target='_blank'>http://www.zdoo.com</a>
-  技术支持: <a href='http://www.zdoo.com/forum/' target='_blank'>http://www.zdoo.com/forum/</a>
-  您现在正在安装的版本是 <strong class='red'>%s</strong>。
+  官方网站：<a href='https://www.zdoo.com' target='_blank'>https://www.zdoo.com</a>
+  技术支持: <a href='https://www.zdoo.com/forum/' target='_blank'>https://www.zdoo.com/forum/</a>
+  您现在正在安装的版本是 <strong class='red'>{$lang->versionName} %s</strong>。
 </blockquote>
 EOT;
 

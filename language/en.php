@@ -34,11 +34,12 @@ $lang->apps->superadmin = 'ADMIN';
 
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = ' Enterprise Collaboration System';
+$lang->versionName    = 'Basic';
 $lang->agreement      = "I have read and agreed to  <a href='http://zpl.pub/page/zplv12.html' target='_blank'>Z PUBLIC LICENSE 1.2</a>, <span class='text-danger'>and will keep the logos and links of ZDOO.</span>";
-$lang->poweredBy      = "<a href='https://www.zdoo.co/?v=%s' target='_blank'>%s %s</a>";
+$lang->poweredBy      = "<a href='https://www.zdoo.co/?v=%s' target='_blank'>%s</a>";
 $lang->ipLimited      = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /></head><body>Sorry, your current IP is blocked. Please contact your ZDOO Administrator to get permissions.</body></html>";
 $lang->designedByAIUX = "<a href='http://aiuxstudio.com/' class='link-aiux' target='_blank'>Designed by <strong>AIUX</strong></a>";
-$lang->bizVersion     = "<a href='https://api.zdoo.co/goto.php?item=proversion&from=footer' target='_blank' id='proLink' class='text-important'>biz <i class='text-danger icon-biz-version'></i></a> &nbsp; ";
+$lang->bizVersion     = 'Biz';
 $lang->website        = "http://www.zdoo.co";
 
 $lang->IE6Alert = <<<EOT
@@ -3090,13 +3091,12 @@ $lang->install->welcome          = "Welcome to {$lang->zdoo}.";
 $lang->install->license          = 'ZDOO is under license of Z PUBLIC LICENSE(ZPL) 1.2. ';
 $lang->install->desc             = <<<EOT
 <blockquote>
-  <strong>{$lang->zdoo}</strong> is developed by <strong><a href='http://en.easysoft.com' target='_blank' class='red'>QingDao Nature Easy Soft Network Technology Co.,Ltd.</a></strong>
-  <!--With project management, CRM, cashflow management, office automation and communication management and more features.-->
+  <strong>{$lang->zdoo}</strong> is developed by <strong><a href='https://www.easycorp.cn' target='_blank' class='red'>QingDao Nature Easy Soft Network Technology Co.,Ltd.</a></strong>
   Especifically for small and medium sized teams!
 
-  Website:<a href='http://www.zdoo.com' target='_blank'>http://www.zdoo.com</a>
-  Suport: <a href='http://www.zdoo.com/forum/' target='_blank'>http://www.zdoo.com/forum/</a>
-  Current Version: <strong class='red'>%s</strong>。
+  Website:<a href='https://www.zdoo.com' target='_blank'>https://www.zdoo.com</a>
+  Suport: <a href='https://www.zdoo.com/forum/' target='_blank'>https://www.zdoo.com/forum/</a>
+  Current Version: <strong class='red'>{$lang->versionName} %s</strong>。
 </blockquote>
 EOT;
 
