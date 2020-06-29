@@ -3670,6 +3670,7 @@ $lang->action->action   = '动作';
 $lang->action->actionID = '记录ID';
 $lang->action->date     = '日期';
 $lang->action->nextDate = '下次联系';
+$lang->action->system   = '系统';
 
 $lang->action->trash      = '回收站';
 $lang->action->objectType = '对象类型';
@@ -3796,6 +3797,11 @@ $lang->action->label->imported           = '导入了';
 $lang->action->label->login              = '登录系统';
 $lang->action->label->logout             = '退出登录';
 $lang->action->label->dating             = '创建了下次联系';
+$lang->action->label->manageteam         = '设置团队提成比例';
+$lang->action->label->confirmteam        = '确认团队提成比例';
+$lang->action->label->moved2customerpool = '移到客户池';
+$lang->action->label->createdbalance     = '登记余额';
+$lang->action->label->forbidden          = '禁用';
 
 $lang->action->label->createdbalance        = '登记余额';
 $lang->action->label->createorder           = '创建订单';
@@ -4832,7 +4838,7 @@ $lang->user->common    = '成员';
 
 $lang->user->id        = '编号';
 $lang->user->account   = '用户名';
-$lang->user->super     = '管理员';
+$lang->user->super     = '超级管理员';
 $lang->user->password  = '密码';
 $lang->user->password2 = '重复密码';
 $lang->user->realname  = '真实姓名';
@@ -4867,6 +4873,7 @@ $lang->user->list            = '成员列表';
 $lang->user->colleague       = '同事列表';
 $lang->user->view            = "成员详情";
 $lang->user->create          = "添加成员";
+$lang->user->batchCreate     = "批量添加";
 $lang->user->edit            = "编辑成员";
 $lang->user->changePassword  = "更改密码";
 $lang->user->newPassword     = "新密码";
@@ -4904,6 +4911,10 @@ $lang->user->actionFail    = '操作失败';
 $lang->user->uploadSuccess = '上传成功';
 $lang->user->actionError   = '操作失败，原因是 %s 存在该用户未审批的数据。';
 $lang->user->retainAccount = '不能使用 <strong>%s</strong> 作为用户名。';
+$lang->user->exceeded      = '抱歉，您的使用人数已经超出上限，请联系商务人员购买更多授权，邮箱：jinjuan@easycorp.ltd，电话：18562856230，QQ：1826606239。';
+
+$lang->user->adminList['super'] = '是';
+$lang->user->adminList['no']    = '否';
 
 $lang->user->reviewProcess['attend']   = '考勤';
 $lang->user->reviewProcess['leave']    = '请假';
