@@ -3246,7 +3246,7 @@ $lang->my->orderActionWidth    = 220;
 $lang->my->projectActionWidth  = 180;
 $lang->my->taskActionWidth     = 240;
 
-$lang->my->licenseInfo = "您使用的是zdoo系统内置%s人授权，到期时间为%s，请及时申请正式授权。";
+$lang->my->licenseInfo = "您使用的是试用版授权，授权用户数%s人，到期时间%s，请联系<a href='mailto:jinjuan@easycorp.ltd'>jinjuan@easycorp.ltd</a>获取正式授权。";
 /* sys/tree */
 $lang->tree->common        = "类目";
 $lang->tree->add           = "添加";

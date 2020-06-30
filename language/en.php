@@ -584,7 +584,7 @@ $lang->menu->crm->contract  = 'Contract|contract|browse|mode=unfinished';
 $lang->menu->crm->customer  = 'Customer|customer|index|';
 $lang->menu->crm->provider  = 'Supplier|provider|browse|';
 $lang->menu->crm->contact   = 'Contact|contact|index|';
-$lang->menu->crm->leads     = 'List|leads|browse|';
+$lang->menu->crm->leads     = 'Lead|leads|browse|';
 $lang->menu->crm->product   = 'Product|product|index|';
 $lang->menu->crm->setting   = 'Settings|sales|admin|';
 
@@ -598,7 +598,7 @@ $lang->order->menu->today       = 'Today|order|browse|mode=today';
 $lang->order->menu->tomorrow    = 'Tomorrow|order|browse|mode=tomorrow';
 $lang->order->menu->thisweek    = 'This Week|order|browse|mode=thisweek';
 $lang->order->menu->thismonth   = 'This Month|order|browse|mode=thismonth';
-$lang->order->menu->public      = 'Public|order|browse|mode=public';
+$lang->order->menu->public      = 'Public Lead|order|browse|mode=public';
 $lang->order->menu->report      = 'Report|report|browse|module=order';
 
 if(!isset($lang->contact)) $lang->contact = new stdclass();
@@ -1349,7 +1349,7 @@ $lang->contact->customerInfo = 'Customer Info';
 
 $lang->contact->leftAt       = 'Resigned on %s';
 $lang->contact->failedAvatar = 'Failed!';
-$lang->contact->emailTip     = 'Please separate email addresses with a comma or space';
+$lang->contact->emailTip     = 'separate email addresses with a comma or space';
 
 $lang->contact->noFile       = 'No File';
 $lang->contact->importResult = '%s imported. %s failed. Details are as follows';
@@ -1601,7 +1601,7 @@ $lang->leads->browse         = 'Leads';
 $lang->leads->create         = 'Create';
 $lang->leads->edit           = 'Edit';
 $lang->leads->delete         = 'Delete';
-$lang->leads->view           = 'Leads';
+$lang->leads->view           = 'Detail';
 $lang->leads->apply          = 'Apply';
 $lang->leads->assign         = 'Assign';
 $lang->leads->transform      = 'Confirm';
@@ -1617,7 +1617,7 @@ $lang->leads->ignoreReason = 'Reasons';
 
 $lang->leads->tips = new stdclass();
 $lang->leads->tips->apply       = 'Please deal with the existing contacts.';
-$lang->leads->tips->applyRemain = 'You can apply again when the number of records is lower than it.';
+$lang->leads->tips->applyRemain = 'You can apply again when the number of leads is lower than it.';
 
 $lang->leads->actionWidth = 280;
 /* doc/block */
@@ -3246,7 +3246,7 @@ $lang->my->orderActionWidth    = 200;
 $lang->my->projectActionWidth  = 210;
 $lang->my->taskActionWidth     = 280;
 
-$lang->my->licenseInfo = "You are using the built-in license of the ZDOO with %s users and expiration %s. Contact troy@easycorp.ltd for a licnese.";
+$lang->my->licenseInfo = "You are using a trial license, the number of authorized users is %s, and the expiration time is %s. Contact <a href='mailto:jinjuan@easycorp.ltd'>jinjuan@easycorp.ltd</a> for a formal authorization.";
 /* sys/tree */
 $lang->tree->common      = "Tree";
 $lang->tree->add         = "Add";
