@@ -3824,6 +3824,7 @@ $lang->action->label->finishdelivercontract = '完成交付';
 $lang->action->label->delivered             = '交付';
 $lang->action->label->delivercontract       = '交付';
 $lang->action->label->returned              = '回款';
+$lang->action->label->editreturned          = '编辑回款';
 $lang->action->label->receivecontract       = '回款';
 $lang->action->label->finishreceivecontract = '完成回款';
 $lang->action->label->finishreturned        = '完成回款';

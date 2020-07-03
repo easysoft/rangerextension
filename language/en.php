@@ -3824,6 +3824,7 @@ $lang->action->label->finishdelivercontract = 'finish delivered';
 $lang->action->label->delivered             = 'deliver';
 $lang->action->label->delivercontract       = 'deliver';
 $lang->action->label->returned              = 'return';
+$lang->action->label->editreturned          = 'edit returned';
 $lang->action->label->receivecontract       = 'return';
 $lang->action->label->finishreceivecontract = 'finish returned';
 $lang->action->label->finishreturned        = 'finish returned';
