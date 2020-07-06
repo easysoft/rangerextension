@@ -4912,6 +4912,7 @@ $lang->user->actionFail    = 'Failed.';
 $lang->user->uploadSuccess = 'Uploaded.';
 $lang->user->actionError   = 'Error. There are records created by this user.';
 $lang->user->retainAccount = 'You cannot set <strong>%s</strong> as an account.';
+$lang->user->exceeded      = 'Sorry, your number of users has exceeded the limit, please contact the business staff to purchase more, email:jinjuan@easycorp.ltd, mobile:18562856230, QQ:1826606239。';
 
 $lang->user->adminList['super'] = 'Yes';
 $lang->user->adminList['no']    = 'No';
