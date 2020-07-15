@@ -4913,6 +4913,10 @@ $lang->user->uploadSuccess = 'Uploaded.';
 $lang->user->actionError   = 'Error. There are records created by this user.';
 $lang->user->retainAccount = 'You cannot set <strong>%s</strong> as an account.';
 $lang->user->exceeded      = 'Sorry, your number of users has exceeded the limit, please contact the business staff to purchase more, email:jinjuan@easycorp.ltd, mobile:18562856230, QQ:1826606239。';
+$lang->user->importResult  = '%s imported. %s failed. Details are as follows';
+$lang->user->failReason    = 'Reason';
+$lang->user->showImport    = 'Imported Users';
+$lang->user->template      = 'User Template';
 
 $lang->user->adminList['super'] = 'Yes';
 $lang->user->adminList['no']    = 'No';

@@ -4913,6 +4913,10 @@ $lang->user->uploadSuccess = '上传成功';
 $lang->user->actionError   = '操作失败，原因是 %s 存在该用户未审批的数据。';
 $lang->user->retainAccount = '不能使用 <strong>%s</strong> 作为用户名。';
 $lang->user->exceeded      = '抱歉，您的使用人数已经超出上限，请联系商务人员购买更多授权，邮箱：jinjuan@easycorp.ltd，电话：18562856230，QQ：1826606239。';
+$lang->user->importResult  = '%s条数据导入成功，%s条数据导入失败，失败数据如下：';
+$lang->user->failReason    = '原因';
+$lang->user->showImport    = '查看已导入用户';
+$lang->user->template      = '用户模板';
 
 $lang->user->adminList['super'] = '是';
 $lang->user->adminList['no']    = '否';
