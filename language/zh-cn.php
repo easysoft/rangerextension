@@ -236,7 +236,7 @@ $lang->user->menu->disabled = '禁用成员|user|admin|deptID=&status=forbid';
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
 $lang->entry->menu->zdoo     = array('link' => 'ZDOO应用|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin, bindUser');
-$lang->entry->menu->xuanxuan = '喧喧应用|entry|admin|category=&platform=xuanxuan';
+$lang->entry->menu->xuanxuan = '聊天应用|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = '添加应用|entry|create|';
 $lang->entry->menu->webapp   = 'WEB应用|webapp|obtain|';
 $lang->entry->menu->category = '分组|entry|category|';
@@ -2309,6 +2309,7 @@ $lang->attend->note->allip        = '无限制';
 $lang->attend->note->IPDenied     = '签到IP受限，无法签到';
 $lang->attend->note->beginDate    = '设置开始考勤的日期，在该日期之前不记录考勤状态。如果不设置则根据实际数据记录考勤状态。默认使用公司开始考勤日期计算考勤状态，如果设置了个人开始考勤日期则使用个人日期。';
 $lang->attend->note->signInClient = '设置为所有时可以通过任意途径签到，否则只能通过选定的访问方式签到。';
+$lang->attend->note->disabledIP   = '允许签到的ip格式错误。';
 
 $lang->attend->h = '小时';
 $lang->attend->m = '分';
@@ -3971,7 +3972,7 @@ $lang->action->objectTypes['schema']    = '记账模板';
 $lang->action->objectTypes['doclib']    = '文档库';
 $lang->action->objectTypes['action']    = '沟通记录';
 
-$lang->action->noticeTitle  = "<a href='%s' data-appid='%s'>%s</a>";
+$lang->action->noticeTitle  = "<a href='%s' data-appid='%s' %s>%s</a>";
 $lang->action->uniqueDating = "<stong>%s</strong>已经有下次联系的记录。";
 
 $lang->action->dynamic = new stdclass();
@@ -4558,7 +4559,7 @@ $lang->entry->integrationList[1] = '启用';
 $lang->entry->integrationList[0] = '关闭';
 
 $lang->entry->platformList['zdoo']     = 'ZDOO';
-$lang->entry->platformList['xuanxuan'] = '喧喧';
+$lang->entry->platformList['xuanxuan'] = '聊天';
 
 $lang->entry->errmsg['PARAM_CODE_MISSING']    = '缺少code参数';
 $lang->entry->errmsg['PARAM_TOKEN_MISSING']   = '缺少token参数';
@@ -4758,7 +4759,7 @@ $lang->notify->setting = '设置';
 $lang->notify->typeList['mail']     = '邮件';
 $lang->notify->typeList['message']  = '浏览器通知';
 $lang->notify->typeList['webhook']  = 'Webhook';
-$lang->notify->typeList['xuanxuan'] = '喧喧';
+$lang->notify->typeList['xuanxuan'] = '聊天';
 /* sys/setting */
 $lang->setting->common = '设置';
 $lang->setting->reset  = '恢复默认';

@@ -236,7 +236,7 @@ $lang->user->menu->disabled = 'Disabled Users|user|admin|deptID=&status=forbid';
 $lang->entry       = new stdclass();
 $lang->entry->menu = new stdclass();
 $lang->entry->menu->zdoo     = array('link' => 'ZDOO|entry|admin|category=&platform=zdoo', 'alias' => 'edit, integration, style, zentaoAdmin');
-$lang->entry->menu->xuanxuan = 'Xuanxuan|entry|admin|category=&platform=xuanxuan';
+$lang->entry->menu->xuanxuan = 'IM|entry|admin|category=&platform=xuanxuan';
 $lang->entry->menu->create   = array('link' => 'Create|entry|create|');
 $lang->entry->menu->webapp   = 'WebApp|webapp|obtain|';
 $lang->entry->menu->category = 'Category|entry|category|';
@@ -2309,6 +2309,7 @@ $lang->attend->note->allip        = 'All IPs';
 $lang->attend->note->IPDenied     = 'IP is denied.';
 $lang->attend->note->beginDate    = 'Set a date to begin tracking attendance. The attenance before this date will not be saved.';
 $lang->attend->note->signInClient = 'Select All to allow clockin via any devices, otherwise users have to clock in via the selected one.';
+$lang->attend->note->disabledIP   = 'The IPs format are disabeld.';
 
 $lang->attend->h = 'hours';
 $lang->attend->m = 'minutes';
@@ -4558,7 +4559,7 @@ $lang->entry->integrationList[1] = 'Open';
 $lang->entry->integrationList[0] = 'Close';
 
 $lang->entry->platformList['zdoo']     = 'ZDOO';
-$lang->entry->platformList['xuanxuan'] = 'XuanXuan';
+$lang->entry->platformList['xuanxuan'] = 'IM';
 
 $lang->entry->errmsg['PARAM_CODE_MISSING']    = 'Param code is missing.';
 $lang->entry->errmsg['PARAM_TOKEN_MISSING']   = 'Param token is missing.';
@@ -4758,7 +4759,7 @@ $lang->notify->setting = 'Settings';
 $lang->notify->typeList['mail']     = 'Email';
 $lang->notify->typeList['message']  = 'Message';
 $lang->notify->typeList['webhook']  = 'Webhook';
-$lang->notify->typeList['xuanxuan'] = 'XuanXuan';
+$lang->notify->typeList['xuanxuan'] = 'IM';
 /* sys/setting */
 $lang->setting->common = 'Settings';
 $lang->setting->reset  = 'Reset';
