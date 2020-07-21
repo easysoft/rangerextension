@@ -3662,6 +3662,7 @@ if(!isset($lang->action)) $lang->action = new stdclass();
 $lang->action->common          = '系统日志';
 $lang->action->finishAllDating = '完成所有下次联系';
 $lang->action->deleteAllDating = '删除所有下次联系';
+$lang->action->editDating      = '编辑下次联系';
 
 $lang->action->product  = '产品';
 $lang->action->actor    = '操作者';
@@ -4246,12 +4247,15 @@ $lang->report->orderTitle   = '订单标题';
 $lang->report->taskName     = '任务名称';
 $lang->report->todoName     = '待办名称';
 $lang->report->customerName = '客户名称';
+$lang->report->contractName = '合同名称';
+$lang->report->contractEnd  = '到期时间';
 
 $lang->report->mailTitle                = new stdclass();
 $lang->report->mailTitle->begin         = '提醒：您有';
-$lang->report->mailTitle->order         = " 亟需联系订单(%s),";
-$lang->report->mailTitle->task          = " 任务(%s),";
 $lang->report->mailTitle->todo          = " 待办(%s),";
+$lang->report->mailTitle->task          = " 任务(%s),";
+$lang->report->mailTitle->order         = " 亟需联系订单(%s),";
+$lang->report->mailTitle->contract      = " 亟需联系合同(%s),";
 $lang->report->mailTitle->customer      = " 亟需联系客户(%s),";
 $lang->report->mailTitle->contractCount = " 跟踪的合同数(%s),";
 /* sys/cron */

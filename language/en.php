@@ -3662,6 +3662,7 @@ if(!isset($lang->action)) $lang->action = new stdclass();
 $lang->action->common          = 'Logs';
 $lang->action->finishAllDating = 'Finish All Next Contact';
 $lang->action->deleteAllDating = 'Delete All Next Contact';
+$lang->action->editDating      = 'Edit Next Contact';
 
 $lang->action->product  = 'Product';
 $lang->action->actor    = 'Account';
@@ -4246,13 +4247,16 @@ $lang->report->orderTitle   = 'Order Title';
 $lang->report->taskName     = 'Task Name';
 $lang->report->todoName     = 'Todo Name';
 $lang->report->customerName = 'Customer Name';
+$lang->report->contractName = 'Contract Name';
+$lang->report->contractEnd  = 'End Date';
 
-$lang->report->mailTitle           = new stdclass();
-$lang->report->mailTitle->begin    = 'Notice: You have';
-$lang->report->mailTitle->order    = " Urgent orders(%s),";
-$lang->report->mailTitle->task     = " Tasks(%s),";
-$lang->report->mailTitle->todo     = " Todos(%s),";
-$lang->report->mailTitle->customer = " Urgent customers(%s),";
+$lang->report->mailTitle                = new stdclass();
+$lang->report->mailTitle->begin         = 'Notice: You have';
+$lang->report->mailTitle->todo          = " Todos(%s),";
+$lang->report->mailTitle->task          = " Tasks(%s),";
+$lang->report->mailTitle->order         = " Urgent orders(%s),";
+$lang->report->mailTitle->contract      = " Urgent contracts(%s),";
+$lang->report->mailTitle->customer      = " Urgent customers(%s),";
 $lang->report->mailTitle->contractCount = " Tracked contracts(%s),";
 /* sys/cron */
 if(!isset($lang->cron)) $lang->cron = new stdclass();
