@@ -24,13 +24,13 @@ $lang->exportIcon = "<i class='icon-export'> </i>";
 
 $lang->apps = new stdclass();
 $lang->apps->crm        = '客户';
-$lang->apps->cash       = '财务';
 $lang->apps->oa         = '办公';
-$lang->apps->doc        = '文档';
 $lang->apps->proj       = '项目';
-$lang->apps->sys        = '通用';
+$lang->apps->doc        = '文档';
+$lang->apps->cash       = '财务';
 $lang->apps->team       = '团队';
 $lang->apps->superadmin = '后台';
+$lang->apps->sys        = '通用';
 
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = '全协同管理平台';
@@ -1608,6 +1608,8 @@ $lang->leads->transform      = '确认';
 $lang->leads->ignore         = '忽略';
 $lang->leads->settings       = '设置';
 $lang->leads->applyRule      = '派发规则';
+$lang->leads->batchIgnore    = '批量忽略';
+$lang->leads->batchAssign    = '批量指派';
 
 $lang->leads->list = '名单列表';
 
@@ -3760,6 +3762,7 @@ $lang->action->desc->createtrip            = '$date, 由 <strong>$actor</strong>
 $lang->action->desc->createegress          = '$date, 由 <strong>$actor</strong> 创建外出：<strong>$extra</strong>。' . "\n";
 $lang->action->desc->imported              = '$date, 由 <strong>$actor</strong> 导入。' . "\n";
 $lang->action->desc->dating                = '$date, 由 <strong>$actor</strong> 创建下次联系：<strong>$extra</strong>。' . "\n";
+$lang->action->desc->editdating            = '$date, 由 <strong>$actor</strong> 编辑下次联系：<strong>$extra</strong>。' . "\n";
 $lang->action->desc->manageteam            = '$date, 由 <strong>$actor</strong> 设置团队提成比例。' . "\n";
 $lang->action->desc->confirmteam           = '$date, 由 <strong>$actor</strong> 确认团队提成比例：<strong>$extra</strong>。' . "\n";
 $lang->action->desc->moved2customerpool    = '$date, 由 <strong>$actor</strong> 移到客户池。';
@@ -3799,6 +3802,7 @@ $lang->action->label->imported           = '导入了';
 $lang->action->label->login              = '登录系统';
 $lang->action->label->logout             = '退出登录';
 $lang->action->label->dating             = '创建了下次联系';
+$lang->action->label->editdating         = '编辑了下次联系';
 $lang->action->label->manageteam         = '设置团队提成比例';
 $lang->action->label->confirmteam        = '确认团队提成比例';
 $lang->action->label->moved2customerpool = '移到客户池';
@@ -4749,6 +4753,9 @@ $lang->group->manageAll = '可浏览所有客户和订单';
 
 $lang->group->copyOptions['copyPriv'] = '复制权限';
 $lang->group->copyOptions['copyUser'] = '复制用户';
+
+$lang->group->apps['superadmin'] = '后台';
+$lang->group->apps['sys']        = '通用';
 
 $lang->group->placeholder = new stdclass();
 $lang->group->placeholder->tree = '类目包括对区域、行业、收入科目、支出科目、论坛版块、博客类目、部门的权限设置';

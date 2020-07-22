@@ -24,13 +24,13 @@ $lang->exportIcon = "<i class='icon-export'> </i>";
 
 $lang->apps = new stdclass();
 $lang->apps->crm        = 'CRM';
-$lang->apps->cash       = 'CASH';
 $lang->apps->oa         = 'OA';
-$lang->apps->doc        = 'DOC';
 $lang->apps->proj       = 'PROJ';
-$lang->apps->sys        = 'SYSTEM';
+$lang->apps->doc        = 'DOC';
+$lang->apps->cash       = 'CASH';
 $lang->apps->team       = 'TEAM';
 $lang->apps->superadmin = 'ADMIN';
+$lang->apps->sys        = 'SYSTEM';
 
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = ' Enterprise Collaboration System';
@@ -1608,6 +1608,8 @@ $lang->leads->transform      = 'Confirm';
 $lang->leads->ignore         = 'Ignroe';
 $lang->leads->settings       = 'Settings';
 $lang->leads->applyRule      = 'Assign Rules';
+$lang->leads->batchIgnore    = 'Batch Ignore';
+$lang->leads->batchAssign    = 'Batch Assign';
 
 $lang->leads->list = 'Leads';
 
@@ -3760,6 +3762,7 @@ $lang->action->desc->createtrip            = '$date, <strong>$actor</strong> cre
 $lang->action->desc->createegress          = '$date, <strong>$actor</strong> created Egress <strong>$extra</strong>.' . "\n";
 $lang->action->desc->imported              = '$date, imported by <strong>$actor</strong>.' . "\n";
 $lang->action->desc->dating                = '$date, <strong>$actor</strong> created Next Contact <strong>$extra</strong>.' . "\n";
+$lang->action->desc->editdating            = '$date, <strong>$actor</strong> edited Next Contact <strong>$extra</strong>.' . "\n";
 $lang->action->desc->manageteam            = '$date, <strong>$actor</strong> managed a commission rate.' . "\n";
 $lang->action->desc->confirmteam           = '$date, <strong>$actor</strong> confirmed a commission rate : <strong>$extra</strong>.' . "\n";
 $lang->action->desc->moved2customerpool    = '$date, <strong>$actor</strong> move to customer pool.';
@@ -3799,6 +3802,7 @@ $lang->action->label->imported           = 'imported';
 $lang->action->label->login              = 'login';
 $lang->action->label->logout             = 'logout';
 $lang->action->label->dating             = 'created next contact';
+$lang->action->label->editdating         = 'edited next contact';
 $lang->action->label->manageteam         = 'managed a commission rate';
 $lang->action->label->confirmteam        = 'confirmed a commission rate';
 $lang->action->label->moved2customerpool = 'move to customer pool';
@@ -4749,6 +4753,9 @@ $lang->group->manageAll = 'All customers and orders';
 
 $lang->group->copyOptions['copyPriv'] = 'Copy Permission';
 $lang->group->copyOptions['copyUser'] = 'Copy User';
+
+$lang->group->apps['superadmin'] = 'System';
+$lang->group->apps['sys']        = 'Admin';
 
 $lang->group->placeholder = new stdclass();
 $lang->group->placeholder->tree = 'Including area, industry, income and expense, board, blog category, department.';
