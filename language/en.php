@@ -1069,9 +1069,6 @@ $lang->trade->investTypeList['redeem'] = 'Redeem';
 $lang->trade->loanTypeList['loan']  = 'Loan';
 $lang->trade->loanTypeList['repay'] = 'Pay';
 
-$lang->trade->encodeList['gbk']  = 'GBK';
-$lang->trade->encodeList['utf8'] = 'UTF-8';
-
 $lang->trade->notEqual = 'The two accounts cannot be the same!';
 $lang->trade->feeDesc  = '%s from %s to %s';
 $lang->trade->fileNode = 'The format is CSV.';
@@ -4656,7 +4653,8 @@ $lang->tag->inputLink = 'Please enter a link';
 /* sys/misc */
 
 if(!isset($lang->misc)) $lang->misc = new stdclass();
-$lang->misc->version = 'Version %s';
+$lang->misc->service = 'Service';
+$lang->misc->privacy = 'Privacy';
 
 $lang->misc->offcialSite['label'] = 'Website';
 $lang->misc->offcialSite['url']   = 'http://www.zdoo.com';

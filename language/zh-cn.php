@@ -1069,9 +1069,6 @@ $lang->trade->investTypeList['redeem'] = '赎回';
 $lang->trade->loanTypeList['loan']  = '借贷';
 $lang->trade->loanTypeList['repay'] = '还贷';
 
-$lang->trade->encodeList['gbk']  = 'GBK';
-$lang->trade->encodeList['utf8'] = 'UTF-8';
-
 $lang->trade->notEqual = '付款账号不能与收款账号相同。';
 $lang->trade->feeDesc  = '%s %s 转入 %s';
 $lang->trade->fileNode = '文件格式为csv';
@@ -4656,7 +4653,8 @@ $lang->tag->inputLink = '请输入链接';
 /* sys/misc */
 
 if(!isset($lang->misc)) $lang->misc = new stdclass();
-$lang->misc->version = '版本%s';
+$lang->misc->service = '服务协议';
+$lang->misc->privacy = '隐私政策';
 
 $lang->misc->offcialSite['label'] = '官方网站';
 $lang->misc->offcialSite['url']   = 'http://www.zdoo.com';
