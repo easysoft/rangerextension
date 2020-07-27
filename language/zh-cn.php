@@ -211,7 +211,7 @@ $lang->package = new stdclass();
 $lang->admin->common = '后台管理';
 
 $lang->menu->sys = new stdclass();
-$lang->menu->sys->company = '公司|company|setbasic|';
+$lang->menu->sys->company = '公司|company|index|';
 $lang->menu->sys->user    = '组织|user|admin|';
 $lang->menu->sys->group   = '权限|group|browse|';
 $lang->menu->sys->entry   = '应用|entry|admin|';
@@ -4950,6 +4950,7 @@ $lang->user->statusList->normal    = "<label class='label label-success'>正常<
 
 $lang->user->notice = new stdclass();
 $lang->user->notice->password = '字母和数字组合，最少六位';
+$lang->user->notice->realname = '真实姓名已经有这条记录，勾选继续保存';
 
 $lang->user->colleagueMenuName = '同事';
 

@@ -211,7 +211,7 @@ $lang->package = new stdclass();
 $lang->admin->common = 'Admin';
 
 $lang->menu->sys = new stdclass();
-$lang->menu->sys->company = 'Company|company|setbasic|';
+$lang->menu->sys->company = 'Company|company|index|';
 $lang->menu->sys->user    = 'User|user|admin|';
 $lang->menu->sys->group   = 'Permission|group|browse|';
 $lang->menu->sys->entry   = 'App|entry|admin|';
