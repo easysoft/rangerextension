@@ -1586,7 +1586,8 @@ $lang->contract->error->wrongRate         = '<strong>提成比例</strong>应该
 $lang->contract->error->wrongTotalRate    = '<strong>提成比例总额</strong>应该不大于100%';
 
 $lang->plan = new stdclass();
-$lang->plan->amount = $lang->contract->thisAmount;
+$lang->plan->amount       = $lang->contract->thisAmount;
+$lang->plan->returnedDate = $lang->contract->returnedDate;
 
 $lang->contract->actionWidth = 260;
 /* crm/leads */
@@ -2303,7 +2304,7 @@ $lang->attend->beginDate->company  = '公司开始考勤日期';
 $lang->attend->beginDate->personal = '个人开始考勤日期';
 
 $lang->attend->note = new stdClass();
-$lang->attend->note->ip           = "允许签到的ip，多个ip用逗号隔开。支持IP段，如192.168.1.*";
+$lang->attend->note->ip           = "允许签到的ip，支持ipv6。多个ip用逗号隔开。支持IP段，如192.168.1.* 或 2001:DB8:2DE:0:0:0:0:*，ipv6格式的IP段不支持::简写形式。";
 $lang->attend->note->allip        = '无限制';
 $lang->attend->note->IPDenied     = '签到IP受限，无法签到';
 $lang->attend->note->beginDate    = '设置开始考勤的日期，在该日期之前不记录考勤状态。如果不设置则根据实际数据记录考勤状态。默认使用公司开始考勤日期计算考勤状态，如果设置了个人开始考勤日期则使用个人日期。';
@@ -4879,6 +4880,9 @@ $lang->user->status    = '状态';
 $lang->user->keepLogin = '保持登录';
 $lang->user->ignore    = '忽略';
 
+$lang->user->actionWidth = 100;
+$lang->user->genderWidth = 100;
+
 $lang->user->admin           = '浏览成员';
 $lang->user->list            = '成员列表';
 $lang->user->colleague       = '同事列表';
@@ -4905,6 +4909,8 @@ $lang->user->cropAvatarTip   = '拖拽选框来选择头像裁剪范围';
 $lang->user->cropImageTip    = '所使用的头像图片过小，建议图片大小至少为 48x48，当前图片大小为 %s';
 $lang->user->adminUser       = '组织';
 $lang->user->setRole         = '角色设置';
+$lang->user->exportTemplate  = '导出模板';
+$lang->user->import          = '导入';
 
 $lang->user->profile     = '个人信息';
 $lang->user->editProfile = '编辑信息';
@@ -4925,11 +4931,14 @@ $lang->user->retainAccount = '不能使用 <strong>%s</strong> 作为用户名�
 $lang->user->exceeded      = '抱歉，您的使用人数已经超出上限，请联系商务人员购买更多授权，邮箱：jinjuan@easycorp.ltd，电话：18562856230，QQ：1826606239。';
 $lang->user->importResult  = '%s条数据导入成功，%s条数据导入失败，失败数据如下：';
 $lang->user->failReason    = '原因';
-$lang->user->showImport    = '查看已导入用户';
+$lang->user->showImport    = '导入用户';
 $lang->user->template      = '用户模板';
 
 $lang->user->adminList['super'] = '是';
 $lang->user->adminList['no']    = '否';
+
+$lang->user->duplicateResult['save']   = '不检查';
+$lang->user->duplicateResult['ignore'] = '不导入';
 
 $lang->user->reviewProcess['attend']   = '考勤';
 $lang->user->reviewProcess['leave']    = '请假';
@@ -4949,13 +4958,20 @@ $lang->user->statusList->forbidden = "<label class='label label-danger'>禁用</
 $lang->user->statusList->normal    = "<label class='label label-success'>正常</label>";
 
 $lang->user->notice = new stdclass();
-$lang->user->notice->password = '字母和数字组合，最少六位';
-$lang->user->notice->realname = '真实姓名已经有这条记录，勾选继续保存';
+$lang->user->notice->password     = '字母和数字组合，最少六位';
+$lang->user->notice->noImportData = '没有需要导入的记录';
 
 $lang->user->colleagueMenuName = '同事';
 
 $lang->user->colleagueMenu = new stdclass();
 $lang->user->colleagueMenu->all = '同事列表|user|colleague|';
+
+$lang->user->tips = new stdclass();
+$lang->user->tips->saveDuplicate   = '不检查姓名是否重复。';
+$lang->user->tips->ignoreDuplicate = '不导入这条数据。';
+
+$lang->user->placeholder= new stdclass();
+$lang->user->placeholder->emptyDept = '部门为空不会新建部门';
 
 $lang->dept = new stdclass();
 $lang->dept->common     = '部门结构';

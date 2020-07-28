@@ -386,7 +386,7 @@ $lang->menuGroups->backup = 'system';
 $lang->error = new stdclass();
 $lang->error->length       = array("<strong>%s</strong> length should be <strong>%s</strong>", "<strong>%s</strong> length should between <strong>%s</strong> and <strong>%s</strong>.");
 $lang->error->reg          = "<strong>%s</strong> should be like <strong>%s</strong>";
-$lang->error->unique       = "<strong>%s</strong> has <strong>%s</strong> existed. If you are sure that it is deleted, you can restore it in Profile-Admin-System-Trash.";
+$lang->error->unique       = "<strong>%s</strong> has <strong>%s</strong> existed.";
 $lang->error->notempty     = "<strong>%s</strong> cannot be empty.";
 $lang->error->empty        = "<strong>%s</strong> must be empty.";
 $lang->error->equal        = "<strong>%s</strong> must be <strong>%s</strong>.";
@@ -1586,7 +1586,8 @@ $lang->contract->error->wrongRate         = '<strong>Commission rate</strong> sh
 $lang->contract->error->wrongTotalRate    = '<strong>Total commission rate</strong> should not be greater than 100%';
 
 $lang->plan = new stdclass();
-$lang->plan->amount = $lang->contract->thisAmount;
+$lang->plan->amount       = $lang->contract->thisAmount;
+$lang->plan->returnedDate = $lang->contract->returnedDate;
 
 $lang->contract->actionWidth   = 320;
 /* crm/leads */
@@ -2303,7 +2304,7 @@ $lang->attend->beginDate->company  = 'Start Date';
 $lang->attend->beginDate->personal = 'Start Date';
 
 $lang->attend->note = new stdClass();
-$lang->attend->note->ip           = "Use a comma to separate IPs, and IP segment is OK, e.g. 192.168.1.*";
+$lang->attend->note->ip           = "Use a comma to separate IPs, and IP segment is OK, e.g. 192.168.1.* or 2001:DB8:2DE:0:0:0:0:*, IP segment in ipv6 format does not support :: shorthand.";
 $lang->attend->note->allip        = 'All IPs';
 $lang->attend->note->IPDenied     = 'IP is denied.';
 $lang->attend->note->beginDate    = 'Set a date to begin tracking attendance. The attenance before this date will not be saved.';
@@ -4879,6 +4880,9 @@ $lang->user->status    = 'Status';
 $lang->user->keepLogin = 'Keep Login';
 $lang->user->ignore    = 'Ignore';
 
+$lang->user->actionWidth = 130;
+$lang->user->genderWidth = 140;
+
 $lang->user->admin           = 'Admin';
 $lang->user->list            = 'User';
 $lang->user->colleague       = 'Staff';
@@ -4905,13 +4909,15 @@ $lang->user->cropAvatarTip   = 'Drag to crop your avatar';
 $lang->user->cropImageTip    = 'Avatar is too small(48x48 recommended). Your image is %s.';
 $lang->user->adminUser       = 'User';
 $lang->user->setRole         = 'Role Settings';
+$lang->user->exportTemplate  = 'Export Template';
+$lang->user->import          = 'Import';
 
 $lang->user->profile     = 'Profile';
 $lang->user->editProfile = 'Edit';
 
-$lang->user->inputAccount   = 'Please enter an account';
-$lang->user->inputColleague = "Please enter a name";
-$lang->user->inputPassword  = 'Please enter password';
+$lang->user->inputAccount   = 'Enter an account';
+$lang->user->inputColleague = 'Enter a name';
+$lang->user->inputPassword  = 'Enter password';
 $lang->user->searchUser     = 'Search';
 
 $lang->user->errorDeny     = "Sorry, you don't have the permission to visit <b>%s</b> <b>%s</b>. Please contact the administrator.<br/> This page will jump to the homepage in 5 seconds";
@@ -4931,6 +4937,9 @@ $lang->user->template      = 'User Template';
 $lang->user->adminList['super'] = 'Yes';
 $lang->user->adminList['no']    = 'No';
 
+$lang->user->duplicateResult['save']   = 'Save';
+$lang->user->duplicateResult['ignore'] = 'Ignore';
+
 $lang->user->reviewProcess['attend']   = 'Attend';
 $lang->user->reviewProcess['leave']    = 'Leave';
 $lang->user->reviewProcess['makeup']   = 'Makeup';
@@ -4949,12 +4958,20 @@ $lang->user->statusList->forbidden = "<label class='label label-danger'>Disabled
 $lang->user->statusList->normal    = "<label class='label label-success'>Active</label>";
 
 $lang->user->notice = new stdclass();
-$lang->user->notice->password = '>= 6 numbers/letters';
+$lang->user->notice->password     = '>= 6 numbers/letters';
+$lang->user->notice->noImportData = 'No records to import.';
 
 $lang->user->colleagueMenuName = 'Staff';
 
 $lang->user->colleagueMenu = new stdclass();
 $lang->user->colleagueMenu->all = 'Staff|user|colleague|';
+
+$lang->user->tips = new stdclass();
+$lang->user->tips->saveDuplicate   = "Don't check if the realname is duplicated.";
+$lang->user->tips->ignoreDuplicate = "Don't import the record.";
+
+$lang->user->placeholder= new stdclass();
+$lang->user->placeholder->emptyDept = "The empty dept won't be created.";
 
 $lang->dept = new stdclass();
 $lang->dept->common     = 'Department';
