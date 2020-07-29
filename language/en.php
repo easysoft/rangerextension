@@ -884,6 +884,7 @@ $lang->depositor->result        = 'Result';
 $lang->depositor->success       = "<span class='text-success'>Ok</span>";
 $lang->depositor->more          = "<span class='text-danger'>%s</span>";
 $lang->depositor->less          = "<span class='text-danger'>%s</span>";
+$lang->depositor->actionWidth   = 260;
 
 $lang->depositor->createBalance = 'Please enter the balance first.';
 
@@ -989,6 +990,8 @@ $lang->trade->compare        = 'Annual Comparison Sheet';
 $lang->trade->setReportUnit  = 'Report Unit';
 $lang->trade->settings       = 'Settings';
 $lang->trade->manageCategory = 'Manage Category';
+
+$lang->trade->actionWidth = 150;
 
 $lang->trade->settingList['trader']       = 'Trader required';
 $lang->trade->settingList['product']      = 'Product required';
@@ -3942,8 +3945,10 @@ $lang->action->record->editedBy     = 'Edited By';
 $lang->action->record->editedDate   = 'Edited';
 $lang->action->record->uploadFile   = 'Upload';
 $lang->action->record->finishDenied = 'Only administrator, contactedby and createdby can finish.';
-$lang->action->record->deleteDenied = 'Only administrator and createdby can delete.';
+$lang->action->record->deleteDenied = 'Only administrator and createdby can delete it.';
 $lang->action->record->deleteFail   = "The record is completed. You cannot delete it.";
+$lang->action->record->editDenied   = 'Only administrator, contactedby and createdby can edit it.';
+$lang->action->record->editFail     = "The record is completed. You cannot edit it.";
 $lang->action->record->noPrivilege  = '%s has no rights to access the record.';
 
 $lang->action->record->statusList['wait'] = 'Wait';

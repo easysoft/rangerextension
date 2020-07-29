@@ -884,6 +884,7 @@ $lang->depositor->result        = '结果';
 $lang->depositor->success       = "<span class='text-success'>对账成功</span>";
 $lang->depositor->more          = "<span class='text-danger'>超出实际余额 %s </span>";
 $lang->depositor->less          = "<span class='text-danger'>低于实际余额 %s </span>";
+$lang->depositor->actionWidth   = 200;
 
 $lang->depositor->createBalance = '请先录入账号余额。';
 
@@ -989,6 +990,8 @@ $lang->trade->compare        = '年度对比表';
 $lang->trade->setReportUnit  = '设置报表单位';
 $lang->trade->settings       = '记账设置';
 $lang->trade->manageCategory = '维护科目';
+
+$lang->trade->actionWidth = 130;
 
 $lang->trade->settingList['trader']       = '必须选择商户';
 $lang->trade->settingList['product']      = '必须选择产品';
@@ -3944,6 +3947,8 @@ $lang->action->record->uploadFile   = '上传附件:';
 $lang->action->record->finishDenied = '只有管理员、下次联系人和创建者可以完成。';
 $lang->action->record->deleteDenied = '只有管理员和创建者可以删除。';
 $lang->action->record->deleteFail   = '沟通已经完成，不能删除。';
+$lang->action->record->editDenied   = '只有管理员、下次联系人和创建者可以编辑。';
+$lang->action->record->editFail     = '沟通已经完成，不能编辑。';
 $lang->action->record->noPrivilege  = '%s没有权限访问当前操作的对象。';
 
 $lang->action->record->statusList['wait'] = '待联系';
