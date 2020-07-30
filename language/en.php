@@ -4974,6 +4974,7 @@ $lang->user->colleagueMenu->all = 'Staff|user|colleague|';
 $lang->user->tips = new stdclass();
 $lang->user->tips->saveDuplicate   = "Don't check if the realname is duplicated.";
 $lang->user->tips->ignoreDuplicate = "Don't import the record.";
+$lang->user->tips->userLeft        = 'You can add %s users, contact us for more users.';
 
 $lang->user->placeholder= new stdclass();
 $lang->user->placeholder->emptyDept = "The empty dept won't be created.";

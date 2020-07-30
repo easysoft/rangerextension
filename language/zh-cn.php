@@ -4974,6 +4974,7 @@ $lang->user->colleagueMenu->all = '同事列表|user|colleague|';
 $lang->user->tips = new stdclass();
 $lang->user->tips->saveDuplicate   = '不检查姓名是否重复。';
 $lang->user->tips->ignoreDuplicate = '不导入这条数据。';
+$lang->user->tips->userLeft        = '您还可以添加 %s 个用户，如需添加更多用户请联系商务同事增加授权数。';
 
 $lang->user->placeholder= new stdclass();
 $lang->user->placeholder->emptyDept = '部门为空不会新建部门';
