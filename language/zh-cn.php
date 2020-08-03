@@ -130,6 +130,7 @@ $lang->deleteSuccess  = '删除成功';
 $lang->fail           = '失败';
 $lang->noResultsMatch = '没有匹配的选项';
 $lang->searchMore     = "搜索此关键字的更多结果：";
+$lang->searchInput    = '输入搜索内容';
 $lang->files          = '附件';
 $lang->addFiles       = '上传了附件 ';
 $lang->comment        = '备注';
@@ -1320,7 +1321,6 @@ $lang->contact->uploadAvatar   = '上传头像';
 $lang->contact->changeAvatar   = '更换头像';
 $lang->contact->selectCustomer = '选择已有客户';
 $lang->contact->search         = '搜索';
-$lang->contact->searchInput    = '输入搜索内容';
 
 $lang->contact->browse         = '浏览联系人';
 $lang->contact->block          = '联系人区块';
@@ -1507,7 +1507,6 @@ $lang->contract->productLine   = '产品线';
 $lang->contract->files         = '附件';
 $lang->contract->createAddress = '新建';
 $lang->contract->search        = '搜索';
-$lang->contract->searchInput   = '输入搜索内容';
 
 $lang->contract->browse           = '浏览合同';
 $lang->contract->receive          = '回款';
@@ -4462,7 +4461,6 @@ $lang->customer->relationList['provider'] = '供应商';
 $lang->customer->relationList['partner']  = '合作伙伴';
 
 $lang->customer->search      = '搜索';
-$lang->customer->searchInput = '输入搜索内容';
 $lang->customer->mergeTip    = '将该客户合并到选择的客户。';
 
 $lang->customer->action = new stdclass();

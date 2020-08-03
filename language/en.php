@@ -130,6 +130,7 @@ $lang->deleteSuccess  = 'Deleted';
 $lang->fail           = 'Failed';
 $lang->noResultsMatch = 'No match found.';
 $lang->searchMore     = "More results：";
+$lang->searchInput    = 'Enter search items.';
 $lang->files          = 'Files';
 $lang->addFiles       = 'Add Files ';
 $lang->comment        = 'Comment';
@@ -1320,7 +1321,6 @@ $lang->contact->uploadAvatar   = 'Upload Photo';
 $lang->contact->changeAvatar   = 'Change Photo';
 $lang->contact->selectCustomer = 'Select Customer';
 $lang->contact->search         = 'Search';
-$lang->contact->searchInput    = 'Enter search items.';
 
 $lang->contact->browse         = 'View Contact';
 $lang->contact->block          = 'Contact Block';
@@ -1507,7 +1507,6 @@ $lang->contract->productLine   = 'Product Line';
 $lang->contract->files         = 'Files';
 $lang->contract->createAddress = 'Add Address';
 $lang->contract->search        = 'Search';
-$lang->contract->searchInput   = 'Enter search items.';
 
 $lang->contract->browse           = 'Contract';
 $lang->contract->receive          = 'Receive';
@@ -4462,7 +4461,6 @@ $lang->customer->relationList['provider'] = 'Provider';
 $lang->customer->relationList['partner']  = 'Partner';
 
 $lang->customer->search      = 'Search';
-$lang->customer->searchInput = 'Enter search items.';
 $lang->customer->mergeTip    = 'Merge this customer to the selected one.';
 
 $lang->customer->action = new stdclass();
