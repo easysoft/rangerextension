@@ -4790,7 +4790,7 @@ $lang->setting->reset  = '恢复默认';
 $lang->setting->key    = '键';
 $lang->setting->value  = '值';
 
-$lang->setting->lang = '产品状态、产品线、客户类型、客户规模、客户等级、客户状态、货币设置、角色';
+$lang->setting->lang = '产品状态、产品分类、客户类型、客户规模、客户等级、客户状态、货币设置、角色';
 
 $lang->setting->customerPool = '客户池设置';
 $lang->setting->modules      = '功能模块设置';

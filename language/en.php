@@ -4789,7 +4789,7 @@ $lang->setting->reset  = 'Reset';
 $lang->setting->key    = 'Key';
 $lang->setting->value  = 'Value';
 
-$lang->setting->lang = 'Product Status, Product Line, Customer Type, Customer Size, Customer Level, Customer Status, Currency, Roles';
+$lang->setting->lang = 'Product Status, Product Category, Customer Type, Customer Size, Customer Level, Customer Status, Currency, Roles';
 
 $lang->setting->customerPool = 'Customer settings';
 $lang->setting->modules      = 'Module settings';
