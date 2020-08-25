@@ -1,6 +1,7 @@
 <?php
 /* sys/common */
 $lang->colon      = ' : ';
+$lang->comma      = ', ';
 $lang->ellipsis   = '…';
 $lang->prev       = '‹';
 $lang->next       = '›';
@@ -12,7 +13,7 @@ $lang->raquo      = '&raquo;';
 $lang->minus      = ' - ';
 $lang->hyphen     = '-';
 $lang->slash      = ' / ';
-$lang->semicolon  = ';';
+$lang->semicolon  = '; ';
 $lang->RMB        = '￥';
 $lang->divider    = "<span class='divider'>{$lang->raquo}</span> ";
 $lang->at         = ' At ';

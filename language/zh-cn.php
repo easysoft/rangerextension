@@ -1,6 +1,7 @@
 <?php
 /* sys/common */
-$lang->colon      = ' : ';
+$lang->colon      = ' ：';
+$lang->comma      = '，';
 $lang->ellipsis   = '…';
 $lang->prev       = '‹';
 $lang->next       = '›';
