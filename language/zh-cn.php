@@ -433,13 +433,12 @@ $lang->pager->nextPage     = "下一页";
 $lang->pager->summery      = "第 <strong>%s-%s</strong> 项，共 <strong>%s</strong> 项";
 
 $lang->excel = new stdClass();
-$lang->excel->canNotRead = '不能解析该文件';
-
 $lang->excel->error = new stdclass();
-$lang->excel->error->info   = '您输入的值不在下拉框列表内。';
-$lang->excel->error->title  = '输入有误';
-$lang->excel->error->noFile = '没有文件';
-$lang->excel->error->noData = '没有有效的数据';
+$lang->excel->error->info       = '您输入的值不在下拉框列表内。';
+$lang->excel->error->title      = '输入有误';
+$lang->excel->error->noFile     = '没有文件';
+$lang->excel->error->noData     = '没有有效的数据';
+$lang->excel->error->canNotRead = '不能解析该文件';
 
 $lang->excel->title = new stdclass();
 $lang->excel->title->contact  = '联系人';

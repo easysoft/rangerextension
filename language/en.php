@@ -433,13 +433,12 @@ $lang->pager->nextPage     = "Next";
 $lang->pager->summery      = "<strong>%s-%s</strong> of <strong>%s</strong>.";
 
 $lang->excel = new stdClass();
-$lang->excel->canNotRead = 'This file cannot be resolved.';
-
 $lang->excel->error = new stdclass();
-$lang->excel->error->info   = 'The value you entered is not in the drop-down.';
-$lang->excel->error->title  = 'Input error.';
-$lang->excel->error->noFile = 'No file.';
-$lang->excel->error->noData = 'No valid data.';
+$lang->excel->error->info       = 'The value you entered is not in the drop-down.';
+$lang->excel->error->title      = 'Input error.';
+$lang->excel->error->noFile     = 'No file.';
+$lang->excel->error->noData     = 'No valid data.';
+$lang->excel->error->canNotRead = 'This file cannot be resolved.';
 
 $lang->excel->title = new stdclass();
 $lang->excel->title->contact  = 'Contact';
