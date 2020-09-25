@@ -109,6 +109,7 @@ $lang->goback         = '返回';
 $lang->assign         = '指派';
 $lang->start          = '开始';
 $lang->create         = '新建';
+$lang->batchCreate    = '批量新建';
 $lang->forbid         = '禁用';
 $lang->activate       = '激活';
 $lang->ignore         = '忽略';

@@ -109,6 +109,7 @@ $lang->goback         = 'Back';
 $lang->assign         = 'Assign';
 $lang->start          = 'Start';
 $lang->create         = 'Create';
+$lang->batchCreate    = 'Batch Create';
 $lang->forbid         = 'Forbid';
 $lang->activate       = 'Activate';
 $lang->ignore         = 'Ignore';
