@@ -995,8 +995,14 @@ $lang->trade->compare        = '年度对比表';
 $lang->trade->setReportUnit  = '设置报表单位';
 $lang->trade->settings       = '记账设置';
 $lang->trade->manageCategory = '维护科目';
+$lang->trade->otherDepositor = '对方帐号';
 
-$lang->trade->actionWidth = 130;
+$lang->trade->actionWidth = 140;
+
+$lang->trade->dateWidth = new stdclass();
+$lang->trade->dateWidth->exist     = 220;
+$lang->trade->dateWidth->duplicate = 190;
+$lang->trade->dateWidth->common    = 160;
 
 $lang->trade->settingList['trader']       = '必须选择商户';
 $lang->trade->settingList['product']      = '必须选择产品';
@@ -1024,6 +1030,7 @@ $lang->trade->report->typeList['compare'] = '年度对比表';
 
 $lang->trade->typeList['in']          = '收入';
 $lang->trade->typeList['out']         = '支出';
+$lang->trade->typeList['transfer']    = '转账';
 $lang->trade->typeList['transferout'] = '转出';
 $lang->trade->typeList['transferin']  = '转入';
 $lang->trade->typeList['invest']      = '投资';
@@ -1082,18 +1089,18 @@ $lang->trade->feeDesc  = '%s %s 转入 %s';
 $lang->trade->fileNode = '文件格式为csv';
 
 $lang->trade->importedFields = array();
-$lang->trade->importedFields['category'] = '项目';
-$lang->trade->importedFields['type']     = '交易类型';
-$lang->trade->importedFields['trader']   = '商户';
-$lang->trade->importedFields['in']       = '收入';
-$lang->trade->importedFields['out']      = '支出';
-$lang->trade->importedFields['date']     = '时间';
-$lang->trade->importedFields['category'] = '科目';
-$lang->trade->importedFields['dept']     = '部门';
-$lang->trade->importedFields['desc']     = '备注';
-$lang->trade->importedFields['fee']      = '手续费';
-$lang->trade->importedFields['product']  = '产品';
-$lang->trade->importedFields['handlers'] = '经手人';
+$lang->trade->importedFields['otherDepositor'] = '对方帐号';
+$lang->trade->importedFields['type']           = '交易类型';
+$lang->trade->importedFields['trader']         = '商户';
+$lang->trade->importedFields['in']             = '收入';
+$lang->trade->importedFields['out']            = '支出';
+$lang->trade->importedFields['date']           = '时间';
+$lang->trade->importedFields['category']       = '科目';
+$lang->trade->importedFields['dept']           = '部门';
+$lang->trade->importedFields['desc']           = '备注';
+$lang->trade->importedFields['fee']            = '手续费';
+$lang->trade->importedFields['product']        = '产品';
+$lang->trade->importedFields['handlers']       = '经手人';
 
 $lang->trade->statusList['returned']   = '已赎回';
 $lang->trade->statusList['returning']  = '赎回中';
@@ -1117,6 +1124,9 @@ $lang->trade->total         = '总计';
 
 $lang->trade->noTraderMatch   = '没有匹配到相应的商户，点击新建';
 $lang->trade->unique          = '今天已经有相同金额的账目';
+$lang->trade->uniqueTrade     = '记账中存在相同交易日期、交易类型、商户、金额的交易记录';
+$lang->trade->uniqueTransfer  = '记账中存在相同交易日期、交易类型、交易账户、金额的转账记录';
+$lang->trade->uniqueRecord    = '导入文件中存在相同交易日期、交易类型、商户/交易账户、金额的记录';
 $lang->trade->showExistTrade  = '展开重复账目';
 $lang->trade->hideExistTrade  = '收起重复账目';
 $lang->trade->ignore          = '忽略';
@@ -1124,6 +1134,9 @@ $lang->trade->denied          = '您没有权限浏览此类账目，请联系�
 $lang->trade->emptyData       = '带有*的内容不能为空';
 $lang->trade->detailTip       = '明细总金额和当前交易金额不相等，确定保存当前明细吗？';
 $lang->trade->noImportDataTip = '没有需要导入的记录。';
+$lang->trade->transferTip     = '本模板支持导入转账记录。导入转账记录时，收入、支出代表转入金额、转出金额，且对方帐号不能为空。转账记录支持三种交易类型：转账、转入、转出。交易类型为转账时，收支金额必须分列；交易类型为转入或者转出时，收支金额无需分列。';
+$lang->trade->ignoreTip       = '以下数据未被导入，请确认。';
+$lang->trade->deny            = '您没有创建%s的权限。';
 
 $lang->trade->chartList['productLine'] = '按产品线统计';
 $lang->trade->chartList['category']    = '按科目统计';
@@ -1843,6 +1856,7 @@ $lang->refund->total             = '合计：';
 $lang->refund->totalMoney        = '%s%s；';
 $lang->refund->reviewing         = '等待 <strong>%s</strong> 审批';
 $lang->refund->reviewed          = '审批完成';
+$lang->refund->emptyDetail       = '报销金额为空的明细不会被保存。';
 
 $lang->refund->settings = new stdclass();
 $lang->refund->settings->setReviewer  = "审批人|refund|setreviewer";
@@ -2485,6 +2499,8 @@ $lang->project->createdDate = '创建时间';
 $lang->project->fromproject = '所属项目';
 $lang->project->whitelist   = '参观者';
 $lang->project->doc         = '文档';
+
+$lang->project->thWidth = '80px';
 
 $lang->project->confirm = new stdclass();
 $lang->project->confirm->activate = '确认激活此项目？';
@@ -3367,6 +3383,7 @@ $lang->provider->create      = '添加供应商';
 $lang->provider->edit        = '编辑供应商';
 $lang->provider->view        = '供应商详情';
 $lang->provider->delete      = '删除供应商';
+$lang->provider->merge       = '合并';
 $lang->provider->list        = '供应商列表';
 $lang->provider->contact     = '联系人';
 $lang->provider->linkContact = '添加联系人';
@@ -3417,7 +3434,9 @@ $lang->provider->sizeList[2] = '中型(50-100人)';
 $lang->provider->sizeList[3] = '小型(10人-50人)';
 $lang->provider->sizeList[4] = '微型(10人以下)';
 
-$lang->provider->actionWidth = 150;
+$lang->provider->actionWidth = 180;
+
+$lang->provider->mergeTip    = '将该供应商合并到选择的供应商。';
 /* sys/search */
 if(!isset($lang->search)) $lang->search = new stdclass();
 $lang->search->common        = '搜索';
@@ -5036,6 +5055,15 @@ $lang->schema->csvFile  = '模板文件';
 $lang->schema->name     = '模板名称';
 $lang->schema->feeRow   = '手续费为一条记录';
 $lang->schema->diffCol  = '收支金额分列';
+
+global $app;
+$app->loadLang('trade', 'cash');
+$lang->schema->trader = $lang->trade->trader;
+$lang->schema->type   = $lang->trade->type;
+$lang->schema->money  = $lang->trade->money;
+$lang->schema->date   = $lang->trade->date;
+$lang->schema->in     = $lang->trade->typeList['in'];
+$lang->schema->out    = $lang->trade->typeList['out'];
 
 $lang->schema->placeholder = new stdclass();
 $lang->schema->placeholder->selectField = '请选择对应的项目';

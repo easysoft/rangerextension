@@ -995,8 +995,14 @@ $lang->trade->compare        = 'Annual Comparison Sheet';
 $lang->trade->setReportUnit  = 'Report Unit';
 $lang->trade->settings       = 'Settings';
 $lang->trade->manageCategory = 'Manage Category';
+$lang->trade->otherDepositor = 'Other Depositor';
 
 $lang->trade->actionWidth = 150;
+
+$lang->trade->dateWidth = new stdclass();
+$lang->trade->dateWidth->exist     = 230;
+$lang->trade->dateWidth->duplicate = 200;
+$lang->trade->dateWidth->common    = 170;
 
 $lang->trade->settingList['trader']       = 'Trader required';
 $lang->trade->settingList['product']      = 'Product required';
@@ -1024,6 +1030,7 @@ $lang->trade->report->typeList['compare'] = 'Annual Comparison Sheet';
 
 $lang->trade->typeList['in']          = 'Income';
 $lang->trade->typeList['out']         = 'Expense';
+$lang->trade->typeList['transfer']    = 'Transfer';
 $lang->trade->typeList['transferout'] = 'Transfer out';
 $lang->trade->typeList['transferin']  = 'Transfer in';
 $lang->trade->typeList['invest']      = 'Invest';
@@ -1082,18 +1089,18 @@ $lang->trade->feeDesc  = '%s from %s to %s';
 $lang->trade->fileNode = 'The format is CSV.';
 
 $lang->trade->importedFields = array();
-$lang->trade->importedFields['category'] = 'Category';
-$lang->trade->importedFields['type']     = 'Type';
-$lang->trade->importedFields['trader']   = 'Trader';
-$lang->trade->importedFields['in']       = 'Income';
-$lang->trade->importedFields['out']      = 'Expense';
-$lang->trade->importedFields['date']     = 'Date';
-$lang->trade->importedFields['category'] = 'Category';
-$lang->trade->importedFields['dept']     = 'Department';
-$lang->trade->importedFields['desc']     = 'Description';
-$lang->trade->importedFields['fee']      = 'Fee';
-$lang->trade->importedFields['product']  = 'Product';
-$lang->trade->importedFields['handlers'] = 'Handler';
+$lang->trade->importedFields['otherDepositor'] = 'Other Depositor';
+$lang->trade->importedFields['type']           = 'Type';
+$lang->trade->importedFields['trader']         = 'Trader';
+$lang->trade->importedFields['in']             = 'Income';
+$lang->trade->importedFields['out']            = 'Expense';
+$lang->trade->importedFields['date']           = 'Date';
+$lang->trade->importedFields['category']       = 'Category';
+$lang->trade->importedFields['dept']           = 'Department';
+$lang->trade->importedFields['desc']           = 'Description';
+$lang->trade->importedFields['fee']            = 'Fee';
+$lang->trade->importedFields['product']        = 'Product';
+$lang->trade->importedFields['handlers']       = 'Handler';
 
 $lang->trade->statusList['returned']   = 'Returned';
 $lang->trade->statusList['returning']  = 'Returning';
@@ -1117,6 +1124,9 @@ $lang->trade->total         = 'Total';
 
 $lang->trade->noTraderMatch   = 'No match found. Click to create.';
 $lang->trade->unique          = 'There is a record existed.';
+$lang->trade->uniqueTrade     = 'There are trade records with the same date, type, trader, money.';
+$lang->trade->uniqueTransfer  = 'There are transfer records with the same date, type, depositor, money.';
+$lang->trade->uniqueRecord    = 'There are records with the same date, type, trader or depositor, money in the imported file.';
 $lang->trade->showExistTrade  = 'Show existing record';
 $lang->trade->hideExistTrade  = 'Hide existing record';
 $lang->trade->ignore          = 'Ignore';
@@ -1124,6 +1134,9 @@ $lang->trade->denied          = 'You have no permission to view the list. Please
 $lang->trade->emptyData       = 'The fields with * cannot be empty.';
 $lang->trade->detailTip       = 'The total amount is different from the trade amount. Do you want to save the current amount?';
 $lang->trade->noImportDataTip = 'No records to import.';
+$lang->trade->transferTip     = 'This template supports the import of transfer records. When importing transfer records, revenue and expense represent the transfer in amount and transfer out amount, and the account number of the opposite party cannot be blank. Transfer records support three transaction types: transfer in, transfer out. When the transaction type is transfer, the amount of income and expenditure must be separated; when the transaction type is transfer in or transfer out, the amount of income and expenditure does not need to be listed.';
+$lang->trade->ignoreTip       = 'The below records are not imported.';
+$lang->trade->deny            = 'You has no permission to create %s.';
 
 $lang->trade->chartList['productLine'] = 'by product line';
 $lang->trade->chartList['category']    = 'by category';
@@ -1843,6 +1856,7 @@ $lang->refund->total             = 'Total:';
 $lang->refund->totalMoney        = '%s%s；';
 $lang->refund->reviewing         = 'Waiting for <strong>%s</strong>';
 $lang->refund->reviewed          = 'Review Finished';
+$lang->refund->emptyDetail       = "The detail with empty amount won't be saved.";
 
 $lang->refund->settings = new stdclass();
 $lang->refund->settings->setReviewer  = "Reviewer|refund|setreviewer";
@@ -2486,6 +2500,8 @@ $lang->project->fromproject = 'From Project';
 $lang->project->whitelist   = 'Whitelist';
 $lang->project->doc         = 'Document';
 
+$lang->project->thWidth = '90px';
+
 $lang->project->confirm = new stdclass();
 $lang->project->confirm->activate = 'Do you want to activate this project?';
 $lang->project->confirm->suspend  = 'Do you want to suspend this projcet?';
@@ -2938,7 +2954,7 @@ $lang->todo->mainPaddingRight  = 360;
 $lang->todo->sideWidth         = 340;
 $lang->todo->sideHandleRight   = 380;
 $lang->todo->trashRight        = 410;
-$lang->todo->actionWidth       = 280;
+$lang->todo->actionWidth       = 300;
 $lang->todo->importActionWidth = 240;
 /* sys/article */
 $lang->article->common      = 'Article';
@@ -3367,6 +3383,7 @@ $lang->provider->create      = 'Create Supplier';
 $lang->provider->edit        = 'Edit Supplier';
 $lang->provider->view        = 'Supplier';
 $lang->provider->delete      = 'Delete Supplier';
+$lang->provider->merge       = 'Merge';
 $lang->provider->list        = 'Supplier';
 $lang->provider->contact     = 'Contact';
 $lang->provider->linkContact = 'Create Contact';
@@ -3417,7 +3434,9 @@ $lang->provider->sizeList[2] = 'Medium( 50-100 employees)';
 $lang->provider->sizeList[3] = 'Small( 10-50 employees)';
 $lang->provider->sizeList[4] = 'Mini( <10 employees)';
 
-$lang->provider->actionWidth = 180;
+$lang->provider->actionWidth = 220;
+
+$lang->provider->mergeTip    = 'Merge this provider to the selected one.';
 /* sys/search */
 if(!isset($lang->search)) $lang->search = new stdclass();
 $lang->search->common        = 'Search';
@@ -5035,6 +5054,15 @@ $lang->schema->csvFile  = 'File';
 $lang->schema->name     = 'Name';
 $lang->schema->feeRow   = 'The fee is a single record.';
 $lang->schema->diffCol  = 'The income and expense should be in different columns.';
+
+global $app;
+$app->loadLang('trade', 'cash');
+$lang->schema->trader = $lang->trade->trader;
+$lang->schema->type   = $lang->trade->type;
+$lang->schema->money  = $lang->trade->money;
+$lang->schema->date   = $lang->trade->date;
+$lang->schema->in     = $lang->trade->typeList['in'];
+$lang->schema->out    = $lang->trade->typeList['out'];
 
 $lang->schema->placeholder = new stdclass();
 $lang->schema->placeholder->selectField = 'Select';
