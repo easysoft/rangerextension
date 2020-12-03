@@ -3124,7 +3124,7 @@ $lang->install->desc             = <<<EOT
   专为中小型团队量身打造，是中小型团队信息化的首选工具！
 
   官方网站：<a href='https://www.zdoo.com' target='_blank'>https://www.zdoo.com</a>
-  技术支持: <a href='https://www.zdoo.com/forum/' target='_blank'>https://www.zdoo.com/forum/</a>
+  技术支持：<a href='https://www.zdoo.com/forum/' target='_blank'>https://www.zdoo.com/forum/</a>
   您现在正在安装的版本是 <strong class='red'>{$lang->versionName} %s</strong>。
 </blockquote>
 EOT;

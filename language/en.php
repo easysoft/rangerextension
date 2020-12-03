@@ -3123,9 +3123,9 @@ $lang->install->desc             = <<<EOT
   <strong>{$lang->zdoo}</strong> is developed by <strong><a href='https://www.easycorp.cn' target='_blank' class='red'>QingDao Nature Easy Soft Network Technology Co.,Ltd.</a></strong>
   Especifically for small and medium sized teams!
 
-  Website:<a href='https://www.zdoo.com' target='_blank'>https://www.zdoo.com</a>
+  Website: <a href='https://www.zdoo.com' target='_blank'>https://www.zdoo.com</a>
   Suport: <a href='https://www.zdoo.com/forum/' target='_blank'>https://www.zdoo.com/forum/</a>
-  Current Version: <strong class='red'>{$lang->versionName} %s</strong>。
+  Current Version: <strong class='red'>{$lang->versionName} %s</strong>.
 </blockquote>
 EOT;
 
