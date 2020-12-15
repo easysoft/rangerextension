@@ -1571,11 +1571,10 @@ $lang->contract->statusList['normal']   = '正常';
 $lang->contract->statusList['closed']   = '已完成';
 $lang->contract->statusList['canceled'] = '已取消';
 
-$lang->contract->codeUnitList[]        = '';
-$lang->contract->codeUnitList['Y']     = '年';
-$lang->contract->codeUnitList['m']     = '月';
-$lang->contract->codeUnitList['d']     = '日';
-$lang->contract->codeUnitList['fix']   = '固定值';
+$lang->contract->codeUnitList['fixed'] = '固定值';
+$lang->contract->codeUnitList['year']  = '年';
+$lang->contract->codeUnitList['month'] = '月';
+$lang->contract->codeUnitList['day']   = '日';
 $lang->contract->codeUnitList['input'] = '输入值';
 
 $lang->contract->totalAmount        = '本页合同总金额：%s，已回款：%s，其中本月回款：%s；';
