@@ -636,6 +636,18 @@ $lang->contract->menu->expired      = 'Expired|contract|browse|mode=expired';
 $lang->contract->menu->expire       = 'Expire Soon|contract|browse|mode=expire';
 $lang->contract->menu->report       = 'Report|report|browse|module=contract';
 
+if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
+$lang->purchasecontract->menu = new stdclass();
+$lang->purchasecontract->menu->browse       = 'All|purchasecontract|browse|mode=all';
+$lang->purchasecontract->menu->contactedBy  = 'ContactedByMe|purchasecontract|browse|mode=contactedby';
+$lang->purchasecontract->menu->unfinished   = 'Unfinished|purchasecontract|browse|mode=unfinished';
+$lang->purchasecontract->menu->unreceived   = 'Paying|purchasecontract|browse|mode=unreceived';
+$lang->purchasecontract->menu->finished     = 'Finished|purchasecontract|browse|mode=finished';
+$lang->purchasecontract->menu->canceled     = 'Cancelled|purchasecontract|browse|mode=canceled';
+$lang->purchasecontract->menu->expired      = 'Expired|purchasecontract|browse|mode=expired';
+$lang->purchasecontract->menu->expire       = 'Expire Soon|purchasecontract|browse|mode=expire';
+$lang->purchasecontract->menu->report       = 'Report|report|browse|module=purchasecontract';
+
 $lang->setting = new stdclass();
 $lang->setting->menu = new stdclass();
 $lang->setting->menu->salesGroup      = array('link' => 'Sales Team|sales|browse|', 'alias' => 'create,edit');
@@ -658,6 +670,10 @@ $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();
 if(!isset($lang->address)) $lang->address = new stdclass();
 include (dirname(__FILE__) . '/menuOrder.php');
+
+$lang->contract->typeList = array();
+$lang->contract->typeList['sale']     = 'Sale Contract';
+$lang->contract->typeList['purchase'] = 'Procurement Contract';
 /* doc/common */
 $lang->app = new stdclass();
 $lang->app->name = 'DOC';
@@ -1445,6 +1461,29 @@ $lang->block->typeList->contract['canceledstatus'] = 'Canceled';
 
 $lang->block->typeList->customer['today']    = 'Today';
 $lang->block->typeList->customer['thisweek'] = 'This week';
+/* crm/purchasecontract */
+if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
+
+$lang->purchasecontract->supplier = 'Supplier';
+$lang->purchasecontract->return   = 'Payment';
+$lang->purchasecontract->returnedBy = 'Paymented';
+$lang->purchasecontract->totalAmount = 'The total payment is %s. %s on this page. %s in this month.';
+$lang->purchasecontract->returnInfo         = "<p>%s, <strong>%s</strong> payed %s。</p>";
+$lang->purchasecontract->completeReturn   = 'Complete payment';
+$lang->purchasecontract->thisAmount    = 'This payment';
+$lang->purchasecontract->returnRecords    = 'Payment records';
+
+$lang->purchasecontract->returnList[]        = '';
+$lang->purchasecontract->returnList['wait']  = 'Wait';
+$lang->purchasecontract->returnList['doing'] = 'Doing';
+$lang->purchasecontract->returnList['done']  = 'Done';
+
+$lang->purchasecontract->action = new stdClass();
+$lang->purchasecontract->action->returned              = '$date, a payment $extra is payed by <strong>$actor</strong>.' . "\n";
+$lang->purchasecontract->action->editreturned          = '$date, edited payment by <strong>$actor</strong>.' . "\n";
+$lang->purchasecontract->action->deletereturned        = '$date, deleted $extra by <strong>$actor</strong>.' . "\n";
+$lang->purchasecontract->action->finishreturned        = '$date, a payment $extra is payed by <strong>$actor</strong>. Payment is completed' . "\n";
+
 /* crm/sales */
 if(!isset($lang->sales)) $lang->sales = new stdclass();
 $lang->sales->common = 'Sales';
