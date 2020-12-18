@@ -1466,6 +1466,20 @@ $lang->block->typeList->customer['thisweek'] = 'This week';
 /* crm/purchasecontract */
 if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
 
+$lang->purchasecontract->common = 'Purchase Contract';
+
+$lang->purchasecontract->browse           = 'Contract';
+$lang->purchasecontract->create           = 'Create';
+$lang->purchasecontract->edit             = 'Edit';
+$lang->purchasecontract->view             = 'Contract';
+$lang->purchasecontract->cancel           = 'Cancel';
+$lang->purchasecontract->finish           = 'Finish';
+$lang->purchasecontract->delete           = 'Delete';
+$lang->purchasecontract->receive          = 'Pay';
+$lang->purchasecontract->editReturn       = 'Edit Pay';
+$lang->purchasecontract->deleteReturn     = 'Delete Pay';
+$lang->purchasecontract->export           = 'Export';
+
 $lang->purchasecontract->supplier = 'Supplier';
 $lang->purchasecontract->return   = 'Payment';
 $lang->purchasecontract->returnedBy = 'Paymented';
@@ -1711,6 +1725,7 @@ $lang->doc->project        = 'Project';
 $lang->doc->lib            = 'Library';
 $lang->doc->category       = 'Category';
 $lang->doc->title          = 'Title';
+$lang->doc->name           = 'Name';
 $lang->doc->digest         = 'Summary';
 $lang->doc->comment        = 'Comment';
 $lang->doc->type           = 'Type';
@@ -1782,6 +1797,8 @@ $lang->doc->notFound     = 'The document does not exist.';
 $lang->doc->libNotFound  = 'The document library does not exist.';
 $lang->doc->libNotEmpty  = 'There are documents in this document library.';
 $lang->doc->errorMainLib = 'The main library cannot be deleted.';
+
+$lang->doclib = $lang->doc;
 /* oa/holiday */
 if(!isset($lang->holiday)) $lang->holiday = new stdclass();
 $lang->holiday->common = 'Holiday';

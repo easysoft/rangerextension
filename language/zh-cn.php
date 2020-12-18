@@ -1467,7 +1467,7 @@ $lang->block->typeList->customer['today']    = '今天联系';
 $lang->block->typeList->customer['thisweek'] = '本周联系';
 /* crm/purchasecontract */
 if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
-#$lang->purchasecontract->common = '合同';
+$lang->purchasecontract->common = '采购合同';
 #
 #$lang->purchasecontract->id            = '编号';
 #$lang->purchasecontract->order         = '签约订单';
@@ -1513,28 +1513,32 @@ $lang->purchasecontract->returnedDate  = '付款时间';
 #$lang->purchasecontract->createAddress = '新建';
 #$lang->purchasecontract->search        = '搜索';
 #
-#$lang->purchasecontract->browse           = '浏览合同';
-#$lang->purchasecontract->receive          = '回款';
-#$lang->purchasecontract->cancel           = '取消合同';
-#$lang->purchasecontract->view             = '合同详情';
-#$lang->purchasecontract->finish           = '完成合同';
+$lang->purchasecontract->browse           = '浏览合同';
+$lang->purchasecontract->create           = '创建合同';
+$lang->purchasecontract->edit             = '编辑合同';
+$lang->purchasecontract->view             = '合同详情';
+$lang->purchasecontract->cancel           = '取消合同';
+$lang->purchasecontract->finish           = '完成合同';
+$lang->purchasecontract->delete           = '删除合同';
+$lang->purchasecontract->receive          = '付款';
+$lang->purchasecontract->editReturn       = '编辑付款';
+$lang->purchasecontract->deleteReturn     = '删除付款';
+$lang->purchasecontract->export           = '导出';
+
 #$lang->purchasecontract->record           = '沟通';
-#$lang->purchasecontract->delete           = '删除合同';
 #$lang->purchasecontract->list             = '合同列表';
-#$lang->purchasecontract->create           = '创建合同';
-#$lang->purchasecontract->edit             = '编辑合同';
 #$lang->purchasecontract->setting          = '系统设置';
 #$lang->purchasecontract->uploadFile       = '上传附件';
 #$lang->purchasecontract->lifetime         = '合同的一生';
+
+
+
 $lang->purchasecontract->returnRecords    = '付款记录';
 #$lang->purchasecontract->deliveryRecords  = '交付记录';
 $lang->purchasecontract->completeReturn   = '完成付款';
 #$lang->purchasecontract->completeDelivery = '完成交付';
-#$lang->purchasecontract->editReturn       = '编辑回款';
 #$lang->purchasecontract->editDelivery     = '编辑交付';
-#$lang->purchasecontract->deleteReturn     = '删除回款';
 #$lang->purchasecontract->deleteDelivery   = '删除交付';
-#$lang->purchasecontract->export           = '导出';
 #$lang->purchasecontract->totalReturn      = '回款合计';
 #$lang->purchasecontract->tradeList        = '收支记录';
 #$lang->purchasecontract->manageTeam       = '维护团队';
@@ -1641,7 +1645,7 @@ $lang->address->create = '新建地址';
 $lang->address->edit   = '修改地址';
 /* crm/contract */
 if(!isset($lang->contract)) $lang->contract = new stdclass();
-$lang->contract->common = '合同';
+$lang->contract->common = '销售合同';
 
 $lang->contract->id            = '编号';
 $lang->contract->order         = '签约订单';
@@ -1827,6 +1831,7 @@ $lang->doc->project        = '所属项目';
 $lang->doc->lib            = '所属文档库';
 $lang->doc->category       = '所属分类';
 $lang->doc->title          = '文档标题';
+$lang->doc->name           = '文档库名称';
 $lang->doc->digest         = '文档摘要';
 $lang->doc->comment        = '文档备注';
 $lang->doc->type           = '文档类型';
@@ -1898,6 +1903,8 @@ $lang->doc->notFound     = '该文档不存在！';
 $lang->doc->libNotFound  = '该文档库不存在！';
 $lang->doc->libNotEmpty  = '该文档库下存在文档！';
 $lang->doc->errorMainLib = '该系统文档库不能删除！';
+
+$lang->doclib = $lang->doc;
 /* oa/holiday */
 if(!isset($lang->holiday)) $lang->holiday = new stdclass();
 $lang->holiday->common = '节假日';
