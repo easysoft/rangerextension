@@ -583,7 +583,7 @@ $lang->menu->dividerMenu->crm = ',customer,product,';
 $lang->menu->crm = new stdclass();
 $lang->menu->crm->dashboard = '首页|dashboard|index|';
 $lang->menu->crm->order     = '订单|order|browse|';
-$lang->menu->crm->contract  = '合同|contract|browse|mode=unfinished';
+$lang->menu->crm->contract  = '合同|contract|browse|type=sale&mode=unfinished';
 $lang->menu->crm->customer  = '客户|customer|browse|';
 $lang->menu->crm->provider  = '供应商|provider|browse|';
 $lang->menu->crm->contact   = '联系人|contact|browse|';
@@ -625,27 +625,27 @@ $lang->leads->menu->setting        = '设置|leads|setting|';
 
 if(!isset($lang->contract)) $lang->contract = new stdclass();
 $lang->contract->menu = new stdclass();
-$lang->contract->menu->browse       = '所有合同|contract|browse|mode=all';
-$lang->contract->menu->contactedBy  = '由我联系|contract|browse|mode=contactedby';
-$lang->contract->menu->unfinished   = '未完成|contract|browse|mode=unfinished';
-$lang->contract->menu->unreceived   = '回款中|contract|browse|mode=unreceived';
-$lang->contract->menu->undeliveried = '交付中|contract|browse|mode=undeliveried';
-$lang->contract->menu->finished     = '已完成|contract|browse|mode=finished';
-$lang->contract->menu->canceled     = '已取消|contract|browse|mode=canceled';
-$lang->contract->menu->expired      = '已过期|contract|browse|mode=expired';
-$lang->contract->menu->expire       = '即将到期|contract|browse|mode=expire';
+$lang->contract->menu->browse       = '所有合同|contract|browse|type=sale&mode=all';
+$lang->contract->menu->contactedBy  = '由我联系|contract|browse|type=sale&mode=contactedby';
+$lang->contract->menu->unfinished   = '未完成|contract|browse|type=sale&mode=unfinished';
+$lang->contract->menu->unreceived   = '回款中|contract|browse|type=sale&mode=unreceived';
+$lang->contract->menu->undeliveried = '交付中|contract|browse|type=sale&mode=undeliveried';
+$lang->contract->menu->finished     = '已完成|contract|browse|type=sale&mode=finished';
+$lang->contract->menu->canceled     = '已取消|contract|browse|type=sale&mode=canceled';
+$lang->contract->menu->expired      = '已过期|contract|browse|type=sale&mode=expired';
+$lang->contract->menu->expire       = '即将到期|contract|browse|type=sale&mode=expire';
 $lang->contract->menu->report       = '报表|report|browse|module=contract';
 
 if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
 $lang->purchasecontract->menu = new stdclass();
-$lang->purchasecontract->menu->browse       = '所有合同|purchasecontract|browse|mode=all';
-$lang->purchasecontract->menu->contactedBy  = '由我联系|purchasecontract|browse|mode=contactedby';
-$lang->purchasecontract->menu->unfinished   = '未完成|purchasecontract|browse|mode=unfinished';
-$lang->purchasecontract->menu->unreceived   = '付款中|purchasecontract|browse|mode=unreceived';
-$lang->purchasecontract->menu->finished     = '已完成|purchasecontract|browse|mode=finished';
-$lang->purchasecontract->menu->canceled     = '已取消|purchasecontract|browse|mode=canceled';
-$lang->purchasecontract->menu->expired      = '已过期|purchasecontract|browse|mode=expired';
-$lang->purchasecontract->menu->expire       = '即将到期|purchasecontract|browse|mode=expire';
+$lang->purchasecontract->menu->browse       = '所有合同|purchasecontract|browse|type=purchase&mode=all';
+$lang->purchasecontract->menu->contactedBy  = '由我联系|purchasecontract|browse|type=purchase&mode=contactedby';
+$lang->purchasecontract->menu->unfinished   = '未完成|purchasecontract|browse|type=purchase&mode=unfinished';
+$lang->purchasecontract->menu->unreceived   = '付款中|purchasecontract|browse|type=purchase&mode=unreceived';
+$lang->purchasecontract->menu->finished     = '已完成|purchasecontract|browse|type=purchase&mode=finished';
+$lang->purchasecontract->menu->canceled     = '已取消|purchasecontract|browse|type=purchase&mode=canceled';
+$lang->purchasecontract->menu->expired      = '已过期|purchasecontract|browse|type=purchase&mode=expired';
+$lang->purchasecontract->menu->expire       = '即将到期|purchasecontract|browse|type=purchase&mode=expire';
 $lang->purchasecontract->menu->report       = '报表|report|browse|module=purchasecontract';
 
 $lang->setting = new stdclass();
@@ -1468,145 +1468,101 @@ $lang->block->typeList->customer['thisweek'] = '本周联系';
 /* crm/purchasecontract */
 if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
 $lang->purchasecontract->common = '采购合同';
-#
-#$lang->purchasecontract->id            = '编号';
-#$lang->purchasecontract->order         = '签约订单';
-#$lang->purchasecontract->customer      = '所属客户';
-$lang->purchasecontract->supplier = '供应商';
-#$lang->purchasecontract->name          = '名称';
-#$lang->purchasecontract->code          = '合同编号';
-#$lang->purchasecontract->amount        = '金额';
-#$lang->purchasecontract->currency      = '货币类型';
-#$lang->purchasecontract->all           = '合同总额';
+
+$lang->purchasecontract->id            = '编号';
+$lang->purchasecontract->order         = '签约订单';
+$lang->purchasecontract->customer      = '供应商';
+$lang->purchasecontract->name          = '名称';
+$lang->purchasecontract->code          = '合同编号';
+$lang->purchasecontract->amount        = '金额';
+$lang->purchasecontract->currency      = '货币类型';
+$lang->purchasecontract->all           = '合同总额';
 $lang->purchasecontract->thisAmount    = '本次付款';
-#$lang->purchasecontract->items         = '主要条款';
-#$lang->purchasecontract->begin         = '开始日期';
-#$lang->purchasecontract->end           = '结束日期';
-#$lang->purchasecontract->dateRange     = '起止日期';
-#$lang->purchasecontract->delivery      = '交付';
-#$lang->purchasecontract->deliveredBy   = '由谁交付';
-#$lang->purchasecontract->deliveredDate = '交付时间';
-#$lang->purchasecontract->return        = '回款';
+$lang->purchasecontract->items         = '主要条款';
+$lang->purchasecontract->begin         = '开始日期';
+$lang->purchasecontract->end           = '结束日期';
+$lang->purchasecontract->dateRange     = '起止日期';
 $lang->purchasecontract->return        = '付款';
 $lang->purchasecontract->returnedBy    = '由谁付款';
 $lang->purchasecontract->returnedDate  = '付款时间';
-#$lang->purchasecontract->status        = '状态';
-#$lang->purchasecontract->contact       = '联系人';
-#$lang->purchasecontract->address       = '合同地址';
-#$lang->purchasecontract->signedBy      = '由谁签署';
-#$lang->purchasecontract->signedDate    = '签署日期';
-#$lang->purchasecontract->finishedBy    = '由谁完成';
-#$lang->purchasecontract->finishedDate  = '完成时间';
-#$lang->purchasecontract->canceledBy    = '由谁取消';
-#$lang->purchasecontract->canceledDate  = '取消时间';
-#$lang->purchasecontract->createdBy     = '由谁创建';
-#$lang->purchasecontract->createdDate   = '创建时间';
-#$lang->purchasecontract->editedBy      = '最后修改';
-#$lang->purchasecontract->editedDate    = '最后修改时间';
-#$lang->purchasecontract->handlers      = '贡献者';
-#$lang->purchasecontract->contactedBy   = '由谁联系';
-#$lang->purchasecontract->contactedDate = '最后联系';
-#$lang->purchasecontract->nextDate      = '下次联系';
-#$lang->purchasecontract->product       = '产品';
-#$lang->purchasecontract->productLine   = '产品线';
-#$lang->purchasecontract->files         = '附件';
-#$lang->purchasecontract->createAddress = '新建';
-#$lang->purchasecontract->search        = '搜索';
-#
+$lang->purchasecontract->status        = '状态';
+$lang->purchasecontract->contact       = '联系人';
+$lang->purchasecontract->signedBy      = '由谁签署';
+$lang->purchasecontract->signedDate    = '签署日期';
+$lang->purchasecontract->finishedBy    = '由谁完成';
+$lang->purchasecontract->finishedDate  = '完成时间';
+$lang->purchasecontract->canceledBy    = '由谁取消';
+$lang->purchasecontract->canceledDate  = '取消时间';
+$lang->purchasecontract->createdBy     = '由谁创建';
+$lang->purchasecontract->createdDate   = '创建时间';
+$lang->purchasecontract->editedBy      = '最后修改';
+$lang->purchasecontract->editedDate    = '最后修改时间';
+$lang->purchasecontract->contactedBy   = '由谁联系';
+$lang->purchasecontract->contactedDate = '最后联系';
+$lang->purchasecontract->nextDate      = '下次联系';
+$lang->purchasecontract->product       = '产品';
+$lang->purchasecontract->productLine   = '产品线';
+$lang->purchasecontract->files         = '附件';
+$lang->purchasecontract->search        = '搜索';
+
 $lang->purchasecontract->browse           = '浏览合同';
-$lang->purchasecontract->create           = '创建合同';
-$lang->purchasecontract->edit             = '编辑合同';
-$lang->purchasecontract->view             = '合同详情';
+$lang->purchasecontract->pay              = '付款';
 $lang->purchasecontract->cancel           = '取消合同';
+$lang->purchasecontract->view             = '合同详情';
 $lang->purchasecontract->finish           = '完成合同';
+$lang->purchasecontract->record           = '沟通';
 $lang->purchasecontract->delete           = '删除合同';
-$lang->purchasecontract->receive          = '付款';
+$lang->purchasecontract->list             = '合同列表';
+$lang->purchasecontract->create           = '创建采购合同';
+$lang->purchasecontract->edit             = '编辑采购合同';
+$lang->purchasecontract->setting          = '系统设置';
+$lang->purchasecontract->uploadFile       = '上传附件';
+$lang->purchasecontract->lifetime         = '合同的一生';
+$lang->purchasecontract->returnRecords    = '付款记录';
+$lang->purchasecontract->completeReturn   = '完成付款';
 $lang->purchasecontract->editReturn       = '编辑付款';
 $lang->purchasecontract->deleteReturn     = '删除付款';
 $lang->purchasecontract->export           = '导出';
-
-#$lang->purchasecontract->record           = '沟通';
-#$lang->purchasecontract->list             = '合同列表';
-#$lang->purchasecontract->setting          = '系统设置';
-#$lang->purchasecontract->uploadFile       = '上传附件';
-#$lang->purchasecontract->lifetime         = '合同的一生';
-
-
-
-$lang->purchasecontract->returnRecords    = '付款记录';
-#$lang->purchasecontract->deliveryRecords  = '交付记录';
-$lang->purchasecontract->completeReturn   = '完成付款';
-#$lang->purchasecontract->completeDelivery = '完成交付';
-#$lang->purchasecontract->editDelivery     = '编辑交付';
-#$lang->purchasecontract->deleteDelivery   = '删除交付';
-#$lang->purchasecontract->totalReturn      = '回款合计';
-#$lang->purchasecontract->tradeList        = '收支记录';
-#$lang->purchasecontract->manageTeam       = '维护团队';
-#$lang->purchasecontract->confirmTeam      = '确认贡献度';
-#
-#$lang->purchasecontract->deliveryList[]        = '';
-#$lang->purchasecontract->deliveryList['wait']  = '等待交付';
-#$lang->purchasecontract->deliveryList['doing'] = '交付中';
-#$lang->purchasecontract->deliveryList['done']  = '交付完成';
+$lang->purchasecontract->totalReturn      = '付款合计';
+$lang->purchasecontract->tradeList        = '收支记录';
 
 $lang->purchasecontract->returnList[]        = '';
 $lang->purchasecontract->returnList['wait']  = '等待付款';
 $lang->purchasecontract->returnList['doing'] = '付款中';
 $lang->purchasecontract->returnList['done']  = '付款完成';
-#
-#$lang->purchasecontract->statusList[]           = '';
-#$lang->purchasecontract->statusList['normal']   = '正常';
-#$lang->purchasecontract->statusList['closed']   = '已完成';
-#$lang->purchasecontract->statusList['canceled'] = '已取消';
-#
-#$lang->purchasecontract->codeUnitList[]        = '';
-#$lang->purchasecontract->codeUnitList['Y']     = '年';
-#$lang->purchasecontract->codeUnitList['m']     = '月';
-#$lang->purchasecontract->codeUnitList['d']     = '日';
-#$lang->purchasecontract->codeUnitList['fix']   = '固定值';
-#$lang->purchasecontract->codeUnitList['input'] = '输入值';
-#
-$lang->purchasecontract->totalAmount        = '本页合同总金额：%s，已付款：%s，其中本月付款：%s；';
-$lang->purchasecontract->returnInfo         = "<p>%s, 由 <strong>%s</strong> 付款%s。</p>";
-#$lang->purchasecontract->deliveryInfo       = "<p>%s由%s交付。</p>";
-#$lang->purchasecontract->deleteReturnInfo   = "%s的回款%s";
-#$lang->purchasecontract->deleteDeliveryInfo = "%s的交付";
-#$lang->purchasecontract->teamTips           = '成员为空或者贡献度和提成比例同时为空不保存。';
-#
-#$lang->purchasecontract->placeholder = new stdclass();
-#$lang->purchasecontract->placeholder->real = '成交金额';
-#
-#$lang->purchasecontract->team = new stdclass();
-#$lang->purchasecontract->team->common       = '团队';
-#$lang->purchasecontract->team->account      = '成员';
-#$lang->purchasecontract->team->contribution = '贡献度(%)';
-#$lang->purchasecontract->team->rate         = '提成比例(%)';
-#$lang->purchasecontract->team->money        = '销售额';
-#$lang->purchasecontract->team->status       = '状态';
-#$lang->purchasecontract->team->accept       = '接受';
-#$lang->purchasecontract->team->reject       = '拒绝';
-#$lang->purchasecontract->team->total        = '合计';
-#
-#$lang->purchasecontract->team->statusList['wait']   = '待确认';
-#$lang->purchasecontract->team->statusList['accept'] = '已接受';
-#$lang->purchasecontract->team->statusList['reject'] = '已拒绝';
-#
-#$lang->purchasecontract->error = new stdclass();
-#$lang->purchasecontract->error->wrongContribution = '<strong>贡献度</strong>应该是数字';
-#$lang->purchasecontract->error->wrongRate         = '<strong>提成比例</strong>应该是数字';
-#$lang->purchasecontract->error->wrongTotalRate    = '<strong>提成比例总额</strong>应该不大于100%';
-#
-#$lang->plan = new stdclass();
-#$lang->plan->amount       = $lang->purchasecontract->thisAmount;
-#$lang->plan->returnedDate = $lang->purchasecontract->returnedDate;
-#
-##$lang->purchasecontract->actionWidth = 260;
-#
+
+$lang->purchasecontract->statusList[]           = '';
+$lang->purchasecontract->statusList['normal']   = '正常';
+$lang->purchasecontract->statusList['closed']   = '已完成';
+$lang->purchasecontract->statusList['canceled'] = '已取消';
+
+$lang->purchasecontract->codeUnitList[]        = '';
+$lang->purchasecontract->codeUnitList['Y']     = '年';
+$lang->purchasecontract->codeUnitList['m']     = '月';
+$lang->purchasecontract->codeUnitList['d']     = '日';
+$lang->purchasecontract->codeUnitList['fix']   = '固定值';
+$lang->purchasecontract->codeUnitList['input'] = '输入值';
+
+$lang->purchasecontract->totalAmount      = '本页合同总金额：%s，已付款：%s，其中本月付款：%s；';
+$lang->purchasecontract->returnInfo       = "<p>%s, 由 <strong>%s</strong> 付款%s。</p>";
+$lang->purchasecontract->deleteReturnInfo = "%s的付款%s";
+
+$lang->purchasecontract->placeholder = new stdclass();
+$lang->purchasecontract->placeholder->real = '成交金额';
+
+$lang->purchasecontract->error = new stdclass();
+
+$lang->plan = new stdclass();
+$lang->plan->amount       = $lang->purchasecontract->thisAmount;
+$lang->plan->returnedDate = $lang->purchasecontract->returnedDate;
+
+$lang->purchasecontract->actionWidth = 220;
+
 $lang->purchasecontract->action = new stdClass();
-$lang->purchasecontract->action->returned              = '$date, 由 <strong>$actor</strong> 付款$extra。' . "\n";
-$lang->purchasecontract->action->editreturned          = '$date, 由 <strong>$actor</strong> 编辑付款。' . "\n";
-$lang->purchasecontract->action->deletereturned        = '$date, 由 <strong>$actor</strong> 删除$extra。' . "\n";
-$lang->purchasecontract->action->finishreturned        = '$date, 由 <strong>$actor</strong> 付款$extra，付款完成。' . "\n";
+$lang->purchasecontract->action->returned       = '$date, 由 <strong>$actor</strong> 付款$extra。' . "\n";
+$lang->purchasecontract->action->editreturned   = '$date, 由 <strong>$actor</strong> 编辑付款。' . "\n";
+$lang->purchasecontract->action->deletereturned = '$date, 由 <strong>$actor</strong> 删除$extra。' . "\n";
+$lang->purchasecontract->action->finishreturned = '$date, 由 <strong>$actor</strong> 付款$extra，付款完成。' . "\n";
 /* crm/sales */
 if(!isset($lang->sales)) $lang->sales = new stdclass();
 $lang->sales->common = '销售分组';
@@ -1771,7 +1727,7 @@ $lang->plan = new stdclass();
 $lang->plan->amount       = $lang->contract->thisAmount;
 $lang->plan->returnedDate = $lang->contract->returnedDate;
 
-$lang->contract->actionWidth = 260;
+$lang->contract->actionWidth = 240;
 /* crm/leads */
 if(!isset($lang->leads)) $lang->leads = new stdclass();
 
@@ -4704,7 +4660,7 @@ $lang->customer->typeList['personal']    = '个人个体';
 $lang->customer->statusList['potential'] = '潜在';
 $lang->customer->statusList['intension'] = '意向';
 $lang->customer->statusList['signed']    = '已签约';
-$lang->customer->statusList['payed']     = '已付款';
+$lang->customer->statusList['paid']      = '已付款';
 $lang->customer->statusList['failed']    = '失败';
 
 $lang->customer->sizeNameList[0] = '';

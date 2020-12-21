@@ -625,27 +625,27 @@ $lang->leads->menu->setting        = 'Settings|leads|setting|';
 
 if(!isset($lang->contract)) $lang->contract = new stdclass();
 $lang->contract->menu = new stdclass();
-$lang->contract->menu->browse       = 'All|contract|browse|mode=all';
-$lang->contract->menu->contactedBy  = 'ContactedByMe|contract|browse|mode=contactedby';
-$lang->contract->menu->unfinished   = 'Unfinished|contract|browse|mode=unfinished';
-$lang->contract->menu->unreceived   = 'Receiving|contract|browse|mode=unreceived';
-$lang->contract->menu->undeliveried = 'Delivering|contract|browse|mode=undeliveried';
-$lang->contract->menu->finished     = 'Finished|contract|browse|mode=finished';
-$lang->contract->menu->canceled     = 'Cancelled|contract|browse|mode=canceled';
-$lang->contract->menu->expired      = 'Expired|contract|browse|mode=expired';
-$lang->contract->menu->expire       = 'Expire Soon|contract|browse|mode=expire';
+$lang->contract->menu->browse       = 'All|contract|browse|type=sale&mode=all';
+$lang->contract->menu->contactedBy  = 'ContactedByMe|contract|browse|type=sale&mode=contactedby';
+$lang->contract->menu->unfinished   = 'Unfinished|contract|browse|type=sale&mode=unfinished';
+$lang->contract->menu->unreceived   = 'Receiving|contract|browse|type=sale&mode=unreceived';
+$lang->contract->menu->undeliveried = 'Delivering|contract|browse|type=sale&mode=undeliveried';
+$lang->contract->menu->finished     = 'Finished|contract|browse|type=sale&mode=finished';
+$lang->contract->menu->canceled     = 'Cancelled|contract|browse|type=sale&mode=canceled';
+$lang->contract->menu->expired      = 'Expired|contract|browse|type=sale&mode=expired';
+$lang->contract->menu->expire       = 'Expire Soon|contract|browse|type=sale&mode=expire';
 $lang->contract->menu->report       = 'Report|report|browse|module=contract';
 
 if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
 $lang->purchasecontract->menu = new stdclass();
-$lang->purchasecontract->menu->browse       = 'All|purchasecontract|browse|mode=all';
-$lang->purchasecontract->menu->contactedBy  = 'ContactedByMe|purchasecontract|browse|mode=contactedby';
-$lang->purchasecontract->menu->unfinished   = 'Unfinished|purchasecontract|browse|mode=unfinished';
-$lang->purchasecontract->menu->unreceived   = 'Paying|purchasecontract|browse|mode=unreceived';
-$lang->purchasecontract->menu->finished     = 'Finished|purchasecontract|browse|mode=finished';
-$lang->purchasecontract->menu->canceled     = 'Cancelled|purchasecontract|browse|mode=canceled';
-$lang->purchasecontract->menu->expired      = 'Expired|purchasecontract|browse|mode=expired';
-$lang->purchasecontract->menu->expire       = 'Expire Soon|purchasecontract|browse|mode=expire';
+$lang->purchasecontract->menu->browse       = 'All|purchasecontract|browse|type=purchase&mode=all';
+$lang->purchasecontract->menu->contactedBy  = 'ContactedByMe|purchasecontract|browse|type=purchase&mode=contactedby';
+$lang->purchasecontract->menu->unfinished   = 'Unfinished|purchasecontract|browse|type=purchase&mode=unfinished';
+$lang->purchasecontract->menu->unreceived   = 'Paying|purchasecontract|browse|type=purchase&mode=unreceived';
+$lang->purchasecontract->menu->finished     = 'Finished|purchasecontract|browse|type=purchase&mode=finished';
+$lang->purchasecontract->menu->canceled     = 'Cancelled|purchasecontract|browse|type=purchase&mode=canceled';
+$lang->purchasecontract->menu->expired      = 'Expired|purchasecontract|browse|type=purchase&mode=expired';
+$lang->purchasecontract->menu->expire       = 'Expire Soon|purchasecontract|browse|type=purchase&mode=expire';
 $lang->purchasecontract->menu->report       = 'Report|report|browse|module=purchasecontract';
 
 $lang->setting = new stdclass();
@@ -1465,41 +1465,102 @@ $lang->block->typeList->customer['today']    = 'Today';
 $lang->block->typeList->customer['thisweek'] = 'This week';
 /* crm/purchasecontract */
 if(!isset($lang->purchasecontract)) $lang->purchasecontract = new stdclass();
-
 $lang->purchasecontract->common = 'Purchase Contract';
 
+$lang->purchasecontract->id            = 'ID';
+$lang->purchasecontract->order         = 'Order';
+$lang->purchasecontract->customer      = 'Provider';
+$lang->purchasecontract->name          = 'Name';
+$lang->purchasecontract->code          = 'Alias';
+$lang->purchasecontract->amount        = 'Amount';
+$lang->purchasecontract->currency      = 'Currency';
+$lang->purchasecontract->all           = 'Total Amount';
+$lang->purchasecontract->thisAmount    = 'This Amount';
+$lang->purchasecontract->items         = 'Items';
+$lang->purchasecontract->begin         = 'Begin';
+$lang->purchasecontract->end           = 'End';
+$lang->purchasecontract->dateRange     = 'Begin & End';
+$lang->purchasecontract->return        = 'Payment';
+$lang->purchasecontract->returnedBy    = 'PaidBy';
+$lang->purchasecontract->returnedDate  = 'Paid';
+$lang->purchasecontract->status        = 'Status';
+$lang->purchasecontract->contact       = 'Contact';
+$lang->purchasecontract->signedBy      = 'SignedBy';
+$lang->purchasecontract->signedDate    = 'Signed';
+$lang->purchasecontract->finishedBy    = 'FinishedBy';
+$lang->purchasecontract->finishedDate  = 'Finished';
+$lang->purchasecontract->canceledBy    = 'CancelledBy';
+$lang->purchasecontract->canceledDate  = 'Cancelled';
+$lang->purchasecontract->createdBy     = 'CreatedBy';
+$lang->purchasecontract->createdDate   = 'Created';
+$lang->purchasecontract->editedBy      = 'EditedBy';
+$lang->purchasecontract->editedDate    = 'Edited';
+$lang->purchasecontract->contactedBy   = 'ContactedBy';
+$lang->purchasecontract->contactedDate = 'Contacted';
+$lang->purchasecontract->nextDate      = 'Next Date';
+$lang->purchasecontract->product       = 'Product';
+$lang->purchasecontract->productLine   = 'Product Line';
+$lang->purchasecontract->files         = 'Files';
+$lang->purchasecontract->search        = 'Search';
+
 $lang->purchasecontract->browse           = 'Contract';
+$lang->purchasecontract->receive          = 'Pay';
+$lang->purchasecontract->cancel           = 'Cancel';
+$lang->purchasecontract->view             = 'Contract';
+$lang->purchasecontract->finish           = 'Finish';
+$lang->purchasecontract->record           = 'Follow Up';
+$lang->purchasecontract->delete           = 'Delete';
+$lang->purchasecontract->list             = 'Contracts';
 $lang->purchasecontract->create           = 'Create';
 $lang->purchasecontract->edit             = 'Edit';
-$lang->purchasecontract->view             = 'Contract';
-$lang->purchasecontract->cancel           = 'Cancel';
-$lang->purchasecontract->finish           = 'Finish';
-$lang->purchasecontract->delete           = 'Delete';
-$lang->purchasecontract->receive          = 'Pay';
-$lang->purchasecontract->editReturn       = 'Edit Pay';
-$lang->purchasecontract->deleteReturn     = 'Delete Pay';
+$lang->purchasecontract->setting          = 'Settings';
+$lang->purchasecontract->uploadFile       = 'Upload';
+$lang->purchasecontract->lifetime         = 'About Contract';
+$lang->purchasecontract->returnRecords    = 'Payment';
+$lang->purchasecontract->completeReturn   = 'Finish Payment';
+$lang->purchasecontract->editReturn       = 'Edit';
+$lang->purchasecontract->deleteReturn     = 'Delete';
 $lang->purchasecontract->export           = 'Export';
-
-$lang->purchasecontract->supplier = 'Supplier';
-$lang->purchasecontract->return   = 'Payment';
-$lang->purchasecontract->returnedBy = 'Paymented';
-$lang->purchasecontract->totalAmount = 'The total payment is %s. %s on this page. %s in this month.';
-$lang->purchasecontract->returnInfo         = "<p>%s, <strong>%s</strong> payed %s。</p>";
-$lang->purchasecontract->completeReturn   = 'Complete payment';
-$lang->purchasecontract->thisAmount    = 'This payment';
-$lang->purchasecontract->returnRecords    = 'Payment records';
+$lang->purchasecontract->totalReturn      = 'Total';
+$lang->purchasecontract->tradeList        = 'Trade List';
 
 $lang->purchasecontract->returnList[]        = '';
 $lang->purchasecontract->returnList['wait']  = 'Wait';
 $lang->purchasecontract->returnList['doing'] = 'Doing';
 $lang->purchasecontract->returnList['done']  = 'Done';
 
-$lang->purchasecontract->action = new stdClass();
-$lang->purchasecontract->action->returned              = '$date, a payment $extra is payed by <strong>$actor</strong>.' . "\n";
-$lang->purchasecontract->action->editreturned          = '$date, edited payment by <strong>$actor</strong>.' . "\n";
-$lang->purchasecontract->action->deletereturned        = '$date, deleted $extra by <strong>$actor</strong>.' . "\n";
-$lang->purchasecontract->action->finishreturned        = '$date, a payment $extra is payed by <strong>$actor</strong>. Payment is completed' . "\n";
+$lang->purchasecontract->statusList[]           = '';
+$lang->purchasecontract->statusList['normal']   = 'Normal';
+$lang->purchasecontract->statusList['closed']   = 'Closed';
+$lang->purchasecontract->statusList['canceled'] = 'Cancelled';
 
+$lang->purchasecontract->codeUnitList[]        = '';
+$lang->purchasecontract->codeUnitList['Y']     = 'Year';
+$lang->purchasecontract->codeUnitList['m']     = 'Month';
+$lang->purchasecontract->codeUnitList['d']     = 'Day';
+$lang->purchasecontract->codeUnitList['fix']   = 'Fix';
+$lang->purchasecontract->codeUnitList['input'] = 'Input';
+
+$lang->purchasecontract->totalAmount      = 'The total payment is %s. %s on this page. %s in this month.';
+$lang->purchasecontract->returnInfo       = "<p>%s, paid by <strong>%s</strong>, %s.</p>";
+$lang->purchasecontract->deleteReturnInfo = "%s in %s";
+
+$lang->purchasecontract->placeholder = new stdclass();
+$lang->purchasecontract->placeholder->real = 'Turnover';
+
+$lang->purchasecontract->error = new stdclass();
+
+$lang->plan = new stdclass();
+$lang->plan->amount       = $lang->purchasecontract->thisAmount;
+$lang->plan->returnedDate = $lang->purchasecontract->returnedDate;
+
+$lang->purchasecontract->actionWidth = 300;
+
+$lang->purchasecontract->action = new stdClass();
+$lang->purchasecontract->action->paid       = '$date, a payment $extra is payed by <strong>$actor</strong>.' . "\n";
+$lang->purchasecontract->action->editpaid   = '$date, edited payment by <strong>$actor</strong>.' . "\n";
+$lang->purchasecontract->action->deletepaid = '$date, deleted $extra by <strong>$actor</strong>.' . "\n";
+$lang->purchasecontract->action->finishpaid = '$date, a payment $extra is payed by <strong>$actor</strong>. Payment is completed' . "\n";
 /* crm/sales */
 if(!isset($lang->sales)) $lang->sales = new stdclass();
 $lang->sales->common = 'Sales';
@@ -1665,7 +1726,7 @@ $lang->plan = new stdclass();
 $lang->plan->amount       = $lang->contract->thisAmount;
 $lang->plan->returnedDate = $lang->contract->returnedDate;
 
-$lang->contract->actionWidth   = 320;
+$lang->contract->actionWidth   = 330;
 /* crm/leads */
 if(!isset($lang->leads)) $lang->leads = new stdclass();
 
@@ -4597,7 +4658,7 @@ $lang->customer->typeList['personal']    = 'Personal';
 $lang->customer->statusList['potential'] = 'Potential';
 $lang->customer->statusList['intension'] = 'Intended';
 $lang->customer->statusList['signed']    = 'Signed';
-$lang->customer->statusList['payed']     = 'Paid';
+$lang->customer->statusList['paid']      = 'Paid';
 $lang->customer->statusList['failed']    = 'Failed';
 
 $lang->customer->sizeNameList[0] = '';
