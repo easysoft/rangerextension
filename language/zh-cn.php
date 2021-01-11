@@ -3855,7 +3855,7 @@ $lang->action->nextDate = '下次联系';
 $lang->action->system   = '系统';
 
 $lang->action->trash      = '回收站';
-$lang->action->objectType = '对象类型';
+$lang->action->objectType = '对象';
 $lang->action->objectID   = '对象ID';
 $lang->action->objectName = '对象名称';
 
@@ -4128,8 +4128,8 @@ $lang->action->record->date             = '时间';
 $lang->action->record->file             = '附件';
 $lang->action->record->next             = '下次联系';
 $lang->action->record->nextList         = '下次联系列表';
-$lang->action->record->nextDate         = '下次联系日期';
-$lang->action->record->nextContact      = '下次联系人';
+$lang->action->record->nextDate         = '联系日期';
+$lang->action->record->nextContact      = '联系人';
 $lang->action->record->sameContact      = '同本次联系人';
 $lang->action->record->contactedBy      = '由谁联系';
 $lang->action->record->desc             = '备注';
