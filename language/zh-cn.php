@@ -1187,7 +1187,7 @@ $lang->block->availableBlocks->trade      = '最新账目';
 $lang->block->availableBlocks->baseFacts  = '收支概况';
 $lang->block->availableBlocks->provider   = '供应商';
 $lang->block->availableBlocks->report     = '报表';
-$lang->block->availableBlocks->investLoan = '投资借贷';
+$lang->block->availableBlocks->funds      = '投资借贷';
 $lang->block->availableBlocks->chart      = '图表';
 
 $this->lang->block->orderByList->trade['id_asc']    = 'ID 递增';
@@ -1223,6 +1223,20 @@ $lang->block->months['09'] = '9月';
 $lang->block->months['10'] = '10月';
 $lang->block->months['11'] = '11月';
 $lang->block->months['12'] = '12月';
+
+$lang->block->chartOptions = array();
+$lang->block->chartOptions['color'] = array();
+$lang->block->chartOptions['color']['in']     = '#5b9bd5';
+$lang->block->chartOptions['color']['out']    = '#f28b36';
+$lang->block->chartOptions['color']['profit'] = '#04ac90';
+
+$lang->block->monthTradeCharts = array();
+$lang->block->monthTradeCharts['in']  = array('bar', 'line');
+$lang->block->monthTradeCharts['out'] = array('bar', 'line');
+
+$lang->block->monthProfitCharts = array('bar', 'line');
+
+$lang->block->yearProfitAxis = array('收入', '支出', '利润');
 /* cash/balance */
 $lang->balance = new stdclass();
 
@@ -3734,7 +3748,7 @@ $lang->block->default['cash']['1']['params']['num']     = 8;
 $lang->block->default['cash']['1']['params']['orderBy'] = 'date_desc';
 
 $lang->block->default['cash']['2']['title'] = '投资借贷';
-$lang->block->default['cash']['2']['block'] = 'investLoan';
+$lang->block->default['cash']['2']['block'] = 'funds';
 $lang->block->default['cash']['2']['grid']  = 4;
 
 $lang->block->default['cash']['3']['title'] = '月利润图';
@@ -3813,10 +3827,10 @@ $lang->block->moreLinkList->contract['canceledstatus'] = '已取消|crm|contract
 $lang->block->moreLinkList->customer['today']    = '今天联系|crm|customer|browse|type=today';
 $lang->block->moreLinkList->customer['thisweek'] = '本周联系|crm|customer|browse|type=thisweek';
 
-$lang->block->moreLinkList->trade      = '账目|cash|trade|browse|';
-$lang->block->moreLinkList->depositor  = '账户|cash|depositor|index|';
-$lang->block->moreLinkList->provider   = '供应商|cash|provider|browse|';
-$lang->block->moreLinkList->investLoan = '投资借贷|cash|trade|browse|mode=invest';
+$lang->block->moreLinkList->trade     = '账目|cash|trade|browse|';
+$lang->block->moreLinkList->depositor = '账户|cash|depositor|index|';
+$lang->block->moreLinkList->provider  = '供应商|cash|provider|browse|';
+$lang->block->moreLinkList->funds     = '投资借贷|cash|trade|browse|mode=invest';
 
 $lang->block->moreLinkList->announce = '公告|oa|announce|browse|';
 $lang->block->moreLinkList->attend   = '日历|sys|todo|calendar|';

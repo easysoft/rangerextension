@@ -1187,7 +1187,7 @@ $lang->block->availableBlocks->trade      = 'Latest Trade';
 $lang->block->availableBlocks->baseFacts  = 'Incomes and Expenses';
 $lang->block->availableBlocks->provider   = 'Supplier';
 $lang->block->availableBlocks->report     = 'Report';
-$lang->block->availableBlocks->investLoan = 'Invest and Loan';
+$lang->block->availableBlocks->funds      = 'Invest and Loan';
 $lang->block->availableBlocks->chart      = 'Chart';
 
 $this->lang->block->orderByList->trade['id_asc']    = 'ID ASC';
@@ -1223,6 +1223,20 @@ $lang->block->months['09'] = 'September';
 $lang->block->months['10'] = 'October';
 $lang->block->months['11'] = 'November';
 $lang->block->months['12'] = 'December';
+
+$lang->block->chartOptions = array();
+$lang->block->chartOptions['color'] = array();
+$lang->block->chartOptions['color']['in']     = '#5b9bd5';
+$lang->block->chartOptions['color']['out']    = '#f28b36';
+$lang->block->chartOptions['color']['profit'] = '#04ac90';
+
+$lang->block->monthTradeCharts = array();
+$lang->block->monthTradeCharts['in']  = array('bar', 'line');
+$lang->block->monthTradeCharts['out'] = array('bar', 'line');
+
+$lang->block->monthProfitCharts = array('bar', 'line');
+
+$lang->block->yearProfitAxis = array('Income', 'Expense', 'Profit');
 /* cash/balance */
 $lang->balance = new stdclass();
 
@@ -3740,7 +3754,7 @@ $lang->block->default['cash']['1']['params']['num']     = 8;
 $lang->block->default['cash']['1']['params']['orderBy'] = 'date_desc';
 
 $lang->block->default['cash']['2']['title'] = 'Invest & Loan';
-$lang->block->default['cash']['2']['block'] = 'investLoan';
+$lang->block->default['cash']['2']['block'] = 'funds';
 $lang->block->default['cash']['2']['grid']  = 4;
 
 $lang->block->default['cash']['3']['title'] = 'Monthly Profit';
@@ -3822,6 +3836,7 @@ $lang->block->moreLinkList->customer['thisweek'] = 'This Week|crm|customer|brows
 $lang->block->moreLinkList->trade     = 'Trade|cash|trade|browse|';
 $lang->block->moreLinkList->depositor = 'Depositor|cash|depositor|index|';
 $lang->block->moreLinkList->provider  = 'Supplier|cash|provider|browse|';
+$lang->block->moreLinkList->funds     = 'Invest and Loan|cash|trade|browse|mode=invest';
 
 $lang->block->moreLinkList->announce = 'Announce|oa|announce|browse|';
 $lang->block->moreLinkList->attend   = 'Attend|sys|todo|calendar|';
