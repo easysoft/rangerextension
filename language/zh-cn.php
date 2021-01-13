@@ -33,6 +33,9 @@ $lang->apps->team       = '团队';
 $lang->apps->superadmin = '后台';
 $lang->apps->sys        = '通用';
 
+$lang->app = new stdclass();
+$lang->app->name = '后台管理';
+
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = '全协同管理平台';
 $lang->versionName    = '基础版';
@@ -1228,7 +1231,7 @@ $lang->block->chartOptions = array();
 $lang->block->chartOptions['color'] = array();
 $lang->block->chartOptions['color']['in']     = '#5b9bd5';
 $lang->block->chartOptions['color']['out']    = '#f28b36';
-$lang->block->chartOptions['color']['profit'] = '#04ac90';
+$lang->block->chartOptions['color']['profit'] = 'rgba(4,172,144,0.8)';
 
 $lang->block->monthTradeCharts = array();
 $lang->block->monthTradeCharts['in']  = array('bar', 'line');

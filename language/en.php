@@ -33,6 +33,9 @@ $lang->apps->team       = 'TEAM';
 $lang->apps->superadmin = 'ADMIN';
 $lang->apps->sys        = 'SYSTEM';
 
+$lang->app = new stdclass();
+$lang->app->name = 'Admin';
+
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = ' Enterprise Collaboration System';
 $lang->versionName    = 'Basic';
@@ -1228,7 +1231,7 @@ $lang->block->chartOptions = array();
 $lang->block->chartOptions['color'] = array();
 $lang->block->chartOptions['color']['in']     = '#5b9bd5';
 $lang->block->chartOptions['color']['out']    = '#f28b36';
-$lang->block->chartOptions['color']['profit'] = '#04ac90';
+$lang->block->chartOptions['color']['profit'] = 'rgba(4,172,144,0.8)';
 
 $lang->block->monthTradeCharts = array();
 $lang->block->monthTradeCharts['in']  = array('bar', 'line');
