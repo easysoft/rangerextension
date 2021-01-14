@@ -1205,7 +1205,7 @@ $this->lang->block->typeList->trade['out']  = '支出';
 $this->lang->block->typeList->chart['monthTrade']  = '月收支图';
 $this->lang->block->typeList->chart['monthProfit'] = '月利润图';
 $this->lang->block->typeList->chart['yearProfit']  = '年利润图';
-$this->lang->block->typeList->chart['monthCash']   = '现金图';
+$this->lang->block->typeList->chart['monthCash']   = '公司现金图';
 
 $this->lang->block->groupByList = new stdclass();
 $this->lang->block->groupByList->trade['category'] = '按科目统计';
