@@ -33,9 +33,6 @@ $lang->apps->team       = 'TEAM';
 $lang->apps->superadmin = 'ADMIN';
 $lang->apps->sys        = 'SYSTEM';
 
-$lang->app = new stdclass();
-$lang->app->name = 'Admin';
-
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = ' Enterprise Collaboration System';
 $lang->versionName    = 'Basic';
@@ -1047,6 +1044,7 @@ $lang->trade->report->unit        = 'Unit';
 
 $lang->trade->report->unitList[1]       = '$';
 $lang->trade->report->unitList[1000]    = 'K$';
+$lang->trade->report->unitList[10000]   = 'Ten K$';
 $lang->trade->report->unitList[1000000] = 'M$';
 
 $lang->trade->report->typeList['annual']  = 'Annual Balance Sheet'; 
@@ -1229,8 +1227,8 @@ $lang->block->months['12'] = 'December';
 
 $lang->block->chartOptions = array();
 $lang->block->chartOptions['color'] = array();
-$lang->block->chartOptions['color']['in']     = '#5b9bd5';
-$lang->block->chartOptions['color']['out']    = '#f28b36';
+$lang->block->chartOptions['color']['in']     = 'rgba(91,155,213,0.8)';
+$lang->block->chartOptions['color']['out']    = 'rgba(242,139,54,0.8)';
 $lang->block->chartOptions['color']['profit'] = 'rgba(4,172,144,0.8)';
 
 $lang->block->monthTradeCharts = array();
@@ -3749,36 +3747,39 @@ $lang->block->default['crm']['3']['params']['num']     = 15;
 $lang->block->default['crm']['3']['params']['orderBy'] = 'id_desc';
 $lang->block->default['crm']['3']['params']['type']    = 'thisweek';
 
-$lang->block->default['cash']['1']['title'] = 'Latest Trade';
-$lang->block->default['cash']['1']['block'] = 'depositor';
-$lang->block->default['cash']['1']['grid']  = 4;
+$lang->block->default['cash']['1']['title'] = 'Monthly Profits Chart';
+$lang->block->default['cash']['1']['block'] = 'chart';
+$lang->block->default['cash']['1']['grid']  = 8;
+$lang->block->default['cash']['1']['params']['type']     = 'monthProfit';
+$lang->block->default['cash']['1']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['1']['params']['num']     = 8;
-$lang->block->default['cash']['1']['params']['orderBy'] = 'date_desc';
-
-$lang->block->default['cash']['2']['title'] = 'Invest & Loan';
-$lang->block->default['cash']['2']['block'] = 'funds';
+$lang->block->default['cash']['2']['title'] = 'Annual Profits Chart';
+$lang->block->default['cash']['2']['block'] = 'chart';
 $lang->block->default['cash']['2']['grid']  = 4;
+$lang->block->default['cash']['2']['params']['type']     = 'yearProfit';
+$lang->block->default['cash']['2']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['3']['title'] = 'Monthly Profit';
+$lang->block->default['cash']['3']['title'] = 'Monthly Trades Chart';
 $lang->block->default['cash']['3']['block'] = 'chart';
 $lang->block->default['cash']['3']['grid']  = 8;
+$lang->block->default['cash']['3']['params']['type']     = 'monthTrade';
+$lang->block->default['cash']['3']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['3']['params']['type']     = 'monthProfit';
-$lang->block->default['cash']['3']['params']['currency'] = 'rmb';
-
-$lang->block->default['cash']['4']['title'] = 'Depositor';
-$lang->block->default['cash']['4']['block'] = 'depositor';
+$lang->block->default['cash']['4']['title'] = 'Invest & Loan';
+$lang->block->default['cash']['4']['block'] = 'funds';
 $lang->block->default['cash']['4']['grid']  = 4;
 
-$lang->block->default['cash']['4']['params'] = array();
+$lang->block->default['cash']['5']['title'] = 'Monthly Cash';
+$lang->block->default['cash']['5']['block'] = 'chart';
+$lang->block->default['cash']['5']['grid']  = 8;
+$lang->block->default['cash']['5']['params']['type']     = 'monthCash';
+$lang->block->default['cash']['5']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['5']['title'] = 'Supplier';
-$lang->block->default['cash']['5']['block'] = 'depositor';
-$lang->block->default['cash']['5']['grid']  = 4;
-
-$lang->block->default['cash']['5']['params']['num']     = 15;
-$lang->block->default['cash']['5']['params']['orderBy'] = 'id_desc';
+$lang->block->default['cash']['6']['title'] = 'Latest Trade';
+$lang->block->default['cash']['6']['block'] = 'trade';
+$lang->block->default['cash']['6']['grid']  = 4;
+$lang->block->default['cash']['6']['params']['num']     = 8;
+$lang->block->default['cash']['6']['params']['orderBy'] = 'date_desc';
 
 $lang->block->default['team']['1']['title'] = 'Latest Blog';
 $lang->block->default['team']['1']['block'] = 'blog';
@@ -5325,6 +5326,7 @@ $lang->schema->placeholder->in          = 'Fill in the column corresponding to t
 $lang->schema->placeholder->out         = 'Fill in the column corresponding to the amount of expense, e.g. D.';
 
 $lang->schema->fieldRequired = '%s is required.';
+$lang->schema->uppercase     = 'The column corresponding to the field must be uppercase letter';
 /* sys/backup */
 $lang->backup->common      = 'Backup';
 $lang->backup->index       = 'Home';

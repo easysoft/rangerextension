@@ -33,9 +33,6 @@ $lang->apps->team       = '团队';
 $lang->apps->superadmin = '后台';
 $lang->apps->sys        = '通用';
 
-$lang->app = new stdclass();
-$lang->app->name = '后台管理';
-
 $lang->zdoo           = 'ZDOO';
 $lang->zdooTitle      = '全协同管理平台';
 $lang->versionName    = '基础版';
@@ -1229,8 +1226,8 @@ $lang->block->months['12'] = '12月';
 
 $lang->block->chartOptions = array();
 $lang->block->chartOptions['color'] = array();
-$lang->block->chartOptions['color']['in']     = '#5b9bd5';
-$lang->block->chartOptions['color']['out']    = '#f28b36';
+$lang->block->chartOptions['color']['in']     = 'rgba(91,155,213,0.8)';
+$lang->block->chartOptions['color']['out']    = 'rgba(242,139,54,0.8)';
 $lang->block->chartOptions['color']['profit'] = 'rgba(4,172,144,0.8)';
 
 $lang->block->monthTradeCharts = array();
@@ -3743,36 +3740,39 @@ $lang->block->default['crm']['3']['params']['num']     = 15;
 $lang->block->default['crm']['3']['params']['orderBy'] = 'id_desc';
 $lang->block->default['crm']['3']['params']['type']    = 'thisweek';
 
-$lang->block->default['cash']['1']['title'] = '最新账目';
-$lang->block->default['cash']['1']['block'] = 'trade';
-$lang->block->default['cash']['1']['grid']  = 4;
+$lang->block->default['cash']['1']['title'] = '月利润图';
+$lang->block->default['cash']['1']['block'] = 'chart';
+$lang->block->default['cash']['1']['grid']  = 8;
+$lang->block->default['cash']['1']['params']['type']     = 'monthProfit';
+$lang->block->default['cash']['1']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['1']['params']['num']     = 8;
-$lang->block->default['cash']['1']['params']['orderBy'] = 'date_desc';
-
-$lang->block->default['cash']['2']['title'] = '投资借贷';
-$lang->block->default['cash']['2']['block'] = 'funds';
+$lang->block->default['cash']['2']['title'] = '年利润图';
+$lang->block->default['cash']['2']['block'] = 'chart';
 $lang->block->default['cash']['2']['grid']  = 4;
+$lang->block->default['cash']['2']['params']['type']     = 'yearProfit';
+$lang->block->default['cash']['2']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['3']['title'] = '月利润图';
+$lang->block->default['cash']['3']['title'] = '月收支图';
 $lang->block->default['cash']['3']['block'] = 'chart';
 $lang->block->default['cash']['3']['grid']  = 8;
+$lang->block->default['cash']['3']['params']['type']     = 'monthTrade';
+$lang->block->default['cash']['3']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['3']['params']['type']     = 'monthProfit';
-$lang->block->default['cash']['3']['params']['currency'] = 'rmb';
-
-$lang->block->default['cash']['4']['title'] = '付款账户';
-$lang->block->default['cash']['4']['block'] = 'depositor';
+$lang->block->default['cash']['4']['title'] = '投资借贷';
+$lang->block->default['cash']['4']['block'] = 'funds';
 $lang->block->default['cash']['4']['grid']  = 4;
 
-$lang->block->default['cash']['4']['params'] = array();
+$lang->block->default['cash']['5']['title'] = '公司现金图';
+$lang->block->default['cash']['5']['block'] = 'chart';
+$lang->block->default['cash']['5']['grid']  = 8;
+$lang->block->default['cash']['5']['params']['type']     = 'monthCash';
+$lang->block->default['cash']['5']['params']['currency'] = $this->config->setting->mainCurrency;
 
-$lang->block->default['cash']['5']['title'] = '供应商';
-$lang->block->default['cash']['5']['block'] = 'provider';
-$lang->block->default['cash']['5']['grid']  = 4;
-
-$lang->block->default['cash']['5']['params']['num']     = 15;
-$lang->block->default['cash']['5']['params']['orderBy'] = 'id_desc';
+$lang->block->default['cash']['6']['title'] = '最新账目';
+$lang->block->default['cash']['6']['block'] = 'trade';
+$lang->block->default['cash']['6']['grid']  = 4;
+$lang->block->default['cash']['6']['params']['num']     = 8;
+$lang->block->default['cash']['6']['params']['orderBy'] = 'date_desc';
 
 $lang->block->default['team']['1']['title'] = '最新博客';
 $lang->block->default['team']['1']['block'] = 'blog';
@@ -5319,6 +5319,7 @@ $lang->schema->placeholder->in          = '收款所在的列，如：E';
 $lang->schema->placeholder->out         = '付款所在的列，如：D';
 
 $lang->schema->fieldRequired = '%s 必须选择对应的列';
+$lang->schema->uppercase     = '对账单对应到该字段的列必须为大写字母';
 /* sys/backup */
 $lang->backup->common      = '备份';
 $lang->backup->index       = '备份首页';
