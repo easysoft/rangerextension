@@ -1173,6 +1173,9 @@ $lang->trade->excel->title->depositor = ' Profit and Loss Statement';
 
 $lang->trade->excel->help = new stdclass();
 $lang->trade->excel->help->depositor = "This report will not list currencies in different columns.";
+
+$lang->trade->excel->error = new stdclass();
+$lang->trade->excel->error->noData = 'No transaction records before %s.';
 /* cash/block */
 $lang->block->common    = 'Blocks';
 $lang->block->depositor = 'Checking Account';

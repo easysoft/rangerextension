@@ -1172,6 +1172,9 @@ $lang->trade->excel->title->depositor = '账号盈亏表';
 
 $lang->trade->excel->help = new stdclass();
 $lang->trade->excel->help->depositor = '本报表不区分币种。';
+
+$lang->trade->excel->error = new stdclass();
+$lang->trade->excel->error->noData = '没有%s年之前的交易记录。';
 /* cash/block */
 $lang->block->common    = '区块';
 $lang->block->depositor = '付款账号';
