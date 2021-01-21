@@ -982,7 +982,7 @@ $lang->trade->investAmount     = '投资金额';
 $lang->trade->loanAmount       = '贷款金额';
 
 $lang->trade->traderList['in']     = '客户';
-$lang->trade->traderList['out']    = '供应商';
+$lang->trade->traderList['out']    = '商户';
 $lang->trade->traderList['invest'] = '投资对象';
 $lang->trade->traderList['loan']   = '借贷对象';
 
@@ -4816,11 +4816,12 @@ $lang->entry->note->allip   = '无限制';
 $lang->entry->note->scheme  = '当前访问协议为https，内嵌窗口只能打开https协议的应用网址。';
 
 $lang->entry->error = new stdClass();
-$lang->entry->error->name  = '名称不能为空';
-$lang->entry->error->code  = '代号不能为空';
-$lang->entry->error->key   = '密钥不能为空';
-$lang->entry->error->ip    = 'IP列表不能为空';
-$lang->entry->error->url   = ' 非内置应用的登录地址，必须包含 /、http://或者https://';
+$lang->entry->error->name     = '名称不能为空';
+$lang->entry->error->code     = '代号不能为空';
+$lang->entry->error->key      = '密钥不能为空';
+$lang->entry->error->ip       = 'IP列表不能为空';
+$lang->entry->error->url      = ' 非内置应用的登录地址，必须包含 /、http://或者https://';
+$lang->entry->error->conflict = '代号<strong> %s </strong>与系统语言冲突。';
 
 $lang->entry->error->admin         = '管理员用户名或密码错误';
 $lang->entry->error->zentaoSetting = '禅道系统设置失败';

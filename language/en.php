@@ -982,7 +982,7 @@ $lang->trade->investAmount     = 'Investment Amount';
 $lang->trade->loanAmount       = 'Loan Amount';
 
 $lang->trade->traderList['in']     = 'Customer';
-$lang->trade->traderList['out']    = 'Provider';
+$lang->trade->traderList['out']    = 'Trader';
 $lang->trade->traderList['invest'] = 'Investee';
 $lang->trade->traderList['loan']   = 'Loanee';
 
@@ -4823,11 +4823,12 @@ $lang->entry->note->allip   = 'All';
 $lang->entry->note->scheme  = 'The current protocol is https, and the iframe window can only open the https URL.';
 
 $lang->entry->error = new stdClass();
-$lang->entry->error->name  = 'Please enter name';
-$lang->entry->error->code  = 'Please enter alias';
-$lang->entry->error->key   = 'Please enter key';
-$lang->entry->error->ip    = 'Please enter IP';
-$lang->entry->error->url   = 'No built-in application login address. /, http:// or https:// must be included.';
+$lang->entry->error->name     = 'Please enter name';
+$lang->entry->error->code     = 'Please enter alias';
+$lang->entry->error->key      = 'Please enter key';
+$lang->entry->error->ip       = 'Please enter IP';
+$lang->entry->error->url      = 'No built-in application login address. /, http:// or https:// must be included.';
+$lang->entry->error->conflict = 'Code<strong> %s </strong> conflicts with system language.';
 
 $lang->entry->error->admin         = 'Wrong admin account or password.';
 $lang->entry->error->zentaoSetting = 'ZenTao configuration failed. Upgrade ZenTao to continue.';
