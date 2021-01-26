@@ -4828,7 +4828,7 @@ $lang->entry->error->code     = 'Please enter alias';
 $lang->entry->error->key      = 'Please enter key';
 $lang->entry->error->ip       = 'Please enter IP';
 $lang->entry->error->url      = 'No built-in application login address. /, http:// or https:// must be included.';
-$lang->entry->error->conflict = 'Code<strong> %s </strong> conflicts with system language.';
+$lang->entry->error->conflict = 'Code<strong> %s </strong> conflicts with system entry code.';
 
 $lang->entry->error->admin         = 'Wrong admin account or password.';
 $lang->entry->error->zentaoSetting = 'ZenTao configuration failed. Upgrade ZenTao to continue.';

@@ -4821,7 +4821,7 @@ $lang->entry->error->code     = '代号不能为空';
 $lang->entry->error->key      = '密钥不能为空';
 $lang->entry->error->ip       = 'IP列表不能为空';
 $lang->entry->error->url      = ' 非内置应用的登录地址，必须包含 /、http://或者https://';
-$lang->entry->error->conflict = '代号<strong> %s </strong>与系统语言冲突。';
+$lang->entry->error->conflict = '代号<strong> %s </strong>与系统应用代码冲突。';
 
 $lang->entry->error->admin         = '管理员用户名或密码错误';
 $lang->entry->error->zentaoSetting = '禅道系统设置失败';
