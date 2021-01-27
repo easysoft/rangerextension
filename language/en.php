@@ -1229,12 +1229,6 @@ $lang->block->months['10'] = 'October';
 $lang->block->months['11'] = 'November';
 $lang->block->months['12'] = 'December';
 
-$lang->block->chartOptions = array();
-$lang->block->chartOptions['color'] = array();
-$lang->block->chartOptions['color']['in']     = 'rgba(91,155,213,0.8)';
-$lang->block->chartOptions['color']['out']    = 'rgba(242,139,54,0.8)';
-$lang->block->chartOptions['color']['profit'] = 'rgba(4,172,144,0.8)';
-
 $lang->block->monthTradeCharts = array();
 $lang->block->monthTradeCharts['in']  = array('bar', 'line');
 $lang->block->monthTradeCharts['out'] = array('bar', 'line');
