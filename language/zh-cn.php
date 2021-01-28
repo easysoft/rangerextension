@@ -1137,7 +1137,7 @@ $lang->trade->totalIn       = '%s收入%s；';
 $lang->trade->totalOut      = '%s支出%s；';
 $lang->trade->totalAmount   = '%s收入%s，支出%s，%s；';
 $lang->trade->totalInvest   = '%s投资%s，赎回%s，未赎回%s，%s；';
-$lang->trade->totalLoan     = '%s还贷%s，还贷%s，未还贷%s，%s；';
+$lang->trade->totalLoan     = '%s贷款%s，还贷%s，未还贷%s，%s；';
 $lang->trade->selectItem    = '选中';
 $lang->trade->profit        = '盈';
 $lang->trade->loss          = '亏';
@@ -1173,9 +1173,6 @@ $lang->trade->excel->title->depositor = '账号盈亏表';
 
 $lang->trade->excel->help = new stdclass();
 $lang->trade->excel->help->depositor = '本报表不区分币种。';
-
-$lang->trade->excel->error = new stdclass();
-$lang->trade->excel->error->noData = '没有%s年之前的交易记录。';
 /* cash/block */
 $lang->block->common    = '区块';
 $lang->block->depositor = '付款账号';
