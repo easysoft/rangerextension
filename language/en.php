@@ -4826,6 +4826,7 @@ $lang->entry->error->zentaoSetting = 'ZenTao configuration failed. Upgrade ZenTa
 $lang->entry->error->version       = 'Your ZenTao version is lower than %s';
 $lang->entry->error->zentaoUrl     = 'Wrong ZenTao login URL.';
 $lang->entry->error->accessDenied  = 'Access is denied';
+$lang->entry->error->emptyEntry    = 'This app has no workflow process, please add workflow process to this app.';
 
 $lang->entry->openList['blank']  = 'Blank';
 $lang->entry->openList['iframe'] = 'Iframe';

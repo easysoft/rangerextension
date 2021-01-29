@@ -4819,6 +4819,7 @@ $lang->entry->error->zentaoSetting = '禅道系统设置失败';
 $lang->entry->error->version       = '您的禅道系统版本低于%s';
 $lang->entry->error->zentaoUrl     = '禅道登录地址错误';
 $lang->entry->error->accessDenied  = '访问受限';
+$lang->entry->error->emptyEntry    = '该应用没有工作流流程，请添加工作流流程到该应用。';
 
 $lang->entry->openList['blank']  = '新开标签';
 $lang->entry->openList['iframe'] = '内嵌窗口';
