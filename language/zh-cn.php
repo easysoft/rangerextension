@@ -224,7 +224,6 @@ $lang->menu->sys->system  = '系统|mail|admin|';
 $lang->menu->sys->package = '扩展|package|browse|';
 
 $lang->menu->dividerMenu = new stdclass();
-$lang->menu->dividerMenu->sys = ',entry,';
 
 $lang->message = new stdclass();
 $lang->blog    = new stdclass();
@@ -274,10 +273,10 @@ $lang->menu->dashboard->order    = '订单|my|order|';
 $lang->menu->dashboard->contract = '合同|my|contract|';
 $lang->menu->dashboard->review   = '审批|my|review|';
 $lang->menu->dashboard->company  = '组织|my|company|';
-$lang->menu->dashboard->dynamic  = '动态|my|dynamic|';
 $lang->menu->dashboard->contact  = '联系人|my|contact|';
+$lang->menu->dashboard->dynamic  = '动态|my|dynamic|';
 
-$lang->menu->dividerMenu->dashboard = ',project,company,';
+$lang->menu->dividerMenu->dashboard = ',todo,contract,company,';
 
 if(!isset($lang->customer)) $lang->customer = new stdclass();
 $lang->customer->menu = new stdclass();
@@ -538,7 +537,7 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = '现金记账';
 
-$lang->menu->dividerMenu->cash = ',out,check,holiday,';
+$lang->menu->dividerMenu->cash = ',out,loan,report,';
 
 $lang->menu->cash = new stdclass();
 $lang->menu->cash->dashboard = '首页|dashboard|index|';
@@ -549,8 +548,8 @@ $lang->menu->cash->transfer  = '转账|trade|browse|mode=transfer';
 $lang->menu->cash->invest    = '投资|trade|browse|mode=invest&date=all';
 $lang->menu->cash->loan      = '借贷|trade|browse|mode=loan';
 $lang->menu->cash->check     = '对账|depositor|check|';
-$lang->menu->cash->report    = '报表|trade|report|';
 $lang->menu->cash->depositor = '账户|depositor|browse|';
+$lang->menu->cash->report    = '报表|trade|report|';
 $lang->menu->cash->provider  = '供应商|provider|browse|';
 $lang->menu->cash->setting   = '设置|tree|browse|type=in|';
 
@@ -579,7 +578,7 @@ include(dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = '客户';
 
-$lang->menu->dividerMenu->crm = ',customer,product,';
+$lang->menu->dividerMenu->crm = ',provider,product,';
 
 $lang->menu->crm = new stdclass();
 $lang->menu->crm->dashboard = '首页|dashboard|index|';
@@ -703,7 +702,7 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = '日常办公';
 
-$lang->menu->dividerMenu->oa = ',attend,lieu,holiday,';
+$lang->menu->dividerMenu->oa = ',attend,egress,';
 
 $lang->menu->oa = new stdclass();
 $lang->menu->oa->dashboard = '首页|dashboard|index|';
@@ -835,7 +834,7 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = '团队';
 
-$lang->menu->dividerMenu->team = ',user,';
+$lang->menu->dividerMenu->team = ',blog,';
 
 $lang->menu->team = new stdclass();
 $lang->menu->team->dashboard = '首页|dashboard|index|';

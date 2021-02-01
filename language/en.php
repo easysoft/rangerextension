@@ -224,7 +224,6 @@ $lang->menu->sys->system  = 'System|mail|admin|';
 $lang->menu->sys->package = 'Extension|package|browse|';
 
 $lang->menu->dividerMenu = new stdclass();
-$lang->menu->dividerMenu->sys = ',entry,';
 
 $lang->message = new stdclass(); 
 $lang->blog    = new stdclass(); 
@@ -274,10 +273,10 @@ $lang->menu->dashboard->order    = 'Order|my|order|';
 $lang->menu->dashboard->contract = 'Contract|my|contract|';
 $lang->menu->dashboard->review   = 'Review|my|review|';
 $lang->menu->dashboard->company  = 'Company|my|company|';
-$lang->menu->dashboard->dynamic  = 'Dynamic|my|dynamic|';
 $lang->menu->dashboard->contact  = 'Contact|my|contact|';
+$lang->menu->dashboard->dynamic  = 'Dynamic|my|dynamic|';
 
-$lang->menu->dividerMenu->dashboard = ',project,company,';
+$lang->menu->dividerMenu->dashboard = ',todo,contract,company,';
 
 if(!isset($lang->customer)) $lang->customer = new stdclass();
 $lang->customer->menu = new stdclass();
@@ -538,7 +537,7 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = 'CASH';
 
-$lang->menu->dividerMenu->cash = ',out,check,holiday,';
+$lang->menu->dividerMenu->cash = ',out,loan,report,';
 
 $lang->menu->cash = new stdclass();
 $lang->menu->cash->dashboard = 'Home|dashboard|index|';
@@ -549,8 +548,8 @@ $lang->menu->cash->transfer  = 'Transfer|trade|browse|mode=transfer';
 $lang->menu->cash->invest    = 'Invest|trade|browse|mode=invest&date=all';
 $lang->menu->cash->loan      = 'Loan|trade|browse|mode=loan';
 $lang->menu->cash->check     = 'Reconcile|depositor|check|';
-$lang->menu->cash->report    = 'Report|trade|report|';
 $lang->menu->cash->depositor = 'Account|depositor|index|';
+$lang->menu->cash->report    = 'Report|trade|report|';
 $lang->menu->cash->provider  = 'Supplier|provider|index|';
 $lang->menu->cash->setting   = 'Settings|tree|browse|type=in|';
 
@@ -579,7 +578,7 @@ include(dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = 'CRM';
 
-$lang->menu->dividerMenu->crm = ',customer,product,';
+$lang->menu->dividerMenu->crm = ',provider,product,';
 
 $lang->menu->crm = new stdclass();
 $lang->menu->crm->dashboard = 'Home|dashboard|index|';
@@ -703,7 +702,7 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = 'OA';
 
-$lang->menu->dividerMenu->oa = ',attend,lieu,holiday,';
+$lang->menu->dividerMenu->oa = ',attend,egress,';
 
 $lang->menu->oa = new stdclass();
 $lang->menu->oa->dashboard = 'Home|dashboard|index|';
@@ -835,7 +834,7 @@ include (dirname(__FILE__) . '/menuOrder.php');
 $lang->app = new stdclass();
 $lang->app->name = 'TEAM';
 
-$lang->menu->dividerMenu->team = ',user,';
+$lang->menu->dividerMenu->team = ',blog,';
 
 $lang->menu->team = new stdclass();
 $lang->menu->team->dashboard = 'Home|dashboard|index|';
