@@ -1790,6 +1790,10 @@ $lang->leads->tips->apply       = 'Please deal with the existing contacts.';
 $lang->leads->tips->applyRemain = 'You can apply again when the number of leads is lower than it.';
 
 $lang->leads->actionWidth = 280;
+
+$lang->leads->error = new stdclass();
+$lang->leads->error->comment   = '<strong>Reasons </strong>cannot be empty';
+$lang->leads->error->noContact = 'Fill in at least one contact information';
 /* doc/block */
 $lang->block->common   = 'Blocks';
 $lang->block->lblBlock = 'Block';
@@ -3876,6 +3880,7 @@ $lang->action->trash      = 'Trash';
 $lang->action->objectType = 'Type';
 $lang->action->objectID   = 'ID';
 $lang->action->objectName = 'Details';
+$lang->action->onlyRecord = 'Only Record';
 
 $lang->action->createContact = 'Create Contact';
 $lang->action->editComment   = 'Edit Comment';

@@ -1783,6 +1783,10 @@ $lang->leads->tips->apply       = '请先处理现有的名单联系人。';
 $lang->leads->tips->applyRemain = '未处理的名单数低于此值才可以再次申请';
 
 $lang->leads->actionWidth = 200;
+
+$lang->leads->error = new stdclass();
+$lang->leads->error->comment   = '<strong>原因</strong>不能为空';
+$lang->leads->error->noContact = '至少填写一项联系方式';
 /* doc/block */
 $lang->block->common   = '区块';
 $lang->block->lblBlock = '区块';
@@ -3869,6 +3873,7 @@ $lang->action->trash      = '回收站';
 $lang->action->objectType = '对象';
 $lang->action->objectID   = '对象ID';
 $lang->action->objectName = '对象名称';
+$lang->action->onlyRecord = '只看沟通记录';
 
 $lang->action->createContact = '新建';
 $lang->action->editComment   = '修改备注';
