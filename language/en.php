@@ -452,10 +452,12 @@ $lang->date = new stdclass();
 $lang->date->minute = 'minute';
 $lang->date->day    = 'day';
 
-$lang->genderList = new stdclass();
-$lang->genderList->m = 'Male';
-$lang->genderList->f = 'Female';
-$lang->genderList->u = '';
+$lang->genderList['m'] = 'Male';
+$lang->genderList['f'] = 'Female';
+$lang->genderList['u'] = '';
+
+$lang->deleteList['0'] = 'Not Deleted';
+$lang->deleteList['1'] = 'Deleted';
 
 $lang->datepicker = new stdclass();
 
@@ -1433,10 +1435,6 @@ $lang->contact->failReason   = 'Reason';
 $lang->contact->showImport   = 'Imported Contacts';
 $lang->contact->template     = 'Contact Template';
 
-$lang->contact->genderList['m'] = 'Male';
-$lang->contact->genderList['f'] = 'Female';
-$lang->contact->genderList['u'] = '';
-
 $lang->contact->actionWidth = 240;
 /* crm/block */
 $lang->block->common   = 'Block';
@@ -1710,6 +1708,9 @@ $lang->contract->totalReturn      = 'Total';
 $lang->contract->tradeList        = 'Trade List';
 $lang->contract->manageTeam       = 'Manage Team';
 $lang->contract->confirmTeam      = 'Confirm Contribution';
+
+$lang->contract->typeList['sale']     = 'Sale Contract';
+$lang->contract->typeList['purchase'] = 'Purchase Contract';
 
 $lang->contract->deliveryList[]        = '';
 $lang->contract->deliveryList['wait']  = 'Wait';
@@ -5278,8 +5279,6 @@ $lang->user->reviewProcess['makeup']   = 'Makeup';
 $lang->user->reviewProcess['overtime'] = 'Overtime';
 $lang->user->reviewProcess['lieu']     = 'Lieu';
 $lang->user->reviewProcess['refund']   = 'Refund';
-
-$lang->user->genderList = $lang->genderList;
 
 $lang->user->basicInfo   = 'Basic Info';
 $lang->user->contactInfo = 'Contact Info';

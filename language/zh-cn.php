@@ -452,10 +452,12 @@ $lang->date = new stdclass();
 $lang->date->minute = '分钟';
 $lang->date->day    = '天';
 
-$lang->genderList = new stdclass();
-$lang->genderList->m = '男';
-$lang->genderList->f = '女';
-$lang->genderList->u = '';
+$lang->genderList['m'] = '男';
+$lang->genderList['f'] = '女';
+$lang->genderList['u'] = '';
+
+$lang->deleteList['0'] = '未删除';
+$lang->deleteList['1'] = '已删除';
 
 $lang->datepicker = new stdclass();
 
@@ -1432,10 +1434,6 @@ $lang->contact->failReason   = '原因';
 $lang->contact->showImport   = '查看已导入联系人';
 $lang->contact->template     = '联系人模板';
 
-$lang->contact->genderList['m'] = '男';
-$lang->contact->genderList['f'] = '女';
-$lang->contact->genderList['u'] = '';
-
 $lang->contact->actionWidth = 200;
 /* crm/block */
 $lang->block->common   = '区块';
@@ -1703,6 +1701,9 @@ $lang->contract->totalReturn      = '回款合计';
 $lang->contract->tradeList        = '收支记录';
 $lang->contract->manageTeam       = '维护团队';
 $lang->contract->confirmTeam      = '确认贡献度';
+
+$lang->contract->typeList['sale']     = '销售合同';
+$lang->contract->typeList['purchase'] = '采购合同';
 
 $lang->contract->deliveryList[]        = '';
 $lang->contract->deliveryList['wait']  = '等待交付';
@@ -4726,6 +4727,9 @@ $lang->customer->basicInfo         = '基本信息';
 $lang->customer->moreInfo          = '更多信息';
 $lang->customer->purchasedProducts = '已购产品';
 
+$lang->customer->publicList['0'] = '不公开';
+$lang->customer->publicList['1'] = '公开';
+
 $lang->customer->sourceList['']              = '';
 $lang->customer->sourceList['visit']         = '陌生拜访';
 $lang->customer->sourceList['advertisement'] = '广告';
@@ -5271,8 +5275,6 @@ $lang->user->reviewProcess['makeup']   = '补班';
 $lang->user->reviewProcess['overtime'] = '加班';
 $lang->user->reviewProcess['lieu']     = '调休';
 $lang->user->reviewProcess['refund']   = '报销';
-
-$lang->user->genderList = $lang->genderList;
 
 $lang->user->basicInfo   = '基本信息';
 $lang->user->contactInfo = '联系信息';
