@@ -80,7 +80,10 @@ $lang->changePassword   = '修改密码';
 $lang->currentPos       = '当前位置';
 $lang->categoryMenu     = '分类导航';
 $lang->basicInfo        = '基本信息';
+$lang->extInfo          = '扩展信息';
 $lang->chooseUserToMail = '选择要发送提醒的用户...';
+$lang->displayMenu      = '显示菜单';
+$lang->hideMenu         = '隐藏菜单';
 
 $lang->reset          = '重填';
 $lang->add            = '添加';
@@ -183,6 +186,8 @@ $lang->js->confirmDiscardChanges = '表单已更改，确定关闭？';
 $lang->js->yes                   = '是';
 $lang->js->no                    = '否';
 $lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.zdoo.com/book/zdoo/165.html' target='_blank'>安装手册</a>";
+$lang->js->displayMenu           = '显示菜单';
+$lang->js->hideMenu              = '隐藏菜单';
 
 $lang->company = new stdclass();
 $lang->company->contactUs = '联系我们';
@@ -1024,13 +1029,14 @@ $lang->trade->actionWidth = 140;
 $lang->trade->dateWidth = new stdclass();
 $lang->trade->dateWidth->exist     = 220;
 $lang->trade->dateWidth->duplicate = 190;
+$lang->trade->dateWidth->similar   = 220;
 $lang->trade->dateWidth->common    = 160;
 
 $lang->trade->settingList['trader']       = '必须选择商户';
 $lang->trade->settingList['product']      = '必须选择产品';
 $lang->trade->settingList['dept']         = '必须选择部门';
 $lang->trade->settingList['category']     = '必须选择科目';
-$lang->trade->settingList['lastCategory'] = '必须选择末级科目';
+$lang->trade->settingList['lastCategory'] = '只能选择末级科目';
 
 $lang->trade->report = new stdclass();
 $lang->trade->report->common      = '报表'; 
@@ -1150,6 +1156,7 @@ $lang->trade->unique          = '今天已经有相同金额的账目';
 $lang->trade->uniqueTrade     = '记账中存在相同交易日期、交易类型、商户、金额的交易记录';
 $lang->trade->uniqueTransfer  = '记账中存在相同交易日期、交易类型、交易账户、金额的转账记录';
 $lang->trade->uniqueRecord    = '导入文件中存在相同交易日期、交易类型、商户/交易账户、金额的记录';
+$lang->trade->similarTrade    = '记账中存在相似的记录';
 $lang->trade->showExistTrade  = '展开重复账目';
 $lang->trade->hideExistTrade  = '收起重复账目';
 $lang->trade->ignore          = '忽略';
@@ -1225,12 +1232,6 @@ $lang->block->months['09'] = '9月';
 $lang->block->months['10'] = '10月';
 $lang->block->months['11'] = '11月';
 $lang->block->months['12'] = '12月';
-
-$lang->block->monthTradeCharts = array();
-$lang->block->monthTradeCharts['in']  = array('bar', 'line');
-$lang->block->monthTradeCharts['out'] = array('bar', 'line');
-
-$lang->block->monthProfitCharts = array('bar', 'line');
 
 $lang->block->yearProfitAxis = array('收入', '支出', '利润');
 /* cash/balance */
@@ -1517,6 +1518,7 @@ $lang->purchasecontract->begin         = '开始日期';
 $lang->purchasecontract->end           = '结束日期';
 $lang->purchasecontract->dateRange     = '起止日期';
 $lang->purchasecontract->return        = '付款';
+$lang->purchasecontract->unReturn      = '未付款';
 $lang->purchasecontract->returnedBy    = '由谁付款';
 $lang->purchasecontract->returnedDate  = '付款时间';
 $lang->purchasecontract->status        = '状态';
@@ -1578,7 +1580,7 @@ $lang->purchasecontract->codeUnitList['d']     = '日';
 $lang->purchasecontract->codeUnitList['fix']   = '固定值';
 $lang->purchasecontract->codeUnitList['input'] = '输入值';
 
-$lang->purchasecontract->totalAmount      = '本页合同总金额：%s，已付款：%s，其中本月付款：%s；';
+$lang->purchasecontract->totalAmount      = '本页合同总金额：%s，已付款：%s，未付款：%s，其中本月付款：%s；';
 $lang->purchasecontract->returnInfo       = "<p>%s, 由 <strong>%s</strong> 付款%s。</p>";
 $lang->purchasecontract->deleteReturnInfo = "%s的付款%s";
 
@@ -1649,6 +1651,7 @@ $lang->contract->delivery      = '交付';
 $lang->contract->deliveredBy   = '由谁交付';
 $lang->contract->deliveredDate = '交付时间';
 $lang->contract->return        = '回款';
+$lang->contract->unReturn      = '未回款';
 $lang->contract->returnedBy    = '由谁回款';
 $lang->contract->returnedDate  = '回款时间';
 $lang->contract->status        = '状态';
@@ -1720,7 +1723,7 @@ $lang->contract->statusList['normal']   = '正常';
 $lang->contract->statusList['closed']   = '已完成';
 $lang->contract->statusList['canceled'] = '已取消';
 
-$lang->contract->totalAmount        = '本页合同总金额：%s，已回款：%s，其中本月回款：%s；';
+$lang->contract->totalAmount        = '本页合同总金额：%s，已回款：%s，未回款：%s，其中本月回款：%s；';
 $lang->contract->returnInfo         = "<p>%s, 由 <strong>%s</strong> 回款%s。</p>";
 $lang->contract->deliveryInfo       = "<p>%s由%s交付。</p>";
 $lang->contract->deleteReturnInfo   = "%s的回款%s";
@@ -1830,8 +1833,7 @@ $lang->leads->tips->applyRemain = '未处理的名单数低于此值才可以再
 $lang->leads->actionWidth = 200;
 
 $lang->leads->error = new stdclass();
-$lang->leads->error->comment   = '<strong>原因</strong>不能为空';
-$lang->leads->error->noContact = '至少填写一项联系方式';
+$lang->leads->error->noContact = '至少填写手机、座机、邮箱、QQ、微信中的一项';
 /* doc/block */
 $lang->block->common   = '区块';
 $lang->block->lblBlock = '区块';
@@ -4849,25 +4851,26 @@ $lang->entry->lblBlock      = '区块';
 $lang->entry->editWarnning  = '系统内置应用，请谨慎修改。';
 
 $lang->entry->note = new stdClass();
-$lang->entry->note->name    = '授权应用名称';
-$lang->entry->note->abbr    = '两个字符缩写';
-$lang->entry->note->logo    = 'Logo尺寸：64*64，如果上传png格式，务必保持图片透明';
-$lang->entry->note->code    = '授权应用代号，必须为英文、数字或下划线的组合';
-$lang->entry->note->login   = '访问应用的地址或登录应用的表单的提交地址';
-$lang->entry->note->logout  = '退出应用的地址';
-$lang->entry->note->visible = '左侧显示';
-$lang->entry->note->api     = '应用获取区块的接口地址';
-$lang->entry->note->ip      = "允许访问应用的ip，多个ip用逗号隔开。支持IP段，如192.168.1.*";
-$lang->entry->note->allip   = '无限制';
-$lang->entry->note->scheme  = '当前访问协议为https，内嵌窗口只能打开https协议的应用网址。';
+$lang->entry->note->name       = '授权应用名称';
+$lang->entry->note->abbr       = '两个字符缩写';
+$lang->entry->note->logo       = 'Logo尺寸：64*64，如果上传png格式，务必保持图片透明';
+$lang->entry->note->code       = '授权应用代号，必须为英文、数字或下划线的组合';
+$lang->entry->note->login      = '访问应用的地址或登录应用的表单的提交地址';
+$lang->entry->note->logout     = '退出应用的地址';
+$lang->entry->note->visible    = '左侧显示';
+$lang->entry->note->navigation = '隐藏左侧导航';
+$lang->entry->note->api        = '应用获取区块的接口地址';
+$lang->entry->note->ip         = "允许访问应用的ip，多个ip用逗号隔开。支持IP段，如192.168.1.*";
+$lang->entry->note->allip      = '无限制';
+$lang->entry->note->scheme     = '当前访问协议为https，内嵌窗口只能打开https协议的应用网址。';
 
 $lang->entry->error = new stdClass();
 $lang->entry->error->name     = '名称不能为空';
 $lang->entry->error->code     = '代号不能为空';
 $lang->entry->error->key      = '密钥不能为空';
 $lang->entry->error->ip       = 'IP列表不能为空';
-$lang->entry->error->url      = ' 非内置应用的登录地址，必须包含 /、http://或者https://';
-$lang->entry->error->conflict = '代号<strong> %s </strong>与系统应用代码冲突。';
+$lang->entry->error->url      = '非内置应用的登录地址，必须包含 /、http://或者https://';
+$lang->entry->error->conflict = '代号<strong> %s </strong>与系统应用代号冲突。';
 
 $lang->entry->error->admin         = '管理员用户名或密码错误';
 $lang->entry->error->zentaoSetting = '禅道系统设置失败';
@@ -5346,6 +5349,7 @@ $lang->schema->delete   = '删除模板';
 $lang->schema->csvFile  = '模板文件';
 
 $lang->schema->name     = '模板名称';
+$lang->schema->fileType = '文件类型';
 $lang->schema->feeRow   = '手续费为一条记录';
 $lang->schema->diffCol  = '收支金额分列';
 
@@ -5357,6 +5361,10 @@ $lang->schema->money  = $lang->trade->money;
 $lang->schema->date   = $lang->trade->date;
 $lang->schema->in     = $lang->trade->typeList['in'];
 $lang->schema->out    = $lang->trade->typeList['out'];
+
+$lang->schema->fileTypeList = array();
+$lang->schema->fileTypeList['csv']   = 'csv';
+$lang->schema->fileTypeList['excel'] = 'excel';
 
 $lang->schema->placeholder = new stdclass();
 $lang->schema->placeholder->selectField = '请选择对应的项目';
