@@ -1837,7 +1837,7 @@ $lang->leads->tips = new stdclass();
 $lang->leads->tips->apply       = 'Please deal with the existing contacts.';
 $lang->leads->tips->applyRemain = 'You can apply again when the number of leads is lower than it.';
 
-$lang->leads->actionWidth = 280;
+$lang->leads->actionWidth = 320;
 
 $lang->leads->error = new stdclass();
 $lang->leads->error->noContact = 'Fill in at least one item in mobile, phone, email, QQ and wechat';
@@ -3639,7 +3639,7 @@ $lang->provider->sizeList[2] = 'Medium( 50-100 employees)';
 $lang->provider->sizeList[3] = 'Small( 10-50 employees)';
 $lang->provider->sizeList[4] = 'Mini( <10 employees)';
 
-$lang->provider->actionWidth = 220;
+$lang->provider->actionWidth = 280;
 
 $lang->provider->mergeTip    = 'Merge this provider to the selected one.';
 /* sys/search */

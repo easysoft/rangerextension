@@ -1830,7 +1830,7 @@ $lang->leads->tips = new stdclass();
 $lang->leads->tips->apply       = '请先处理现有的名单联系人。';
 $lang->leads->tips->applyRemain = '未处理的名单数低于此值才可以再次申请';
 
-$lang->leads->actionWidth = 200;
+$lang->leads->actionWidth = 220;
 
 $lang->leads->error = new stdclass();
 $lang->leads->error->noContact = '至少填写手机、座机、邮箱、QQ、微信中的一项';
@@ -3632,7 +3632,7 @@ $lang->provider->sizeList[2] = '中型(50-100人)';
 $lang->provider->sizeList[3] = '小型(10人-50人)';
 $lang->provider->sizeList[4] = '微型(10人以下)';
 
-$lang->provider->actionWidth = 180;
+$lang->provider->actionWidth = 210;
 
 $lang->provider->mergeTip    = '将该供应商合并到选择的供应商。';
 /* sys/search */
@@ -4792,7 +4792,7 @@ $lang->customer->action = new stdclass();
 $lang->customer->action->orderDating    = '$date, 由 <strong>$actor</strong> 创建订单 <strong>$order</strong> 的下次联系：<strong>$extra</strong>。' . "\n";
 $lang->customer->action->contractDating = '$date, 由 <strong>$actor</strong> 创建合同 <strong>$contract</strong> 的下次联系：<strong>$extra</strong>。' . "\n";
 
-$lang->customer->actionWidth = 200;
+$lang->customer->actionWidth = 210;
 /* sys/entry */
 $lang->entry->common      = '应用';
 $lang->entry->admin       = '应用列表';
