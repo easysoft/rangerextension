@@ -1816,6 +1816,10 @@ $lang->leads->settings       = '设置';
 $lang->leads->applyRule      = '派发规则';
 $lang->leads->batchIgnore    = '批量忽略';
 $lang->leads->batchAssign    = '批量指派';
+$lang->leads->import         = '导入';
+$lang->leads->showImport     = '查看已导入联系人';
+$lang->leads->export         = '导出';
+$lang->leads->exportTemplate = '导出模板';
 
 $lang->leads->ignoredBy = '由谁忽略';
 

@@ -1823,6 +1823,10 @@ $lang->leads->settings       = 'Settings';
 $lang->leads->applyRule      = 'Assign Rules';
 $lang->leads->batchIgnore    = 'Batch Ignore';
 $lang->leads->batchAssign    = 'Batch Assign';
+$lang->leads->import         = 'Import';
+$lang->leads->showImport     = 'Show Import';
+$lang->leads->export         = 'Export';
+$lang->leads->exportTemplate = 'Export Template';
 
 $lang->leads->ignoredBy = 'IgnoredBy';
 
