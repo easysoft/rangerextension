@@ -4993,7 +4993,7 @@ $lang->product->lineList[''] = '';
 $lang->product->placeholder = new stdclass();
 $lang->product->placeholder->code = '产品代号必须为英文或数字的组合';
 
-$lang->product->actionWidth  = 280;
+$lang->product->actionWidth  = 120;
 $lang->product->subjectWidth = 70;
 /* sys/company */
 $lang->company->common  = '公司';
