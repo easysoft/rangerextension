@@ -186,8 +186,9 @@ $lang->js->confirmDiscardChanges = 'Discard changes?';
 $lang->js->yes                   = 'Yes';
 $lang->js->no                    = 'No';
 $lang->js->installZipExtension   = "Php-zip extension is required to export .xlsx file.";
-$lang->displayMenu               = 'Display menu';
-$lang->hideMenu                  = 'Hide menu';
+$lang->js->displayMenu           = 'Display menu';
+$lang->js->hideMenu              = 'Hide menu';
+$lang->js->more                  = $lang->more;
 
 $lang->company = new stdclass();
 $lang->company->contactUs = 'Contact';

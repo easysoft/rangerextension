@@ -188,6 +188,7 @@ $lang->js->no                    = '否';
 $lang->js->installZipExtension   = "导出xlsx格式，需要安装 php-zip 扩展，<a href='https://www.zdoo.com/book/zdoo/165.html' target='_blank'>安装手册</a>";
 $lang->js->displayMenu           = '显示菜单';
 $lang->js->hideMenu              = '隐藏菜单';
+$lang->js->more                  = $lang->more;
 
 $lang->company = new stdclass();
 $lang->company->contactUs = '联系我们';
