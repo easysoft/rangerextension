@@ -1448,6 +1448,11 @@ $lang->contact->failReason   = 'Reason';
 $lang->contact->showImport   = 'Imported Contacts';
 $lang->contact->template     = 'Contact Template';
 
+$lang->contact->statusList = array();
+$lang->contact->statusList['normal'] = 'Normal';
+$lang->contact->statusList['wait']   = 'Wait';
+$lang->contact->statusList['ignore'] = 'Ignore';
+
 $lang->contact->actionWidth = 240;
 /* crm/block */
 $lang->block->common   = 'Block';
@@ -3526,6 +3531,7 @@ $lang->tree->aliasConflict = 'Alias: %s conflicts with system modules';
 $lang->tree->hasChildren   = "This category has children, so it cannot be deleted.";
 $lang->tree->hasThreads    = "This board has threads, so it cannot be deleted.";
 $lang->tree->hasProducts   = "This category has products, so it cannot be deleted.";
+$lang->tree->hasArticles   = "This category has articles, so it cannot be deleted.";
 $lang->tree->confirmDelete = "Do you want to delete it?";
 $lang->tree->successFixed  = "Fixed.";
 $lang->tree->asParent      = "[%s] has child, so it cannot be merged.";

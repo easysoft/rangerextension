@@ -1447,6 +1447,11 @@ $lang->contact->failReason   = '原因';
 $lang->contact->showImport   = '查看已导入联系人';
 $lang->contact->template     = '联系人模板';
 
+$lang->contact->statusList = array();
+$lang->contact->statusList['normal'] = '已确认';
+$lang->contact->statusList['wait']   = '待确认';
+$lang->contact->statusList['ignore'] = '忽略';
+
 $lang->contact->actionWidth = 200;
 /* crm/block */
 $lang->block->common   = '区块';
@@ -3520,6 +3525,7 @@ $lang->tree->aliasConflict = '别名: %s 与系统模块冲突，不能添加。
 $lang->tree->hasChildren   = '该分类存在子分类，不能删除。';
 $lang->tree->hasThreads    = '该版块存在帖子，不能删除。';
 $lang->tree->hasProducts   = '该分类存在产品，不能删除。';
+$lang->tree->hasArticles   = '该分类存在公告，不能删除。';
 $lang->tree->confirmDelete = "您确定删除该类目吗？";
 $lang->tree->successFixed  = "成功修复";
 $lang->tree->asParent      = '[%s]存在子科目，不能被合并';
