@@ -180,6 +180,7 @@ $lang->js = new stdclass();
 $lang->js->confirmDelete         = 'Do you want to delete it?';
 $lang->js->confirmFinish         = 'Do you want to finish it?';
 $lang->js->deleteing             = 'Deleting...';
+$lang->js->delete                = 'Delete';
 $lang->js->doing                 = 'Processing...';
 $lang->js->timeout               = 'Timeout';
 $lang->js->confirmDiscardChanges = 'Discard changes?';
