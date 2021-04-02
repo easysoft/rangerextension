@@ -1450,8 +1450,6 @@ $lang->contact->template     = '联系人模板';
 
 $lang->contact->statusList = array();
 $lang->contact->statusList['normal'] = '已确认';
-$lang->contact->statusList['wait']   = '待确认';
-$lang->contact->statusList['ignore'] = '忽略';
 
 $lang->contact->actionWidth = 200;
 /* crm/block */
@@ -1855,6 +1853,10 @@ $lang->leads->ignoredBy = '由谁忽略';
 
 $lang->leads->list     = '名单列表';
 $lang->leads->template = '名单模板';
+
+$lang->contact->statusList = array();
+$lang->leads->statusList['wait']   = '待确认';
+$lang->leads->statusList['ignore'] = '忽略';
 
 $lang->leads->applyLimit   = '每次申请记录数';
 $lang->leads->applyRemain  = '最多未处理记录数';
