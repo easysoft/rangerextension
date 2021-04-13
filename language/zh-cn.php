@@ -1390,8 +1390,8 @@ $lang->contact->weibo          = '微博';
 $lang->contact->weixin         = '微信';
 $lang->contact->desc           = '简介';
 $lang->contact->register       = '注册时间';
-$lang->contact->last           = '最后登陆时间';
-$lang->contact->visits         = '登陆次数';
+$lang->contact->last           = '最后登录时间';
+$lang->contact->visits         = '登录次数';
 $lang->contact->ip             = 'IP';
 $lang->contact->createdBy      = '由谁添加';
 $lang->contact->createdDate    = '添加时间';
@@ -1853,7 +1853,7 @@ $lang->leads->ignoredBy = '由谁忽略';
 $lang->leads->list     = '名单列表';
 $lang->leads->template = '名单模板';
 
-$lang->contact->statusList = array();
+$lang->leads->statusList = array();
 $lang->leads->statusList['wait']   = '待确认';
 $lang->leads->statusList['ignore'] = '忽略';
 
