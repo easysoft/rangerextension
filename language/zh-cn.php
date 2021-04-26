@@ -377,6 +377,112 @@ $lang->my->contact->menu->all = '所有联系人|my|contact|';
 
 $lang->my->company = new stdclass();
 
+$lang->uni = new stdClass();
+$lang->uni->oa = new stdclass();
+$lang->uni->oa->data = '日常办公|oa_app';
+$lang->uni->oa->menu = new stdclass();
+$lang->uni->oa->menu->my       = '审批|approve_solid|my|review|';
+$lang->uni->oa->menu->attend   = '考勤|attend_solid|attend|personal|';
+$lang->uni->oa->menu->leave    = '请假|attend_leave_solid|leave|personal|';
+$lang->uni->oa->menu->makeup   = '补班|attend_makeup_solid|makeup|personal|';
+$lang->uni->oa->menu->overtime = '加班|attend_overtime_solid|overtime|personal|';
+$lang->uni->oa->menu->lieu     = '调休|attend_exchange_solid|lieu|personal|';
+$lang->uni->oa->menu->trip     = '出差|attend_trip_solid|trip|personal|';
+$lang->uni->oa->menu->egress   = '外出|attend_goout_solid|egress|personal|';
+$lang->uni->oa->menu->refund   = '报销|refund_solid|refund|personal|';
+$lang->uni->oa->menu->announce = '公告|bulletin_solid|announce|browse|';
+
+$lang->uni->crm = new stdclass();
+$lang->uni->crm->data = '客户管理|crm_app';
+$lang->uni->crm->menu = new stdclass();
+$lang->uni->crm->menu->order    = '订单|order_solid|order|browse|';
+$lang->uni->crm->menu->contract = '合同|contract_solid|contract|browse|mode=unfinished';
+$lang->uni->crm->menu->contract = '客户|contract_solid|customer|browse|';
+$lang->uni->crm->menu->provider = '供应商|supplier_solid|provider|browse|';
+$lang->uni->crm->menu->contact  = '联系人|contact_solid|contact|browse|';
+$lang->uni->crm->menu->leads    = '名单|leads_solid|leads|browse|mode=assignedTo';
+$lang->uni->crm->menu->product  = '产品|product_solid|product|browse|';
+$lang->uni->crm->menu->invoice  = '发票|invoice_solid|invoice|browseSale|';
+$lang->uni->crm->menu->feedback = '售后|customer_service_solid|feedback|personal|';
+
+$lang->uni->hr = new stdclass();
+$lang->uni->hr->data = '人力资源|hr_app';
+$lang->uni->hr->menu = new stdclass();
+$lang->uni->hr->menu->tree   = '组织|tree_solid|||';
+$lang->uni->hr->menu->search = '招聘|search_box_solid|||';
+$lang->uni->hr->menu->users  = '员工|users_solid|||';
+$lang->uni->hr->menu->bonus  = '考核|assess_solid|commission|browse|';
+$lang->uni->hr->menu->salary = '薪酬|salary_solid|salary|company|';
+
+$lang->uni->cash = new stdclass();
+$lang->uni->cash->data = '现金记账|cash_app';
+$lang->uni->cash->menu = new stdclass();
+$lang->uni->cash->menu->trade       = '收入|trade_solid|trade|browse|mode=in';
+$lang->uni->cash->menu->outlay      = '支出|outlay_solid|trade|browse|mode=out';
+$lang->uni->cash->menu->transfer    = '转账|transfer_solid|trade|browse|mode=transfer';
+$lang->uni->cash->menu->investment  = '投资|investment_solid|trade|browse|mode=invest&date=all';
+$lang->uni->cash->menu->debit       = '借贷|debit_solid|trade|browse|mode=loan';
+$lang->uni->cash->menu->money       = '对账|money_check_solid|depositor|check|';
+$lang->uni->cash->menu->receivable  = '应收款|receivable_solid|receivable|receivable|';
+$lang->uni->cash->menu->payable     = '应付款|payable_solid|payable|payable|';
+$lang->uni->cash->menu->depositor   = '账户|depositor_solid|depositor|browse|';
+$lang->uni->cash->menu->report      = '报表|report_solid|trade|report|';
+
+$lang->uni->psi = new stdclass();
+$lang->uni->psi->data = '进销存|psi_app';
+$lang->uni->psi->menu = new stdclass();
+$lang->uni->psi->menu->sales       = '销售单|sales_order_solid|sale|browse|mode=assignedToMe';
+$lang->uni->psi->menu->purchase    = '采购单|purchase_solid|purchase|browse|mode=assignedToMe';
+$lang->uni->psi->menu->warehousing = '仓储|warehousing_solid|batch|browse|status=picking';
+$lang->uni->psi->menu->refund      = '退货|return_goods_solid|||';
+$lang->uni->psi->menu->exchange    = '换货|exchange_goods_solid|||';
+$lang->uni->psi->menu->check       = '盘点|check_inventory_solid|||';
+$lang->uni->psi->menu->customer    = '客户|customer_solid|customer|browse|';
+$lang->uni->psi->menu->provider    = '供应商|supplier_solid|provider|browse|';
+$lang->uni->psi->menu->inventory   = '库存|inventory_solid|||';
+
+$lang->uni->team = new stdclass();
+$lang->uni->team->data = '团队|team_app';
+$lang->uni->team->menu = new stdclass();
+$lang->uni->team->menu->forum = '论坛|discuss_solid|forum|index|';
+$lang->uni->team->menu->blog  = '博客|blog_solid|blog|index|';
+
+$lang->uni->proj = new stdclass();
+$lang->uni->proj->data = '项目|prj_app';
+$lang->uni->proj->menu = new stdclass();
+$lang->uni->proj->menu->project = '项目|project_solid|project|index|status=involved';
+$lang->uni->proj->menu->task    = '任务|task_solid|task|browse|projectID=&mode=assignedTo';
+
+$lang->uni->doc = new stdclass();
+$lang->uni->doc->data = '文档|doc_app';
+$lang->uni->doc->menu = new stdclass();
+$lang->uni->doc->menu->archive = '项目文档|archive_solid|doc|alllibs|type=project';
+$lang->uni->doc->menu->folder  = '自定义文档|folder_solid|doc|alllibs|type=custom';
+
+$lang->uni->flow = new stdclass();
+$lang->uni->flow->data = '工作流|flow_app';
+$lang->uni->flow->menu = new stdclass();
+$lang->uni->flow->menu->regularization     = '转正申请|regularization_solid|||';
+$lang->uni->flow->menu->resign             = '离职申请|user_resign_solid|||';
+$lang->uni->flow->menu->thumbup            = '员工推荐|thumb_up_solid|||';
+$lang->uni->flow->menu->flight             = '出差申请|flight_solid|||';
+$lang->uni->flow->menu->loan               = '借款申请|loan_solid|collect|browse|mode=browse';
+$lang->uni->flow->menu->meetingroombooking = '会议预定|meeting_solid|meetingroombooking|browse|mode=browse';
+$lang->uni->flow->menu->money              = '资产领用|money_solid|||';
+$lang->uni->flow->menu->purchase           = '采购申请|purchase_solid|buy|create|||';
+$lang->uni->flow->menu->stampseal          = '印章申请|seal_solid|stamp|browse|mode=browse';
+$lang->uni->flow->menu->carbooking         = '车辆预定|car_solid|carbooking|browse|mode=browse';
+
+$lang->uni->ameba = new stdclass();
+$lang->uni->ameba->data = '阿米巴|ame_app';
+$lang->uni->ameba->menu = new stdclass();
+$lang->uni->ameba->menu->amebareport = '报表|report_solid|amebareport|index|';
+$lang->uni->ameba->menu->deal        = '交易|trade_solid|deal|browse|';
+$lang->uni->ameba->menu->budget      = '预算|budget_solid|budget|browse|';
+$lang->uni->ameba->menu->rule        = '规则|rule_solid|fee|browse|';
+$lang->uni->ameba->menu->subject     = '科目|subject_solid|tree|browse|type=amebaAccount';
+$lang->uni->ameba->menu->tree        = '组织|tree_solid|ameba|index|';
+
 $lang->mail = new stdclass();
 $lang->mail->menu = $lang->system->menu;
 $lang->menuGroups->mail = 'system';
