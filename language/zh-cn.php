@@ -397,13 +397,23 @@ $lang->uni->crm->data = '客户管理|crm_app';
 $lang->uni->crm->menu = new stdclass();
 $lang->uni->crm->menu->order    = '订单|order_solid|order|browse|';
 $lang->uni->crm->menu->contract = '合同|contract_solid|contract|browse|mode=unfinished';
-$lang->uni->crm->menu->contract = '客户|contract_solid|customer|browse|';
+$lang->uni->crm->menu->customer = '客户|customer_solid|customer|browse|';
 $lang->uni->crm->menu->provider = '供应商|supplier_solid|provider|browse|';
 $lang->uni->crm->menu->contact  = '联系人|contact_solid|contact|browse|';
 $lang->uni->crm->menu->leads    = '名单|leads_solid|leads|browse|mode=assignedTo';
 $lang->uni->crm->menu->product  = '产品|product_solid|product|browse|';
 $lang->uni->crm->menu->invoice  = '发票|invoice_solid|invoice|browseSale|';
 $lang->uni->crm->menu->feedback = '售后|customer_service_solid|feedback|personal|';
+
+$lang->uni->crm->quickMenu = new stdclass();
+$lang->uni->crm->quickMenu->contact  = '新增联系人|contact_solid|contact|create|';
+$lang->uni->crm->quickMenu->customer = '新增客户|customer_solid|customer|create|';
+$lang->uni->crm->quickMenu->order    = '新增订单|order_solid|order|create|';
+$lang->uni->crm->quickMenu->contract = '新增合同|contract_solid|contract|create|';
+$lang->uni->crm->quickMenu->invoice  = '开发票|invoice_solid|invoice|create|';
+$lang->uni->crm->quickMenu->leads    = '申请名单|leads_solid|leads|apply|';
+$lang->uni->crm->quickMenu->renew    = '到期续约|hands|contract|create|';
+$lang->uni->crm->quickMenu->more     = '更多|apps|||';
 
 $lang->uni->hr = new stdclass();
 $lang->uni->hr->data = '人力资源|hr_app';
@@ -482,6 +492,24 @@ $lang->uni->ameba->menu->budget      = '预算|budget_solid|budget|browse|';
 $lang->uni->ameba->menu->rule        = '规则|rule_solid|fee|browse|';
 $lang->uni->ameba->menu->subject     = '科目|subject_solid|tree|browse|type=amebaAccount';
 $lang->uni->ameba->menu->tree        = '组织|tree_solid|ameba|index|';
+
+$lang->uni->tab = new stdclass();
+$lang->uni->tab->crm = new stdclass();
+$lang->uni->tab->crm->communicate = new stdclass();
+$lang->uni->tab->crm->communicate->customer         = '客户|customer|browse|mode=contactedby';
+$lang->uni->tab->crm->communicate->order            = '订单|order|browse|mode=contactedby';
+$lang->uni->tab->crm->communicate->contract         = '销售合同|contract|browse|mode=contactedby';
+$lang->uni->tab->crm->communicate->purchasecontract = '采购合同|purchasecontract|browse|mode=contactedby';
+$lang->uni->tab->crm->communicate->contact          = '联系人|contact|browse|mode=contactedby';
+
+$lang->uni->tab->crm->customer = new stdclass();
+$lang->uni->tab->crm->customer->all         = '所有|customer|browse|mode=all';
+$lang->uni->tab->crm->customer->assignedTo  = '指派给我|customer|browse|mode=assignedTo';
+$lang->uni->tab->crm->customer->contactedby = '由我联系|customer|browse|mode=contactedby';
+$lang->uni->tab->crm->customer->past        = '亟需联系|customer|browse|mode=past';
+$lang->uni->tab->crm->customer->today       = '今天联系|customer|browse|mode=today';
+$lang->uni->tab->crm->customer->thisweek    = '本周内联系|customer|browse|mode=thisweek';
+$lang->uni->tab->crm->customer->public      = '客户池|customer|browse|mode=public';
 
 $lang->mail = new stdclass();
 $lang->mail->menu = $lang->system->menu;
@@ -569,6 +597,11 @@ $lang->date->day    = '天';
 $lang->genderList['m'] = '男';
 $lang->genderList['f'] = '女';
 $lang->genderList['u'] = '';
+
+$lang->appGenderList['m'] = '先生';
+$lang->appGenderList['f'] = '女士';
+$lang->appGenderList['u'] = '';
+
 
 $lang->deleteList['0'] = '未删除';
 $lang->deleteList['1'] = '已删除';
@@ -1416,6 +1449,7 @@ $lang->order->activatedBy    = '由谁激活';
 $lang->order->activatedDate  = '激活时间';
 $lang->order->contactedBy    = '由谁联系';
 $lang->order->contactedDate  = '最后联系';
+$lang->order->lastDate       = '上次联系';
 $lang->order->nextDate       = '下次联系';
 $lang->order->editedBy       = '最后修改';
 $lang->order->editedDate     = '最后修改日期';

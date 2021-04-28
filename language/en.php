@@ -462,6 +462,10 @@ $lang->genderList['m'] = 'Male';
 $lang->genderList['f'] = 'Female';
 $lang->genderList['u'] = '';
 
+$lang->appGenderList['m'] = 'gentlemen';
+$lang->appGenderList['f'] = 'lady';
+$lang->appGenderList['u'] = '';
+
 $lang->deleteList['0'] = 'Not Deleted';
 $lang->deleteList['1'] = 'Deleted';
 
@@ -1309,6 +1313,7 @@ $lang->order->activatedBy    = 'Activated By';
 $lang->order->activatedDate  = 'Activated';
 $lang->order->contactedBy    = 'Contacted By';
 $lang->order->contactedDate  = 'Contacted';
+$lang->order->lastDate       = 'Last Contact';
 $lang->order->nextDate       = 'Next Contact';
 $lang->order->editedBy       = 'Last Edited By';
 $lang->order->editedDate     = 'Last Edited';
