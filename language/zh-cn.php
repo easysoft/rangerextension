@@ -526,7 +526,16 @@ $lang->uni->tab->crm->order->contactedby = '由我联系|order|browse|mode=conta
 $lang->uni->tab->crm->order->past        = '亟需联系|order|browse|mode=past';
 $lang->uni->tab->crm->order->today       = '今天联系|order|browse|mode=today';
 $lang->uni->tab->crm->order->thisweek    = '本周内联系|order|browse|mode=thisweek';
-$lang->uni->tab->crm->order->public      = '客户池|order|browse|mode=public';
+$lang->uni->tab->crm->order->public      = '公共客户|order|browse|mode=public';
+
+$lang->uni->tab->crm->contact = new stdclass();
+$lang->uni->tab->crm->contact->all         = '所有|contact|browse|mode=all';
+$lang->uni->tab->crm->contact->contactedby = '由我联系|contact|browse|mode=contactedby';
+$lang->uni->tab->crm->contact->past        = '亟需联系|contact|browse|mode=past';
+$lang->uni->tab->crm->contact->today       = '今天联系|contact|browse|mode=today';
+$lang->uni->tab->crm->contact->tomorrow    = '明天联系|contact|browse|mode=tomorrow';
+$lang->uni->tab->crm->contact->thisweek    = '本周内联系|contact|browse|mode=thisweek';
+$lang->uni->tab->crm->contact->thismonth   = '本月内联系|contact|browse|mode=thismonth';
 
 $lang->mail = new stdclass();
 $lang->mail->menu = $lang->system->menu;
