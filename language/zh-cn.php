@@ -406,13 +406,13 @@ $lang->uni->crm->menu->invoice  = '发票|invoice_solid|invoice|browseSale|';
 $lang->uni->crm->menu->feedback = '售后|customer_service_solid|feedback|personal|';
 
 $lang->uni->crm->quickMenu = new stdclass();
+$lang->uni->crm->quickMenu->leads    = '新增名单|leads_solid|leads|create|';
 $lang->uni->crm->quickMenu->contact  = '新增联系人|contact_solid|contact|create|';
 $lang->uni->crm->quickMenu->customer = '新增客户|customer_solid|customer|create|';
+$lang->uni->crm->quickMenu->provider = '新增供应商|supplier_solid|provider|create|';
 $lang->uni->crm->quickMenu->order    = '新增订单|order_solid|order|create|';
 $lang->uni->crm->quickMenu->contract = '新增合同|contract_solid|contract|create|';
-$lang->uni->crm->quickMenu->invoice  = '开发票|invoice_solid|invoice|create|';
-$lang->uni->crm->quickMenu->leads    = '申请名单|leads_solid|leads|apply|';
-$lang->uni->crm->quickMenu->renew    = '到期续约|hands|contract|create|';
+$lang->uni->crm->quickMenu->invoice  = '申请发票|invoice_solid|invoice|create|';
 $lang->uni->crm->quickMenu->more     = '更多|apps|||';
 
 $lang->uni->hr = new stdclass();
