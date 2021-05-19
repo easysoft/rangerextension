@@ -377,6 +377,213 @@ $lang->my->contact->menu->all = 'All|my|contact|';
 
 $lang->my->company = new stdclass();
 
+$lang->uni = new stdClass();
+$lang->uni->common = new stdclass();
+$lang->uni->common->communicated = 'Wait communicated';
+$lang->uni->common->workbench    = 'Workbench';
+$lang->uni->common->common       = 'Common';
+$lang->uni->common->business     = 'Business';
+$lang->uni->common->quick        = 'Quick menu';
+$lang->uni->common->allBusiness  = 'All business';
+$lang->uni->common->attend       = 'Attend';
+$lang->uni->common->punchRecored = 'Punch recored';
+
+$lang->uni->oa = new stdclass();
+$lang->uni->oa->data = 'OA|oa_app';
+$lang->uni->oa->menu = new stdclass();
+$lang->uni->oa->menu->my               = 'Approval|approve_solid|my|review|';
+$lang->uni->oa->menu->attend           = 'Attend|attend_solid|attend|personal|';
+$lang->uni->oa->menu->leave            = 'Leave|attend_leave_solid|leave|personal|';
+$lang->uni->oa->menu->makeup           = 'Makeup|attend_makeup_solid|makeup|personal|';
+$lang->uni->oa->menu->overtime         = 'Overtime|attend_overtime_solid|overtime|personal|';
+$lang->uni->oa->menu->lieu             = 'Exchange|attend_exchange_solid|lieu|personal|';
+$lang->uni->oa->menu->trip             = 'Trip|attend_trip_solid|trip|personal|';
+$lang->uni->oa->menu->egress           = 'Goout|attend_goout_solid|egress|personal|';
+$lang->uni->oa->menu->refund           = 'Refund|refund_solid|refund|personal|';
+$lang->uni->oa->menu->announce         = 'Bulletin|bulletin_solid|announce|browse|';
+$lang->uni->common->unfineshedContract = 'Unfinished Contract';
+
+$lang->uni->crm = new stdclass();
+$lang->uni->crm->data = 'CRM|crm_app';
+$lang->uni->crm->menu = new stdclass();
+$lang->uni->crm->menu->order    = 'Order|order_solid|order|browse|';
+$lang->uni->crm->menu->contract = 'Contract|contract_solid|contract|browse|';
+$lang->uni->crm->menu->customer = 'Customer|customer_solid|customer|browse|';
+$lang->uni->crm->menu->provider = 'Supplier|supplier_solid|provider|browse|';
+$lang->uni->crm->menu->contact  = 'Contact|contact_solid|contact|browse|';
+$lang->uni->crm->menu->leads    = 'Leads|leads_solid|leads|browse|';
+$lang->uni->crm->menu->product  = 'Product|product_solid|product|browse|';
+$lang->uni->crm->menu->invoice  = 'Invoice|invoice_solid|invoice|browseSale|';
+$lang->uni->crm->menu->feedback = 'Aftermarket|customer_service_solid|feedback|personal|';
+
+$lang->uni->crm->quickMenu = new stdclass();
+$lang->uni->crm->quickMenu->leads    = 'Leads|leads_solid|leads|create|';
+$lang->uni->crm->quickMenu->contact  = 'Contact|contact_solid|contact|create|';
+$lang->uni->crm->quickMenu->customer = 'Customer|customer_solid|customer|create|';
+$lang->uni->crm->quickMenu->provider = 'Supplier|supplier_solid|provider|create|';
+$lang->uni->crm->quickMenu->order    = 'Order|order_solid|order|create|';
+$lang->uni->crm->quickMenu->contract = 'Contract|contract_solid|contract|create|';
+$lang->uni->crm->quickMenu->invoice  = 'Invoice|invoice_solid|invoice|create|';
+$lang->uni->crm->quickMenu->more     = 'More|apps|||';
+
+$lang->uni->hr = new stdclass();
+$lang->uni->hr->data = 'HR|hr_app';
+$lang->uni->hr->menu = new stdclass();
+$lang->uni->hr->menu->tree   = 'Tree|tree_solid|||';
+$lang->uni->hr->menu->search = 'Recruit|search_box_solid|||';
+$lang->uni->hr->menu->users  = 'Users|users_solid|||';
+$lang->uni->hr->menu->bonus  = 'Assess|assess_solid|commission|browse|';
+$lang->uni->hr->menu->salary = 'Salary|salary_solid|salary|company|';
+
+$lang->uni->cash = new stdclass();
+$lang->uni->cash->data = 'CASH|cash_app';
+$lang->uni->cash->menu = new stdclass();
+$lang->uni->cash->menu->trade       = 'Trade|trade_solid|trade|browse|mode=in';
+$lang->uni->cash->menu->outlay      = 'Outlay|outlay_solid|trade|browse|mode=out';
+$lang->uni->cash->menu->transfer    = 'Transfer|transfer_solid|trade|browse|mode=transfer';
+$lang->uni->cash->menu->investment  = 'Investment|investment_solid|trade|browse|mode=invest&date=all';
+$lang->uni->cash->menu->debit       = 'Ddebit|debit_solid|trade|browse|mode=loan';
+$lang->uni->cash->menu->money       = 'Money|money_check_solid|depositor|check|';
+$lang->uni->cash->menu->receivable  = 'Receivable|receivable_solid|receivable|receivable|';
+$lang->uni->cash->menu->payable     = 'Paiable|payable_solid|payable|payable|';
+$lang->uni->cash->menu->depositor   = 'Depositor|depositor_solid|depositor|browse|';
+$lang->uni->cash->menu->report      = 'Report|report_solid|trade|report|';
+
+$lang->uni->psi = new stdclass();
+$lang->uni->psi->data = 'PSI|psi_app';
+$lang->uni->psi->menu = new stdclass();
+$lang->uni->psi->menu->sales       = 'Sales|sales_order_solid|sale|browse|mode=assignedToMe';
+$lang->uni->psi->menu->purchase    = 'Purchase|purchase_solid|purchase|browse|mode=assignedToMe';
+$lang->uni->psi->menu->warehousing = 'Warehousing|warehousing_solid|batch|browse|status=picking';
+$lang->uni->psi->menu->refund      = 'Return|return_goods_solid|||';
+$lang->uni->psi->menu->exchange    = 'Exchange|exchange_goods_solid|||';
+$lang->uni->psi->menu->check       = 'Check|check_inventory_solid|||';
+$lang->uni->psi->menu->customer    = 'Customer|customer_solid|customer|browse|';
+$lang->uni->psi->menu->provider    = 'Supplier|supplier_solid|provider|browse|';
+$lang->uni->psi->menu->inventory   = 'Inventory|inventory_solid|||';
+
+$lang->uni->team = new stdclass();
+$lang->uni->team->data = 'Team|team_app';
+$lang->uni->team->menu = new stdclass();
+$lang->uni->team->menu->forum = 'Discuss|discuss_solid|forum|index|';
+$lang->uni->team->menu->blog  = 'Blog|blog_solid|blog|index|';
+
+$lang->uni->proj = new stdclass();
+$lang->uni->proj->data = 'PROJ|prj_app';
+$lang->uni->proj->menu = new stdclass();
+$lang->uni->proj->menu->project = 'Project|project_solid|project|index|status=involved';
+$lang->uni->proj->menu->task    = 'Task|task_solid|task|browse|projectID=&mode=assignedTo';
+
+$lang->uni->doc = new stdclass();
+$lang->uni->doc->data = 'DOC|doc_app';
+$lang->uni->doc->menu = new stdclass();
+$lang->uni->doc->menu->archive = 'Archive|archive_solid|doc|alllibs|type=project';
+$lang->uni->doc->menu->folder  = 'Folder|folder_solid|doc|alllibs|type=custom';
+
+$lang->uni->flow = new stdclass();
+$lang->uni->flow->data = 'Flow|flow_app';
+$lang->uni->flow->menu = new stdclass();
+$lang->uni->flow->menu->regularization     = 'Regularization|regularization_solid|||';
+$lang->uni->flow->menu->resign             = 'Resign|user_resign_solid|||';
+$lang->uni->flow->menu->thumbup            = 'Thumbup|thumb_up_solid|||';
+$lang->uni->flow->menu->flight             = 'Flight|flight_solid|||';
+$lang->uni->flow->menu->loan               = 'Loan|loan_solid|collect|browse|mode=browse';
+$lang->uni->flow->menu->meetingroombooking = 'Meeting|meeting_solid|meetingroombooking|browse|mode=browse';
+$lang->uni->flow->menu->money              = 'Money|money_solid|||';
+$lang->uni->flow->menu->purchase           = 'Purchase|purchase_solid|buy|create|||';
+$lang->uni->flow->menu->stampseal          = 'Seal|seal_solid|stamp|browse|mode=browse';
+$lang->uni->flow->menu->carbooking         = 'Car|car_solid|carbooking|browse|mode=browse';
+
+$lang->uni->ameba = new stdclass();
+$lang->uni->ameba->data = 'AME|ame_app';
+$lang->uni->ameba->menu = new stdclass();
+$lang->uni->ameba->menu->amebareport = 'Report|report_solid|amebareport|index|';
+$lang->uni->ameba->menu->deal        = 'Trade|trade_solid|deal|browse|';
+$lang->uni->ameba->menu->budget      = 'Budget|budget_solid|budget|browse|';
+$lang->uni->ameba->menu->rule        = 'Rule|rule_solid|fee|browse|';
+$lang->uni->ameba->menu->subject     = 'Subject|subject_solid|tree|browse|type=amebaAccount';
+$lang->uni->ameba->menu->tree        = 'Tree|tree_solid|ameba|index|';
+
+$lang->uni->tab = new stdclass();
+$lang->uni->tab->crm = new stdclass();
+$lang->uni->tab->crm->communicate = new stdclass();
+$lang->uni->tab->crm->communicate->customer         = 'Customer|customer|browse|mode=contactedby';
+$lang->uni->tab->crm->communicate->order            = 'Order|order|browse|mode=contactedby';
+$lang->uni->tab->crm->communicate->contract         = 'Contract|contract|browse|mode=contactedby';
+//$lang->uni->tab->crm->communicate->purchasecontract = 'Purchasecontract|purchasecontract|browse|mode=contactedby';
+$lang->uni->tab->crm->communicate->contact          = 'Contact|contact|browse|mode=contactedby';
+
+$lang->uni->tab->crm->customer = new stdclass();
+$lang->uni->tab->crm->customer->all         = 'All|customer|browse|mode=all';
+$lang->uni->tab->crm->customer->assignedTo  = 'AssignedTo|customer|browse|mode=assignedTo';
+$lang->uni->tab->crm->customer->contactedby = 'ContactedBy|customer|browse|mode=contactedby';
+$lang->uni->tab->crm->customer->past        = 'Past|customer|browse|mode=past';
+$lang->uni->tab->crm->customer->today       = 'Tody|customer|browse|mode=today';
+$lang->uni->tab->crm->customer->thisweek    = 'Thisweek|customer|browse|mode=thisweek';
+$lang->uni->tab->crm->customer->public      = 'Public|customer|browse|mode=public';
+
+$lang->uni->tab->crm->contract = new stdclass();
+$lang->uni->tab->crm->contract->all         = 'ALL|contract|browse|mode=all';
+$lang->uni->tab->crm->contract->contactedby = 'ContactedBy|contract|browse|mode=contactedby';
+$lang->uni->tab->crm->contract->unfinished  = 'Unfinished|contract|browse|mode=unfinished';
+$lang->uni->tab->crm->contract->finished    = 'Finished|contract|browse|mode=finished';
+$lang->uni->tab->crm->contract->canceled    = 'Canceled|contract|browse|mode=canceled';
+$lang->uni->tab->crm->contract->expired     = 'Expired|contract|browse|mode=expired';
+
+$lang->uni->tab->crm->order = new stdclass();
+$lang->uni->tab->crm->order->all         = 'All|order|browse|mode=all';
+$lang->uni->tab->crm->order->assignedTo  = 'AssignedTo|order|browse|mode=assignedTo';
+$lang->uni->tab->crm->order->contactedby = 'ContactedBy|order|browse|mode=contactedby';
+$lang->uni->tab->crm->order->past        = 'Past|order|browse|mode=past';
+$lang->uni->tab->crm->order->today       = 'Tody|order|browse|mode=today';
+$lang->uni->tab->crm->order->thisweek    = 'Thisweek|order|browse|mode=thisweek';
+$lang->uni->tab->crm->order->public      = 'Public|order|browse|mode=public';
+
+$lang->uni->tab->crm->contact = new stdclass();
+$lang->uni->tab->crm->contact->all         = 'All|contact|browse|mode=all';
+$lang->uni->tab->crm->contact->contactedby = 'ContactedBy|contact|browse|mode=contactedby';
+$lang->uni->tab->crm->contact->past        = 'Past|contact|browse|mode=past';
+$lang->uni->tab->crm->contact->today       = 'Tody|contact|browse|mode=today';
+$lang->uni->tab->crm->contact->tomorrow    = 'Tomorrow|contact|browse|mode=tomorrow';
+$lang->uni->tab->crm->contact->thisweek    = 'Thisweek|contact|browse|mode=thisweek';
+$lang->uni->tab->crm->contact->thismonth   = 'Thismonth|contact|browse|mode=thismonth';
+
+$lang->uni->history = new stdclass();
+$lang->uni->history->nextDate    = 'Next Contact';
+$lang->uni->history->nextContact = 'Contact';
+$lang->uni->history->contactDate = 'Date';
+$lang->uni->history->contactedBy = 'Contacted By';
+$lang->uni->history->desc        = 'Description';
+$lang->uni->history->objectType  = 'Type';
+$lang->uni->history->onlyRecord  = 'Only Record';
+
+$lang->uni->history->objectTypes['order']            = 'Order';
+$lang->uni->history->objectTypes['customer']         = 'Customer';
+$lang->uni->history->objectTypes['provider']         = 'Supplier';
+$lang->uni->history->objectTypes['doc']              = 'Document';
+$lang->uni->history->objectTypes['task']             = 'Task';
+$lang->uni->history->objectTypes['product']          = 'Product';
+$lang->uni->history->objectTypes['contact']          = 'Contact';
+$lang->uni->history->objectTypes['contract']         = 'Sale Contract';
+$lang->uni->history->objectTypes['purchasecontract'] = 'Purchase Contract';
+$lang->uni->history->objectTypes['project']          = 'Project';
+$lang->uni->history->objectTypes['user']             = 'User';
+$lang->uni->history->objectTypes['resume']           = 'Resume';
+$lang->uni->history->objectTypes['leave']            = 'Leave';
+$lang->uni->history->objectTypes['lieu']             = 'Lieu';
+$lang->uni->history->objectTypes['makeup']           = 'Makeup';
+$lang->uni->history->objectTypes['overtime']         = 'Overtime';
+$lang->uni->history->objectTypes['refund']           = 'Reimburse';
+$lang->uni->history->objectTypes['depositor']        = 'Account';
+$lang->uni->history->objectTypes['balance']          = 'Balance';
+$lang->uni->history->objectTypes['todo']             = 'Todo';
+$lang->uni->history->objectTypes['announce']         = 'Announce';
+$lang->uni->history->objectTypes['holiday']          = 'Holiday';
+$lang->uni->history->objectTypes['trade']            = 'Trade';
+$lang->uni->history->objectTypes['schema']           = 'Trade Template';
+$lang->uni->history->objectTypes['doclib']           = 'Document library';
+$lang->uni->history->objectTypes['action']           = 'History';
+
 $lang->mail = new stdclass();
 $lang->mail->menu = $lang->system->menu;
 $lang->menuGroups->mail = 'system';

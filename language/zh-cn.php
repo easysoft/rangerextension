@@ -378,6 +378,17 @@ $lang->my->contact->menu->all = '所有联系人|my|contact|';
 $lang->my->company = new stdclass();
 
 $lang->uni = new stdClass();
+$lang->uni->common = new stdclass();
+$lang->uni->common->communicated       = '待沟通';
+$lang->uni->common->workbench          = '工作台';
+$lang->uni->common->common             = '常用功能';
+$lang->uni->common->business           = '业务中心';
+$lang->uni->common->quick              = '快捷操作';
+$lang->uni->common->allBusiness        = '全部业务';
+$lang->uni->common->attend             = '考勤';
+$lang->uni->common->punchRecored       = '打卡记录';
+$lang->uni->common->unfineshedContract = '未完成的合同';
+
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = '日常办公|oa_app';
 $lang->uni->oa->menu = new stdclass();
@@ -536,6 +547,42 @@ $lang->uni->tab->crm->contact->today       = '今天联系|contact|browse|mode=t
 $lang->uni->tab->crm->contact->tomorrow    = '明天联系|contact|browse|mode=tomorrow';
 $lang->uni->tab->crm->contact->thisweek    = '本周内联系|contact|browse|mode=thisweek';
 $lang->uni->tab->crm->contact->thismonth   = '本月内联系|contact|browse|mode=thismonth';
+
+$lang->uni->history = new stdclass();
+$lang->uni->history->nextDate    = '下次联系';
+$lang->uni->history->nextContact = '联系人';
+$lang->uni->history->contactDate = '联系时间';
+$lang->uni->history->contactedBy = '由谁联系';
+$lang->uni->history->desc        = '备注';
+$lang->uni->history->objectType  = '对象';
+$lang->uni->history->onlyRecord  = '只看沟通记录';
+
+$lang->uni->history->objectTypes['order']            = '订单';
+$lang->uni->history->objectTypes['customer']         = '客户';
+$lang->uni->history->objectTypes['provider']         = '供应商';
+$lang->uni->history->objectTypes['doc']              = '文档';
+$lang->uni->history->objectTypes['task']             = '任务';
+$lang->uni->history->objectTypes['product']          = '产品';
+$lang->uni->history->objectTypes['contact']          = '联系人';
+$lang->uni->history->objectTypes['contract']         = '销售合同';
+$lang->uni->history->objectTypes['purchasecontract'] = '采购合同';
+$lang->uni->history->objectTypes['project']          = '项目';
+$lang->uni->history->objectTypes['user']             = '用户';
+$lang->uni->history->objectTypes['resume']           = '履历';
+$lang->uni->history->objectTypes['leave']            = '请假';
+$lang->uni->history->objectTypes['lieu']             = '调休';
+$lang->uni->history->objectTypes['makeup']           = '补班';
+$lang->uni->history->objectTypes['overtime']         = '加班';
+$lang->uni->history->objectTypes['refund']           = '报销';
+$lang->uni->history->objectTypes['depositor']        = '账户';
+$lang->uni->history->objectTypes['balance']          = '余额';
+$lang->uni->history->objectTypes['todo']             = '待办';
+$lang->uni->history->objectTypes['announce']         = '公告';
+$lang->uni->history->objectTypes['holiday']          = '放假安排';
+$lang->uni->history->objectTypes['trade']            = '账目';
+$lang->uni->history->objectTypes['schema']           = '记账模板';
+$lang->uni->history->objectTypes['doclib']           = '文档库';
+$lang->uni->history->objectTypes['action']           = '沟通记录';
 
 $lang->mail = new stdclass();
 $lang->mail->menu = $lang->system->menu;
