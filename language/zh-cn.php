@@ -504,50 +504,6 @@ $lang->uni->ameba->menu->rule        = '规则|rule_solid|fee|browse|';
 $lang->uni->ameba->menu->subject     = '科目|subject_solid|tree|browse|type=amebaAccount';
 $lang->uni->ameba->menu->tree        = '组织|tree_solid|ameba|index|';
 
-$lang->uni->tab = new stdclass();
-$lang->uni->tab->crm = new stdclass();
-$lang->uni->tab->crm->communicate = new stdclass();
-$lang->uni->tab->crm->communicate->customer         = '客户|customer|browse|mode=contactedby';
-$lang->uni->tab->crm->communicate->order            = '订单|order|browse|mode=contactedby';
-$lang->uni->tab->crm->communicate->contract         = '销售合同|contract|browse|mode=contactedby';
-//$lang->uni->tab->crm->communicate->purchasecontract = '采购合同|purchasecontract|browse|mode=contactedby';
-$lang->uni->tab->crm->communicate->contact          = '联系人|contact|browse|mode=contactedby';
-
-$lang->uni->tab->crm->customer = new stdclass();
-$lang->uni->tab->crm->customer->all         = '所有|customer|browse|mode=all';
-$lang->uni->tab->crm->customer->assignedTo  = '指派给我|customer|browse|mode=assignedTo';
-$lang->uni->tab->crm->customer->contactedby = '由我联系|customer|browse|mode=contactedby';
-$lang->uni->tab->crm->customer->past        = '亟需联系|customer|browse|mode=past';
-$lang->uni->tab->crm->customer->today       = '今天联系|customer|browse|mode=today';
-$lang->uni->tab->crm->customer->thisweek    = '本周内联系|customer|browse|mode=thisweek';
-$lang->uni->tab->crm->customer->public      = '客户池|customer|browse|mode=public';
-
-$lang->uni->tab->crm->contract = new stdclass();
-$lang->uni->tab->crm->contract->all         = '所有|contract|browse|mode=all';
-$lang->uni->tab->crm->contract->contactedby = '由我联系|contract|browse|mode=contactedby';
-$lang->uni->tab->crm->contract->unfinished  = '未完成|contract|browse|mode=unfinished';
-$lang->uni->tab->crm->contract->finished    = '已完成|contract|browse|mode=finished';
-$lang->uni->tab->crm->contract->canceled    = '已取消|contract|browse|mode=canceled';
-$lang->uni->tab->crm->contract->expired     = '已过期|contract|browse|mode=expired';
-
-$lang->uni->tab->crm->order = new stdclass();
-$lang->uni->tab->crm->order->all         = '所有|order|browse|mode=all';
-$lang->uni->tab->crm->order->assignedTo  = '指派给我|order|browse|mode=assignedTo';
-$lang->uni->tab->crm->order->contactedby = '由我联系|order|browse|mode=contactedby';
-$lang->uni->tab->crm->order->past        = '亟需联系|order|browse|mode=past';
-$lang->uni->tab->crm->order->today       = '今天联系|order|browse|mode=today';
-$lang->uni->tab->crm->order->thisweek    = '本周内联系|order|browse|mode=thisweek';
-$lang->uni->tab->crm->order->public      = '公共客户|order|browse|mode=public';
-
-$lang->uni->tab->crm->contact = new stdclass();
-$lang->uni->tab->crm->contact->all         = '所有|contact|browse|mode=all';
-$lang->uni->tab->crm->contact->contactedby = '由我联系|contact|browse|mode=contactedby';
-$lang->uni->tab->crm->contact->past        = '亟需联系|contact|browse|mode=past';
-$lang->uni->tab->crm->contact->today       = '今天联系|contact|browse|mode=today';
-$lang->uni->tab->crm->contact->tomorrow    = '明天联系|contact|browse|mode=tomorrow';
-$lang->uni->tab->crm->contact->thisweek    = '本周内联系|contact|browse|mode=thisweek';
-$lang->uni->tab->crm->contact->thismonth   = '本月内联系|contact|browse|mode=thismonth';
-
 $lang->uni->history = new stdclass();
 $lang->uni->history->nextDate    = '下次联系';
 $lang->uni->history->nextContact = '联系人';
@@ -887,6 +843,15 @@ $lang->setting->menu->currency        = '货币设置|setting|lang|module=common
 
 if(!isset($lang->sales)) $lang->sales = new stdclass();
 $lang->sales->menu = $lang->setting->menu;
+
+/* Menu of communicate module, use for mobile. */ 
+if(!isset($lang->communicate)) $lang->communicate = new stdclass();
+$lang->communicate->menu = new stdclass();
+$lang->communicate->menu->customer         = '客户|customer|browse|mode=contactedby';
+$lang->communicate->menu->order            = '订单|order|browse|mode=contactedby';
+$lang->communicate->menu->contract         = '销售合同|contract|browse|mode=contactedby';
+//$lang->communicate->menu->purchasecontract = '采购合同|purchasecontract|browse|mode=contactedby';
+$lang->communicate->menu->contact          = '联系人|contact|browse|mode=contactedby';
 
 $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();

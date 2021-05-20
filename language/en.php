@@ -504,50 +504,6 @@ $lang->uni->ameba->menu->rule        = 'Rule|rule_solid|fee|browse|';
 $lang->uni->ameba->menu->subject     = 'Subject|subject_solid|tree|browse|type=amebaAccount';
 $lang->uni->ameba->menu->tree        = 'Tree|tree_solid|ameba|index|';
 
-$lang->uni->tab = new stdclass();
-$lang->uni->tab->crm = new stdclass();
-$lang->uni->tab->crm->communicate = new stdclass();
-$lang->uni->tab->crm->communicate->customer         = 'Customer|customer|browse|mode=contactedby';
-$lang->uni->tab->crm->communicate->order            = 'Order|order|browse|mode=contactedby';
-$lang->uni->tab->crm->communicate->contract         = 'Contract|contract|browse|mode=contactedby';
-//$lang->uni->tab->crm->communicate->purchasecontract = 'Purchasecontract|purchasecontract|browse|mode=contactedby';
-$lang->uni->tab->crm->communicate->contact          = 'Contact|contact|browse|mode=contactedby';
-
-$lang->uni->tab->crm->customer = new stdclass();
-$lang->uni->tab->crm->customer->all         = 'All|customer|browse|mode=all';
-$lang->uni->tab->crm->customer->assignedTo  = 'AssignedTo|customer|browse|mode=assignedTo';
-$lang->uni->tab->crm->customer->contactedby = 'ContactedBy|customer|browse|mode=contactedby';
-$lang->uni->tab->crm->customer->past        = 'Past|customer|browse|mode=past';
-$lang->uni->tab->crm->customer->today       = 'Tody|customer|browse|mode=today';
-$lang->uni->tab->crm->customer->thisweek    = 'Thisweek|customer|browse|mode=thisweek';
-$lang->uni->tab->crm->customer->public      = 'Public|customer|browse|mode=public';
-
-$lang->uni->tab->crm->contract = new stdclass();
-$lang->uni->tab->crm->contract->all         = 'ALL|contract|browse|mode=all';
-$lang->uni->tab->crm->contract->contactedby = 'ContactedBy|contract|browse|mode=contactedby';
-$lang->uni->tab->crm->contract->unfinished  = 'Unfinished|contract|browse|mode=unfinished';
-$lang->uni->tab->crm->contract->finished    = 'Finished|contract|browse|mode=finished';
-$lang->uni->tab->crm->contract->canceled    = 'Canceled|contract|browse|mode=canceled';
-$lang->uni->tab->crm->contract->expired     = 'Expired|contract|browse|mode=expired';
-
-$lang->uni->tab->crm->order = new stdclass();
-$lang->uni->tab->crm->order->all         = 'All|order|browse|mode=all';
-$lang->uni->tab->crm->order->assignedTo  = 'AssignedTo|order|browse|mode=assignedTo';
-$lang->uni->tab->crm->order->contactedby = 'ContactedBy|order|browse|mode=contactedby';
-$lang->uni->tab->crm->order->past        = 'Past|order|browse|mode=past';
-$lang->uni->tab->crm->order->today       = 'Tody|order|browse|mode=today';
-$lang->uni->tab->crm->order->thisweek    = 'Thisweek|order|browse|mode=thisweek';
-$lang->uni->tab->crm->order->public      = 'Public|order|browse|mode=public';
-
-$lang->uni->tab->crm->contact = new stdclass();
-$lang->uni->tab->crm->contact->all         = 'All|contact|browse|mode=all';
-$lang->uni->tab->crm->contact->contactedby = 'ContactedBy|contact|browse|mode=contactedby';
-$lang->uni->tab->crm->contact->past        = 'Past|contact|browse|mode=past';
-$lang->uni->tab->crm->contact->today       = 'Tody|contact|browse|mode=today';
-$lang->uni->tab->crm->contact->tomorrow    = 'Tomorrow|contact|browse|mode=tomorrow';
-$lang->uni->tab->crm->contact->thisweek    = 'Thisweek|contact|browse|mode=thisweek';
-$lang->uni->tab->crm->contact->thismonth   = 'Thismonth|contact|browse|mode=thismonth';
-
 $lang->uni->history = new stdclass();
 $lang->uni->history->nextDate    = 'Next Contact';
 $lang->uni->history->nextContact = 'Contact';
@@ -884,6 +840,15 @@ $lang->setting->menu->currency        = 'Currency|setting|lang|module=common&fie
 
 if(!isset($lang->sales)) $lang->sales = new stdclass();
 $lang->sales->menu = $lang->setting->menu;
+
+/* Menu of communicate module, use for mobile. */ 
+if(!isset($lang->communicate)) $lang->communicate = new stdclass();
+$lang->communicate->menu = new stdclass();
+$lang->communicate->menu->customer         = 'customer|customer|browse|mode=contactedby';
+$lang->communicate->menu->order            = 'order|order|browse|mode=contactedby';
+$lang->communicate->menu->contract         = 'contract|contract|browse|mode=contactedby';
+$lang->communicate->menu->purchasecontract = 'purchasecontract|purchasecontract|browse|mode=contactedby';
+$lang->communicate->menu->contact          = 'contact|contact|browse|mode=contactedby';
 
 $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();
