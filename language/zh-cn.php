@@ -379,15 +379,23 @@ $lang->my->company = new stdclass();
 
 $lang->uni = new stdClass();
 $lang->uni->common = new stdclass();
-$lang->uni->common->communicated       = '待沟通';
+$lang->uni->common->communicate        = '待沟通';
 $lang->uni->common->workbench          = '工作台';
-$lang->uni->common->common             = '常用功能';
+$lang->uni->common->function           = '常用功能';
 $lang->uni->common->business           = '业务中心';
 $lang->uni->common->quick              = '快捷操作';
 $lang->uni->common->allBusiness        = '全部业务';
 $lang->uni->common->attend             = '考勤';
+$lang->uni->common->address            = '详细地址';
+$lang->uni->common->customer           = '客户管理首页';
 $lang->uni->common->punchRecored       = '打卡记录';
-$lang->uni->common->unfineshedContract = '未完成的合同';
+$lang->uni->common->unfinishedContract = '未完成的合同';
+$lang->uni->common->todayContact       = '今天联系的联系人';
+$lang->uni->common->todayCustomer      = '今天联系的客户';
+$lang->uni->common->todayOrder         = '今天联系的订单';
+$lang->uni->common->todo               = '日程';
+$lang->uni->common->pending            = '待处理';
+$lang->uni->common->notice             = '通知';
 
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = '日常办公|oa_app';
@@ -853,6 +861,13 @@ $lang->communicate->menu->contract         = '销售合同|contract|browse|mode=
 //$lang->communicate->menu->purchasecontract = '采购合同|purchasecontract|browse|mode=contactedby';
 $lang->communicate->menu->contact          = '联系人|contact|browse|mode=contactedby';
 
+/* Black menu of crm app, use for mobile. */ 
+if(!isset($lang->blackMenu)) $lang->blackMenu = new stdclass();
+$lang->blackMenu->order            = 'tomorrow,thismonth,public,report';
+$lang->blackMenu->customer         = 'tomorrow,thismonth,report';
+$lang->blackMenu->contract         = 'unreceived,undeliveried,expire,report';
+$lang->blackMenu->purchasecontract = 'unreceived,expire,report';
+
 $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();
 if(!isset($lang->address)) $lang->address = new stdclass();
@@ -977,6 +992,10 @@ $lang->refund->menu->settings   = array('link' => '设置|refund|setreviewer|', 
 if(!isset($lang->holiday)) $lang->holiday = new stdclass();
 $lang->holiday->menu = new stdclass();
 $lang->holiday->menu->all = '所有|holiday|browse|';
+
+if(!isset($lang->cooperation)) $lang->cooperation = new stdclass();
+$lang->cooperation->menu = new stdclass();
+$lang->cooperation->menu->review = '待处理|my|review|';
 
 $lang->setting->menu = new stdclass();
 $lang->setting->menu->modules         = '功能模块|setting|modules|app=oa';

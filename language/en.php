@@ -379,14 +379,23 @@ $lang->my->company = new stdclass();
 
 $lang->uni = new stdClass();
 $lang->uni->common = new stdclass();
-$lang->uni->common->communicated = 'Wait communicated';
-$lang->uni->common->workbench    = 'Workbench';
-$lang->uni->common->common       = 'Common';
-$lang->uni->common->business     = 'Business';
-$lang->uni->common->quick        = 'Quick menu';
-$lang->uni->common->allBusiness  = 'All business';
-$lang->uni->common->attend       = 'Attend';
-$lang->uni->common->punchRecored = 'Punch recored';
+$lang->uni->common->communicate        = 'Wait communicated';
+$lang->uni->common->workbench          = 'Workbench';
+$lang->uni->common->function           = 'Function';
+$lang->uni->common->business           = 'Business';
+$lang->uni->common->quick              = 'Quick menu';
+$lang->uni->common->allBusiness        = 'All business';
+$lang->uni->common->attend             = 'Attend';
+$lang->uni->common->address            = 'Detailed address';
+$lang->uni->common->customer           = 'Home of customer';
+$lang->uni->common->punchRecored       = 'Punch recored';
+$lang->uni->common->unfinishedContract = 'Unfinished Contract';
+$lang->uni->common->todayContact       = 'Contacts contacted today';
+$lang->uni->common->todayCustomer      = 'Customers contacted today';
+$lang->uni->common->todayOrder         = 'Orders contacted today';
+$lang->uni->common->todo               = 'Todo';
+$lang->uni->common->pending            = 'Pending';
+$lang->uni->common->notice             = 'Notice';
 
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = 'OA|oa_app';
@@ -401,7 +410,6 @@ $lang->uni->oa->menu->trip             = 'Trip|attend_trip_solid|trip|personal|'
 $lang->uni->oa->menu->egress           = 'Goout|attend_goout_solid|egress|personal|';
 $lang->uni->oa->menu->refund           = 'Refund|refund_solid|refund|personal|';
 $lang->uni->oa->menu->announce         = 'Bulletin|bulletin_solid|announce|browse|';
-$lang->uni->common->unfineshedContract = 'Unfinished Contract';
 
 $lang->uni->crm = new stdclass();
 $lang->uni->crm->data = 'CRM|crm_app';
@@ -850,6 +858,13 @@ $lang->communicate->menu->contract         = 'contract|contract|browse|mode=cont
 $lang->communicate->menu->purchasecontract = 'purchasecontract|purchasecontract|browse|mode=contactedby';
 $lang->communicate->menu->contact          = 'contact|contact|browse|mode=contactedby';
 
+/* Black menu of crm app, use for mobile. */ 
+if(!isset($lang->blackMenu)) $lang->blackMenu = new stdclass();
+$lang->blackMenu->order            = 'tomorrow,thismonth,public,report';
+$lang->blackMenu->customer         = 'tomorrow,thismonth,report';
+$lang->blackMenu->contract         = 'unreceived,undeliveried,expire,report';
+$lang->blackMenu->purchasecontract = 'unreceived,expire,report';
+
 $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();
 if(!isset($lang->address)) $lang->address = new stdclass();
@@ -974,6 +989,10 @@ $lang->refund->menu->settings   = array('link' => 'Settings|refund|setreviewer|'
 if(!isset($lang->holiday)) $lang->holiday = new stdclass();
 $lang->holiday->menu = new stdclass();
 $lang->holiday->menu->all = 'All|holiday|browse|';
+
+if(!isset($lang->cooperation)) $lang->cooperation = new stdclass();
+$lang->cooperation->menu = new stdclass();
+$lang->cooperation->menu->review = 'Pending|my|review|';
 
 $lang->setting->menu = new stdclass();
 $lang->setting->menu->modules         = 'Modules|setting|modules|app=oa';
