@@ -379,6 +379,7 @@ $lang->my->company = new stdclass();
 
 $lang->uni = new stdClass();
 $lang->uni->common = new stdclass();
+$lang->uni->common->serverUrl          = 'Server uri';
 $lang->uni->common->communicate        = 'Wait communicated';
 $lang->uni->common->workbench          = 'Workbench';
 $lang->uni->common->function           = 'Function';
@@ -396,6 +397,15 @@ $lang->uni->common->todayOrder         = 'Orders contacted today';
 $lang->uni->common->todo               = 'Todo';
 $lang->uni->common->pending            = 'Pending';
 $lang->uni->common->notice             = 'Notice';
+$lang->uni->common->todoFinish         = 'Finish a todo';
+$lang->uni->common->todoActive         = 'Activate a todo';
+$lang->uni->common->todoToday          = 'Todo today';
+$lang->uni->common->packup             = 'Pack up';
+$lang->uni->common->open               = 'Expand more';
+$lang->uni->common->today              = 'Today';
+$lang->uni->common->input              = 'Please input';
+$lang->uni->common->cancelNextContact  = 'Confirm to cancel next contact?';
+$lang->uni->common->cancelSuccess      = 'Cancel success';
 
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = 'OA|oa_app';

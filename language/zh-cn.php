@@ -379,6 +379,7 @@ $lang->my->company = new stdclass();
 
 $lang->uni = new stdClass();
 $lang->uni->common = new stdclass();
+$lang->uni->common->serverUrl          = '服务器地址';
 $lang->uni->common->communicate        = '待沟通';
 $lang->uni->common->workbench          = '工作台';
 $lang->uni->common->function           = '常用功能';
@@ -396,6 +397,15 @@ $lang->uni->common->todayOrder         = '今天联系的订单';
 $lang->uni->common->todo               = '日程';
 $lang->uni->common->pending            = '待处理';
 $lang->uni->common->notice             = '通知';
+$lang->uni->common->todoFinish         = '完成一条待办';
+$lang->uni->common->todoActive         = '激活一条待办';
+$lang->uni->common->todoToday          = '今日待办';
+$lang->uni->common->packup             = '收起';
+$lang->uni->common->open               = '展开更多';
+$lang->uni->common->today              = '今';
+$lang->uni->common->input              = '请输入';
+$lang->uni->common->cancelNextContact  = '确认取消下次联系？';
+$lang->uni->common->cancelSuccess      = '取消成功';
 
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = '日常办公|oa_app';
