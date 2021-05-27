@@ -424,15 +424,16 @@ $lang->uni->oa->menu->announce         = 'Bulletin|bulletin_solid|announce|brows
 $lang->uni->crm = new stdclass();
 $lang->uni->crm->data = 'CRM|crm_app';
 $lang->uni->crm->menu = new stdclass();
-$lang->uni->crm->menu->order    = 'Order|order_solid|order|browse|';
-$lang->uni->crm->menu->contract = 'Contract|contract_solid|contract|browse|';
 $lang->uni->crm->menu->customer = 'Customer|customer_solid|customer|browse|';
 $lang->uni->crm->menu->provider = 'Supplier|supplier_solid|provider|browse|';
+$lang->uni->crm->menu->order    = 'Order|order_solid|order|browse|';
+$lang->uni->crm->menu->contract = 'Contract|contract_solid|contract|browse|';
+$lang->uni->crm->menu->purchase = 'Purchasecontract|contract_solid|purchasecontract|browse|';
 $lang->uni->crm->menu->contact  = 'Contact|contact_solid|contact|browse|';
 $lang->uni->crm->menu->leads    = 'Leads|leads_solid|leads|browse|';
-$lang->uni->crm->menu->product  = 'Product|product_solid|product|browse|';
 $lang->uni->crm->menu->invoice  = 'Invoice|invoice_solid|invoice|browseSale|';
 $lang->uni->crm->menu->feedback = 'Aftermarket|customer_service_solid|feedback|personal|';
+$lang->uni->crm->menu->product  = 'Product|product_solid|product|browse|';
 
 $lang->uni->crm->quickMenu = new stdclass();
 $lang->uni->crm->quickMenu->leads    = 'Leads|leads_solid|leads|create|';
@@ -441,8 +442,9 @@ $lang->uni->crm->quickMenu->customer = 'Customer|customer_solid|customer|create|
 $lang->uni->crm->quickMenu->provider = 'Supplier|supplier_solid|provider|create|';
 $lang->uni->crm->quickMenu->order    = 'Order|order_solid|order|create|';
 $lang->uni->crm->quickMenu->contract = 'Contract|contract_solid|contract|create|';
+$lang->uni->crm->quickMenu->purchase = 'Purchasecontract|contract_solid|purchasecontract|create|';
 $lang->uni->crm->quickMenu->invoice  = 'Invoice|invoice_solid|invoice|create|';
-$lang->uni->crm->quickMenu->more     = 'More|apps|||';
+//$lang->uni->crm->quickMenu->feedback = 'Feedback|customer_service_solid|feedback|create|';
 
 $lang->uni->hr = new stdclass();
 $lang->uni->hr->data = 'HR|hr_app';
@@ -487,7 +489,7 @@ $lang->uni->team->menu->forum = 'Discuss|discuss_solid|forum|index|';
 $lang->uni->team->menu->blog  = 'Blog|blog_solid|blog|index|';
 
 $lang->uni->proj = new stdclass();
-$lang->uni->proj->data = 'PROJ|prj_app';
+$lang->uni->proj->data = 'PROJ|proj_app';
 $lang->uni->proj->menu = new stdclass();
 $lang->uni->proj->menu->project = 'Project|project_solid|project|index|status=involved';
 $lang->uni->proj->menu->task    = 'Task|task_solid|task|browse|projectID=&mode=assignedTo';
@@ -513,7 +515,7 @@ $lang->uni->flow->menu->stampseal          = 'Seal|seal_solid|stamp|browse|mode=
 $lang->uni->flow->menu->carbooking         = 'Car|car_solid|carbooking|browse|mode=browse';
 
 $lang->uni->ameba = new stdclass();
-$lang->uni->ameba->data = 'AME|ame_app';
+$lang->uni->ameba->data = 'AME|ameba_app';
 $lang->uni->ameba->menu = new stdclass();
 $lang->uni->ameba->menu->amebareport = 'Report|report_solid|amebareport|index|';
 $lang->uni->ameba->menu->deal        = 'Trade|trade_solid|deal|browse|';
@@ -873,7 +875,7 @@ if(!isset($lang->blackMenu)) $lang->blackMenu = new stdclass();
 $lang->blackMenu->order            = 'tomorrow,thismonth,public,report';
 $lang->blackMenu->customer         = 'tomorrow,thismonth,report';
 $lang->blackMenu->contract         = 'unreceived,undeliveried,expire,report';
-$lang->blackMenu->purchasecontract = 'unreceived,expire,report';
+$lang->blackMenu->purchasecontract = 'finished,canceled,report,setting';
 
 $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();

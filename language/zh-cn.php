@@ -424,25 +424,27 @@ $lang->uni->oa->menu->announce = '公告|bulletin_solid|announce|browse|';
 $lang->uni->crm = new stdclass();
 $lang->uni->crm->data = '客户管理|crm_app';
 $lang->uni->crm->menu = new stdclass();
-$lang->uni->crm->menu->order    = '订单|order_solid|order|browse|';
-$lang->uni->crm->menu->contract = '合同|contract_solid|contract|browse|';
 $lang->uni->crm->menu->customer = '客户|customer_solid|customer|browse|';
 $lang->uni->crm->menu->provider = '供应商|supplier_solid|provider|browse|';
+$lang->uni->crm->menu->order    = '订单|order_solid|order|browse|';
+$lang->uni->crm->menu->contract = '销售合同|contract_solid|contract|browse|';
+$lang->uni->crm->menu->purchase = '采购合同|contract_solid|purchasecontract|browse|';
 $lang->uni->crm->menu->contact  = '联系人|contact_solid|contact|browse|';
 $lang->uni->crm->menu->leads    = '名单|leads_solid|leads|browse|';
-$lang->uni->crm->menu->product  = '产品|product_solid|product|browse|';
 $lang->uni->crm->menu->invoice  = '发票|invoice_solid|invoice|browseSale|';
 $lang->uni->crm->menu->feedback = '售后|customer_service_solid|feedback|personal|';
+$lang->uni->crm->menu->product  = '产品|product_solid|product|browse|';
 
 $lang->uni->crm->quickMenu = new stdclass();
-$lang->uni->crm->quickMenu->leads    = '新增名单|leads_solid|leads|create|';
-$lang->uni->crm->quickMenu->contact  = '新增联系人|contact_solid|contact|create|';
-$lang->uni->crm->quickMenu->customer = '新增客户|customer_solid|customer|create|';
-$lang->uni->crm->quickMenu->provider = '新增供应商|supplier_solid|provider|create|';
-$lang->uni->crm->quickMenu->order    = '新增订单|order_solid|order|create|';
-$lang->uni->crm->quickMenu->contract = '新增合同|contract_solid|contract|create|';
-$lang->uni->crm->quickMenu->invoice  = '申请发票|invoice_solid|invoice|create|';
-$lang->uni->crm->quickMenu->more     = '更多|apps|||';
+$lang->uni->crm->quickMenu->leads    = '名单|leads_solid|leads|create|';
+$lang->uni->crm->quickMenu->contact  = '联系人|contact_solid|contact|create|';
+$lang->uni->crm->quickMenu->customer = '客户|customer_solid|customer|create|';
+$lang->uni->crm->quickMenu->provider = '供应商|supplier_solid|provider|create|';
+$lang->uni->crm->quickMenu->order    = '订单|order_solid|order|create|';
+$lang->uni->crm->quickMenu->contract = '销售合同|contract_solid|contract|create|';
+$lang->uni->crm->quickMenu->purchase = '采购合同|contract_solid|purchasecontract|create|';
+$lang->uni->crm->quickMenu->invoice  = '发票|invoice_solid|invoice|create|';
+//$lang->uni->crm->quickMenu->feedback = '售后|customer_service_solid|feedback|create|';
 
 $lang->uni->hr = new stdclass();
 $lang->uni->hr->data = '人力资源|hr_app';
@@ -487,7 +489,7 @@ $lang->uni->team->menu->forum = '论坛|discuss_solid|forum|index|';
 $lang->uni->team->menu->blog  = '博客|blog_solid|blog|index|';
 
 $lang->uni->proj = new stdclass();
-$lang->uni->proj->data = '项目|prj_app';
+$lang->uni->proj->data = '项目|proj_app';
 $lang->uni->proj->menu = new stdclass();
 $lang->uni->proj->menu->project = '项目|project_solid|project|index|status=involved';
 $lang->uni->proj->menu->task    = '任务|task_solid|task|browse|projectID=&mode=assignedTo';
@@ -513,7 +515,7 @@ $lang->uni->flow->menu->stampseal          = '印章申请|seal_solid|stamp|brow
 $lang->uni->flow->menu->carbooking         = '车辆预定|car_solid|carbooking|browse|mode=browse';
 
 $lang->uni->ameba = new stdclass();
-$lang->uni->ameba->data = '阿米巴|ame_app';
+$lang->uni->ameba->data = '阿米巴|ameba_app';
 $lang->uni->ameba->menu = new stdclass();
 $lang->uni->ameba->menu->amebareport = '报表|report_solid|amebareport|index|';
 $lang->uni->ameba->menu->deal        = '交易|trade_solid|deal|browse|';
@@ -868,7 +870,7 @@ $lang->communicate->menu = new stdclass();
 $lang->communicate->menu->customer         = '客户|customer|browse|mode=contactedby';
 $lang->communicate->menu->order            = '订单|order|browse|mode=contactedby';
 $lang->communicate->menu->contract         = '销售合同|contract|browse|mode=contactedby';
-//$lang->communicate->menu->purchasecontract = '采购合同|purchasecontract|browse|mode=contactedby';
+$lang->communicate->menu->purchasecontract = '采购合同|purchasecontract|browse|mode=contactedby';
 $lang->communicate->menu->contact          = '联系人|contact|browse|mode=contactedby';
 
 /* Black menu of crm app, use for mobile. */ 
@@ -876,7 +878,7 @@ if(!isset($lang->blackMenu)) $lang->blackMenu = new stdclass();
 $lang->blackMenu->order            = 'tomorrow,thismonth,public,report';
 $lang->blackMenu->customer         = 'tomorrow,thismonth,report';
 $lang->blackMenu->contract         = 'unreceived,undeliveried,expire,report';
-$lang->blackMenu->purchasecontract = 'unreceived,expire,report';
+$lang->blackMenu->purchasecontract = 'finished,canceled,report,setting';
 
 $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();
