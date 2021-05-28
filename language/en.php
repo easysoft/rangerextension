@@ -389,7 +389,7 @@ $lang->uni->common->allBusiness        = 'All business';
 $lang->uni->common->attend             = 'Attend';
 $lang->uni->common->address            = 'Detailed address';
 $lang->uni->common->customer           = 'Home of customer';
-$lang->uni->common->punchRecored       = 'Punch recored';
+$lang->uni->common->punchRecord        = 'Punch record';
 $lang->uni->common->unfinishedContract = 'Unfinished Contract';
 $lang->uni->common->todayContact       = 'Contacts contacted today';
 $lang->uni->common->todayCustomer      = 'Customers contacted today';
@@ -432,7 +432,7 @@ $lang->uni->crm->menu->purchase = 'Purchasecontract|contract_solid|purchasecontr
 $lang->uni->crm->menu->contact  = 'Contact|contact_solid|contact|browse|';
 $lang->uni->crm->menu->leads    = 'Leads|leads_solid|leads|browse|';
 $lang->uni->crm->menu->invoice  = 'Invoice|invoice_solid|invoice|browseSale|';
-$lang->uni->crm->menu->feedback = 'Aftermarket|customer_service_solid|feedback|personal|';
+$lang->uni->crm->menu->feedback = 'Aftermarket|customer_service_solid|feedback|browse|';
 $lang->uni->crm->menu->product  = 'Product|product_solid|product|browse|';
 
 $lang->uni->crm->quickMenu = new stdclass();
@@ -523,6 +523,25 @@ $lang->uni->ameba->menu->budget      = 'Budget|budget_solid|budget|browse|';
 $lang->uni->ameba->menu->rule        = 'Rule|rule_solid|fee|browse|';
 $lang->uni->ameba->menu->subject     = 'Subject|subject_solid|tree|browse|type=amebaAccount';
 $lang->uni->ameba->menu->tree        = 'Tree|tree_solid|ameba|index|';
+
+$lang->uni->record = new stdclass();
+$lang->uni->record->create      = 'Add Record';
+$lang->uni->record->contact     = 'Contact';
+$lang->uni->record->contactBy   = 'Contact By';
+$lang->uni->record->customer    = 'Customer';
+$lang->uni->record->contactDate = 'Contact Date';
+$lang->uni->record->contactTime = 'Contact Time';
+$lang->uni->record->comment     = 'Comment';
+$lang->uni->record->addFile     = 'Add File';
+$lang->uni->record->nextDate    = 'Next Contact Date';
+$lang->uni->record->desc        = 'Remarks';
+$lang->uni->record->sameContact = 'Same As This Contact';
+
+$lang->uni->record->placeholder = new stdclass();
+$lang->uni->record->placeholder->contact   = 'Please select a contact';
+$lang->uni->record->placeholder->contactBy = 'Please select a contact';
+$lang->uni->record->placeholder->customer  = 'Please select a customer';
+$lang->uni->record->placeholder->textarea  = 'Allow multiple lines of text';
 
 $lang->uni->history = new stdclass();
 $lang->uni->history->nextDate    = 'Next Contact';
