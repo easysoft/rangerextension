@@ -408,6 +408,10 @@ $lang->uni->common->today                      = '今';
 $lang->uni->common->input                      = '请输入';
 $lang->uni->common->cancelNextContact          = '确认取消下次联系？';
 $lang->uni->common->cancelSuccess              = '取消成功';
+$lang->uni->common->finishedDate               = '完成日期';
+$lang->uni->common->noCompany                  = '暂无公司信息';
+$lang->uni->common->createQuotationToast       = '合同新增报价单，是否更新合同金额？';
+$lang->uni->common->editQuotationToast         = '报价单金额发生了改变，是否更新报价单对应订单的计划金额？';
 
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = '日常办公|oa_app';
@@ -445,7 +449,7 @@ $lang->uni->crm->quickMenu->provider = '供应商|supplier_solid|provider|create
 $lang->uni->crm->quickMenu->order    = '订单|order_solid|order|create|';
 $lang->uni->crm->quickMenu->contract = '销售合同|contract_solid|contract|create|';
 $lang->uni->crm->quickMenu->purchase = '采购合同|contract_solid|purchasecontract|create|';
-$lang->uni->crm->quickMenu->invoice  = '发票|invoice_solid|invoice|create|';
+$lang->uni->crm->quickMenu->invoice  = '发票|invoice_solid|invoice|createSale|';
 //$lang->uni->crm->quickMenu->feedback = '售后|customer_service_solid|feedback|create|';
 
 $lang->uni->hr = new stdclass();
@@ -893,6 +897,7 @@ $lang->communicate->menu->order            = '订单|order|browse|mode=contacted
 $lang->communicate->menu->contract         = '销售合同|contract|browse|mode=contactedby';
 $lang->communicate->menu->purchasecontract = '采购合同|purchasecontract|browse|mode=contactedby';
 $lang->communicate->menu->contact          = '联系人|contact|browse|mode=contactedby';
+$lang->communicate->menu->leads            = '名单|leads|browse|mode=next';
 
 /* Black menu of crm app, use for mobile. */ 
 if(!isset($lang->blackMenu)) $lang->blackMenu = new stdclass();
@@ -901,6 +906,7 @@ $lang->blackMenu->customer         = 'tomorrow,thismonth,report';
 $lang->blackMenu->contract         = 'unreceived,undeliveried,expire,report';
 $lang->blackMenu->purchasecontract = 'finished,canceled,report,setting';
 $lang->blackMenu->product          = 'category,settings';
+$lang->blackMenu->leads            = 'setting';
 
 $lang->dashboard = new stdclass();
 if(!isset($lang->resume))  $lang->resume  = new stdclass();

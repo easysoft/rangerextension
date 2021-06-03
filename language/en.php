@@ -408,6 +408,10 @@ $lang->uni->common->today                      = 'Today';
 $lang->uni->common->input                      = 'Please input';
 $lang->uni->common->cancelNextContact          = 'Confirm to cancel next contact?';
 $lang->uni->common->cancelSuccess              = 'Cancel success';
+$lang->uni->common->finishedDate               = 'Finished date';
+$lang->uni->common->noCompany                  = 'No company information';
+$lang->uni->common->createQuotationToast       = 'Add quotation in the contract. Update contract amount?';
+$lang->uni->common->editQuotationToast         = 'The quotation amount has changed. Do you want to update the planned amount of the order corresponding to the quotation?';
 
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = 'OA|oa_app';
