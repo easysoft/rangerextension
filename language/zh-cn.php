@@ -412,6 +412,7 @@ $lang->uni->common->finishedDate               = '完成日期';
 $lang->uni->common->noCompany                  = '暂无公司信息';
 $lang->uni->common->createQuotationToast       = '合同新增报价单，是否更新合同金额？';
 $lang->uni->common->editQuotationToast         = '报价单金额发生了改变，是否更新报价单对应订单的计划金额？';
+$lang->uni->common->clearCache                 = '清除缓存';
 
 $lang->uni->oa = new stdclass();
 $lang->uni->oa->data = '日常办公|oa_app';
